@@ -63,7 +63,11 @@ def ensure_data(folder, download=False, import_folder=None):
             method = 'downloaded_from_official_zenodo_url'
         actual = digest(path, 'md5')
         if actual != source['md5']:
-            raise ValueError(f'Checksum mismatch for {source["filename"]}: {actual}')
+            raise ValueError(
+                f'Checksum mismatch for {source["filename"]}: expected {source["md5"]}, '
+                f'observed {actual}. The existing file is preserved. Move it to a backup '
+                'location, then use --download to acquire the official bytes.'
+            )
         records.append({
             'filename': path.name, 'acquisition': method, 'bytes': path.stat().st_size,
             'md5': actual, 'official_md5_matches': True, 'sha256': digest(path),

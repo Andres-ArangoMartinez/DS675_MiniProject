@@ -1,8 +1,8 @@
 {
-  "executed_utc": "2026-10-30T11:42:32.554380+00:00",
+  "executed_utc": "2026-10-30T13:41:30.431333+00:00",
   "notebook": "notebooks/milestone2_analysis.ipynb",
   "code_cells": 7,
   "error_outputs": 0,
-  "sha256": "bdbb689c2530443c7800c11a8d4c7f774c03e0e7e9499b1b6f63ca6920c1b52a",
+  "sha256": "69dfed3f1785b81603359fbe8ebb40255bc1d44b8b2b13f9df79ff343f6738f0",
   "learned_models_fitted": false
 }

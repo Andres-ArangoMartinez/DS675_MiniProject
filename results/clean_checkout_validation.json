@@ -1,0 +1,261 @@
+{
+  "status": "PASS",
+  "verification_type": "Local isolated checkout of the candidate Git index; GitHub Actions is checked separately after publication.",
+  "base_commit": "4690d5020d73782faa2ff514003cf082cb52f380",
+  "candidate_tree": "77698e006161c02b30e3f35f1d3cdcce10262832",
+  "started_utc": "2026-10-30T13:39:00.559577+00:00",
+  "completed_utc": "2026-10-30T13:47:37.153667+00:00",
+  "raw_data_initially_absent": true,
+  "source_files_imported_or_copied": false,
+  "steps": [
+    {
+      "command": "python scripts/validate_repository_hygiene.py",
+      "started_utc": "2026-10-30T13:39:00.559734+00:00",
+      "completed_utc": "2026-10-30T13:39:02.166664+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": "python reproduce.py --download",
+      "started_utc": "2026-10-30T13:39:02.167428+00:00",
+      "completed_utc": "2026-10-30T13:46:31.835999+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/run_tests.py",
+      "started_utc": "2026-10-30T13:46:31.836578+00:00",
+      "completed_utc": "2026-10-30T13:46:34.820965+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/execute_notebook.py",
+      "started_utc": "2026-10-30T13:46:34.822219+00:00",
+      "completed_utc": "2026-10-30T13:47:02.126019+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/validate_ai_interactions.py",
+      "started_utc": "2026-10-30T13:47:02.126970+00:00",
+      "completed_utc": "2026-10-30T13:47:23.517638+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/validate_repository.py",
+      "started_utc": "2026-10-30T13:47:23.518494+00:00",
+      "completed_utc": "2026-10-30T13:47:37.152703+00:00",
+      "exit_code": 0
+    }
+  ],
+  "official_downloads": [
+    {
+      "filename": "2018_SCADA_Pressures.csv",
+      "acquisition": "downloaded_from_official_zenodo_url",
+      "bytes": 22593812,
+      "md5": "d389d8541350c19ff0bfc6b80f246d35",
+      "official_md5_matches": true,
+      "sha256": "7782d890a7195699be94ddc01cba392da7ca285908afff619065a9616e04dcae",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2018_SCADA_Pressures.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "2018_SCADA_Flows.csv",
+      "acquisition": "downloaded_from_official_zenodo_url",
+      "bytes": 4023420,
+      "md5": "d0602c06946b46287e956f007e4264ee",
+      "official_md5_matches": true,
+      "sha256": "7f7e8625c9d92b083ee079a54cffb9ef803876de1e35017c1da0455968daf3ff",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2018_SCADA_Flows.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "2018_SCADA_Levels.csv",
+      "acquisition": "downloaded_from_official_zenodo_url",
+      "bytes": 2721000,
+      "md5": "92a512d6749ddf66fd6d99f2bdde6cc4",
+      "official_md5_matches": true,
+      "sha256": "a1fc5f0229448a620b6220f4d079b3162a255b3070acdce448608fbfc760903c",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2018_SCADA_Levels.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "2018_SCADA_Demands.csv",
+      "acquisition": "downloaded_from_official_zenodo_url",
+      "bytes": 56499753,
+      "md5": "8803afcb1da2428de169237be3d911fb",
+      "official_md5_matches": true,
+      "sha256": "713d9f03ff94128f44c7d8036a032cc1d7eebcbbc94fda9def2bbc3efc047dd5",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2018_SCADA_Demands.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "2019_SCADA_Pressures.csv",
+      "acquisition": "downloaded_from_official_zenodo_url",
+      "bytes": 22606417,
+      "md5": "5ea1e46d3f2f0a89a3f98d6fd39a851d",
+      "official_md5_matches": true,
+      "sha256": "a4af6616059cc9b366bbab76d880b2c772df544970c6ff4d4a29a58704ce05b1",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2019_SCADA_Pressures.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "2019_SCADA_Flows.csv",
+      "acquisition": "downloaded_from_official_zenodo_url",
+      "bytes": 4130511,
+      "md5": "28fc99fdcbf80fcd26079e7fe602d6dc",
+      "official_md5_matches": true,
+      "sha256": "c709ea5ecc03197e1fe70cf4c2de7225f71015acb50a7445ed7765b5029f7f15",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2019_SCADA_Flows.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "2019_SCADA_Levels.csv",
+      "acquisition": "downloaded_from_official_zenodo_url",
+      "bytes": 2720780,
+      "md5": "e5a8050bd38729e4b7648b9d52abd5b1",
+      "official_md5_matches": true,
+      "sha256": "00624e97b72e63233beeccb48db528d43e59a87b116d0295d5c2a206ee0e75a8",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2019_SCADA_Levels.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "2019_SCADA_Demands.csv",
+      "acquisition": "downloaded_from_official_zenodo_url",
+      "bytes": 56499940,
+      "md5": "b3e111de397a1b06d33b8a9f13bc997d",
+      "official_md5_matches": true,
+      "sha256": "004266aa039833b5ae0f37740487db4d90216d2ee947f14871c5d5d3f89b4151",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2019_SCADA_Demands.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "L-TOWN.inp",
+      "acquisition": "downloaded_from_official_zenodo_url",
+      "bytes": 412200,
+      "md5": "bfbb16b8b463e0576200ba6ad360f68e",
+      "official_md5_matches": true,
+      "sha256": "a7551b86745f4cc3433c78e60023077fa1386947d4d35372ffd3a0405622b436",
+      "source_url": "https://zenodo.org/api/records/4017659/files/L-TOWN.inp/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "dataset_configuration.yaml",
+      "acquisition": "downloaded_from_official_zenodo_url",
+      "bytes": 3926,
+      "md5": "48486401f5b4d0447023f5ce5d242c52",
+      "official_md5_matches": true,
+      "sha256": "23471d8989d82c66a4909816ea248f7588d8ccc910e142265a7ea48db940b6a0",
+      "source_url": "https://zenodo.org/api/records/4017659/files/dataset_configuration.yaml/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "README.txt",
+      "acquisition": "downloaded_from_official_zenodo_url",
+      "bytes": 5303,
+      "md5": "7ad5cdc2eebfe78197a3412e80d07ddc",
+      "official_md5_matches": true,
+      "sha256": "e6a3e83bdf7f116c47c72640de6e4785fd3437b96428448adf9ca76f066f2226",
+      "source_url": "https://zenodo.org/api/records/4017659/files/README.txt/content",
+      "license": "CC-BY-4.0"
+    }
+  ],
+  "code_sha256": {
+    "src/__init__.py": "2695b98a54a9c5253655a6a61000c854451defbe4267cb28e5588f2de04f99a8",
+    "src/analysis.py": "c962d06b34567022742f80d3994bb66dea20108c25128543c38190d6ced281c6",
+    "src/data.py": "cef3d047af3c286d5ee16fcb18128e6ee2bc7b9cfb458b088715059b614329b4",
+    "src/figures.py": "0419899f83352fd64f8ff1bb662db6731c66faf16434786aedd59f858864fe67",
+    "src/pipeline.py": "fb64ca834bb5bbe20cd956d25e696a2b6464bb5a5a4f09872704b9d1e30ae05c",
+    "src/screening.py": "7cf8a55975fdcd53a52647ca792b5c83da5ac6b21015de08a611be7b4aa41fe0",
+    "reproduce.py": "0f02066a84003b5dac27323cccea61bfff9862b4c567d6d3b356137d333cf565"
+  },
+  "classification_and_protocol_sha256": {
+    "literature/source_records.csv": "d6ad153aae0db96c2d7601f70840964bc7cddd6dd237e3b12396aeb8bafbdcfb",
+    "literature/groups.csv": "4f460e59310bdd4650fbe5db271b1713c208b7b8dbdc6dab5041250963f9d247",
+    "data/source_manifest.json": "255c617c6d8dae866b9899e688ffed29e1f23d8acec5f0c4330fd317f9dca3fb",
+    "evidence/reported_values.json": "f491d6b38a417f2bb351ed93763c7a50dc812cd37cf78e6085145eb651ee787e",
+    "evidence/contribution_summary.csv": "f354a0971beb6a577f2bc91120d1fd006b457d35b3cb8545a589dca643fc6fe5",
+    "evidence/work_status.json": "0e7821d2f416ab7f080cba907a776b99d3046c4eb445994d590d88c94d9cdcbc",
+    "docs/student_contributions.md": "4b914efeadb7b2b65ab69d06d36156550de428ced862232b6d56fda83334660f"
+  },
+  "descriptive_results": {
+    "period_start": "2018-01-01",
+    "period_end": "2018-09-30",
+    "days": 273,
+    "rows": 78624,
+    "forecast_pairs": 78621,
+    "lead_minutes": 15,
+    "n1_range_m": [
+      25.67,
+      29.36
+    ],
+    "persistence_MAE_m": 0.05177624298851451,
+    "persistence_RMSE_m": 0.06849175638676988,
+    "correlation_with_future_n1": {
+      "n1": 0.9923104288422745,
+      "n4": 0.9751781370318049,
+      "n31": 0.9709194921762693,
+      "T1": 0.9230382756150715,
+      "PUMP_1": -0.036721113537103056,
+      "AMR_n1": -0.15737833061358575
+    },
+    "signals": [
+      "n1",
+      "n4",
+      "n31",
+      "T1",
+      "PUMP_1",
+      "AMR_n1"
+    ],
+    "target": "n1_plus15",
+    "interpretation": "Descriptive Jan-Sep 2018 results; not a final 2019 test score.",
+    "learned_models_fitted": false
+  },
+  "unit_tests": {
+    "status": "PASS",
+    "tests_run": 7,
+    "exit_code": 0
+  },
+  "notebook": {
+    "executed_utc": "2026-10-30T13:47:01.946133+00:00",
+    "notebook": "notebooks/milestone2_analysis.ipynb",
+    "code_cells": 7,
+    "error_outputs": 0,
+    "sha256": "3e2bbc19e43809bc2d85f87494f00a63010e42290968bec0cc04338b95a39b19",
+    "learned_models_fitted": false
+  },
+  "repository_validation": {
+    "status": "PASS",
+    "internal_links_checked": 567,
+    "broken_internal_links": [],
+    "submitted_artifact_hashes_match": true,
+    "source_records": 47,
+    "groups": 35,
+    "screening_notes": 35,
+    "detailed_studies": 6,
+    "category_counts": [
+      27,
+      3,
+      2,
+      2,
+      1
+    ],
+    "public_pdf_count": 32,
+    "paper_hashes_match": true,
+    "license_evidence_present": true,
+    "execution_code_and_input_hashes_current": true,
+    "four_generated_figures_present": true,
+    "notebook_executed_without_errors": true,
+    "tests_passed": 7,
+    "pinned_code_hashes_match": 9,
+    "public_contribution_summary_activities": 10,
+    "private_session_exports_absent": true,
+    "public_recovered_source_views": 16,
+    "public_transcript_parts": 148,
+    "documented_transcript_redactions": 231,
+    "contribution_to_message_links": 31,
+    "git_tracking_and_byte_preservation": "PASS",
+    "scope": "Executed descriptive evidence; next stage is the proposed modeling study."
+  },
+  "protected_original_files_unchanged": 226,
+  "same_numerical_records_as_working_execution": true,
+  "four_generated_png_fingerprints_match_working_execution": true,
+  "learned_models_fitted": false
+}

@@ -1,0 +1,24 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.part
+*.tmp
+
+# Official inputs are acquired from Zenodo and checked before processing.
+/data/raw/
+
+# Full derived tables and duplicate notebook/check figures are locally reproducible.
+/results/selected_inputs_full.csv.gz
+/results/forecast_pairs_full.csv.gz
+/results/notebook/
+/results/check/
+
+# Original private archives stay outside the public repository.
+**/original_sessions/
+**/database_exports/
+*.jsonl
+*.sqlite*
+*.bundle
+*.zip

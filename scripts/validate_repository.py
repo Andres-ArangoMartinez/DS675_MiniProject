@@ -118,6 +118,8 @@ def validate():
     assert len(work['proposed_only']) == 3
     from scripts.validate_ai_interactions import validate as validate_interactions
     interactions = validate_interactions()
+    from scripts.validate_repository_hygiene import validate as validate_hygiene
+    hygiene = validate_hygiene()
     record = {'status':'PASS', 'internal_links_checked':checked_links, 'broken_internal_links':[],
               'submitted_artifact_hashes_match':True, 'source_records':47, 'groups':35, 'screening_notes':35,
               'detailed_studies':6, 'category_counts':[27,3,2,2,1], 'public_pdf_count':len(pdfs),
@@ -129,6 +131,7 @@ def validate():
               'public_transcript_parts':interactions['public_parts'],
               'documented_transcript_redactions':interactions['documented_redactions'],
               'contribution_to_message_links':interactions['contribution_links'],
+              'git_tracking_and_byte_preservation':hygiene['status'],
               'scope':'Executed descriptive evidence; next stage is the proposed modeling study.'}
     (ROOT / 'results/repository_validation.json').write_text(json.dumps(record, indent=2)+'\n', encoding='utf-8', newline='\n')
     print(json.dumps(record, indent=2))

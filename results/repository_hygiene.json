@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-10-30T13:49:34.120192+00:00",
+  "tracked_files": 313,
+  "tracked_raw_files": 0,
+  "tracked_cache_files": 0,
+  "ignore_probes_passed": 8,
+  "byte_preservation_paths_checked": 6,
+  "staged_request_fingerprint_matches": true,
+  "gitignore_sha256": "24d66bebf726a793b873ac9c4cc082a516d21400109318925b06c6ecf337a6c9",
+  "gitattributes_sha256": "e3290eba265d00e2cd602e9675211e0824a0ec324ce6b0cbda50647e5cd010c1"
+}

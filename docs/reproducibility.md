@@ -12,6 +12,7 @@ PowerShell activation: `.\.venv\Scripts\Activate.ps1`. On Linux/macOS: `source .
 
 ```bash
 python -m pip install -r requirements.txt
+python scripts/validate_repository_hygiene.py
 python reproduce.py --download
 python scripts/run_tests.py
 python scripts/execute_notebook.py
@@ -26,6 +27,14 @@ python reproduce.py --import-data /path/to/source/files
 ```
 
 The same official checksums apply to imported files. The default workflow downloads and processes its inputs within this repository. For a separate output folder, use `--output-dir results/check`; default outputs go to `results/`.
+
+## Source-byte integrity and Git tracking
+
+The [hygiene validator](../scripts/validate_repository_hygiene.py) checks tracking, ignore rules and byte-preserving attributes before data acquisition. Git versions the official manifest and reproducible evidence; downloaded source files remain local in `data/raw/`. Python caches, full derived tables and duplicate notebook/check output folders are also local. The four primary figures, executed notebook, compact result tables, source inventories and submitted artifacts remain versioned.
+
+The `.gitattributes` rules preserve exact bytes for fingerprinted CSV, JSON, notebook and transcript files. Editable code/prose uses LF normalization. The [repair record](reproducibility_repair.md) explains the observed Git line-ending conversion, including the earlier failing workflow and the original hashes retained for the evidence.
+
+Existing input files are checked before processing. A valid cache is reused unchanged. If a checksum differs, the command reports the expected and observed values and preserves the existing file; move that file to a backup location, then run `python reproduce.py --download` to acquire the official release. Downloads are verified in temporary files before promotion to the source cache.
 
 ## What runs
 

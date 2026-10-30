@@ -1,2 +1,10 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Normalize editable prose/code while preserving checksum-sensitive evidence bytes.
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.csv -text
+*.json -text
+*.ipynb -text
+data/raw/** -text -diff
+evidence/ai_interactions/**/*.txt -text -diff
+results/figures/*.svg -whitespace

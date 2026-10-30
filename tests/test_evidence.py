@@ -37,6 +37,7 @@ class EvidenceTests(unittest.TestCase):
         for source in source_manifest()['files']:
             path = ROOT / 'data/raw' / source['filename']
             self.assertTrue(path.exists(), 'Run reproduce.py first to obtain official files.')
+            self.assertEqual(path.stat().st_size, source['bytes'], source['filename'])
             self.assertEqual(digest(path, 'md5'), source['md5'], source['filename'])
 
     def test_independent_pressure_calculation(self):

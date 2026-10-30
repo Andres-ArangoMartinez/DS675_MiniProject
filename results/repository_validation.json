@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "internal_links_checked": 554,
+  "internal_links_checked": 568,
   "broken_internal_links": [],
   "submitted_artifact_hashes_match": true,
   "source_records": 47,
@@ -28,5 +28,6 @@
   "public_transcript_parts": 148,
   "documented_transcript_redactions": 231,
   "contribution_to_message_links": 31,
+  "git_tracking_and_byte_preservation": "PASS",
   "scope": "Executed descriptive evidence; next stage is the proposed modeling study."
 }

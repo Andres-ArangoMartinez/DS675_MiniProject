@@ -36,6 +36,7 @@ Use Python 3.12 or newer; the recorded execution used Python 3.14.
 python -m venv .venv
 # Activate .venv using your shell's command.
 python -m pip install -r requirements.txt
+python scripts/validate_repository_hygiene.py
 python reproduce.py --download
 python scripts/run_tests.py
 python scripts/execute_notebook.py
@@ -44,5 +45,7 @@ python scripts/validate_repository.py
 ```
 
 The public download verifies official checksums and stores inputs in ignored `data/raw/`. [Reproduction instructions](docs/reproducibility.md) describe the calculations and their interpretation; [redistribution terms](NOTICE.md) cover the data sources and 32 permitted original PDFs.
+
+Git versions the source manifest, code and supporting evidence. Official downloads, Python caches and duplicate full notebook outputs stay local. Byte-preservation attributes protect fingerprinted transcripts, JSON, CSV and notebook files. [Source-integrity repair](docs/reproducibility_repair.md) documents the verified line-ending issue and the checks that protect future checkouts.
 
 The [AI interaction appendix](evidence/ai_interactions/README.md) provides available recovered conversations, documented privacy redactions and direct links to the student's decisions and AI assistance. Its coverage section identifies the partial ChatGPT recovery and the recorded Codex snapshot dates. Untouched originals support private source comparison. See [interaction coverage](docs/student_contributions.md#interaction-records-and-limits).
