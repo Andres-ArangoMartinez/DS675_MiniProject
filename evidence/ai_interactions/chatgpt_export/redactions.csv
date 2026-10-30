@@ -1,0 +1,3 @@
+conversation_id,redaction_id,source_character_start,source_character_end,category,marker,reason,public_locator
+6a92eec0-f09c-83e9-a9ed-29d95f24d41b,CGPT-REDACTION-0001,41057,41511,restricted-course-link,[[CGPT-REDACTION-0001]],"Credential, restricted-access link, signed access value, or inline image bytes; academic text retained.",6a92eec0-f09c-83e9-a9ed-29d95f24d41b/segment-001.txt#L848
+6a92eec0-f09c-83e9-a9ed-29d95f24d41b,CGPT-REDACTION-0002,102005,102459,restricted-course-link,[[CGPT-REDACTION-0002]],"Credential, restricted-access link, signed access value, or inline image bytes; academic text retained.",6a92eec0-f09c-83e9-a9ed-29d95f24d41b/segment-001.txt#L2766

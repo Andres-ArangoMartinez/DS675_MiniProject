@@ -1,0 +1,201 @@
+# ChatGPT export conversation
+
+Conversation ID: 6a9e201b-aa78-83ea-8e32-c4b5c38047fb
+Original title: Proyecto Kaggle Para Control Engineer
+Created UTC: 2026-09-07T02:23:48.591783+00:00
+Updated UTC: 2026-09-07T02:25:06.251652+00:00
+Source: student-supplied account export; original language and text retained.
+Scope: user/assistant text and multimodal text in mapping order; non-text model records remain private.
+
+<a id="message-bbb218f6-a8fa-4059-b3a2-f0f32cf747c5"></a>
+## user | 2026-09-07T02:23:47.378231+00:00 | bbb218f6-a8fa-4059-b3a2-f0f32cf747c5
+
+Export node: bbb218f6-a8fa-4059-b3a2-f0f32cf747c5
+Parent node: b310b961-fcd6-438b-80ed-6ee14ebf68c5
+Active branch: true
+Content type: text
+
+### Original message body
+
+Busca en Kaggle, algun proyecto o hackton afin a mis gustos como control engineer
+
+<a id="message-7cb1d00b-6513-489d-bd3d-4473d6aa6d6d"></a>
+## assistant | 2026-09-07T02:23:54.866203+00:00 | 7cb1d00b-6513-489d-bd3d-4473d6aa6d6d
+
+Export node: 7cb1d00b-6513-489d-bd3d-4473d6aa6d6d
+Parent node: bbb218f6-a8fa-4059-b3a2-f0f32cf747c5
+Active branch: true
+Content type: text
+
+### Original message body
+
+Voy a buscar opciones en Kaggle que encajen con un perfil de **control engineer**: series de tiempo, detección de fallas, mantenimiento predictivo, modelado de sistemas y aplicaciones industriales. Priorizaré retos/proyectos donde puedas conectar ML con dinámica y control, no solo clasificación genérica.
+
+<a id="message-907f64e6-8f66-4d3e-8f93-102b4b228476"></a>
+## assistant | 2026-09-07T02:24:09.392917+00:00 | 907f64e6-8f66-4d3e-8f93-102b4b228476
+
+Export node: 907f64e6-8f66-4d3e-8f93-102b4b228476
+Parent node: 35e06dc4-d39e-45ca-bf25-b535711a769d
+Active branch: true
+Content type: text
+
+### Original message body
+
+Ya encontré varias muy alineadas. La más interesante no es simplemente “predecir una etiqueta”: hay una de **soft sensor para un proceso batch**, otra de **SCADA**, y una de **mantenimiento predictivo en robots**; esas sí permiten pensar como ingeniero de control.
+
+<a id="message-ff1d026f-c98f-4b0b-93e7-7a2f3cf7baa2"></a>
+## assistant | 2026-09-07T02:24:33.024274+00:00 | ff1d026f-c98f-4b0b-93e7-7a2f3cf7baa2
+
+Export node: ff1d026f-c98f-4b0b-93e7-7a2f3cf7baa2
+Parent node: 1d4917d3-b0e7-4a61-979a-5b096c7707b0
+Active branch: true
+Content type: text
+
+### Original message body
+
+Sí. Busqué en Kaggle y encontré varias opciones bastante más cercanas a **Control Engineering + ML + sistemas industriales** que las típicas competencias de clasificación de imágenes.
+
+### La que más te recomiendo: Tennessee Eastman Process
+
+El **Tennessee Eastman Process (TEP)** me parece casi perfecto para ti. Es un benchmark creado específicamente para **control y monitoreo de procesos industriales**. Simula una planta química con múltiples variables de proceso, actuadores, modos de operación y fallas. En Kaggle hay versiones con hasta **55 variables**, simulaciones normales y con fallas, y datasets orientados a fault detection y domain adaptation. citeturn152846search0turn152846search1
+
+urlTennessee Eastman Process en Kagglehttps://www.kaggle.com/datasets/afrniomelo/tep-csv
+
+Yo lo convertiría en un proyecto de portfolio llamado algo como **“ML-Based Fault Detection and Diagnosis for an Industrial Process”**.
+
+La gracia es que puedes mezclar lo que ya sabes como control engineer con lo que estás aprendiendo en ML:
+
+`Process → Sensors → Controller → Actuators`  
+`             ↓`  
+`     ML Monitoring System`  
+`             ↓`  
+` Normal / Fault type / Anomaly`
+
+Puedes empezar muy simple con PCA, Logistic Regression, KNN, Random Forest o XGBoost y después evolucionarlo hacia Isolation Forest, autoencoders, LSTM/Transformers o domain adaptation. El dataset tiene múltiples modos de operación precisamente para estudiar qué ocurre cuando la distribución del proceso cambia. citeturn152846search0
+
+Y hay un ángulo que creo que quedaría especialmente bien en tu portfolio: **comparar métodos clásicos de Process Control con ML**. Por ejemplo, `PCA + Hotelling T²/SPE` frente a `Random Forest/XGBoost` frente a un modelo temporal. Eso demuestra que no eres simplemente alguien aplicando sklearn: estás conectando **process dynamics + instrumentation + control + machine learning**.
+
+---
+
+### Otra excelente: Mettler Toledo Industrial AI Challenge — Drug Prophet
+
+Esta competencia de 2026 ya terminó, pero el problema es excelente para practicar. Había que predecir la concentración final de penicilina usando únicamente la primera parte de un batch industrial de fermentación. El simulador incluye dinámica de biomasa, transferencia de oxígeno, viscosidad, pH, nutrientes y perturbaciones, junto con las acciones de control tomadas durante el batch. citeturn982549search1
+
+urlMettler Toledo Industrial AI Challenge — Drug Prophethttps://www.kaggle.com/competitions/mt-ai-innovation-challenge-drug-prophet
+
+Esto es básicamente un problema de **soft sensor**:
+
+\[
+y(k)=\text{concentración que no puedo medir fácilmente}
+\]
+
+pero tienes
+
+\[
+u(k),x(k),x(k-1),\ldots
+\]
+
+y quieres aprender
+
+\[
+\hat y=f(x_{0:k},u_{0:k})
+\]
+
+Eso conecta directamente con **state estimation, observers, system identification y MPC**. De hecho, los organizadores plantean que esa predicción podría utilizarse para decidir si modificar anticipadamente la estrategia de alimentación/control de un batch. citeturn862168view0turn982549search1
+
+Para alguien de control, probablemente es el problema **más interesante conceptualmente** de todos los que encontré.
+
+---
+
+### SCADA Time Series Forecasting — activo
+
+Encontré también una competencia de **SCADA / control de procesos** que aparece actualmente con unos **9 meses restantes**, aunque tiene la limitación de que es **por invitación**. El objetivo es predecir una señal industrial varias horas hacia delante para que un operador pueda detectar desviaciones entre el valor esperado y el observado. Se evalúa con RMSE. citeturn982549search2
+
+urlSCADA Time Series Forecasting en Kagglehttps://www.kaggle.com/competitions/scada-time-series-forecasting
+
+Desde control sería algo como:
+
+\[
+e(k)=y_{\text{SCADA}}(k)-\hat y(k)
+\]
+
+y disparar una alarma cuando
+
+\[
+|e(k)|>\delta.
+\]
+
+Es casi un **residual-based fault detection system**, pero reemplazando parte del modelo físico por ML.
+
+---
+
+### Robot Predictive Maintenance 2026
+
+También hubo este año una competencia con un **robot de seis motores**, usando posición, temperatura y voltaje de cada motor para determinar si está funcionando normalmente. El objetivo era fault detection y se evaluaba mediante F1. Terminó el 3 de junio de 2026, pero sigue siendo muy buen material para reproducir como proyecto. citeturn162607search0
+
+urlRobot Predictive Maintenance — Season 2026https://www.kaggle.com/competitions/robot-predictive-maintenance-season-2026
+
+Aquí podrías llevarlo más lejos que la competencia y modelar algo como:
+
+\[
+[V,I,T,\omega,\theta] \rightarrow \text{Health State}
+\]
+
+e investigar qué sensores permiten detectar una falla primero.
+
+---
+
+### Si quieres competir ahora mismo: SECOM Defect Detection
+
+La opción abierta que encontré es **SECOM Defect Detection Challenge**, que muestra actualmente alrededor de **6 meses restantes** y permite unirse. Son cientos de sensores de un proceso de fabricación de semiconductores —temperatura, presión, voltaje, etc.— y hay que identificar productos Pass/Fail. citeturn982549search3turn982549search7
+
+urlSECOM Defect Detection Challengehttps://www.kaggle.com/competitions/secom-defect-detection-challenge
+
+Es menos “control” que TEP, pero es muy buena para **multivariate process monitoring**, feature selection, datos faltantes y detección de anomalías.
+
+---
+
+### Mi ranking para ti
+
+| Proyecto | Control | ML | Portfolio | Estado |
+|---|:---:|:---:|:---:|---|
+| **Tennessee Eastman Process** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Dataset abierto |
+| **Mettler Toledo / Drug Prophet** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Competencia terminada |
+| **SCADA Forecasting** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Activa, invitación |
+| **Robot Predictive Maintenance** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Terminada |
+| **SECOM Semiconductor** | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | **Activa** |
+| NASA C-MAPSS Turbofan | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Dataset abierto |
+
+NASA **C-MAPSS** también merece muchísimo la pena: contiene series temporales multivariables de motores turbofan hasta su fallo y permite estimar **Remaining Useful Life (RUL)**. Hay una versión reciente en Kaggle con FD001–FD004 y ground truth de RUL. citeturn152846search11
+
+### Lo que yo haría en tu caso
+
+Empezaría con **Tennessee Eastman** y lo convertiría en un proyecto progresivo conectado directamente con **DS675**:
+
+**Fase 1 — ML básico**  
+EDA → scaling → KNN → Logistic Regression → Random Forest → métricas.
+
+**Fase 2 — Ingeniería de control**  
+Visualizar PVs, MVs y perturbaciones → generar residuales → analizar respuesta temporal de cada fallo.
+
+**Fase 3 — Process Monitoring**  
+PCA / Hotelling \(T^2\) / SPE vs Isolation Forest / XGBoost.
+
+**Fase 4 — ML temporal**  
+Ventanas:
+
+\[
+X_k=[x(k-N),...,x(k)]
+\]
+
+para detectar **qué falla existe y cuándo comenzó**.
+
+**Fase 5 — Proyecto fuerte de portfolio**  
+Dashboard estilo SCADA mostrando planta, variables, tendencias, estado estimado, probabilidad de falla y diagnóstico.
+
+Eso sería bastante más diferenciador para un **Control Engineer entrando en Machine Learning** que hacer Titanic/MNIST o datasets genéricos.
+
+Si quieres, en el siguiente paso puedo tomar el **Tennessee Eastman Process de Kaggle y diseñarte el proyecto completo para DS675**, incluyendo qué variables usar, problema ML a formular, baseline, estructura del notebook y una progresión donde vayamos incorporando los conceptos del curso a medida que los aprendes.
+
+También puedo vigilar Kaggle y avisarte cuando aparezca una competencia nueva de **industrial AI, SCADA, robotics, predictive maintenance o process control**.
+

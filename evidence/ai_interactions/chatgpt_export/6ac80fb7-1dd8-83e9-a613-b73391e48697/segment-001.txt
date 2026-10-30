@@ -1,0 +1,818 @@
+# ChatGPT export conversation
+
+Conversation ID: 6ac80fb7-1dd8-83e9-a613-b73391e48697
+Original title: Expectativas Milestone 2
+Created UTC: 2026-10-08T21:48:40.239984+00:00
+Updated UTC: 2026-10-08T22:05:04.725763+00:00
+Source: student-supplied account export; original language and text retained.
+Scope: user/assistant text and multimodal text in mapping order; non-text model records remain private.
+
+<a id="message-bbb21dbf-3cf1-4b57-ba86-bd7843014631"></a>
+## user | 2026-10-08T21:49:59.166448+00:00 | bbb21dbf-3cf1-4b57-ba86-bd7843014631
+
+Export node: bbb21dbf-3cf1-4b57-ba86-bd7843014631
+Parent node: 5809c895-a8f4-4ec6-b50d-0034696c43ce
+Active branch: true
+Content type: text
+
+### Original message body
+
+que se espera para el milestone 2?
+
+<a id="message-318a1be4-0404-463c-be10-334b69fa2775"></a>
+## assistant | 2026-10-08T21:50:06.777722+00:00 | 318a1be4-0404-463c-be10-334b69fa2775
+
+Export node: 318a1be4-0404-463c-be10-334b69fa2775
+Parent node: 28bd4af5-8717-405e-a1fc-3a2826ea8f45
+Active branch: true
+Content type: text
+
+### Original message body
+
+Para el **Milestone 2 – Review Existing Work** del Mini-Project de **DS675 (Machine Learning)**, el profesor espera que pases de proponer posibles datasets a **investigar qué han hecho otros desarrolladores con uno de ellos, cómo funcionan sus modelos y qué podrías aportar tú de manera original**.
+
+En otras palabras, el Milestone 1 respondía: *¿Qué datos quiero utilizar y qué problema quiero resolver?*
+
+El Milestone 2 debe responder: *¿Qué soluciones de Machine Learning existen para este dataset, cómo funcionan y qué podría hacer yo que sea diferente?*
+
+## 1. ¿Qué debes entregar?
+
+Un **reporte de 3 a 5 páginas**, centrado en un solo dataset.
+
+Según las instrucciones de la actividad, debe abordar estos elementos:
+
+| Elemento | Qué espera el profesor |
+|---|---|
+| Selección del dataset | Elegir uno de los datasets propuestos en Milestone 1. |
+| Descripción del dataset | Describir sus características, variables, tamaño y el problema predictivo. |
+| Review of existing work | Investigar modelos desarrollados por otras personas en Kaggle u otras fuentes. |
+| Predictive learning tasks | Explicar qué han intentado predecir esos modelos. |
+| Model details | Explicar qué algoritmos utilizan, cómo preparan los datos y cómo entrenan y evalúan los modelos. |
+| Code references | Incluir enlaces verificables al código original de los desarrolladores. |
+| New concepts | Identificar técnicas encontradas en el código que todavía no se hayan estudiado en clase, si las hay. |
+| Your own contribution | Comenzar a identificar cómo podrías mejorar, modificar o ampliar los trabajos existentes. |
+
+**Lo más importante:** el proyecto final debe incluir una contribución nueva relacionada con *predictive learning*, que vaya más allá de reproducir una solución existente.
+
+## 2. ¿Cómo se relaciona con tu Milestone 1?
+
+En el documento que entregaste identificaste dos datasets:
+
+<box border radius="lg" gap={3} padding={3}>
+  <row align="center" gap={3}>
+    <box flex="1" gap={1}>
+      **BattLeDIM – L-Town**
+
+      <text color="secondary" size="xs">210,240 observaciones · Cada 5 minutos</text>
+      Predecir la presión 15 minutos en el futuro.
+    </box>
+    <badge>Usability 3.53</badge>
+  </row>
+  <divider color="subtle"/>
+  <row align="center" gap={3}>
+    <box flex="1" gap={1}>
+      **BATADAL – C-Town**
+
+      <text color="secondary" size="xs">15,027 observaciones · Cada hora</text>
+      Predecir la presión una hora en el futuro.
+    </box>
+    <badge>Usability 10.0</badge>
+  </row>
+  <caption>Datos de las páginas 1 y 2 de tu Milestone 1. <FileCite ref="turn0file0" line_range_start={18} line_range_end={25} /> <FileCite ref="turn0file0" line_range_start={60} line_range_end={77} /></caption>
+</box>
+
+Para Milestone 2, debes seleccionar **uno solo**, idealmente teniendo en cuenta el feedback del profesor.
+
+Tu propuesta original está orientada a pronosticar presiones en redes de distribución de agua usando mediciones SCADA y modelos de aprendizaje supervisado. Esa dirección puede mantenerse.
+
+La diferencia es que ahora debes demostrar qué modelos existentes podrían servirte como punto de partida.
+
+## 3. ¿Cómo organizaría tu reporte?
+
+Te recomiendo la siguiente estructura, que se ajusta a las instrucciones y permite desarrollar el trabajo en 3–5 páginas.
+
+<box gap={3}>
+  <row align="start" gap={3}>
+    <box background="surface-secondary" radius="md" padding={2}>
+      <icon name="database" size="lg"/>
+    </box>
+    <box flex="1" gap={1}>
+      **1. Dataset Description — ½ a 1 página**
+
+      Presentar el dataset seleccionado, sus variables, resolución temporal, procedencia y objetivo predictivo. Puedes reutilizar y actualizar la información de Milestone 1.
+    </box>
+  </row>
+  <divider color="subtle"/>
+  <row align="start" gap={3}>
+    <box background="surface-secondary" radius="md" padding={2}>
+      <icon name="book-open" size="lg"/>
+    </box>
+    <box flex="1" gap={1}>
+      **2. Review of Existing Models — 1½ a 2 páginas**
+
+      Examinar dos o tres implementaciones relevantes, siempre que existan. Para cada una, explicar el problema predictivo, el algoritmo, las features utilizadas, la preparación de datos, los resultados reportados y el enlace al código.
+    </box>
+  </row>
+  <divider color="subtle"/>
+  <row align="start" gap={3}>
+    <box background="surface-secondary" radius="md" padding={2}>
+      <icon name="chart-no-axes-combined" size="lg"/>
+    </box>
+    <box flex="1" gap={1}>
+      **3. Comparative Analysis — ½ a 1 página**
+
+      Comparar fortalezas, limitaciones y diferencias entre los enfoques encontrados. Identificar si emplean técnicas todavía no cubiertas en clase.
+    </box>
+  </row>
+  <divider color="subtle"/>
+  <row align="start" gap={3}>
+    <box background="surface-secondary" radius="md" padding={2}>
+      <icon name="lightbulb" size="lg"/>
+    </box>
+    <box flex="1" gap={1}>
+      **4. Proposed Extension — ½ a 1 página**
+
+      Explicar qué modificarías o agregarías para realizar una contribución propia, y cómo evaluarías si esa propuesta mejora las soluciones existentes.
+    </box>
+  </row>
+  <divider color="subtle"/>
+  <row align="start" gap={3}>
+    <box background="surface-secondary" radius="md" padding={2}>
+      <icon name="link" size="lg"/>
+    </box>
+    <box flex="1" gap={1}>
+      **5. References**
+
+      Incluir las referencias a artículos, datasets, notebooks y repositorios consultados, especialmente enlaces directos al código analizado.
+    </box>
+  </row>
+</box>
+
+## 4. ¿Qué podría ser tu contribución original?
+
+Tu Milestone 1 ya contiene una idea interesante: **comparar modelos que utilizan todas las variables SCADA con modelos que seleccionan únicamente variables hidráulicamente relacionadas con el nodo objetivo**. <FileCite ref="turn0file0" line_range_start={90} line_range_end={94} />
+
+Podrías formularla así:
+
+> Can topology-informed feature selection improve pressure forecasting accuracy in water distribution networks compared with models using all available SCADA measurements?
+
+La idea sería investigar si escoger variables con significado hidráulico permite obtener predicciones más precisas, más simples o más interpretables.
+
+Por ejemplo, podrías considerar una comparación como esta:
+
+| Modelo o enfoque | Propósito |
+|---|---|
+| Persistence baseline | Predecir que la presión futura será igual a la presión actual. |
+| Linear Regression | Establecer un modelo supervisado sencillo de referencia. |
+| Random Forest Regression | Explorar relaciones no lineales entre las variables SCADA y la presión futura. |
+| Topology-informed model | Evaluar si la selección de variables basada en conexiones hidráulicas ofrece ventajas. |
+
+Estos son **posibles experimentos para tu proyecto**, no modelos que haya verificado que estén implementados para BATADAL o BattLeDIM. En el Milestone 2 deberás investigar cuáles existen realmente y cuáles puedes adaptar.
+
+## 5. ¿Qué NO necesitas hacer todavía?
+
+Según la descripción del Milestone 2, no se exige necesariamente:
+
+- Haber entrenado tu propio modelo definitivo.
+- Haber implementado por completo tu contribución.
+- Haber obtenido mejores resultados que los desarrolladores de Kaggle.
+- Haber completado todos los experimentos del Mini-Project.
+
+La prioridad es **comprender y documentar el trabajo existente, identificar sus limitaciones y empezar a definir una extensión viable**.
+
+---
+
+## Mi recomendación para tu caso
+
+Antes de escribir el informe, haría una investigación dirigida a responder tres preguntas:
+
+1. ¿Qué notebooks, repositorios o artículos contienen código de Machine Learning para BATADAL o BattLeDIM?
+2. ¿Cuáles realizan tareas de regresión o forecasting de variables hidráulicas, en lugar de limitarse a detección de ataques o fugas?
+3. ¿Existe un espacio real para introducir una mejora mediante *feature engineering*, selección de variables basada en topología o información temporal?
+
+La segunda pregunta es particularmente importante: ambos datasets nacieron de benchmarks de detección de anomalías, mientras que tu objetivo es **predecir presiones futuras**. No debemos presentar modelos de detección de ataques como si fueran modelos de forecasting.
+
+**El siguiente paso más conveniente es investigar los trabajos existentes para BATADAL y BattLeDIM antes de escoger definitivamente uno.** Así podremos determinar cuál tiene suficientes ejemplos de código para cumplir las exigencias del Milestone 2 sin perder el enfoque de tu investigación sobre predicción de presiones.
+
+<a id="message-bbb216ec-9697-4ba6-ae1d-9fd1a256ae04"></a>
+## user | 2026-10-08T21:50:47.300984+00:00 | bbb216ec-9697-4ba6-ae1d-9fd1a256ae04
+
+Export node: bbb216ec-9697-4ba6-ae1d-9fd1a256ae04
+Parent node: 318a1be4-0404-463c-be10-334b69fa2775
+Active branch: true
+Content type: text
+
+### Original message body
+
+quiero centrarme en BattLeDIM: L-Town
+
+<a id="message-59f38eed-f614-4f76-a463-393df89767d2"></a>
+## assistant | 2026-10-08T21:50:56.005270+00:00 | 59f38eed-f614-4f76-a463-393df89767d2
+
+Export node: 59f38eed-f614-4f76-a463-393df89767d2
+Parent node: bbb216ec-9697-4ba6-ae1d-9fd1a256ae04
+Active branch: true
+Content type: text
+
+### Original message body
+
+Tomaremos BattLeDIM: L-Town como el único dataset del Milestone 2. Voy a revisar qué trabajos y código existen para este benchmark, especialmente los que puedan servir para tu objetivo de predecir presiones, y separaré esos antecedentes de las propuestas que serían originales de tu proyecto.
+
+<a id="message-672fb901-c03b-4690-92cd-e090e39d87c1"></a>
+## assistant | 2026-10-08T21:51:01.080945+00:00 | 672fb901-c03b-4690-92cd-e090e39d87c1
+
+Export node: 672fb901-c03b-4690-92cd-e090e39d87c1
+Parent node: 87dfee96-f16f-4f22-9c17-e2a880ab5f18
+Active branch: true
+Content type: text
+
+### Original message body
+
+Perfecto. Vamos a centrar el **Milestone 2 de DS675 exclusivamente en BattLeDIM: L-Town**, manteniendo el enfoque de tu Milestone 1: utilizar Machine Learning para predecir presiones futuras en redes de distribución de agua.
+
+## 1. Definimos el tema de investigación
+
+**Título provisional en inglés:**
+
+*Review of Machine Learning Approaches Using the BattLeDIM L-Town Dataset: Toward Short-Term Water Pressure Forecasting*
+
+<box gap={2} border radius="lg" padding={3}>
+  <text color="secondary" weight="medium" size="xs">PROBLEMA PREDICTIVO</text>
+  <title size="lg">Predecir la presión 15 minutos en el futuro</title>
+  Utilizando mediciones SCADA actuales e históricas, como presiones, caudales, demandas y nivel del tanque.
+  <divider color="subtle"/>
+  <grid columns={2} gap={3}>
+    <grid-item>
+      <text color="secondary" size="xs">Tipo de aprendizaje</text>
+      **Supervised Learning**
+    </grid-item>
+    <grid-item>
+      <text color="secondary" size="xs">Problema</text>
+      **Regression**
+    </grid-item>
+    <grid-item>
+      <text color="secondary" size="xs">Resolución temporal</text>
+      **5 minutos**
+    </grid-item>
+    <grid-item>
+      <text color="secondary" size="xs">Horizonte predictivo</text>
+      **15 minutos**
+    </grid-item>
+  </grid>
+</box>
+
+La pregunta central podría ser:
+
+*How accurately can machine learning models forecast water pressure 15 minutes ahead using historical and current SCADA measurements from the BattLeDIM L-Town dataset?*
+
+Este enfoque mantiene una continuidad clara con tu primera entrega.
+
+Hay dos aspectos importantes que debemos considerar: BattLeDIM tiene una puntuación de usabilidad de Kaggle de 3.53, inferior al requisito indicado en Milestone 1, por lo que conviene contar con la aprobación del profesor. Además, BattLeDIM fue diseñado originalmente para detectar y localizar fugas, no específicamente para predecir presiones. <Cite refs={["turn171193search5","turn171193search14"]}/> Esta diferencia puede convertirse en parte de la motivación de tu investigación.
+
+## 2. Primeros trabajos encontrados para el Milestone 2
+
+Encontré tres antecedentes especialmente relevantes para tu investigación.
+
+<box gap={3}>
+  <box gap={1}>
+    **1. <Link url="https://github.com/GardarGardarsson/GSP_for_Leak_Detection" title="Graph-Based Learning for Leak Detection"/> (2022)**
+
+    Garðarsson, Boem y Toni desarrollaron modelos Graph Convolutional Networks para reconstruir presiones y predecirlas a partir de observaciones anteriores. Evaluaron su método utilizando BattLeDIM.
+
+    Es especialmente relevante porque incluye **predicción temporal de presión** y código disponible. <Cite refs={["turn263284search25","turn563829view0"]}/>
+  </box>
+  <divider color="subtle"/>
+  <box gap={1}>
+    **2. <Link url="https://github.com/karytalks1/aquasentinel" title="AquaSentinel – Pressure Residual Modeling"/>**
+
+    Este proyecto utiliza Ridge Regression para estimar las presiones esperadas en los 33 sensores, utilizando caudal de entrada, nivel del tanque y variables temporales. Después analiza las diferencias entre presiones estimadas y observadas para detectar fugas.
+
+    Es útil para estudiar una implementación relativamente sencilla de regresión, aunque **no realiza el mismo forecasting a 15 minutos que propones**. <Cite refs={["turn142343view0"]}/>
+  </box>
+  <divider color="subtle"/>
+  <box gap={1}>
+    **3. <Link url="https://doi.org/10.1016/j.ress.2025.111494" title="Algorithm-Informed Graph Neural Networks"/> (2026)**
+
+    Zhang y Fink aplican Graph Neural Networks a L-Town y desarrollan modelos para reconstruir y predecir presiones. Incorporan información de la estructura hidráulica de la red.
+
+    Es un antecedente académico muy pertinente, aunque todavía no he verificado que el código de esta implementación esté disponible públicamente. <Cite refs={["turn623135search0","turn528334search1"]}/>
+  </box>
+</box>
+
+## 3. ¿Dónde podría estar tu contribución?
+
+La existencia de trabajos anteriores que predicen presiones significa que no sería correcto presentar la predicción de presión, por sí sola, como algo completamente nuevo.
+
+Una contribución más específica podría consistir en **evaluar la selección de variables SCADA basada en topología hidráulica para predicciones a 15 minutos**, comparando ese enfoque con modelos que utilizan todos los sensores.
+
+Para el Milestone 2, propongo esta organización:
+
+1. **Introduction and Dataset Description:** L-Town y el problema de presión.
+2. **Review of Existing Predictive Models:** análisis de los modelos y código encontrados.
+3. **Comparison of Existing Approaches:** algoritmos, variables, resultados y limitaciones.
+4. **Proposed Extension:** forecasting a 15 minutos y selección de variables basada en relaciones hidráulicas.
+5. **References:** artículos y enlaces directos al código.
+
+La fuente principal para caracterizar los datos será el <Link url="https://zenodo.org/records/4017659" title="dataset oficial de BattLeDIM en Zenodo"/>.
+
+**Mi recomendación es comenzar examinando en detalle el trabajo de Garðarsson et al. (2022)**, porque combina tres características que necesitamos: utiliza L-Town, realiza predicción de presión y proporciona código. A partir de ese trabajo podremos construir una comparación rigurosa con otras implementaciones y definir una contribución propia viable para DS675.
+
+Antes de cerrar la selección, sería importante confirmar que el profesor acepta BattLeDIM pese a su puntuación de usabilidad de Kaggle.
+
+<a id="message-bbb2114c-ba6d-40e4-aefa-f18bee9d5fed"></a>
+## user | 2026-10-08T21:52:01.113283+00:00 | bbb2114c-ba6d-40e4-aefa-f18bee9d5fed
+
+Export node: bbb2114c-ba6d-40e4-aefa-f18bee9d5fed
+Parent node: 672fb901-c03b-4690-92cd-e090e39d87c1
+Active branch: true
+Content type: text
+
+### Original message body
+
+para el milestone 2 debo buscar sobre los dos data set propuestos o solo en el que me voy a enfocar?
+
+<a id="message-e9f29ebb-36d1-4ea2-9d9b-574c41835594"></a>
+## assistant | 2026-10-08T21:52:03.825414+00:00 | e9f29ebb-36d1-4ea2-9d9b-574c41835594
+
+Export node: e9f29ebb-36d1-4ea2-9d9b-574c41835594
+Parent node: 9c932182-45e9-4f54-a375-67ce4232ae00
+Active branch: true
+Content type: text
+
+### Original message body
+
+Para el **Milestone 2 debes investigar solamente uno de los dos datasets que propusiste en Milestone 1**, específicamente aquel en el que vas a desarrollar tu Mini-Project.
+
+Las instrucciones del profesor lo indican explícitamente:
+
+> "For Milestone 2, you will write a 3-5 page report on learning models written by Kaggle (or other) developers for **one dataset** you would like to work with."
+
+Esto significa que:
+
+- **Milestone 1:** Proponías y describías dos datasets: BattLeDIM (L-Town) y BATADAL (C-Town).
+- **Milestone 2:** Seleccionas uno y revisas qué modelos de Machine Learning han desarrollado otras personas utilizando ese dataset.
+- **Milestone 3 y siguientes:** Continúas desarrollando tu propuesta con el dataset seleccionado, según las instrucciones de cada etapa.
+
+### En tu caso
+
+Como decidiste trabajar con **BattLeDIM: L-Town**, tu Milestone 2 debe centrarse en:
+
+1. Describir BattLeDIM y sus características.
+2. Buscar modelos existentes que utilicen BattLeDIM.
+3. Analizar qué problemas predictivos resuelven, qué algoritmos emplean y cómo funcionan.
+4. Incluir referencias y enlaces al código de esos modelos.
+5. Identificar oportunidades para desarrollar tu propia contribución, orientada a la predicción de presiones.
+
+**Conclusión:** No necesitas investigar BATADAL para el Milestone 2. Puedes dedicar las 3–5 páginas exclusivamente a BattLeDIM.
+
+**Una consideración importante:** En tu Milestone 1 señalaste que BattLeDIM tiene una puntuación de usabilidad de Kaggle inferior a la requerida. Por eso, conviene confirmar que el profesor aprueba tu elección antes de avanzar con el informe.
+
+<a id="message-bbb21384-9bf1-48fe-b3c3-d2023437a7f7"></a>
+## user | 2026-10-08T21:54:13.082038+00:00 | bbb21384-9bf1-48fe-b3c3-d2023437a7f7
+
+Export node: bbb21384-9bf1-48fe-b3c3-d2023437a7f7
+Parent node: e9f29ebb-36d1-4ea2-9d9b-574c41835594
+Active branch: true
+Content type: text
+
+### Original message body
+
+este fue el feedback del professor: Mini-Project Milestone 1 report: It presents two candidate datasets for a supervised regression task focused on future pressure prediction in drinking-water distribution systems.
+Andres Arango Martinez , Sep 20 at 1:48pm
+Milestone 1 Assessment
+ 
+Description: Excellent
+ 
+Presentation: Excellent
+ 
+Feedback:
+• You provide two exceptionally thorough dataset proposals, with clear provenance, record counts, feature counts and types, sampling intervals, supervised-learning tasks, predictor choices, and reasons for considering each dataset. The level of detail is very strong while remaining within the two-page limit.
+ 
+• The links to both Kaggle datasets work and point to the datasets you describe. Your additional links to the official BattLeDIM archive and BATADAL resources also work and provide strong supporting documentation.
+ 
+• For BattLeDIM, you clearly state the scale of the data: 105,120 five-minute observations in each of 2018 and 2019, giving 210,240 observations in total. You also clearly account for the 119 measurement variables: 33 pressures, 3 flows, 1 tank level, and 82 AMR demand measurements. These are primarily numerical time-series measurements.
+ 
+• BattLeDIM therefore provides far more than enough observations for training and testing complex regression models. Your proposal to predict pressure 15 minutes ahead is a well-defined supervised-learning task, and the large number of observations supports experimentation with both simpler models and more flexible approaches.
+ 
+• Your BattLeDIM target requires a small amount of target engineering: the future pressure measurement is already present in the time series, but it must be shifted relative to the current predictors to create the 15-minute-ahead prediction target. Your proposed use of current and lagged measurements is appropriate.
+ 
+• One issue to keep in mind is the Kaggle usability requirement. As you correctly acknowledge, the BattLeDIM Kaggle copy has a usability score below the requested threshold. The assignment does permit non-Kaggle datasets, and the official BattLeDIM/Zenodo release is a well-documented academic dataset, so if you select BattLeDIM, it would be best to treat the official release explicitly as your primary dataset source rather than presenting the low-usability Kaggle copy as satisfying the normal Kaggle criterion.
+ 
+• For BATADAL, you clearly state that the three principal files contain 8,761, 4,177, and 2,089 records, for 15,027 observations in total. You also correctly identify the 43 process variables: 7 tank levels, 12 pressures, 12 flows, and 12 binary actuator states. This gives a particularly clear description of both the number and types of features.
+ 
+• BATADAL also has enough observations for a substantial machine-learning project using regression, trees, ensembles, SVMs, and similar models. Its sample size is much smaller than BattLeDIM's, so extremely flexible deep-learning models would require more caution, but it is still comfortably above the minimum guideline for this project.
+ 
+• Predicting pressure one hour ahead from current and lagged process variables is an appropriate supervised regression task. As with BattLeDIM, the target is constructed by temporally shifting an existing pressure measurement rather than by inventing a new quantity.
+ 
+• Your feature-selection discussion is particularly strong. Comparing the full measurement set with a hydraulically motivated subset is a sensible and testable approach, and your explicit exclusion of future actuator information and attack labels shows good awareness of target leakage.
+ 
+• Your proposed chronological training/validation/test split is appropriate for time-series forecasting. Randomly shuffling these observations would risk allowing future information to influence training, so preserving temporal order is the correct approach.
+ 
+• MAE and RMSE are appropriate regression metrics, and comparing learned models against a persistence baseline is an excellent way to determine whether the machine-learning model actually improves on a simple forecasting strategy.
+ 
+• Both datasets are very well suited to supervised predictive learning. BattLeDIM offers a much larger sample and finer temporal resolution, while BATADAL fully satisfies the Kaggle usability requirement and provides a somewhat more compact modeling problem. Either could support a strong project, with the usability issue being the main practical consideration for BattLeDIM.
+ 
+• Your report is exceptionally clear, polished, well organized, and professionally presented. Your name is clearly included, the comparison table is useful rather than decorative, and the report makes very effective use of the available two-page space.
+
+<a id="message-aeec03f1-b5a1-4249-bb09-24e8b5d92037"></a>
+## assistant | 2026-10-08T21:54:19.990884+00:00 | aeec03f1-b5a1-4249-bb09-24e8b5d92037
+
+Export node: aeec03f1-b5a1-4249-bb09-24e8b5d92037
+Parent node: b4115157-4b04-4b6f-808a-ed815ba282cd
+Active branch: true
+Content type: text
+
+### Original message body
+
+Este feedback del profesor es muy importante para el Milestone 2 porque **resuelve prácticamente nuestra principal preocupación sobre BattLeDIM: L-Town** y, además, nos da indicaciones concretas para continuar el proyecto.
+
+Mi interpretación es que podemos avanzar con **BattLeDIM como el dataset seleccionado**, sin necesidad de investigar también BATADAL.
+
+## 1. ¿El profesor acepta BattLeDIM?
+
+El comentario más importante es este:
+
+> "The assignment does permit non-Kaggle datasets, and the official BattLeDIM/Zenodo release is a well-documented academic dataset, so if you select BattLeDIM, it would be best to treat the official release explicitly as your primary dataset source."
+
+Esto significa que:
+
+- El profesor reconoce que la puntuación de usabilidad de Kaggle es inferior al requisito.
+- Confirma que la actividad permite utilizar datasets de fuentes distintas de Kaggle.
+- Recomienda utilizar **la versión oficial de BattLeDIM publicada en Zenodo como fuente principal**.
+- Considera que BattLeDIM tiene suficientes observaciones para desarrollar modelos de regresión, incluso modelos complejos.
+
+Aunque no dice literalmente "BattLeDIM is approved", el feedback es claramente favorable a su selección y explica cómo manejar el requisito de usabilidad.
+
+**Por lo tanto, no veo necesario cambiar a BATADAL únicamente por su puntuación de Kaggle.**
+
+## 2. ¿Qué debemos conservar de Milestone 1?
+
+El profesor destacó positivamente estos elementos, que conviene mantener como fundamento del proyecto:
+
+| Elemento | Decisión para Milestone 2 |
+|---|---|
+| Dataset | BattLeDIM: L-Town, versión oficial de Zenodo |
+| Predictive task | Pressure forecasting 15 minutes ahead |
+| Learning type | Supervised regression |
+| Inputs | Current and lagged SCADA measurements |
+| Target | Future pressure at a selected node |
+| Target engineering | Desplazar la variable de presión tres observaciones hacia adelante |
+| Data splitting | Chronological train/validation/test |
+| Evaluation | MAE y RMSE |
+| Baseline | Persistence model |
+| Potential contribution | Hydraulic topology-informed feature selection |
+
+Hay algo especialmente relevante en el comentario del profesor sobre *target engineering*.
+
+Dado que BattLeDIM contiene observaciones cada cinco minutos, predecir 15 minutos hacia adelante implica construir la variable objetivo de esta forma:
+
+\[
+y_t=P_{t+3}
+\]
+
+Donde \(P_{t+3}\) representa la presión registrada tres intervalos después del instante actual.
+
+Es decir, no necesitamos obtener una nueva variable externa: debemos organizar adecuadamente las mediciones temporales existentes.
+
+## 3. ¿Cómo influye este feedback en el Milestone 2?
+
+El profesor elogió particularmente tu propuesta de comparar todas las variables disponibles con un subconjunto seleccionado a partir de relaciones hidráulicas.
+
+Esto es importante porque podemos desarrollar el informe alrededor de dos preguntas complementarias:
+
+**Pregunta 1 — Review of Existing Work**
+
+*What machine learning approaches have been developed using the BattLeDIM L-Town dataset, and how do they use SCADA measurements and hydraulic network information?*
+
+**Pregunta 2 — Potential Research Extension**
+
+*Can hydraulically informed feature selection improve short-term pressure forecasting compared with models using all available SCADA measurements?*
+
+La primera responde directamente a lo que exige el Milestone 2: investigar soluciones existentes.
+
+La segunda nos permite comenzar a plantear una contribución original para el proyecto final.
+
+## 4. Estructura que recomiendo para tu Milestone 2
+
+| Sección | Extensión aproximada |
+|---|---|
+| 1. Introduction and Dataset Description | ¾ página |
+| 2. Review of Existing Machine Learning Models | 1½–2 páginas |
+| 3. Comparison and Limitations of Existing Approaches | ¾ página |
+| 4. Proposed Extension: Pressure Forecasting and Feature Selection | ¾–1 página |
+| 5. References | Según el espacio disponible |
+
+En la revisión de modelos debemos distinguir claramente entre trabajos de detección de fugas, reconstrucción de presiones y predicción futura de presiones. Los tres pueden aportar información, pero no resuelven exactamente el mismo problema.
+
+También debemos incluir **enlaces reales al código** de los modelos revisados, tal como exige la actividad.
+
+---
+
+## 5. Mi recomendación para avanzar
+
+Con este feedback, ya tenemos una dirección bastante definida:
+
+<box border radius="lg" padding={3} gap={2}>
+  <text color="secondary" weight="medium" size="xs">MILESTONE 2 — PROPOSED FOCUS</text>
+  **Review of Existing Machine Learning Approaches for the BattLeDIM L-Town Dataset**
+
+  <divider color="subtle"/>
+  **Primary dataset:** Official BattLeDIM/Zenodo release
+
+  **Predictive objective:** 15-minute-ahead water pressure forecasting
+
+  **Research direction:** Comparing machine learning models and investigating topology-informed feature selection
+</box>
+
+**El próximo paso debería ser una revisión rigurosa de los notebooks de Kaggle, repositorios de GitHub y artículos académicos que realmente utilicen BattLeDIM.** No deberíamos empezar a redactar las 3–5 páginas hasta identificar y verificar los trabajos más relevantes.
+
+Un detalle importante: **el feedback del profesor no nos exige implementar todavía un modelo propio**. En esta etapa debemos demostrar que conocemos el trabajo existente, comprendemos sus métodos y podemos identificar una oportunidad para aportar algo nuevo.
+
+Con esta orientación podemos preparar un Milestone 2 que mantenga la continuidad con tu primera entrega y aproveche directamente las fortalezas que el profesor destacó.
+
+<a id="message-bbb219c5-9b51-4fe5-8e73-e9416fc79e72"></a>
+## user | 2026-10-08T22:04:07.694108+00:00 | bbb219c5-9b51-4fe5-8e73-e9416fc79e72
+
+Export node: bbb219c5-9b51-4fe5-8e73-e9416fc79e72
+Parent node: aeec03f1-b5a1-4249-bb09-24e8b5d92037
+Active branch: true
+Content type: text
+
+### Original message body
+
+Crea un prompt claro para codex, para hacer una revisión rigurosa de los notebooks de Kaggle, repositorios de GitHub y artículos académicos que realmente utilicen BattLeDIM. en formato json y en ingles.
+
+<a id="message-5449360a-ee76-4c5e-8dd7-badf20adcd92"></a>
+## assistant | 2026-10-08T22:04:21.890385+00:00 | 5449360a-ee76-4c5e-8dd7-badf20adcd92
+
+Export node: 5449360a-ee76-4c5e-8dd7-badf20adcd92
+Parent node: e7832081-9e7c-4ab4-8a20-e751ed126db1
+Active branch: true
+Content type: text
+
+### Original message body
+
+```json
+{
+  "role": "Senior Machine Learning Research Analyst and Scientific Code Reviewer",
+  "project": {
+    "name": "NJIT DS675 - Machine Learning Mini-Project",
+    "milestone": "Milestone 2 - Review Existing Work",
+    "dataset": "BattLeDIM: L-Town",
+    "primary_source": "Official BattLeDIM dataset published on Zenodo",
+    "research_topic": "Machine Learning for Short-Term Pressure Forecasting in Drinking-Water Distribution Networks",
+    "learning_type": "Supervised Learning",
+    "prediction_task": "Regression",
+    "forecast_horizon": "15 minutes",
+    "sampling_interval": "5 minutes",
+    "dataset_characteristics": {
+      "observations": 210240,
+      "years": [2018, 2019],
+      "measurement_variables": 119,
+      "pressure_sensors": 33,
+      "flow_measurements": 3,
+      "tank_level_measurements": 1,
+      "AMR_demand_measurements": 82
+    }
+  },
+  "primary_objective": "Conduct a rigorous, evidence-based literature and code review of publicly available Kaggle notebooks, GitHub repositories, and peer-reviewed academic publications that genuinely use the BattLeDIM L-Town dataset. Identify existing machine learning approaches, examine their implementations, evaluate their relevance to short-term water pressure forecasting, and identify defensible opportunities for an original supervised-learning contribution.",
+  "research_scope": {
+    "dataset_requirement": "Focus exclusively on BattLeDIM L-Town. Do not include BATADAL C-Town or other water distribution datasets as primary studies.",
+    "sources": [
+      "Kaggle notebooks and public datasets",
+      "GitHub repositories containing executable implementations",
+      "Peer-reviewed journal articles",
+      "Conference papers and academic preprints",
+      "Official BattLeDIM documentation and Zenodo resources"
+    ],
+    "search_terms": [
+      "BattLeDIM L-Town machine learning",
+      "BattLeDIM pressure prediction",
+      "L-Town pressure forecasting",
+      "BattLeDIM supervised regression",
+      "BattLeDIM time series prediction",
+      "BattLeDIM GitHub Python",
+      "BattLeDIM Kaggle notebook",
+      "L-Town graph neural networks",
+      "BattLeDIM pressure reconstruction",
+      "BattLeDIM hydraulic topology feature selection",
+      "L-Town leak detection machine learning"
+    ],
+    "search_priority": [
+      "Studies performing actual future pressure forecasting",
+      "Studies predicting or reconstructing pressure measurements",
+      "Supervised regression models using L-Town SCADA measurements",
+      "Graph-based machine learning models incorporating hydraulic topology",
+      "Leak detection studies that provide reusable predictive modeling techniques"
+    ]
+  },
+  "research_tasks": [
+    {
+      "id": 1,
+      "title": "Discover and Verify Existing Work",
+      "instructions": [
+        "Search Kaggle, GitHub, academic databases, publisher websites, Google Scholar where accessible, and official BattLeDIM resources.",
+        "Identify studies and implementations that explicitly use BattLeDIM L-Town.",
+        "Verify actual dataset usage by examining notebooks, source code, data-loading instructions, methods sections, or experimental descriptions.",
+        "Do not classify a source as verified merely because it mentions BattLeDIM in its title, abstract, or README.",
+        "Distinguish original studies from derivative repositories and duplicated notebooks.",
+        "Record exact URLs, authors, publication dates, repository locations, and available identifiers such as DOIs.",
+        "Document inaccessible sources instead of assuming their content."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Classify Predictive Learning Tasks",
+      "instructions": [
+        "Identify the actual machine learning problem addressed by each verified study.",
+        "Classify each task as future pressure forecasting, pressure reconstruction, pressure estimation, leak detection, leak localization, anomaly detection, or another clearly defined task.",
+        "Distinguish regression from classification, clustering, and other learning paradigms.",
+        "For forecasting studies, identify the forecast horizon, prediction target, historical input window, and temporal resolution.",
+        "Do not describe contemporaneous pressure reconstruction or leak detection as future pressure forecasting.",
+        "Explain how each approach could or could not be adapted to 15-minute-ahead pressure forecasting."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Inspect Actual Implementations",
+      "instructions": [
+        "Open and inspect the source code of relevant Kaggle notebooks and GitHub repositories when accessible.",
+        "Identify the implemented algorithms, model architectures, libraries, and training procedures.",
+        "Document data preprocessing, missing-value treatment, normalization, scaling, feature engineering, and feature selection.",
+        "Identify how input features and target variables are constructed.",
+        "Determine whether temporal lags, rolling windows, or hydraulic network relationships are used.",
+        "Examine train, validation, and test splitting strategies.",
+        "Check for potential temporal leakage, target leakage, or improper random splitting of time-series observations.",
+        "Identify evaluation metrics, baselines, hyperparameter tuning methods, and reported results.",
+        "Provide direct links to relevant scripts or notebook sections whenever possible.",
+        "Clearly distinguish findings verified in code from claims reported only in publications or documentation."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Analyze Academic Contributions",
+      "instructions": [
+        "Identify the main scientific contribution of each relevant academic study.",
+        "Explain the proposed methodology in clear, technically accurate language.",
+        "Determine whether experimental results were obtained specifically on BattLeDIM L-Town.",
+        "Document the experimental setup and important assumptions.",
+        "Identify whether the authors provide public source code, trained models, or reproducibility instructions.",
+        "Evaluate limitations related to generalization, computational complexity, interpretability, and dependence on network topology.",
+        "Do not assume a paper's claimed improvements are independently reproducible without adequate evidence."
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Compare Existing Approaches",
+      "instructions": [
+        "Construct a structured comparison of the verified studies.",
+        "Compare predictive tasks, algorithms, input features, temporal information, hydraulic topology usage, evaluation methodology, and code availability.",
+        "Include reported quantitative performance only when the original source provides it.",
+        "Preserve the original metrics, target definitions, units, evaluation periods, and forecasting horizons.",
+        "Do not directly rank numerical results obtained from different tasks, data subsets, or evaluation protocols as if they were comparable.",
+        "Identify strengths, weaknesses, and methodological gaps supported by evidence."
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Identify Potential Original Contributions",
+      "instructions": [
+        "Evaluate opportunities for extending existing BattLeDIM models toward supervised prediction of pressure 15 minutes ahead.",
+        "Investigate whether topology-informed feature selection has already been applied to this exact forecasting task.",
+        "Consider comparing all available SCADA variables against a hydraulically motivated subset of measurements.",
+        "Consider interpretable regression models and nonlinear alternatives only when technically justified.",
+        "Identify opportunities involving lagged features, temporal patterns, model interpretability, computational efficiency, and forecasting robustness.",
+        "Distinguish established prior work from genuinely untested proposals.",
+        "Do not claim novelty merely because a technique is absent from the limited set of inspected sources.",
+        "Rank proposed extensions by feasibility, relevance, methodological rigor, and potential originality."
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Develop a Preliminary Experimental Framework",
+      "instructions": [
+        "Define pressure at one selected monitoring node 15 minutes ahead as a candidate regression target.",
+        "Use the five-minute measurement interval to construct the target by shifting pressure three observations forward.",
+        "Restrict predictors to measurements and engineered features available at prediction time.",
+        "Preserve chronological order when separating training, validation, and test observations.",
+        "Propose MAE and RMSE as principal regression metrics.",
+        "Include a persistence baseline that predicts future pressure from the latest available pressure measurement.",
+        "Consider baseline regression models and more flexible approaches supported by the literature review.",
+        "Propose a controlled comparison between all-network features and topology-informed feature subsets.",
+        "Identify methodological considerations such as overlapping time windows, data leakage, sensor selection, and abnormal operating periods.",
+        "Treat this framework as a preliminary research proposal rather than an implemented or validated experiment."
+      ]
+    }
+  ],
+  "source_verification_protocol": {
+    "evidence_levels": {
+      "A": "Dataset usage and methodology directly verified in accessible code and supporting documentation.",
+      "B": "Dataset usage and methodology verified in a full academic paper, but implementation code is unavailable or not verified.",
+      "C": "Dataset usage supported by a credible abstract, repository description, or secondary source, but primary technical evidence is incomplete.",
+      "D": "Dataset usage cannot be established or source is irrelevant."
+    },
+    "requirements": [
+      "Assign an evidence level to every candidate source.",
+      "Prioritize A and B sources for the final academic review.",
+      "Use C sources only with explicit qualifications.",
+      "Exclude D sources from the substantive analysis.",
+      "Verify that linked code corresponds to the cited paper or claimed implementation.",
+      "Check whether repositories are accessible and contain meaningful implementation files.",
+      "Never fabricate citations, URLs, model results, filenames, experimental details, or performance metrics.",
+      "Mark unavailable information as Not reported, Not verified, or Not accessible.",
+      "Record the date each online source was accessed."
+    ]
+  },
+  "required_comparison_fields": [
+    "Study title",
+    "Authors",
+    "Publication year",
+    "Source type",
+    "DOI or publication URL",
+    "Code repository or notebook URL",
+    "Evidence level",
+    "Verified BattLeDIM usage",
+    "Machine learning task",
+    "Prediction target",
+    "Forecast horizon if applicable",
+    "Algorithm or architecture",
+    "Input variables",
+    "Feature engineering",
+    "Use of hydraulic topology",
+    "Training and evaluation strategy",
+    "Performance metrics",
+    "Reported results",
+    "Code availability",
+    "Reproducibility limitations",
+    "Relevance to 15-minute pressure forecasting"
+  ],
+  "deliverables": {
+    "output_directory": "research/milestone_2",
+    "files": [
+      {
+        "filename": "01_source_inventory.md",
+        "description": "Comprehensive inventory of candidate sources, verification status, evidence levels, working links, and exclusion reasons."
+      },
+      {
+        "filename": "02_verified_studies.md",
+        "description": "Detailed technical reviews of the strongest verified studies, including models, implementations, features, experimental procedures, and source-specific evidence."
+      },
+      {
+        "filename": "03_comparison_matrix.csv",
+        "description": "Structured comparison table using the required comparison fields."
+      },
+      {
+        "filename": "04_research_gaps.md",
+        "description": "Evidence-based analysis of existing limitations, open research questions, and potential contributions."
+      },
+      {
+        "filename": "05_milestone_2_draft.md",
+        "description": "Academic draft of the 3-5 page Milestone 2 report, excluding references if needed, based exclusively on verified findings."
+      },
+      {
+        "filename": "06_references.md",
+        "description": "Complete reference list with publication information, DOIs, working URLs, code links, and verification notes."
+      }
+    ],
+    "report_structure": [
+      "1. Introduction and Dataset Description",
+      "2. Review of Existing Machine Learning Approaches",
+      "3. Comparative Analysis and Limitations",
+      "4. Potential Original Contribution",
+      "5. References"
+    ]
+  },
+  "quality_requirements": [
+    "Use formal, clear academic English appropriate for a graduate Machine Learning course.",
+    "Prioritize technical accuracy, evidence, and critical analysis over quantity of references.",
+    "Explain model operation, not merely algorithm names.",
+    "Explicitly separate pressure forecasting from pressure reconstruction and leak detection.",
+    "Avoid unsupported claims of originality or superiority.",
+    "Cite every important technical claim using an identifiable source.",
+    "Include direct working links to source code wherever available.",
+    "Avoid plagiarism and excessive quotation.",
+    "Explain methods not yet covered in introductory machine learning when relevant.",
+    "Make the final review directly useful for selecting and designing a feasible original predictive-learning extension."
+  ],
+  "execution_constraints": {
+    "internet_access": "Use available browsing, search, repository, and academic retrieval tools. If internet access is unavailable, explicitly report the limitation and do not pretend sources were verified.",
+    "repository_safety": "Do not modify existing project files outside the designated output directory.",
+    "implementation": "Do not implement or train a new forecasting model at this stage.",
+    "dependencies": "Do not install unnecessary packages or download large datasets without a documented need.",
+    "minimum_studies": "Aim to identify at least three substantive, independently verified studies when available. Never invent additional studies to reach this target.",
+    "scope_control": "Keep BattLeDIM L-Town as the central dataset throughout the investigation."
+  },
+  "completion_criteria": [
+    "The relevant Kaggle, GitHub, and academic sources have been systematically investigated.",
+    "Included studies have documented evidence of actual BattLeDIM L-Town usage.",
+    "The most relevant available source code has been inspected.",
+    "Forecasting, reconstruction, and leak detection have been correctly distinguished.",
+    "The existing models have been compared using scientifically appropriate criteria.",
+    "All links, citations, findings, and uncertainties are documented.",
+    "At least one feasible potential contribution to 15-minute-ahead pressure forecasting has been identified.",
+    "A coherent, evidence-based Milestone 2 report draft has been prepared."
+  ],
+  "final_instruction": "Begin with source discovery and verification before drafting the report. Do not rely on unverified search snippets or inferred model capabilities. First establish which studies genuinely use BattLeDIM L-Town, then inspect their implementations, analyze their methods, and develop the comparative literature review. Report any significant evidence gaps, unresolved questions, or limitations explicitly. The objective is academic rigor and reproducibility, not merely producing a polished document."
+}
+```
+

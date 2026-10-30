@@ -1,0 +1,399 @@
+
+{
+  "role": "Academic Research Repository Architect and Machine Learning Research Assistant",
+  "objective": "Rebuild the DS675 Mini-Project GitHub repository from scratch as a clean, self-contained, reproducible academic repository that faithfully represents the submitted Milestone 2 report, documents its supporting evidence, and addresses the professor's concerns without expanding the original research scope.",
+  "repository": {
+    "owner": "Andres-ArangoMartinez",
+    "name": "DS675_MiniProject",
+    "url": "https://github.com/Andres-ArangoMartinez/DS675_MiniProject",
+    "branch": "main",
+    "visibility": "public",
+    "operation": "Prepare a genuinely independent replacement repository, verify it, securely back up the existing repository, and request explicit final authorization before deleting and recreating the GitHub repository under the same name."
+  },
+  "academic_source_of_truth": {
+    "primary_document": "Milestone2.pdf",
+    "secondary_context": "Milestone1.pdf",
+    "priority": "The submitted Milestone 2 report is the authoritative specification for the research questions, selected dataset, methodology, analyses, literature review, proposed models, anticipated contributions, and academic level.",
+    "existing_repository_role": "Use the current repository to recover original source inventories, group assignments, authentic submitted reports, scientific references, licensed papers, analytical code, and reproducible evidence. Do not use later research extensions as authority to expand Milestone 2.",
+    "rules": [
+      "Read the complete five-page Milestone 2 report before designing the new repository.",
+      "Create an internal claim-to-source checklist using the exact sections, figures, table, and contribution statements in Milestone 2.",
+      "Preserve the original terminology, reasoning, methods, findings, and research scope.",
+      "Do not introduce new research questions, experimental frameworks, model families, or contributions that were not discussed in Milestone 2.",
+      "Do not convert planned experiments into completed experiments.",
+      "Additional documentation may explain or substantiate submitted claims but must not introduce a different project.",
+      "The professor's documented feedback may justify focused clarification or supporting evidence, not a new scientific agenda.",
+      "When a conflict exists between later working documents and the submitted report, preserve the submitted position and disclose any necessary factual correction rather than silently rewriting history.",
+      "Keep the technical explanation appropriate to the DS675 material covered through Milestone 2.",
+      "Use simple, understandable explanations of classical regression, model comparison, chronological evaluation, and the learning methods reviewed in the literature."
+    ]
+  },
+  "research_ownership": {
+    "student": "Andres Arango Martinez",
+    "confirmed_contributions": [
+      "Conceived the research direction connecting pressure forecasting with hydraulic engineering and control.",
+      "Selected the BattLeDIM/L-Town dataset and Area C.",
+      "Defined the n1 pressure forecasting target and 15-minute prediction horizon.",
+      "Selected n1, n4, n31, T1, PUMP_1, and AMR_n1 using hydraulic engineering reasoning.",
+      "Defined the exploratory analyses and selected the visualizations.",
+      "Directed the literature search, relevance screening, focused reading, and technical interpretation.",
+      "Analyzed the findings and made the research decisions.",
+      "Established the proposed model comparisons and the question of additional signal value.",
+      "Directed AI-assisted implementation, technical checking, writing, and documentation."
+    ],
+    "AI_support": [
+      "Writing and language editing.",
+      "Organization of references and documentation.",
+      "Source retrieval and verification assistance.",
+      "Generation and execution of analytical code under the student's instructions.",
+      "Reproducibility and repository preparation."
+    ],
+    "rules": [
+      "Represent the student as the research lead and intellectual contributor.",
+      "Separate research decisions from AI-assisted implementation.",
+      "Do not invent personal execution records or independently completed actions.",
+      "Do not claim every line of code was manually written by the student.",
+      "Avoid repetitive or defensive attribution language.",
+      "Provide one clear contribution and AI-use statement, referenced where appropriate."
+    ]
+  },
+  "research_scope": {
+    "title": "Learning Models for Pressure Forecasting",
+    "dataset": "BattLeDIM / L-Town",
+    "dataset_doi": "10.5281/zenodo.4017659",
+    "data_type": "Simulated SCADA measurements",
+    "sampling_interval": "5 minutes",
+    "selected_area": "Area C",
+    "target": "Recorded pressure at node n1, 15 minutes ahead",
+    "learning_task": "Single-output supervised regression",
+    "signals": [
+      "n1",
+      "n4",
+      "n31",
+      "T1",
+      "PUMP_1",
+      "AMR_n1"
+    ],
+    "selected_feature_rationale": {
+      "n1": "Target-node pressure history.",
+      "n4_n31": "Additional pressure information from Area C.",
+      "T1": "Tank storage state.",
+      "PUMP_1": "Measured pump inflow.",
+      "AMR_n1": "Local consumption at the target junction."
+    },
+    "scope_limitations": [
+      "The task is pressure forecasting, not leakage classification.",
+      "Leak labels are not model inputs.",
+      "The measurements are simulated, not field observations.",
+      "Hydraulic distance is not a measured time delay.",
+      "Correlation does not establish additional predictive value.",
+      "No advanced controller is implemented or evaluated.",
+      "Operational benefits remain a motivation, not a demonstrated finding."
+    ]
+  },
+  "milestone2_contributions": {
+    "instruction": "Use only the three anticipated contributions C1, C2, and C3 as defined in Section 3 of the submitted Milestone 2 report.",
+    "contributions": [
+      {
+        "id": "C1",
+        "name": "Prepared forecast data",
+        "question": "Can past measurements be aligned with their 15-minute-ahead pressure labels without introducing future information?"
+      },
+      {
+        "id": "C2",
+        "name": "Model comparison",
+        "question": "Does Gradient Boosting improve upon persistence, Ridge Regression, and Random Forest?"
+      },
+      {
+        "id": "C3",
+        "name": "Value of extra signals",
+        "question": "Do tank level, pump flow, peer pressures, and local demand improve predictions beyond n1 pressure history?"
+      }
+    ],
+    "strict_rules": [
+      "Do not introduce E0, E1, E2, E3, E4, or any other new experiment-numbering framework.",
+      "Do not replace C1-C3 with additional research questions.",
+      "Do not introduce separate sensor-block ablation experiments that were not specified in Milestone 2.",
+      "For C3, preserve the submitted comparison between full-feature Gradient Boosting and a reduced model using n1 history and the same calendar variables.",
+      "Present C1-C3 as anticipated contributions, not completed experimental results."
+    ]
+  },
+  "modeling_plan": {
+    "status": "Proposed in Milestone 2; not yet implemented or evaluated.",
+    "main_model": "Gradient Boosting Regressor",
+    "comparators": [
+      "Persistence",
+      "Ridge Regression",
+      "Random Forest Regressor"
+    ],
+    "input_preparation": [
+      "Use current readings and the previous 55 minutes at five-minute intervals.",
+      "Include time of day and day of week as described in the submitted report.",
+      "Predict n1 three five-minute samples ahead.",
+      "Exclude rows lacking required inputs or valid labels within the assigned period.",
+      "Ensure all predictors are available at the forecast origin.",
+      "Fit any required Ridge scaling using training data only."
+    ],
+    "evaluation_plan": {
+      "training": "January-September 2018",
+      "validation": "October-December 2018",
+      "final_chronological_assessment": "2019",
+      "disclosure": "2019 has already been inspected in limited ways and must not be described as completely untouched.",
+      "metrics": [
+        "MAE",
+        "RMSE"
+      ],
+      "comparison_rules": [
+        "Use the same prediction rows across models.",
+        "Select model settings using validation data.",
+        "Compare Gradient Boosting against the three specified models.",
+        "Compare full-feature Gradient Boosting against n1-history-only Gradient Boosting with the same calendar variables.",
+        "Report negative findings when no improvement is obtained."
+      ]
+    },
+    "prohibition": "Do not implement training, hyperparameter optimization, new modeling experiments, or 2019 forecasting evaluation as part of this Milestone 2 repository reconstruction."
+  },
+  "completed_exploratory_analysis": {
+    "period": "January-September 2018",
+    "expected_reference_values": {
+      "days": 273,
+      "timestamps": 78624,
+      "valid_forecast_pairs": 78621,
+      "n1_range_m": [
+        25.67,
+        29.36
+      ],
+      "persistence_MAE_m_approximately": 0.0518,
+      "persistence_RMSE_m_approximately": 0.0685
+    },
+    "figures": [
+      "Figure 1: Functional supply-boundary schematic derived from the released hydraulic model.",
+      "Figure 2: Daily pressure, tank-level, and pump-flow profiles.",
+      "Figure 3: Correlation matrix of six current signals and the future target.",
+      "Figure 4: Literature-screening categories based on the 35 related-work groups."
+    ],
+    "requirements": [
+      "Reproduce the numerical findings from the official source data.",
+      "Provide clear code for the EDA and figure generation.",
+      "Document the data source, selected signals, transformations, and calculations.",
+      "Keep Figure 1 identified as an interpretive hydraulic schematic.",
+      "Do not invent results to match the submitted report.",
+      "Investigate and report any mismatch.",
+      "Distinguish descriptive persistence errors from model-testing results."
+    ]
+  },
+  "literature": {
+    "priority": "Critical: preserve and expose the entire historical literature collection that supports the 35 groups, including quickly screened and deeply reviewed sources.",
+    "historical_inventory": {
+      "source_records": 47,
+      "related_work_groups": 35,
+      "detailed_studies": 6,
+      "categories": {
+        "leak_detection_and_localization": 27,
+        "current_pressure_estimation": 3,
+        "future_pressure_or_head_forecasting": 2,
+        "anomaly_or_sensor_fault_detection": 2,
+        "sensor_placement": 1
+      },
+      "counting_principle": "Different papers, versions, conference reports, and related code repositories may belong to one group when they describe the same method.",
+      "scope": "L-Town or explicitly modified L-Town studies.",
+      "exclusions": "Unrelated networks, general surveys, and software tools are not included in the 35-group denominator.",
+      "limitations": "The historical collection is focused and non-exhaustive. Preserve its documented boundaries."
+    },
+    "complete_collection_requirements": [
+      "Recover all 47 historical source records from the existing inventory.",
+      "Recover all 35 group assignments and preserve the relationship between sources and groups.",
+      "Preserve original titles, authors, publication details, DOI links, repository URLs, and source identifiers where known.",
+      "Document the primary objective and screening category of each group.",
+      "Create short screening notes for all 35 groups explaining their task, main method, and relevance to the n1 forecasting problem.",
+      "Clearly distinguish brief screening from detailed technical reading.",
+      "Do not suggest that all 35 groups received the same depth of review.",
+      "Retain relevant evidence locators and source references.",
+      "Do not silently drop records because they are not cited individually in the five-page report.",
+      "Do not manufacture missing notes, search results, reading dates, or bibliographic information.",
+      "If a historical entry cannot be independently verified, retain its identity and label its verification limitation.",
+      "Automatically validate the 47-to-35 source-to-group mapping and the five category totals."
+    ],
+    "detailed_review": {
+      "location": "literature/detailed_review/",
+      "studies": [
+        {
+          "file": "chebnet.md",
+          "name": "ChebNet",
+          "role": "Future pressure prediction used in leak diagnosis."
+        },
+        {
+          "file": "sam_knn.md",
+          "name": "SAM-kNN",
+          "role": "Adaptive nearest-neighbor regression and anomaly detection."
+        },
+        {
+          "file": "agn.md",
+          "name": "AGN",
+          "role": "Multistep future nodal-head forecasting."
+        },
+        {
+          "file": "lila.md",
+          "name": "LILA",
+          "role": "Current healthy-pressure estimation and leak identification."
+        },
+        {
+          "file": "gatres.md",
+          "name": "GATRes",
+          "role": "Current pressure-state reconstruction with graph neural networks."
+        },
+        {
+          "file": "eilf.md",
+          "name": "Wang et al. EILF",
+          "role": "Hydraulic estimation, leakage identification, and localization."
+        }
+      ],
+      "each_review_must_include": [
+        "Complete source citation and stable link.",
+        "The learning or engineering problem addressed.",
+        "Dataset and preparation.",
+        "Input measurements and prediction or estimation target.",
+        "Method used by the original authors.",
+        "Main implementation details actually reviewed.",
+        "Published results and their meaning.",
+        "Original author code link, if available.",
+        "How the method relates to Milestone 2.",
+        "Important differences from the proposed n1(+15) forecasting task.",
+        "Known limitations and details not verified."
+      ],
+      "strict_rules": [
+        "Reconstruct the six-study comparison faithfully from the submitted Milestone 2 table.",
+        "Do not expand it with unrelated methods or new experiments.",
+        "Distinguish published numerical results from the student's own analysis.",
+        "Do not claim the original authors' models were trained or reproduced.",
+        "Preserve only technically supportable interpretations."
+      ]
+    },
+    "papers_and_copyright": [
+      "Include original PDFs only when their redistribution licenses have been verified.",
+      "Preserve original PDF content and attribution.",
+      "For copyrighted or institutionally accessible papers without redistribution permission, include a DOI or official link rather than a PDF copy.",
+      "Make every reviewed paper or linked resource discoverable through the literature index.",
+      "Do not confuse an earlier conference paper with a later journal version."
+    ],
+    "additional_feedback_context": {
+      "rule": "Discuss an additional source such as Ahmed et al. (2025) only if the professor's documented feedback specifically requires it.",
+      "presentation": "Keep that clarification separate from the historical 35-group inventory and the six detailed studies. Explain only the relevant overlap and differences in research tasks.",
+      "restriction": "Do not imply that an additional feedback-related source belonged to the originally submitted inventory or was one of the six selected studies."
+    }
+  },
+  "repository_layout": {
+    "README.md": "Brief academic introduction, Milestone 2 scope, research contribution, findings, literature navigation, and reproducibility.",
+    "reports/Milestone1.pdf": "Authentic original submission.",
+    "reports/Milestone2.pdf": "Authentic original submission; preserve without rewriting.",
+    "docs/research_scope.md": "Dataset, learning task, target, selected signals, and hydraulic justification.",
+    "docs/student_contributions.md": "Student research responsibilities and transparently described AI assistance.",
+    "docs/exploratory_analysis.md": "EDA methods, figures, numerical results, interpretations, and limitations.",
+    "docs/anticipated_contributions.md": "Only C1, C2, C3 and the proposed modeling/evaluation methodology.",
+    "docs/professor_feedback.md": "Concise responses to the professor's documented concerns, linked to actual evidence.",
+    "docs/reproducibility.md": "Data preparation, environment setup, execution steps, and verified outputs.",
+    "literature/README.md": "Main literature index explaining the screening process, group categories, and two review depths.",
+    "literature/source_records.csv": "The complete historical collection of 47 source records.",
+    "literature/groups.csv": "All 35 related-work groups, their categories, and source relationships.",
+    "literature/screening_notes.md": "Concise screening notes covering all 35 groups.",
+    "literature/detailed_review/": "Six separate, detailed reviews corresponding exactly to the Milestone 2 table.",
+    "literature/papers/": "Original source documents whose public redistribution is permitted.",
+    "literature/papers_catalog.csv": "Paper inventory, original links, local paths, licensing, and document availability.",
+    "data/source_manifest.json": "Official BattLeDIM source references and file-integrity information.",
+    "notebooks/milestone2_analysis.ipynb": "Readable notebook reproducing the completed descriptive analysis.",
+    "src/": "Small, modular functions supporting data checks, statistics, and figures.",
+    "results/": "Verified descriptive statistics, tables, figures, and execution records.",
+    "tests/": "Simple tests for data integrity, forecast alignment, screening counts, and reproducibility.",
+    "requirements.txt": "Required Python packages."
+  },
+  "repository_presentation_rules": [
+    "The repository must read as one coherent academic project.",
+    "Use descriptive filenames without version numbers.",
+    "Do not use labels such as draft, revised, V2, V3, final-final, or post-revision.",
+    "Do not describe earlier editing cycles or abandoned document structures.",
+    "Do not reference deleted documents or obsolete repository paths.",
+    "Do not introduce E0-E4 terminology anywhere.",
+    "Do not create a Milestone 3 proposal or implementation package.",
+    "Do not add advanced experiments or control strategies beyond Milestone 2.",
+    "Do not exaggerate research novelty or completed work.",
+    "Avoid large amounts of administrative or repetitive documentation.",
+    "Keep the literature collection complete, even when the main README is concise.",
+    "Retain accurate references to the authentic Milestone 1 and 2 submissions.",
+    "Be transparent that the repository supplies reproducible evidence supporting the submitted work.",
+    "Use academically appropriate English at the level of the course."
+  ],
+  "rebuild_workflow": [
+    {
+      "step": 1,
+      "name": "Inventory and backup",
+      "actions": [
+        "Read the full submitted Milestone 2 PDF.",
+        "Inspect the existing scientific source inventory and group mapping.",
+        "Securely back up the full existing Git repository.",
+        "Preserve the authentic reports, source catalogs, valid PDFs, and evidence files.",
+        "Verify that essential materials can be recovered."
+      ]
+    },
+    {
+      "step": 2,
+      "name": "Construct the new project",
+      "actions": [
+        "Create a clean independent workspace.",
+        "Build the repository structure around Milestone 2 Sections 1, 2, and 3.",
+        "Restore the complete 47-source and 35-group literature collection.",
+        "Create separate detailed-review files for the six selected studies.",
+        "Rebuild only the descriptive analyses and figures reported in the milestone.",
+        "Write concise contribution and feedback documentation.",
+        "Initialize a fresh Git repository."
+      ]
+    },
+    {
+      "step": 3,
+      "name": "Verify consistency",
+      "actions": [
+        "Compare every substantive repository claim against Milestone 2.",
+        "Validate the literature catalog and source-to-group mapping.",
+        "Confirm that all 35 groups have screening notes.",
+        "Confirm that exactly the six selected studies have detailed reviews.",
+        "Check source links and redistribution permissions.",
+        "Execute the descriptive analysis pipeline.",
+        "Validate the figures and reported statistics.",
+        "Search for prohibited E0-E4 labels and obsolete revision references.",
+        "Confirm that no unperformed modeling results or expanded research questions appear.",
+        "Check all internal links and automated tests."
+      ]
+    },
+    {
+      "step": 4,
+      "name": "Replace GitHub repository safely",
+      "actions": [
+        "Confirm the original repository backup is valid.",
+        "Confirm the complete replacement is ready and verified.",
+        "Request explicit final user authorization for permanent GitHub repository deletion.",
+        "Delete only the named repository after authorization.",
+        "Recreate it under the original owner and name.",
+        "Publish the clean project on main.",
+        "Verify all published files and links."
+      ]
+    }
+  ],
+  "acceptance_criteria": [
+    "The complete repository is consistent with the submitted five-page Milestone 2 report.",
+    "The student's confirmed intellectual contributions are clearly represented.",
+    "AI-assisted implementation is acknowledged accurately.",
+    "All 47 historical source records remain traceable.",
+    "All 35 related-work groups are represented in the quick-screening documentation.",
+    "The original five-category distribution is preserved and verified.",
+    "The six detailed studies are clearly identified in their own literature subfolder.",
+    "All permitted source PDFs are accessible and all non-redistributable sources have working official links.",
+    "The four Milestone 2 figures are adequately supported and distinguish reproducible analysis from schematic illustration.",
+    "Only C1, C2, and C3 are used to describe anticipated contributions.",
+    "The modeling plan matches Milestone 2 without introducing E0-E4.",
+    "No predictive models or experimental improvements are falsely claimed as completed.",
+    "The professor's documented concerns have clear, evidence-based responses.",
+    "No obsolete revision labels, missing-document references, or unnecessary editorial records remain.",
+    "The newly published repository is self-contained and reproducible.",
+    "Deletion and recreation are reported as completed only if the actual GitHub operations succeed."
+  ],
+  "final_instruction": "Treat the submitted Milestone 2 as the controlling academic document. Build a clean repository that faithfully explains and substantiates the student's existing work rather than creating new research. The complete historical literature collection must be recoverable, with all 35 groups represented and the six deeply reviewed studies visibly separated. Preserve C1-C3, the original model-comparison plan, the student's intellectual ownership, and the exact distinction between completed descriptive work and proposed predictive learning."
+}

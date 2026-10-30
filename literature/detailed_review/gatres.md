@@ -1,6 +1,6 @@
 # GATRes: reconstruction of current hidden pressures
 
-Truong, H., Tello, A., Lazovik, A., & Degeler, V. (2024). *Graph Neural Networks for Pressure Estimation in Water Distribution Systems*. Water Resources Research, 60(7), e2023WR036741. [DOI](https://doi.org/10.1029/2023WR036741) · [Permitted original PDF](../papers/P15_GATRes_2024.pdf). Historical group `gatres`; sources `pdf-20`, `repo-50`.
+Truong, H., Tello, A., Lazovik, A., & Degeler, V. (2024). *Graph Neural Networks for Pressure Estimation in Water Distribution Systems*. Water Resources Research, 60(7), e2023WR036741. [DOI](https://doi.org/10.1029/2023WR036741) · [Retained PDF](../papers/P15_GATRes_2024.pdf). Historical group `gatres`; sources `pdf-20`, `repo-50`.
 
 ## Task, preparation and model
 

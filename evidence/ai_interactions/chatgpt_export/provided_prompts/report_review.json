@@ -1,0 +1,184 @@
+
+{
+  "role": "Academic Research Editor and Machine Learning Reviewer",
+  "task": "Revise the attached Milestone2.pdf to achieve the Excellent level (6/6 points) under the DS675 Mini-Project Milestone 2 rubric.",
+  "document": {
+    "title": "Learning Models for Pressure Forecasting",
+    "course": "DS675",
+    "milestone": 2,
+    "dataset": "BattLeDIM 2020 - L-Town",
+    "current_length": "5 pages",
+    "required_length": "3-5 pages",
+    "language": "Academic English",
+    "research_task": "Supervised regression for 15-minute-ahead pressure forecasting at sensor n1",
+    "proposed_model": "GradientBoostingRegressor"
+  },
+  "main_objective": "Implement targeted improvements while preserving the technical accuracy, original research, experimental design, figures, numerical results, and professional presentation of the existing document.",
+  "priority_improvements": [
+    {
+      "id": 1,
+      "priority": "Critical",
+      "location": "Page 3, Section 2: Contributions of Previous Authors",
+      "action": "Strengthen the research gap",
+      "instructions": [
+        "Add a concise paragraph following the comparative literature table.",
+        "Clearly distinguish pressure forecasting from leak detection, leak localization, and current-pressure reconstruction.",
+        "Explain why the reviewed studies do not provide a directly comparable evaluation of 15-minute-ahead pressure forecasting at sensor n1 using the released BattLeDIM SCADA data.",
+        "Connect the identified gap directly to the proposed Gradient Boosting experiment.",
+        "Use qualified language such as 'Among the reviewed studies' rather than claiming worldwide novelty.",
+        "Explain the scientific value of comparing classical regression models with more complex approaches under a consistent evaluation protocol."
+      ],
+      "suggested_text": "Among the reviewed studies, none reports a directly comparable evaluation of 15-minute-ahead pressure forecasting at sensor n1 using the released BattLeDIM SCADA measurements. Existing approaches primarily address leak diagnosis, current-pressure estimation, or forecasting under different simulated conditions and prediction horizons. This motivates a controlled comparison of conventional regression models using a common temporal evaluation protocol and physically motivated hydraulic features. The proposed experiment evaluates whether Gradient Boosting improves upon persistence, Ridge Regression, and Random Forest, and whether auxiliary measurements provide predictive value beyond the target sensor's own history."
+    },
+    {
+      "id": 2,
+      "priority": "Critical",
+      "location": "Page 3, literature review table",
+      "action": "Clarify the relevance of previous research",
+      "instructions": [
+        "Maintain all six reviewed contributions.",
+        "Explicitly distinguish core predictive-learning studies from supporting research.",
+        "Classify ChebNet, SAM-kNN, and AGN as studies involving future-state prediction.",
+        "Identify LILA and GATRes as current-pressure estimation or reconstruction approaches.",
+        "Present EILF as supporting hydraulic engineering research rather than a future-pressure forecasting model.",
+        "Preserve the original methodological descriptions, data-preparation details, and quantitative findings.",
+        "Identify studies based on newly simulated L-Town data rather than the released SCADA records.",
+        "Ensure that each study's relevance to the proposed experiment is understandable."
+      ]
+    },
+    {
+      "id": 3,
+      "priority": "High",
+      "location": "Page 3, reported model performances",
+      "action": "Improve metric interpretation and comparability",
+      "instructions": [
+        "Clearly associate every reported numerical result with its original learning task.",
+        "Distinguish forecasting errors measured in metres from leak-detection metrics such as recall, precision, F1-score, false alarms, and competition monetary scores.",
+        "Do not compare diagnostic accuracy directly with forecasting accuracy.",
+        "Retain the reported MAE values and regional distinctions for AGN and GATRes.",
+        "Preserve qualifications about differences in datasets, simulation conditions, prediction horizons, and evaluation protocols.",
+        "Do not invent forecasting MAE or RMSE values for studies that do not report them.",
+        "Where applicable, explain why a result is informative but not directly comparable to the proposed n1(+15-minute) regression task."
+      ]
+    },
+    {
+      "id": 4,
+      "priority": "High",
+      "location": "Page 3, layout and readability",
+      "action": "Improve the visual presentation",
+      "instructions": [
+        "Increase readability of the literature comparison table without removing meaningful technical information.",
+        "Reduce unnecessary wording and repetitive descriptions.",
+        "Preserve all six studies and their relevant metrics.",
+        "Maintain a consistent hierarchy for headings, captions, citations, and table labels.",
+        "Keep Figure 4 if it contributes to understanding the literature screening.",
+        "Avoid excessively small table fonts.",
+        "Prefer concise explanations over dense paragraphs.",
+        "Preserve the document's professional design and visual identity."
+      ]
+    },
+    {
+      "id": 5,
+      "priority": "High",
+      "location": "Page 5, References",
+      "action": "Improve bibliographic completeness",
+      "instructions": [
+        "Review all 18 references.",
+        "Preserve the existing numbering and in-text citation relationships.",
+        "Use consistent academic reference formatting.",
+        "Where verified and available, include publication venue, year, volume, pages, DOI, or stable URL.",
+        "Preserve working hyperlinks to articles, datasets, and original source-code repositories.",
+        "For code repositories, preserve fixed-commit references whenever available.",
+        "Do not fabricate missing publication information.",
+        "Use the available space on page 5 to improve citation completeness.",
+        "Verify that each reference supports the claim associated with its citation."
+      ]
+    },
+    {
+      "id": 6,
+      "priority": "Medium",
+      "location": "Pages 1-2, Dataset and Learning Task",
+      "action": "Strengthen the practical motivation",
+      "instructions": [
+        "Preserve the existing dataset description, sensor counts, units, selected hydraulic signals, and exploratory analysis.",
+        "Add one concise sentence explaining the operational relevance of forecasting pressure 15 minutes ahead.",
+        "Clarify that the prediction target is future pressure rather than a leak/no-leak classification.",
+        "Explain that forecasting is evaluated under the operating and leakage conditions represented by the dataset.",
+        "Recognize that persistence provides a strong baseline because pressure changes slowly over short intervals.",
+        "Retain the descriptive persistence MAE of 0.0518 m and RMSE of 0.0685 m without presenting these values as final test results.",
+        "Do not introduce unsupported claims about operational benefits."
+      ]
+    },
+    {
+      "id": 7,
+      "priority": "Medium",
+      "location": "Page 4, Your Anticipated Contributions",
+      "action": "Refine the methodological justification",
+      "instructions": [
+        "Preserve contributions C1, C2, and C3.",
+        "Add a concise justification for selecting Gradient Boosting as a practical nonlinear regression model.",
+        "Explain that boosted trees can model nonlinear relationships among pressure, storage, pump operation, and local consumption.",
+        "Maintain comparisons against persistence, Ridge, and Random Forest.",
+        "Preserve the feature-ablation experiments and time-based evaluation protocol.",
+        "Do not claim that Gradient Boosting will necessarily outperform the baselines.",
+        "Emphasize that demonstrating limited or absent value from auxiliary signals is also a meaningful experimental finding.",
+        "Do not expand the project beyond its stated computational and course-level scope."
+      ]
+    }
+  ],
+  "preservation_constraints": {
+    "dataset_statistics": "Preserve all validated record counts, feature counts, units, and network characteristics.",
+    "figures": "Retain Figures 1-4 and their scientific meaning.",
+    "original_eda": "Preserve exploratory analysis and clearly label it as original work.",
+    "baseline_results": "Do not confuse descriptive 2018 persistence results with final 2019 assessment scores.",
+    "experimental_design": "Preserve the chronological training, validation, and final assessment strategy.",
+    "model_status": "Do not imply that the proposed learning models have already been trained or evaluated.",
+    "technical_accuracy": "Do not introduce fabricated numerical results, model specifications, citations, or performance comparisons.",
+    "scope": "Do not convert the research objective from pressure forecasting into leak classification.",
+    "page_limit": "The revised report must not exceed 5 pages.",
+    "writing_style": "Maintain clear, concise, original academic writing."
+  },
+  "rubric_targets": {
+    "dataset_and_learning_task": {
+      "maximum_points": 2,
+      "target": "Excellent",
+      "requirement": "Thorough dataset description, relevant record and feature characteristics, and a clearly justified supervised prediction task."
+    },
+    "previous_contributions": {
+      "maximum_points": 2,
+      "target": "Excellent",
+      "requirement": "Precise learning tasks, methods, data preparation, exploratory analysis, model performance, metrics, and significance of each contribution."
+    },
+    "anticipated_contributions": {
+      "maximum_points": 1,
+      "target": "Excellent",
+      "requirement": "Specific proposed models, preparation procedures, original extensions, and measurable evaluation criteria."
+    },
+    "presentation": {
+      "maximum_points": 1,
+      "target": "Excellent",
+      "requirement": "Professional organization, readable tables and figures, concise writing, consistent formatting, and accurate references."
+    }
+  },
+  "verification_protocol": [
+    "Read the complete original PDF before making revisions.",
+    "Preserve verified statements and clearly distinguish sources from interpretation.",
+    "Consult original publications or repositories when verifying or completing references.",
+    "Do not silently correct uncertain technical claims.",
+    "Flag any factual discrepancy that cannot be resolved with available evidence.",
+    "Verify mathematical notation, units, citations, and reported metrics.",
+    "Confirm that the proposed model and its evaluation remain internally consistent.",
+    "Check that the revised report contains between 3 and 5 pages.",
+    "Inspect the final rendered document for clipping, overflowing tables, tiny fonts, and broken links."
+  ],
+  "expected_deliverables": {
+    "primary": "Revised Milestone 2 report incorporating the requested improvements.",
+    "format": "PDF, with editable source if available.",
+    "secondary": [
+      "A concise change log identifying the modifications made on each page.",
+      "A final evaluation against the four rubric criteria.",
+      "A list of any references or technical claims requiring manual verification."
+    ]
+  },
+  "final_instruction": "Make minimal, high-impact revisions. Prioritize scientific clarity, research-gap justification, comparability of previous work, bibliographic accuracy, and document readability. Preserve the author's research contributions and avoid unnecessary rewriting. The final document should be suitable for submission as a professional DS675 Mini-Project Milestone 2 report."
+}

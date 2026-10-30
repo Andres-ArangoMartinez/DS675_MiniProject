@@ -6,9 +6,11 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / 'evidence/ai_interactions'
+sys.path.insert(0, str(ROOT))
 
 def digest(data):
     return hashlib.sha256(data).hexdigest()
@@ -133,6 +135,10 @@ def validate(originals=None):
             'original_views_compared_without_modification':original_checks,
             'privacy_scan_limit':'Pattern checks cover the specified credential and inline-image formats; source coverage and privacy treatment are documented.',
             'historical_completeness_certified':False}
+    supplement = BASE/'chatgpt_export/manifest.json'
+    if supplement.exists():
+        from scripts.validate_chatgpt_export import validate as validate_export
+        result['chatgpt_export_supplement'] = validate_export()
     print(json.dumps(result,indent=2))
     return result
 

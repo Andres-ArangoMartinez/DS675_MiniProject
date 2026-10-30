@@ -1,0 +1,725 @@
+# ChatGPT export conversation
+
+Conversation ID: 6ab004f1-8c38-83ea-bd39-3f52a1939e76
+Original title: Crear versión oV4 Final
+Created UTC: 2026-09-20T16:08:17.856815+00:00
+Updated UTC: 2026-09-26T02:55:24.004876+00:00
+Source: student-supplied account export; original language and text retained.
+Scope: user/assistant text and multimodal text in mapping order; non-text model records remain private.
+
+<a id="message-e012926f-d3e7-4503-8dce-79a755f484ed"></a>
+## user | 2026-09-20T16:11:49.045000+00:00 | e012926f-d3e7-4503-8dce-79a755f484ed
+
+Export node: e012926f-d3e7-4503-8dce-79a755f484ed
+Parent node: 9855776a-1862-4ca2-ae02-c4af3eaed503
+Active branch: true
+Content type: text
+
+### Original message body
+
+Creemos la version oV4\_Final, quisiera despues de las listas de feature, depronto adicionar las figuras de epanet .inp que presentan los papaer, para indicar que podria seleccionarce sectores hidraulicos, no toda la red. Para reducir las features a manejar
+
+<a id="message-a1610918-24e0-4594-8b74-43347bd03ac0"></a>
+## assistant | 2026-09-20T16:15:00.161183+00:00 | a1610918-24e0-4594-8b74-43347bd03ac0
+
+Export node: a1610918-24e0-4594-8b74-43347bd03ac0
+Parent node: 7fc1fd44-542d-4cfd-8371-ea23cf286b88
+Active branch: true
+Content type: text
+
+### Original message body
+
+Sí. Preparé **oV4_Final** tomando la oV3 como base y añadí una tercera página inmediatamente después del inventario completo de features. fileciteturn1file7
+
+La idea de justificar una **selección por sectores hidráulicos** queda bien sustentada por los propios papers. En BattLeDIM, L-Town está explícitamente dividida en las áreas A, B y C, y los autores incluso mencionan que pueden aplicarse técnicas de reducción del modelo para disminuir complejidad y costo computacional. fileciteturn3file0 En BATADAL, además, se reporta que Brentan et al. redujeron la dimensionalidad aprovechando la división de C-Town en **district metered areas (DMAs)**. fileciteturn3file1
+
+En la nueva página puse las dos topologías lado a lado y expliqué una estrategia que me parece más defendible para el proyecto: **el inventario de 119/43 variables sigue siendo el conjunto completo disponible, pero no significa que todas tengan que entrar al modelo**. Primero seleccionaríamos el nodo de presión objetivo; después usaríamos el `.inp` para delimitar su zona hidráulica y conservar, por ejemplo, presiones cercanas, caudales de entrada o frontera, niveles de tanques hidráulicamente relacionados, estados de bombas/válvulas relevantes y demandas locales. Finalmente compararíamos ese modelo reducido contra un baseline que use toda la red. Así no afirmamos prematuramente cuáles son las features definitivas.
+
+También corregí la frase repetida que había en *Dataset selection rationale*. El PDF compiló correctamente y revisé visualmente las tres páginas.
+
+- [**Milestone1_oV4_Final.pdf**](sandbox:/mnt/data/Milestone1_oV4_Final.pdf)
+- [**Milestone1_oV4_Final.tex**](sandbox:/mnt/data/Milestone1_oV4_Final.tex)
+- [**Source completo ZIP — .tex + las dos figuras**](sandbox:/mnt/data/Milestone1_oV4_Final_source.zip)
+
+Creo que esta adición fortalece bastante el Milestone porque ya no solo enumeramos las features: también dejamos planteada una **forma físicamente justificable de reducirlas** antes de entrenar el modelo.
+
+<a id="message-cd62a821-cbc2-45d1-b6f1-7fb073148c87"></a>
+## user | 2026-09-20T16:54:49.292000+00:00 | cd62a821-cbc2-45d1-b6f1-7fb073148c87
+
+Export node: cd62a821-cbc2-45d1-b6f1-7fb073148c87
+Parent node: a1610918-24e0-4594-8b74-43347bd03ac0
+Active branch: true
+Content type: text
+
+### Original message body
+
+este es el encabezado de assigment:&#x20;
+
+
+
+## Task Description
+
+We will be doing the Mini-Project in coordinated stages.  In the first stage, you are expected to complete the following task, and submit it as **Mini-Project Milestone 1**.
+
+**Task:** Browse through the datasets on [kaggle.com](https://www.kaggle.com/). Choose two datasets that you believe would be interesting to work with for a predictive supervised learning task. Please choose only datasets that have a high Kaggle usability rating (>9). Then, for each dataset, give a link to it, and write 1-2 paragraphs describing its characteristics, and what learning task you want to use it for (e.g. classification, regression). Some of the datasets come with an explicit learning task, but you can use your imagination to define a new learning task, as long as it involves predictive learning. The full report should be no more than two pages.
+
+- After you are done, please submit your response in text format here. 
+- For maximum credit, your responses should be well-organized, neat, relevant and thorough. For more details on the grading standards, please see the rubric at the bottom of this page.
+
+In choosing your datasets, please keep in mind that the eventual goal will be to work with one of these datasets in Stages 2-4 of the Mini-Project.  The final stage will be done in groups, and as a group, you will create a report and video presentation that will be shared with the class in the middle of Week 14 (at the deadline for Milestone 4). 
+
+
+
+Crea la version oV5\_final considerando la guia de assigment. Creo que, el contenido que tenemos esta bien, solo seria manejarlo en 2 hojas . analiza y antes de cualquier cosa dime que nos hace falta.
+
+<a id="message-1cb71c84-7c63-431c-9ec2-5b3512d4baac"></a>
+## assistant | 2026-09-20T16:55:17.292356+00:00 | 1cb71c84-7c63-431c-9ec2-5b3512d4baac
+
+Export node: 1cb71c84-7c63-431c-9ec2-5b3512d4baac
+Parent node: 20a8f0aa-11cf-440b-a65a-1d4d1041f9bc
+Active branch: true
+Content type: text
+
+### Original message body
+
+Comparando el **assignment** con lo que ya tenemos en oV4, el contenido técnico está bien encaminado, pero hay **tres cosas que debemos corregir antes de construir oV5_Final**.
+
+La más importante es el requisito de Kaggle: el profesor pide explícitamente que los dos datasets tengan **Kaggle usability rating > 9**. Ya confirmé que las páginas de ambos datasets existen en Kaggle: BattLeDIM citeturn122186search0 y BATADAL citeturn122186search1. Sin embargo, la versión pública que puedo consultar no muestra numéricamente el rating actual, así que **debemos verificar visualmente en Kaggle que ambos estén por encima de 9 antes de entregar**. Ese requisito no debería quedar implícito: en oV5 conviene escribir algo como `Kaggle usability: 10.0` o el valor real que aparezca. Kaggle efectivamente usa ese indicador para medir qué tan documentado/utilizable está un dataset. citeturn981263search1turn981263search2
+
+El segundo punto es el **límite estricto de dos páginas**. Nuestra oV4 terminó en tres porque añadimos el inventario completo de features y las figuras hidráulicas. Para este Milestone, eso ya excede lo que pide la tarea. Yo no eliminaría la idea de selección por sectores hidráulicos, porque es buena, pero sí eliminaría de la entrega principal las dos figuras y la lista exhaustiva de las 119 y 43 variables. Es material útil para Milestone 2. Aquí bastaría con resumir las variables por familias, por ejemplo: `33 pressures, 3 flows, 1 tank level, and 82 AMR demand measurements`. La figura de L-Town sí demuestra claramente que la red está organizada en Areas A, B y C, y el paper incluso contempla reducción del modelo; y BATADAL muestra una lógica similar mediante zonas/DMAs. Es una buena justificación metodológica, pero podemos expresarla en **dos o tres frases**, sin consumir media página con gráficos. fileciteturn0file1 fileciteturn0file0
+
+El tercer ajuste es de **formato respecto a lo que realmente pide el profesor**. El assignment dice que para **cada dataset** hay que dar un link y escribir **1–2 párrafos** describiendo sus características y el learning task. Nuestra versión actual usa varias cajas y tablas; se ve muy bien, pero convendría que cada candidato tenga realmente uno o dos párrafos claramente identificables. Además, dice “submit your response in text format here”, por lo que el contenido debe poder copiarse directamente en Canvas sin depender del PDF, figuras o diseño LaTeX.
+
+En cuanto al contenido sustantivo, ya tenemos casi todo lo necesario. Tenemos dos datasets, tamaños grandes respecto al número de features, naturaleza de las variables, resolución temporal, un problema supervisado predictivo claro y, en ambos casos, **regression** con presión futura como target. Para BattLeDIM proponemos presión a 15 minutos y para BATADAL presión a una hora; eso satisface bien el requisito de “use your imagination to define a new learning task”. La descripción de BattLeDIM también coincide con el paper: L-Town contiene 33 sensores de presión, tres de flujo, un sensor de nivel y 82 AMRs, con datos cada cinco minutos. fileciteturn0file1 BATADAL, por su parte, trabaja con 43 variables SCADA entre niveles, presiones, flujos y estados de actuadores. fileciteturn0file0
+
+Para **oV5_Final**, mi propuesta sería mantener esta arquitectura en solo dos páginas:
+
+1. Encabezado muy compacto.
+2. Un párrafo corto de **Area of interest / dataset selection rationale**.
+3. Una pequeña tabla “Candidates at a glance”, pero añadiendo **Kaggle usability rating** y el link.
+4. **Candidate 1 – BattLeDIM:** 1–2 párrafos.
+5. **Candidate 2 – BATADAL:** 1–2 párrafos.
+6. Una nota final muy breve, quizá 2–3 líneas, diciendo que el conjunto inicial de predictors puede reducirse posteriormente usando la topología EPANET y seleccionando variables hidráulicamente relacionadas con el target node.
+
+Lo que **sacaría de Milestone 1** sería: la página completa de `Complete Feature Inventory`, las listas individuales de nombres de sensores y las dos figuras de EPANET. No porque estén mal, sino porque el assignment no las solicita y nos obligan a incumplir el límite de dos páginas. Las conservaría como material preparado para Milestone 2.
+
+Hay además una pequeña mejora que yo haría: en vez de decir simplemente que “the node will be chosen after reviewing topology”, podemos escribir que **the exact target sensor will be selected during exploratory analysis based on pressure variability and hydraulic location**. Eso hace que la tarea esté suficientemente definida sin fingir que ya hemos tomado una decisión que todavía no corresponde tomar.
+
+Así que, en resumen, **no nos falta investigación técnica importante**. Nos falta principalmente: **(1) confirmar y escribir el usability rating >9 de ambos Kaggle datasets; (2) poner los links directos de Kaggle de forma visible; (3) comprimir a exactamente dos páginas; y (4) transformar el contenido de cada candidato en 1–2 párrafos explícitos, dejando el inventario completo y las figuras para el siguiente Milestone.**
+
+Antes de generar oV5_Final, yo verificaría solamente los **dos ratings de Kaggle**. Esa es la única condición del assignment que todavía podría ser un problema real si uno de los dos no supera 9.
+
+<a id="message-258889b7-a707-46f6-974a-54408f299b14"></a>
+## user | 2026-09-20T16:58:29.443000+00:00 | 258889b7-a707-46f6-974a-54408f299b14
+
+Export node: 258889b7-a707-46f6-974a-54408f299b14
+Parent node: 1cb71c84-7c63-431c-9ec2-5b3512d4baac
+Active branch: true
+Content type: text
+
+### Original message body
+
+se puede subir un archivo. y adicionar el comentario tambien tenemos:
+
+
+
+**Mini-Project Milestone 1 Rubric**
+
+| Mini-Project Milestone 1 Rubric |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                    |           |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| CriteriaRatingsPts              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                    |           |
+| Description                     | You should provide enough information about your two chosen datasets so as to allow the reader to judge its suitability for a predictive supervised learning task. You should provide a general description (e.g. source, potential uses, class information), the characteristics of the data (e.g. numbers of records and features, types of features), and some indication as to why you are considering them (e.g. information about the possible predictive learning tasks). | **2 ptsExcellentFor each of the two datasets: 1) A thorough general description is provided. 2) All relevant characteristics of the data records and features are stated. 3) An indication is given of the potential use of the dataset for predictive learning.** | **1.5 ptsGoodFor the two datasets: 1) A general description is given, with few (if any) of the relevant details missing. 2) Most (but not all) of the relevant characteristics of the data records and features are stated. 3) The potential use of the data is indicated, perhaps with some important details missing.** | **1 ptsFairFor the two datasets: 1) Not much background given about the data, if any. 2) Many relevant characteristics of the data and features are missing. 3) The potential uses stated are vague or unclear. (OR, only one dataset is proposed, but the description meets the standard of "Excellent".)** | **0.5 ptsProblematicFor the two datasets: little or no original writing, lists of information copy-pasted from Kaggle without further explanation, proposed uses missing or inappropriate. (OR, only one dataset is proposed, but the description meets the standard of "Fair".)** | **0 ptsMissingNo report was submitted, or the information submitted was inadmissable (e.g. not a valid dataset, violations of the Academic Integrity policy, etc.).**                              | 2 pts<br> |
+| Presentation                    | Your submission should be clear, well-organized, and neat, of the standard that would be expected in industry. Your writeup should be of sufficient quality for incorporation into the introduction of your final Mini-Project report.                                                                                                                                                                                                                                           | **1 ptsExcellentClear and concise, without repetition and well ordered, and with very few typos or grammatical errors.**                                                                                                                                           | **0.75 ptsGoodReasonably clear, concise, and well-ordered, with little or no repetition, but with occasional typos and/or grammatical errors.**                                                                                                                                                                           | **0.5 ptsFairUnderstandably written, but with a significant number of presentational or organizational issues (e.g. ambiguous or unclear phrasing, many typos and grammatical errors, layout disordered or difficult to parse, etc.).**                                                                      | **0.25 ptsProblematicSerious issues with formatting (e.g. missing or broken links, significant inconsistencies in the layout etc.), extreme terseness, ungrammatical or typo-ridden text, copy-pasting of lists, figures & tables without clear explanations.**                    | **0 ptsMissingNo report was submitted, or the information submitted was inadmissable (e.g. inappropriate dataset, inappropriately submitted, violations of the Academic Integrity policy, etc.).** | 1 pts     |
+
+<a id="message-f7d37619-d0ca-4cde-825c-a81d435968e5"></a>
+## assistant | 2026-09-20T16:58:33.736646+00:00 | f7d37619-d0ca-4cde-825c-a81d435968e5
+
+Export node: f7d37619-d0ca-4cde-825c-a81d435968e5
+Parent node: eed1a60a-05ab-474e-8940-3ca90e185776
+Active branch: true
+Content type: text
+
+### Original message body
+
+Sí. Si la plataforma permite **subir un archivo y además agregar un comentario**, entonces tenemos una mejor opción: entregar **oV5_Final como PDF de exactamente 2 páginas** y usar el comentario solo como nota breve de entrega, no para completar información que debería estar dentro del reporte.
+
+Con la rúbrica que acabas de compartir, cambiaría ligeramente mi recomendación anterior. El contenido de oV4 es bueno, pero la rúbrica confirma que debemos priorizar cuatro cosas: una descripción general suficiente de cada dataset, las características relevantes de registros y features, una tarea predictiva bien definida y una presentación concisa, sin repetición. En particular, la rúbrica penaliza explícitamente el *“copy-pasting of lists, figures & tables without clear explanations”*. Por eso, la página completa de **Complete Feature Inventory** no nos ayuda tanto para Milestone 1; podría incluso hacer el documento parecer menos conciso.
+
+Para aspirar al **3/3**, oV5 debería cubrir esto para cada dataset:
+
+- **Source/background:** qué es BattLeDIM/L-Town o BATADAL/C-Town y de dónde proviene.
+- **Records:** número de observaciones y frecuencia temporal.
+- **Features:** cantidad total y, más importante, los **tipos**: pressure, flow, tank level, AMR demand, actuator states, etc.
+- **Predictive task:** target, forecast horizon y dejar explícito que es **supervised regression**.
+- **Why it is interesting:** por qué sería útil para nuestro objetivo de pressure forecasting.
+- **Kaggle link + usability > 9:** este punto viene directamente del assignment y debemos mostrarlo claramente.
+
+La idea de reducir features mediante sectores hidráulicos **sí la conservaría**, pero en una sola frase o un párrafo muy corto. Es útil porque demuestra que ya estamos pensando en cómo manejar dimensionalidad en las etapas posteriores, pero no debería dominar Milestone 1. Algo como:
+
+> *For later stages, the initial predictor set may be reduced using the EPANET network topology, focusing on measurements hydraulically related to the selected target node rather than automatically using all available network variables.*
+
+Esto es especialmente defendible porque L-Town presenta áreas hidráulicas diferenciadas y el paper contempla reducción de complejidad, mientras que en BATADAL también se utilizaron divisiones por DMA para reducir dimensionalidad. fileciteturn0file1 fileciteturn0file0
+
+También cambiaría la estructura de oV5. En vez de dedicar una página al inventario exhaustivo, haría las **dos páginas completas así**:
+
+**Página 1:** encabezado compacto, un párrafo muy corto de *Area of Interest / Dataset Selection Rationale*, una pequeña tabla comparativa y **Candidate 1: BattLeDIM** con 1–2 párrafos.
+
+**Página 2:** **Candidate 2: BATADAL** con 1–2 párrafos, seguida de una nota breve sobre la posible selección hidráulica de features y, si cabe, una línea de fuentes. Esto satisface mucho mejor tanto el texto del assignment como la rúbrica.
+
+Además, ahora que sé que se puede subir archivo, **sí conservaría el diseño profesional de LaTeX**. El requisito “submit your response in text format here” deja de preocuparme tanto si Canvas explícitamente te permite adjuntar el archivo; aun así, no pondría información esencial únicamente en una figura.
+
+Para el comentario de entrega, usaría algo muy simple, por ejemplo:
+
+> **Submission comment:**  
+> Attached is my Mini-Project Milestone 1 report. It presents two Kaggle datasets being considered for a supervised regression problem involving future pressure prediction in drinking-water distribution systems.
+
+No pondría más que eso. La explicación completa debe estar dentro del PDF.
+
+Con esta rúbrica, veo **una sola cosa que todavía necesitamos confirmar antes de crear oV5_Final: el Kaggle usability rating actual de cada dataset y que ambos sean >9**. Todo lo demás ya lo tenemos o puede reorganizarse a partir de oV4.
+
+Si quieres, el siguiente paso es que haga **oV5_Final de exactamente dos páginas**, optimizado específicamente contra estos dos criterios de la rúbrica: **Description (2 pts)** y **Presentation (1 pt)**.
+
+<a id="message-2dd44195-c674-4948-9546-7ecedf1d307c"></a>
+## user | 2026-09-20T17:01:07.389000+00:00 | 2dd44195-c674-4948-9546-7ecedf1d307c
+
+Export node: 2dd44195-c674-4948-9546-7ecedf1d307c
+Parent node: f7d37619-d0ca-4cde-825c-a81d435968e5
+Active branch: true
+Content type: text
+
+### Original message body
+
+continua con el siguiente paso es que haga **oV5\_Final de exactamente dos páginas**, optimizado específicamente contra estos dos criterios de la rúbrica: **Description (2 pts)** y **Presentation (1 pt)**.
+
+<a id="message-c49b80d8-71e4-465f-bd44-61a2380c3b87"></a>
+## assistant | 2026-09-20T17:04:59.387210+00:00 | c49b80d8-71e4-465f-bd44-61a2380c3b87
+
+Export node: c49b80d8-71e4-465f-bd44-61a2380c3b87
+Parent node: 440859b9-a1c7-4d4e-96b2-f6275cf7ccfa
+Active branch: true
+Content type: text
+
+### Original message body
+
+Listo. Preparé **oV5_Final en exactamente 2 páginas**, reorganizando el contenido para apuntar directamente a **Description (2 pts)** y **Presentation (1 pt)** de la rúbrica. Las características técnicas de L-Town y C-Town se mantienen sustentadas en los papers de BattLeDIM y BATADAL. fileciteturn0file1 fileciteturn0file0
+
+Los cambios principales fueron: convertir cada candidato en **dos párrafos claros** —`Dataset characteristics` y `Proposed predictive-learning task`—; mantener números de records, features y tipos de variables; hacer explícito `supervised regression`, target y forecast horizon; conservar nuestra idea de reducción hidráulica de features, pero resumida en un apartado `Feature scope`; eliminar el inventario exhaustivo y las figuras para cumplir el límite de páginas; y añadir una comparación metodológica breve sobre chronological splits, MAE/RMSE y persistence baseline.
+
+- [**Milestone1_oV5_Final.pdf**](sandbox:/mnt/data/Milestone1_oV5_Final.pdf)
+- [**Milestone1_oV5_Final.tex**](sandbox:/mnt/data/Milestone1_oV5_Final.tex)
+- [**Submission comment sugerido**](sandbox:/mnt/data/Milestone1_oV5_SubmissionComment.txt)
+
+Revisé visualmente ambas páginas después de compilar: no hay texto cortado, superpuesto ni warnings de layout.
+
+Hay **una única verificación que todavía debes hacer antes de subirlo**: abrir los dos enlaces de Kaggle y confirmar visualmente que el `Usability` actual sea **> 9**. Las páginas de ambos datasets siguen activas, pero el texto indexado de Kaggle que puedo consultar no expone el valor numérico del rating para estos dos casos. citeturn717715search0turn717715search1
+
+El comentario de entrega que preparé dice:
+
+> Attached is my Mini-Project Milestone 1 report. It presents two Kaggle datasets I am considering for a supervised regression project on future pressure prediction in drinking-water distribution systems. I focused on the dataset characteristics, the proposed predictive tasks, and why each dataset would be useful for the later stages of the mini-project.
+
+<a id="message-73586a2b-220a-4f4a-94da-5832beeb031c"></a>
+## user | 2026-09-20T17:21:51.449000+00:00 | 73586a2b-220a-4f4a-94da-5832beeb031c
+
+Export node: 73586a2b-220a-4f4a-94da-5832beeb031c
+Parent node: c49b80d8-71e4-465f-bd44-61a2380c3b87
+Active branch: true
+Content type: text
+
+### Original message body
+
+1: quiero que quede claro en el milestone 1 que aunque BattLeDIM aparece con usabilidad 3.53 en Kaggle, la fuente original tiene un respaldo academico que no es despresiable. 2: BATADAL tiene usabilidad 10 en Kaggle e igualmente tiene buen respaldo acaemico desde las fuentes originales.  3: me gusta el area de interes como esta, pero quisiera tambien conservar esta ideas "I have previously worked on this problem using field measurements and model-based control methods, as described in a published case study.  " y enlazar a mi paper como se hacia antes. puedes crearlo un nuevo oV6\_Final con estas consideraciones.
+
+<a id="message-fd612a9b-0f8e-444a-8848-437b156184d1"></a>
+## assistant | 2026-09-20T17:23:11.497673+00:00 | fd612a9b-0f8e-444a-8848-437b156184d1
+
+Export node: fd612a9b-0f8e-444a-8848-437b156184d1
+Parent node: 74438d33-7efe-42eb-85cc-5e6314a48937
+Active branch: true
+Content type: text
+
+### Original message body
+
+Listo. Creé **oV6_Final** manteniendo el documento en **exactamente 2 páginas** y ajustándolo a tus tres puntos.
+
+Ahora queda explícito que **BattLeDIM tiene Kaggle usability 3.53**, por debajo del requisito del assignment, pero se conserva como candidato por su respaldo académico: paper peer-reviewed en *Journal of Water Resources Planning and Management*, archivo oficial en Zenodo y modelos EPANET. fileciteturn0file1 También queda explícito que **BATADAL tiene usability 10.0**, cumple el requisito de Kaggle y además cuenta con dataset oficial, modelo C-Town, información de ataques y publicación académica peer-reviewed. fileciteturn0file0
+
+En **Area of interest** recuperé además la idea original:
+
+> “I have previously worked on this problem using field measurements and model-based control methods, as described in a published case study.”
+
+y `published case study` vuelve a estar enlazado directamente a tu paper de ASCE.
+
+También mantuve la propuesta de **feature reduction basada en la topología EPANET**, el planteamiento de regression, los horizontes de predicción y el esquema de evaluación posterior. Revisé visualmente las dos páginas y no hay cortes, superposiciones ni problemas de formato.
+
+[**Descargar Milestone1_oV6_Final.pdf**](sandbox:/mnt/data/Milestone1_oV6_Final.pdf)
+
+[**Descargar Milestone1_oV6_Final.tex**](sandbox:/mnt/data/Milestone1_oV6_Final.tex)
+
+Un punto importante para la entrega: ahora el documento **no intenta ocultar que BattLeDIM incumple el criterio >9**. Lo declara claramente y explica por qué consideras que sigue siendo un candidato científicamente sólido. Eso es más defendible académicamente que presentar 3.53 como si satisficiera el requisito.
+
+<a id="message-74503b3a-6a4d-471a-bcf0-39dc3a341502"></a>
+## user | 2026-09-20T17:45:16.691000+00:00 | 74503b3a-6a4d-471a-bcf0-39dc3a341502
+
+Export node: 74503b3a-6a4d-471a-bcf0-39dc3a341502
+Parent node: fd612a9b-0f8e-444a-8848-437b156184d1
+Active branch: true
+Content type: text
+
+### Original message body
+
+en el assigment solo me deja subir pdf. asi qeu subire el milestone pdf. nose si sea conveniente subir los paper como material complementario?
+
+<a id="message-e70b7a31-f85b-461c-ad08-9269b931d320"></a>
+## assistant | 2026-09-20T17:45:21.080239+00:00 | e70b7a31-f85b-461c-ad08-9269b931d320
+
+Export node: e70b7a31-f85b-461c-ad08-9269b931d320
+Parent node: 26fd0430-318b-499b-bc59-a723e12bfcdc
+Active branch: true
+Content type: text
+
+### Original message body
+
+Yo subiría **solo `Milestone1_oV6_Final.pdf`**.
+
+No recomiendo adjuntar los papers completos como material complementario, por tres razones: el assignment pide un reporte de **máximo dos páginas**; la entrega parece estar pensada para evaluar tu selección y argumentación, no para recibir bibliografía adicional; y los papers completos podrían hacer que la entrega se vea más pesada de lo necesario o incluso generar confusión sobre qué archivo debe calificarse.
+
+Además, en nuestro caso no hace falta: el respaldo académico ya está **integrado dentro del Milestone mediante enlaces y referencias**. BattLeDIM tiene una publicación académica formal asociada al benchmark, además de sus fuentes y modelos oficiales. fileciteturn0file1 BATADAL también está respaldado por una publicación peer-reviewed y por los materiales oficiales de C-Town y del benchmark. fileciteturn0file0 Eso es suficiente para sustentar el argumento sin entregar los artículos enteros.
+
+De hecho, para BattLeDIM esto es especialmente importante: como **no cumple el requisito de Kaggle > 9**, conviene que el propio PDF explique claramente que tiene `Usability = 3.53` y que aun así lo incluyes como candidato por su fuerte respaldo académico y técnico. El profesor entonces puede evaluar esa decisión directamente. Adjuntar el paper no elimina el hecho de que el dataset incumple literalmente ese requisito; solo la explicación dentro del reporte puede contextualizarlo.
+
+Mi recomendación de entrega sería simplemente:
+
+**Archivo:** `Milestone1_oV6_Final.pdf`
+
+Y nada más.
+
+Si quieres reforzarlo un poco más antes de subirlo, sí haría **una última revisión muy puntual de oV6** para asegurar que los links de Kaggle, Zenodo/original sources, benchmark papers y tu `published case study` sean clicables directamente desde el PDF. Eso aporta más valor que adjuntar los papers completos.
+
+<a id="message-d080e90e-1c55-401e-bb76-a560f37f490e"></a>
+## user | 2026-09-20T17:46:38.531000+00:00 | d080e90e-1c55-401e-bb76-a560f37f490e
+
+Export node: d080e90e-1c55-401e-bb76-a560f37f490e
+Parent node: e70b7a31-f85b-461c-ad08-9269b931d320
+Active branch: true
+Content type: text
+
+### Original message body
+
+Ok, que mensaje puedo poner en comments. o si con subir esta bien.
+
+<a id="message-2c52852e-6b2d-441d-a8eb-f7029f5aa72d"></a>
+## assistant | 2026-09-20T17:46:39.194910+00:00 | 2c52852e-6b2d-441d-a8eb-f7029f5aa72d
+
+Export node: 2c52852e-6b2d-441d-a8eb-f7029f5aa72d
+Parent node: d080e90e-1c55-401e-bb76-a560f37f490e
+Active branch: true
+Content type: text
+
+### Original message body
+
+Con subir el PDF está bien. El comentario no es necesario si el sistema no lo exige.
+
+Si quieres dejar uno, usaría algo breve y profesional, por ejemplo:
+
+> Attached is my Mini-Project Milestone 1 report. It presents two candidate datasets for a supervised regression task focused on future pressure prediction in drinking-water distribution systems.
+
+Si quieres mencionar la particularidad de BattLeDIM sin hacer demasiado ruido, podrías usar:
+
+> Attached is my Mini-Project Milestone 1 report. It presents two candidate datasets for a supervised regression task focused on future pressure prediction in drinking-water distribution systems. The report also notes the Kaggle usability ratings and the academic support available from the original benchmark sources.
+
+Yo prefiero la **primera versión**. Es limpia y suficiente.
+
+<a id="message-bbb21626-a540-4460-afe7-954693d9d607"></a>
+## user | 2026-09-26T02:42:00.600852+00:00 | bbb21626-a540-4460-afe7-954693d9d607
+
+Export node: bbb21626-a540-4460-afe7-954693d9d607
+Parent node: 2c52852e-6b2d-441d-a8eb-f7029f5aa72d
+Active branch: true
+Content type: text
+
+### Original message body
+
+este fue el feedbaak sobre el milestone 1:
+
+Total: 99.6%
+## Assignments are weighted by group:
+Group
+Weight
+Academic Engagement: Fall 2026
+0%
+Participation: Sharing Ideas and Resources
+10%
+Short Theory Reviews
+10%
+Hands-On Assignments
+25%
+Course Mini-Project
+25%
+Professional Quiz (Mid-Semester)
+10%
+Professional Quiz (End-of-Semester)
+20%
+Total
+100%
+You can view your grades based on What-If scores so that you know how grades will be affected by upcoming or resubmitted assignments. You can test scores for an assignment that already includes a score, or an assignment that has yet to be graded.
+## Feedback
+Attempt 1 Feedback:
+Sep 20 at 1:48pm
+Mini-Project Milestone 1 report: It presents two candidate datasets for a supervised regression task focused on future pressure prediction in drinking-water distribution systems.
+- Andres Arango Martinez
+Sep 25 at 4:58am
+Milestone 1 Assessment
+Description: Excellent
+Presentation: Excellent
+Feedback:
+• You provide two exceptionally thorough dataset proposals, with clear provenance, record counts, feature counts and types, sampling intervals, supervised-learning tasks, predictor choices, and reasons for considering each dataset. The level of detail is very strong while remaining within the two-page limit.
+• The links to both Kaggle datasets work and point to the datasets you describe. Your additional links to the official BattLeDIM archive and BATADAL resources also work and provide strong supporting documentation.
+• For BattLeDIM, you clearly state the scale of the data: 105,120 five-minute observations in each of 2018 and 2019, giving 210,240 observations in total. You also clearly account for the 119 measurement variables: 33 pressures, 3 flows, 1 tank level, and 82 AMR demand measurements. These are primarily numerical time-series measurements.
+• BattLeDIM therefore provides far more than enough observations for training and testing complex regression models. Your proposal to predict pressure 15 minutes ahead is a well-defined supervised-learning task, and the large number of observations supports experimentation with both simpler models and more flexible approaches.
+• Your BattLeDIM target requires a small amount of target engineering: the future pressure measurement is already present in the time series, but it must be shifted relative to the current predictors to create the 15-minute-ahead prediction target. Your proposed use of current and lagged measurements is appropriate.
+• One issue to keep in mind is the Kaggle usability requirement. As you correctly acknowledge, the BattLeDIM Kaggle copy has a usability score below the requested threshold. The assignment does permit non-Kaggle datasets, and the official BattLeDIM/Zenodo release is a well-documented academic dataset, so if you select BattLeDIM, it would be best to treat the official release explicitly as your primary dataset source rather than presenting the low-usability Kaggle copy as satisfying the normal Kaggle criterion.
+• For BATADAL, you clearly state that the three principal files contain 8,761, 4,177, and 2,089 records, for 15,027 observations in total. You also correctly identify the 43 process variables: 7 tank levels, 12 pressures, 12 flows, and 12 binary actuator states. This gives a particularly clear description of both the number and types of features.
+• BATADAL also has enough observations for a substantial machine-learning project using regression, trees, ensembles, SVMs, and similar models. Its sample size is much smaller than BattLeDIM's, so extremely flexible deep-learning models would require more caution, but it is still comfortably above the minimum guideline for this project.
+• Predicting pressure one hour ahead from current and lagged process variables is an appropriate supervised regression task. As with BattLeDIM, the target is constructed by temporally shifting an existing pressure measurement rather than by inventing a new quantity.
+• Your feature-selection discussion is particularly strong. Comparing the full measurement set with a hydraulically motivated subset is a sensible and testable approach, and your explicit exclusion of future actuator information and attack labels shows good awareness of target leakage.
+• Your proposed chronological training/validation/test split is appropriate for time-series forecasting. Randomly shuffling these observations would risk allowing future information to influence training, so preserving temporal order is the correct approach.
+• MAE and RMSE are appropriate regression metrics, and comparing learned models against a persistence baseline is an excellent way to determine whether the machine-learning model actually improves on a simple forecasting strategy.
+• Both datasets are very well suited to supervised predictive learning. BattLeDIM offers a much larger sample and finer temporal resolution, while BATADAL fully satisfies the Kaggle usability requirement and provides a somewhat more compact modeling problem. Either could support a strong project, with the usability issue being the main practical consideration for BattLeDIM.
+• Your report is exceptionally clear, polished, well organized, and professionally presented. Your name is clearly included, the comparison table is useful rather than decorative, and the report makes very effective use of the available two-page space.
+
+
+<a id="message-ff3a6e4d-81db-4995-8a89-d1e041d305a1"></a>
+## assistant | 2026-09-26T02:42:04.369711+00:00 | ff3a6e4d-81db-4995-8a89-d1e041d305a1
+
+Export node: ff3a6e4d-81db-4995-8a89-d1e041d305a1
+Parent node: d1af44f0-f318-44a9-a336-b209035fcd40
+Active branch: true
+Content type: text
+
+### Original message body
+
+El feedback es muy bueno y, más importante, nos deja bastante claro qué cosas conviene conservar para los siguientes milestones.
+
+La lectura principal es que el profesor validó prácticamente toda la lógica que construimos en Milestone 1: ambos datasets son adecuados para supervised regression, los tamaños y tipos de features están bien descritos, el horizonte de predicción está bien planteado, el uso de variables actuales y rezagadas es apropiado, el split debe ser cronológico, MAE/RMSE son métricas adecuadas y el persistence baseline fue visto como una muy buena idea.
+
+También confirmó algo clave para la selección futura: **BattLeDIM debe tratarse como dataset académico oficial/Zenodo, no como un dataset de Kaggle que cumple el criterio de usabilidad**, porque su copia de Kaggle está por debajo del umbral. Eso ya no es una duda; es una recomendación explícita del instructor.
+
+Para Milestone 2, yo conservaría como “decisiones ya validadas” estas ideas:
+
+- **Task:** forecasting de presión futura como problema de regresión.
+- **Target engineering:** desplazar la presión en el tiempo; 15 minutos para BattLeDIM y 1 hora para BATADAL.
+- **Predictors:** valores actuales + lagged measurements, evitando variables futuras.
+- **Feature selection:** comparar el conjunto completo contra un subconjunto hidráulicamente motivado.
+- **Data split:** chronological train/validation/test; no random shuffle.
+- **Metrics:** MAE y RMSE.
+- **Baseline:** persistence model.
+- **Leakage prevention:** excluir future actuator information, attack labels y cualquier predictor que contenga información del futuro.
+
+Hay dos observaciones del profesor que son especialmente útiles para decidir cuál dataset llevar adelante. **BattLeDIM** tiene una ventaja fuerte en volumen de datos y resolución temporal: 210,240 observaciones y muestreo cada 5 minutos, lo que da más margen para explorar modelos flexibles. **BATADAL** es más compacto, con 15,027 observaciones, pero cumple completamente el requisito de Kaggle y sigue teniendo suficiente tamaño para regresión, árboles, ensembles y SVMs; el profesor solo advierte que deep learning requeriría más cautela por el tamaño.
+
+Además, me parece muy importante que el profesor haya señalado explícitamente:
+
+> “Your feature-selection discussion is particularly strong.”
+
+Eso valida directamente la idea que introdujimos de usar la topología hidráulica para no manejar necesariamente todas las features. Esa puede convertirse en una parte central del proyecto, no simplemente en una nota secundaria. Por ejemplo, una comparación experimental entre:
+
+**Full-feature model** vs. **hydraulically selected feature model**
+
+podría terminar siendo una de las contribuciones más claras del proyecto.
+
+También confirmó que el forecasting que planteamos **no inventa una nueva variable target**. La presión futura ya existe en la serie y simplemente debemos crear algo como:
+
+\[
+y_t = P_{t+h}
+\]
+
+mientras que los predictors solo usan información disponible hasta \(t\). Ese detalle va a ser importante cuando armemos el dataset de ML.
+
+En términos de presentación, prácticamente no cambiaría nuestro estilo. El profesor lo calificó como *“exceptionally clear, polished, well organized, and professionally presented”* y destacó positivamente la tabla comparativa y el uso de las dos páginas. Así que para los próximos entregables conviene mantener esa misma línea visual.
+
+Mi conclusión para seguir avanzando sería: **Milestone 1 está cerrado; no necesitamos corregirlo.** Para Milestone 2, el trabajo ya no debería centrarse tanto en describir los datasets, sino en revisar literatura y usarla para justificar **qué dataset seleccionar, qué target node usar, qué features/lags considerar y qué modelos comparar**.
+
+Y hay una decisión que ahora sí conviene empezar a estudiar con más detalle: **BattLeDIM vs. BATADAL como dataset definitivo**. Con este feedback del profesor, yo no elegiría todavía solo por “más datos” o “mejor usability”; haría una comparación orientada al objetivo final del proyecto.
+
+<a id="message-bbb21b82-0f0a-41b4-ae8b-56bc59da4d3e"></a>
+## user | 2026-09-26T02:53:17.452101+00:00 | bbb21b82-0f0a-41b4-ae8b-56bc59da4d3e
+
+Export node: bbb21b82-0f0a-41b4-ae8b-56bc59da4d3e
+Parent node: ff3a6e4d-81db-4995-8a89-d1e041d305a1
+Active branch: true
+Content type: text
+
+### Original message body
+
+para el milestone 2: review existing work. estas son las direcciones y rubricas:
+
+## Task Description
+After the completion of Milestone 1, we will give you feedback and help you narrow down your proposal to a single dataset.
+For **Milestone 2**, you will write a 3-5 page report on learning models written by Kaggle (or other) developers for **one dataset** you would like to work with. Your report should include a description of your dataset, along the same lines as was requested for Milestone 1.
+Your report can include:
+- Some **predictive learning** tasks that people have worked on, that impress you.
+- Details on how they accomplish these tasks.
+- References to their code, **with links**.
+- Things that you found in the code that we have not covered in the class, if any.
+
+You can also add your own ideas and observations. While you are working on creating this report, you should also start thinking about your own variants and extensions of the existing solutions, and you can discuss such extensions in your report. Keep in mind that for your Mini-Project to be viable, you will need to propose some new contribution involving predictive learning that goes beyond anything that has been done in the past for your set.
+- After you are done, please submit your response **as a .pdf file upload**.
+- For maximum credit, your responses should be well-organized, neat, relevant and thorough. For more details on the grading standards, please see the rubric at the bottom of this page.
+- Looking at online ML tutorials can provide additional ideas as to what a makes for a well-written presentation (but beware, some are better than others!).
+
+***
+### Sample Report
+See the following file for an example of how a student from a previous class structured their report. How well does it satisfy the rubric conditions? Are there any areas in which you think it could have been improved?
+
+
+Mini-Project Milestone 2 Rubric
+Mini-Project Milestone 2 Rubric
+Criteria
+Ratings
+Pts
+This criterion is linked to a Learning OutcomeDescription of Dataset and Learning Task
+You should provide enough information about your proposed dataset so as to allow the reader to judge its suitability for a predictive supervised learning task. You should provide a general description (e.g. source, potential uses, class information), the characteristics of the data (e.g. numbers of records and features, types of features), and some indication as to why you are considering it (e.g. information about your proposed predictive learning task).
+2 ptsExcellentFor your proposed dataset: 1) A thorough general description is provided. 2) All relevant characteristics of the data records and features are stated. 3) A clear proposal is given for at least one potential use in predictive learning.
+1.75 ptsVery GoodFor your proposed dataset: 1) A general description is given, with few (if any) of the relevant details missing. 2) Most (but not all) of the relevant characteristics of the data records and features are stated. 3) At least one potential use in predictive learning is proposed, but with some important details missing.
+1.5 ptsGoodFor your proposed dataset: 1) A general description is given, with some of the relevant details missing. 2) Many of the relevant characteristics of the data records and features are stated, but several important ones are missing. 3) At least one potential use in predictive learning is proposed, but with many important details missing.
+1 ptsFairFor your proposed dataset: 1) Not much background given about the data. 2) Many relevant characteristics of the data and features are missing. 3) The potential uses stated are vague or unclear.
+0.5 ptsProblematicFor your proposed dataset: little or no original writing, lists of information copy-pasted from Kaggle without further explanation, proposed uses missing or inappropriate.
+0 ptsMissingNo report was submitted, or the information submitted was inadmissable (e.g. not a valid dataset, violations of the Academic Integrity policy, etc.).
+2 pts
+This criterion is linked to a Learning OutcomeKaggle Contributions
+You should give a summary of the most interesting or important contributions of Kaggle authors for your chosen dataset. Their learning models should be described in sufficient detail for the readers to be able to understand the significance of their contributions.
+2 ptsExcellentFor each Kaggle contribution: 1) The learning tasks considered by the authors are clearly stated. 2) A thorough and relevant description is given for the learning models they developed, as well as any exploratory data analysis and data preparation. 3) The performances achieved by the learning models are clearly stated, along with the measures used to evaluate them.
+1.75 ptsVery GoodFor each Kaggle contribution: 1) The learning tasks considered by the authors are stated, although one or two important details may be missing. 2) The learning models they developed are described together with the exploratory data analysis and data preparation, but some important details may have been overlooked. 3) The performances achieved by the learning models are stated, but some important information may be missing.
+1.5 ptsGoodFor each Kaggle contribution: 1) The learning tasks considered by the authors are stated, although many of the important details may be missing. 2) The learning models they developed are described together with the exploratory data analysis and data preparation, but many important details may have been overlooked. 3) The performances achieved by the learning models are stated, but much important information may be missing.
+1 ptsFairFor each Kaggle contribution: 1) The learning tasks considered by the authors are stated, but with most of the important details missing. 2) The learning models they developed are roughly described, but without the level of precision needed to fully understand the relevant design choices. 3) The performances achieved by the learning models are stated for some situations, but most of the relevant details are missing.
+0.5 ptsProblematicFor each Kaggle contribution: little or no original writing, lists of information copy-pasted from Kaggle without further explanation, little or no discussion of learning tasks, models, data analysis & preparation.
+0 ptsMissingNo report was submitted, or the information submitted was inadmissable (e.g. not a valid dataset, violations of the Academic Integrity policy, etc.).
+2 pts
+This criterion is linked to a Learning OutcomeYour Anticipated Contributions
+You should state the contributions you hope to make relative to the prior work on Kaggle, such as new data preparation steps and learning models that you propose to develop for your prediction tasks. You should also indicate how your proposal is intended to extend or improve upon the work you found on Kaggle.
+1 ptsExcellent1) A clear and precise statement of any new data preparation steps and learning models you propose to develop, as well as any supporting exploratory data analysis. 2) A detailed discussion of the improvements or extensions you expect relative to existing work found on Kaggle, as well as the performance measures or other criteria by which this improvement or extension can be judged.
+0.75 ptsGood1) A statement of the data preparation steps or learning models you expect to develop, but with many details missing. 2) Discussion of possible improvements or extensions, but with many important details or justifications not provided.
+0.5 ptsFair1) A statement of the data preparation steps or learning models you expect to develop, but with most of the relevant details missing. 2) Some discussion of possible improvements or extensions, but with most of the important details or justifications not provided.
+0.25 ptsProblematicThe anticipated contributions are only vaguely described, or are infeasible, inappropriate or problematic in some way.
+0 ptsMissingNo report was submitted, or the information submitted was inadmissable (e.g. not a valid dataset, violations of the Academic Integrity policy, etc.).
+1 pts
+This criterion is linked to a Learning OutcomePresentation
+Your submission should be clear, well-organized, and neat, of the standard that would be expected in industry. Your writeup should be of sufficient quality for incorporation into your final Mini-Project report.
+1 ptsExcellentClear and concise, without repetition and well ordered, and with very few typos or grammatical errors.
+0.75 ptsGoodReasonably clear, concise, and well-ordered, with little or no repetition, but with occasional typos and/or grammatical errors.
+0.5 ptsFairUnderstandably written, but with a significant number of presentational or organizational issues (e.g. ambiguous or unclear phrasing, many typos and grammatical errors, layout disordered or difficult to parse, etc.).
+0.25 ptsProblematicSerious issues with formatting (e.g. missing or broken links, significant inconsistencies in the layout etc.), extreme terseness, ungrammatical or typo-ridden text, copy-pasting of lists, figures & tables without clear explanations.
+0 ptsMissingNo report was submitted, or the information submitted was inadmissable (e.g. inappropriate dataset, inappropriately submitted, violations of the Academic Integrity policy, etc.).
+1 pts
+
+<a id="message-220dab89-4a19-40d2-822e-0c7e9d562caf"></a>
+## assistant | 2026-09-26T02:54:31.038260+00:00 | 220dab89-4a19-40d2-822e-0c7e9d562caf
+
+Export node: 220dab89-4a19-40d2-822e-0c7e9d562caf
+Parent node: ae6f084d-ab9d-449d-98ac-9adf72f1218e
+Active branch: true
+Content type: text
+
+### Original message body
+
+Con estas instrucciones, la rúbrica y el feedback del Milestone 1, ya podemos definir una estrategia bastante precisa para **Milestone 2**. Mi recomendación es que trabajemos con **BattLeDIM / L-Town** como dataset único.
+
+### Por qué elegiría BattLeDIM
+
+El problema de usabilidad de Kaggle deja de ser un obstáculo importante en Milestone 2 porque el assignment dice explícitamente **“Kaggle (or other) developers”** y el profesor ya indicó que, si usamos BattLeDIM, debemos tratar la **versión oficial/Zenodo como fuente primaria**. Eso es exactamente lo que haría.
+
+Además, BattLeDIM es particularmente bueno para este milestone porque no solo tenemos el dataset: existe una competencia formal, participaron **18 equipos**, hay un paper académico que compara sistemáticamente los métodos, existe una colección de trabajos posteriores y parte del código es público y reproducible. El sitio oficial enlaza el dataset, el código de evaluación, CodeOcean, presentaciones y la colección de papers. citeturn778539search2turn891451search5
+
+Esto también nos ayuda con el punto más difícil del assignment: demostrar que nuestra eventual contribución **va más allá del trabajo existente**. La gran mayoría del trabajo sobre BattLeDIM se concentra en **leak detection and localization**, mientras que nosotros estamos proponiendo **future pressure forecasting**. Por lo tanto, utilizamos el mismo dataset, pero formulamos un problema supervisado diferente y claramente predictivo.
+
+---
+
+## Qué nos enseña el sample report
+
+El sample es útil como referencia, pero yo no lo copiaría literalmente. Hace bien varias cosas: describe el dataset y sus features, define claramente su binary-classification task, analiza un Random Forest con 91.48% accuracy y luego compara varios modelos de otro notebook, incluyendo XGBoost, Gaussian Naive Bayes, Random Forest, Decision Tree y KNN. También enlaza directamente los notebooks utilizados. fileciteturn5file0L16-L33 fileciteturn5file1L49-L69
+
+También hace algo que la rúbrica quiere expresamente: pasa de resumir trabajos existentes a proponer modificaciones propias. Por ejemplo, propone feature engineering, grid search e investigaciones adicionales a partir del análisis de correlación. fileciteturn5file3L161-L168
+
+Pero podemos hacerlo mejor. El sample consume mucho espacio con screenshots de `pairplot` y heatmaps, y reporta principalmente **accuracy**, sin profundizar mucho en validación, data splitting o posibles problemas del modelo. Incluso atribuye la diferencia del Random Forest a la falta de scaling, una explicación que no resulta especialmente convincente para un modelo basado en árboles. fileciteturn5file1L60-L64
+
+Para nuestro informe usaría figuras solo cuando realmente expliquen algo importante.
+
+---
+
+# Cómo estructuraría nuestro Milestone 2
+
+Apuntaría a **4–5 páginas**, no solamente 3. Tenemos suficiente contenido útil para justificarlo sin rellenar espacio.
+
+| Sección | Aproximadamente | Objetivo de la rúbrica |
+|---|---:|---|
+| 1. Dataset and proposed learning task | 0.75–1 página | Description of Dataset and Learning Task |
+| 2. Existing work on BattLeDIM | 2–2.5 páginas | Kaggle/Other Contributions |
+| 3. Comparison and observations | 0.5 página | Comprensión crítica |
+| 4. Anticipated contribution | 0.75–1 página | Your Anticipated Contributions |
+| References | integrado/final | Links y reproducibilidad |
+
+La primera sección puede reutilizar parcialmente Milestone 1, pero ahora BattLeDIM debe aparecer explícitamente como:
+
+**Primary source: Official BattLeDIM/Zenodo release**
+
+y la copia de Kaggle puede quedar como acceso secundario.
+
+No hace falta volver a gastar media página justificando su usability.
+
+---
+
+# Existing work: aquí está el núcleo del Milestone 2
+
+No intentaría describir los 18 equipos. Seleccionaría **tres trabajos representativos**, porque eso nos permite explicar realmente sus modelos, preparación, evaluación y resultados.
+
+### 1. Leakbusters / LILA
+
+Este es probablemente el mejor trabajo para analizar en detalle porque tenemos **paper + código abierto + notebook reproducible**.
+
+LILA es un algoritmo secuencial basado en presión. Su primer módulo usa **linear regression entre pares de sensores de presión**; después analiza los errores residuales y aplica **change-point detection** para estimar cuándo comienza una fuga. La localización posterior utiliza un modelo hidráulico, candidate pipes y simulation-based optimization mediante programación lineal y mixed-integer linear programming. El repositorio incluye el notebook `2019_leakage_identification.ipynb` y código para reproducir varias figuras del paper. citeturn891451search1
+
+Esto es particularmente interesante para nosotros porque la primera parte es, conceptualmente, bastante cercana a nuestro problema: **aprender relaciones predictivas entre presiones**.
+
+En la competencia, Leakbusters alcanzó **47.83% true-positive rate, 7 false positives y €195,490 de economic score**. fileciteturn5file4L217-L238
+
+Y aquí tenemos un link de código real que podemos incluir en el reporte:
+
+urlLILA GitHub repositoryhttps://github.com/SWN-group-at-TU-Berlin/LILA
+
+---
+
+### 2. Under Pressure — Dual Model
+
+Este trabajo aporta una aproximación muy distinta y nos da variedad metodológica.
+
+Primero calibra demanda utilizando series temporales, AMR y flujos medidos. Después calibra parámetros hidráulicos como pipe roughness y valve status. Finalmente construye un **dual hydraulic model**, utiliza residuals para detectar fugas y emplea analytical sensitivities y **Pearson correlation** para la localización. citeturn891451search2
+
+El benchmark resume que los mejores métodos frecuentemente combinaron modelos hidráulicos calibrados, residual analysis, change detection y optimización. fileciteturn5file7L397-L420
+
+Under Pressure alcanzó **65.22% TPR, solo 4 false positives y €260,562**, uno de los resultados más fuertes de la competencia. citeturn891451search5
+
+Aquí podemos discutir conceptos que probablemente todavía no hemos cubierto extensamente en clase: hydraulic sensitivity matrices, dual models, Pearson residual correlation y optimization-based calibration.
+
+---
+
+### 3. Un tercer enfoque
+
+Tenemos varias opciones, pero creo que **Tongji** sería la más lógica para el documento principal.
+
+El método de Tongji utiliza una combinación de model calibration, presión residual, time-series decomposition y clustering para identificar distintos leakage scenarios. Luego reconstruye el escenario hidráulico incorporando fugas conocidas antes de realizar la localización. En BattLeDIM obtuvo **56.52% TPR, 3 false positives y €264,873**, el mayor economic score reportado entre los participantes. citeturn891451search5
+
+Esto nos da tres filosofías distintas:
+
+**LILA:** data-driven regression → residuals → change detection → hydraulic localization.
+
+**Under Pressure:** calibrated physics model → dual network → sensitivities.
+
+**Tongji:** time-series decomposition/clustering + hydraulic model.
+
+Eso sería mucho más interesante que simplemente enumerar Random Forest, XGBoost, SVM, etc.
+
+---
+
+# La parte más importante: nuestra futura contribución
+
+Aquí es donde creo que podemos obtener el **1/1 completo** de la rúbrica.
+
+No escribiría simplemente:
+
+> “I plan to try Random Forest and compare its accuracy.”
+
+Eso sería demasiado genérico.
+
+Nuestra propuesta ya puede formularse de manera concreta:
+
+> **Instead of detecting or localizing leakages, this project will investigate whether BattLeDIM SCADA measurements can be used to predict pressure at a selected monitored node 15 minutes ahead.**
+
+Eso es claramente diferente del trabajo que acabamos de revisar.
+
+Propondría cuatro experimentos conectados:
+
+1. **Target engineering:**  
+   crear
+
+   \[
+   y_t=P_{t+15\text{ min}}
+   \]
+
+   desplazando tres pasos la presión observada porque BattLeDIM tiene intervalos de cinco minutos.
+
+2. **Temporal predictors:**  
+   utilizar valores actuales y lagged values de presión, flow, tank level y AMR demand. Nunca utilizar información posterior al tiempo \(t\).
+
+3. **Hydraulic feature selection:**  
+   comparar:
+
+   **Full network features**
+
+   versus
+
+   **Hydraulically motivated subset**
+
+   seleccionado con ayuda del `.inp` de L-Town y la ubicación del target.
+
+4. **Model comparison:**  
+   comenzar con un **persistence baseline**, luego modelos sencillos de regresión y posteriormente modelos más flexibles.
+
+Esto conecta directamente con uno de los puntos que más destacó el profesor en Milestone 1: nuestra idea de comparar el feature set completo contra un conjunto hidráulicamente seleccionado.
+
+---
+
+## Cómo mediríamos nuestra contribución
+
+No debemos decir simplemente que queremos “obtener better results”. Hay que definir qué significa *better*.
+
+Yo escribiría que el proyecto se evaluará con:
+
+\[
+MAE=\frac{1}{n}\sum |y_i-\hat y_i|
+\]
+
+y RMSE.
+
+Pero además reportaría el desempeño **relative to persistence**.
+
+Por ejemplo:
+
+> Does a learned model reduce the MAE and RMSE relative to simply assuming that pressure 15 minutes from now will equal the current pressure?
+
+Eso convierte la mejora en algo medible.
+
+Además, se preservará el orden temporal mediante **chronological train/validation/test splitting**, exactamente como recomendó el profesor.
+
+---
+
+# Un posible título
+
+Me gusta algo como:
+
+**Milestone 2 — Review of Existing Work**  
+**Pressure-Based Learning in the BattLeDIM L-Town Benchmark**
+
+Y luego como subtítulo conceptual:
+
+**From Leakage Detection to Short-Horizon Pressure Forecasting**
+
+Ese segundo título ayuda a que el lector entienda inmediatamente **qué hicieron los demás y dónde entra nuestra contribución**.
+
+---
+
+## Un punto especialmente favorable
+
+El propio paper de BattLeDIM concluye que participaron 18 equipos utilizando model-based, model-free, machine-learning, optimization y otras metodologías, y señala que todavía existe bastante margen para mejorar, ya que incluso las mejores soluciones alcanzaron aproximadamente la mitad del máximo score teórico. fileciteturn5file5L263-L284
+
+Eso nos da una literatura suficientemente rica para **review existing work**, pero el problema que proponemos —pressure forecasting— sigue siendo suficientemente distinto como para que el proyecto no sea simplemente una reproducción de BattLeDIM.
+
+### Mi recomendación
+
+Yo cerraría desde ahora la selección como:
+
+**Dataset selected for Milestone 2 and subsequent project stages: BattLeDIM / L-Town, using the official Zenodo release as the primary source.**
+
+Y construiría Milestone 2 alrededor de **LILA + Under Pressure + Tongji**, terminando con nuestra propuesta de **15-minute pressure forecasting + hydraulic feature selection + chronological validation + persistence baseline**.
+
+Ese enfoque está mucho más directamente alineado con los cuatro criterios de la rúbrica que simplemente hacer una revisión general de papers.
+

@@ -1,0 +1,2027 @@
+# ChatGPT export conversation
+
+Conversation ID: 6ae334d1-a604-83e9-a039-dd29a3c1856b
+Original title: Analiza coherencia y participación
+Created UTC: 2026-10-29T11:58:10.506415+00:00
+Updated UTC: 2026-10-29T14:57:40.230027+00:00
+Source: student-supplied account export; original language and text retained.
+Scope: user/assistant text and multimodal text in mapping order; non-text model records remain private.
+
+<a id="message-ddda72bd-6c5f-479b-9a86-b5f1244845ef"></a>
+## user | 2026-10-29T11:58:06.096000+00:00 | ddda72bd-6c5f-479b-9a86-b5f1244845ef
+
+Export node: ddda72bd-6c5f-479b-9a86-b5f1244845ef
+Parent node: client-created-root
+Active branch: true
+Content type: text
+
+### Original message body
+
+analiza [https://github.com/Andres-ArangoMartinez/DS675_MiniProject](https://github.com/Andres-ArangoMartinez/DS675_MiniProject)  responde las inquietudes del profesor? es coherente con el trabajo que hemos realizado? permite evidenciar mi participacion, si poner en duda?
+
+<a id="message-cb468762-12c9-4963-ab23-18b18687fed7"></a>
+## assistant | 2026-10-29T11:58:29.240976+00:00 | cb468762-12c9-4963-ab23-18b18687fed7
+
+Export node: cb468762-12c9-4963-ab23-18b18687fed7
+Parent node: ddda72bd-6c5f-479b-9a86-b5f1244845ef
+Active branch: true
+Content type: text
+
+### Original message body
+
+Voy a revisar el contenido del repositorio, la evolución de los commits y la relación con los milestones de DS675. Separaré tres aspectos: si responde académicamente al profesor, si mantiene continuidad con el trabajo anterior y qué evidencia verificable existe de tu contribución individual.
+
+<a id="message-7312c869-30e7-412e-b5dd-c091e57341ba"></a>
+## assistant | 2026-10-29T11:59:24.280863+00:00 | 7312c869-30e7-412e-b5dd-c091e57341ba
+
+Export node: 7312c869-30e7-412e-b5dd-c091e57341ba
+Parent node: 0eed4932-45a7-4655-a221-33af131ccfee
+Active branch: true
+Content type: text
+
+### Original message body
+
+El repositorio sí contiene respuestas específicas al feedback: evidencia reproducible del EDA, inventario bibliográfico, comparación con Ahmed (2025) y un plan experimental E0–E4. La distinción más importante que encontré es que documenta bien los análisis descriptivos, pero todavía no presenta modelos predictivos entrenados; también separa expresamente el aporte intelectual declarado del apoyo de IA en la implementación. Voy a contrastar esa separación con el historial de Git y los entregables originales.
+
+<a id="message-b0e91267-0ecb-4fb5-9367-8fcfda3853cd"></a>
+## assistant | 2026-10-29T12:01:09.274300+00:00 | b0e91267-0ecb-4fb5-9367-8fcfda3853cd
+
+Export node: b0e91267-0ecb-4fb5-9367-8fcfda3853cd
+Parent node: 61d978b9-273a-4a30-b5a1-103f5c2bbd9e
+Active branch: true
+Content type: text
+
+### Original message body
+
+# Evaluación del repositorio DS675_MiniProject
+
+Revisé el repositorio [DS675_MiniProject](https://github.com/Andres-ArangoMartinez/DS675_MiniProject), incluyendo su documentación, código, plan experimental, historial de commits, Pull Request y ejecuciones de GitHub Actions.
+
+Mi conclusión es que **el repositorio está bien encaminado académicamente, es coherente con la investigación que venimos desarrollando y responde a buena parte de las inquietudes documentadas del profesor.** Sin embargo, hay una diferencia importante entre demostrar que el trabajo es técnicamente reproducible y demostrar, de manera convincente, cuál fue tu participación intelectual y práctica.
+
+<box gap={2}>
+  <row align="center" justify="between">
+    **Respuesta al feedback del profesor**
+    <badge color="success">Sólida, no definitiva</badge>
+  </row>
+  <row align="center" justify="between">
+    **Coherencia con Milestones 1 y 2**
+    <badge color="success">Alta</badge>
+  </row>
+  <row align="center" justify="between">
+    **Evidencia de investigación original**
+    <badge color="warning">Prometedora</badge>
+  </row>
+  <row align="center" justify="between">
+    **Evidencia de participación individual**
+    <badge color="warning">Debe reforzarse</badge>
+  </row>
+</box>
+
+El punto principal es este: **el repositorio permite defender tu papel como investigador que define el problema, selecciona variables, interpreta resultados y dirige la investigación, pero no elimina por completo las posibles preguntas sobre tu participación personal en la implementación**, especialmente porque documenta un uso considerable de herramientas de IA.
+
+Esto no invalida tu contribución. Significa que conviene fortalecer su evidencia sin exagerarla ni atribuirte actividades que realmente ejecutó una herramienta.
+
+## 1. ¿Responde a las inquietudes del profesor?
+
+| Inquietud | Evidencia encontrada | Evaluación |
+|---|---|---|
+| ¿De dónde salen las gráficas y estadísticas? | Notebook ejecutado, scripts, manifiestos y resultados reproducidos | <text color="success" weight="medium">Bien resuelta</text> |
+| ¿Cómo se seleccionaron los 35 trabajos? | 47 registros, 35 grupos, metodología y seis estudios detallados | <text color="success" weight="medium">Bien documentada</text> |
+| ¿Qué hicieron otros investigadores? | Matriz crítica de seis estudios y revisión adicional de Ahmed (2025) | <text color="success" weight="medium">Bien resuelta</text> |
+| ¿Qué aporta el proyecto más allá de aplicar regresores? | Preguntas de investigación y experimentos E0–E4 | <text color="warning" weight="medium">Definido, aún no demostrado</text> |
+| ¿Cómo se evaluará de manera justa? | Persistence, partición cronológica, controles de leakage y métricas comunes | <text color="success" weight="medium">Bien planteada</text> |
+| ¿Cuál fue tu contribución personal? | Documento de atribución, registro de contribuciones e historial Git | <text color="warning" weight="medium">Parcialmente demostrada</text> |
+
+Las respuestas están organizadas en [FEEDBACK_RESPONSE_MATRIX.md](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/blob/main/docs/FEEDBACK_RESPONSE_MATRIX.md).
+
+Hay evidencia técnica concreta. Por ejemplo, el proyecto reporta 78,624 registros de enero a septiembre de 2018 y un error MAE de persistencia de aproximadamente 0.05178 m. El código muestra cómo se construye el objetivo a 15 minutos y cómo se calculan las estadísticas.
+
+Además, encontré una [ejecución exitosa de GitHub Actions del 29 de octubre](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/actions/runs/40868069956), correspondiente al último commit revisado.
+
+Eso respalda la reproducibilidad. No equivale, por sí solo, a una verificación independiente de la autoría intelectual.
+
+Tampoco encontré en el repositorio el texto original completo de los comentarios del profesor. Por tanto, esta evaluación contrasta las inquietudes recogidas en la documentación y la rúbrica de Milestone 2, no una revisión palabra por palabra de su feedback.
+
+## 2. ¿Es coherente con el trabajo que hemos desarrollado?
+
+Sí. La continuidad científica está particularmente bien construida.
+
+<box border radius="lg" padding={3} gap={2}>
+  <box gap={1}>
+    <text color="secondary" weight="medium" size="xs">MILESTONE 1 — DATASET SELECTION</text>
+    **BattLeDIM / L-Town**
+
+    Selección del sistema hidráulico y definición del problema de predicción.
+  </box>
+  <row justify="center"><icon name="arrow-down" color="tertiary"/></row>
+  <box gap={1}>
+    <text color="secondary" weight="medium" size="xs">MILESTONE 2 — REVIEW EXISTING WORK</text>
+    **Estado del arte y análisis exploratorio**
+
+    Revisión de modelos existentes, señales SCADA, selección de Area C y objetivo n1(+15).
+  </box>
+  <row justify="center"><icon name="arrow-down" color="tertiary"/></row>
+  <box gap={1}>
+    <text color="secondary" weight="medium" size="xs">MILESTONE 3 — PROJECT PROPOSAL</text>
+    **Contribución experimental E0–E4**
+
+    Medir el valor incremental de sensores y demanda frente a la persistencia.
+  </box>
+  <row justify="center"><icon name="arrow-down" color="tertiary"/></row>
+  <box gap={1}>
+    <text color="secondary" weight="medium" size="xs">MILESTONE 4 — IMPLEMENTATION</text>
+    **Modelos predictivos y resultados**
+
+    Entrenar, comparar y evaluar Ridge, Gradient Boosting y los conjuntos de variables propuestos.
+  </box>
+</box>
+
+Me parece especialmente acertado que el repositorio conecte la predicción de presión con tu experiencia previa en ingeniería de control, pero sin afirmar que el proyecto actual ya implementa control avanzado.
+
+Además, verifiqué que el artículo <Entity category="other" value="Dynamic Pressure Regulation in Water Distribution Systems through Remote Critical Node Control: A Case Study" disambig="Artículo científico de Arango-Martinez y colaboradores publicado en ASCE en 2026"/> existe y fue publicado en junio de 2026. El trabajo aborda identificación dinámica, retardos y control de presión utilizando datos operacionales. <Cite ref="turn474897search1"/>
+
+Esto aporta una conexión académica externa importante y consistente con la motivación expuesta en [PRIOR_RESEARCH_AND_METHOD_TRANSFER.md](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/blob/main/docs/PRIOR_RESEARCH_AND_METHOD_TRANSFER.md).
+
+La diferencia entre ambos trabajos queda bien delimitada: el artículo anterior estudia identificación y control; DS675 propone una tarea supervisada de pronóstico en una red simulada.
+
+**La principal tarea pendiente es experimental.** El repositorio reconoce que todavía no se han entrenado los modelos predictivos ni demostrado una mejora frente a persistencia. Eso es razonable para una etapa de revisión/propuesta, pero será indispensable completar esa evaluación en el milestone de implementación.
+
+## 3. ¿La participación individual queda fuera de duda?
+
+Aquí hay un hallazgo importante.
+
+En [ATTRIBUTION.md](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/blob/main/docs/ATTRIBUTION.md) se establece que las decisiones de investigación corresponden al estudiante, mientras que IA apoyó la redacción, consulta de fuentes, generación de código, ejecución y documentación.
+
+Esa distinción es apropiada **si refleja lo que realmente ocurrió**. Pero hay tres aspectos que un evaluador exigente podría preguntar:
+
+**Primero: el historial es reciente.** Los nueve commits registrados se concentran entre el 28 y el 29 de octubre de 2026. El repositorio explica que es una organización posterior al feedback y conserva los PDFs originales. Eso es transparente, pero el historial nuevo no demuestra por sí mismo cómo se desarrolló el trabajo meses o semanas antes.
+
+**Segundo: existe una revisión personal pendiente en el historial.** En una versión anterior del repositorio, `STUDENT_REVIEW_LOG.md` indicaba que todavía no se habían registrado respuestas personales ni una aprobación formal. Posteriormente, el archivo fue retirado del árbol principal y se añadió un registro de aclaración de autoría fechado el 29 de octubre. La nueva aclaración puede ser válida, pero sería más convincente acompañarla con evidencia directa de revisión personal, en lugar de depender únicamente de una declaración.
+
+**Tercero: los commits demuestran actividad de la cuenta, no necesariamente quién escribió o decidió cada elemento.** El [Pull Request #1](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/pull/1) reconoce expresamente la asistencia de OpenAI Codex. La documentación actual es consistente con ello, aunque deja espacio para preguntar qué partes del código fueron examinadas o ejecutadas personalmente.
+
+Esto no es una acusación sobre el trabajo. Son límites objetivos de la evidencia que ofrece GitHub.
+
+## 4. Qué haría para reforzar la evidencia de participación
+
+Mi prioridad no sería agregar más documentos extensos. Sería producir evidencia pequeña, específica y personalmente verificable:
+
+1. **Registrar tus decisiones metodológicas en primera persona.** Por qué seleccionaste Area C, n1, el horizonte de 15 minutos y cada bloque de variables; qué alternativas descartaste y por qué.
+2. **Documentar una revisión técnica realmente realizada por ti.** Con fecha, commit, comandos ejecutados, resultados comprobados y explicaciones propias. No atribuirte ejecuciones automáticas que no hiciste.
+3. **Implementar y evaluar personalmente al menos una parte identificable del siguiente milestone.** Por ejemplo, construir E0/E1, interpretar los errores y documentar por qué agregar señales mejora o no la predicción. Puedes declarar cualquier asistencia de IA empleada.
+4. **Conservar la transparencia del historial.** No intentar reescribir retrospectivamente la autoría. Es preferible distinguir claramente el análisis original, la reconstrucción reproducible posterior y las nuevas contribuciones.
+
+## 5. Mi recomendación sobre la presentación al profesor
+
+Prepararía una explicación breve que enfatice la continuidad intelectual del proyecto, no simplemente la cantidad de código o documentos del repositorio.
+
+Una formulación defendible sería:
+
+<WritingBlock id="58241" variant="standard">The GitHub repository was organized after the Milestone 2 feedback to provide reproducible evidence and clarify the research contributions.
+
+My main contribution is the research direction: selecting the L-Town Area C forecasting problem, defining the 15-minute pressure prediction target at n1, identifying the hydraulically relevant measurements, and developing the proposed comparative experiments.
+
+The descriptive analysis and literature review support these research decisions. I used AI assistance for coding, documentation, source checking, and presentation, and I have documented that assistance explicitly.
+
+The proposed E0–E4 experiments are intended to determine whether additional measurements provide predictive information beyond pressure history and persistence. I have not claimed forecasting improvements that have not yet been experimentally demonstrated.</WritingBlock>
+
+Esta declaración debe ajustarse a las actividades que puedas confirmar personalmente.
+
+---
+
+## Veredicto final
+
+**No veo una ruptura académica entre los milestones y el repositorio.** Al contrario, hay una progresión lógica desde la selección del dataset, pasando por el análisis de trabajos existentes, hasta una contribución experimental concreta y falsable.
+
+También encuentro aspectos científicos positivos: se reconoce el trabajo previo con sensores similares, se evita reclamar una novedad algorítmica inexistente, se documenta el riesgo de leakage y se acepta que un modelo puede no superar la persistencia.
+
+Donde todavía existe vulnerabilidad no es tanto en la coherencia técnica, sino en **la demostración de tu intervención personal a lo largo del proceso**.
+
+Mi recomendación es mantener el repositorio actual como base, conservar la declaración transparente sobre IA y agregar evidencia auténtica de tus decisiones, revisión e implementación. Eso sería más convincente que simplemente insistir en que todo el trabajo te pertenece.
+
+En resumen: **académicamente es defendible; en términos de autoría está mejor documentado que antes, pero aún puede fortalecerse para resistir preguntas concretas del profesor.**
+
+<a id="message-1e62b2ee-6e5c-4207-900f-1502156f6481"></a>
+## user | 2026-10-29T12:10:40.224000+00:00 | 1e62b2ee-6e5c-4207-900f-1502156f6481
+
+Export node: 1e62b2ee-6e5c-4207-900f-1502156f6481
+Parent node: b0e91267-0ecb-4fb5-9367-8fcfda3853cd
+Active branch: true
+Content type: text
+
+### Original message body
+
+Tienes claras mis contribuciones ? puedes recordarlas
+
+<a id="message-2b489966-a260-453f-9006-6273a5262166"></a>
+## assistant | 2026-10-29T12:10:53.119988+00:00 | 2b489966-a260-453f-9006-6273a5262166
+
+Export node: 2b489966-a260-453f-9006-6273a5262166
+Parent node: 389d0c45-c376-48ff-a076-519437fcae8a
+Active branch: true
+Content type: text
+
+### Original message body
+
+Sí. Tengo claras tus contribuciones al **Mini-Project de DS675**, tanto por lo que hemos trabajado como por las responsabilidades que quedaron documentadas en el repositorio GitHub.
+
+Y hay una distinción fundamental: **tu contribución principal no consiste simplemente en programar modelos de Machine Learning, sino en concebir, dirigir y desarrollar una investigación que integra tu experiencia en ingeniería de control con aprendizaje predictivo.**
+
+## Tus contribuciones al proyecto
+
+1. **Concepción de la investigación.** Propusiste estudiar la predicción anticipada de presión en redes de distribución de agua, aprovechando tu experiencia en regulación de presión, sistemas hidráulicos y control de procesos. La motivación es investigar cómo la información predictiva podría contribuir posteriormente a estrategias de control anticipativo.
+
+2. **Definición del problema de Machine Learning.** Seleccionaste la red BattLeDIM/L-Town, específicamente el Area C, y definiste como objetivo predecir la presión medida en el nodo `n1` con un horizonte de **15 minutos**. Esta es una decisión central de la investigación.
+
+3. **Selección de las variables y justificación hidráulica.** Identificaste las seis señales `n1`, `n4`, `n31`, `T1`, `PUMP_1` y `AMR_n1`. Tu razonamiento parte de la relación física entre las presiones, el almacenamiento, el bombeo y la demanda local, no exclusivamente de correlaciones estadísticas.
+
+4. **Definición de los análisis exploratorios.** Orientaste los análisis de las señales SCADA, las gráficas de comportamiento diario, las correlaciones y la comparación inicial con persistencia. También vinculaste la representación de perfiles diarios con la metodología utilizada en tu investigación anterior sobre control de presión.
+
+5. **Orientación de la revisión bibliográfica.** Dirigiste la identificación y evaluación de trabajos relacionados con BattLeDIM/L-Town, enfocándote en la diferencia entre pronóstico de presión, reconstrucción de estados y detección de fugas. El repositorio documenta 47 fuentes organizadas en 35 grupos, con seis estudios analizados en mayor detalle, además de Ahmed (2025), incorporado posteriormente.
+
+6. **Interpretación y decisiones científicas.** Tu papel incluye evaluar qué información aportan las señales, reconocer las limitaciones del análisis y establecer qué resultados justificarían una mejora predictiva real. Esto incluye reconocer que la alta correlación no demuestra utilidad incremental y que la persistencia es una referencia exigente.
+
+7. **Definición de la contribución experimental.** Propusiste comparar conjuntos de variables para determinar si las presiones de otros nodos, el nivel del tanque, el bombeo y la demanda mejoran el pronóstico respecto al historial de `n1`. Esto quedó estructurado en los experimentos **E0–E4**, con comparaciones bajo condiciones equivalentes.
+
+8. **Dirección y supervisión de las herramientas de IA.** Has definido las necesidades de análisis, los objetivos, las visualizaciones y las decisiones investigativas, mientras que la IA ha apoyado la búsqueda de información, redacción, generación de código, ejecución y organización del material. Esta separación es explícita en la documentación.
+
+## Lo que debemos distinguir cuidadosamente
+
+Estas son las contribuciones **que has identificado y que el repositorio te atribuye**. No debemos confundirlas con evidencia independiente de que hayas ejecutado personalmente todos los scripts, escrito cada línea de código o leído íntegramente cada referencia.
+
+Tampoco debemos presentar como completados los entrenamientos y resultados predictivos de E0–E4: hasta la versión revisada, esos experimentos siguen propuestos.
+
+## Cómo resumiría tu papel ante el profesor
+
+Tu participación reúne tres responsabilidades principales:
+
+<box border radius="lg" padding={3} gap={3}>
+  <row align="start" gap={3}>
+    <icon name="lightbulb" color="secondary" size="lg"/>
+    <box flex="1" gap={1}>
+      **Investigador y responsable del diseño**
+
+      Definición del problema, selección de señales, formulación de hipótesis y contribución propuesta.
+    </box>
+  </row>
+  <divider color="subtle"/>
+  <row align="start" gap={3}>
+    <icon name="chart-no-axes-combined" color="secondary" size="lg"/>
+    <box flex="1" gap={1}>
+      **Responsable del razonamiento técnico**
+
+      Fundamentación hidráulica, decisiones metodológicas, análisis e interpretación de los resultados.
+    </box>
+  </row>
+  <divider color="subtle"/>
+  <row align="start" gap={3}>
+    <icon name="workflow" color="secondary" size="lg"/>
+    <box flex="1" gap={1}>
+      **Director del trabajo asistido por IA**
+
+      Especificación de las tareas de implementación y documentación, con supervisión de su correspondencia con los objetivos de investigación.
+    </box>
+  </row>
+</box>
+
+**Hay algo que considero especialmente importante preservar:** el origen de tu investigación está relacionado con tu experiencia previa en ingeniería de control y regulación de presión. Esa conexión explica por qué seleccionaste el problema, por qué elegiste esas señales y qué preguntas quieres responder. Es una parte sustancial de tu contribución intelectual.
+
+Mi propuesta es que utilicemos estas ocho contribuciones como referencia para revisar los próximos milestones, la documentación del repositorio y cualquier respuesta al profesor, verificando siempre que cada afirmación refleje lo que efectivamente realizaste.
+
+La pregunta que quiero dejarte es esta: **¿Consideras que esta descripción representa fielmente tu participación, especialmente en la selección de los análisis, la interpretación de resultados y la revisión de los artículos?** Esas tres actividades son particularmente importantes para presentar tu autoría con precisión.
+
+<a id="message-e975a38a-e5dd-4381-9872-a1e907ef84e5"></a>
+## user | 2026-10-29T12:20:28.666000+00:00 | e975a38a-e5dd-4381-9872-a1e907ef84e5
+
+Export node: e975a38a-e5dd-4381-9872-a1e907ef84e5
+Parent node: 2b489966-a260-453f-9006-6273a5262166
+Active branch: true
+Content type: text
+
+### Original message body
+
+LA respuesta es si. Con relacion a esto una descripcion mas detallada la he escrito antes.  Quiero, crear el repositorio que responde a las inquietudes del profesor nuevamente desde cero. No quiero que parezcan numeros de revision ni nada de referencia a redacciones anteriores sobre lo mismo u otro documentos que ya no van a estar. Crea el prompt (ingles, formato json) para eliminar el repositorio actual y crearlo nuevamente desde cero, con las aclaraciones y enfoque que hemos discutido.
+
+<a id="message-d73c56e5-717b-4b53-ba45-4007c0184257"></a>
+## assistant | 2026-10-29T12:21:27.944338+00:00 | d73c56e5-717b-4b53-ba45-4007c0184257
+
+Export node: d73c56e5-717b-4b53-ba45-4007c0184257
+Parent node: 1b85cf0c-f258-47a9-8626-aac798c5f59e
+Active branch: true
+Content type: text
+
+### Original message body
+
+Preparé el prompt para **OpenAI Codex o un agente con acceso a GitHub**. Su objetivo es reconstruir `DS675_MiniProject` como un repositorio limpio, coherente y autónomo, que responda al profesor y refleje correctamente tus contribuciones.
+
+Incluí una condición importante: respaldar y verificar los materiales académicos antes de eliminar el repositorio. El nuevo historial será independiente, pero no deberá presentar afirmaciones engañosas sobre cuándo se realizó la investigación ni sobre el uso de IA.
+
+El prompt está completamente en inglés y estructurado en JSON.
+
+<CodeBlock language="json" editable>
+{
+  "role": "Senior Machine Learning Research Engineer, Academic Research Assistant, and GitHub Repository Architect",
+  "task": "Rebuild the DS675 Mini-Project GitHub repository completely from scratch, creating a clean, self-contained, academically rigorous research repository that addresses the professor's Milestone 2 concerns, accurately represents the student's intellectual contributions, and provides reproducible supporting evidence.",
+  "repository": {
+    "owner": "Andres-ArangoMartinez",
+    "name": "DS675_MiniProject",
+    "existing_url": "https://github.com/Andres-ArangoMartinez/DS675_MiniProject",
+    "target_branch": "main",
+    "visibility": "public",
+    "strategy": "Create a genuinely new GitHub repository with the same name after securely backing up, verifying, and removing the existing repository.",
+    "important": "The new repository must be independently understandable and operational. It must not depend on any deleted repository, obsolete document, previous branch, historical commit, or external private workspace."
+  },
+  "research_ownership": {
+    "research_lead": "Andres Arango Martinez",
+    "principle": "The student is responsible for the conception, direction, analysis, interpretation, and scientific decisions of this research. AI assistance supports implementation, documentation, verification, and presentation under the student's instructions.",
+    "confirmed_student_contributions": [
+      "Conceived the research question connecting short-horizon pressure prediction with water distribution systems and control engineering.",
+      "Selected the BattLeDIM/L-Town dataset and Area C as the study domain.",
+      "Defined the supervised learning target as the recorded pressure at node n1, 15 minutes ahead.",
+      "Selected the hydraulically relevant measurements n1, n4, n31, T1, PUMP_1, and AMR_n1.",
+      "Defined the analytical objectives and selected the exploratory analyses and visual representations.",
+      "Directed the literature review, relevance screening, focused reading, and technical synthesis.",
+      "Interpreted the analytical findings using hydraulic engineering and predictive learning reasoning.",
+      "Established the hypotheses and comparative experiments assessing incremental predictive information.",
+      "Made the scientific and methodological decisions guiding the project.",
+      "Directed the AI-assisted work according to the research objectives and analytical requirements."
+    ],
+    "AI_assistance": [
+      "Scientific writing and language editing.",
+      "Organization of the literature and technical documentation.",
+      "Reference retrieval and source-checking support.",
+      "Code generation, refinement, and execution under student instructions.",
+      "Reproducibility tooling and automated validation.",
+      "Repository organization and technical presentation."
+    ],
+    "attribution_rules": [
+      "Clearly distinguish student research ownership from AI-assisted technical implementation.",
+      "Do not describe the AI as the originator of the research question, hydraulic feature selection, interpretation, or methodological decisions.",
+      "Do not claim that the student manually wrote every line of code.",
+      "Do not claim that the student personally executed a command or inspected a source unless supported by an authentic record.",
+      "Do not invent independent student confirmations, approval records, or execution histories.",
+      "Use professional, factual, concise academic attribution throughout the repository.",
+      "Apply the same attribution principles consistently across the README, research documentation, notebook, and provenance records."
+    ]
+  },
+  "scientific_foundation": {
+    "dataset": "BattLeDIM / L-Town",
+    "official_dataset_doi": "10.5281/zenodo.4017659",
+    "domain": "Water distribution systems",
+    "study_area": "Area C",
+    "target_node": "n1",
+    "forecast_horizon_minutes": 15,
+    "sampling_interval_minutes": 5,
+    "target_definition": "Predict the recorded pressure at node n1 at time t+15 minutes using measurements available at forecast origin t.",
+    "selected_signals": [
+      "n1",
+      "n4",
+      "n31",
+      "T1",
+      "PUMP_1",
+      "AMR_n1"
+    ],
+    "engineering_motivation": "The student's previous research on remote pressure control, dynamic system identification, and delay compensation motivates investigating whether advance pressure information can eventually support anticipatory pressure management. The current mini-project evaluates predictive information, not a completed pressure controller.",
+    "research_question": "Do hydraulically selected measurements provide incremental predictive information for 15-minute-ahead n1 pressure forecasting beyond the target node's own history and a persistence baseline?",
+    "contribution": "A controlled, interpretable experimental assessment of whether peer-node pressures, storage and pump signals, and local demand improve short-horizon pressure forecasting under matched evaluation conditions.",
+    "novelty_boundaries": [
+      "Do not claim invention of pressure forecasting.",
+      "Do not claim a new machine learning algorithm.",
+      "Do not claim that using the five common Area C signals is unprecedented.",
+      "Distinguish forecasting future pressure from reconstructing current pressure and detecting leaks.",
+      "Present tank-level regulation and delay-aware control as potential future applications, not completed results.",
+      "Treat predictive improvements as hypotheses until experimentally demonstrated."
+    ]
+  },
+  "professor_feedback_requirements": {
+    "goal": "Provide concise, direct answers supported by actual evidence.",
+    "required_topics": [
+      {
+        "concern": "Origin and reproducibility of exploratory data analysis.",
+        "required_evidence": "Executable analysis, verified input files, descriptive statistics, correlation calculations, figure-generation code, and reproducible outputs."
+      },
+      {
+        "concern": "Provenance and reproducibility of figures.",
+        "required_evidence": "Explicit mappings between each analytical figure, input variables, transformations, generating functions, and produced output."
+      },
+      {
+        "concern": "Clarity of individual contribution and AI use.",
+        "required_evidence": "A truthful, specific attribution statement distinguishing student-led research reasoning from AI-assisted implementation."
+      },
+      {
+        "concern": "Transparency of literature discovery and screening.",
+        "required_evidence": "A traceable source catalog, explicit inclusion and exclusion criteria, related-work categories, study-selection rationale, and references to original publications."
+      },
+      {
+        "concern": "Understanding of previous research.",
+        "required_evidence": "A critical technical comparison of datasets, prediction targets, preprocessing, learning techniques, validation protocols, reported metrics, and methodological limitations."
+      },
+      {
+        "concern": "Relationship to Ahmed et al. (2025).",
+        "required_evidence": "An accurate comparison explaining the overlap in Area C measurements and the difference between window reconstruction, leak detection, and future-pressure forecasting."
+      },
+      {
+        "concern": "Research contribution beyond applying standard regressors.",
+        "required_evidence": "A specific, falsifiable incremental-information question and a controlled experimental design."
+      },
+      {
+        "concern": "Strength of persistence and fairness of comparisons.",
+        "required_evidence": "Chronological evaluation, common forecast origins and targets, matched feature ablations, data-leakage controls, consistent metrics, and transparent reporting of negative findings."
+      }
+    ]
+  },
+  "literature_review": {
+    "required_studies": [
+      "ChebNet",
+      "SAM-kNN",
+      "Attention-based graph forecasting research (AGN)",
+      "LILA",
+      "GATRes",
+      "Wang et al. estimation, identification, and localization research",
+      "Ahmed et al. (2025), Windowed Multivariate LSTM Autoencoder for Leak Detection in Water Distribution Networks"
+    ],
+    "requirements": [
+      "Build a fresh, coherent literature review that includes all relevant verified studies.",
+      "Use original publications, verified DOI links, and available author repositories.",
+      "Provide pinned source-code references where available and useful.",
+      "Identify which studies forecast future pressure, reconstruct current states, or detect and localize leaks.",
+      "Explain which approaches are relevant to the proposed task and which results cannot be compared directly.",
+      "Do not present published performance as experimentally reproduced.",
+      "Include Ahmed et al. naturally within the literature analysis, rather than as an awkward appended correction.",
+      "Recalculate the literature inventory and group totals from the actual final source collection. Never force old counts to remain unchanged.",
+      "Do not claim an exhaustive systematic review unless the actual search process satisfies that standard.",
+      "Do not fabricate publication metadata, reading histories, code availability, or model evaluations."
+    ]
+  },
+  "experimental_design": {
+    "status": "Proposed experiments unless actual completed training evidence exists.",
+    "experiments": [
+      {
+        "id": "E0",
+        "inputs": "Current n1 pressure",
+        "method": "Persistence",
+        "purpose": "Establish the no-change forecasting baseline."
+      },
+      {
+        "id": "E1",
+        "inputs": "n1 historical lags and calendar features",
+        "purpose": "Measure the performance of a learned history-only predictor."
+      },
+      {
+        "id": "E2",
+        "inputs": "E1 plus n4 and n31 historical lags",
+        "purpose": "Test the incremental information from peer pressure measurements."
+      },
+      {
+        "id": "E3",
+        "inputs": "E2 plus T1 and PUMP_1 historical lags",
+        "purpose": "Test the incremental contribution of the combined storage and pump measurement block."
+      },
+      {
+        "id": "E4",
+        "inputs": "E3 plus AMR_n1 historical lags",
+        "purpose": "Test whether local demand supplies additional predictive information."
+      }
+    ],
+    "candidate_models": [
+      "Ridge Regression",
+      "Gradient Boosting Regressor"
+    ],
+    "optional_model": "Random Forest Regressor",
+    "data_partitioning": {
+      "training": "January-September 2018",
+      "validation": "October-December 2018",
+      "final_assessment": "2019, after freezing the model-selection protocol",
+      "disclosure": "2019 has previously been inspected for structural data checks and through published context, so it must not be described as completely unseen or blind."
+    },
+    "requirements": [
+      "Use only predictors available at forecast origin.",
+      "Generate the future label explicitly using a three-sample lead.",
+      "Respect chronological boundaries and exclude invalid future labels.",
+      "Use identical eligible timestamps and target values for matched comparisons.",
+      "Fit learned preprocessing using training data only.",
+      "Use identical model settings when isolating the effects of different feature blocks.",
+      "Use validation data for model selection and avoid final-period tuning.",
+      "Report MAE and RMSE in metres and centimetres.",
+      "Report absolute and relative improvements against matched persistence errors.",
+      "Preserve and interpret negative findings.",
+      "Do not claim that hydraulic proximity, correlation, or tank geometry establishes causality.",
+      "Do not train or score models merely to populate documentation unless this is explicitly part of the authorized project scope.",
+      "Never invent performance values."
+    ]
+  },
+  "repository_structure": {
+    "README.md": "Concise project overview, research ownership, scientific question, professor feedback coverage, verified results, proposed experiments, reproducibility instructions, and navigation.",
+    "reports/": "Include the authentic submitted Milestone 1 and Milestone 2 PDFs if their source files are available and verified. Preserve their original content.",
+    "docs/research_contribution.md": "Research motivation, problem formulation, confirmed student contributions, novelty limits, and expected scientific contribution.",
+    "docs/engineering_rationale.md": "Hydraulic reasoning for Area C, n1, feature selection, and limits of topology-based interpretation.",
+    "docs/literature_review.md": "Critical synthesis of existing predictive learning and related approaches.",
+    "docs/experimental_design.md": "E0-E4 comparisons, methodological controls, modeling plan, evaluation metrics, and research hypotheses.",
+    "docs/exploratory_analysis.md": "Detailed interpretation of descriptive findings with exact evidence references.",
+    "docs/instructor_feedback.md": "Direct, professional response to each professor concern with links to existing evidence.",
+    "docs/contributions_and_ai_use.md": "Accurate attribution of student-led research and AI-assisted technical implementation.",
+    "docs/reproducibility.md": "Environment setup, official data acquisition, execution commands, expected outputs, and troubleshooting.",
+    "data/": "Official data source manifest, checksums, licensing information, and data retrieval configuration.",
+    "literature/": "Verified source catalog, classification criteria, critical comparison tables, and permitted open-access materials.",
+    "notebooks/": "A clear, executable notebook containing the exploratory analysis and documented interpretations.",
+    "src/": "Modular and maintainable analysis, data validation, topology, figure, and reproduction code.",
+    "scripts/": "Portable reproduction and repository-validation entry points.",
+    "results/": "Verified descriptive outputs, analysis tables, figures, and execution manifests.",
+    "tests/": "Automated tests for timestamp alignment, forecast-label construction, screening counts, and essential data assumptions.",
+    ".github/workflows/": "Continuous integration that runs tests and checks reproducibility.",
+    "requirements.txt": "Verified runtime dependencies with appropriate version constraints."
+  },
+  "fresh_repository_rules": {
+    "mandatory": [
+      "All new files must be authored as a coherent, standalone research package.",
+      "Use stable, descriptive filenames and headings.",
+      "Do not create filenames with V1, V2, V3, revised, updated, final-final, or similar editing labels.",
+      "Do not create a narrative about earlier drafts, editorial iterations, prompt revisions, cleanup operations, or abandoned documents.",
+      "Do not mention obsolete filenames, deleted documents, missing branches, previous commit hashes, or superseded repository layouts.",
+      "Do not carry over obsolete prompt files, editorial approval worksheets, temporary audits, abandoned scripts, or redundant documentation.",
+      "Do not fabricate a development timeline or represent the new Git history as evidence of when the original academic research was performed.",
+      "References to actual course milestones, professor feedback, submitted reports, and authentic research provenance are permitted and must remain accurate.",
+      "Do not imply that new supporting code or public links accompanied an earlier submission unless verified.",
+      "Do not silently rewrite the authentic submitted reports.",
+      "Never create broken internal links or references to files that do not exist.",
+      "Use one consistent terminology and research narrative throughout the repository.",
+      "Keep documentation concise enough to be reviewed efficiently by the professor.",
+      "Preserve numerical claims only when supported by fresh computation or independently verified source evidence.",
+      "Use new, verified figure generation instead of reusing unexplained historical figures."
+    ],
+    "presentation": {
+      "language": "English",
+      "tone": "Professional, academic, confident, precise, and transparent",
+      "style": "Clear research documentation rather than a collection of corrective or editorial notes",
+      "priority": "Student intellectual ownership, scientific coherence, direct evidence, and reproducibility",
+      "avoid": [
+        "Defensive language about AI",
+        "Repetitive authorship claims",
+        "Unsupported originality claims",
+        "Excessive administrative documentation",
+        "References to discarded drafts",
+        "Ambiguous experimental status",
+        "Broken or unnecessary cross-references"
+      ]
+    }
+  },
+  "descriptive_reproduction": {
+    "reference_period": "January-September 2018",
+    "reference_values_to_verify": {
+      "timestamps": 78624,
+      "complete_days": 273,
+      "forecast_pairs": 78621,
+      "persistence_MAE_m": 0.05177624298851451,
+      "persistence_RMSE_m": 0.06849175638676988,
+      "n1_range_m": [
+        25.67,
+        29.36
+      ]
+    },
+    "instructions": [
+      "Download the exact official BattLeDIM files and verify their published checksums.",
+      "Recompute the descriptive statistics from the source data.",
+      "Validate the eight SCADA tables, timestamps, missing values, and channel selection.",
+      "Regenerate the daily profiles, correlation analysis, and literature summary figures from their actual inputs.",
+      "Verify the Area C topology and nominal distances without interpreting pipe length as a measured hydraulic delay.",
+      "Report any disagreement between newly computed and reference values.",
+      "Clearly label persistence errors as descriptive 2018 results, not final 2019 forecasting performance.",
+      "Document the actual execution environment, dependencies, inputs, and verified outputs.",
+      "If execution cannot be completed, identify the missing verification instead of reporting success."
+    ]
+  },
+  "safe_rebuild_workflow": [
+    {
+      "phase": "1. Inventory and secure backup",
+      "actions": [
+        "Inspect the existing repository in read-only mode.",
+        "Export a complete private backup of its Git history and relevant files.",
+        "Preserve authentic submitted reports, verified scientific sources, datasets manifests, and relevant computational evidence.",
+        "Store the backup outside the future public repository.",
+        "Verify that the backup can be opened and that essential source files are recoverable.",
+        "Record all material needed for the new repository before any destructive operation."
+      ]
+    },
+    {
+      "phase": "2. Reconstruct in a clean workspace",
+      "actions": [
+        "Create a new independent project directory.",
+        "Write all project documentation and code using the final research scope and attribution principles.",
+        "Integrate verified source materials without copying obsolete editorial narratives.",
+        "Organize a coherent literature review and reproducible descriptive analysis.",
+        "Ensure that all project claims point to evidence contained in the new structure or to authoritative external sources.",
+        "Initialize a fresh local Git repository with a clean root commit."
+      ]
+    },
+    {
+      "phase": "3. Validate",
+      "actions": [
+        "Install dependencies in a clean environment.",
+        "Execute the analytical reproduction pipeline.",
+        "Run all available automated tests.",
+        "Verify figures, tables, calculations, input checksums, and literature references.",
+        "Validate every Markdown link and repository-relative path.",
+        "Check that no obsolete version labels, deleted-file references, or abandoned documents remain.",
+        "Confirm that attribution is accurate and consistent.",
+        "Confirm that all experimental claims distinguish completed work from proposed work."
+      ]
+    },
+    {
+      "phase": "4. Authorize destructive replacement",
+      "actions": [
+        "Present the verified backup location and a summary of what will be preserved.",
+        "Obtain explicit final user approval before irreversible GitHub repository deletion.",
+        "Do not delete the repository if the backup or reconstructed project fails verification.",
+        "Do not modify or delete unrelated repositories.",
+        "Delete only Andres-ArangoMartinez/DS675_MiniProject when authorization is confirmed.",
+        "If GitHub permissions or repository-name reuse prevent replacement, stop safely and report the blocker without claiming completion."
+      ]
+    },
+    {
+      "phase": "5. Create and publish the new repository",
+      "actions": [
+        "Create a new public GitHub repository named DS675_MiniProject under Andres-ArangoMartinez.",
+        "Push the independently initialized project to main.",
+        "Configure the appropriate GitHub Actions workflow.",
+        "Verify that all public documentation links resolve correctly.",
+        "Run the repository's validation workflow and inspect its actual conclusion.",
+        "Confirm that the repository contains only the intended final project files.",
+        "Confirm that no outdated documents or references are needed to understand or reproduce the project."
+      ]
+    }
+  ],
+  "acceptance_criteria": [
+    "The replacement repository exists under the intended GitHub URL.",
+    "A verified private backup of the original repository exists.",
+    "All academic source materials required by the new project are available.",
+    "The README communicates the research question and contribution immediately.",
+    "The professor can locate an evidence-backed response to every documented concern.",
+    "The student's confirmed intellectual contributions are clearly and accurately described.",
+    "AI-assisted implementation is transparently acknowledged without misattributing research ownership.",
+    "The literature review is coherent, properly cited, and technically critical.",
+    "The analysis pipeline is executable and its descriptive outputs are verified.",
+    "No result is invented and no unexecuted model is presented as trained.",
+    "No obsolete revision labels, editorial history narratives, or dangling file references remain.",
+    "All repository links and references resolve.",
+    "Automated tests and GitHub Actions results are reported truthfully.",
+    "The repository is academically coherent with Milestones 1 and 2 and supports the next project milestone.",
+    "The new repository is self-contained and does not require the deleted repository to function."
+  ],
+  "completion_report": {
+    "format": "Concise structured report",
+    "include": [
+      "Repository URL",
+      "Confirmation of backup and replacement status",
+      "Summary of the new repository structure",
+      "Summary of how professor feedback is addressed",
+      "Description of student research contributions and AI support",
+      "Reproduction and validation outcomes",
+      "Any unresolved limitations",
+      "Recommended next implementation steps"
+    ],
+    "critical_instruction": "Never claim that repository deletion, recreation, verification, or successful execution occurred unless the corresponding operation actually completed."
+  },
+  "final_instruction": "Produce a complete, clean, technically rigorous, reproducible DS675 Mini-Project repository that reflects the student's actual intellectual leadership and research decisions. The finished repository must read as a unified academic research project, not as a sequence of document revisions. Maintain full scientific honesty about original course submissions, verified computations, AI assistance, and experiments that remain uncompleted."
+}
+</CodeBlock>
+
+### Dos decisiones que considero fundamentales
+
+**1. La atribución debe ser clara, pero no repetitiva.** El documento principal de contribuciones establece tu papel como investigador. En los demás archivos bastan referencias precisas cuando corresponda. No necesitamos repetir en cada párrafo que tú tomaste todas las decisiones; eso podría producir el efecto contrario al deseado.
+
+**2. La mejor defensa de tu participación es la coherencia científica.** La selección de Area C, el nodo `n1`, las seis señales, el horizonte de 15 minutos y los experimentos E0–E4 deben formar una explicación continua, sustentada en razonamiento hidráulico y decisiones de investigación. Esa conexión es más valiosa que una declaración genérica de autoría.
+
+**Importante:** este JSON es una instrucción para el agente; no elimina ni modifica todavía el repositorio. La eliminación será irreversible en GitHub y podría invalidar enlaces ya compartidos. El prompt exige conservar primero una copia verificable y solicitar tu autorización final antes de borrarlo.
+
+<a id="message-e83e0b7f-4cb6-43f3-9eb8-ac02988ce8e1"></a>
+## user | 2026-10-29T12:33:03.252000+00:00 | e83e0b7f-4cb6-43f3-9eb8-ac02988ce8e1
+
+Export node: e83e0b7f-4cb6-43f3-9eb8-ac02988ce8e1
+Parent node: d73c56e5-717b-4b53-ba45-4007c0184257
+Active branch: true
+Content type: text
+
+### Original message body
+
+todo debe ser coherente con lo presentado en el milestone 2, acorde al nivel y lo visto hasta el milestone 2, no adelantarse ni presentar nada que no se halla discutido.  No tengo claro de donde salen los E#, es importante que en el repositorio este toda la literatura revisada (rapida y de profundida) con la que se sacaron los 35 grupos. y resaltar puede ser en una carpeta detro de lteratura la que fue revisada en mas detalle (las 6 de la tabla)
+
+<a id="message-44b21f74-bc00-4272-8c13-44b12dd6d8ad"></a>
+## assistant | 2026-10-29T12:33:20.874483+00:00 | 44b21f74-bc00-4272-8c13-44b12dd6d8ad
+
+Export node: 44b21f74-bc00-4272-8c13-44b12dd6d8ad
+Parent node: b932a6af-4efe-4216-862a-55d100bb5015
+Active branch: true
+Content type: text
+
+### Original message body
+
+Voy a ajustar el prompt para que el Milestone 2 sea la referencia principal, no el plan de trabajo añadido después. Primero comprobaré el informe entregado y el inventario bibliográfico, especialmente la tabla de seis estudios, para evitar introducir experimentos, etiquetas o conceptos nuevos.
+
+<a id="message-32fda1bd-5000-49d8-bf04-3bc73e4da92a"></a>
+## assistant | 2026-10-29T12:34:16.475008+00:00 | 32fda1bd-5000-49d8-bf04-3bc73e4da92a
+
+Export node: 32fda1bd-5000-49d8-bf04-3bc73e4da92a
+Parent node: cc67f05d-c30a-40af-99f9-e133ada69b65
+Active branch: true
+Content type: text
+
+### Original message body
+
+Tienes razón. Revisé el contenido del **Milestone 2 entregado (5 páginas)** y encontré una diferencia importante con el prompt anterior: las etiquetas **E0–E4 no aparecen en el informe**. Fueron introducidas posteriormente para organizar experimentos, pero no necesitamos utilizarlas.
+
+El Milestone 2 ya define tres contribuciones propuestas que debemos conservar:
+
+- **C1 — Prepared forecast data:** preparar las mediciones y las etiquetas de predicción a 15 minutos, sin utilizar información futura.
+- **C2 — Model comparison:** comparar Gradient Boosting con Persistence, Ridge y Random Forest.
+- **C3 — Value of extra signals:** determinar si las señales adicionales aportan información respecto al historial de `n1`.
+
+También confirma los **35 grupos de trabajos relacionados y los seis estudios analizados en detalle**. La nueva versión debe conservar esa selección, hacer visible el inventario bibliográfico completo y distinguir claramente entre revisión preliminar y revisión profunda.
+
+La regla será: **reconstruir la evidencia de lo que ya se presentó, no ampliar artificialmente el alcance académico del proyecto.**
+
+## Prompt actualizado para reconstruir el repositorio
+
+Este reemplaza el anterior. Está diseñado para que Codex trate el Milestone 2 como documento académico rector y use el repositorio actual únicamente para recuperar fuentes, archivos y evidencia que realmente correspondan al trabajo presentado.
+
+<CodeBlock language="json" editable>
+{
+  "role": "Academic Research Repository Architect and Machine Learning Research Assistant",
+  "objective": "Rebuild the DS675 Mini-Project GitHub repository from scratch as a clean, self-contained, reproducible academic repository that faithfully represents the submitted Milestone 2 report, documents its supporting evidence, and addresses the professor's concerns without expanding the original research scope.",
+  "repository": {
+    "owner": "Andres-ArangoMartinez",
+    "name": "DS675_MiniProject",
+    "url": "https://github.com/Andres-ArangoMartinez/DS675_MiniProject",
+    "branch": "main",
+    "visibility": "public",
+    "operation": "Prepare a genuinely independent replacement repository, verify it, securely back up the existing repository, and request explicit final authorization before deleting and recreating the GitHub repository under the same name."
+  },
+  "academic_source_of_truth": {
+    "primary_document": "Milestone2.pdf",
+    "secondary_context": "Milestone1.pdf",
+    "priority": "The submitted Milestone 2 report is the authoritative specification for the research questions, selected dataset, methodology, analyses, literature review, proposed models, anticipated contributions, and academic level.",
+    "existing_repository_role": "Use the current repository to recover original source inventories, group assignments, authentic submitted reports, scientific references, licensed papers, analytical code, and reproducible evidence. Do not use later research extensions as authority to expand Milestone 2.",
+    "rules": [
+      "Read the complete five-page Milestone 2 report before designing the new repository.",
+      "Create an internal claim-to-source checklist using the exact sections, figures, table, and contribution statements in Milestone 2.",
+      "Preserve the original terminology, reasoning, methods, findings, and research scope.",
+      "Do not introduce new research questions, experimental frameworks, model families, or contributions that were not discussed in Milestone 2.",
+      "Do not convert planned experiments into completed experiments.",
+      "Additional documentation may explain or substantiate submitted claims but must not introduce a different project.",
+      "The professor's documented feedback may justify focused clarification or supporting evidence, not a new scientific agenda.",
+      "When a conflict exists between later working documents and the submitted report, preserve the submitted position and disclose any necessary factual correction rather than silently rewriting history.",
+      "Keep the technical explanation appropriate to the DS675 material covered through Milestone 2.",
+      "Use simple, understandable explanations of classical regression, model comparison, chronological evaluation, and the learning methods reviewed in the literature."
+    ]
+  },
+  "research_ownership": {
+    "student": "Andres Arango Martinez",
+    "confirmed_contributions": [
+      "Conceived the research direction connecting pressure forecasting with hydraulic engineering and control.",
+      "Selected the BattLeDIM/L-Town dataset and Area C.",
+      "Defined the n1 pressure forecasting target and 15-minute prediction horizon.",
+      "Selected n1, n4, n31, T1, PUMP_1, and AMR_n1 using hydraulic engineering reasoning.",
+      "Defined the exploratory analyses and selected the visualizations.",
+      "Directed the literature search, relevance screening, focused reading, and technical interpretation.",
+      "Analyzed the findings and made the research decisions.",
+      "Established the proposed model comparisons and the question of additional signal value.",
+      "Directed AI-assisted implementation, technical checking, writing, and documentation."
+    ],
+    "AI_support": [
+      "Writing and language editing.",
+      "Organization of references and documentation.",
+      "Source retrieval and verification assistance.",
+      "Generation and execution of analytical code under the student's instructions.",
+      "Reproducibility and repository preparation."
+    ],
+    "rules": [
+      "Represent the student as the research lead and intellectual contributor.",
+      "Separate research decisions from AI-assisted implementation.",
+      "Do not invent personal execution records or independently completed actions.",
+      "Do not claim every line of code was manually written by the student.",
+      "Avoid repetitive or defensive attribution language.",
+      "Provide one clear contribution and AI-use statement, referenced where appropriate."
+    ]
+  },
+  "research_scope": {
+    "title": "Learning Models for Pressure Forecasting",
+    "dataset": "BattLeDIM / L-Town",
+    "dataset_doi": "10.5281/zenodo.4017659",
+    "data_type": "Simulated SCADA measurements",
+    "sampling_interval": "5 minutes",
+    "selected_area": "Area C",
+    "target": "Recorded pressure at node n1, 15 minutes ahead",
+    "learning_task": "Single-output supervised regression",
+    "signals": [
+      "n1",
+      "n4",
+      "n31",
+      "T1",
+      "PUMP_1",
+      "AMR_n1"
+    ],
+    "selected_feature_rationale": {
+      "n1": "Target-node pressure history.",
+      "n4_n31": "Additional pressure information from Area C.",
+      "T1": "Tank storage state.",
+      "PUMP_1": "Measured pump inflow.",
+      "AMR_n1": "Local consumption at the target junction."
+    },
+    "scope_limitations": [
+      "The task is pressure forecasting, not leakage classification.",
+      "Leak labels are not model inputs.",
+      "The measurements are simulated, not field observations.",
+      "Hydraulic distance is not a measured time delay.",
+      "Correlation does not establish additional predictive value.",
+      "No advanced controller is implemented or evaluated.",
+      "Operational benefits remain a motivation, not a demonstrated finding."
+    ]
+  },
+  "milestone2_contributions": {
+    "instruction": "Use only the three anticipated contributions C1, C2, and C3 as defined in Section 3 of the submitted Milestone 2 report.",
+    "contributions": [
+      {
+        "id": "C1",
+        "name": "Prepared forecast data",
+        "question": "Can past measurements be aligned with their 15-minute-ahead pressure labels without introducing future information?"
+      },
+      {
+        "id": "C2",
+        "name": "Model comparison",
+        "question": "Does Gradient Boosting improve upon persistence, Ridge Regression, and Random Forest?"
+      },
+      {
+        "id": "C3",
+        "name": "Value of extra signals",
+        "question": "Do tank level, pump flow, peer pressures, and local demand improve predictions beyond n1 pressure history?"
+      }
+    ],
+    "strict_rules": [
+      "Do not introduce E0, E1, E2, E3, E4, or any other new experiment-numbering framework.",
+      "Do not replace C1-C3 with additional research questions.",
+      "Do not introduce separate sensor-block ablation experiments that were not specified in Milestone 2.",
+      "For C3, preserve the submitted comparison between full-feature Gradient Boosting and a reduced model using n1 history and the same calendar variables.",
+      "Present C1-C3 as anticipated contributions, not completed experimental results."
+    ]
+  },
+  "modeling_plan": {
+    "status": "Proposed in Milestone 2; not yet implemented or evaluated.",
+    "main_model": "Gradient Boosting Regressor",
+    "comparators": [
+      "Persistence",
+      "Ridge Regression",
+      "Random Forest Regressor"
+    ],
+    "input_preparation": [
+      "Use current readings and the previous 55 minutes at five-minute intervals.",
+      "Include time of day and day of week as described in the submitted report.",
+      "Predict n1 three five-minute samples ahead.",
+      "Exclude rows lacking required inputs or valid labels within the assigned period.",
+      "Ensure all predictors are available at the forecast origin.",
+      "Fit any required Ridge scaling using training data only."
+    ],
+    "evaluation_plan": {
+      "training": "January-September 2018",
+      "validation": "October-December 2018",
+      "final_chronological_assessment": "2019",
+      "disclosure": "2019 has already been inspected in limited ways and must not be described as completely untouched.",
+      "metrics": [
+        "MAE",
+        "RMSE"
+      ],
+      "comparison_rules": [
+        "Use the same prediction rows across models.",
+        "Select model settings using validation data.",
+        "Compare Gradient Boosting against the three specified models.",
+        "Compare full-feature Gradient Boosting against n1-history-only Gradient Boosting with the same calendar variables.",
+        "Report negative findings when no improvement is obtained."
+      ]
+    },
+    "prohibition": "Do not implement training, hyperparameter optimization, new modeling experiments, or 2019 forecasting evaluation as part of this Milestone 2 repository reconstruction."
+  },
+  "completed_exploratory_analysis": {
+    "period": "January-September 2018",
+    "expected_reference_values": {
+      "days": 273,
+      "timestamps": 78624,
+      "valid_forecast_pairs": 78621,
+      "n1_range_m": [
+        25.67,
+        29.36
+      ],
+      "persistence_MAE_m_approximately": 0.0518,
+      "persistence_RMSE_m_approximately": 0.0685
+    },
+    "figures": [
+      "Figure 1: Functional supply-boundary schematic derived from the released hydraulic model.",
+      "Figure 2: Daily pressure, tank-level, and pump-flow profiles.",
+      "Figure 3: Correlation matrix of six current signals and the future target.",
+      "Figure 4: Literature-screening categories based on the 35 related-work groups."
+    ],
+    "requirements": [
+      "Reproduce the numerical findings from the official source data.",
+      "Provide clear code for the EDA and figure generation.",
+      "Document the data source, selected signals, transformations, and calculations.",
+      "Keep Figure 1 identified as an interpretive hydraulic schematic.",
+      "Do not invent results to match the submitted report.",
+      "Investigate and report any mismatch.",
+      "Distinguish descriptive persistence errors from model-testing results."
+    ]
+  },
+  "literature": {
+    "priority": "Critical: preserve and expose the entire historical literature collection that supports the 35 groups, including quickly screened and deeply reviewed sources.",
+    "historical_inventory": {
+      "source_records": 47,
+      "related_work_groups": 35,
+      "detailed_studies": 6,
+      "categories": {
+        "leak_detection_and_localization": 27,
+        "current_pressure_estimation": 3,
+        "future_pressure_or_head_forecasting": 2,
+        "anomaly_or_sensor_fault_detection": 2,
+        "sensor_placement": 1
+      },
+      "counting_principle": "Different papers, versions, conference reports, and related code repositories may belong to one group when they describe the same method.",
+      "scope": "L-Town or explicitly modified L-Town studies.",
+      "exclusions": "Unrelated networks, general surveys, and software tools are not included in the 35-group denominator.",
+      "limitations": "The historical collection is focused and non-exhaustive. Preserve its documented boundaries."
+    },
+    "complete_collection_requirements": [
+      "Recover all 47 historical source records from the existing inventory.",
+      "Recover all 35 group assignments and preserve the relationship between sources and groups.",
+      "Preserve original titles, authors, publication details, DOI links, repository URLs, and source identifiers where known.",
+      "Document the primary objective and screening category of each group.",
+      "Create short screening notes for all 35 groups explaining their task, main method, and relevance to the n1 forecasting problem.",
+      "Clearly distinguish brief screening from detailed technical reading.",
+      "Do not suggest that all 35 groups received the same depth of review.",
+      "Retain relevant evidence locators and source references.",
+      "Do not silently drop records because they are not cited individually in the five-page report.",
+      "Do not manufacture missing notes, search results, reading dates, or bibliographic information.",
+      "If a historical entry cannot be independently verified, retain its identity and label its verification limitation.",
+      "Automatically validate the 47-to-35 source-to-group mapping and the five category totals."
+    ],
+    "detailed_review": {
+      "location": "literature/detailed_review/",
+      "studies": [
+        {
+          "file": "chebnet.md",
+          "name": "ChebNet",
+          "role": "Future pressure prediction used in leak diagnosis."
+        },
+        {
+          "file": "sam_knn.md",
+          "name": "SAM-kNN",
+          "role": "Adaptive nearest-neighbor regression and anomaly detection."
+        },
+        {
+          "file": "agn.md",
+          "name": "AGN",
+          "role": "Multistep future nodal-head forecasting."
+        },
+        {
+          "file": "lila.md",
+          "name": "LILA",
+          "role": "Current healthy-pressure estimation and leak identification."
+        },
+        {
+          "file": "gatres.md",
+          "name": "GATRes",
+          "role": "Current pressure-state reconstruction with graph neural networks."
+        },
+        {
+          "file": "eilf.md",
+          "name": "Wang et al. EILF",
+          "role": "Hydraulic estimation, leakage identification, and localization."
+        }
+      ],
+      "each_review_must_include": [
+        "Complete source citation and stable link.",
+        "The learning or engineering problem addressed.",
+        "Dataset and preparation.",
+        "Input measurements and prediction or estimation target.",
+        "Method used by the original authors.",
+        "Main implementation details actually reviewed.",
+        "Published results and their meaning.",
+        "Original author code link, if available.",
+        "How the method relates to Milestone 2.",
+        "Important differences from the proposed n1(+15) forecasting task.",
+        "Known limitations and details not verified."
+      ],
+      "strict_rules": [
+        "Reconstruct the six-study comparison faithfully from the submitted Milestone 2 table.",
+        "Do not expand it with unrelated methods or new experiments.",
+        "Distinguish published numerical results from the student's own analysis.",
+        "Do not claim the original authors' models were trained or reproduced.",
+        "Preserve only technically supportable interpretations."
+      ]
+    },
+    "papers_and_copyright": [
+      "Include original PDFs only when their redistribution licenses have been verified.",
+      "Preserve original PDF content and attribution.",
+      "For copyrighted or institutionally accessible papers without redistribution permission, include a DOI or official link rather than a PDF copy.",
+      "Make every reviewed paper or linked resource discoverable through the literature index.",
+      "Do not confuse an earlier conference paper with a later journal version."
+    ],
+    "additional_feedback_context": {
+      "rule": "Discuss an additional source such as Ahmed et al. (2025) only if the professor's documented feedback specifically requires it.",
+      "presentation": "Keep that clarification separate from the historical 35-group inventory and the six detailed studies. Explain only the relevant overlap and differences in research tasks.",
+      "restriction": "Do not imply that an additional feedback-related source belonged to the originally submitted inventory or was one of the six selected studies."
+    }
+  },
+  "repository_layout": {
+    "README.md": "Brief academic introduction, Milestone 2 scope, research contribution, findings, literature navigation, and reproducibility.",
+    "reports/Milestone1.pdf": "Authentic original submission.",
+    "reports/Milestone2.pdf": "Authentic original submission; preserve without rewriting.",
+    "docs/research_scope.md": "Dataset, learning task, target, selected signals, and hydraulic justification.",
+    "docs/student_contributions.md": "Student research responsibilities and transparently described AI assistance.",
+    "docs/exploratory_analysis.md": "EDA methods, figures, numerical results, interpretations, and limitations.",
+    "docs/anticipated_contributions.md": "Only C1, C2, C3 and the proposed modeling/evaluation methodology.",
+    "docs/professor_feedback.md": "Concise responses to the professor's documented concerns, linked to actual evidence.",
+    "docs/reproducibility.md": "Data preparation, environment setup, execution steps, and verified outputs.",
+    "literature/README.md": "Main literature index explaining the screening process, group categories, and two review depths.",
+    "literature/source_records.csv": "The complete historical collection of 47 source records.",
+    "literature/groups.csv": "All 35 related-work groups, their categories, and source relationships.",
+    "literature/screening_notes.md": "Concise screening notes covering all 35 groups.",
+    "literature/detailed_review/": "Six separate, detailed reviews corresponding exactly to the Milestone 2 table.",
+    "literature/papers/": "Original source documents whose public redistribution is permitted.",
+    "literature/papers_catalog.csv": "Paper inventory, original links, local paths, licensing, and document availability.",
+    "data/source_manifest.json": "Official BattLeDIM source references and file-integrity information.",
+    "notebooks/milestone2_analysis.ipynb": "Readable notebook reproducing the completed descriptive analysis.",
+    "src/": "Small, modular functions supporting data checks, statistics, and figures.",
+    "results/": "Verified descriptive statistics, tables, figures, and execution records.",
+    "tests/": "Simple tests for data integrity, forecast alignment, screening counts, and reproducibility.",
+    "requirements.txt": "Required Python packages."
+  },
+  "repository_presentation_rules": [
+    "The repository must read as one coherent academic project.",
+    "Use descriptive filenames without version numbers.",
+    "Do not use labels such as draft, revised, V2, V3, final-final, or post-revision.",
+    "Do not describe earlier editing cycles or abandoned document structures.",
+    "Do not reference deleted documents or obsolete repository paths.",
+    "Do not introduce E0-E4 terminology anywhere.",
+    "Do not create a Milestone 3 proposal or implementation package.",
+    "Do not add advanced experiments or control strategies beyond Milestone 2.",
+    "Do not exaggerate research novelty or completed work.",
+    "Avoid large amounts of administrative or repetitive documentation.",
+    "Keep the literature collection complete, even when the main README is concise.",
+    "Retain accurate references to the authentic Milestone 1 and 2 submissions.",
+    "Be transparent that the repository supplies reproducible evidence supporting the submitted work.",
+    "Use academically appropriate English at the level of the course."
+  ],
+  "rebuild_workflow": [
+    {
+      "step": 1,
+      "name": "Inventory and backup",
+      "actions": [
+        "Read the full submitted Milestone 2 PDF.",
+        "Inspect the existing scientific source inventory and group mapping.",
+        "Securely back up the full existing Git repository.",
+        "Preserve the authentic reports, source catalogs, valid PDFs, and evidence files.",
+        "Verify that essential materials can be recovered."
+      ]
+    },
+    {
+      "step": 2,
+      "name": "Construct the new project",
+      "actions": [
+        "Create a clean independent workspace.",
+        "Build the repository structure around Milestone 2 Sections 1, 2, and 3.",
+        "Restore the complete 47-source and 35-group literature collection.",
+        "Create separate detailed-review files for the six selected studies.",
+        "Rebuild only the descriptive analyses and figures reported in the milestone.",
+        "Write concise contribution and feedback documentation.",
+        "Initialize a fresh Git repository."
+      ]
+    },
+    {
+      "step": 3,
+      "name": "Verify consistency",
+      "actions": [
+        "Compare every substantive repository claim against Milestone 2.",
+        "Validate the literature catalog and source-to-group mapping.",
+        "Confirm that all 35 groups have screening notes.",
+        "Confirm that exactly the six selected studies have detailed reviews.",
+        "Check source links and redistribution permissions.",
+        "Execute the descriptive analysis pipeline.",
+        "Validate the figures and reported statistics.",
+        "Search for prohibited E0-E4 labels and obsolete revision references.",
+        "Confirm that no unperformed modeling results or expanded research questions appear.",
+        "Check all internal links and automated tests."
+      ]
+    },
+    {
+      "step": 4,
+      "name": "Replace GitHub repository safely",
+      "actions": [
+        "Confirm the original repository backup is valid.",
+        "Confirm the complete replacement is ready and verified.",
+        "Request explicit final user authorization for permanent GitHub repository deletion.",
+        "Delete only the named repository after authorization.",
+        "Recreate it under the original owner and name.",
+        "Publish the clean project on main.",
+        "Verify all published files and links."
+      ]
+    }
+  ],
+  "acceptance_criteria": [
+    "The complete repository is consistent with the submitted five-page Milestone 2 report.",
+    "The student's confirmed intellectual contributions are clearly represented.",
+    "AI-assisted implementation is acknowledged accurately.",
+    "All 47 historical source records remain traceable.",
+    "All 35 related-work groups are represented in the quick-screening documentation.",
+    "The original five-category distribution is preserved and verified.",
+    "The six detailed studies are clearly identified in their own literature subfolder.",
+    "All permitted source PDFs are accessible and all non-redistributable sources have working official links.",
+    "The four Milestone 2 figures are adequately supported and distinguish reproducible analysis from schematic illustration.",
+    "Only C1, C2, and C3 are used to describe anticipated contributions.",
+    "The modeling plan matches Milestone 2 without introducing E0-E4.",
+    "No predictive models or experimental improvements are falsely claimed as completed.",
+    "The professor's documented concerns have clear, evidence-based responses.",
+    "No obsolete revision labels, missing-document references, or unnecessary editorial records remain.",
+    "The newly published repository is self-contained and reproducible.",
+    "Deletion and recreation are reported as completed only if the actual GitHub operations succeed."
+  ],
+  "final_instruction": "Treat the submitted Milestone 2 as the controlling academic document. Build a clean repository that faithfully explains and substantiates the student's existing work rather than creating new research. The complete historical literature collection must be recoverable, with all 35 groups represented and the six deeply reviewed studies visibly separated. Preserve C1-C3, the original model-comparison plan, the student's intellectual ownership, and the exact distinction between completed descriptive work and proposed predictive learning."
+}
+</CodeBlock>
+
+## Así debería visualizarse la literatura
+
+Esta es la parte que considero más importante reforzar respecto al repositorio actual:
+
+<box border radius="lg" padding={3} gap={2}>
+  <row align="center" gap={2}>
+    <icon name="folder-open" color="secondary"/>
+    **literature/**
+  </row>
+  <box padding={{left:4}} gap={2}>
+    <row align="center" gap={2}>
+      <icon name="file-text" color="secondary"/>
+      `README.md` — Índice general y metodología
+    </row>
+    <row align="center" gap={2}>
+      <icon name="file-spreadsheet" color="secondary"/>
+      `source_records.csv` — 47 registros
+    </row>
+    <row align="center" gap={2}>
+      <icon name="file-spreadsheet" color="secondary"/>
+      `groups.csv` — 35 grupos
+    </row>
+    <row align="center" gap={2}>
+      <icon name="file-text" color="secondary"/>
+      `screening_notes.md` — Revisión rápida de los 35 grupos
+    </row>
+    <row align="center" gap={2}>
+      <icon name="folder" color="secondary"/>
+      **detailed_review/** — Los seis estudios de la tabla
+    </row>
+    <box padding={{left:6}} gap="4px">
+      <text size="sm">`chebnet.md`</text>
+      <text size="sm">`sam_knn.md`</text>
+      <text size="sm">`agn.md`</text>
+      <text size="sm">`lila.md`</text>
+      <text size="sm">`gatres.md`</text>
+      <text size="sm">`eilf.md`</text>
+    </box>
+    <row align="center" gap={2}>
+      <icon name="folder" color="secondary"/>
+      **papers/** — PDFs con redistribución autorizada
+    </row>
+    <row align="center" gap={2}>
+      <icon name="file-spreadsheet" color="secondary"/>
+      `papers_catalog.csv` — Índice documental y licencias
+    </row>
+  </box>
+</box>
+
+La diferencia es que el profesor podrá navegar desde los **35 grupos de trabajos relacionados** hasta las fuentes correspondientes y observar por qué se eligieron específicamente seis para una revisión más profunda. Eso permite justificar el alcance de la búsqueda sin presentar los 35 como si se hubieran estudiado todos con la misma profundidad.
+
+También mantendremos la distinción entre los **18 elementos citados en las referencias del informe** y los **47 registros del inventario de búsqueda**. No son cantidades contradictorias: las referencias del documento destacan las fuentes utilizadas en sus cinco páginas; el repositorio conserva la colección más amplia que sustenta el análisis de los 35 grupos.
+
+**Mi recomendación:** ejecutar este prompt en lugar del anterior, sin combinarlos. El repositorio resultante debe demostrar el rigor del Milestone 2 y responder al profesor, pero sin parecer un proyecto de Machine Learning más avanzado que el que realmente se ha propuesto y desarrollado hasta esa etapa.
+
+<a id="message-235755cc-41f6-4275-b68c-db38364240f6"></a>
+## user | 2026-10-29T14:29:09.611000+00:00 | 235755cc-41f6-4275-b68c-db38364240f6
+
+Export node: 235755cc-41f6-4275-b68c-db38364240f6
+Parent node: 32fda1bd-5000-49d8-bf04-3bc73e4da92a
+Active branch: true
+Content type: text
+
+### Original message body
+
+revisa el repositorio como quedo ahora. quiero que seas muy minucioso. identifica riesgo de que se esten violando normas de la universidad, y como se pueden eliminar.
+
+<a id="message-08fb5b69-f33a-4124-9156-954ca46124c8"></a>
+## assistant | 2026-10-29T14:29:15.783538+00:00 | 08fb5b69-f33a-4124-9156-954ca46124c8
+
+Export node: 08fb5b69-f33a-4124-9156-954ca46124c8
+Parent node: 235755cc-41f6-4275-b68c-db38364240f6
+Active branch: true
+Content type: text
+
+### Original message body
+
+Haré una auditoría del estado actual, no del repositorio anterior. Revisaré archivos, historial, literatura, código, resultados y posibles datos personales; después contrastaré los hallazgos con las normas vigentes de NJIT y con el programa de DS675. Distinguiré entre una infracción comprobable, un riesgo académico y algo que simplemente conviene documentar mejor.
+
+<a id="message-0499304d-d262-4cc3-ae66-0482249aa054"></a>
+## assistant | 2026-10-29T14:31:50.413837+00:00 | 0499304d-d262-4cc3-ae66-0482249aa054
+
+Export node: 0499304d-d262-4cc3-ae66-0482249aa054
+Parent node: a649b800-b7a8-43c8-9cc8-83337d2fa66d
+Active branch: true
+Content type: text
+
+### Original message body
+
+La revisión del syllabus reveló una obligación que la documentación del repositorio no cubre por completo: entregar las conversaciones de IA, no solo declarar que se utilizó. Además, el PDF de Milestone 2 publicado contiene identificadores estudiantiles, y la organización de la literatura sigue siendo distinta de la que pediste. Estoy contrastando estos hallazgos con las evidencias técnicas para priorizar correcciones sin alterar el trabajo académico original.
+
+<a id="message-8b278557-6b34-4da9-a6ec-e033909a2c04"></a>
+## assistant | 2026-10-29T14:29:40.011668+00:00 | 8b278557-6b34-4da9-a6ec-e033909a2c04
+
+Export node: 8b278557-6b34-4da9-a6ec-e033909a2c04
+Parent node: 3ee155c2-ff6e-4018-a5eb-d74e748e407a
+Active branch: true
+Content type: text
+
+### Original message body
+
+# Auditoría académica y de cumplimiento — DS675 Mini-Project
+
+<text color="secondary" size="sm">Revisión del 29 de octubre de 2026 · New Jersey Institute of Technology (NJIT)</text>
+
+## Hallazgo inicial importante
+
+**El repositorio público todavía no parece haber sido reconstruido desde cero conforme al último prompt.** El historial visible conserva el commit inicial del 28 de octubre, los documentos de atribución y auditoría anteriores y las etiquetas de experimentos E0–E4 que habíamos acordado eliminar.
+
+Los dos commits más recientes, del 29 de octubre, se titulan `Update CLAIM_EVIDENCE.md`. No hay evidencia en el historial consultado de que se haya eliminado y recreado el repositorio.
+
+Esto importa porque cualquier evaluación de cumplimiento debe basarse en lo que realmente está publicado, no en las instrucciones que se dieron para modificarlo.
+
+Mi revisión distinguirá entre tres situaciones:
+
+- **Riesgo de incumplimiento:** algo que podría contravenir las reglas de NJIT.
+- **Debilidad documental:** algo correcto o posiblemente correcto que no está suficientemente demostrado.
+- **Diferencia académica:** algo que no coincide con el Milestone 2, aunque no necesariamente constituya una infracción.
+
+No es posible declarar una violación disciplinaria únicamente a partir de GitHub; eso depende también de las instrucciones del profesor, las autorizaciones recibidas y cómo se presentó efectivamente el trabajo.
+
+## 1. El riesgo más importante: la política específica del profesor sobre IA
+
+<badge color="danger">Prioridad crítica</badge>
+
+En el programa oficial `FA26-DS675.pdf`, sección **“Generative AI Tools and Other External Resources”**, encontré una exigencia que cambia considerablemente la evaluación.
+
+El profesor permite, en la mayoría de los casos, integrar código, texto e información obtenidos mediante herramientas externas o IA, pero establece tres condiciones:
+
+1. Dar los créditos y referencias correspondientes al material utilizado.
+2. Declarar expresamente el uso de modelos de lenguaje.
+3. **Presentar la transcripción completa de las conversaciones con la IA**, mostrando lo que se solicitó y cómo se dirigió o recibió orientación durante la elaboración de la solución.
+
+La política de NJIT también enfatiza que el uso de IA debe respetar las instrucciones particulares del profesor y que no basta con presentar como propio un trabajo generado por herramientas externas. <Cite refs={["turn920380search2","turn325709search25"]}/>
+
+### Lo que encontré en el repositorio
+
+El archivo [ATTRIBUTION.md](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/blob/main/docs/ATTRIBUTION.md) declara el apoyo de IA en redacción, referencias, programación, ejecución y verificación.
+
+Eso es positivo, pero **no satisface por sí solo el requisito explícito de entregar las transcripciones completas**.
+
+En el árbol actual del repositorio no encontré un archivo que contenga esas conversaciones completas ni una referencia clara a su entrega por un medio privado.
+
+No puedo determinar si ya las presentaste por Canvas o directamente al profesor. Si no lo has hecho, es la primera situación que corregiría.
+
+### Cómo reducir este riesgo
+
+No es necesario publicar todas tus conversaciones en GitHub. Algunas podrían contener datos personales o información ajena al proyecto.
+
+Mi recomendación es:
+
+- Exportar y conservar las conversaciones completas de ChatGPT, Codex y otras herramientas de lenguaje que hayan contribuido al trabajo.
+- Organizarlas cronológicamente, identificando la herramienta y los entregables relacionados, sin cambiar su contenido.
+- Entregarlas al profesor por Canvas u otro medio aprobado y confidencial, indicando expresamente que corresponden al uso de IA en el proyecto.
+- Si alguna conversación ya no es recuperable, declararlo con precisión en lugar de reconstruir una transcripción ficticia.
+
+**No recomiendo eliminar las referencias históricas al uso de IA para hacer que el repositorio parezca elaborado sin asistencia.** Eso aumentaría el riesgo frente a la política del curso.
+
+## 2. Exposición de información personal en GitHub
+
+<badge color="danger">Prioridad crítica para privacidad</badge>
+
+El archivo público [Milestone2.pdf](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/blob/main/Milestone2.pdf) contiene, en su primera página, tu número de identificación estudiantil y tu UCID.
+
+Encontré que la <Link url="https://www.njit.edu/policies/data-classification-policy" title="Data Classification Policy de NJIT"/> clasifica el **NJIT student ID como información Internal**, mientras que el UCID, por sí solo, se clasifica como Public. <Cite ref="turn845584search0"/>
+
+Esta distinción es importante. No afirmo que publicar voluntariamente tu propio PDF constituya automáticamente una infracción de FERPA, pero sí hay una exposición innecesaria de un identificador institucional que NJIT no clasifica como público.
+
+Mi recomendación es mantener los PDFs originales para la entrega académica privada, pero retirar las versiones con identificadores internos del repositorio público y sustituirlas, si resulta necesario, por copias debidamente anonimizadas. También conviene inspeccionar Milestone 1 y los metadatos de ambos PDFs.
+
+**Eliminar el archivo del último commit no elimina necesariamente las copias anteriores de Git.** Una corrección de privacidad completa exige revisar el historial, los objetos accesibles, las posibles copias y los enlaces públicos. Si se reescribe el historial para eliminar información personal, debe hacerse por esa razón legítima, conservando una copia histórica privada e íntegra para fines académicos.
+
+## 3. Evaluación de los principales riesgos
+
+| Riesgo identificado | Gravedad | Estado observado |
+|---|---|---|
+| Falta de evidencia de entrega de transcripciones completas de IA | Crítica | No aparecen en el repositorio; entrega privada sin verificar |
+| PDF público con identificador estudiantil interno | Alta | Exposición confirmada |
+| Confusión entre autoría intelectual y ejecución de código por IA | Alta | Atribución presente, trazabilidad personal limitada |
+| Reconstrucción del repositorio que pueda ocultar la asistencia o el proceso real | Alta si se presenta engañosamente | Historial conservado; se requiere prudencia |
+| Documentos que amplían el plan experimental respecto a Milestone 2 | Media | Diferencia confirmada |
+| Revisión de 35 grupos sin notas individuales fácilmente navegables | Media | Inventario presente, presentación incompleta |
+| Fuentes bibliográficas o métricas incorrectamente atribuidas | Media | Buena documentación, verificación académica aún necesaria |
+| Redistribución de artículos de terceros | Media potencial | Precauciones de licencias ya implementadas |
+| Resultados predictivos inventados o presentados prematuramente | Baja según lo revisado | No encontré modelos entrenados presentados como completos |
+
+La cuestión de la autoría debe valorarse con especial cuidado. NJIT distingue el uso autorizado de herramientas de IA de presentar como propio contenido generado por ellas sin reconocimiento adecuado. También considera relevante que el estudiante comprenda y evalúe críticamente el trabajo presentado. <Cite refs={["turn418288view0","turn325709search0"]}/>
+
+**No encontré evidencia de fabricación de resultados predictivos.** De hecho, el repositorio declara explícitamente que los modelos de aprendizaje todavía no se han entrenado. Este es un punto importante a su favor.
+
+## 4. Autoría y uso de IA: qué conviene corregir
+
+El repositorio actual atribuye correctamente las decisiones de investigación que me confirmaste: selección del problema, definición de `n1(+15)`, elección de Area C, variables, análisis, revisión bibliográfica e interpretación.
+
+El problema no es esa atribución. Es que diferentes tipos de evidencia se presentan muy cerca unos de otros.
+
+| Archivo | Qué demuestra | Qué no demuestra |
+|---|---|---|
+| [ATTRIBUTION.md](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/blob/main/docs/ATTRIBUTION.md) | Declaración de responsabilidades y uso de IA | Ejecución personal de todos los análisis |
+| [author_contributions.json](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/blob/main/provenance/author_contributions.json) | Confirmación declarada de contribuciones | Evidencia independiente de cada actividad |
+| [CLAIM_EVIDENCE.md](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/blob/main/docs/CLAIM_EVIDENCE.md) | Correspondencia entre afirmaciones, cálculos y archivos | Autoría individual de cada línea de código |
+| [Notebook](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/blob/main/notebooks/01_milestone2_evidence.ipynb) | Código y resultados de análisis descriptivos | Quién ejecutó personalmente cada celda |
+| [Historial de commits](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/commits/main/) | Evolución del contenido del repositorio | Origen intelectual de cada decisión |
+
+Esta distinción es esencial: **tu autoría científica y el origen del código no tienen que ser idénticos**, pero ambos deben describirse correctamente.
+
+Recomendaría mantener una sola declaración central de contribuciones, añadir referencias a ella donde sea necesario y conservar un registro auténtico de tus revisiones y decisiones. No hace falta afirmar repetidamente que todo fue realizado personalmente.
+
+El profesor debería poder distinguir con facilidad qué decisiones tomaste, qué cálculos fueron automatizados, qué información procede de otros investigadores y qué asistencia proporcionó la IA.
+
+## 5. Coherencia exacta con Milestone 2
+
+En esta parte encontré diferencias que no constituyen automáticamente infracciones, pero que sí pueden generar preguntas académicas innecesarias.
+
+| Elemento | Milestone 2 entregado | Repositorio actual |
+|---|---|---|
+| Contribuciones | C1, C2 y C3 | Se introducen RQ1–RQ3 y E0–E4 |
+| Comparación de modelos | Gradient Boosting, Persistence, Ridge y Random Forest | El plan sugiere aplazar Random Forest |
+| Variables históricas | Lectura actual y 55 minutos anteriores | Otro esquema de lags en el plan posterior |
+| Valor de señales adicionales | Modelo completo vs. modelo con historial `n1` y calendario | Cinco conjuntos incrementales |
+| Alcance | Revisión bibliográfica, EDA y experimentos propuestos | Incluye propuesta para Milestone 3 y análisis adicionales |
+
+La mayor diferencia está en [EXPERIMENTAL_CONTRIBUTION_PLAN.md](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/blob/main/docs/EXPERIMENTAL_CONTRIBUTION_PLAN.md).
+
+Aunque esos experimentos están bien etiquetados como propuestos, no son exactamente la estructura que presentaste al profesor.
+
+**Corrección recomendada:** utilizar exclusivamente C1, C2 y C3 como contribuciones propuestas, conservar las comparaciones de modelos y variables del informe entregado y evitar introducir nuevas preguntas o criterios opcionales como si fueran parte del Milestone 2 original.
+
+También retiraría de la presentación dirigida al feedback de Milestone 2 el archivo `MILESTONE3_GROUP_PITCH.md`. Puede ser útil posteriormente, pero no responde directamente a esta entrega.
+
+Esto reduce la posibilidad de que el profesor te solicite justificar material adicional que todavía no forma parte del trabajo evaluado.
+
+## 6. Literatura: un punto fuerte que todavía puede mejorar
+
+La colección bibliográfica es uno de los elementos mejor conservados del repositorio.
+
+Actualmente encontré:
+
+<grid columns={3} gap={2}>
+  <box border radius="lg" padding={3} align="center" gap={1}>
+    <title size="2xl" color="default" tabularNums>47</title>
+    <caption textAlign="center">Registros de fuentes</caption>
+  </box>
+  <box border radius="lg" padding={3} align="center" gap={1}>
+    <title size="2xl" color="default" tabularNums>35</title>
+    <caption textAlign="center">Grupos clasificados</caption>
+  </box>
+  <box border radius="lg" padding={3} align="center" gap={1}>
+    <title size="2xl" color="default" tabularNums>6</title>
+    <caption textAlign="center">Estudios seleccionados</caption>
+  </box>
+</grid>
+
+El repositorio también contiene un catálogo de 48 documentos, de los cuales 32 tienen copias PDF incorporadas. Esas 48 entradas no deben confundirse con los 47 registros utilizados para construir los 35 grupos: los catálogos tienen propósitos diferentes.
+
+### Riesgos que identifiqué
+
+**Trazabilidad incompleta de la revisión rápida.** `group_assignments.csv` identifica los 35 grupos, pero muchos registros presentan una descripción general de su categoría y no una nota individual que explique específicamente qué se examinó y por qué se consideró relevante o se descartó.
+
+**Los seis trabajos no están separados físicamente.** La comparación detallada se encuentra en `SIX_STUDY_CRITICAL_MATRIX.md`. Es útil, pero no existe todavía la carpeta `literature/detailed_review/` que solicitaste.
+
+**El recuento no prueba por sí solo la revisión académica.** El código verifica que los registros se agrupan de manera consistente, pero no demuestra cuándo se leyeron ni el grado de profundidad de la revisión. El repositorio reconoce expresamente que no se conservó un registro completo de las búsquedas originales.
+
+**Algunas referencias de clasificación son internas.** Por ejemplo, las asignaciones de AGN y GASTL utilizan identificadores como `editorial-agn` y `editorial-gastl`. No son automáticamente errores, pero conviene sustituir esas referencias como evidencia principal por fuentes bibliográficas verificables y distinguirlas de las notas de clasificación.
+
+### Corrección recomendada
+
+Conservaría los 47 registros y la agrupación histórica de 35, añadiendo una nota breve por grupo basada en las fuentes efectivamente examinadas. Separaría los seis estudios originales —ChebNet, SAM-kNN, AGN, LILA, GATRes y EILF— en una carpeta de lectura detallada.
+
+Las notas que se redacten ahora deben identificarse como documentación de soporte elaborada ahora, no presentarse como apuntes históricos creados durante la búsqueda original.
+
+Esto fortalece el rigor sin falsear el proceso.
+
+## 7. Derechos de autor y propiedad intelectual
+
+La práctica actual es razonablemente cuidadosa. El repositorio conserva referencias DOI, identifica licencias y no publica varias copias de artículos ASCE para los que no se estableció permiso de redistribución.
+
+No encontré una infracción de copyright demostrada mediante esta revisión, aunque tampoco he realizado una auditoría legal independiente de cada uno de los 32 PDFs incorporados.
+
+NJIT exige respetar derechos de propiedad intelectual y licencias de materiales y software. <Cite refs={["turn845584search6","turn325709search0"]}/>
+
+Para reducir el riesgo, mantendría los PDFs únicamente cuando la licencia de la versión exacta esté documentada. Ante cualquier duda sobre redistribución, usaría un enlace DOI o al repositorio oficial del autor. Los artículos revisados profundamente pueden permanecer accesibles mediante enlaces cuando no corresponda alojar copias.
+
+Un detalle adicional: la inclusión de un PDF en un repositorio no significa que todos sus contenidos puedan reutilizarse libremente en figuras, tablas o documentos derivados. La atribución y los permisos deben corresponder al uso concreto.
+
+## 8. Reproducibilidad y resultados numéricos
+
+Aquí la evaluación es favorable.
+
+El código del repositorio implementa comprobaciones de las tablas SCADA, alineación temporal, construcción de etiquetas a 15 minutos, estadísticas descriptivas, correlaciones, persistencia y cálculos topológicos.
+
+Encontré registros de cinco pruebas unitarias satisfactorias y una [ejecución exitosa de GitHub Actions correspondiente al commit más reciente](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/actions/runs/40886138827).
+
+También hay una separación apropiada entre resultados propios, resultados publicados por otros autores y experimentos todavía no realizados.
+
+No encontré evidencia de que se estén presentando resultados de Gradient Boosting, Ridge o Random Forest como si ya se hubieran obtenido.
+
+Sin embargo, hay límites en la verificación: el conjunto de pruebas es reducido, y las ejecuciones registradas no sustituyen una revisión científica de las interpretaciones. Tampoco ejecuté personalmente una reproducción independiente completa durante esta auditoría.
+
+**Mi recomendación es conservar el sistema de reproducción y los resultados verificados**, simplificando la documentación para que el lector pueda entender el procedimiento sin tener que recorrer archivos extensos de auditoría.
+
+## 9. ¿Conviene eliminar y recrear el repositorio?
+
+Aquí cambiaría la recomendación anterior.
+
+No eliminaría inmediatamente el repositorio para hacer desaparecer las revisiones. Tener distintas versiones, correcciones o commits asistidos por IA no es, por sí mismo, una falta académica.
+
+El riesgo aparece cuando se utiliza un historial nuevo o incompleto para hacer afirmaciones falsas sobre cómo se desarrolló el trabajo.
+
+Una reconstrucción limpia es legítima por organización, privacidad o mantenimiento. Pero debe conservarse privadamente el historial original, las transcripciones de IA y la evidencia necesaria para responder al profesor. La nueva presentación no debería pretender que los cálculos, documentos o decisiones se produjeron en fechas distintas de las reales.
+
+Si se necesita retirar identificadores personales del historial público, esa es una razón válida para reescribirlo o recrear el repositorio, siempre que la documentación académica original permanezca íntegra y disponible por el canal correspondiente.
+
+## 10. Orden de corrección recomendado
+
+| Prioridad | Acción | Resultado esperado |
+|---|---|---|
+| **1** | Preparar y entregar al profesor las transcripciones completas pertinentes de IA, conforme al syllabus | Cumplimiento de la exigencia específica de DS675 |
+| **2** | Retirar identificadores estudiantiles internos de los PDFs públicos y revisar el historial | Reducir exposición de datos personales |
+| **3** | Verificar que la declaración de contribuciones y el registro de trabajo coincidan exactamente con lo realizado | Atribución académica defendible |
+| **4** | Ajustar las propuestas a C1–C3 y a los modelos descritos en Milestone 2 | Coherencia con la entrega evaluada |
+| **5** | Documentar individualmente los 35 grupos y separar los seis estudios detallados | Trazabilidad real del estado del arte |
+| **6** | Revisar fuentes bibliográficas, figuras y licencias, y conservar resultados reproducibles | Solidez documental y cumplimiento de propiedad intelectual |
+| **7** | Simplificar la estructura y retirar documentación redundante sin destruir la evidencia académica | Repositorio claro y auditable |
+
+## Conclusión
+
+Mi valoración es que el repositorio tiene una base científica defendible, pero **no lo consideraría todavía listo para presentarlo como respuesta definitiva al profesor**.
+
+Los principales riesgos no son errores de Machine Learning. Son de cumplimiento documental, privacidad y correspondencia entre lo que se declara y lo que puede verificarse.
+
+Hay dos correcciones que considero especialmente urgentes: cumplir el requisito de transcripciones completas de IA del syllabus de DS675 y proteger el identificador estudiantil publicado. Después corregiría las diferencias con Milestone 2 y mejoraría la trazabilidad de la literatura.
+
+La forma de reducir el riesgo académico no es eliminar toda huella de asistencia o revisión, sino **conservar evidencia auténtica, reconocer exactamente el papel de cada herramienta y mantener el repositorio fiel al trabajo que efectivamente presentaste**.
+
+Finalmente, esta es una evaluación preventiva, no una determinación disciplinaria. La documentación oficial de NJIT establece un procedimiento de evaluación para cualquier presunta infracción y reconoce al estudiante el derecho a presentar información y responder a las alegaciones. <Cite refs={["turn325709search3","turn325709search4"]}/>
+
+**Mi recomendación final:** antes de reconstruir o publicar otra versión, resolver primero la entrega de las conversaciones de IA y la protección de los datos personales. Una vez aclarados esos puntos, el resto puede corregirse sin cambiar el contenido científico del Milestone 2.
+
+<a id="message-34c41b12-2325-444a-834d-a91f07554245"></a>
+## user | 2026-10-29T14:50:56.021000+00:00 | 34c41b12-2325-444a-834d-a91f07554245
+
+Export node: 34c41b12-2325-444a-834d-a91f07554245
+Parent node: 8b278557-6b34-4da9-a6ec-e033909a2c04
+Active branch: true
+Content type: text
+
+### Original message body
+
+Crea un prompt en ingles y formato json, para recuperar los transcripts de interaciones con AI en la elaboracion de los milestone 1 y 2 de miniprojecto.  Una parte se hizo en un proyecto de Chat Gpt (NJIT ML) y otra parte del proyecto se ralizo con codex, asi que serian dos prompt para recuperar las transcripciones una para el proyecto de chatgpt y otro para el codex en visual studio code.
+
+<a id="message-3cc8290b-4d31-4520-9799-c704044288a2"></a>
+## assistant | 2026-10-29T14:51:05.851592+00:00 | 3cc8290b-4d31-4520-9799-c704044288a2
+
+Export node: 3cc8290b-4d31-4520-9799-c704044288a2
+Parent node: 34c41b12-2325-444a-834d-a91f07554245
+Active branch: true
+Content type: text
+
+### Original message body
+
+Prepararé dos prompts independientes: uno para localizar y exportar las conversaciones del proyecto **NJIT ML** en ChatGPT, y otro para recuperar las sesiones de **Codex en Visual Studio Code**. Los dos exigirán transcripciones originales, sin reconstruir mensajes ni inventar partes faltantes, y un inventario que permita comprobar qué se recuperó y qué no.
+
+<a id="message-36e5f867-a86b-480d-b4b3-5e3c9c75627e"></a>
+## assistant | 2026-10-29T14:51:45.531407+00:00 | 36e5f867-a86b-480d-b4b3-5e3c9c75627e
+
+Export node: 36e5f867-a86b-480d-b4b3-5e3c9c75627e
+Parent node: 8e66c5c5-fc8c-4bde-b3e8-c58ea3451181
+Active branch: true
+Content type: text
+
+### Original message body
+
+Preparé **dos prompts independientes, en inglés y formato JSON**, orientados a recuperar las transcripciones originales de las interacciones con IA utilizadas en los Milestones 1 y 2 del Mini-Project de DS675.
+
+Ambos tienen el mismo objetivo: producir evidencia cronológica, íntegra y verificable de tus instrucciones, decisiones, correcciones, solicitudes y respuestas de la IA.
+
+Hay una diferencia técnica importante: **ChatGPT no necesariamente puede acceder desde un chat a todas las demás conversaciones de un proyecto**. Para una recuperación completa, puede ser necesario exportar los datos de la cuenta mediante *Settings → Data controls → Export data* y proporcionar el archivo exportado. <Cite ref="turn637749search0"/> Codex, por su parte, suele conservar registros locales de las sesiones en archivos JSONL dentro de su directorio de datos. <Cite refs={["turn637749search6","turn170853search0"]}/>
+
+## Prompt 1 — ChatGPT Project: NJIT ML
+
+Pégalo en una conversación nueva dentro del proyecto **NJIT ML**. Está preparado para trabajar con las conversaciones accesibles y, cuando sea necesario, con la exportación oficial de ChatGPT.
+
+<CodeBlock language="json" editable>
+{
+  "role": "Academic AI Interaction Archivist and Research Provenance Auditor",
+  "task": "Recover, preserve, and organize the authentic ChatGPT interaction transcripts associated with the preparation of Milestone 1 and Milestone 2 of the DS675 Machine Learning Mini-Project at New Jersey Institute of Technology.",
+  "project_context": {
+    "chatgpt_project": "NJIT ML",
+    "course": "DS675",
+    "research_project": "BattLeDIM / L-Town Pressure Forecasting",
+    "student": "Andres Arango Martinez",
+    "milestones": [
+      "Milestone 1: Dataset Selection and Initial Proposal",
+      "Milestone 2: Review of Existing Work"
+    ],
+    "purpose": "Preserve the complete available record of interactions with ChatGPT used during the preparation of both academic submissions, including evidence of the student's instructions, research decisions, technical questions, corrections, and AI assistance."
+  },
+  "primary_objective": "Produce an authentic, chronological, auditable archive of the relevant ChatGPT conversations without paraphrasing, rewriting, fabricating, or omitting recoverable messages.",
+  "access_and_recovery": {
+    "instructions": [
+      "Identify the ChatGPT conversations actually accessible within the NJIT ML project.",
+      "Do not assume that conversations in other threads are automatically accessible.",
+      "If project-wide access is unavailable, explicitly explain the limitation.",
+      "Request the official ChatGPT account data export when necessary.",
+      "Use original exported conversation data rather than reconstructed summaries whenever available.",
+      "After the export is provided, identify all relevant NJIT ML conversations.",
+      "Inspect directly related conversations outside the project only when they are available in the authorized export and are demonstrably connected to Milestone 1 or Milestone 2.",
+      "Preserve original conversation identifiers and timestamps where available.",
+      "Do not infer the content of deleted, inaccessible, or missing conversations."
+    ],
+    "official_export_instructions": [
+      "Open ChatGPT Settings.",
+      "Select Data controls.",
+      "Request Export data.",
+      "Download the official export when it becomes available.",
+      "Keep the account-wide export private.",
+      "Provide the export or its relevant conversation files for authorized analysis."
+    ]
+  },
+  "search_scope": {
+    "date_range": "From the earliest identifiable work on the DS675 Mini-Project through the preparation, submission, and directly related clarification of Milestones 1 and 2.",
+    "search_terms": [
+      "DS675",
+      "Mini-Project",
+      "Milestone 1",
+      "Milestone 2",
+      "BattLeDIM",
+      "L-Town",
+      "dataset selection",
+      "pressure prediction",
+      "pressure forecasting",
+      "Area C",
+      "n1",
+      "SCADA",
+      "literature review",
+      "existing work",
+      "35 groups",
+      "feature selection",
+      "Gradient Boosting",
+      "Ridge",
+      "Random Forest",
+      "persistence",
+      "Kaggle",
+      "ChebNet",
+      "SAM-kNN",
+      "AGN",
+      "LILA",
+      "GATRes",
+      "EILF"
+    ],
+    "selection_rules": [
+      "Include all conversations directly contributing to either milestone.",
+      "Include exploratory discussions that influenced dataset or research decisions.",
+      "Include abandoned alternatives and substantive corrections when they formed part of the actual process.",
+      "Include conversations containing instructions for literature searches, source selection, or critical reading.",
+      "Include conversations involving analytical figures, statistical calculations, or data interpretation.",
+      "Include writing, translation, restructuring, and editing interactions used in the submitted reports.",
+      "Include relevant AI-assisted verification and feedback discussions.",
+      "Do not substitute later descriptions of the work for the original conversations.",
+      "If a relevant conversation contains unrelated material, preserve the full original privately and identify its relevant sections in the index."
+    ]
+  },
+  "milestone_classification": {
+    "milestone_1": [
+      "Initial project brainstorming.",
+      "Dataset discovery and comparison.",
+      "BattLeDIM/L-Town selection.",
+      "Research problem formulation.",
+      "Initial prediction objectives.",
+      "Dataset suitability and limitations.",
+      "Proposal writing and editing.",
+      "References and supporting sources."
+    ],
+    "milestone_2": [
+      "Research scope and learning task.",
+      "Area C and n1 selection.",
+      "Selection of hydraulic measurements.",
+      "SCADA exploration.",
+      "Descriptive statistics and figures.",
+      "Literature discovery and screening.",
+      "Classification of the 35 related-work groups.",
+      "Detailed examination of the six selected studies.",
+      "Interpretation of published methods and results.",
+      "Research gap and anticipated contributions.",
+      "Proposed model comparisons.",
+      "Report drafting, editing, and verification."
+    ],
+    "overlapping_conversations": "Classify conversations relevant to both milestones as shared, without duplicating or changing their original content."
+  },
+  "transcript_integrity": {
+    "mandatory": [
+      "Preserve the exact original wording of every recoverable message in each selected conversation.",
+      "Preserve user and assistant role attribution.",
+      "Preserve chronological message order.",
+      "Preserve conversation titles, identifiers, and timestamps when available.",
+      "Preserve user instructions, assistant responses, correction requests, and follow-up discussions.",
+      "Include accessible tool requests and outputs where they form part of the available exported interaction record.",
+      "Record attachments, filenames, and references to external materials when available.",
+      "Identify missing attachments without inventing their contents.",
+      "Preserve original language, including Spanish and English.",
+      "Do not translate, summarize, or clean the content of the archival transcripts.",
+      "Do not reconstruct missing messages from memory or later documents.",
+      "Do not claim that inaccessible internal reasoning or hidden system content is part of the user-visible transcript.",
+      "If records are incomplete, explicitly identify the limitation."
+    ]
+  },
+  "research_contribution_mapping": {
+    "objective": "Create a separate evidence index connecting authentic transcript passages to the student's confirmed research contributions.",
+    "categories": [
+      "Research conception and motivation.",
+      "Dataset selection.",
+      "Definition of the prediction target.",
+      "Area C and measurement selection.",
+      "Exploratory analysis design.",
+      "Figure and visualization selection.",
+      "Literature search direction.",
+      "Literature screening and detailed reading.",
+      "Technical interpretation of previous studies.",
+      "Model-comparison decisions.",
+      "Research conclusions and corrections.",
+      "Instructions directing AI-assisted implementation."
+    ],
+    "rules": [
+      "Map each contribution only to messages that actually support it.",
+      "Distinguish direct student instructions from assistant-generated suggestions.",
+      "Distinguish decisions that the student explicitly accepted from proposals that were merely discussed.",
+      "Do not infer approval from silence.",
+      "Do not create unsupported claims of personal coding, reading, or execution.",
+      "Keep the evidence index separate from the verbatim transcripts."
+    ]
+  },
+  "output": {
+    "root_folder": "DS675_AI_Transcripts_ChatGPT",
+    "archive_structure": {
+      "original_export/": "Secure copy of the relevant original exported data, without modification.",
+      "milestone_1/": "Complete relevant transcripts, one file per conversation.",
+      "milestone_2/": "Complete relevant transcripts, one file per conversation.",
+      "shared/": "Conversations contributing to both milestones.",
+      "conversation_index.csv": "Conversation identifier, title, source, timestamp range, milestone classification, output filename, and completeness status.",
+      "contribution_evidence.csv": "Contribution category, conversation identifier, message identifier, timestamp, and evidence locator.",
+      "recovery_report.md": "Recovery procedure, accessible sources, conversation counts, missing records, and limitations.",
+      "integrity_manifest.json": "File identifiers and SHA-256 checksums for recovered source records and exported transcript files."
+    },
+    "transcript_format": {
+      "preferred": [
+        "JSON containing the available original message structure.",
+        "Markdown rendering for academic review."
+      ],
+      "metadata": [
+        "Conversation ID",
+        "Title",
+        "Original timestamps",
+        "Milestone classification",
+        "Source file",
+        "Message roles",
+        "Completeness status"
+      ]
+    }
+  },
+  "privacy_and_submission": [
+    "Store the unmodified original archive privately.",
+    "Do not upload complete transcripts to a public GitHub repository.",
+    "Identify institutional identifiers, credentials, private files, and unrelated personal information before sharing.",
+    "Do not silently edit the original transcript.",
+    "If a redacted review copy is needed, create it separately and maintain a redaction log.",
+    "For a course requirement demanding complete transcripts, prefer a secure submission channel rather than publishing sensitive material.",
+    "Ask for clarification before omitting any substantive content from the academic submission."
+  ],
+  "validation": [
+    "Count the recovered conversations and messages.",
+    "Verify chronological ordering.",
+    "Check that each exported conversation has a corresponding entry in the index.",
+    "Identify duplicate records without discarding distinct messages.",
+    "Confirm that the archive does not contain invented text.",
+    "Confirm that source records remain unmodified.",
+    "Report any relevant conversations that could not be recovered."
+  ],
+  "completion_report": [
+    "Total relevant conversations identified.",
+    "Milestone 1 conversation count.",
+    "Milestone 2 conversation count.",
+    "Shared conversation count.",
+    "Total recovered messages.",
+    "Earliest and latest recorded interactions.",
+    "Archive location.",
+    "Missing or inaccessible evidence.",
+    "Actions required from the student."
+  ],
+  "critical_instruction": "This is an evidence-recovery task, not a writing or reconstruction task. Authenticity, completeness, transparency, and academic traceability take priority over presentation. If original conversations are inaccessible, report that fact and request the official export instead of generating substitute transcripts."
+}
+</CodeBlock>
+
+## Prompt 2 — Codex en Visual Studio Code
+
+Este segundo prompt está pensado para ejecutarse desde **Codex dentro de Visual Studio Code**, con acceso autorizado a los archivos locales donde se almacenaron las sesiones.
+
+En instalaciones habituales, Codex conserva archivos de sesión en `~/.codex/sessions/` o en el directorio especificado mediante `CODEX_HOME`. También puede existir `archived_sessions/`. Las sesiones no necesariamente se encuentran dentro de la carpeta del repositorio de GitHub. <Cite refs={["turn170853search0","turn170853search3","turn170853search7"]}/>
+
+<CodeBlock language="json" editable>
+{
+  "role": "Local Codex Session Recovery Specialist and Academic Research Provenance Auditor",
+  "task": "Recover and preserve the authentic OpenAI Codex interaction transcripts generated through Visual Studio Code during the development of Milestone 1 and Milestone 2 of the DS675 Machine Learning Mini-Project.",
+  "project": {
+    "course": "DS675",
+    "student": "Andres Arango Martinez",
+    "research_topic": "BattLeDIM / L-Town Pressure Forecasting",
+    "github_repository": "Andres-ArangoMartinez/DS675_MiniProject",
+    "working_environment": "Visual Studio Code with the OpenAI Codex extension",
+    "target_milestones": [
+      "Milestone 1",
+      "Milestone 2"
+    ]
+  },
+  "objective": "Recover the complete available record of Codex instructions, responses, tool executions, code-generation requests, corrections, and technical discussions associated with preparing the two milestones.",
+  "operating_constraints": {
+    "mode": "Read-only recovery and archival export.",
+    "requirements": [
+      "Do not modify the DS675 project source code.",
+      "Do not modify or delete original Codex session files.",
+      "Do not alter Git history, branches, or commits.",
+      "Do not clear caches, reset the Codex extension, or reinstall software.",
+      "Do not upload recovered transcripts to GitHub.",
+      "Do not send private transcript data to external services.",
+      "Use local parsing and file inspection whenever possible.",
+      "Do not expose authentication tokens or secrets in terminal output.",
+      "Request authorization before accessing directories outside the permitted user-owned Codex and project locations.",
+      "Create archive files only in an explicitly designated private output directory."
+    ]
+  },
+  "session_discovery": {
+    "primary_locations": [
+      "CODEX_HOME, when configured.",
+      "~/.codex/sessions/",
+      "~/.codex/archived_sessions/",
+      "~/.codex/history.jsonl",
+      "~/.codex/session_index.jsonl"
+    ],
+    "windows_locations": [
+      "%USERPROFILE%\\.codex\\sessions\\",
+      "%USERPROFILE%\\.codex\\archived_sessions\\",
+      "%USERPROFILE%\\.codex\\history.jsonl",
+      "%USERPROFILE%\\.codex\\session_index.jsonl"
+    ],
+    "additional_checks": [
+      "Inspect Codex session history available through the Visual Studio Code extension.",
+      "Inspect the configured Codex data directory.",
+      "Identify whether the sessions were created in Windows, WSL, a remote environment, or a development container.",
+      "Check accessible archived sessions and legitimate user-created local backups.",
+      "Use available session metadata or state indexes to identify sessions not currently visible in the extension UI.",
+      "Check alternate Codex homes only when their locations are known or explicitly authorized.",
+      "Account for session files stored as plain JSONL or supported compressed rollout formats.",
+      "Do not assume that the extension displays every locally retained session.",
+      "Do not assume that every session related to the project has the same working directory."
+    ],
+    "search_strategy": [
+      "Find candidate sessions using session timestamps, working directories, repository paths, titles, and session identifiers.",
+      "Search user messages and recorded commands for DS675-related keywords.",
+      "Use the repository's Git history to identify relevant dates and operations, without treating Git as a substitute for conversation records.",
+      "Inspect sessions associated with the preparation of Milestone 1 and Milestone 2, including work completed before the public repository was created.",
+      "Include related sessions even when a temporary workspace or alternate working directory was used.",
+      "Inspect available archived and resumed sessions."
+    ]
+  },
+  "search_terms": [
+    "DS675",
+    "MiniProject",
+    "Mini-Project",
+    "Milestone1",
+    "Milestone2",
+    "Milestone 1",
+    "Milestone 2",
+    "BattLeDIM",
+    "L-Town",
+    "pressure forecasting",
+    "n1",
+    "Area C",
+    "SCADA",
+    "literature",
+    "35 groups",
+    "47 sources",
+    "EDA",
+    "feature selection",
+    "figure",
+    "correlation",
+    "persistence",
+    "ChebNet",
+    "SAM-kNN",
+    "AGN",
+    "LILA",
+    "GATRes",
+    "EILF",
+    "Gradient Boosting",
+    "Ridge",
+    "Random Forest"
+  ],
+  "transcript_recovery": {
+    "source_of_truth": "Original locally retained Codex session records.",
+    "requirements": [
+      "Identify the original session files associated with the project.",
+      "Preserve complete original session files in a private evidence archive.",
+      "Retain original timestamps, session identifiers, source environment, and working-directory metadata.",
+      "Retain available user prompts and Codex assistant responses.",
+      "Retain available tool-call records, commands, execution results, errors, and technical feedback.",
+      "Retain relevant references to files inspected or modified.",
+      "Include resumed sessions and linked sessions when they contribute to either milestone.",
+      "Do not merge distinct sessions into a fabricated continuous conversation.",
+      "Do not replace original transcripts with descriptions generated from Git commits.",
+      "Do not claim unavailable records or hidden internal reasoning were recovered.",
+      "Mark truncated, missing, inaccessible, or malformed records clearly.",
+      "Do not silently discard failed operations, rejected suggestions, or student-requested corrections."
+    ],
+    "human_readable_conversion": [
+      "Convert available interaction events into a chronological Markdown transcript.",
+      "Keep original user and assistant message text verbatim.",
+      "Label tool commands and outputs distinctly from conversational messages.",
+      "Preserve the original sequence of events.",
+      "Include timestamps and event identifiers where available.",
+      "Represent non-text events through faithful metadata references.",
+      "Do not invent attachment contents or unrecorded outputs.",
+      "Do not add summaries inside the transcript body."
+    ]
+  },
+  "milestone_classification": {
+    "milestone_1": [
+      "Dataset preparation and comparison.",
+      "Initial BattLeDIM exploration.",
+      "Project proposal preparation.",
+      "Initial code and documentation.",
+      "Report generation and verification."
+    ],
+    "milestone_2": [
+      "Dataset and SCADA validation.",
+      "Selection of Area C and n1.",
+      "Feature selection.",
+      "Descriptive statistics.",
+      "Correlation analysis.",
+      "Figure preparation.",
+      "Literature inventory and grouping.",
+      "Review of the six selected studies.",
+      "Report drafting and supporting calculations.",
+      "Source-code analysis of related research.",
+      "Reproducibility and verification."
+    ],
+    "important": "Classify sessions using the recorded task and actual content, not simply the repository name or commit date."
+  },
+  "student_ai_interaction_analysis": {
+    "purpose": "Create a factual evidence map showing how the student instructed, directed, reviewed, and corrected Codex work.",
+    "categories": [
+      "Student-provided research requirements.",
+      "Student-defined dataset and target.",
+      "Student-selected measurements and analyses.",
+      "Student instructions for figure generation.",
+      "Student directions for literature research.",
+      "Student corrections to proposed methods.",
+      "Student interpretation and research decisions.",
+      "Codex-generated code and implementation.",
+      "Codex-executed commands and automated checks.",
+      "Student approval, rejection, or modification of proposed results."
+    ],
+    "integrity_rules": [
+      "Use only actions documented in the recovered sessions.",
+      "Do not attribute Codex-generated implementation to manual student coding.",
+      "Do not attribute research decisions to Codex when the student demonstrably provided them.",
+      "Do not attribute research decisions to the student without supporting records or separate clearly labeled testimony.",
+      "Differentiate student requests, AI recommendations, executed operations, and verified outcomes.",
+      "Record decisions only when the session contains evidence of those decisions.",
+      "Do not infer that the student reviewed or understood an output merely because it was generated."
+    ]
+  },
+  "git_cross_reference": {
+    "repository": "Andres-ArangoMartinez/DS675_MiniProject",
+    "instructions": [
+      "Read relevant Git history without changing it.",
+      "Identify commits whose dates, files, or messages correspond to recovered Codex sessions.",
+      "Associate sessions with commits only when timestamps, file changes, or explicit session records support the connection.",
+      "Distinguish work performed before repository creation from later reproducibility packaging.",
+      "Do not use a commit as proof that the student manually wrote the code.",
+      "Do not fabricate missing interaction records from commit messages.",
+      "Do not exclude relevant sessions simply because their changes were never committed."
+    ]
+  },
+  "output": {
+    "root_folder": "DS675_AI_Transcripts_Codex",
+    "storage": "Private local directory outside the public DS675 repository.",
+    "structure": {
+      "original_sessions/": "Exact preserved copies of relevant original Codex session records.",
+      "milestone_1/": "Human-readable transcript exports for Milestone 1.",
+      "milestone_2/": "Human-readable transcript exports for Milestone 2.",
+      "shared/": "Sessions involving both milestones.",
+      "session_index.csv": "Session identifier, timestamp range, original path, working directory, milestone, and completeness status.",
+      "contribution_evidence.csv": "Student instruction or decision, supporting session, event identifier, timestamp, and evidence locator.",
+      "git_session_mapping.csv": "Evidence-based links between Codex sessions and relevant Git commits.",
+      "recovery_report.md": "Discovery methods, total sessions recovered, missing records, and known limitations.",
+      "integrity_manifest.json": "SHA-256 hashes and metadata for original session files and transcript exports."
+    },
+    "transcript_formats": [
+      "Original JSONL or original retained session format.",
+      "Readable Markdown transcript."
+    ]
+  },
+  "validation": [
+    "Verify all original files remain unchanged.",
+    "Calculate checksums for preserved session records.",
+    "Check event order and timestamp consistency.",
+    "Avoid duplicate sessions and duplicated conversation events.",
+    "Verify that every transcript has a source file.",
+    "Check that any conversion preserves the available textual messages.",
+    "Identify sessions with missing tool output or incomplete event data.",
+    "Distinguish complete recovered sessions from partial recoveries.",
+    "Report any relevant data that could not be recovered."
+  ],
+  "privacy_and_academic_submission": [
+    "Keep the complete original archive private.",
+    "Do not commit transcripts or session databases into the public repository.",
+    "Session files may contain sensitive paths, credentials, environment variables, or unrelated work.",
+    "Identify sensitive content without changing the original evidence.",
+    "Prepare a separate review copy only when necessary.",
+    "Log every redaction in any derivative copy.",
+    "Use an NJIT-approved private submission channel for academic disclosure.",
+    "Do not use redaction to hide substantive AI assistance or student instructions.",
+    "If the professor requires complete transcripts, provide the authentic records securely and clarify any privacy concerns directly."
+  ],
+  "completion_report": {
+    "required_fields": [
+      "Codex data directories inspected.",
+      "Total candidate sessions identified.",
+      "Total relevant sessions recovered.",
+      "Sessions associated with Milestone 1.",
+      "Sessions associated with Milestone 2.",
+      "Shared sessions.",
+      "Recovered date range.",
+      "Original source locations.",
+      "Archive destination.",
+      "Checksum verification status.",
+      "Missing or incomplete records.",
+      "Remaining actions requiring student participation."
+    ]
+  },
+  "final_instruction": "Recover authentic Codex interaction evidence, not a reconstructed narrative. Preserve the available original instructions, responses, commands, and outcomes associated with both milestones. Operate read-only on the original sources, maintain a verifiable chain of provenance, and report all limitations honestly. Never claim complete recovery unless the accessible records support that conclusion."
+}
+</CodeBlock>
+
+## Cómo utilizarlos
+
+Para **ChatGPT**, abre una conversación nueva dentro del proyecto NJIT ML y pega el primer prompt. Si no puede consultar las demás conversaciones, utiliza la exportación oficial de la cuenta y proporciona los archivos pertinentes. No basta con pedirle a una conversación que recuerde todas las anteriores.
+
+Para **Codex**, abre Visual Studio Code con el entorno en el que trabajaste el Mini-Project y pega el segundo prompt. Codex podrá buscar los registros locales que tenga permiso de leer, incluso si los archivos de las sesiones están fuera de la carpeta del repositorio.
+
+La estructura que buscamos obtener es:
+
+<box border radius="lg" padding={3} gap={2}>
+  <row align="center" gap={2}>
+    <icon name="folder-open" color="secondary"/>
+    **DS675_AI_Transcripts/**
+  </row>
+  <box padding={{left:4}} gap={2}>
+    <row align="center" gap={2}>
+      <icon name="folder" color="secondary"/>
+      **ChatGPT/** — Interacciones del proyecto NJIT ML
+    </row>
+    <row align="center" gap={2}>
+      <icon name="folder" color="secondary"/>
+      **Codex/** — Sesiones recuperadas de Visual Studio Code
+    </row>
+    <row align="center" gap={2}>
+      <icon name="file-text" color="secondary"/>
+      `master_index.csv` — Índice unificado
+    </row>
+    <row align="center" gap={2}>
+      <icon name="file-text" color="secondary"/>
+      `recovery_report.md` — Cobertura, faltantes y limitaciones
+    </row>
+  </box>
+</box>
+
+**Recomendación importante:** conserva los archivos originales de ambas fuentes sin alteraciones. Los documentos ordenados por milestone deben ser copias de consulta, nunca sustitutos inventados de las conversaciones.
+
+Cuando tengas ambos conjuntos, podremos compararlos, ordenar cronológicamente las interacciones, identificar posibles duplicados y preparar un único expediente de transcripciones para entregar al profesor de manera privada, manteniendo la separación entre tu contribución intelectual y la implementación asistida por IA.
+

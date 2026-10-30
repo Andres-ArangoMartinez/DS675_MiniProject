@@ -1,0 +1,593 @@
+{
+  "captured_utc": "2026-10-30T16:17:29.417250+00:00",
+  "source_kind": "Student-supplied ChatGPT account data export ZIP",
+  "archive_bytes": 4356065567,
+  "archive_sha256": "0f6ce539f1e8f680f1da031d30450c98b4ec45ba71260af4aca355c5b45aa0fd",
+  "publication_scope": "Fixed allowlist: eleven legacy project chats and one direct recovery handoff. Other account conversations remain private.",
+  "rendering": "User/assistant text and multimodal_text, ordered by parent depth then creation time and node ID. Native content hashes retain the source identity. Non-text model records and binary assets remain private.",
+  "conversations": [
+    {
+      "conversation_id": "6a92eec0-f09c-83e9-a9ed-29d95f24d41b",
+      "original_title": "Video Week 1 + Clase interactiva + prompt miniproject",
+      "legacy_view_id": "T05",
+      "scope": "historical project conversation",
+      "created_utc": "2026-08-29T14:41:07.703349+00:00",
+      "updated_utc": "2026-09-13T22:13:26.259106+00:00",
+      "zip_member": "conversations-036.json",
+      "zip_member_sha256": "fc0fbb09b0c25cc188036daca0de6fa03b2931f31ae1089275585b8af90017b6",
+      "private_readable_sha256": "4dc6e1981388647bb27ff8b38e0ed3da7d32c6fd0cfb3e81e872f7f4fdc8d519",
+      "public_joined_sha256": "0c4880aab7b20f5b5fa14d579288330c0e8f97f99fb70d9c3479ef8b22d1d731",
+      "source_characters": 211922,
+      "public_characters": 211060,
+      "parts": [
+        {
+          "file": "6a92eec0-f09c-83e9-a9ed-29d95f24d41b/segment-001.txt",
+          "bytes": 212650,
+          "sha256": "0c4880aab7b20f5b5fa14d579288330c0e8f97f99fb70d9c3479ef8b22d1d731",
+          "character_start": 0,
+          "character_end": 211060
+        }
+      ],
+      "visible_messages": 18,
+      "roles": {
+        "user": 7,
+        "assistant": 11
+      },
+      "non_text_model_record_counts_kept_private": {
+        "reasoning_recap": 7,
+        "thoughts": 11
+      },
+      "redactions": 2
+    },
+    {
+      "conversation_id": "6a9e201b-aa78-83ea-8e32-c4b5c38047fb",
+      "original_title": "Proyecto Kaggle Para Control Engineer",
+      "legacy_view_id": "T06",
+      "scope": "historical project conversation",
+      "created_utc": "2026-09-07T02:23:48.591783+00:00",
+      "updated_utc": "2026-09-07T02:25:06.251652+00:00",
+      "zip_member": "conversations-037.json",
+      "zip_member_sha256": "0887e57d0ba521f5f3e4f006f638ac2f6edd3f4b3997800ab6fd0e7dfbcf4db9",
+      "private_readable_sha256": "98286d9820fd693458ceb01b7475e03ea177b50eeae4adc473e96d63dd3466d5",
+      "public_joined_sha256": "98286d9820fd693458ceb01b7475e03ea177b50eeae4adc473e96d63dd3466d5",
+      "source_characters": 9876,
+      "public_characters": 9876,
+      "parts": [
+        {
+          "file": "6a9e201b-aa78-83ea-8e32-c4b5c38047fb/segment-001.txt",
+          "bytes": 10290,
+          "sha256": "98286d9820fd693458ceb01b7475e03ea177b50eeae4adc473e96d63dd3466d5",
+          "character_start": 0,
+          "character_end": 9876
+        }
+      ],
+      "visible_messages": 4,
+      "roles": {
+        "user": 1,
+        "assistant": 3
+      },
+      "non_text_model_record_counts_kept_private": {
+        "thoughts": 3,
+        "reasoning_recap": 1
+      },
+      "redactions": 0
+    },
+    {
+      "conversation_id": "6a9e2a4f-b7a4-83ea-ad78-10d82579fd5b",
+      "original_title": "Detalles del proyecto Kaggle",
+      "legacy_view_id": "T07",
+      "scope": "historical project conversation",
+      "created_utc": "2026-09-07T03:08:16.832925+00:00",
+      "updated_utc": "2026-09-07T03:10:26.029383+00:00",
+      "zip_member": "conversations-037.json",
+      "zip_member_sha256": "0887e57d0ba521f5f3e4f006f638ac2f6edd3f4b3997800ab6fd0e7dfbcf4db9",
+      "private_readable_sha256": "64e534838c7d540502e57670e7e808f95e8db8c190917032b2e7e9dc76416e4a",
+      "public_joined_sha256": "64e534838c7d540502e57670e7e808f95e8db8c190917032b2e7e9dc76416e4a",
+      "source_characters": 7311,
+      "public_characters": 7311,
+      "parts": [
+        {
+          "file": "6a9e2a4f-b7a4-83ea-ad78-10d82579fd5b/segment-001.txt",
+          "bytes": 7420,
+          "sha256": "64e534838c7d540502e57670e7e808f95e8db8c190917032b2e7e9dc76416e4a",
+          "character_start": 0,
+          "character_end": 7311
+        }
+      ],
+      "visible_messages": 8,
+      "roles": {
+        "user": 3,
+        "assistant": 5
+      },
+      "non_text_model_record_counts_kept_private": {
+        "thoughts": 6,
+        "reasoning_recap": 3
+      },
+      "redactions": 0
+    },
+    {
+      "conversation_id": "6a9e2e37-35d0-83ea-9c08-b0d6b9ab2ec8",
+      "original_title": "Seleccionar Dataset Kaggle",
+      "legacy_view_id": "T08",
+      "scope": "historical project conversation",
+      "created_utc": "2026-09-07T03:23:38.754124+00:00",
+      "updated_utc": "2026-09-07T03:55:39.076964+00:00",
+      "zip_member": "conversations-037.json",
+      "zip_member_sha256": "0887e57d0ba521f5f3e4f006f638ac2f6edd3f4b3997800ab6fd0e7dfbcf4db9",
+      "private_readable_sha256": "aff99c7cd671a31ae4625b0ed9537e57b9708927b56db02211f85d923de7c0a7",
+      "public_joined_sha256": "aff99c7cd671a31ae4625b0ed9537e57b9708927b56db02211f85d923de7c0a7",
+      "source_characters": 99953,
+      "public_characters": 99953,
+      "parts": [
+        {
+          "file": "6a9e2e37-35d0-83ea-9c08-b0d6b9ab2ec8/segment-001.txt",
+          "bytes": 102034,
+          "sha256": "aff99c7cd671a31ae4625b0ed9537e57b9708927b56db02211f85d923de7c0a7",
+          "character_start": 0,
+          "character_end": 99953
+        }
+      ],
+      "visible_messages": 15,
+      "roles": {
+        "user": 3,
+        "assistant": 12
+      },
+      "non_text_model_record_counts_kept_private": {
+        "thoughts": 22,
+        "reasoning_recap": 3
+      },
+      "redactions": 0
+    },
+    {
+      "conversation_id": "6aac63db-6148-83ea-a1d0-229cd3614df3",
+      "original_title": "Buscar dataset en Kaggle",
+      "legacy_view_id": "T09",
+      "scope": "historical project conversation",
+      "created_utc": "2026-09-17T22:04:11.940341+00:00",
+      "updated_utc": "2026-09-20T15:56:36.510066+00:00",
+      "zip_member": "conversations-038.json",
+      "zip_member_sha256": "fbddd75792f4bed0f48a6ed9e086be16e271e1547b3afc723d2e03d615b320d1",
+      "private_readable_sha256": "7718dae9183d804a51a082935d42608d8fa9e81e16ba4bdba2942e03ca98cd1f",
+      "public_joined_sha256": "7718dae9183d804a51a082935d42608d8fa9e81e16ba4bdba2942e03ca98cd1f",
+      "source_characters": 133626,
+      "public_characters": 133626,
+      "parts": [
+        {
+          "file": "6aac63db-6148-83ea-a1d0-229cd3614df3/segment-001.txt",
+          "bytes": 137142,
+          "sha256": "7718dae9183d804a51a082935d42608d8fa9e81e16ba4bdba2942e03ca98cd1f",
+          "character_start": 0,
+          "character_end": 133626
+        }
+      ],
+      "visible_messages": 44,
+      "roles": {
+        "user": 18,
+        "assistant": 26
+      },
+      "non_text_model_record_counts_kept_private": {
+        "thoughts": 45,
+        "reasoning_recap": 15
+      },
+      "redactions": 0
+    },
+    {
+      "conversation_id": "6aaf4d8e-4490-83ea-92b3-31951721fef2",
+      "original_title": "Formato del reporte",
+      "legacy_view_id": "T10",
+      "scope": "historical project conversation",
+      "created_utc": "2026-09-20T03:05:50.703284+00:00",
+      "updated_utc": "2026-09-20T03:06:26.931370+00:00",
+      "zip_member": "conversations-038.json",
+      "zip_member_sha256": "fbddd75792f4bed0f48a6ed9e086be16e271e1547b3afc723d2e03d615b320d1",
+      "private_readable_sha256": "fa17c5012548b2509f0c50764cdba04e0a8f8c08a0ccfc53a28239c9071e89f9",
+      "public_joined_sha256": "fa17c5012548b2509f0c50764cdba04e0a8f8c08a0ccfc53a28239c9071e89f9",
+      "source_characters": 1311,
+      "public_characters": 1311,
+      "parts": [
+        {
+          "file": "6aaf4d8e-4490-83ea-92b3-31951721fef2/segment-001.txt",
+          "bytes": 1317,
+          "sha256": "fa17c5012548b2509f0c50764cdba04e0a8f8c08a0ccfc53a28239c9071e89f9",
+          "character_start": 0,
+          "character_end": 1311
+        }
+      ],
+      "visible_messages": 2,
+      "roles": {
+        "user": 1,
+        "assistant": 1
+      },
+      "non_text_model_record_counts_kept_private": {
+        "thoughts": 1
+      },
+      "redactions": 0
+    },
+    {
+      "conversation_id": "6ab004f1-8c38-83ea-bd39-3f52a1939e76",
+      "original_title": "Crear versión oV4 Final",
+      "legacy_view_id": "T11",
+      "scope": "historical project conversation",
+      "created_utc": "2026-09-20T16:08:17.856815+00:00",
+      "updated_utc": "2026-09-26T02:55:24.004876+00:00",
+      "zip_member": "conversations-038.json",
+      "zip_member_sha256": "fbddd75792f4bed0f48a6ed9e086be16e271e1547b3afc723d2e03d615b320d1",
+      "private_readable_sha256": "584b3d55f737586ba7a315dfc02eafd08477bde12ccadf263b8c511230380f19",
+      "public_joined_sha256": "584b3d55f737586ba7a315dfc02eafd08477bde12ccadf263b8c511230380f19",
+      "source_characters": 65770,
+      "public_characters": 65770,
+      "parts": [
+        {
+          "file": "6ab004f1-8c38-83ea-bd39-3f52a1939e76/segment-001.txt",
+          "bytes": 66646,
+          "sha256": "584b3d55f737586ba7a315dfc02eafd08477bde12ccadf263b8c511230380f19",
+          "character_start": 0,
+          "character_end": 65770
+        }
+      ],
+      "visible_messages": 18,
+      "roles": {
+        "user": 9,
+        "assistant": 9
+      },
+      "non_text_model_record_counts_kept_private": {
+        "thoughts": 26,
+        "reasoning_recap": 8
+      },
+      "redactions": 0
+    },
+    {
+      "conversation_id": "6ac80fb7-1dd8-83e9-a613-b73391e48697",
+      "original_title": "Expectativas Milestone 2",
+      "legacy_view_id": "T12",
+      "scope": "historical project conversation",
+      "created_utc": "2026-10-08T21:48:40.239984+00:00",
+      "updated_utc": "2026-10-08T22:05:04.725763+00:00",
+      "zip_member": "conversations-039.json",
+      "zip_member_sha256": "05a3d12b587fd548672d42d63f60c623828784496a65562b0dfecb2d593f5964",
+      "private_readable_sha256": "097253d07078541ba51dc4f7bb24677f4493e603d91c7c61613dc9b17184efaf",
+      "public_joined_sha256": "097253d07078541ba51dc4f7bb24677f4493e603d91c7c61613dc9b17184efaf",
+      "source_characters": 46345,
+      "public_characters": 46345,
+      "parts": [
+        {
+          "file": "6ac80fb7-1dd8-83e9-a613-b73391e48697/segment-001.txt",
+          "bytes": 46696,
+          "sha256": "097253d07078541ba51dc4f7bb24677f4493e603d91c7c61613dc9b17184efaf",
+          "character_start": 0,
+          "character_end": 46345
+        }
+      ],
+      "visible_messages": 11,
+      "roles": {
+        "user": 5,
+        "assistant": 6
+      },
+      "non_text_model_record_counts_kept_private": {
+        "reasoning_recap": 5,
+        "thoughts": 2
+      },
+      "redactions": 0
+    },
+    {
+      "conversation_id": "6ad553bb-6f3c-83ea-bfbd-bee4b7f728ad",
+      "original_title": "Confirmar dataset BattLeDIM",
+      "legacy_view_id": "T13",
+      "scope": "historical project conversation",
+      "created_utc": "2026-10-18T23:18:20.115661+00:00",
+      "updated_utc": "2026-10-19T01:38:51.749217+00:00",
+      "zip_member": "conversations-040.json",
+      "zip_member_sha256": "b5cb5ebc25fab94070e98a438cb8e47bf3b482044ee7076192786f1216b757d9",
+      "private_readable_sha256": "137b510def961d5cf963086e7ab84544600ecc4bd9388aca40436bd6b1dc6706",
+      "public_joined_sha256": "137b510def961d5cf963086e7ab84544600ecc4bd9388aca40436bd6b1dc6706",
+      "source_characters": 135643,
+      "public_characters": 135643,
+      "parts": [
+        {
+          "file": "6ad553bb-6f3c-83ea-bfbd-bee4b7f728ad/segment-001.txt",
+          "bytes": 137123,
+          "sha256": "137b510def961d5cf963086e7ab84544600ecc4bd9388aca40436bd6b1dc6706",
+          "character_start": 0,
+          "character_end": 135643
+        }
+      ],
+      "visible_messages": 33,
+      "roles": {
+        "user": 14,
+        "assistant": 19
+      },
+      "non_text_model_record_counts_kept_private": {
+        "thoughts": 34,
+        "reasoning_recap": 14
+      },
+      "redactions": 0
+    },
+    {
+      "conversation_id": "6ae0894a-6f50-83e9-a7ca-d4d3c8c50402",
+      "original_title": "Analiza feedback milestone 2",
+      "legacy_view_id": "T14",
+      "scope": "historical project conversation",
+      "created_utc": "2026-10-27T11:21:46.847894+00:00",
+      "updated_utc": "2026-10-29T15:08:22.786073+00:00",
+      "zip_member": "conversations-040.json",
+      "zip_member_sha256": "b5cb5ebc25fab94070e98a438cb8e47bf3b482044ee7076192786f1216b757d9",
+      "private_readable_sha256": "bb0458a589471fc2a3ffd8ec43f27f0730138ea7932bcab6b14e87a8a02da00b",
+      "public_joined_sha256": "bb0458a589471fc2a3ffd8ec43f27f0730138ea7932bcab6b14e87a8a02da00b",
+      "source_characters": 53402,
+      "public_characters": 53402,
+      "parts": [
+        {
+          "file": "6ae0894a-6f50-83e9-a7ca-d4d3c8c50402/segment-001.txt",
+          "bytes": 53992,
+          "sha256": "bb0458a589471fc2a3ffd8ec43f27f0730138ea7932bcab6b14e87a8a02da00b",
+          "character_start": 0,
+          "character_end": 53402
+        }
+      ],
+      "visible_messages": 13,
+      "roles": {
+        "user": 4,
+        "assistant": 9
+      },
+      "non_text_model_record_counts_kept_private": {
+        "thoughts": 21,
+        "reasoning_recap": 4
+      },
+      "redactions": 0
+    },
+    {
+      "conversation_id": "6ae334d1-a604-83e9-a039-dd29a3c1856b",
+      "original_title": "Analiza coherencia y participación",
+      "legacy_view_id": "T15",
+      "scope": "historical project conversation",
+      "created_utc": "2026-10-29T11:58:10.506415+00:00",
+      "updated_utc": "2026-10-29T14:57:40.230027+00:00",
+      "zip_member": "conversations-040.json",
+      "zip_member_sha256": "b5cb5ebc25fab94070e98a438cb8e47bf3b482044ee7076192786f1216b757d9",
+      "private_readable_sha256": "9691c203dee56e9aa368321863ae5d71b40e42b62e85f236ebebf79adbf58f18",
+      "public_joined_sha256": "9691c203dee56e9aa368321863ae5d71b40e42b62e85f236ebebf79adbf58f18",
+      "source_characters": 128803,
+      "public_characters": 128803,
+      "parts": [
+        {
+          "file": "6ae334d1-a604-83e9-a039-dd29a3c1856b/segment-001.txt",
+          "bytes": 129699,
+          "sha256": "9691c203dee56e9aa368321863ae5d71b40e42b62e85f236ebebf79adbf58f18",
+          "character_start": 0,
+          "character_end": 128803
+        }
+      ],
+      "visible_messages": 18,
+      "roles": {
+        "user": 6,
+        "assistant": 12
+      },
+      "non_text_model_record_counts_kept_private": {
+        "thoughts": 41,
+        "reasoning_recap": 6
+      },
+      "redactions": 0
+    },
+    {
+      "conversation_id": "6ae35e86-9b68-83ea-a355-b938f88ef913",
+      "original_title": "Transferir recuperación de conversaciones",
+      "legacy_view_id": null,
+      "scope": "direct recovery handoff",
+      "created_utc": "2026-10-29T14:56:07.246559+00:00",
+      "updated_utc": "2026-10-29T14:58:43.517766+00:00",
+      "zip_member": "conversations-040.json",
+      "zip_member_sha256": "b5cb5ebc25fab94070e98a438cb8e47bf3b482044ee7076192786f1216b757d9",
+      "private_readable_sha256": "7fb466bd63cf88b721dbf933e9617690c52bdcfeade9a295b3ae8d77b3a608cd",
+      "public_joined_sha256": "7fb466bd63cf88b721dbf933e9617690c52bdcfeade9a295b3ae8d77b3a608cd",
+      "source_characters": 2093,
+      "public_characters": 2093,
+      "parts": [
+        {
+          "file": "6ae35e86-9b68-83ea-a355-b938f88ef913/segment-001.txt",
+          "bytes": 2110,
+          "sha256": "7fb466bd63cf88b721dbf933e9617690c52bdcfeade9a295b3ae8d77b3a608cd",
+          "character_start": 0,
+          "character_end": 2093
+        }
+      ],
+      "visible_messages": 2,
+      "roles": {
+        "user": 1,
+        "assistant": 1
+      },
+      "non_text_model_record_counts_kept_private": {
+        "reasoning_recap": 1
+      },
+      "redactions": 0
+    }
+  ],
+  "visible_messages": 186,
+  "roles": {
+    "user": 72,
+    "assistant": 114
+  },
+  "legacy_messages_matched": 82,
+  "prior_reference_only_bodies_recovered": 19,
+  "pending_reference_bodies_resolved": 15,
+  "prior_truncated_messages_recovered": 5,
+  "redactions": 2,
+  "redaction_categories": {
+    "restricted-course-link": 2
+  },
+  "legacy_evidence_preserved": true,
+  "historical_completeness_certified": false,
+  "limits": "The export establishes available selected message bodies and recorded structure, not server authenticity, worldwide historical completeness, or the truth of every archived AI statement.",
+  "legacy_preservation_sha256": {
+    "evidence/ai_interactions/chatgpt/6a92eec0-f09c-83e9-a9ed-29d95f24d41b/part-001.txt": "7fb585a61b5e311541675f29c340f84406e7e5f6d620c374ade46cf079d668cd",
+    "evidence/ai_interactions/chatgpt/6a9e201b-aa78-83ea-8e32-c4b5c38047fb/part-001.txt": "c1cfa8533ae39fbf83096e93e8024eafa0adf7ec256a8c9321c8d50382f6cded",
+    "evidence/ai_interactions/chatgpt/6a9e2a4f-b7a4-83ea-ad78-10d82579fd5b/part-001.txt": "ad3514aedeba1d0421c27908af05f784ce11982a763596307f0cb1164fcc9f9d",
+    "evidence/ai_interactions/chatgpt/6a9e2e37-35d0-83ea-9c08-b0d6b9ab2ec8/part-001.txt": "ce3564232e65bf12fcd1b597a546be9fd521cb21759fdc8205dd198009ab184c",
+    "evidence/ai_interactions/chatgpt/6aac63db-6148-83ea-a1d0-229cd3614df3/part-001.txt": "8a3c84ae0e810d8bd3ab0265f4af73fc2083fc77b78d8f1137c13f63419b697a",
+    "evidence/ai_interactions/chatgpt/6aaf4d8e-4490-83ea-92b3-31951721fef2/part-001.txt": "36ec47914312ae212ad9d9463d37aac291514a926142afa53d81c9208503b90d",
+    "evidence/ai_interactions/chatgpt/6ab004f1-8c38-83ea-bd39-3f52a1939e76/part-001.txt": "dbf72d0c3ee4c4f813f68a0d1d097e43a6f553639cda01475702242c8ab5f1d0",
+    "evidence/ai_interactions/chatgpt/6ac80fb7-1dd8-83e9-a613-b73391e48697/part-001.txt": "e6f38feac75e81b8375bec892c4a63fab80e35e6deab7de7a6aa4539c4b7287f",
+    "evidence/ai_interactions/chatgpt/6ad553bb-6f3c-83ea-bfbd-bee4b7f728ad/part-001.txt": "611900cd297097e7a963a284d58158f06bbd8ebd023303759aa039ea7ec8dacc",
+    "evidence/ai_interactions/chatgpt/6ae0894a-6f50-83e9-a7ca-d4d3c8c50402/part-001.txt": "31a8d851116d67ad56d6e60f81c82c9d51894e93fb3209b8af06074880bda77b",
+    "evidence/ai_interactions/chatgpt/6ae334d1-a604-83e9-a039-dd29a3c1856b/part-001.txt": "b7c7b1fa8d6b1ce9933e592cb00d02e6dca6b514c77bd9c207d07a8503688793",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-001.txt": "26255bb0bf312d1431d312f43c286d418c148d1936ac7769adba70433b15346d",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-002.txt": "3c121b189cd387ae3ff90650da2e1e65e03374523eb355eac82deab72f62ec7a",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-003.txt": "e7dafced60deb78cb2523c4e0f0b48f4549d36ba28fb4b98069db4663bac8f30",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-004.txt": "4667e0b13591f2472b47b796ce9a5569b0f7f097e71dd9387e820682476c6e76",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-005.txt": "e80f7e87f6dd3354195ac3137275f02b0a5f8051a4f20a3d2061758f82da52f7",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-006.txt": "422f224c0ebdb0d8c3d88bcc8368d011c09af27d6022e68ce2d28875008cf925",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-007.txt": "7922f4f1c94d04d80ff1e04ccbd22b08b278a70017871c3086e1441d62532a7a",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-008.txt": "5e40fe6fd775d53efe625b6774b985121c15e5e7107c8ec72b671ba346b25c1d",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-009.txt": "888866965e0202f8dcd3e2797313328f5056ae7d15681799a4576293dd5f51f5",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-010.txt": "94b86550e92b3459e5056a79b79daffc22fbe23c4642629bc2f50de340785a88",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-011.txt": "21927cbf87b7bc78bb219435d1eddc51ee6bfbf0013b27e36902ba61e119e301",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-012.txt": "bfbc672c1defd1746adda2b2b1bf69f2cfc0f4fd917fa67d66bf5b45dfe4f227",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-013.txt": "726bf956ad4868cfe2ae21574bc6c207de3348ce242ab1b79e9d5924a7b79402",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-014.txt": "1ab107dc8dcc02b63dc9a2098bdab0aa5a78bfb87d754c4744940217f9ceb516",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-015.txt": "092a508487fc0ea7febc5891027f102c984fca9642a3a66b99d0f0dbdad282cc",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-016.txt": "17871ce338745ef4c58c2b62559a49b1ab66c7e7ffc62939cafc3623be5fc79d",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-017.txt": "ab25e423f522149a6e17bad1245b5cece13e99c3e513c22c49499d4274ee0145",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-018.txt": "1069372e55f8f2b9cd3a076fedcc1b814ad86c15b389742f90455d899d11baf0",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-019.txt": "6c4ec2ef12623f2e1848865b3d4b7363863d9b62da5ca2b37eaa87c648f185b2",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-020.txt": "a92d14e74e30da2030f2b6b311dde5e3e400af95e8fe9762eb49f96a60f55d21",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-021.txt": "dcd212155c27d947dbb3a5b374423e366eb4d72380a3f747c8f7542dcfc68695",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-022.txt": "6c09021e6d05a61638974d279c73777370152384b5584d1fec32d08f822043bf",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-023.txt": "23262e520a605964750cba77c09d311278195a70bbf0751aa71af5b429c5e136",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-024.txt": "64d6d55ba4e2b544eb5d83742f794261f42af96a652e47a0ccb44232d8e69589",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-025.txt": "d138466abe6313d6522183c0b54922ed2fd3c6a3d1c0bec16998eea147be4f61",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-026.txt": "d3d3aab3215d5268a0603c72b8090ca82e0e603b2d36c87c33c2707239b5bc6a",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-027.txt": "72dc10cb4a69039f6e380180ac437d1b011572753219eff9b219764a0840d591",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-028.txt": "6b98dfd57af0f97ea7d3d199ac2c1613393cc455ba6084003e53b27c99b88ec2",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-029.txt": "cc2367c1ee0a34260fce7ca087e04300109860f7ed3496e33e90894c984c7762",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-030.txt": "81af45b057d18ad94c77ce262268ef61d2aa2c0e72dad3d1e77aa4e8ced7e6fb",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-031.txt": "88d67e74d969af90b400bd7f43c4b503ff59bfb39c90d6b9d42554e8e8c884c0",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-032.txt": "5b4b8c55376bab1e1cb0d29bb15e349c432a2a30dbc4a420bf0eac62b13843e7",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-033.txt": "6fe313ab5b506198e8776900266f8eb4928f7945398e052ca724412dc4ba1f8d",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-034.txt": "ddcb499ba6be9d515dce060a9a41b8ab98b376308442f56470216e66bfbf0224",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-035.txt": "fbe3661db1c746c02a27da219b32e5e8918e453d31e86780c5eb32ecc62741d1",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-036.txt": "1c4d2916a8ca41d9b31f0d1e39eeeafa91ebfef8084fdb0376be5c644241b0ae",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-037.txt": "878d4e89e076a12479d969a4c5df3ac9637f797fbaddaae384636b621e42970a",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-038.txt": "8165e7906437eb6e98f755e4992020fc25be3cbf6cab53002c657cc3728b9601",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-039.txt": "0a38bda443eea8e9c988a7a4ac13e31de3322c51073607b3a74994c969b56f8d",
+    "evidence/ai_interactions/codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/part-040.txt": "b58b6d63e2e047fde5ba4995eff1245f9016074f29be435264fa22a0a406240b",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03-repository-continuation/part-001.txt": "04c4cbfa10acacbf69f04a07a71e673e00c4b4a0ee6766cd14dcb221365d4d0b",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03-repository-continuation/part-002.txt": "6f2cdd5f8a91f9153cd5800a293badd318764c67d972687940deb40e865b0c2a",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03-repository-continuation/part-003.txt": "37c5b8015c6f748164533494ba9c44bfb313370abe1f4e39353fe9f0f467d156",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03-repository-continuation/part-004.txt": "223ec4f984866c8360c602d0ffe0b9df6bbe9f0ff86d64cd156c79a6c514780a",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03-repository-continuation/part-005.txt": "9b60e10ec2eff603e97a8b99c7eae6a6df6f5d2cb69d3fa0c92928103c7686fb",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03-repository-continuation/part-006.txt": "3d2092ffd941ff9783fb543a534dad56313a60f976e241bf478622d1c18af0dd",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03-repository-continuation/part-007.txt": "0e2f6fafee195834003bea853f46869463add399aeca102f6169749753c7f4c8",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03-repository-continuation/part-008.txt": "c36b47564a4f40f9698a9fb5cb0551f5a52fc785ea94d048d5e6d91cea664e81",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-001.txt": "5b05400ba9ef25557a04514785ed47147cf652b624eb784c427dd34f32117f86",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-002.txt": "a34d79ad424ce53f63826f27fb705894bb267a1b6a9c726f0b6459341f911c45",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-003.txt": "922b599d9d502c953fb6204b450881b84f47eff58ebf2a789fa632f308c32555",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-004.txt": "c2e603faf079785ae47bc6525267e4dbf6230e530549d7af037132c92c2e260a",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-005.txt": "d5d7ac048d469d23df1ce0ee822b92cb025e027884dde5efeccd73610575ce61",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-006.txt": "3c46c93332611320636feff9441e50ac7a027ec47a47ae5733896984ef042fb9",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-007.txt": "fade8abb31e884f30cefcc7ff96398b7e08a89921788e4cff5b2c4bb8227191f",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-008.txt": "eaa877f30d0bfbc89cd476998e2bb299ab51b9426c36a9d6abaeb466ba84a891",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-009.txt": "585003ba94b703d86e385a612f37c234f77278e3a6e3ba21e6f8b1d8892532b4",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-010.txt": "21fa4b721b1f2487649dd924f2a3bb72841258824805331e5bd96054ea80a651",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-011.txt": "91ae71309bdb4c47b92c590e7bd7d2bf9e8f99e398b66d0cb3e5417d25a0ff1b",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-012.txt": "2bfdda7bdce6b5ce9bdc9d65bd3101d84faa8872eb6794a1ff5ead2724867523",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-013.txt": "e2e1c0e871c452b427d67469f3b87766c80c6c811930d951dbe2407be2ab8988",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-014.txt": "c7366ed120fceb88824877b03d794be9953b6ae4238a013ae463951e45246ba0",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-015.txt": "aeb8f8b77642bb538100ccdbbe196d9064c49d404cbf9dcca8c07ec3d4fd1037",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-016.txt": "7516b4d2032cb114adf3b057d263ce10998811e5e725f2cf47358cbef3941688",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-017.txt": "347a3d164e445289f81f5eabeb13b92a6d48228d2ba5aa4065bfd7e1ed7bf14b",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-018.txt": "4790835e10959d3798497191b38071610f78e55af77e566cbe62e2ef30ac3d1f",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-019.txt": "64ff75182964ef17b1bfd491422f877e122f482763b9098477c6fe95adc738c1",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-020.txt": "54a48c20647eef3cb34702069d7c2a06378720416b9274576760957c5d03fdaa",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-021.txt": "64237bc2d650a40c5522089a3bb605ddaa49c7bd51a052f133e7780d14ebb74c",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-022.txt": "10604135b2eeae596d9877c95b78088819c6cd5a39e29b6ef1d617747be6e457",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-023.txt": "2e10bfb0744bec17ea8c608eab4a8812956bc3406e93edf74bc7a944269c2872",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-024.txt": "543146c3c34c3328f9aed76d0a1d8829665dbc2ae150a74ea3abb279135d4637",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-025.txt": "6180a5de15a09bff64c27132a7acf5502cf741c22dd5db172fa7297eba760005",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-026.txt": "ea0d6af2905aa4c7f720a1e2e2a5786ad00bbbf8b70128171afbfef2f08d0e8f",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-027.txt": "435a1c638264c7760dfd56b5a2f312d103e8882b0c990a580012ba9ec90f2632",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-028.txt": "99ecdc3dc9a916e1217b04124fb57f31012d6e24fd756488e3e5c0f1db613ffd",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-029.txt": "1c0f6c8ade1eaee37402833b66cf36baa2927636f4f3f5a2ae9d1a04dc989713",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-030.txt": "ed7706049bcfc7337feaf97384f4c9885a9882118564ec228fe92a0e3f912c5b",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-031.txt": "020c39f82583a0d2b72a0aa88643c0be28a61937d353654f1f9d897b83725453",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-032.txt": "f1746a538a2088c1fd129a6256097608fc7ec31213d655b2987cd58322779b5a",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-033.txt": "ec9c0a6a0d93eb161a0c269a367c519a7b66badb719885378c82261edd362cfd",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-034.txt": "2fba7854498b80ff6a1eb94580e8c785f87ff700ba9a2499b6edc67dfaa3ed10",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-035.txt": "13ffcc07016b46a0e3d6fe50a854ffc00cba5ad5ed5b3cd41c8a49a63c01f501",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-036.txt": "ec56e10e82bdeabf0ac1471747594a2d1db686a79a4196a3dcb48633efd21aa3",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-037.txt": "9907e2c6b1181f7d63d09f3e47f009cd7260b6e08fb0dabff654e2c605fc1e1a",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-038.txt": "836d83050e7911094fe917fcd65b8595c8d542590da0bd87e2e0b1c6ead5ed2e",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-039.txt": "b833719bfa722f4147260702f383261dbb30f12a65bb5e43c8943604990e51fa",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-040.txt": "190fe1b34201d9c35974e27b592d8675685983dc570cc2879145b99a6c9dba34",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-041.txt": "12ac32e95d26a2aaa72f5065d7c0c248ad67e774710f72e6d7356326e591a925",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-042.txt": "999084705e06525b181f9f105333175b33e2a98e8b4d32770ad3cfb283adcb24",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-043.txt": "ce5d2ad5a3e83a943aa5fb12d473e2e355778243304336f2d865f84607af40d9",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-044.txt": "8f587430432f77bc193fd52987d377764342f3d6486b66d06cd85f169e6ec641",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-045.txt": "8e1c1082dcd52f0632425d9082f7e560df521e76433ed8a5eccd1d4e2650f42b",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-046.txt": "b116ff9fc67b4b4b259f2ae844e56d09b4e1ff71e718e40501a82fce548243b1",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-047.txt": "8e4abff843ab3e90cabca1a1c34f3c54415a1d4365ffc3cac4cc712925492b55",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-048.txt": "92a3654df6fd9fcdae365ab320a9bddaf280b22f13180df1f1fd3fcb4367dce4",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-049.txt": "69a9a98af68e6e81b82be97bc02d0ff69d5848e4d6f926fb3c344928dc9cc438",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-050.txt": "fd7a5209f9e57d234e9eda4459fb7322dea8897ef705a107052c569f6bbbc5e9",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-051.txt": "3ee1d062e2223bfcb79a957b6226531a93cb38700e45a62ed8edca6168a5e7f5",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-052.txt": "023e5735164a1953dd21edcb06fa3b8a7c22896ce4fa1ad5e7a2a14da495e2b8",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-053.txt": "0b2227689fcd57a5cf5ce8c610cd9462e0c936749380540a48a354f0362b4114",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-054.txt": "baab2e2af15ccb9cf7c5dc64ab9fe77a0ae5ccc74d11fa7c320e11941fc52c86",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-055.txt": "a470ee233a06ce86c1b6caeb6d564556481874cd97e0c88f23c0d52297e905af",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-056.txt": "4d2627dfdbcf9fd888be63f6826ed84aee5279910a655ae99dcaa7df55727fa3",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-057.txt": "2f41fd16081c6af60449cd73b4f9cc32872b3a33b73ff30c4daba065798ef381",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-058.txt": "639cf6b084d0aa1801716747b8bdc05805644d1bddfe0a77c6877ba14f445910",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-059.txt": "e78fbb8ca94e4041fd976d17bd12c10d3809746df68f26df5d7d44a7a6df91ff",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-060.txt": "9ca0d586226d079a71261b76cde9144878246292fbdea2ffed829e2f9096d207",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-061.txt": "ac7ba60e6157aa87f2adcf6a430c61e6803e03b817019b658167c46159dd5476",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-062.txt": "6080407e6fddc87c50aeed855914a7d6149c7557ab9445e7213033eadb244523",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-063.txt": "613114420a69295d9aec10cfb83cff36204b7b2f5803db9955082b45323af635",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-064.txt": "cbd7f08eebae1e31eb90ef42e7ef6181add0936f2c5a14ef47015916bd909ac3",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-065.txt": "712d6321cb48645a808e364b0bd6a4ec420616d87adcfa8c57a4e234a0dc2899",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-066.txt": "a0423b736c8d0ca1712c641b9a4b5879a40f27b4bb184e6bb35cb20753328dcd",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-067.txt": "1567e05fe8f5dfcca75fc77650ebc666f0802fa76fc7cce2cd728503dd3c52e6",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-068.txt": "b3c55e6642d4f10fc629de9e067ce2afdca324fbcb4edc731b4230cce2411676",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-069.txt": "5a204956aaeb66c818ae8fcc6241ee5cf44570aae9dfd0d41bdc8c794944c4d6",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-070.txt": "08d651542d12e147be34cd7ef81508db5fac9824f49d81f114418d1136f218f4",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-071.txt": "502eb18861ad4550ba8098a06db026e882c5b59337f0a886fd4c4a5c81d55285",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-072.txt": "888c419a90aa158b541029c303c4db1419e56ad7ab01228a62116af09da3d482",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-073.txt": "0ee1efa628ccf15630399f5ed06145fdc282b79be99872e295393ca2a0ccc5b5",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-074.txt": "45e37fe8c6d9cf5da3f19b9056a4076cfc7b06e842765fb1c5d6b0c8a3ff7f5d",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-075.txt": "cf8f82a47a8fdeead74db906f9ade23c923556888e78abbfd1955d5aa1eefae4",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-076.txt": "3869df87985ee9179f50218b3e3a88ee93b743420694669c8c24b5617533bc64",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-077.txt": "84f05111f1144696bcc534400e79e09cb911970bfb9083bbf1e57bcd49819698",
+    "evidence/ai_interactions/codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-078.txt": "930391e1444d6184985a39c94e54524af3045e720cb19037339b39c5804ed4d3",
+    "evidence/ai_interactions/codex/01a1882b-64d3-7ef3-831b-004ce84e6c39/part-001.txt": "01106bf328d0d99abf5e4346328cdd2a833759c46d32da1ebe46cb96985f07a1",
+    "evidence/ai_interactions/codex/01a1882b-64d3-7ef3-831b-004ce84e6c39/part-002.txt": "b44d0030fbfc2ca742ccbfa8b522380dbaf7fef92aad0bb12ccd2597af321d1d",
+    "evidence/ai_interactions/codex/01a1882b-64d3-7ef3-831b-004ce84e6c39/part-003.txt": "f91245ca118c6eee9e88719aa0a8f47dffbdfc29dc3be08e11b955842327474a",
+    "evidence/ai_interactions/codex/01a1882b-64d3-7ef3-831b-004ce84e6c39/part-004.txt": "10ec60cd6782cb2a120a8c4f636e7ae3177cbef20f27084a1d6c81fe5d75c211",
+    "evidence/ai_interactions/codex/01a1882b-64d3-7ef3-831b-004ce84e6c39/part-005.txt": "709618f9456b71c60918949ff925f0bab9ea2eab257af76600e8c0092bbf120c",
+    "evidence/ai_interactions/codex/01a1882b-64d3-7ef3-831b-004ce84e6c39/part-006.txt": "a88633551875b79abf8d1a27ed1718631037172a22937fa9df6035b2031d4c4a",
+    "evidence/ai_interactions/codex/01a1882b-64d3-7ef3-831b-004ce84e6c39/part-007.txt": "08ca772bb65885be18e01d8099f4c401f05b625157ca4ccae1b712df60f802de",
+    "evidence/ai_interactions/codex/01a1882b-64d3-7ef3-831b-004ce84e6c39/part-008.txt": "0dc9dafbd41a34a9b798a3e3cf596df53231118af77f12c78cb85f6cabf3595f",
+    "evidence/ai_interactions/codex/01a1882b-64d3-7ef3-831b-004ce84e6c39/part-009.txt": "ba90b31f470c81389102041f4bd2f4d8c184e29a9bd49b007f9391063ac8273e",
+    "evidence/ai_interactions/codex/01a1882b-64d3-7ef3-831b-004ce84e6c39/part-010.txt": "b3fb11aa3a3e1adbf53ad98fba63cf7670528a8db61795c1bc24aeec277c7e7a",
+    "evidence/ai_interactions/codex/database-supplement/part-001.txt": "09b70eaca8eadb25013ecdb3ea45bd86b11be7f560a5cd14b91bb28282241197",
+    "evidence/ai_interactions/contribution_links.csv": "81b466dee3b63a097d65eb2c1de550711bc33ae609fcb9b71e52dbff0668d662",
+    "evidence/ai_interactions/conversation_index.csv": "368d2f02165883dcfa6b046bc6efa982f1a4ca49b6e4c291208f53ecdaf08673",
+    "evidence/ai_interactions/manifest.json": "62e585007de46cafe9aea6fade463c802e7b551168fa0ff9bbeab710b0db88e8",
+    "evidence/ai_interactions/record_index.csv": "cf6b80a999b861dd599a57277a6ad1442b4d0ab28b4e38e231a9163d6edc1daf",
+    "evidence/ai_interactions/redactions.csv": "9be25bc4e263b9d75c77e2c7fec289a9b0f495202d8505bcdf0985e422e6985c",
+    "evidence/ai_interactions/repository_construction_request.json": "4ef9eca96d3b558ae45b5a3ede115b92a4e44f35d0b1925175e66af0ba43afc3",
+    "evidence/ai_interactions/verification.json": "31871a256929aef5aef630290982d79c6ddd16d12b80bd0f5b4cfa7fe81a8216"
+  },
+  "support_files_sha256": {
+    "message_index.csv": "d401233dae0e5a0d56380ceefb90675d33c5a8ad5544763fbdd631f65c26db98",
+    "recovery_map.csv": "ff83bf925bc296bd4cc107925e8c21defd4b53c6b3847efcd2dbe72fac1f8973",
+    "redactions.csv": "fbbafb57f1c47efdac1d0fdb1766ed8a42d799c5044e9be9a9eb1715db2c745c",
+    "contribution_links.csv": "2727ff73da68545f6d6aeab6c76fea9cf3c3d6d0cd3b7c90e870d9493e72d32d",
+    "prompt_provenance.json": "63b8ac7723b0c8e9a72291af1d025b62d4d9796f3e811fdf2401d9249f11bb61",
+    "provided_prompts/bibliography_audit.json": "c9d162dff2ca9c98e9a38898c325d49bc6f0888dff2078f8b9b502b904107077",
+    "provided_prompts/codex_recovery.json": "c32cceb67910b43b483bea8183f77e9a169d6e30033930352dabaf5765d0a5f2",
+    "provided_prompts/report_review.json": "7c7eb64372d6b92707ae127f8aca23464ba9929fa8c8d1afb60e47753c3ffb29",
+    "provided_prompts/repository_architecture.json": "445f0e97a46115f7fe436307fc0a39e9056d93601f524ad055a1916fa86e0d55",
+    "provided_prompts/technical_corrections.json": "dccebfd9f1c9b942fab7b6793b9404f36dfbd37a47d9164153bc6977c25a08bc"
+  },
+  "derivation_code_sha256": {
+    "scripts/import_chatgpt_export.py": "32713ef6f3a5e23d73cef345116b9e4e3de3a12f80365ade476bf4a8d3738c1c",
+    "scripts/validate_chatgpt_export.py": "4f276a26d6d1e95a69701d5cc836610b59a9785dc4e91e4ee11d63c66b02313c"
+  }
+}

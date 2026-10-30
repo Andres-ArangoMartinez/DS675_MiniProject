@@ -1,0 +1,55 @@
+{
+  "checked_prompts": [
+    {
+      "role": "Academic Research Editor and Machine Learning Reviewer",
+      "provided_file": "provided_prompts/report_review.json",
+      "provided_file_sha256": "7c7eb64372d6b92707ae127f8aca23464ba9929fa8c8d1afb60e47753c3ffb29",
+      "canonical_json_sha256": "185b613053f1efcaedf8450010d5e2bde6efc785defa013561a32050576a9196",
+      "assistant_message_id": "dfb1703e-023e-40c4-85a3-994aa1089202",
+      "conversation_id": "6ad553bb-6f3c-83ea-bfbd-bee4b7f728ad",
+      "assistant_public_locator": "6ad553bb-6f3c-83ea-bfbd-bee4b7f728ad/segment-001.txt#L639",
+      "comparison": "Parsed JSON objects are equal; whitespace and presentation wrappers are not compared."
+    },
+    {
+      "role": "Academic Bibliography Auditor and Research Verification Specialist",
+      "provided_file": "provided_prompts/bibliography_audit.json",
+      "provided_file_sha256": "c9d162dff2ca9c98e9a38898c325d49bc6f0888dff2078f8b9b502b904107077",
+      "canonical_json_sha256": "fc1c305d3564311951b4fa8ed43b632812ba52aa3aa9e81551ae50b87aea9863",
+      "assistant_message_id": "57a586b3-cb93-4b83-8bdd-bfb28fa3f4cc",
+      "conversation_id": "6ad553bb-6f3c-83ea-bfbd-bee4b7f728ad",
+      "assistant_public_locator": "6ad553bb-6f3c-83ea-bfbd-bee4b7f728ad/segment-001.txt#L1530",
+      "comparison": "Parsed JSON objects are equal; whitespace and presentation wrappers are not compared."
+    },
+    {
+      "role": "Academic Research Editor and Technical Accuracy Reviewer",
+      "provided_file": "provided_prompts/technical_corrections.json",
+      "provided_file_sha256": "dccebfd9f1c9b942fab7b6793b9404f36dfbd37a47d9164153bc6977c25a08bc",
+      "canonical_json_sha256": "e98f70178d3be5750edb4ce6c2dd749fa6edbe027a0d622662f589a139c15688",
+      "assistant_message_id": "a1ea80a4-030a-4ba4-b69c-d41d0db0a85b",
+      "conversation_id": "6ad553bb-6f3c-83ea-bfbd-bee4b7f728ad",
+      "assistant_public_locator": "6ad553bb-6f3c-83ea-bfbd-bee4b7f728ad/segment-001.txt#L1951",
+      "comparison": "Parsed JSON objects are equal; whitespace and presentation wrappers are not compared."
+    },
+    {
+      "role": "Academic Research Repository Architect and Machine Learning Research Assistant",
+      "provided_file": "provided_prompts/repository_architecture.json",
+      "provided_file_sha256": "445f0e97a46115f7fe436307fc0a39e9056d93601f524ad055a1916fa86e0d55",
+      "canonical_json_sha256": "09942d4b1358844e087ce19a70da0b895d36572934a406280fc4c9ac8dd0f5c9",
+      "assistant_message_id": "32fda1bd-5000-49d8-bf04-3bc73e4da92a",
+      "conversation_id": "6ae334d1-a604-83e9-a039-dd29a3c1856b",
+      "assistant_public_locator": "6ae334d1-a604-83e9-a039-dd29a3c1856b/segment-001.txt#L721",
+      "comparison": "Parsed JSON objects are equal; whitespace and presentation wrappers are not compared."
+    },
+    {
+      "role": "Local Codex Session Recovery Specialist and Academic Research Provenance Auditor",
+      "provided_file": "provided_prompts/codex_recovery.json",
+      "provided_file_sha256": "c32cceb67910b43b483bea8183f77e9a169d6e30033930352dabaf5765d0a5f2",
+      "canonical_json_sha256": "7d173e77b1e8cb9aedbd3635c2b3e70a3a5f78879465db5c3a2e13ab617fc413",
+      "assistant_message_id": "36e5f867-a86b-480d-b4b3-5e3c9c75627e",
+      "conversation_id": "6ae334d1-a604-83e9-a039-dd29a3c1856b",
+      "assistant_public_locator": "6ae334d1-a604-83e9-a039-dd29a3c1856b/segment-001.txt#L1511",
+      "comparison": "Parsed JSON objects are equal; whitespace and presentation wrappers are not compared."
+    }
+  ],
+  "separate_repository_construction_request": "The pre-existing separately supplied request has no exact JSON-object match in these selected exported replies; its earlier drafting authorship remains unresolved."
+}

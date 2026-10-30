@@ -1,32 +1,32 @@
 # Student contributions and AI collaboration
 
-**Andres Arango Martinez supplied the project's engineering direction and developed its research scope through recorded choices, technical reasoning and critical review.** His contributions include the pressure-management motivation, the BattLeDIM/L-Town choice, the Area C sensor proposal, the final n1(+15) selection, the local AMR restriction, visualization requirements and literature-relevance criteria. He also kept the proposal aligned with the course level and directed the response to the professor's feedback.
-
-The [contribution summary](../evidence/contribution_summary.csv) and [detailed evidence guide](../evidence/ai_interactions/README.md) connect these activities to source passages. The [31-message crosswalk](../evidence/ai_interactions/contribution_links.md) provides a starting point for reading the exchanges. AI contributed methodological recommendations, retrieval and technical synthesis, generated/executed code, English drafting and repository organization.
+The recorded exchanges document Andres Arango Martinez's control/modeling interests, BattLeDIM/L-Town choice, Area C sensor proposal, final n1(+15) selection, AMR restriction, literature-relevance criteria and visual requirements. They also record AI methodological recommendations, source inspection, code generation, execution and drafting. The [contribution summary](../evidence/contribution_summary.csv), [evidence guide](../evidence/ai_interactions/README.md) and [31-entry crosswalk](../evidence/ai_interactions/contribution_links.md) provide source locators.
 
 ## Roles documented in the exchanges
 
 | Activity | Student contribution | AI contribution |
 |---|---|---|
-| Research direction and dataset | Established the control/modeling interest and explicitly chose BattLeDIM/L-Town. | Compared datasets and developed supervised-learning formulations. |
-| Area C, target and measurements | Proposed n1/n4/n31 with T1 and pump flow, selected n1, explained the hydraulic rationale and narrowed the AMR scope. | Examined available channels/topology, compared sensor characteristics and recommended a concrete n1 setup. |
-| EDA and visualizations | Defined the plots and questions: daily overlays, tank/pump behavior, correlations and panel layout. | Generated and revised plotting/calculation code and executed descriptive checks. |
-| Literature | Set classification and future-pressure relevance criteria, refined the counted scope and requested clearer interpretation. | Assisted discovery, extraction, source/code inspection, categorization and synthesis. |
-| Models and evaluation | Retained n1(+15), requested another forecasting method and set a course-level complexity constraint. | Recommended Gradient Boosting, persistence/Ridge/Random Forest comparators and preparation/evaluation details. |
-| Writing and repository | Supplied substantive wording and corrections, requested verification and an accessible feedback-response package. | Assisted English drafting, structured prompts, documentation, reproducibility code, validation and synchronization. |
+| Direction and dataset | Specified control/modeling interests and chose BattLeDIM/L-Town. | Compared datasets and formulated supervised-learning tasks. |
+| Area C and measurements | Proposed n1/n4/n31 with T1 and pump flow; selected n1, explained hydraulic scope and restricted AMRs. | Inspected channels/topology, compared sensors and recommended n1. |
+| Descriptive exploratory analysis | Requested daily overlays, tank/pump plots, correlations and panel layout. | Generated calculation/plotting code and executed checks. |
+| Literature | Defined objective-based and future-pressure screening; questioned relevance, denominators and explanations. | Assisted discovery, extraction, categorization, source/code inspection and synthesis. |
+| Proposed models | Retained n1(+15), requested another forecasting method and course-level complexity. | Recommended Gradient Boosting, persistence/Ridge/Random Forest comparators and preparation/evaluation details. |
+| Writing and repository | Supplied wording and corrections; requested verification, feedback documentation and public conversation evidence. | Assisted English drafting, structured prompts, implementation, validation and synchronization. |
 
-The recorded n1 sequence shows an active student choice supported by technical comparison: the student proposed the Area C cohort, Codex recommended a concrete n1 setup, and the student selected it for the document. The +15-minute horizon already appears in Milestone 1. The model sequence likewise combines the student's request for an alternative method with Codex's Gradient Boosting recommendation. These sequences make both the student's decisions and AI methodological assistance traceable.
+The source sequence distinguishes the student's local cohort proposal, Codex's n1 recommendation and the student's final selection. The +15-minute horizon appears in Milestone 1. Likewise, the student's request for another method preceded Codex's Gradient Boosting recommendation. [A02 and A07](../evidence/ai_interactions/README.md) link these exchanges.
 
-The student later described personally reviewing the six selected papers more closely. The guide identifies this as the **student's retrospective account** and presents the recorded Codex source/code inspections alongside it. Attribution follows the content and sequence of the exchanges.
+The student's later statement about closer reading of six papers is a **retrospective account**. Contemporary dataset-relevance questions and dated AI source/code inspections provide separate evidence; [A06](../evidence/ai_interactions/README.md) links each type. His later explanation of professional control applications is also identified as his account in A08.
+
+[A09](../evidence/ai_interactions/README.md) links ChatGPT's recorded search-prompt drafting and the student's supplied wording. The separate [repository-construction request](../evidence/ai_interactions/repository_construction_request.json) records instructions supplied by the student. Its fingerprint establishes the retained text; the available record leaves its earlier drafting authorship unresolved.
+
+The [export supplement](../evidence/ai_interactions/chatgpt_export/README.md) now documents five supplied prompts whose parsed JSON equals ChatGPT drafts. Student requests/corrections and AI wording are linked separately in A11/A12. Earlier exported messages also record the student's remote-node pressure-control interest and request to relate a prior paper to ML; ChatGPT proposed predictive formulations in response.
 
 ## How the submitted report is supported
 
-The [original submitted PDFs](../reports/) preserve the historical deliverables. Their “Own EDA” and “Own screening” refer to project-specific, student-directed work with the AI collaboration documented here. The repository supplies the corresponding code, execution records, figures and source inventory.
-
-The student's engineering reasoning and selection criteria explain **why these analyses matter**; the AI tool records explain **how the code and calculations were produced**. The [literature reviews](../literature/README.md) attribute external models and published scores to their original authors. [C1–C3](anticipated_contributions.md) describe the proposed learning experiments for the next stage.
+The [retained reports](../reports/) contain the historical “Own EDA” and “Own screening” wording. This supplement documents the student instructions and AI-assisted implementation behind those project-specific analyses through code, execution records, figures and the source inventory. The [literature reviews](../literature/README.md) credit external models and published scores to their authors. [C1–C3](anticipated_contributions.md) remain proposed experiments.
 
 ## Interaction records and limits
 
-The [public appendix](../evidence/ai_interactions/README.md) preserves the available readable exchanges in source order, with a [register](../evidence/ai_interactions/redactions.csv) for credential/access-link and inline-image redactions. The recorded contributions retain their original wording and languages. Untouched raw archives and binary attachments remain available privately for authorized review.
+The [public appendix](../evidence/ai_interactions/README.md) preserves available exchanges in source order and original languages. Its [register](../evidence/ai_interactions/redactions.csv) records credential/access-link and inline-image redactions. Raw archives and binary attachments remain private for authorized comparison.
 
-Coverage is explicit: ChatGPT has eleven recovered conversations with fifteen assistant-reference bodies awaiting recovery; Codex provides bounded session snapshots and a separately identified repository-building continuation. The guide distinguishes student messages, application context, AI proposals, tool outcomes and later accounts. The instructor can use this organized evidence to assess attribution and LLM disclosure within that documented coverage.
+The earlier eleven-chat capture is preserved. Its fifteen pending assistant bodies and five truncated items are now supplied by a scoped account-export supplement: twelve conversations, 186 readable entries and an 82-message correspondence map. Codex retains bounded snapshots and its repository-building continuation. Export boundaries, private binaries and non-text model records remain explicit; the supplement establishes available text rather than completeness of all historical interactions.

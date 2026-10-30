@@ -136,7 +136,7 @@
     "evidence/reported_values.json": "f491d6b38a417f2bb351ed93763c7a50dc812cd37cf78e6085145eb651ee787e",
     "evidence/contribution_summary.csv": "f354a0971beb6a577f2bc91120d1fd006b457d35b3cb8545a589dca643fc6fe5",
     "evidence/work_status.json": "0e7821d2f416ab7f080cba907a776b99d3046c4eb445994d590d88c94d9cdcbc",
-    "docs/student_contributions.md": "4b914efeadb7b2b65ab69d06d36156550de428ced862232b6d56fda83334660f"
+    "docs/student_contributions.md": "6570f1776adec504987bfeaf224c939290a9da1feb744d179a5c116ae4b8bb73"
   },
   "output_sha256": {
     "correlations.csv": "720422c5ce0690812572eb670b79855ab23a3e501417b3981f5d4ba78702336b",
@@ -159,5 +159,21 @@
     "verification.json": "b829e49ba4ae1ebc35c8c43725b33bc3dcd47bdb72cc598c794a311a720c16b1"
   },
   "results_status": "Executed descriptive groundwork; C1–C3 learning experiments remain proposed.",
-  "authorship": "Andres Arango Martinez directed the engineering focus, scope, choices and review. AI assisted methodological proposals, source synthesis, implementation and execution; external data/methods retain their attribution."
+  "authorship": "Andres Arango Martinez directed the engineering focus, scope, choices and review. AI assisted methodological proposals, source synthesis, implementation and execution; external data/methods retain their attribution.",
+  "documentation_fingerprint_updates": [
+    {
+      "recorded_utc": "2026-10-30T15:51:29.783045+00:00",
+      "file": "docs/student_contributions.md",
+      "previous_sha256": "4b914efeadb7b2b65ab69d06d36156550de428ced862232b6d56fda83334660f",
+      "current_sha256": "59b477b3a74767cf510ca2769b2aab37d76f6dbb310f87ac7fb4b10e9e3f6784",
+      "basis": "Authorized editorial revision. Only this explanatory-document fingerprint changed; scientific code, inputs, numerical outputs and original execution date are retained."
+    },
+    {
+      "recorded_utc": "2026-10-30T16:28:23.128433+00:00",
+      "file": "docs/student_contributions.md",
+      "previous_sha256": "59b477b3a74767cf510ca2769b2aab37d76f6dbb310f87ac7fb4b10e9e3f6784",
+      "current_sha256": "6570f1776adec504987bfeaf224c939290a9da1feb744d179a5c116ae4b8bb73",
+      "basis": "Account-export evidence completion updates coverage and prompt attribution. Scientific execution date, code, inputs and numerical outputs remain unchanged."
+    }
+  ]
 }

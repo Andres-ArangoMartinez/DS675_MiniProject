@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-10-30T16:33:52.214245+00:00",
+  "manifest_sha256": "b5f8ac71c11e33215a9e2b00fb726bb376b91ced42b4923b595e6486d813116b",
+  "validator_sha256": "4f276a26d6d1e95a69701d5cc836610b59a9785dc4e91e4ee11d63c66b02313c",
+  "export_conversations": 12,
+  "visible_messages": 186,
+  "message_roles": {
+    "user": 72,
+    "assistant": 114
+  },
+  "legacy_messages_matched": 82,
+  "reference_only_bodies_recovered": 19,
+  "pending_reference_bodies_resolved": 15,
+  "truncated_messages_recovered": 5,
+  "registered_export_redactions": 2,
+  "extended_contribution_cases": 19,
+  "supplied_prompts_equal_to_assistant_drafts": 5,
+  "legacy_files_preserved": 155,
+  "private_export_conversations_compared": 12,
+  "historical_completeness_certified": false
+}

@@ -1,6 +1,6 @@
 # Papers and original source links
 
-All 48 catalog entries are discoverable here, including background material outside the historical 35 groups. Actual publication titles are shown where recovered from primary metadata; otherwise the preserved document identifier is shown. Download links require established redistribution permission. Original PDF bytes and attribution are unchanged. The [catalog](../papers_catalog.csv) records SHA-256 and license evidence; [bibliographic metadata](../bibliography.json) supplies recovered authors and publication details.
+All 48 catalog entries are discoverable here, including background material outside the historical 35 groups. Actual publication titles are shown where recovered from primary metadata; otherwise the preserved document identifier is shown. Public copies have retained license declarations and supporting records; PDFs retain their recorded bytes and attribution. The [catalog](../papers_catalog.csv) records SHA-256 and license evidence; [bibliographic metadata](../bibliography.json) supplies recovered authors and publication details.
 
 | Document | Original source | Public copy | License / availability |
 |---|---|---|---|

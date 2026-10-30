@@ -132,6 +132,7 @@ def validate():
               'documented_transcript_redactions':interactions['documented_redactions'],
               'contribution_to_message_links':interactions['contribution_links'],
               'git_tracking_and_byte_preservation':hygiene['status'],
+              'chatgpt_export_supplement':interactions.get('chatgpt_export_supplement'),
               'scope':'Executed descriptive evidence; next stage is the proposed modeling study.'}
     (ROOT / 'results/repository_validation.json').write_text(json.dumps(record, indent=2)+'\n', encoding='utf-8', newline='\n')
     print(json.dumps(record, indent=2))

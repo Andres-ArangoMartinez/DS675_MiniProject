@@ -1,6 +1,6 @@
 # ChebNet: next-step pressure inside leak diagnosis
 
-Garðarsson, G. Ö., Boem, F., & Toni, L. (2022). *Graph-Based Learning for Leak Detection and Localisation in Water Distribution Networks*. IFAC-PapersOnLine, 55(6), 661–666. [DOI](https://doi.org/10.1016/j.ifacol.2022.07.203) · [Original permitted PDF](../papers/P10_Graph_based_learning_2022.pdf). Historical group: `chebnet`; sources `pdf-14`, `repo-51`.
+Garðarsson, G. Ö., Boem, F., & Toni, L. (2022). *Graph-Based Learning for Leak Detection and Localisation in Water Distribution Networks*. IFAC-PapersOnLine, 55(6), 661–666. [DOI](https://doi.org/10.1016/j.ifacol.2022.07.203) · [Retained PDF](../papers/P10_Graph_based_learning_2022.pdf). Historical group: `chebnet`; sources `pdf-14`, `repo-51`.
 
 ## Task, data and method
 

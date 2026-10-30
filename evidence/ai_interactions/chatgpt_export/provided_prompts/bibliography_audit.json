@@ -1,0 +1,214 @@
+
+{
+  "role": "Academic Bibliography Auditor and Research Verification Specialist",
+  "task": "Perform a comprehensive external verification of all bibliographic references, hyperlinks, and cited source-code repositories in the attached Milestone2.pdf.",
+  "document": {
+    "filename": "Milestone2.pdf",
+    "title": "Learning Models for Pressure Forecasting",
+    "course": "DS675",
+    "section_to_audit": "Section 4: References",
+    "reference_count": 18,
+    "page": 5,
+    "previously_observed_external_link_annotations": 37
+  },
+  "primary_objective": "Determine whether all references are bibliographically accurate, their embedded hyperlinks lead to the correct destinations, and their cited publications and repositories genuinely support the associated claims in the report.",
+  "audit_phases": [
+    {
+      "phase": 1,
+      "name": "PDF Hyperlink Extraction",
+      "instructions": [
+        "Inspect the original PDF using a PDF parser such as PyMuPDF or pypdf.",
+        "Extract every external hyperlink annotation from every page.",
+        "Record page number, annotation identifier, destination URL, and associated reference number when identifiable.",
+        "Verify whether the previously reported count of 37 external hyperlink annotations is correct.",
+        "Distinguish total annotations from unique destination URLs.",
+        "Identify duplicate links, malformed URLs, empty targets, and incorrect destinations.",
+        "Check whether the link target matches the visible citation or DOI.",
+        "Do not assume that the existence of a PDF hyperlink annotation proves the destination is functional."
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "External Link Accessibility",
+      "instructions": [
+        "Attempt to open every unique external URL using live network access.",
+        "Record the final destination after redirects.",
+        "Capture HTTP status codes when available.",
+        "Check DOI resolution through doi.org.",
+        "Check article landing pages on publisher websites.",
+        "Check Zenodo record pages and downloadable research reports.",
+        "Check GitHub repository URLs, commit links, and referenced code files.",
+        "Check official scikit-learn documentation URLs.",
+        "Distinguish broken links from redirects, authentication requirements, paywalls, rate limits, and temporary network errors.",
+        "Never classify an inaccessible source as definitively broken solely because of a timeout, HTTP 403, or automated-access restriction."
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "Bibliographic Metadata Verification",
+      "instructions": [
+        "Verify references [1] through [18] individually.",
+        "Cross-check each publication against its official publisher, Crossref, DataCite, Zenodo, or another authoritative bibliographic record.",
+        "Verify author names and author order.",
+        "Verify publication year.",
+        "Verify exact article or dataset title.",
+        "Verify journal or conference name.",
+        "Verify volume, issue, pages, or article number when applicable.",
+        "Verify DOI accuracy.",
+        "For datasets, verify the dataset title, record identifier, publication date, and version information.",
+        "For repositories, verify repository ownership and the cited revision.",
+        "Flag incomplete, inconsistent, outdated, or inaccurate bibliographic information.",
+        "Do not invent missing bibliographic fields."
+      ]
+    },
+    {
+      "phase": 4,
+      "name": "Source-Code Repository Verification",
+      "target_references": [4, 6, 9, 11],
+      "instructions": [
+        "Verify that each cited GitHub repository exists.",
+        "Check that each referenced commit hash resolves to a real revision.",
+        "Verify that the code paths mentioned in the bibliography exist within the cited commit.",
+        "Check whether the source files contain the algorithms or preprocessing methods attributed to them.",
+        "Distinguish current repository contents from the files available at the cited fixed commit.",
+        "Report renamed, removed, relocated, or inaccessible files.",
+        "Do not claim to have inspected code that could not be retrieved."
+      ]
+    },
+    {
+      "phase": 5,
+      "name": "Scientific Claim Verification",
+      "instructions": [
+        "Check whether the cited papers support the methodological descriptions appearing in Section 2.",
+        "Verify reported performance metrics against the original papers.",
+        "Check numerical values, units, evaluation conditions, and prediction horizons.",
+        "Distinguish leak-detection performance from pressure-forecasting performance.",
+        "Verify which studies use the released BattLeDIM SCADA data and which use newly generated L-Town simulations.",
+        "Identify discrepancies between claims in the report and the original publications.",
+        "Check whether references [13], [14], and [15] support the literature-related statements in Section 3.1.",
+        "Preserve distinctions between verified facts, author interpretations, and proposed experiments.",
+        "Do not infer missing results or silently reconcile conflicting sources."
+      ]
+    },
+    {
+      "phase": 6,
+      "name": "In-Text Citation Consistency",
+      "instructions": [
+        "Verify that all citation numbers correspond to the correct bibliography entries.",
+        "Identify unused references and citations without matching entries.",
+        "Check that citations appear near the claims they support.",
+        "Verify that source-code citations refer to the correct algorithms and implementations.",
+        "Identify claims requiring stronger primary-source support.",
+        "Check consistency of academic reference formatting."
+      ]
+    }
+  ],
+  "source_priority": [
+    "Official publisher websites and full-text articles",
+    "DOI registration records from Crossref or DataCite",
+    "Official Zenodo records",
+    "Original GitHub repositories at fixed commits",
+    "Official project and software documentation",
+    "Reliable scholarly indexing services"
+  ],
+  "verification_rules": {
+    "live_access_required": true,
+    "verify_all_references": true,
+    "verify_all_unique_urls": true,
+    "preserve_original_document": true,
+    "do_not_modify_pdf": true,
+    "do_not_fabricate_sources": true,
+    "do_not_guess_metadata": true,
+    "do_not_assume_http_200_means_correct_source": true,
+    "distinguish_unverified_from_incorrect": true,
+    "record_verification_date": true,
+    "provide_evidence_urls": true,
+    "use_primary_sources_when_available": true
+  },
+  "status_categories": {
+    "verified": "The destination is accessible, bibliographic metadata matches, and relevant claims are supported.",
+    "partially_verified": "Some information is confirmed, but one or more elements remain unverified.",
+    "incorrect": "An authoritative source contradicts the citation metadata or report claim.",
+    "broken_link": "The link is demonstrably invalid or the destination no longer exists.",
+    "access_restricted": "The source exists but automated or public access is restricted.",
+    "unverified": "Available evidence is insufficient to determine correctness."
+  },
+  "required_outputs": {
+    "output_1": {
+      "title": "Bibliographic Verification Matrix",
+      "format": "Table",
+      "columns": [
+        "Reference number",
+        "Citation title",
+        "DOI or URL",
+        "Link status",
+        "Metadata status",
+        "Claim verification",
+        "Evidence",
+        "Required correction"
+      ],
+      "requirement": "Include one row for each of the 18 references."
+    },
+    "output_2": {
+      "title": "PDF Hyperlink Audit",
+      "format": "Table and summary",
+      "requirements": [
+        "Count all external hyperlink annotations.",
+        "Count unique external URLs.",
+        "Identify duplicated annotations.",
+        "Report inaccessible or incorrect destinations.",
+        "List redirects and final resolved URLs.",
+        "Identify links pointing to unrelated content."
+      ]
+    },
+    "output_3": {
+      "title": "GitHub Source-Code Audit",
+      "format": "Table",
+      "requirements": [
+        "Verify references [4], [6], [9], and [11].",
+        "Report repository accessibility.",
+        "Report commit verification.",
+        "Report referenced file-path verification.",
+        "Report whether the cited implementation supports the description in the report."
+      ]
+    },
+    "output_4": {
+      "title": "Scientific Accuracy Findings",
+      "requirements": [
+        "Identify unsupported or inaccurate claims.",
+        "Quote or identify the relevant report passage.",
+        "Provide authoritative evidence.",
+        "Explain the discrepancy.",
+        "Recommend the smallest accurate correction."
+      ]
+    },
+    "output_5": {
+      "title": "Final Audit Summary",
+      "required_fields": [
+        "Total bibliography entries",
+        "Total external hyperlink annotations",
+        "Total unique external URLs",
+        "Fully verified references",
+        "Partially verified references",
+        "Incorrect references",
+        "Broken links",
+        "Access-restricted sources",
+        "Unverified sources",
+        "Critical corrections",
+        "Optional improvements",
+        "Final bibliography readiness assessment"
+      ]
+    }
+  },
+  "acceptance_criteria": [
+    "Every bibliography entry [1]-[18] has an explicit verification status.",
+    "Every extracted unique external URL has an accessibility status.",
+    "All available DOI metadata has been cross-checked with authoritative records.",
+    "All cited fixed GitHub commits and source paths have been checked where accessible.",
+    "Major quantitative and methodological claims have been checked against their cited primary sources.",
+    "Every detected error is accompanied by evidence and a recommended correction.",
+    "Unverified information is never presented as confirmed.",
+    "No unsupported edits or fabricated references are introduced."
+  ],
+  "final_instruction": "Perform the audit using live external sources rather than relying only on text extracted from the PDF. Report verifiable findings with evidence, identify any discrepancies, and prioritize corrections that could affect the academic credibility or grading of the DS675 Milestone 2 submission. Do not modify the original PDF. If live access or a required verification tool is unavailable, explicitly identify the affected checks as unverified and do not claim that the audit is complete."
+}

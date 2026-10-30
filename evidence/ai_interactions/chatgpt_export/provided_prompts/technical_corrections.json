@@ -1,0 +1,102 @@
+
+{
+  "role": "Academic Research Editor and Technical Accuracy Reviewer",
+  "task": "Implement exactly three targeted scientific-accuracy corrections in the attached Milestone2.pdf, using Bibliographic_Audit.html as supporting evidence.",
+  "input_files": [
+    "Milestone2.pdf",
+    "Bibliographic_Audit.html"
+  ],
+  "document": {
+    "title": "Learning Models for Pressure Forecasting",
+    "course": "DS675",
+    "section": "2. Contributions of Previous Authors",
+    "target_page": 3,
+    "total_pages": 5
+  },
+  "objective": "Improve the precision of three literature-review descriptions without changing the research findings, numerical results, experimental proposal, or document structure.",
+  "corrections": [
+    {
+      "id": 1,
+      "study": "SAM-kNN",
+      "reference": "[5,6]",
+      "priority": "High",
+      "location": "Page 3, SAM-kNN row, methodology column",
+      "original_text": "selects the memory with the lowest recent prediction error",
+      "replacement_text": "selects the memory with the lowest tracked prediction error",
+      "justification": "The audited implementation selects among memory configurations using incrementally tracked prediction errors rather than one explicitly defined recent-error window.",
+      "instructions": [
+        "Replace only the specified phrase.",
+        "Preserve the existing explanation of adaptive nearest-neighbor regression.",
+        "Preserve all reported performance metrics.",
+        "Maintain the existing citations [5] and [6]."
+      ]
+    },
+    {
+      "id": 2,
+      "study": "AGN",
+      "reference": "[7]",
+      "priority": "High",
+      "location": "Page 3, AGN row, study and code column",
+      "original_text": "Code: no repository linked",
+      "replacement_text": "Code: no repository link found in the inspected paper version",
+      "justification": "The bibliographic audit could not conclusively inspect the complete current repository-link inventory. The revised wording avoids an unsupported claim that public implementation code does not exist.",
+      "instructions": [
+        "Replace the original repository-availability statement.",
+        "Retain the existing 'data on request' qualification.",
+        "Do not claim that the authors never released code.",
+        "Do not invent or introduce a repository URL.",
+        "Preserve the description of the AGN model and its reported MAE values.",
+        "Keep the text concise enough to fit the existing table."
+      ]
+    },
+    {
+      "id": 3,
+      "study": "LILA",
+      "reference": "[8,9]",
+      "priority": "High",
+      "location": "Page 3, LILA row, data preparation and methodology column",
+      "original_text": "Data: Released SCADA; analyze pressure/flow relationships to select reference sensors and healthy periods.",
+      "suggested_replacement": "Data: Released SCADA; pressure/flow analysis guides reference-sensor selection; leak-free calibration periods are manually selected.",
+      "additional_clarification": "Some per-leak node combinations used during localization were also selected manually.",
+      "justification": "The original LILA publication describes manually selected leak-free calibration periods and manual choices in some localization procedures. These choices are relevant when interpreting the reported performance and the degree of automation.",
+      "instructions": [
+        "Clarify that leak-free calibration periods were manually selected.",
+        "Mention the manual selection of certain per-leak node combinations.",
+        "Integrate both clarifications concisely into the existing table row.",
+        "Preserve the original methodology involving linear regression, CUSUM, and hydraulic localization.",
+        "Retain TP=17, FP=2, FN=0, precision=89.5%, F1=0.944, and the monetary score.",
+        "Avoid implying that the complete methodology was fully automated or prospectively evaluated.",
+        "Do not imply that every localization decision was manual.",
+        "Verify the precise wording against the primary paper and audit evidence before applying the change."
+      ]
+    }
+  ],
+  "preservation_requirements": {
+    "scope": "Modify only the three specified passages on page 3.",
+    "page_count": "Preserve exactly five pages.",
+    "layout": "Maintain the existing professional design, tables, figures, colors, headings, and page numbering.",
+    "research_content": "Preserve all scientific conclusions, dataset descriptions, model specifications, and proposed experiments.",
+    "numerical_results": "Do not change any reported numerical results or evaluation metrics.",
+    "citations": "Preserve reference numbering, bibliography entries, and hyperlinks.",
+    "research_gap": "Preserve the existing Research gap paragraph.",
+    "other_sections": "Do not rewrite Sections 1, 3, or 4.",
+    "academic_integrity": "Do not fabricate claims, experimental results, code repositories, or bibliographic information."
+  },
+  "quality_control": [
+    "Confirm that all three corrections appear in the revised PDF.",
+    "Confirm that each correction is supported by the bibliographic audit and, where accessible, the original publication or source code.",
+    "Check that no unsupported interpretation was introduced.",
+    "Confirm that all original numerical results remain unchanged.",
+    "Verify that page 3 has no overlapping text, clipping, or broken table alignment.",
+    "Preserve readable typography and avoid unnecessary font-size reductions.",
+    "Confirm that the bibliography and hyperlinks remain functional.",
+    "Verify that the final document remains exactly five pages.",
+    "Compare the revised PDF against the original to detect unintended changes."
+  ],
+  "expected_deliverables": {
+    "primary": "Milestone2_Corrected.pdf",
+    "secondary": "A concise change log listing the three corrections, their page locations, and their supporting references.",
+    "verification": "A final confirmation that all three corrections were implemented and no unrelated content was modified."
+  },
+  "final_instruction": "Apply minimal, evidence-based edits. Prioritize scientific accuracy and faithful representation of the cited implementations. Do not redesign, expand, or substantially rewrite the document. The revised PDF must preserve the existing five-page layout and remain ready for DS675 Milestone 2 submission."
+}

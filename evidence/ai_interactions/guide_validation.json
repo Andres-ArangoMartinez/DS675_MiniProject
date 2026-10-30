@@ -13,13 +13,37 @@
   "contribution_links": 31,
   "public_hashes_and_locators_match": true,
   "repository_construction_activities": 5,
-  "guide_local_links_checked": 174,
-  "guide_transcript_anchors_checked": 110,
+  "guide_local_links_checked": 154,
+  "guide_transcript_anchors_checked": 88,
   "provided_request_attachment_hash_matches": true,
   "original_views_compared_without_modification": 16,
   "privacy_scan_limit": "Pattern checks cover the specified credential and inline-image formats; source coverage and privacy treatment are documented.",
   "historical_completeness_certified": false,
-  "checked_utc": "2026-10-30T11:44:55.878197+00:00",
-  "guide_sha256": "df18f644eebb96320eda7d40b9452f2dca0c5bd1b0138a10870c304f64a705b9",
-  "validator_sha256": "3d1c892e54394ddd32993490e58ea665d377008f18b718898e013b84af1c8965"
+  "chatgpt_export_supplement": {
+    "status": "PASS",
+    "checked_utc": "2026-10-30T16:35:10.860559+00:00",
+    "manifest_sha256": "b5f8ac71c11e33215a9e2b00fb726bb376b91ced42b4923b595e6486d813116b",
+    "validator_sha256": "4f276a26d6d1e95a69701d5cc836610b59a9785dc4e91e4ee11d63c66b02313c",
+    "export_conversations": 12,
+    "visible_messages": 186,
+    "message_roles": {
+      "user": 72,
+      "assistant": 114
+    },
+    "legacy_messages_matched": 82,
+    "reference_only_bodies_recovered": 19,
+    "pending_reference_bodies_resolved": 15,
+    "truncated_messages_recovered": 5,
+    "registered_export_redactions": 2,
+    "extended_contribution_cases": 19,
+    "supplied_prompts_equal_to_assistant_drafts": 5,
+    "legacy_files_preserved": 155,
+    "private_export_conversations_compared": 0,
+    "historical_completeness_certified": false
+  },
+  "checked_utc": "2026-10-30T16:35:10.873567+00:00",
+  "guide_sha256": "a1dc61a2fcaaf5a180cf141c5a48b5689d7e53079e1d956271a853b4fe1821e4",
+  "validator_sha256": "47012642ddd6726c6554153c3ddd3096b29e338c2c4fe2b3c07f74767dd97bd2",
+  "export_manifest_sha256": "b5f8ac71c11e33215a9e2b00fb726bb376b91ced42b4923b595e6486d813116b",
+  "export_source_validation_sha256": "879d47a606600fff89dc99a82ad497998bd90fc74ce0c4ab03bc3705115665df"
 }

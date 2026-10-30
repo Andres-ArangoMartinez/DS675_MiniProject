@@ -1,6 +1,6 @@
 # SAM-kNN: adaptive virtual pressure sensors
 
-Jakob, J., Artelt, A., Hasenjäger, M., & Hammer, B. (2022). *SAM-kNN Regressor for Online Learning in Water Distribution Networks*. In Artificial Neural Networks and Machine Learning – ICANN 2022, pp. 752–762. Springer. [DOI](https://doi.org/10.1007/978-3-031-15934-3_62). Historical group: `sam`; sources `pdf-32`, `repo-48`. The inspected author preprint is linked through the official publication; the official link provides access to that source.
+Jakob, J., Artelt, A., Hasenjäger, M., & Hammer, B. (2022). *SAM-kNN Regressor for Online Learning in Water Distribution Networks*. In Artificial Neural Networks and Machine Learning – ICANN 2022, pp. 752–762. Springer. [DOI](https://doi.org/10.1007/978-3-031-15934-3_62). Historical group: `sam`; sources `pdf-32`, `repo-48`. Page locators refer to the inspected author preprint; the DOI identifies the published chapter.
 
 ## Task, data and method
 
