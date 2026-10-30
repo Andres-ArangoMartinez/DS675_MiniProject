@@ -1,6 +1,6 @@
 # Editorial audit
 
-Inspected commit: `ac6ba439f0739e1562c310fbe50bcc8c2fb1e445`, branch `main`. The remote matched this commit before editing. These local revisions await student review of the content and commit message. The subsequent [account-export supplement](../evidence/ai_interactions/chatgpt_export/README.md) adds source evidence; the counts below cover the existing edited Markdown files, excluding new transcripts and export navigation.
+The editorial revisions and [ChatGPT account-export supplement](../evidence/ai_interactions/chatgpt_export/README.md) were published in [commit ca527f69e932886d76f408f48fcca8b11fd28aa3](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/commit/ca527f69e932886d76f408f48fcca8b11fd28aa3). The editorial comparison uses [commit ac6ba439f0739e1562c310fbe50bcc8c2fb1e445](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/commit/ac6ba439f0739e1562c310fbe50bcc8c2fb1e445) as its baseline on `main`. The counts below cover the existing edited Markdown files in that revision, excluding new transcripts and export navigation.
 
 ## Scope and word counts
 
@@ -50,7 +50,7 @@ This audit is counted separately from the existing-file comparison; newly recove
 
 Comparisons use pre-edit file fingerprints, retained source passages, report text, professor feedback, syllabus, manifests and code. The dataset, n1(+15), six signals, proposed C1–C3 experiments and chronological periods remain unchanged. Submitted-report copies, figures, legacy transcript parts, redaction/index records, source data, scientific code, tests, notebook and numerical outputs retain their bytes. New evidence importer/validator scripts handle the export, and existing evidence validators invoke those additional checks.
 
-The student authorized refreshing explanatory-document fingerprints and validator-generated records. The [run manifest](../results/run_manifest.json) records the old/new student-contribution document hashes and editorial basis, retaining its scientific execution date, code/input/output hashes and values. The [guide record](../evidence/ai_interactions/guide_validation.json) identifies checks of the revised guide; historical transcript manifests remain unchanged. The [export comparison](../evidence/ai_interactions/chatgpt_export/validation.json) reconstructs twelve selected native-source transcripts and validates five supplied-prompt matches.
+The [run manifest](../results/run_manifest.json) records the previous and revised SHA-256 fingerprints of `docs/student_contributions.md` and the documentary basis of each update. It retains the original scientific execution timestamp and scientific input, code and output fingerprints. The [guide record](../evidence/ai_interactions/guide_validation.json) identifies checks of the revised guide; historical transcript manifests remain unchanged. The [export comparison](../evidence/ai_interactions/chatgpt_export/validation.json) reconstructs twelve selected native-source transcripts and validates five supplied-prompt matches.
 
 | Command | Actual outcome |
 |---|---|
@@ -59,7 +59,7 @@ The student authorized refreshing explanatory-document fingerprints and validato
 | `python scripts/validate_ai_interactions.py --originals <authorized-local-archives>` | PASS; exit code 0; 16 original views compared. |
 | `python scripts/validate_repository.py` | PASS; exit code 0. |
 
-Scientific computations and model training were not rerun for this editorial change. The prior seven-test and notebook execution records remain unchanged. Published author scores retain their source context. [Current repository validation](../results/repository_validation.json) records the executed consistency checks.
+Local editorial preparation preserved the scientific code, inputs and recorded results. After publication, [GitHub Actions run 41094235705](https://github.com/Andres-ArangoMartinez/DS675_MiniProject/actions/runs/41094235705) reproduced the existing descriptive evidence and completed seven unit tests, notebook execution, AI evidence checks and repository validation for commit `ca527f69e932886d76f408f48fcca8b11fd28aa3`. The run reported `models_trained: false`; C1–C3 remain proposed. Retained local execution records keep their original dates. Published author scores retain their source context; [repository validation](../results/repository_validation.json) records consistency checks.
 
 ## Remaining evidence limits
 
