@@ -1,0 +1,59 @@
+{
+  "checked_utc": "2026-10-29T12:48:28.405659+00:00",
+  "checks": [
+    {
+      "id": "chebnet",
+      "url": "https://raw.githubusercontent.com/GardarGardarsson/GSP_for_Leak_Detection/864a99041af6331375946a8fad3a71c633108eb8/04%20Leakage%20Detection/utils/data_loader.py",
+      "sha256": "bb7645948b6196ddc0cfc425ebb34e2cdd1083173cc3a67b46536943e94f11ef",
+      "matches_recorded_sha256": true
+    },
+    {
+      "id": "sam",
+      "url": "https://raw.githubusercontent.com/andreArtelt/SAM-kNN-Regressor_OnlineLearning_WDNs/9116ec99bf9f053e35401fe3e388062e8b979c54/Implementation/LeakDbScenarioPreprocessing.py",
+      "sha256": "524540aa3b195fa251fff1080c2ebb0b086aa8dc53c342c74e1fde460d58f2ac",
+      "matches_recorded_sha256": true
+    },
+    {
+      "id": "sam_experiments",
+      "url": "https://raw.githubusercontent.com/andreArtelt/SAM-kNN-Regressor_OnlineLearning_WDNs/9116ec99bf9f053e35401fe3e388062e8b979c54/Implementation/experiments.py",
+      "sha256": "bf4d3733e38caa9f0a2069de751e4fb222bc15e2f6d5b4b9dc0594f42f55fd05",
+      "matches_recorded_sha256": true
+    },
+    {
+      "id": "lila",
+      "url": "https://raw.githubusercontent.com/SWN-group-at-TU-Berlin/LILA/b488a60db1974b6f5b7887ce1cf5d31dff3dad68/_utils/BattLeDIM_utils.py",
+      "sha256": "e4dfb90d42aa78a5d551308a90d5dd27646fb97ec72e5ec33f4b73621b4477ca",
+      "matches_recorded_sha256": true
+    },
+    {
+      "id": "gatres",
+      "url": "https://raw.githubusercontent.com/DiTEC-project/gnn-pressure-estimation/bb287ed2ae091b29fa19f2417406756b57a45a1f/gnn_pressure_estimation/train.py",
+      "sha256": "874549bb5cfd60343f836c86ff22786c9316fb8631fac0062adf3f94f499711e",
+      "matches_recorded_sha256": true
+    },
+    {
+      "id": "sam_detector",
+      "url": "https://raw.githubusercontent.com/andreArtelt/SAM-kNN-Regressor_OnlineLearning_WDNs/9116ec99bf9f053e35401fe3e388062e8b979c54/Implementation/FaultDetection.py",
+      "sha256": "af7a987e139a8405f064086f7a2773f1a370b4e4fff3f23789a69c7e10dbb5f6",
+      "matches_recorded_sha256": true
+    },
+    {
+      "id": "gatres_data",
+      "url": "https://raw.githubusercontent.com/DiTEC-project/gnn-pressure-estimation/bb287ed2ae091b29fa19f2417406756b57a45a1f/gnn_pressure_estimation/utils/DataLoader.py",
+      "sha256": "523837513cb42c7f8e557d0dfc5790e2170e55591f5e80399cbdec577d710919",
+      "matches_recorded_sha256": true
+    },
+    {
+      "id": "chebnet_predict",
+      "url": "https://raw.githubusercontent.com/GardarGardarsson/GSP_for_Leak_Detection/864a99041af6331375946a8fad3a71c633108eb8/04%20Leakage%20Detection/predict.py",
+      "sha256": "ba141da8cc1faecc86f5804880f494cb848d63dfc1ba036cb815e2fcda549af3",
+      "matches_recorded_sha256": true
+    },
+    {
+      "id": "gatres_auxil",
+      "url": "https://raw.githubusercontent.com/DiTEC-project/gnn-pressure-estimation/bb287ed2ae091b29fa19f2417406756b57a45a1f/gnn_pressure_estimation/utils/auxil.py",
+      "sha256": "494a6cc43407ff5a876fa7f106376037e341fc8484e3138fb6ef1e2acb6a5d20",
+      "matches_recorded_sha256": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "3922019",
+  "url": "https://zenodo.org/records/3922019",
+  "title": "A Two-Phase Model to Detect and Localize Water Distribution System Leakages",
+  "creators": [
+    "Min, Kyoung Won",
+    "Kim, Taewook",
+    "Choi, Young Hwan",
+    "Jung, Donghwi",
+    "Kim, Joong Hoon"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3922019",
+  "files": [
+    {
+      "name": "KU-hydrosystem ver2.pdf",
+      "md5": "437bb56bb6a210707b672b888f2f27f6",
+      "url": "https://zenodo.org/api/records/3922019/files/KU-hydrosystem%20ver2.pdf/content"
+    }
+  ]
+}

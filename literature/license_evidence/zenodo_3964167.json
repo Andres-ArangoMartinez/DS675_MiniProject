@@ -1,0 +1,24 @@
+{
+  "record_id": "3964167",
+  "url": "https://zenodo.org/records/3964167",
+  "title": "A Hybrid Leakage Detection and Isolation Approach Based on Ensemble Multivariate Changepoint Detection Methods",
+  "creators": [
+    "Cheng, Tuoyuan",
+    "Li, Yuanzhe",
+    "Harrou, Fouzi",
+    "Sun, Ying",
+    "Gao, Jinliang",
+    "Leiknes, TorOve"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3964167",
+  "files": [
+    {
+      "name": "Cheng00.pdf",
+      "md5": "6e9a5811111ea816ce8c8667bad4446b",
+      "url": "https://zenodo.org/api/records/3964167/files/Cheng00.pdf/content"
+    }
+  ]
+}

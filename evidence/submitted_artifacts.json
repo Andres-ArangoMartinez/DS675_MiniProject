@@ -1,0 +1,32 @@
+[
+  {
+    "file": "reports/Milestone1.pdf",
+    "sha256": "b10e301cd01a63aa9f149dc44f5ac6d89413e39fba2e0bda98ca561cecb2ceff",
+    "status": "Submitted artifact; original bytes preserved"
+  },
+  {
+    "file": "reports/Milestone2.pdf",
+    "sha256": "e911829ccd28bd6b6bf468e609f59ac977de27d3b84bea7dbc7cccc588919b26",
+    "status": "Submitted artifact; original bytes preserved"
+  },
+  {
+    "file": "evidence/submitted_figures/figure1.png",
+    "sha256": "641c8dbab6427a8624aaeadc845da901fe4f8542d40b9ab6ced151e607d2288a",
+    "status": "Submitted artifact; original bytes preserved"
+  },
+  {
+    "file": "evidence/submitted_figures/figure2.png",
+    "sha256": "f52e3b71aad3c20264630335d3e6855cb01be1fdf23f2f72eb7c884948a74dc2",
+    "status": "Submitted artifact; original bytes preserved"
+  },
+  {
+    "file": "evidence/submitted_figures/figure3.png",
+    "sha256": "5cccfd78c70d7cd459003ff99035b97962e896d89d27d221e46ec3c3baffa3f2",
+    "status": "Submitted artifact; original bytes preserved"
+  },
+  {
+    "file": "evidence/submitted_figures/figure4.png",
+    "sha256": "c03673031169f8b1cf8f453cba6bc0490e6b51c868193cc8851cd59081196bb9",
+    "status": "Submitted artifact; original bytes preserved"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "record_id": "3923227",
+  "url": "https://zenodo.org/records/3923227",
+  "title": "Battle of the Leakage Detection and Isolation Methods: An Energy Method Analysis using Genetic Algorithms",
+  "creators": [
+    "SALDARRIAGA, Juan",
+    "SOLARTE, Laura",
+    "SALCEDO, Camilo",
+    "MONTES, Carlos",
+    "MARTÍNEZ, Laura",
+    "GONZÁLEZ, María",
+    "CUELLO, María",
+    "ARIZA, Andrés",
+    "GALINDO, Camilo",
+    "ORTIZ, Néstor",
+    "GÓMEZ, Cristian",
+    "VANEGAS, Sergio"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3923227",
+  "files": [
+    {
+      "name": "CIACUA.pdf",
+      "md5": "ca924b275c29aa05b8a5da0fc88447d8",
+      "url": "https://zenodo.org/api/records/3923227/files/CIACUA.pdf/content"
+    }
+  ]
+}

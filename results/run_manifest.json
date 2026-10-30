@@ -1,0 +1,163 @@
+{
+  "run_utc": "2026-10-30T11:42:17.333600+00:00",
+  "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.6",
+    "matplotlib": "3.11.2",
+    "PyYAML": "6.0.3"
+  },
+  "inputs": [
+    {
+      "filename": "2018_SCADA_Pressures.csv",
+      "acquisition": "existing_local_file_checked_against_official_md5",
+      "bytes": 22593812,
+      "md5": "d389d8541350c19ff0bfc6b80f246d35",
+      "official_md5_matches": true,
+      "sha256": "7782d890a7195699be94ddc01cba392da7ca285908afff619065a9616e04dcae",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2018_SCADA_Pressures.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "2018_SCADA_Flows.csv",
+      "acquisition": "existing_local_file_checked_against_official_md5",
+      "bytes": 4023420,
+      "md5": "d0602c06946b46287e956f007e4264ee",
+      "official_md5_matches": true,
+      "sha256": "7f7e8625c9d92b083ee079a54cffb9ef803876de1e35017c1da0455968daf3ff",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2018_SCADA_Flows.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "2018_SCADA_Levels.csv",
+      "acquisition": "existing_local_file_checked_against_official_md5",
+      "bytes": 2721000,
+      "md5": "92a512d6749ddf66fd6d99f2bdde6cc4",
+      "official_md5_matches": true,
+      "sha256": "a1fc5f0229448a620b6220f4d079b3162a255b3070acdce448608fbfc760903c",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2018_SCADA_Levels.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "2018_SCADA_Demands.csv",
+      "acquisition": "existing_local_file_checked_against_official_md5",
+      "bytes": 56499753,
+      "md5": "8803afcb1da2428de169237be3d911fb",
+      "official_md5_matches": true,
+      "sha256": "713d9f03ff94128f44c7d8036a032cc1d7eebcbbc94fda9def2bbc3efc047dd5",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2018_SCADA_Demands.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "2019_SCADA_Pressures.csv",
+      "acquisition": "existing_local_file_checked_against_official_md5",
+      "bytes": 22606417,
+      "md5": "5ea1e46d3f2f0a89a3f98d6fd39a851d",
+      "official_md5_matches": true,
+      "sha256": "a4af6616059cc9b366bbab76d880b2c772df544970c6ff4d4a29a58704ce05b1",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2019_SCADA_Pressures.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "2019_SCADA_Flows.csv",
+      "acquisition": "existing_local_file_checked_against_official_md5",
+      "bytes": 4130511,
+      "md5": "28fc99fdcbf80fcd26079e7fe602d6dc",
+      "official_md5_matches": true,
+      "sha256": "c709ea5ecc03197e1fe70cf4c2de7225f71015acb50a7445ed7765b5029f7f15",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2019_SCADA_Flows.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "2019_SCADA_Levels.csv",
+      "acquisition": "existing_local_file_checked_against_official_md5",
+      "bytes": 2720780,
+      "md5": "e5a8050bd38729e4b7648b9d52abd5b1",
+      "official_md5_matches": true,
+      "sha256": "00624e97b72e63233beeccb48db528d43e59a87b116d0295d5c2a206ee0e75a8",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2019_SCADA_Levels.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "2019_SCADA_Demands.csv",
+      "acquisition": "existing_local_file_checked_against_official_md5",
+      "bytes": 56499940,
+      "md5": "b3e111de397a1b06d33b8a9f13bc997d",
+      "official_md5_matches": true,
+      "sha256": "004266aa039833b5ae0f37740487db4d90216d2ee947f14871c5d5d3f89b4151",
+      "source_url": "https://zenodo.org/api/records/4017659/files/2019_SCADA_Demands.csv/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "L-TOWN.inp",
+      "acquisition": "existing_local_file_checked_against_official_md5",
+      "bytes": 412200,
+      "md5": "bfbb16b8b463e0576200ba6ad360f68e",
+      "official_md5_matches": true,
+      "sha256": "a7551b86745f4cc3433c78e60023077fa1386947d4d35372ffd3a0405622b436",
+      "source_url": "https://zenodo.org/api/records/4017659/files/L-TOWN.inp/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "dataset_configuration.yaml",
+      "acquisition": "existing_local_file_checked_against_official_md5",
+      "bytes": 3926,
+      "md5": "48486401f5b4d0447023f5ce5d242c52",
+      "official_md5_matches": true,
+      "sha256": "23471d8989d82c66a4909816ea248f7588d8ccc910e142265a7ea48db940b6a0",
+      "source_url": "https://zenodo.org/api/records/4017659/files/dataset_configuration.yaml/content",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "README.txt",
+      "acquisition": "existing_local_file_checked_against_official_md5",
+      "bytes": 5303,
+      "md5": "7ad5cdc2eebfe78197a3412e80d07ddc",
+      "official_md5_matches": true,
+      "sha256": "e6a3e83bdf7f116c47c72640de6e4785fd3437b96428448adf9ca76f066f2226",
+      "source_url": "https://zenodo.org/api/records/4017659/files/README.txt/content",
+      "license": "CC-BY-4.0"
+    }
+  ],
+  "code_sha256": {
+    "src/__init__.py": "2695b98a54a9c5253655a6a61000c854451defbe4267cb28e5588f2de04f99a8",
+    "src/analysis.py": "c962d06b34567022742f80d3994bb66dea20108c25128543c38190d6ced281c6",
+    "src/data.py": "6c5acaed4f773cc43b24c571186b3b941bfdad44ada4a5408f39d5561efcffe2",
+    "src/figures.py": "0419899f83352fd64f8ff1bb662db6731c66faf16434786aedd59f858864fe67",
+    "src/pipeline.py": "fb64ca834bb5bbe20cd956d25e696a2b6464bb5a5a4f09872704b9d1e30ae05c",
+    "src/screening.py": "7cf8a55975fdcd53a52647ca792b5c83da5ac6b21015de08a611be7b4aa41fe0",
+    "reproduce.py": "0f02066a84003b5dac27323cccea61bfff9862b4c567d6d3b356137d333cf565"
+  },
+  "classification_and_protocol_sha256": {
+    "literature/source_records.csv": "d6ad153aae0db96c2d7601f70840964bc7cddd6dd237e3b12396aeb8bafbdcfb",
+    "literature/groups.csv": "4f460e59310bdd4650fbe5db271b1713c208b7b8dbdc6dab5041250963f9d247",
+    "data/source_manifest.json": "255c617c6d8dae866b9899e688ffed29e1f23d8acec5f0c4330fd317f9dca3fb",
+    "evidence/reported_values.json": "f491d6b38a417f2bb351ed93763c7a50dc812cd37cf78e6085145eb651ee787e",
+    "evidence/contribution_summary.csv": "f354a0971beb6a577f2bc91120d1fd006b457d35b3cb8545a589dca643fc6fe5",
+    "evidence/work_status.json": "0e7821d2f416ab7f080cba907a776b99d3046c4eb445994d590d88c94d9cdcbc",
+    "docs/student_contributions.md": "4b914efeadb7b2b65ab69d06d36156550de428ced862232b6d56fda83334660f"
+  },
+  "output_sha256": {
+    "correlations.csv": "720422c5ce0690812572eb670b79855ab23a3e501417b3981f5d4ba78702336b",
+    "eda_statistics.json": "cfc9fb375ca07ec36741fbcdcbb5cf95bc7061371a4cad79e16056d3a7d5be16",
+    "figures/figure1_supply_boundary.png": "851c3da1da537803e17b92c0660945af0e9f4dfad69710f01aa07cff65eaa760",
+    "figures/figure1_supply_boundary.svg": "f2945f5fcdd7221b4bc489e914e803cdaf73257893298c4a85df219e9702fbda",
+    "figures/figure2_daily_profiles.png": "dd31061e7f6ad1093bb89930b7894ad268834fd416ddb49f0fb9bf22255a709f",
+    "figures/figure2_daily_profiles.svg": "6ee9382e2dec8e5f6f07bbf07a88edfd0e0e4f8afb50b0fceca6941bf9e04b2c",
+    "figures/figure3_correlations.png": "2cd6b4031ebb6d8c3d72395fa996c3ab45b5430e770065495f16b4022874ef90",
+    "figures/figure3_correlations.svg": "629c14124168d5748d3574029cf6eb30e9c4ecb474dfd9cd8f80e8e5aa0c2cd2",
+    "figures/figure4_historical_screening.png": "9c85a7037ff697249851918c47edb7f5489ce4dcfcb5f5f5771dc208617d7e06",
+    "figures/figure4_historical_screening.svg": "f7f06bb32dd306bb8b1cd9e5d96dc8de6653af8e8657deb9e8a79469542aae7f",
+    "forecast_pairs_full.csv.gz": "549880444b3a5e6f702fa505ff7e5f0cb505f13d74c11ea663a9d0674a3b02a2",
+    "forecast_pairs_sample.csv": "31834088e73d64db7b26030c3ea23a9d9bab4169555b72443a8760cc65ec1c11",
+    "screening_summary.json": "9594934000f40e449d984f0ae7107d501bd9c0bff94146ac04c262bf5f6b234c",
+    "selected_inputs_full.csv.gz": "fe78ef8a2f9b677aa075f44b35083c8003f6a0ad212eb748d70babe7fb0883cd",
+    "selected_inputs_sample.csv": "6c3009486a2a4c411bc9e17ce82bfe19a0c68107ab9bebad2817b90573f53be2",
+    "table_checks.json": "76676dafa3e1d57c0e9a035f58ad0acc6a5b214f990f5e69b477c383d224ce0b",
+    "topology_audit.json": "85765a1ea708dde0286079743dcf994be2b87d181aedbf9e64b0683282201365",
+    "verification.json": "b829e49ba4ae1ebc35c8c43725b33bc3dcd47bdb72cc598c794a311a720c16b1"
+  },
+  "results_status": "Executed descriptive groundwork; C1–C3 learning experiments remain proposed.",
+  "authorship": "Andres Arango Martinez directed the engineering focus, scope, choices and review. AI assisted methodological proposals, source synthesis, implementation and execution; external data/methods retain their attribution."
+}

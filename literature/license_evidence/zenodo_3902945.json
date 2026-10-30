@@ -1,0 +1,21 @@
+{
+  "record_id": "3902945",
+  "url": "https://zenodo.org/records/3902945",
+  "title": "Deep Learning of Complex Pipe Leakages Events in Drinking Water Distribution Networks for Effective Spatiotemporal Pre-Detections and Isolations of Leak Conditions",
+  "creators": [
+    "Tan, Cheng Ann",
+    "Phipatanasuphorn, Veradej",
+    "Lai, Chun Hin Adrian"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3902945",
+  "files": [
+    {
+      "name": "DHI(SG) BattleDIM extended abstract 22Jun2020.pdf",
+      "md5": "468a033028ee56f58028e18ca0e7f12a",
+      "url": "https://zenodo.org/api/records/3902945/files/DHI(SG)%20BattleDIM%20extended%20abstract%2022Jun2020.pdf/content"
+    }
+  ]
+}

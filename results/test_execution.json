@@ -1,0 +1,8 @@
+{
+  "executed_utc": "2026-10-30T11:42:20.090758+00:00",
+  "command": "python -m unittest discover -s tests -v",
+  "status": "PASS",
+  "exit_code": 0,
+  "tests_run": 7,
+  "output": "test_duplicate_origin_rejected (test_evidence.EvidenceTests.test_duplicate_origin_rejected) ... ok\ntest_every_official_input_checksum (test_evidence.EvidenceTests.test_every_official_input_checksum) ... ok\ntest_exact_future_time_and_period_end (test_evidence.EvidenceTests.test_exact_future_time_and_period_end) ... ok\ntest_group_counts_and_source_id_mapping (test_evidence.EvidenceTests.test_group_counts_and_source_id_mapping) ... ok\ntest_independent_pressure_calculation (test_evidence.EvidenceTests.test_independent_pressure_calculation) ... ok\ntest_missing_time_cannot_silently_change_the_lead (test_evidence.EvidenceTests.test_missing_time_cannot_silently_change_the_lead) ... ok\ntest_nominal_supply_scope_and_distances (test_evidence.EvidenceTests.test_nominal_supply_scope_and_distances) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.816s\n\nOK\n"
+}

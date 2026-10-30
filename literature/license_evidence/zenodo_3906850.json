@@ -1,0 +1,20 @@
+{
+  "record_id": "3906850",
+  "url": "https://zenodo.org/records/3906850",
+  "title": "Water Leakage Detection and Localization: Anomaly Matrix - A Deterministic Approach",
+  "creators": [
+    "BHOWMICK, Subhrajeit",
+    "SEIFERT, Klaus"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3906850",
+  "files": [
+    {
+      "name": "Cubalytics GmbH.pdf",
+      "md5": "87d34b3d3991759a2d221585680f5e61",
+      "url": "https://zenodo.org/api/records/3906850/files/Cubalytics%20GmbH.pdf/content"
+    }
+  ]
+}

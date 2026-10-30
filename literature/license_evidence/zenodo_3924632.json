@@ -1,0 +1,26 @@
+{
+  "record_id": "3924632",
+  "url": "https://zenodo.org/records/3924632",
+  "title": "A high-resolution pressure-driven method for leakage identification and localization in water distribution networks",
+  "creators": [
+    "DANIEL, Ivo",
+    "PESANTEZ, Jorge",
+    "LETZGUS, Simon",
+    "KHAKSAR FASAEE, Mohammad Ali",
+    "ALGHAMDI, Faisal",
+    "MAHINTHAKUMAR, Kumar",
+    "BERGLUND, Emily",
+    "COMINOLA, Andrea"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3924632",
+  "files": [
+    {
+      "name": "Leakbusters.pdf",
+      "md5": "547adf603d0e05219403358f60b87960",
+      "url": "https://zenodo.org/api/records/3924632/files/Leakbusters.pdf/content"
+    }
+  ]
+}

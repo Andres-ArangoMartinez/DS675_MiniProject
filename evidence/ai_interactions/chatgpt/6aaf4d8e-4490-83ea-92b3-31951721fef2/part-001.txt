@@ -1,0 +1,31 @@
+# Formato del reporte
+
+**PARTIAL RECOVERY — not an official account export.**
+
+- Conversation ID: 6aaf4d8e-4490-83ea-92b3-31951721fef2
+- Classification: milestone_1
+- Source: source_records/6aaf4d8e-4490-83ea-92b3-31951721fef2.read_thread.page01.json
+- Conversation createdAt: 1789873550.703284
+- Conversation updatedAt: 1789873586.93137
+- Individual message creation timestamps and complete historical/branch coverage are unverified.
+- Headings/notices are archival annotations. Fenced bodies are inserted programmatically without translation or cleanup.
+- Literal source attachment markers and content references are not recovered attachment or reply contents.
+
+## Turn 1
+
+- ID: 522c35fa-fb19-439d-aed0-0b9bcc6aab60
+- startedAt: 1789873575.52 (2026-09-20T03:06:15.520000+00:00)
+- completedAt: 1789873575.52 (2026-09-20T03:06:15.520000+00:00)
+
+<a id="message-522c35fa-fb19-439d-aed0-0b9bcc6aab60"></a>
+### user — 522c35fa-fb19-439d-aed0-0b9bcc6aab60
+
+````text
+para el reporte del milestone 1 en alguna parte del curso de habla de un formato especifico?
+````
+
+## Attachment metadata as returned
+
+````json
+[]
+````

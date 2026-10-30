@@ -1,0 +1,2831 @@
+[
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3900989",
+    "title": "A Pragmatic Approach for Leakage Detection Based on the Analysis of Observed Data and Hydraulic Simulations",
+    "authors": [
+      "MARZOLA, Irene",
+      "MAZZONI, Filippo",
+      "ALVISI, Stefano",
+      "FRANCHINI, Marco"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3900989.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3902046",
+    "title": "BattLeDIM 2020 Problem Announcement and Description",
+    "authors": [
+      "Vrachimis",
+      "Eliades",
+      "Taormina",
+      "Ostfeld",
+      "Kapelan",
+      "Liu",
+      "Kyriakou",
+      "Pavlou",
+      "Qiu",
+      "Polycarpou"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3902046.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3902945",
+    "title": "Deep Learning of Complex Pipe Leakages Events in Drinking Water Distribution Networks for Effective Spatiotemporal Pre-Detections and Isolations of Leak Conditions",
+    "authors": [
+      "Tan, Cheng Ann",
+      "Phipatanasuphorn, Veradej",
+      "Lai, Chun Hin Adrian"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3902945.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3906668",
+    "title": "A leakage detection system extracting the most meaningful features with decision trees.",
+    "authors": [
+      "Adanza Dopazo, Daniel"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3906668.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3906850",
+    "title": "Water Leakage Detection and Localization: Anomaly Matrix - A Deterministic Approach",
+    "authors": [
+      "BHOWMICK, Subhrajeit",
+      "SEIFERT, Klaus"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3906850.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3908525",
+    "title": "DECOMPOSITION-BASED DATA ANALYSIS WITH HYDRAULIC MODEL CALIBRATION FOR LEAKAGE DETECTION AND ISOLATION",
+    "authors": [
+      "Wu, Zheng Yi",
+      "He, Yekun"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3908525.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3911045",
+    "title": "Fast Localization of Multiple Leaks in Water Distribution Network Jointly Driven By Simulation and Machine Learning",
+    "authors": [
+      "Li, Zhirong",
+      "Xin, Kunlun"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3911045.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3911523",
+    "title": "Leakage Detection and Isolation in Water Distribution Network Based on Data Mining and Genetic Optimized Hydraulic Simulation",
+    "authors": [
+      "LIU,Runze",
+      "ZHANG,Zhen",
+      "ZHANG,Dian"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3911523.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3921800",
+    "title": "Detecting and Localizing Leakage Hotspots in Water Distribution Networks via Regularization of an Inverse Problem: An Application to the Battle of Leakage Detection and Isolation Methods 2020 Competition",
+    "authors": [
+      "Blocher, Caroline",
+      "Pecci, Filippo",
+      "Jara Arriagada, Carlos",
+      "Stoianov, Ivan"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3921800.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3922019",
+    "title": "A Two-Phase Model to Detect and Localize Water Distribution System Leakages",
+    "authors": [
+      "Min, Kyoung Won",
+      "Kim, Taewook",
+      "Choi, Young Hwan",
+      "Jung, Donghwi",
+      "Kim, Joong Hoon"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3922019.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3923227",
+    "title": "Battle of the Leakage Detection and Isolation Methods: An Energy Method Analysis using Genetic Algorithms",
+    "authors": [
+      "SALDARRIAGA, Juan",
+      "SOLARTE, Laura",
+      "SALCEDO, Camilo",
+      "MONTES, Carlos",
+      "MARTÍNEZ, Laura",
+      "GONZÁLEZ, María",
+      "CUELLO, María",
+      "ARIZA, Andrés",
+      "GALINDO, Camilo",
+      "ORTIZ, Néstor",
+      "GÓMEZ, Cristian",
+      "VANEGAS, Sergio"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3923227.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3923501",
+    "title": "Leak Localization In Water Distribution Networks Using Data-Driven And Model-Based Approaches",
+    "authors": [
+      "ROMERO, Luis",
+      "BLESA, Joaquim",
+      "ALVES, Débora",
+      "CEMBRANO, Gabriela",
+      "PUIG, Vicenç",
+      "DUVIELLA, Eric"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3923501.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3923907",
+    "title": "A Dual Model for Leak Detection and Localization",
+    "authors": [
+      "STEFFELBAUER, David B.",
+      "DEUERLEIN, Jochen",
+      "GILBERT, Denis",
+      "PILLER, Olivier",
+      "ABRAHAM, Edo"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3923907.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3923929",
+    "title": "A Real Time Method to Detect the Burst Location of Urban Water Supply Network",
+    "authors": [
+      "Zhang,Weiping",
+      "Liu,Jingqing",
+      "Han,Lifei",
+      "Li,Yalin",
+      "Li,Xiujuang",
+      "Shi,Zhiman",
+      "Yu,Junfeng",
+      "Wang,Jiangxia"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3923929.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3924109",
+    "title": "A multistage approach to detect and isolate multiple leakages in district metering areas in water distribution systems",
+    "authors": [
+      "Xiaoting Wang",
+      "Junyu Li",
+      "Xipeng Yu",
+      "Ziqing Ma",
+      "Yujun Huang"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3924109.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3924632",
+    "title": "A high-resolution pressure-driven method for leakage identification and localization in water distribution networks",
+    "authors": [
+      "DANIEL, Ivo",
+      "PESANTEZ, Jorge",
+      "LETZGUS, Simon",
+      "KHAKSAR FASAEE, Mohammad Ali",
+      "ALGHAMDI, Faisal",
+      "MAHINTHAKUMAR, Kumar",
+      "BERGLUND, Emily",
+      "COMINOLA, Andrea"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3924632.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3925507",
+    "title": "The combined usage of the hydraulic model calibration residual and an improved vectorial angle method for solving the BattLeDIM problem",
+    "authors": [
+      "HUANG, Lefeng",
+      "DU, Kun",
+      "GUAN, Miaoting",
+      "WANG, Qi"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3925507.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.3964167",
+    "title": "A Hybrid Leakage Detection and Isolation Approach Based on Ensemble Multivariate Changepoint Detection Methods",
+    "authors": [
+      "Cheng, Tuoyuan",
+      "Li, Yuanzhe",
+      "Harrou, Fouzi",
+      "Sun, Ying",
+      "Gao, Jinliang",
+      "Leiknes, TorOve"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_3964167.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.4011894",
+    "title": "Fluing abstract",
+    "authors": [
+      "Brentan"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_4011894.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.5281/zenodo.4139603",
+    "title": "The Battle of the Leakage Detection and Isolation Methods 2020: Overview and Results",
+    "authors": [
+      "Vrachimis, Stelios",
+      "Eliades, Demetrios"
+    ],
+    "metadata_evidence": "literature/license_evidence/zenodo_4139603.json",
+    "license": {
+      "id": "cc-by-4.0"
+    }
+  },
+  {
+    "source_url": "https://doi.org/10.1007/978-3-031-15934-3_62",
+    "metadata_evidence": "https://api.crossref.org/works/10.1007%2F978-3-031-15934-3_62",
+    "title": [
+      "SAM-kNN Regressor for Online Learning in Water Distribution Networks"
+    ],
+    "authors": [
+      {
+        "given": "Jonathan",
+        "family": "Jakob",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "André",
+        "family": "Artelt",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Martina",
+        "family": "Hasenjäger",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Barbara",
+        "family": "Hammer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Lecture Notes in Computer Science",
+      "Artificial Neural Networks and Machine Learning – ICANN 2022"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "pages": "752-762",
+    "article_number": null,
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2022-01-01T00:00:00Z",
+          "timestamp": 1640995200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.springer.com/tdm"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2022-01-01T00:00:00Z",
+          "timestamp": 1640995200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.springer.com/tdm"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.1016/j.arcontrol.2023.03.012",
+    "title": [
+      "Leak detection and localization in water distribution networks: Review and perspective"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-4790-2031",
+        "authenticated-orcid": false,
+        "given": "Luis",
+        "family": "Romero-Ben",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3207-4189",
+        "authenticated-orcid": false,
+        "given": "Débora",
+        "family": "Alves",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5626-3753",
+        "authenticated-orcid": false,
+        "given": "Joaquim",
+        "family": "Blesa",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1436-6022",
+        "authenticated-orcid": false,
+        "given": "Gabriela",
+        "family": "Cembrano",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6364-6429",
+        "authenticated-orcid": false,
+        "given": "Vicenç",
+        "family": "Puig",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1622-0994",
+        "authenticated-orcid": false,
+        "given": "Eric",
+        "family": "Duviella",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Annual Reviews in Control"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "volume": "55",
+    "issue": null,
+    "pages": "392-419",
+    "article_number": null,
+    "metadata_evidence": "https://api.crossref.org/works/10.1016%2Fj.arcontrol.2023.03.012",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2023-01-01T00:00:00Z",
+          "timestamp": 1672531200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2023-01-01T00:00:00Z",
+          "timestamp": 1672531200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              2
+            ]
+          ],
+          "date-time": "2024-01-02T00:00:00Z",
+          "timestamp": 1704153600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 366,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.1016/j.eswa.2026.131450",
+    "title": [
+      "A multivariate statistical framework for detection, classification and pre-localization of anomalies in water distribution networks"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-2409-4983",
+        "authenticated-orcid": false,
+        "given": "Oleg",
+        "family": "Melnikov",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7964-1286",
+        "authenticated-orcid": false,
+        "given": "Yurii",
+        "family": "Dorofieiev",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0003-9736-7254",
+        "authenticated-orcid": false,
+        "given": "Yurii",
+        "family": "Shakhnovskiy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-9079-321X",
+        "authenticated-orcid": false,
+        "given": "Huy",
+        "family": "Truong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7054-3770",
+        "authenticated-orcid": false,
+        "given": "Victoria",
+        "family": "Degeler",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Expert Systems with Applications"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "volume": "313",
+    "issue": null,
+    "pages": "131450",
+    "article_number": "131450",
+    "metadata_evidence": "https://api.crossref.org/works/10.1016%2Fj.eswa.2026.131450",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2026-06-01T00:00:00Z",
+          "timestamp": 1780272000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2026-06-01T00:00:00Z",
+          "timestamp": 1780272000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              6
+            ]
+          ],
+          "date-time": "2026-02-06T00:00:00Z",
+          "timestamp": 1770336000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.1016/j.ifacol.2022.07.203",
+    "title": [
+      "Graph-Based Learning for Leak Detection and Localisation in Water Distribution Networks*"
+    ],
+    "authors": [
+      {
+        "given": "Garðar",
+        "family": "Örn Garðarsson",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Francesca",
+        "family": "Boem",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Laura",
+        "family": "Toni",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "IFAC-PapersOnLine"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "volume": "55",
+    "issue": "6",
+    "pages": "661-666",
+    "article_number": null,
+    "metadata_evidence": "https://api.crossref.org/works/10.1016%2Fj.ifacol.2022.07.203",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2022-01-01T00:00:00Z",
+          "timestamp": 1640995200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2022-01-01T00:00:00Z",
+          "timestamp": 1640995200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.1016/j.jii.2025.100880",
+    "title": [
+      "Graph neural networks to model and optimize the operation of Water Distribution Networks: A review"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0009-0003-7281-3975",
+        "authenticated-orcid": false,
+        "given": "Giacomo",
+        "family": "Vittori",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0007-0273-6184",
+        "authenticated-orcid": false,
+        "given": "Yelizaveta",
+        "family": "Falkouskaya",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0305-814X",
+        "authenticated-orcid": false,
+        "given": "Daniel M.",
+        "family": "Jimenez-Gutierrez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6128-2246",
+        "authenticated-orcid": false,
+        "given": "Tiziana",
+        "family": "Cattai",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8955-9270",
+        "authenticated-orcid": false,
+        "given": "Ioannis",
+        "family": "Chatzigiannakis",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Journal of Industrial Information Integration"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "volume": "47",
+    "issue": null,
+    "pages": "100880",
+    "article_number": "100880",
+    "metadata_evidence": "https://api.crossref.org/works/10.1016%2Fj.jii.2025.100880",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2025-09-01T00:00:00Z",
+          "timestamp": 1756684800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2025-09-01T00:00:00Z",
+          "timestamp": 1756684800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              21
+            ]
+          ],
+          "date-time": "2025-06-21T00:00:00Z",
+          "timestamp": 1750464000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.1016/j.ress.2025.111494",
+    "title": [
+      "Algorithm-informed graph neural networks for leakage detection and localization in water distribution networks"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0009-0003-3954-3635",
+        "authenticated-orcid": false,
+        "given": "Zepeng",
+        "family": "Zhang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9546-1488",
+        "authenticated-orcid": false,
+        "given": "Olga",
+        "family": "Fink",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Reliability Engineering &amp; System Safety"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "volume": "265",
+    "issue": null,
+    "pages": "111494",
+    "article_number": "111494",
+    "metadata_evidence": "https://api.crossref.org/works/10.1016%2Fj.ress.2025.111494",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2026-01-01T00:00:00Z",
+          "timestamp": 1767225600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2026-01-01T00:00:00Z",
+          "timestamp": 1767225600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              8
+            ]
+          ],
+          "date-time": "2025-08-08T00:00:00Z",
+          "timestamp": 1754611200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.1016/j.rineng.2025.106911",
+    "title": [
+      "Explainable graph neural network for real-time demand states forecasting in water distribution system"
+    ],
+    "authors": [
+      {
+        "given": "Zekun",
+        "family": "Zou",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhihong",
+        "family": "Long",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zipeng",
+        "family": "Zhu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yu",
+        "family": "Shao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tingchao",
+        "family": "Yu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Results in Engineering"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "volume": "27",
+    "issue": null,
+    "pages": "106911",
+    "article_number": "106911",
+    "metadata_evidence": "https://api.crossref.org/works/10.1016%2Fj.rineng.2025.106911",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2025-09-01T00:00:00Z",
+          "timestamp": 1756684800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2025-09-01T00:00:00Z",
+          "timestamp": 1756684800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              22
+            ]
+          ],
+          "date-time": "2025-08-22T00:00:00Z",
+          "timestamp": 1755820800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.1016/j.watres.2023.120012",
+    "metadata_evidence": "https://api.crossref.org/works/10.1016%2Fj.watres.2023.120012",
+    "title": [
+      "Leak detection and localization in water distribution networks using conditional deep convolutional generative adversarial networks"
+    ],
+    "authors": [
+      {
+        "given": "Mohammad Mahdi",
+        "family": "Rajabi",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pooya",
+        "family": "Komeilian",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xi",
+        "family": "Wan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Raziyeh",
+        "family": "Farmani",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Water Research"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          6
+        ]
+      ]
+    },
+    "volume": "238",
+    "issue": null,
+    "pages": "120012",
+    "article_number": "120012",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2023-06-01T00:00:00Z",
+          "timestamp": 1685577600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2023-06-01T00:00:00Z",
+          "timestamp": 1685577600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2023-06-01T00:00:00Z",
+          "timestamp": 1685577600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2023-06-01T00:00:00Z",
+          "timestamp": 1685577600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2023-06-01T00:00:00Z",
+          "timestamp": 1685577600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2023-06-01T00:00:00Z",
+          "timestamp": 1685577600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2023-06-01T00:00:00Z",
+          "timestamp": 1685577600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.1016/j.watres.2025.124475",
+    "title": [
+      "Transfer learning with graph neural networks for pressure estimation in monitoring-limited water distribution networks"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0009-0003-4659-3788",
+        "authenticated-orcid": false,
+        "given": "Jian",
+        "family": "Wang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1045-9125",
+        "authenticated-orcid": false,
+        "given": "Guangtao",
+        "family": "Fu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9567-9041",
+        "authenticated-orcid": false,
+        "given": "Dragan",
+        "family": "Savic",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Water Research"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          12
+        ]
+      ]
+    },
+    "volume": "287",
+    "issue": null,
+    "pages": "124475",
+    "article_number": "124475",
+    "metadata_evidence": "https://api.crossref.org/works/10.1016%2Fj.watres.2025.124475",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2025-12-01T00:00:00Z",
+          "timestamp": 1764547200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2025-12-01T00:00:00Z",
+          "timestamp": 1764547200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              25
+            ]
+          ],
+          "date-time": "2025-08-25T00:00:00Z",
+          "timestamp": 1756080000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.1029/2023WR036741",
+    "title": [
+      "Graph Neural Networks for Pressure Estimation in Water Distribution Systems"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0009-0006-9079-321X",
+        "authenticated-orcid": false,
+        "given": "Huy",
+        "family": "Truong",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Bernoulli Institute University of Groningen  Groningen The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrés",
+        "family": "Tello",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Bernoulli Institute University of Groningen  Groningen The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alexander",
+        "family": "Lazovik",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Bernoulli Institute University of Groningen  Groningen The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7054-3770",
+        "authenticated-orcid": false,
+        "given": "Victoria",
+        "family": "Degeler",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Informatics Institute University of Amsterdam  Amsterdam The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Water Resources Research"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          7
+        ]
+      ]
+    },
+    "volume": "60",
+    "issue": "7",
+    "pages": null,
+    "article_number": "e2023WR036741",
+    "metadata_evidence": "https://api.crossref.org/works/10.1029%2F2023WR036741",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              9
+            ]
+          ],
+          "date-time": "2024-07-09T00:00:00Z",
+          "timestamp": 1720483200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 8,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001515",
+    "title": [
+      "Pressure-Leak Duality for Leak Detection and Localization in Water Distribution Systems"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-2137-985X",
+        "authenticated-orcid": true,
+        "given": "David B.",
+        "family": "Steffelbauer",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Associate Professor, Dept. of Civil and Environmental Engineering, Norwegian Univ. of Science and Technology, S.P. Andersens veg 5, 7031 Trondheim, Norway; Dept. of Water Management, TU Delft, Stevinweg 1, 2628 CN, Netherlands (corresponding author). ORCID: ."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jochen",
+        "family": "Deuerlein",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Associate Director, 3S Consult GmbH, Albtalstrasse 13, 76137 Karlsruhe, Germany; Adjunct Senior Lecturer, School of Civil, Environmental and Mining Engineering, Univ. of Adelaide, Adelaide, SA 5005, Australia."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Denis",
+        "family": "Gilbert",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Research Engineer, Institut National de Recherche Pour L'Agriculture, L'Alimentation et L'Environnement, Dept. of Aqua, Environnement Territoires et Infrastructures Research Unit, Gazinet, F-33612 Cestas, France."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0989-5456",
+        "authenticated-orcid": true,
+        "given": "Edo",
+        "family": "Abraham",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Assistant Professor, Dept. of Water Management, Faculty of Civil Engineering and Geosciences, TU Delft, Stevinweg 1, 2628 CN, Delft, Netherlands. ORCID:"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3625-7639",
+        "authenticated-orcid": true,
+        "given": "Olivier",
+        "family": "Piller",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Senior Research Scientist, Institut National de Recherche Pour L'Agriculture, L'Alimentation et L'Environnement, Dept. of Aqua, Environnement Territoires et Infrastructures Research Unit, Gazinet, F-33612 Cestas, France; Adjunct Senior Lecturer, School of Civil, Environmental and Mining Engineering, Univ. of Adelaide, Adelaide, SA 5005, Australia. ORCID: ."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Journal of Water Resources Planning and Management"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          3
+        ]
+      ]
+    },
+    "volume": "148",
+    "issue": "3",
+    "pages": null,
+    "article_number": "04021106",
+    "metadata_evidence": "https://api.crossref.org/works/10.1061%2F%28ASCE%29WR.1943-5452.0001515",
+    "license": null
+  },
+  {
+    "source_url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001535",
+    "title": [
+      "A Sequential Pressure-Based Algorithm for Data-Driven Leakage Identification and Model-Based Localization in Water Distribution Networks"
+    ],
+    "authors": [
+      {
+        "given": "Ivo",
+        "family": "Daniel",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Graduate Student, Chair of Smart Water Networks, Technische Universität Berlin, Berlin 10623, Germany; Einstein Center Digital Future, Berlin 10117, Germany."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1537-6006",
+        "authenticated-orcid": true,
+        "given": "Jorge",
+        "family": "Pesantez",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Graduate Student, Dept. of Civil, Construction, and Environmental Engineering, North Carolina State Univ., Raleigh, NC 27695. ORCID: ."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Simon",
+        "family": "Letzgus",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Graduate Student, Machine Learning Group, Technische Universität Berlin, Berlin 10623, Germany."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mohammad Ali",
+        "family": "Khaksar Fasaee",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Graduate Student, Dept. of Civil, Construction, and Environmental Engineering, North Carolina State Univ., Raleigh, NC 27695."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5956-7173",
+        "authenticated-orcid": true,
+        "given": "Faisal",
+        "family": "Alghamdi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Graduate Student, Dept. of Civil, Construction, and Environmental Engineering, North Carolina State Univ., Raleigh, NC 27695; Graduate Assistant, Dept. of Civil and Environmental Engineering, King Abdulaziz Univ., Jeddah, Saudi Arabia. ORCID:"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Emily",
+        "family": "Berglund",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Professor, Dept. of Civil, Construction, and Environmental Engineering, North Carolina State Univ., Raleigh, NC 27695."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "G.",
+        "family": "Mahinthakumar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Professor, Dept. of Civil, Construction, and Environmental Engineering, North Carolina State Univ., Raleigh, NC 27695."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4031-4704",
+        "authenticated-orcid": true,
+        "given": "Andrea",
+        "family": "Cominola",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Assistant Professor, Chair of Smart Water Networks, Technische Universität Berlin, Berlin 10623, Germany; Einstein Center Digital Future, Berlin 10117, Germany (corresponding author). ORCID: ."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Journal of Water Resources Planning and Management"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          6
+        ]
+      ]
+    },
+    "volume": "148",
+    "issue": "6",
+    "pages": null,
+    "article_number": "04022025",
+    "metadata_evidence": "https://api.crossref.org/works/10.1061%2F%28ASCE%29WR.1943-5452.0001535",
+    "license": null
+  },
+  {
+    "source_url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001558",
+    "title": [
+      "Multiple Leakage Detection and Isolation in District Metering Areas Using a Multistage Approach"
+    ],
+    "authors": [
+      {
+        "given": "Xiaoting",
+        "family": "Wang",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Ph.D. Student, Smart Water Research Center, School of Environment, Tsinghua Univ., Beijing 100084, China."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Junyu",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Ph.D. Student, Smart Water Research Center, School of Environment, Tsinghua Univ., Beijing 100084, China."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4949-4318",
+        "authenticated-orcid": true,
+        "given": "Shuming",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Professor, Smart Water Research Center, School of Environment, Tsinghua Univ., Beijing 100084, China (corresponding author). ORCID: ."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xipeng",
+        "family": "Yu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Ph.D. Student, Smart Water Research Center, School of Environment, Tsinghua Univ., Beijing 100084, China."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ziqing",
+        "family": "Ma",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Master’s Student, Smart Water Research Center, School of Environment, Tsinghua Univ., Beijing 100084, China."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Journal of Water Resources Planning and Management"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          6
+        ]
+      ]
+    },
+    "volume": "148",
+    "issue": "6",
+    "pages": null,
+    "article_number": "04022021",
+    "metadata_evidence": "https://api.crossref.org/works/10.1061%2F%28ASCE%29WR.1943-5452.0001558",
+    "license": null
+  },
+  {
+    "source_url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001601",
+    "title": [
+      "Battle of the Leakage Detection and Isolation Methods"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8862-5205",
+        "authenticated-orcid": true,
+        "given": "Stelios G.",
+        "family": "Vrachimis",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Postdoctoral Research Associate, KIOS Research and Innovation Center of Excellence, Dept. of Electrical and Computer Engineering, Univ. of Cyprus, Nicosia 2109, Cyprus (corresponding author). ORCID: ."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6184-6366",
+        "authenticated-orcid": true,
+        "given": "Demetrios G.",
+        "family": "Eliades",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Research Assistant Professor, KIOS Research and Innovation Center of Excellence, Univ. of Cyprus, Nicosia 2109, Cyprus. ORCID: ."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Riccardo",
+        "family": "Taormina",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Assistant Professor, Faculty of Civil Engineering and Geosciences, Dept. of Water Management, Delft Univ. of Technology, Stevinweg 1, CN Delft 2628, Netherlands."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zoran",
+        "family": "Kapelan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Professor, Dept. of Water Management, Delft Univ. of Technology, Stevinweg 1, CN Delft 2628, Netherlands."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9112-6079",
+        "authenticated-orcid": true,
+        "given": "Avi",
+        "family": "Ostfeld",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Professor, Faculty of Civil and Environmental Engineering, Technion—Israel Institute of Technology, Haifa 32000, Israel. ORCID: ."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shuming",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Professor, School of Environment, Tsinghua Univ., Beijing 100084, China."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2324-8661",
+        "authenticated-orcid": true,
+        "given": "Marios",
+        "family": "Kyriakou",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Research Software Engineer, KIOS Research and Innovation Center of Excellence, Univ. of Cyprus, Nicosia 2109, Cyprus. ORCID: ."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pavlos",
+        "family": "Pavlou",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Research Engineer, KIOS Research and Innovation Center of Excellence, Univ. of Cyprus, Nicosia 2109, Cyprus."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mengning",
+        "family": "Qiu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Postdoctoral Research Fellow, Faculty of Civil and Environmental Engineering, Technion—Israel Institute of Technology, Haifa 32000, Israel."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marios M.",
+        "family": "Polycarpou",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Professor, KIOS Research and Innovation Center of Excellence, Dept. of Electrical and Computer Engineering, Univ. of Cyprus, Nicosia 2109, Cyprus."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Journal of Water Resources Planning and Management"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    },
+    "volume": "148",
+    "issue": "12",
+    "pages": null,
+    "article_number": "04022068",
+    "metadata_evidence": "https://api.crossref.org/works/10.1061%2F%28ASCE%29WR.1943-5452.0001601",
+    "license": null
+  },
+  {
+    "source_url": "https://doi.org/10.1109/CCTA49430.2022.9966160",
+    "title": [
+      "Data-driven Leak Localization in Water Distribution Networks via Dictionary Learning and Graph-based Interpolation"
+    ],
+    "authors": [
+      {
+        "given": "Paul",
+        "family": "Irofti",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Research Center for Logic, Optimization and Security (LOS), University of Bucharest,Faculty of Mathematics and Computer Science,Department of Computer Science,Romania"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Luis",
+        "family": "Romero-Ben",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institut de Rob&#x00F2;tica i Inform&#x00E0;tica Industrial, Universitat Polit&#x00E8;cnica de Catalunya,Barcelona,Spain"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Florin",
+        "family": "Stoican",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Research Center for Logic, Optimization and Security (LOS), University of Bucharest,Faculty of Mathematics and Computer Science,Department of Computer Science,Romania"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Vicenc",
+        "family": "Puig",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institut de Rob&#x00F2;tica i Inform&#x00E0;tica Industrial, Universitat Polit&#x00E8;cnica de Catalunya,Barcelona,Spain"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "2022 IEEE Conference on Control Technology and Applications (CCTA)"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          23
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "pages": "1265-1270",
+    "article_number": null,
+    "metadata_evidence": "https://api.crossref.org/works/10.1109%2FCCTA49430.2022.9966160",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              23
+            ]
+          ],
+          "date-time": "2022-08-23T00:00:00Z",
+          "timestamp": 1661212800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              23
+            ]
+          ],
+          "date-time": "2022-08-23T00:00:00Z",
+          "timestamp": 1661212800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.2166/ws.2024.174",
+    "title": [
+      "The performance of encoder–decoder neural networks for leak detection in water distribution networks"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-7441-7018",
+        "authenticated-orcid": false,
+        "given": "Prasanna",
+        "family": "Mohan Doss",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "1 Department of Civil and Environmental Engineering, Norwegian University of Science and Technology (NTNU), Trondheim, Norway"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marius Møller",
+        "family": "Rokstad",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "1 Department of Civil and Environmental Engineering, Norwegian University of Science and Technology (NTNU), Trondheim, Norway"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Franz",
+        "family": "Tscheikner-Gratl",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "1 Department of Civil and Environmental Engineering, Norwegian University of Science and Technology (NTNU), Trondheim, Norway"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Water Supply"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          26
+        ]
+      ]
+    },
+    "volume": "24",
+    "issue": "8",
+    "pages": "2750-2764",
+    "article_number": null,
+    "metadata_evidence": "https://api.crossref.org/works/10.2166%2Fws.2024.174",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              26
+            ]
+          ],
+          "date-time": "2024-07-26T00:00:00Z",
+          "timestamp": 1721952000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.3390/engproc2024069050",
+    "title": [
+      "Large-Scale Multipurpose Benchmark Datasets for Assessing Data-Driven Deep Learning Approaches for Water Distribution Networks"
+    ],
+    "authors": [
+      {
+        "given": "Andrés",
+        "family": "Tello",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Bernoulli Institute, University of Groningen, 9747 AG Groningen, The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-9079-321X",
+        "authenticated-orcid": false,
+        "given": "Huy",
+        "family": "Truong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Bernoulli Institute, University of Groningen, 9747 AG Groningen, The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alexander",
+        "family": "Lazovik",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Bernoulli Institute, University of Groningen, 9747 AG Groningen, The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7054-3770",
+        "authenticated-orcid": false,
+        "given": "Victoria",
+        "family": "Degeler",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Informatics Institute, University of Amsterdam, 1098 XH Amsterdam, The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "The 3rd International Joint Conference on Water Distribution Systems Analysis &amp;amp; Computing and Control for the Water Industry (WDSA/CCWI 2024)"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          4
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "pages": "50",
+    "article_number": null,
+    "metadata_evidence": "https://api.crossref.org/works/10.3390%2Fengproc2024069050",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              4
+            ]
+          ],
+          "date-time": "2024-09-04T00:00:00Z",
+          "timestamp": 1725408000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.3390/w16030412",
+    "title": [
+      "Wasserstein-Enabled Leaks Localization in Water Distribution Networks"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4187-4209",
+        "authenticated-orcid": false,
+        "given": "Andrea",
+        "family": "Ponti",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Economics, Management and Statistics, University of Milano-Bicocca, 20100 Milan, Italy"
+          },
+          {
+            "name": "OAKS s.r.l., 20125 Milan, Italy"
+          },
+          {
+            "name": "Consorzio Milano Ricerche, 20126 Milan, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6065-0473",
+        "authenticated-orcid": false,
+        "given": "Ilaria",
+        "family": "Giordani",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "OAKS s.r.l., 20125 Milan, Italy"
+          },
+          {
+            "name": "Department of Computer Science, Systems, and Communication, University of Milano-Bicocca, 20125 Milan, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1431-576X",
+        "authenticated-orcid": false,
+        "given": "Antonio",
+        "family": "Candelieri",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Economics, Management and Statistics, University of Milano-Bicocca, 20100 Milan, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1131-3830",
+        "authenticated-orcid": false,
+        "given": "Francesco",
+        "family": "Archetti",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Consorzio Milano Ricerche, 20126 Milan, Italy"
+          },
+          {
+            "name": "Department of Computer Science, Systems, and Communication, University of Milano-Bicocca, 20125 Milan, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Water"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          27
+        ]
+      ]
+    },
+    "volume": "16",
+    "issue": "3",
+    "pages": "412",
+    "article_number": null,
+    "metadata_evidence": "https://api.crossref.org/works/10.3390%2Fw16030412",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              27
+            ]
+          ],
+          "date-time": "2024-01-27T00:00:00Z",
+          "timestamp": 1706313600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.3390/w18172220",
+    "title": [
+      "An Interpretable Ensemble Learning Framework for Leakage Localization in Urban Water Distribution Networks"
+    ],
+    "authors": [
+      {
+        "given": "Qingfu",
+        "family": "Li",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Water Conservancy and Transportation, Zhengzhou University, Zhengzhou 450001, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          },
+          {
+            "role": "conceptualization",
+            "vocabulary": "credit"
+          },
+          {
+            "role": "validation",
+            "vocabulary": "credit"
+          },
+          {
+            "role": "investigation",
+            "vocabulary": "credit"
+          },
+          {
+            "role": "resources",
+            "vocabulary": "credit"
+          },
+          {
+            "role": "data-curation",
+            "vocabulary": "credit"
+          },
+          {
+            "role": "writing-review-editing",
+            "vocabulary": "credit"
+          },
+          {
+            "role": "supervision",
+            "vocabulary": "credit"
+          },
+          {
+            "role": "project-administration",
+            "vocabulary": "credit"
+          },
+          {
+            "role": "funding-acquisition",
+            "vocabulary": "credit"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0005-2562-7736",
+        "authenticated-orcid": false,
+        "given": "Ao",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Water Conservancy and Transportation, Zhengzhou University, Zhengzhou 450001, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          },
+          {
+            "role": "conceptualization",
+            "vocabulary": "credit"
+          },
+          {
+            "role": "methodology",
+            "vocabulary": "credit"
+          },
+          {
+            "role": "software",
+            "vocabulary": "credit"
+          },
+          {
+            "role": "validation",
+            "vocabulary": "credit"
+          },
+          {
+            "role": "formal-analysis",
+            "vocabulary": "credit"
+          },
+          {
+            "role": "writing-original-draft",
+            "vocabulary": "credit"
+          },
+          {
+            "role": "visualization",
+            "vocabulary": "credit"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Water"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          7
+        ]
+      ]
+    },
+    "volume": "18",
+    "issue": "17",
+    "pages": "2220",
+    "article_number": null,
+    "metadata_evidence": "https://api.crossref.org/works/10.3390%2Fw18172220",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              7
+            ]
+          ],
+          "date-time": "2026-09-07T00:00:00Z",
+          "timestamp": 1788739200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ]
+  },
+  {
+    "source_url": "https://doi.org/10.3390/w18182267",
+    "title": [
+      "Standardization and Benchmarking of Datasets and Evaluation Protocols for Machine Learning-Based Water Leak Detection: A Systematic Review"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3903-4294",
+        "authenticated-orcid": false,
+        "given": "Elias",
+        "family": "Farah",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Civil Engineering, School of Engineering, Holy Spirit University of Kaslik (USEK), Jounieh P.O. Box 446, Lebanon"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7279-8005",
+        "authenticated-orcid": false,
+        "given": "Isam",
+        "family": "Shahrour",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Laboratoire de Génie Civil et géo-Environnement (LGCgE), Université de Lille, 59650 Villeneuve d’Ascq, France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "publication": [
+      "Water"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          11
+        ]
+      ]
+    },
+    "volume": "18",
+    "issue": "18",
+    "pages": "2267",
+    "article_number": null,
+    "metadata_evidence": "https://api.crossref.org/works/10.3390%2Fw18182267",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              11
+            ]
+          ],
+          "date-time": "2026-09-11T00:00:00Z",
+          "timestamp": 1789084800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ]
+  }
+]

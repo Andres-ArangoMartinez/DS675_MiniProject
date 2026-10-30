@@ -1,0 +1,11 @@
+{
+  "expected_numeric_claims_match": true,
+  "table_checks_pass": true,
+  "reported_2018_correlations_match": true,
+  "reported_pipe_distances_match": true,
+  "historical_inventory_counts_match": true,
+  "models_trained": false,
+  "2019_use": "Annual table-structure checks; forecasting assessment belongs to the proposed modeling stage.",
+  "figure_reproduction": "Same source quantities and plotting procedure, with portable fonts and separately preserved submitted images.",
+  "research_attribution": "Student-directed research with AI-assisted methodological development, code generation and execution; see docs/student_contributions.md."
+}

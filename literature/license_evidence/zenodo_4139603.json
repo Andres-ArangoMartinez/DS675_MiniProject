@@ -1,0 +1,25 @@
+{
+  "record_id": "4139603",
+  "url": "https://zenodo.org/records/4139603",
+  "title": "The Battle of the Leakage Detection and Isolation Methods 2020: Overview and Results",
+  "creators": [
+    "Vrachimis, Stelios",
+    "Eliades, Demetrios"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.4139603",
+  "files": [
+    {
+      "name": "2020 BATTLEDIM Introduction.pdf",
+      "md5": "46bd3fdbba20de5a81cb302d9cfd0ed8",
+      "url": "https://zenodo.org/api/records/4139603/files/2020%20BATTLEDIM%20Introduction.pdf/content"
+    },
+    {
+      "name": "2020 BATTLEDIM Results.pdf",
+      "md5": "3b6452955a713b3d78eb644246c565e3",
+      "url": "https://zenodo.org/api/records/4139603/files/2020%20BATTLEDIM%20Results.pdf/content"
+    }
+  ]
+}

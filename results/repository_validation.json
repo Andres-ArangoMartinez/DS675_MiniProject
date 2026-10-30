@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "internal_links_checked": 554,
+  "broken_internal_links": [],
+  "submitted_artifact_hashes_match": true,
+  "source_records": 47,
+  "groups": 35,
+  "screening_notes": 35,
+  "detailed_studies": 6,
+  "category_counts": [
+    27,
+    3,
+    2,
+    2,
+    1
+  ],
+  "public_pdf_count": 32,
+  "paper_hashes_match": true,
+  "license_evidence_present": true,
+  "execution_code_and_input_hashes_current": true,
+  "four_generated_figures_present": true,
+  "notebook_executed_without_errors": true,
+  "tests_passed": 7,
+  "pinned_code_hashes_match": 9,
+  "public_contribution_summary_activities": 10,
+  "private_session_exports_absent": true,
+  "public_recovered_source_views": 16,
+  "public_transcript_parts": 148,
+  "documented_transcript_redactions": 231,
+  "contribution_to_message_links": 31,
+  "scope": "Executed descriptive evidence; next stage is the proposed modeling study."
+}

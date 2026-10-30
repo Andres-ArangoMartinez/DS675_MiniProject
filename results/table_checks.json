@@ -1,0 +1,90 @@
+[
+  {
+    "filename": "2018_SCADA_Pressures.csv",
+    "year": 2018,
+    "records": 105120,
+    "features": 33,
+    "duplicate_timestamps": 0,
+    "missing_values": 0,
+    "spacing_minutes": 5,
+    "timestamps_match_other_tables_in_year": true,
+    "use": "structure_and_Jan_Sep_EDA"
+  },
+  {
+    "filename": "2018_SCADA_Flows.csv",
+    "year": 2018,
+    "records": 105120,
+    "features": 3,
+    "duplicate_timestamps": 0,
+    "missing_values": 0,
+    "spacing_minutes": 5,
+    "timestamps_match_other_tables_in_year": true,
+    "use": "structure_and_Jan_Sep_EDA"
+  },
+  {
+    "filename": "2018_SCADA_Levels.csv",
+    "year": 2018,
+    "records": 105120,
+    "features": 1,
+    "duplicate_timestamps": 0,
+    "missing_values": 0,
+    "spacing_minutes": 5,
+    "timestamps_match_other_tables_in_year": true,
+    "use": "structure_and_Jan_Sep_EDA"
+  },
+  {
+    "filename": "2018_SCADA_Demands.csv",
+    "year": 2018,
+    "records": 105120,
+    "features": 82,
+    "duplicate_timestamps": 0,
+    "missing_values": 0,
+    "spacing_minutes": 5,
+    "timestamps_match_other_tables_in_year": true,
+    "use": "structure_and_Jan_Sep_EDA"
+  },
+  {
+    "filename": "2019_SCADA_Pressures.csv",
+    "year": 2019,
+    "records": 105120,
+    "features": 33,
+    "duplicate_timestamps": 0,
+    "missing_values": 0,
+    "spacing_minutes": 5,
+    "timestamps_match_other_tables_in_year": true,
+    "use": "structure_only"
+  },
+  {
+    "filename": "2019_SCADA_Flows.csv",
+    "year": 2019,
+    "records": 105120,
+    "features": 3,
+    "duplicate_timestamps": 0,
+    "missing_values": 0,
+    "spacing_minutes": 5,
+    "timestamps_match_other_tables_in_year": true,
+    "use": "structure_only"
+  },
+  {
+    "filename": "2019_SCADA_Levels.csv",
+    "year": 2019,
+    "records": 105120,
+    "features": 1,
+    "duplicate_timestamps": 0,
+    "missing_values": 0,
+    "spacing_minutes": 5,
+    "timestamps_match_other_tables_in_year": true,
+    "use": "structure_only"
+  },
+  {
+    "filename": "2019_SCADA_Demands.csv",
+    "year": 2019,
+    "records": 105120,
+    "features": 82,
+    "duplicate_timestamps": 0,
+    "missing_values": 0,
+    "spacing_minutes": 5,
+    "timestamps_match_other_tables_in_year": true,
+    "use": "structure_only"
+  }
+]

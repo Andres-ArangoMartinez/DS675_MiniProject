@@ -1,0 +1,7646 @@
+# Seleccionar Dataset Kaggle
+
+**PARTIAL RECOVERY — not an official account export.**
+
+- Conversation ID: 6a9e2e37-35d0-83ea-9c08-b0d6b9ab2ec8
+- Classification: milestone_1
+- Source: source_records/6a9e2e37-35d0-83ea-9c08-b0d6b9ab2ec8.read_thread.page01.json
+- Conversation createdAt: 1788751418.754124
+- Conversation updatedAt: 1788753339.076964
+- Individual message creation timestamps and complete historical/branch coverage are unverified.
+- Headings/notices are archival annotations. Fenced bodies are inserted programmatically without translation or cleanup.
+- Literal source attachment markers and content references are not recovered attachment or reply contents.
+
+## Turn 1
+
+- ID: bbb21849-6033-43ed-b952-3bbba07beb14
+- startedAt: 1788751417.420719 (2026-09-07T03:23:37.420719+00:00)
+- completedAt: 1788751675.186272 (2026-09-07T03:27:55.186272+00:00)
+
+<a id="message-bbb21849-6033-43ed-b952-3bbba07beb14"></a>
+### user — bbb21849-6033-43ed-b952-3bbba07beb14
+
+````text
+{
+  "role": "You are an expert research assistant helping select a Kaggle dataset for a graduate-level Machine Learning mini-project in DS675.",
+
+  "objective": "Search Kaggle for strong candidate datasets related to dynamic systems, system identification, dynamic modeling, industrial process modeling, or control-related prediction. The final project must be a supervised predictive machine learning problem, not merely exploratory data analysis or classical control-system design.",
+
+  "research_interests": [
+    "Dynamic systems",
+    "System identification",
+    "Data-driven dynamic modeling",
+    "Multivariable systems",
+    "Nonlinear systems",
+    "Industrial process dynamics",
+    "Process monitoring and prediction",
+    "Predictive maintenance with temporal behavior",
+    "State or output prediction from measured inputs",
+    "Sensor-based system modeling",
+    "Time-dependent regression",
+    "Multivariate time series prediction",
+    "Control-oriented machine learning",
+    "Soft sensors and virtual sensing",
+    "Fault detection or fault prediction in dynamic systems",
+    "Energy systems",
+    "Thermal systems",
+    "Mechanical systems",
+    "Electrical systems",
+    "Chemical or manufacturing processes",
+    "Robotics or autonomous-system telemetry"
+  ],
+
+  "preferred_problem_structure": {
+    "type": "Supervised predictive machine learning",
+    "ideal_mapping": "current and/or past system measurements, control inputs, operating conditions, and disturbances -> future output, state, performance variable, fault condition, or other meaningful target",
+    "examples": [
+      "Predict a future process output from past inputs and outputs",
+      "Predict system state variables from sensor measurements",
+      "Predict temperature, pressure, flow, power, vibration, position, or efficiency",
+      "Predict a nonlinear process response",
+      "Predict equipment condition or failure from temporal sensor data",
+      "Predict a target variable in a multivariable industrial process"
+    ]
+  },
+
+  "dataset_selection_requirements": {
+    "must_have": [
+      "A clearly identifiable prediction target or label",
+      "Predictor variables that could realistically contain information about that target",
+      "Enough observations to create meaningful training, validation, and test sets",
+      "A problem compatible with supervised machine learning",
+      "Data quality sufficient for a semester project",
+      "Enough documentation to understand the variables",
+      "Potential to compare multiple machine learning models"
+    ],
+
+    "strongly_preferred": [
+      "Temporal ordering or timestamps",
+      "Multiple measured variables",
+      "Control inputs or manipulated variables",
+      "Sensor measurements",
+      "Operating conditions",
+      "System outputs or state variables",
+      "Nonlinear relationships",
+      "Dynamic dependence on previous observations",
+      "At least several thousand observations when possible"
+    ],
+
+    "avoid": [
+      "Datasets with only around 100 observations unless there is a compelling reason",
+      "Datasets intended only for visualization or exploratory analysis",
+      "Datasets with no meaningful supervised prediction target",
+      "Datasets where the target cannot reasonably be predicted from the available features",
+      "Extremely small datasets",
+      "Poorly documented datasets",
+      "Datasets dominated by unusable missing data",
+      "Synthetic toy datasets unless they provide unusually strong project opportunities"
+    ]
+  },
+
+  "houle_selection_strategy": {
+    "kaggle_activity": "Prefer datasets with a medium level of Kaggle activity.",
+    "reasoning": [
+      "Avoid extremely popular datasets where nearly every obvious model and analysis has already been explored, because originality becomes difficult.",
+      "Avoid datasets with almost no analysis unless there is clear evidence that the dataset is high quality and suitable for supervised prediction.",
+      "Prefer datasets where several meaningful Kaggle notebooks or discussions already exist, but substantial room remains for new analysis."
+    ],
+    "critical_review": "Do not assume that Kaggle notebooks are technically correct. Evaluate existing work critically and identify questionable preprocessing, data leakage, invalid train-test splitting, inappropriate metrics, poor treatment of temporal dependence, weak baselines, or other methodological problems.",
+    "originality_requirement": "The eventual project should extend, improve, challenge, or systematically compare existing Kaggle work rather than simply reproduce it."
+  },
+
+  "dynamic_system_specific_checks": [
+    "Determine whether observations have a meaningful temporal sequence.",
+    "Determine whether random train-test splitting would cause temporal leakage.",
+    "Identify whether lagged variables could be constructed.",
+    "Identify candidate system inputs, outputs, disturbances, and state-related variables.",
+    "Determine whether the target represents an instantaneous variable or a future prediction.",
+    "Assess whether nonlinear relationships are plausible.",
+    "Assess whether multivariable interactions are important.",
+    "Determine whether the dataset could support one-step-ahead or multi-step-ahead prediction.",
+    "Identify whether the problem resembles system identification, soft sensing, forecasting, fault prediction, or state estimation.",
+    "Assess whether conventional ML methods can provide meaningful baselines before considering deep learning."
+  ],
+
+  "modeling_opportunities_to_look_for": [
+    "Linear Regression as a baseline",
+    "Regularized regression",
+    "K-Nearest Neighbors regression or classification",
+    "Decision Trees",
+    "Random Forests",
+    "Gradient Boosting",
+    "Support Vector Machines",
+    "Feature engineering using lagged variables",
+    "Polynomial or nonlinear feature transformations",
+    "Feature selection",
+    "Dimensionality reduction",
+    "Hyperparameter tuning",
+    "Comparison between static and dynamic feature representations",
+    "Comparison between linear and nonlinear models",
+    "Optional neural-network or sequence-model extension if justified"
+  ],
+
+  "originality_opportunities": [
+    "Create lagged input-output features that previous Kaggle analyses did not consider",
+    "Compare static prediction against dynamic prediction using historical information",
+    "Investigate the influence of different prediction horizons",
+    "Compare linear versus nonlinear models",
+    "Analyze multivariable interactions",
+    "Improve preprocessing or feature engineering",
+    "Correct questionable train-test methodology used in existing Kaggle notebooks",
+    "Use time-aware validation instead of random splitting",
+    "Investigate model robustness across different operating regimes",
+    "Study whether feature scaling materially changes distance-based models",
+    "Perform systematic hyperparameter analysis",
+    "Investigate feature importance or sensitivity",
+    "Develop a soft-sensor model for a difficult-to-measure variable",
+    "Compare models across normal and abnormal operating conditions",
+    "Investigate fault or anomaly prediction as a supervised task"
+  ],
+
+  "search_queries": [
+    "dynamic system dataset",
+    "system identification",
+    "industrial process sensor data",
+    "process control dataset",
+    "nonlinear system identification",
+    "multivariable process",
+    "industrial time series",
+    "process monitoring",
+    "process fault detection",
+    "chemical process sensor",
+    "manufacturing sensor data",
+    "predictive maintenance time series",
+    "power system measurements",
+    "energy system time series",
+    "HVAC sensor data",
+    "thermal system",
+    "motor sensor data",
+    "robot sensor data",
+    "control system telemetry",
+    "multivariate sensor time series",
+    "soft sensor",
+    "industrial IoT"
+  ],
+
+  "evaluation_task": {
+    "instruction": "Find and compare at least 10 promising Kaggle datasets, then rank the best 5 for this DS675 mini-project.",
+
+    "score_each_candidate_from_1_to_5": {
+      "supervised_prediction_fit": "How clearly the dataset supports a supervised predictive task.",
+      "dynamic_system_relevance": "How strongly the dataset represents a dynamic physical or engineered system.",
+      "dataset_size": "Whether there is enough data for credible training and testing.",
+      "multivariable_richness": "Availability of multiple meaningful predictors.",
+      "nonlinear_modeling_potential": "Potential for meaningful nonlinear relationships.",
+      "temporal_modeling_potential": "Availability of time structure, lagged relationships, or prediction horizons.",
+      "documentation_quality": "Clarity of variable definitions and dataset context.",
+      "kaggle_prior_work": "Existence of useful prior analyses to review.",
+      "originality_headroom": "Amount of meaningful work still available beyond existing notebooks.",
+      "course_model_compatibility": "Ability to apply several methods taught in a general machine learning course.",
+      "portfolio_value": "Potential to become a technically interesting professional portfolio project."
+    }
+  },
+
+  "required_output": {
+    "candidate_table": [
+      "Rank",
+      "Kaggle dataset name",
+      "Kaggle link",
+      "Physical or engineering system",
+      "Number of observations",
+      "Number of useful variables",
+      "Temporal data: yes/no",
+      "Candidate predictors",
+      "Candidate target",
+      "Regression or classification",
+      "Possible dynamic formulation",
+      "Existing Kaggle activity level",
+      "Major strengths",
+      "Major risks",
+      "Potential originality",
+      "Overall score"
+    ],
+
+    "for_top_5": [
+      "Explain the physical meaning of the data.",
+      "Define a precise supervised machine learning problem.",
+      "Identify X variables and the proposed y target.",
+      "Explain whether past values should be included as lagged features.",
+      "Propose a reasonable prediction horizon if applicable.",
+      "Identify at least three machine learning models that could be compared.",
+      "Describe an appropriate train-validation-test strategy.",
+      "Explain how temporal data leakage should be avoided.",
+      "Summarize what Kaggle users have already tried.",
+      "Identify weaknesses or methodological problems in existing Kaggle work.",
+      "Propose at least three original extensions suitable for the mini-project.",
+      "Assess whether the project is achievable within one graduate semester."
+    ],
+
+    "final_recommendation": {
+      "instruction": "Select the best 2 datasets to propose for Mini-Project Milestone 1.",
+      "for_each_dataset_explain": [
+        "Why it satisfies Professor Houle's dataset-selection criteria",
+        "Why it is neither over-explored nor inadequately studied",
+        "Why it provides enough data for training and testing",
+        "Why it supports a clear supervised prediction task",
+        "Why it is relevant to dynamic-system modeling",
+        "What the likely final project contribution could be",
+        "What technical risks should be investigated before committing to it"
+      ]
+    }
+  },
+
+  "important_methodological_constraint": "Do not force a control-engineering interpretation onto a dataset that does not genuinely support it. A strong predictive dynamic-modeling project is preferable to a weak dataset chosen only because its title contains words such as control, system, or process.",
+
+  "priority": "Favor datasets where the project can study how system behavior evolves with time and how measured inputs and previous states influence future outputs. Multivariable and nonlinear systems are especially desirable, but dataset quality, supervised prediction suitability, methodological rigor, and originality are more important than complexity.",
+
+  "final_goal": "Identify two Kaggle datasets that can lead to a rigorous, original, and professionally defensible DS675 mini-project centered on machine-learning-based modeling of dynamic systems."
+}
+````
+
+<a id="message-a98bf94b-d2da-4c45-a7b5-3933374d3626"></a>
+### assistant — a98bf94b-d2da-4c45-a7b5-3933374d3626
+
+**Archive notice: source explicitly flags this message or content part as truncated.**
+
+````text
+Sí. Hice la búsqueda pensando específicamente en **DS675**, no simplemente en “datasets industriales interesantes”. El filtro principal fue: que pueda formularse como un problema supervisado, que exista una relación física razonable \(X\rightarrow y\), que la estructura temporal pueda explotarse sin leakage y que haya suficiente espacio para una contribución propia.
+
+La conclusión principal es bastante clara:
+
+**Mis dos propuestas para Milestone 1 serían:**
+
+1. **Gas Sensor Array under Dynamic Gas Mixtures** — mejor equilibrio entre dinámica real, tamaño, multivariable, no linealidad, originalidad y actividad moderada en Kaggle.
+2. **Electric Motor Temperature (PMSM)** — probablemente el dataset más fuerte desde el punto de vista profesional/ingenieril, aunque está más explorado; la clave sería convertirlo en un proyecto explícitamente dinámico y corregir la metodología de validación.
+
+Como alternativas, pondría **SWaT**, **Condition Monitoring of Hydraulic Systems** y **Tennessee Eastman Process**.
+
+---
+
+# 1. Ranking general
+
+Mi puntuación usa 11 criterios de 1–5:
+
+**SP** supervised fit · **DR** dynamic relevance · **SZ** size · **MV** multivariable · **NL** nonlinear potential · **TP** temporal potential · **DQ** documentation · **KA** Kaggle prior work · **OH** originality headroom · **CM** course-model compatibility · **PV** portfolio value.
+
+| Rank | Dataset | SP | DR | SZ | MV | NL | TP | DQ | KA | OH | CM | PV | **Total /55** |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| **1** | Gas Sensor Array – Dynamic Mixtures | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 3 | 5 | 5 | 5 | **53** |
+| **2** | Electric Motor Temperature | 5 | 5 | 5 | 4 | 5 | 5 | 5 | 5 | 3 | 5 | 5 | **52** |
+| **3** | SWaT Water Treatment | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 4 | 3 | 4 | 5 | **51** |
+| **4** | Hydraulic System Condition Monitoring | 5 | 5 | 3 | 5 | 5 | 5 | 5 | 3 | 4 | 5 | 5 | **50** |
+| **5** | Tennessee Eastman Process | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 4 | 2 | 5 | 4 | **50** |
+| 6 | MetroPT-3 | 3 | 5 | 5 | 5 | 5 | 5 | 5 | 2 | 5 | 4 | 5 | **49** |
+| 7 | NASA C-MAPSS | 5 | 5 | 4 | 5 | 5 | 5 | 5 | 4 | 1 | 5 | 4 | **48** |
+| 8 | CARE Wind-Turbine Early Fault | 4 | 5 | 5 | 5 | 5 | 5 | 5 | 1 | 5 | 3 | 5 | **48** |
+| 9 | Machinery Fault / Induction Motor | 5 | 5 | 3 | 4 | 5 | 5 | 4 | 3 | 4 | 5 | 4 | **47** |
+| 10 | Pump Sensor Data | 4 | 4 | 5 | 5 | 4 | 5 | 2 | 5 | 3 | 5 | 3 | **45** |
+| 11 | Appliances Energy Prediction | 5 | 3 | 4 | 5 | 4 | 5 | 5 | 4 | 2 | 4 | 3 | **44** |
+| 12 | Wind Turbine SCADA | 5 | 4 | 4 | 2 | 4 | 4 | 4 | 4 | 2 | 5 | 4 | **42** |
+
+La puntuación favorece calidad metodológica y oportunidad de investigación; por eso, por ejemplo, C-MAPSS no queda tan arriba aunque sea excelente técnicamente: es uno de los benchmarks de RUL más explotados que existen.
+
+---
+
+# 2. Tabla de candidatos
+
+## Características básicas
+
+| Rank | Kaggle dataset | Sistema | Observaciones | Variables útiles | Temporal | Target propuesto | Tipo | Actividad Kaggle |
+|---|---|---|---:|---:|---|---|---|---|
+| **1** | **Gas Sensor Array under Dynamic Gas Mixtures** [Kaggle](https://www.kaggle.com/datasets/uciml/gas-sensor-array-under-dynamic-gas-mixtures?utm_source=chatgpt.com) | Cámara de gases + array de sensores químicos | **4,178,504** | 16 sensores + tiempo + 2 concentraciones | Sí, 100 Hz | CO, CH₄ o ethylene concentration | Regression | **Media:** ~9 notebooks, 2.8K downloads |
+| **2** | **Electric Motor Temperature** [Kaggle](https://www.kaggle.com/datasets/wkirgsn/electric-motor-temperature?utm_source=chatgpt.com) | Permanent-magnet synchronous motor | **1,330,816** | 12 señales + `profile_id` | Sí, 2 Hz | `pm` rotor/magnet temperature | Regression | **Alta:** ~96 notebooks, 31 discussions, 31K+ downloads |
+| **3** | **SWaT** [Kaggle](https://www.kaggle.com/datasets/vishala28/swat-dataset-secure-water-treatment-system?utm_source=chatgpt.com) | Planta de tratamiento de agua de 6 etapas | ~**946,719** | 51 sensores/actuadores | Sí | Future process output o Normal/Attack | Regression / classification | Media |
+| **4** | **Condition Monitoring of Hydraulic Systems** [Kaggle](https://www.kaggle.com/datasets/jjacostupa/condition-monitoring-of-hydraulic-systems?utm_source=chatgpt.com) | Banco hidráulico experimental | **2,205 ciclos** | 17 sensores; 43,680 valores/ciclo | Sí | valve/cooler/pump/accumulator condition | Classification / regression | Media-baja |
+| **5** | **Tennessee Eastman Process** [Kaggle](https://www.kaggle.com/datasets/averkij/tennessee-eastman-process-simulation-dataset?utm_source=chatgpt.com) | Proceso químico integrado | ~**15.3M** muestras en 4 sets | 41 measured + 11 manipulated variables | Sí, 3 min | Future process variable o fault | Regression / classification | Media en Kaggle; muy alta en literatura |
+| 6 | **MetroPT-3** [Kaggle](https://www.kaggle.com/datasets/joebeachcapital/metropt-3-dataset?utm_source=chatgpt.com) | Compresor neumático de tren | **1,516,948** | 15 sensores | Sí | Future pressure/temp o derived failure label | Regression / classification | Baja-media |
+| 7 | **NASA C-MAPSS** [Kaggle](https://www.kaggle.com/datasets/bishals098/nasa-turbofan-engine-degradation-simulation?utm_source=chatgpt.com) | Turbofan engine degradation | ~160K train + 105K test | 21 sensors + 3 operating conditions | Sí | Remaining Useful Life | Regression | Muy alta globalmente |
+| 8 | **Wind Turbine SCADA Early Fault Detection** [Kaggle](https://www.kaggle.com/datasets/azizkasimov/wind-turbine-scada-data-for-early-fault-detection?utm_source=chatgpt.com) | 36 wind turbines, 3 wind farms | 95 series / 89 turbine-years | 86–957 variables según parque | Sí, 10 min | Future anomaly/fault | Classification | Muy baja en Kaggle |
+| 9 | **Machinery Fault Dataset** [Kaggle](https://www.kaggle.com/datasets/uysalserkan/fault-induction-motor-dataset?utm_source=chatgpt.com) | Motor/machinery vibration rig | **1,951 time series** | 8 sensor channels | Sí, alta frecuencia | Fault category | Classification | Media |
+| 10 | **Pump Sensor Data** [Kaggle](https://www.kaggle.com/datasets/nphantawee/pump-sensor-data?utm_source=chatgpt.com) | Water pump | **220,320** | 52 sensores | Sí, 1 min | Future failure/status | Classification | Alta |
+| 11 | **Appliances Energy Prediction** [Kaggle](https://www.kaggle.com/datasets/loveall/appliances-energy-prediction?utm_source=chatgpt.com) | Edificio residencial térmico/energético | **19,735** | 28 predictors | Sí, 10 min | Appliance energy consumption | Regression | Alta |
+| 12 | **Wind Turbine SCADA** [Kaggle](https://www.kaggle.com/datasets/berkerisen/wind-turbine-scada-dataset?utm_source=chatgpt.com) | Wind turbine | **50,530** | Sólo ~4 útiles | Sí, 10 min | Future active power | Regression | Alta |
+
+Los tamaños anteriores están respaldados directamente por las páginas de Kaggle o por las fuentes originales UCI/NASA. Por ejemplo, el dataset de gases tiene 4,178,504 instancias y 19 columnas; MetroPT-3 tiene 1,516,948 registros; el hidráulico 2,205 ciclos con 43,680 mediciones crudas por ciclo; y C-MAPSS contiene múltiples trayectorias run-to-failure. :chatgpt-content-reference{index="12"}
+
+Electric Motor Temperature contiene sesiones diferenciadas por `profile_id`, muestreadas a 2 Hz durante 185 horas, con voltajes, corrientes, velocidad, torque y temperaturas del motor. :chatgpt-content-reference{index="13"}
+
+---
+
+## Formulación dinámica y riesgos
+
+| Rank | Candidate predictors | Posible formulación dinámica | Strengths | Riesgos | Oportunidad original |
+|---|---|---|---|---|---|
+| **1 Gas** | 16 sensor signals + lags | \(S_{t-k:t}\rightarrow C_t\) o \(C_{t+h}\) | Dinámica real de sensores, huge N, nonlinear | 100 Hz produce fuerte autocorrelación | Static vs lagged soft sensor; horizons; sensor redundancy |
+| **2 Motor** | currents, voltages, speed, torque, coolant, ambient + lags | \(x_{t-k:t}\rightarrow T_{PM,t+h}\) | Excelente significado físico | Leakage entre puntos del mismo `profile_id` | Group validation; thermal memory; horizon study |
+| **3 SWaT** | flows, levels, pressures, pumps, valves | \(x_{t-k:t}\rightarrow LIT/FIT_{t+h}\) | Planta multivariable realista | Ataques son intervenciones exógenas | Forecasting normal dynamics + fault robustness |
+| **4 Hydraulic** | pressure/flow/temp/vibration profiles | 60-s waveform → component condition | Raw temporal signals multi-rate | Sólo 2,205 ciclos independientes | Compare summary features vs temporal representations |
+| **5 TEP** | XMEAS + XMV histories | \((u,y)_{t-k:t}\rightarrow y_{t+h}\) | Es prácticamente un benchmark de system identification | Simulado y extremadamente estudiado | Reorientarlo de fault detection a dynamic prediction |
+| 6 MetroPT | pressures, oil temp, motor current, valve states | history → future pressure / failure window | Real industrial data, huge | Failure target must be engineered | Lead-time labels / operating-regime robustness |
+| 7 C-MAPSS | operating settings + 21 sensors | trajectory → RUL | Muy limpio y natural | Originalidad muy difícil | Classical ML vs sequence models |
+| 8 CARE Wind | large SCADA feature sets | window → impending fault | Real, huge, industrial | 5.5 GB; considerable preprocessing | Excellent if scope is tightly reduced |
+| 9 Machinery | vibration + tachometer | waveform → fault class | Strong signal processing project | Only 1,951 independent series | Time/frequency features + model comparison |
+| 10 Pump | 52 anonymous sensor signals | window → failure in next H | Long continuous timeline | Only **7 BROKEN points**; sensors undocumented | Lead-time engineering, but scientifically risky |
+| 11 Appliances | thermal/environmental sensors | history → energy at \(t+h\) | Easy to execute | Less “industrial dynamics” | Static vs dynamic forecasting |
+| 12 Wind SCADA | wind speed/direction/power | history → power | Clear target | Only few features; widely analyzed | Horizon comparison |
+
+El pump dataset es el ejemplo más engañoso: tiene 220,320 filas pero sólo **7 observaciones directamente etiquetadas `BROKEN`**, además de 14,477 `RECOVERING`; sus 52 sensores tampoco están físicamente identificados. Eso limita fuertemente una interpretación ingenieril defendible. :chatgpt-content-reference{index="14"}
+
+---
+
+# 3. Top 5 en detalle
+
+## 1. Gas Sensor Array under Dynamic Gas Mixtures
+
+### Qué representa físicamente
+
+Es un experimento real de laboratorio en el que 16 sensores químicos están expuestos continuamente a mezclas variables de gases. Se realizaron dos experimentos de unas 12 horas: ethylene + methane y ethylene + CO. Los sensores se muestrearon a **100 Hz** mientras las concentraciones cambiaban a intervalos aleatorios de aproximadamente 80–120 segundos. :chatgpt-content-reference{index="15"}
+
+Eso es casi exactamente lo que queremos cuando hablamos de un **sistema dinámico no lineal con memoria**: la concentración cambia y los sensores no responden instantáneamente.
+
+### Problema supervisado recomendado
+
+No usaría simplemente:
+
+\[
+S(t)\rightarrow C(t)
+\]
+
+como único experimento.
+
+Propondría:
+
+\[
+\boxed{
+[S(t),S(t-1),...,S(t-L)]
+\rightarrow
+C_{CO}(t)
+}
+\]
+
+como **dynamic soft sensor**.
+
+Una extensión:
+
+\[
+[S(t),...,S(t-L)]\rightarrow C_{CO}(t+h)
+\]
+
+para estudiar distintos horizons.
+
+### X
+
+Los 16 canales de sensores químicos, con:
+
+- valores actuales,
+- lags,
+- diferencias \(S_t-S_{t-k}\),
+- rolling means,
+- rolling slopes.
+
+### y
+
+Elegiría inicialmente:
+
+**CO concentration [ppm]** en `ethylene_CO`.
+
+Después podría repetirse con ethylene.
+
+No recomiendo empezar con multi-output porque complica el análisis sin aumentar necesariamente el valor del Milestone 1.
+
+### ¿Lags?
+
+**Sí, absolutamente.**
+
+La propia motivación del dataset es que los sensores tienen respuesta lenta frente a cambios rápidos de concentración. El dataset fue publicado para investigar continuous monitoring y mejorar response time. :chatgpt-content-reference{index="16"}
+
+Aquí la pregunta científica natural es:
+
+> ¿Cuánto mejora la estimación de concentración cuando el modelo conoce el historial reciente de los sensores?
+
+Eso es excelente para DS675.
+
+### Horizon
+
+Para estimación de concentración:
+
+- \(h=0\): soft sensing actual.
+- \(h=1\) s.
+- \(h=5\) s.
+- \(h=10\) s.
+
+No comenzaría con horizontes enormes.
+
+### Modelos
+
+Una secuencia muy adecuada al curso:
+
+1. Linear / Ridge Regression.
+2. KNN Regression.
+3. Random Forest.
+4. Gradient Boosting / XGBoost si se permite.
+5. SVR en un subset.
+6. Opcional: MLP/LSTM al final.
+
+### Split correcto
+
+**Nunca random row split.**
+
+A 100 Hz, dos filas consecutivas están separadas sólo 0.01 s.
+
+Un random split permitiría que una observación a \(t\) quede en train y la de \(t+0.01\) en test.
+
+Eso produciría un test artificialmente fácil.
+
+Usaría bloques cronológicos:
+
+**Train:** first 60%  
+**Validation:** next 20%  
+**Test:** last 20%
+
+y colocaría un **gap** de al menos el tamaño máximo de las lag windows.
+
+### Kaggle activity
+
+Tiene aproximadamente **9 notebooks, 1 discussion y ~2,800 downloads**: suficiente actividad para revisar trabajos existentes, pero muy lejos del nivel de saturación de Titanic, C-MAPSS o Electric Motor Temperature. :chatgpt-content-reference{index="17"}
+
+Este es exactamente el tipo de actividad intermedia que buscabas.
+
+### Debilidad habitual
+
+La mayor amenaza metodológica es evaluar los millones de filas como si fueran observaciones IID.
+
+No lo son.
+
+La muestra independiente efectiva es muchísimo menor debido a la autocorrelación temporal.
+
+### Tres extensiones originales
+
+1. **Static vs dynamic representation:** current sensors vs sensors + history.
+2. **Lag-window sensitivity:** 0.5, 1, 2, 5, 10 seconds.
+3. **Prediction horizon sensitivity:** \(h=0,1,5,10\) sec.
+4. Sensor-ablation study.
+5. Linear vs nonlinear performance.
+6. Train on one operating section → evaluate on another.
+
+### Viabilidad
+
+**Excelente para un semestre.**
+
+Además, no es necesario entrenar usando los 4.18M puntos. Se puede downsample de manera físicamente razonable —por ejemplo de 100 Hz a 5–10 Hz— después de estudiar la dinámica.
+
+### Mi evaluación
+
+**Mejor candidato global.**
+
+---
+
+# 2. Electric Motor Temperature — PMSM
+
+### Sistema físico
+
+Son mediciones experimentales de un **Permanent Magnet Synchronous Motor** en test bench. Hay 185 horas de funcionamiento, muestreo a 2 Hz y múltiples sesiones identificadas mediante `profile_id`. Incluye `u_d`, `u_q`, `i_d`, `i_q`, motor speed, torque, coolant, ambient y varias temperaturas. :chatgpt-content-reference{index="18"}
+
+### Problema recomendado
+
+\[
+\boxed{
+X_{t-L:t}\rightarrow T_{PM}(t+h)
+}
+\]
+
+donde \(T_{PM}\) es la temperatura del permanent magnet/rotor.
+
+Esto tiene una interpretación muy atractiva:
+
+> Construir un **virtual temperature sensor** capaz de estimar o anticipar una temperatura interna difícil de medir.
+
+### X
+
+Primera versión:
+
+- `u_d`
+- `u_q`
+- `i_d`
+- `i_q`
+- `motor_speed`
+- `torque`
+- `coolant`
+- `ambient`
+
+No usaría `profile_id` como predictor; es un **group identifier**.
+
+Luego puede compararse añadiendo temperaturas del stator.
+
+### y
+
+`pm`
+
+### Lags
+
+Sí.
+
+Un motor tiene **inercia térmica**. La temperatura actual no depende sólo de corriente o torque instantáneos sino de la energía disipada durante minutos anteriores.
+
+Aquí hay una excelente comparación:
+
+\[
+X_t\rightarrow T_{PM,t}
+\]
+
+vs.
+
+\[
+X_{t-L:t}\rightarrow T_{PM,t}
+\]
+
+vs.
+
+\[
+X_{t-L:t}\rightarrow T_{PM,t+h}
+\]
+
+### Horizons
+
+Yo probaría:
+
+- current temperature,
+- +30 sec,
+- +2 min,
+- +5 min.
+
+### Modelos
+
+1. Linear / Ridge.
+2. KNN Regressor.
+3. Random Forest.
+4. Gradient Boosting.
+5. Neural network como extensión.
+
+### Split correcto
+
+Aquí existe una oportunidad metodológica particularmente buena.
+
+**No mezclar filas del mismo `profile_id` entre training y testing.**
+
+Se debe hacer algo como:
+
+- train profiles: ~60%
+- validation profiles: ~20%
+- test profiles: ~20%
+
+con `GroupShuffleSplit` o grupos elegidos deliberadamente.
+
+Así el modelo debe generalizar a **operating sessions que nunca vio**.
+
+### Kaggle work existente
+
+Este dataset sí tiene mucha actividad: actualmente alrededor de **96 notebooks, 31 discussions y más de 31,000 downloads**. Hay notebooks de regression, rotor-temperature prediction, baseline estimation e incluso trabajo reciente con physics-informed networks. :chatgpt-content-reference{index="19"}
+
+### Por qué todavía lo consideraría
+
+Muchos trabajos plantean simplemente:
+
+\[
+X_t\rightarrow T_t
+\]
+
+como tabular regression.
+
+Esa formulación ignora una gran parte de la estructura física.
+
+Incluso trabajos publicados sobre este dataset han empleado `train_test_split` sobre observaciones; si no se separan las sesiones adecuadamente, pueden mezclarse operating profiles entre train y test. :chatgpt-content-reference{index="20"}
+
+Por ello tu contribución podría ser:
+
+> **How much of the reported PMSM temperature-prediction accuracy survives when validation is performed across unseen operating profiles and the dynamic thermal history is modeled explicitly?**
+
+Esa es una pregunta mucho más fuerte que “probar Random Forest”.
+
+### Extensiones originales
+
+1. Random split vs profile-aware split.
+2. Static vs lagged feature representation.
+3. Prediction horizons 0–5 min.
+4. Persistence baseline:
+   \[
+   \hat T(t+h)=T(t)
+   \]
+5. Thermal feature engineering, por ejemplo \(i_d^2+i_q^2\).
+6. Performance by speed/torque operating regime.
+
+### Viabilidad
+
+**Excelente.**
+
+Probablemente es el proyecto con mejor aspecto en un portfolio técnico.
+
+---
+
+# 3. SWaT — Secure Water Treatment
+
+SWaT es una planta de tratamiento de agua a escala realista con seis etapas y sensores de flow, tank level, pressure, pH/conductivity y actuadores como pumps y valves. El benchmark original contiene aproximadamente 496,800 muestras normales y 449,919 del periodo de ataque, con 51 variables. :chatgpt-content-reference{index="21"}
+
+Aunque suele usarse para cybersecurity/anomaly detection, yo **no haría ése el proyecto principal**.
+
+### Formulación DS675 que prefiero
+
+Por ejemplo:
+
+\[
+\boxed{
+X_{t-60:t}\rightarrow LIT101(t+30)
+}
+\]
+
+Predicción del tank level de Stage 1 treinta segundos adelante.
+
+X puede incluir:
+
+- `FIT101`
+- `MV101`
+- `P101/P102`
+- `LIT101`
+- variables aguas arriba/abajo
+- lags y rolling features.
+
+Eso lo convierte directamente en **data-driven dynamic modeling**.
+
+Después:
+
+> ¿Se degrada el modelo cuando el sistema entra en attack/fault conditions?
+
+Eso sería una extensión muy interesante.
+
+### Modelos
+
+- Linear/Ridge
+- KNN
+- Random Forest
+- Gradient Boosting
+- opcional LSTM
+
+### Split
+
+Usaría días/bloques cronológicos completos.
+
+Nunca window rows aleatoriamente.
+
+### Leakage importante
+
+Para fault/attack classification, debe evitarse usar variables que codifiquen directamente la intervención de manera trivial si el objetivo declarado es “prediction before failure”.
+
+Predecir que un ataque **ya está ocurriendo** no equivale a predecirlo antes de que ocurra.
+
+Éste es un problema frecuente en anomaly detection.
+
+### Existing work
+
+El mirror actual de Kaggle muestra alrededor de 10 notebooks, mientras el dataset original es ampliamente usado en investigación con LSTM-VAE, transformers, autoencoders y otros métodos de anomaly detection. :chatgpt-content-reference{index="22"}
+
+### Originalidad
+
+1. Process-output forecasting en vez de otro anomaly detector.
+2. Static vs dynamic ML.
+3. Robustness normal vs attacked operation.
+4. Different forecast horizons.
+5. Model-specific feature importance por stage.
+
+### Viabilidad
+
+**Alta**, pero exige controlar bien el scope.
+
+---
+
+# 4. Condition Monitoring of Hydraulic Systems
+
+Este es particularmente bueno para un proyecto de **sensor-based condition monitoring**.
+
+El banco hidráulico repite ciclos de carga de 60 segundos mientras se miden pressures, flows, temperatures, vibration y otras señales. Hay **2,205 ciclos**, pero cada ciclo contiene mediciones multirate: sensores a 1, 10 y 100 Hz, para un total equivalente a **43,680 raw values por ciclo**. Los labels incluyen cooler condition, valve condition, pump leakage y ac
+````
+
+**Additional direct browser capture of this same message.** Rendered text, not verified original Markdown. UI labels may occur; full unedited DOM/HTML is retained separately.
+
+````text
+ChatGPT said:
+
+Sí. Hice la búsqueda pensando específicamente en DS675, no simplemente en “datasets industriales interesantes”. El filtro principal fue: que pueda formularse como un problema supervisado, que exista una relación física razonable 
+𝑋
+→
+𝑦
+X→y, que la estructura temporal pueda explotarse sin leakage y que haya suficiente espacio para una contribución propia.
+
+La conclusión principal es bastante clara:
+
+Mis dos propuestas para Milestone 1 serían:
+
+Gas Sensor Array under Dynamic Gas Mixtures — mejor equilibrio entre dinámica real, tamaño, multivariable, no linealidad, originalidad y actividad moderada en Kaggle.
+Electric Motor Temperature (PMSM) — probablemente el dataset más fuerte desde el punto de vista profesional/ingenieril, aunque está más explorado; la clave sería convertirlo en un proyecto explícitamente dinámico y corregir la metodología de validación.
+
+Como alternativas, pondría SWaT, Condition Monitoring of Hydraulic Systems y Tennessee Eastman Process.
+
+1. Ranking general
+
+Mi puntuación usa 11 criterios de 1–5:
+
+SP supervised fit · DR dynamic relevance · SZ size · MV multivariable · NL nonlinear potential · TP temporal potential · DQ documentation · KA Kaggle prior work · OH originality headroom · CM course-model compatibility · PV portfolio value.
+
+Rank	Dataset	SP	DR	SZ	MV	NL	TP	DQ	KA	OH	CM	PV	Total /55
+1	Gas Sensor Array – Dynamic Mixtures	5	5	5	5	5	5	5	3	5	5	5	53
+2	Electric Motor Temperature	5	5	5	4	5	5	5	5	3	5	5	52
+3	SWaT Water Treatment	5	5	5	5	5	5	5	4	3	4	5	51
+4	Hydraulic System Condition Monitoring	5	5	3	5	5	5	5	3	4	5	5	50
+5	Tennessee Eastman Process	5	5	5	5	5	5	5	4	2	5	4	50
+6	MetroPT-3	3	5	5	5	5	5	5	2	5	4	5	49
+7	NASA C-MAPSS	5	5	4	5	5	5	5	4	1	5	4	48
+8	CARE Wind-Turbine Early Fault	4	5	5	5	5	5	5	1	5	3	5	48
+9	Machinery Fault / Induction Motor	5	5	3	4	5	5	4	3	4	5	4	47
+10	Pump Sensor Data	4	4	5	5	4	5	2	5	3	5	3	45
+11	Appliances Energy Prediction	5	3	4	5	4	5	5	4	2	4	3	44
+12	Wind Turbine SCADA	5	4	4	2	4	4	4	4	2	5	4	42
+
+La puntuación favorece calidad metodológica y oportunidad de investigación; por eso, por ejemplo, C-MAPSS no queda tan arriba aunque sea excelente técnicamente: es uno de los benchmarks de RUL más explotados que existen.
+
+2. Tabla de candidatos
+Características básicas
+Rank	Kaggle dataset	Sistema	Observaciones	Variables útiles	Temporal	Target propuesto	Tipo	Actividad Kaggle
+1	Gas Sensor Array under Dynamic Gas Mixtures Kaggle	Cámara de gases + array de sensores químicos	4,178,504	16 sensores + tiempo + 2 concentraciones	Sí, 100 Hz	CO, CH₄ o ethylene concentration	Regression	Media: ~9 notebooks, 2.8K downloads
+2	Electric Motor Temperature Kaggle	Permanent-magnet synchronous motor	1,330,816	12 señales + profile_id	Sí, 2 Hz	pm rotor/magnet temperature	Regression	Alta: ~96 notebooks, 31 discussions, 31K+ downloads
+3	SWaT Kaggle	Planta de tratamiento de agua de 6 etapas	~946,719	51 sensores/actuadores	Sí	Future process output o Normal/Attack	Regression / classification	Media
+4	Condition Monitoring of Hydraulic Systems Kaggle	Banco hidráulico experimental	2,205 ciclos	17 sensores; 43,680 valores/ciclo	Sí	valve/cooler/pump/accumulator condition	Classification / regression	Media-baja
+5	Tennessee Eastman Process Kaggle	Proceso químico integrado	~15.3M muestras en 4 sets	41 measured + 11 manipulated variables	Sí, 3 min	Future process variable o fault	Regression / classification	Media en Kaggle; muy alta en literatura
+6	MetroPT-3 Kaggle	Compresor neumático de tren	1,516,948	15 sensores	Sí	Future pressure/temp o derived failure label	Regression / classification	Baja-media
+7	NASA C-MAPSS Kaggle	Turbofan engine degradation	~160K train + 105K test	21 sensors + 3 operating conditions	Sí	Remaining Useful Life	Regression	Muy alta globalmente
+8	Wind Turbine SCADA Early Fault Detection Kaggle	36 wind turbines, 3 wind farms	95 series / 89 turbine-years	86–957 variables según parque	Sí, 10 min	Future anomaly/fault	Classification	Muy baja en Kaggle
+9	Machinery Fault Dataset Kaggle	Motor/machinery vibration rig	1,951 time series	8 sensor channels	Sí, alta frecuencia	Fault category	Classification	Media
+10	Pump Sensor Data Kaggle	Water pump	220,320	52 sensores	Sí, 1 min	Future failure/status	Classification	Alta
+11	Appliances Energy Prediction Kaggle	Edificio residencial térmico/energético	19,735	28 predictors	Sí, 10 min	Appliance energy consumption	Regression	Alta
+12	Wind Turbine SCADA Kaggle	Wind turbine	50,530	Sólo ~4 útiles	Sí, 10 min	Future active power	Regression	Alta
+
+Los tamaños anteriores están respaldados directamente por las páginas de Kaggle o por las fuentes originales UCI/NASA. Por ejemplo, el dataset de gases tiene 4,178,504 instancias y 19 columnas; MetroPT-3 tiene 1,516,948 registros; el hidráulico 2,205 ciclos con 43,680 mediciones crudas por ciclo; y C-MAPSS contiene múltiples trayectorias run-to-failure. 
+UCI Machine Learning Repository
++3
+
+Electric Motor Temperature contiene sesiones diferenciadas por profile_id, muestreadas a 2 Hz durante 185 horas, con voltajes, corrientes, velocidad, torque y temperaturas del motor. 
+Kaggle
++1
+
+Formulación dinámica y riesgos
+Rank	Candidate predictors	Posible formulación dinámica	Strengths	Riesgos	Oportunidad original
+1 Gas	16 sensor signals + lags	
+𝑆
+𝑡
+−
+𝑘
+:
+𝑡
+→
+𝐶
+𝑡
+S
+t−k:t
+	​
+
+→C
+t
+	​
+
+ o 
+𝐶
+𝑡
++
+ℎ
+C
+t+h
+	​
+
+	Dinámica real de sensores, huge N, nonlinear	100 Hz produce fuerte autocorrelación	Static vs lagged soft sensor; horizons; sensor redundancy
+2 Motor	currents, voltages, speed, torque, coolant, ambient + lags	
+𝑥
+𝑡
+−
+𝑘
+:
+𝑡
+→
+𝑇
+𝑃
+𝑀
+,
+𝑡
++
+ℎ
+x
+t−k:t
+	​
+
+→T
+PM,t+h
+	​
+
+	Excelente significado físico	Leakage entre puntos del mismo profile_id	Group validation; thermal memory; horizon study
+3 SWaT	flows, levels, pressures, pumps, valves	
+𝑥
+𝑡
+−
+𝑘
+:
+𝑡
+→
+𝐿
+𝐼
+𝑇
+/
+𝐹
+𝐼
+𝑇
+𝑡
++
+ℎ
+x
+t−k:t
+	​
+
+→LIT/FIT
+t+h
+	​
+
+	Planta multivariable realista	Ataques son intervenciones exógenas	Forecasting normal dynamics + fault robustness
+4 Hydraulic	pressure/flow/temp/vibration profiles	60-s waveform → component condition	Raw temporal signals multi-rate	Sólo 2,205 ciclos independientes	Compare summary features vs temporal representations
+5 TEP	XMEAS + XMV histories	
+(
+𝑢
+,
+𝑦
+)
+𝑡
+−
+𝑘
+:
+𝑡
+→
+𝑦
+𝑡
++
+ℎ
+(u,y)
+t−k:t
+	​
+
+→y
+t+h
+	​
+
+	Es prácticamente un benchmark de system identification	Simulado y extremadamente estudiado	Reorientarlo de fault detection a dynamic prediction
+6 MetroPT	pressures, oil temp, motor current, valve states	history → future pressure / failure window	Real industrial data, huge	Failure target must be engineered	Lead-time labels / operating-regime robustness
+7 C-MAPSS	operating settings + 21 sensors	trajectory → RUL	Muy limpio y natural	Originalidad muy difícil	Classical ML vs sequence models
+8 CARE Wind	large SCADA feature sets	window → impending fault	Real, huge, industrial	5.5 GB; considerable preprocessing	Excellent if scope is tightly reduced
+9 Machinery	vibration + tachometer	waveform → fault class	Strong signal processing project	Only 1,951 independent series	Time/frequency features + model comparison
+10 Pump	52 anonymous sensor signals	window → failure in next H	Long continuous timeline	Only 7 BROKEN points; sensors undocumented	Lead-time engineering, but scientifically risky
+11 Appliances	thermal/environmental sensors	history → energy at 
+𝑡
++
+ℎ
+t+h	Easy to execute	Less “industrial dynamics”	Static vs dynamic forecasting
+12 Wind SCADA	wind speed/direction/power	history → power	Clear target	Only few features; widely analyzed	Horizon comparison
+
+El pump dataset es el ejemplo más engañoso: tiene 220,320 filas pero sólo 7 observaciones directamente etiquetadas BROKEN, además de 14,477 RECOVERING; sus 52 sensores tampoco están físicamente identificados. Eso limita fuertemente una interpretación ingenieril defendible. 
+Medium
++1
+
+3. Top 5 en detalle
+1. Gas Sensor Array under Dynamic Gas Mixtures
+Qué representa físicamente
+
+Es un experimento real de laboratorio en el que 16 sensores químicos están expuestos continuamente a mezclas variables de gases. Se realizaron dos experimentos de unas 12 horas: ethylene + methane y ethylene + CO. Los sensores se muestrearon a 100 Hz mientras las concentraciones cambiaban a intervalos aleatorios de aproximadamente 80–120 segundos. 
+Kaggle
++1
+
+Eso es casi exactamente lo que queremos cuando hablamos de un sistema dinámico no lineal con memoria: la concentración cambia y los sensores no responden instantáneamente.
+
+Problema supervisado recomendado
+
+No usaría simplemente:
+
+𝑆
+(
+𝑡
+)
+→
+𝐶
+(
+𝑡
+)
+S(t)→C(t)
+
+como único experimento.
+
+Propondría:
+
+[
+𝑆
+(
+𝑡
+)
+,
+𝑆
+(
+𝑡
+−
+1
+)
+,
+.
+.
+.
+,
+𝑆
+(
+𝑡
+−
+𝐿
+)
+]
+→
+𝐶
+𝐶
+𝑂
+(
+𝑡
+)
+[S(t),S(t−1),...,S(t−L)]→C
+CO
+	​
+
+(t)
+	​
+
+
+como dynamic soft sensor.
+
+Una extensión:
+
+[
+𝑆
+(
+𝑡
+)
+,
+.
+.
+.
+,
+𝑆
+(
+𝑡
+−
+𝐿
+)
+]
+→
+𝐶
+𝐶
+𝑂
+(
+𝑡
++
+ℎ
+)
+[S(t),...,S(t−L)]→C
+CO
+	​
+
+(t+h)
+
+para estudiar distintos horizons.
+
+X
+
+Los 16 canales de sensores químicos, con:
+
+valores actuales,
+lags,
+diferencias 
+𝑆
+𝑡
+−
+𝑆
+𝑡
+−
+𝑘
+S
+t
+	​
+
+−S
+t−k
+	​
+
+,
+rolling means,
+rolling slopes.
+y
+
+Elegiría inicialmente:
+
+CO concentration [ppm] en ethylene_CO.
+
+Después podría repetirse con ethylene.
+
+No recomiendo empezar con multi-output porque complica el análisis sin aumentar necesariamente el valor del Milestone 1.
+
+¿Lags?
+
+Sí, absolutamente.
+
+La propia motivación del dataset es que los sensores tienen respuesta lenta frente a cambios rápidos de concentración. El dataset fue publicado para investigar continuous monitoring y mejorar response time. 
+Kaggle
+
+Aquí la pregunta científica natural es:
+
+¿Cuánto mejora la estimación de concentración cuando el modelo conoce el historial reciente de los sensores?
+
+Eso es excelente para DS675.
+
+Horizon
+
+Para estimación de concentración:
+
+ℎ
+=
+0
+h=0: soft sensing actual.
+ℎ
+=
+1
+h=1 s.
+ℎ
+=
+5
+h=5 s.
+ℎ
+=
+10
+h=10 s.
+
+No comenzaría con horizontes enormes.
+
+Modelos
+
+Una secuencia muy adecuada al curso:
+
+Linear / Ridge Regression.
+KNN Regression.
+Random Forest.
+Gradient Boosting / XGBoost si se permite.
+SVR en un subset.
+Opcional: MLP/LSTM al final.
+Split correcto
+
+Nunca random row split.
+
+A 100 Hz, dos filas consecutivas están separadas sólo 0.01 s.
+
+Un random split permitiría que una observación a 
+𝑡
+t quede en train y la de 
+𝑡
++
+0.01
+t+0.01 en test.
+
+Eso produciría un test artificialmente fácil.
+
+Usaría bloques cronológicos:
+
+Train: first 60%
+Validation: next 20%
+Test: last 20%
+
+y colocaría un gap de al menos el tamaño máximo de las lag windows.
+
+Kaggle activity
+
+Tiene aproximadamente 9 notebooks, 1 discussion y ~2,800 downloads: suficiente actividad para revisar trabajos existentes, pero muy lejos del nivel de saturación de Titanic, C-MAPSS o Electric Motor Temperature. 
+Kaggle
++1
+
+Este es exactamente el tipo de actividad intermedia que buscabas.
+
+Debilidad habitual
+
+La mayor amenaza metodológica es evaluar los millones de filas como si fueran observaciones IID.
+
+No lo son.
+
+La muestra independiente efectiva es muchísimo menor debido a la autocorrelación temporal.
+
+Tres extensiones originales
+Static vs dynamic representation: current sensors vs sensors + history.
+Lag-window sensitivity: 0.5, 1, 2, 5, 10 seconds.
+Prediction horizon sensitivity: 
+ℎ
+=
+0
+,
+1
+,
+5
+,
+10
+h=0,1,5,10 sec.
+Sensor-ablation study.
+Linear vs nonlinear performance.
+Train on one operating section → evaluate on another.
+Viabilidad
+
+Excelente para un semestre.
+
+Además, no es necesario entrenar usando los 4.18M puntos. Se puede downsample de manera físicamente razonable —por ejemplo de 100 Hz a 5–10 Hz— después de estudiar la dinámica.
+
+Mi evaluación
+
+Mejor candidato global.
+
+2. Electric Motor Temperature — PMSM
+Sistema físico
+
+Son mediciones experimentales de un Permanent Magnet Synchronous Motor en test bench. Hay 185 horas de funcionamiento, muestreo a 2 Hz y múltiples sesiones identificadas mediante profile_id. Incluye u_d, u_q, i_d, i_q, motor speed, torque, coolant, ambient y varias temperaturas. 
+Kaggle
++1
+
+Problema recomendado
+𝑋
+𝑡
+−
+𝐿
+:
+𝑡
+→
+𝑇
+𝑃
+𝑀
+(
+𝑡
++
+ℎ
+)
+X
+t−L:t
+	​
+
+→T
+PM
+	​
+
+(t+h)
+	​
+
+
+donde 
+𝑇
+𝑃
+𝑀
+T
+PM
+	​
+
+ es la temperatura del permanent magnet/rotor.
+
+Esto tiene una interpretación muy atractiva:
+
+Construir un virtual temperature sensor capaz de estimar o anticipar una temperatura interna difícil de medir.
+
+X
+
+Primera versión:
+
+u_d
+u_q
+i_d
+i_q
+motor_speed
+torque
+coolant
+ambient
+
+No usaría profile_id como predictor; es un group identifier.
+
+Luego puede compararse añadiendo temperaturas del stator.
+
+y
+
+pm
+
+Lags
+
+Sí.
+
+Un motor tiene inercia térmica. La temperatura actual no depende sólo de corriente o torque instantáneos sino de la energía disipada durante minutos anteriores.
+
+Aquí hay una excelente comparación:
+
+𝑋
+𝑡
+→
+𝑇
+𝑃
+𝑀
+,
+𝑡
+X
+t
+	​
+
+→T
+PM,t
+	​
+
+
+vs.
+
+𝑋
+𝑡
+−
+𝐿
+:
+𝑡
+→
+𝑇
+𝑃
+𝑀
+,
+𝑡
+X
+t−L:t
+	​
+
+→T
+PM,t
+	​
+
+
+vs.
+
+𝑋
+𝑡
+−
+𝐿
+:
+𝑡
+→
+𝑇
+𝑃
+𝑀
+,
+𝑡
++
+ℎ
+X
+t−L:t
+	​
+
+→T
+PM,t+h
+	​
+
+Horizons
+
+Yo probaría:
+
+current temperature,
++30 sec,
++2 min,
++5 min.
+Modelos
+Linear / Ridge.
+KNN Regressor.
+Random Forest.
+Gradient Boosting.
+Neural network como extensión.
+Split correcto
+
+Aquí existe una oportunidad metodológica particularmente buena.
+
+No mezclar filas del mismo profile_id entre training y testing.
+
+Se debe hacer algo como:
+
+train profiles: ~60%
+validation profiles: ~20%
+test profiles: ~20%
+
+con GroupShuffleSplit o grupos elegidos deliberadamente.
+
+Así el modelo debe generalizar a operating sessions que nunca vio.
+
+Kaggle work existente
+
+Este dataset sí tiene mucha actividad: actualmente alrededor de 96 notebooks, 31 discussions y más de 31,000 downloads. Hay notebooks de regression, rotor-temperature prediction, baseline estimation e incluso trabajo reciente con physics-informed networks. 
+Kaggle
++3
+
+Por qué todavía lo consideraría
+
+Muchos trabajos plantean simplemente:
+
+𝑋
+𝑡
+→
+𝑇
+𝑡
+X
+t
+	​
+
+→T
+t
+	​
+
+
+como tabular regression.
+
+Esa formulación ignora una gran parte de la estructura física.
+
+Incluso trabajos publicados sobre este dataset han empleado train_test_split sobre observaciones; si no se separan las sesiones adecuadamente, pueden mezclarse operating profiles entre train y test. 
+ResearchGate
+
+Por ello tu contribución podría ser:
+
+How much of the reported PMSM temperature-prediction accuracy survives when validation is performed across unseen operating profiles and the dynamic thermal history is modeled explicitly?
+
+Esa es una pregunta mucho más fuerte que “probar Random Forest”.
+
+Extensiones originales
+Random split vs profile-aware split.
+Static vs lagged feature representation.
+Prediction horizons 0–5 min.
+Persistence baseline:
+𝑇
+^
+(
+𝑡
++
+ℎ
+)
+=
+𝑇
+(
+𝑡
+)
+T
+^
+(t+h)=T(t)
+Thermal feature engineering, por ejemplo 
+𝑖
+𝑑
+2
++
+𝑖
+𝑞
+2
+i
+d
+2
+	​
+
++i
+q
+2
+	​
+
+.
+Performance by speed/torque operating regime.
+Viabilidad
+
+Excelente.
+
+Probablemente es el proyecto con mejor aspecto en un portfolio técnico.
+
+3. SWaT — Secure Water Treatment
+
+SWaT es una planta de tratamiento de agua a escala realista con seis etapas y sensores de flow, tank level, pressure, pH/conductivity y actuadores como pumps y valves. El benchmark original contiene aproximadamente 496,800 muestras normales y 449,919 del periodo de ataque, con 51 variables. 
+ScienceDirect
++1
+
+Aunque suele usarse para cybersecurity/anomaly detection, yo no haría ése el proyecto principal.
+
+Formulación DS675 que prefiero
+
+Por ejemplo:
+
+𝑋
+𝑡
+−
+60
+:
+𝑡
+→
+𝐿
+𝐼
+𝑇
+101
+(
+𝑡
++
+30
+)
+X
+t−60:t
+	​
+
+→LIT101(t+30)
+	​
+
+
+Predicción del tank level de Stage 1 treinta segundos adelante.
+
+X puede incluir:
+
+FIT101
+MV101
+P101/P102
+LIT101
+variables aguas arriba/abajo
+lags y rolling features.
+
+Eso lo convierte directamente en data-driven dynamic modeling.
+
+Después:
+
+¿Se degrada el modelo cuando el sistema entra en attack/fault conditions?
+
+Eso sería una extensión muy interesante.
+
+Modelos
+Linear/Ridge
+KNN
+Random Forest
+Gradient Boosting
+opcional LSTM
+Split
+
+Usaría días/bloques cronológicos completos.
+
+Nunca window rows aleatoriamente.
+
+Leakage importante
+
+Para fault/attack classification, debe evitarse usar variables que codifiquen directamente la intervención de manera trivial si el objetivo declarado es “prediction before failure”.
+
+Predecir que un ataque ya está ocurriendo no equivale a predecirlo antes de que ocurra.
+
+Éste es un problema frecuente en anomaly detection.
+
+Existing work
+
+El mirror actual de Kaggle muestra alrededor de 10 notebooks, mientras el dataset original es ampliamente usado en investigación con LSTM-VAE, transformers, autoencoders y otros métodos de anomaly detection. 
+Kaggle
++1
+
+Originalidad
+Process-output forecasting en vez de otro anomaly detector.
+Static vs dynamic ML.
+Robustness normal vs attacked operation.
+Different forecast horizons.
+Model-specific feature importance por stage.
+Viabilidad
+
+Alta, pero exige controlar bien el scope.
+
+4. Condition Monitoring of Hydraulic Systems
+
+Este es particularmente bueno para un proyecto de sensor-based condition monitoring.
+
+El banco hidráulico repite ciclos de carga de 60 segundos mientras se miden pressures, flows, temperatures, vibration y otras señales. Hay 2,205 ciclos, pero cada ciclo contiene mediciones multirate: sensores a 1, 10 y 100 Hz, para un total equivalente a 43,680 raw values por ciclo. Los labels incluyen cooler condition, valve condition, pump leakage y accumulator pressure. 
+Kaggle
++1
+
+Problema recomendado
+
+Por ejemplo:
+
+sensor waveform during 60-s cycle
+→
+valve condition
+sensor waveform during 60-s cycle→valve condition
+	​
+
+
+Classes:
+
+100, 90, 80, 73%.
+
+X
+
+En lugar de usar 43,680 columnas directamente, construir:
+
+mean
+std
+min/max
+RMS
+percentiles
+slope
+peak-to-peak
+early/late cycle means
+
+por sensor.
+
+Luego comparar contra una representación temporal más rica.
+
+y
+
+valve condition.
+
+Luego se puede repetir con pump leakage.
+
+Lags
+
+Aquí haría una distinción:
+
+lags dentro del ciclo: sí.
+
+lags de ciclos anteriores: no necesariamente.
+
+Los estados de componentes fueron experimentalmente establecidos; no es una degradación natural continua.
+
+Modelos
+Logistic Regression
+KNN
+Decision Tree
+Random Forest
+SVM
+Gradient Boosting
+
+Muy alineado con DS675.
+
+Split
+
+La unidad independiente es el cycle, no cada punto de sensor.
+
+Nunca dividir samples dentro de un mismo 60-second cycle entre train y test.
+
+Existing Kaggle work
+
+La actividad es razonable y todavía limitada. Kaggle muestra notebooks de basic EDA/resampling y un trabajo bastante popular con LSTM-autoencoder y clasificación de cooler, valve, pump y accumulator condition. 
+Kaggle
++1
+
+Eso es favorable: tienes trabajo previo para criticar, pero no cientos de notebooks.
+
+Originalidad
+Raw/summary/static features vs dynamic temporal features.
+Multi-sensor ablation.
+KNN scaling sensitivity.
+PCA before KNN/SVM.
+Separate model per fault vs multi-output model.
+Riesgo
+
+2,205 ciclos no es enorme.
+
+Es suficiente para ML clásico, pero no invita naturalmente a deep learning masivo.
+
+Viabilidad
+
+Muy alta para DS675, especialmente si Houle prefiere que el proyecto use varios algoritmos clásicos.
+
+5. Tennessee Eastman Process
+
+Desde control/system identification, probablemente es el dataset más cercano a tus intereses.
+
+TEP representa un proceso químico integrado con reactor, separator, compressor, stripper y recycle. El dataset de Rieth tiene 500 simulation runs por condición, 41 process measurements y 11 manipulated variables. Las muestras están separadas por tres minutos. 
+Kaggle
++1
+
+Pero hay un problema
+
+TEP es probablemente el benchmark de fault detection más estudiado de process systems.
+
+Incluso estudios recientes siguen benchmarkeando decenas de anomaly-detection algorithms sobre él. 
+DOI
++1
+
+Por eso no recomendaría otro:
+
+PCA vs Autoencoder vs LSTM for TEP fault detection.
+
+Sería difícil defender originalidad.
+
+La forma de hacerlo interesante
+
+Usarlo como dynamic system identification / output prediction.
+
+Por ejemplo:
+
+[
+𝑋
+𝑀
+𝑉
+𝑡
+−
+𝐿
+:
+𝑡
+,
+𝑋
+𝑀
+𝐸
+𝐴
+𝑆
+𝑡
+−
+𝐿
+:
+𝑡
+]
+→
+𝑋
+𝑀
+𝐸
+𝐴
+𝑆
+9
+(
+𝑡
++
+ℎ
+)
+[XMV
+t−L:t
+	​
+
+,XMEAS
+t−L:t
+	​
+
+]→XMEAS
+9
+	​
+
+(t+h)
+	​
+
+
+donde XMEAS(9) es reactor temperature.
+
+O seleccionar:
+
+reactor pressure,
+separator pressure,
+compressor work,
+product-related variable.
+Comparación
+
+Static:
+
+𝑋
+𝑡
+→
+𝑦
+𝑡
++
+1
+X
+t
+	​
+
+→y
+t+1
+	​
+
+
+Dynamic:
+
+𝑋
+𝑡
+−
+𝐿
+:
+𝑡
+→
+𝑦
+𝑡
++
+1
+X
+t−L:t
+	​
+
+→y
+t+1
+	​
+
+
+y multi-step:
+
+𝑋
+𝑡
+−
+𝐿
+:
+𝑡
+→
+𝑦
+𝑡
++
+5
+X
+t−L:t
+	​
+
+→y
+t+5
+	​
+
+Split
+
+Aquí es crucial dividir por:
+
+simulationRun
+
+y no por filas.
+
+De lo contrario, train/test contendrían fragmentos del mismo simulated trajectory.
+
+Modelos
+Linear Regression
+Ridge
+KNN
+Random Forest
+Gradient Boosting
+SVR
+Existing Kaggle work
+
+El Kaggle dataset tiene alrededor de 15 notebooks y existen notebooks populares específicamente de fault detection/anomaly detection. 
+Kaggle
++1
+
+La investigación académica, sin embargo, está mucho más saturada que la actividad de Kaggle sugiere.
+
+Originalidad
+Prediction en vez de detection.
+Inputs-only vs inputs + output-history.
+One-step vs multi-step.
+Performance by fault/operating regime.
+Linear vs nonlinear identification.
+Viabilidad
+
+Técnicamente excelente, pero tendría que explicar a Houle explícitamente cuál es la contribución que lo diferencia de décadas de TEP research.
+
+4. Por qué no elegiría los otros candidatos primero
+
+MetroPT-3 me gusta bastante. Tiene más de 1.5M observaciones reales, presión, temperatura, motor current y señales de válvulas. El problema es que el dataset original es esencialmente unlabeled y las fallas se proporcionan mediante intervalos/reportes. Habría que construir tú mismo el target supervisado. 
+Kaggle
++1
+
+Eso puede producir un gran proyecto, pero añade una discusión incómoda en Milestone 1: “¿cuál es exactamente mi ground truth?”.
+
+C-MAPSS tiene quizá la formulación supervisada más limpia de todas:
+
+sensor trajectory
+→
+𝑅
+𝑈
+𝐿
+sensor trajectory→RUL
+
+pero está extremadamente explotado. Tiene 21 sensores, múltiples engines, operating conditions y run-to-failure trajectories. 
+Kaggle
++1
+
+Lo usaría sólo si quisieras específicamente hacer predictive maintenance/RUL y aceptar menor originalidad.
+
+CARE Wind Turbine es científicamente excelente: datos reales de 36 turbinas, 3 parques, 89 turbine-years, hasta 957 variables y 44 series con anomaly events. 
+Kaggle
+
+Pero tiene dos inconvenientes para este curso: unos 5.5 GB y prácticamente nada de Kaggle notebook activity. Puede convertirse fácilmente en un proyecto de data engineering mayor que el propio ML.
+
+Pump Sensor parece fantástico hasta que se mira el label: sólo siete BROKEN. Además, no sabemos qué representan físicamente los 52 sensores. Eso dificulta muchísimo interpretar feature importance, state variables o mecanismos físicos. 
+Medium
++1
+
+Wind Turbine SCADA es limpio y fácil, pero tiene sólo power, wind speed, theoretical power y wind direction. Es demasiado estrecho comparado con las opciones superiores y ya existen decenas de notebooks. 
+Kaggle
++1
+
+5. Mis dos propuestas para Milestone 1
+Proposal A — Gas Sensor Array under Dynamic Gas Mixtures
+Título provisional
+
+Dynamic Soft-Sensor Modeling of Gas Concentration Using Multivariate Chemical Sensor Time Series
+
+Pregunta central
+
+Does incorporating recent sensor history significantly improve gas-concentration estimation compared with static machine-learning models?
+
+X
+
+16 gas sensors:
+
+𝑆
+1
+,
+…
+,
+𝑆
+16
+S
+1
+	​
+
+,…,S
+16
+	​
+
+
+más lags/rolling features.
+
+y
+
+CO concentration.
+
+ML problem
+
+Regression.
+
+Modelos iniciales
+
+Linear/Ridge → KNN → Random Forest → Gradient Boosting.
+
+Experimento principal
+Model representation	Input
+Static	
+𝑆
+𝑡
+S
+t
+	​
+
+
+Short-memory	
+𝑆
+𝑡
+−
+1
+𝑠
+:
+𝑡
+S
+t−1s:t
+	​
+
+
+Medium-memory	
+𝑆
+𝑡
+−
+5
+𝑠
+:
+𝑡
+S
+t−5s:t
+	​
+
+
+Long-memory	
+𝑆
+𝑡
+−
+10
+𝑠
+:
+𝑡
+S
+t−10s:t
+	​
+
+
+Eso por sí solo produce una narrativa de proyecto muy sólida.
+
+Por qué satisface los criterios de Houle
+
+Tiene target claro, millones de registros, predictores físicamente vinculados al target, regression, múltiples algoritmos aplicables y mucho espacio para feature engineering, validation y model evaluation. Además encaja con los learning outcomes del syllabus relacionados con identificar problemas adecuados para ML, evaluar recursos y adaptar modelos al dataset.
+
+Nivel de Kaggle activity
+
+Muy favorable: suficiente para revisar trabajo previo, pero sólo alrededor de nueve notebooks. 
+Kaggle
+
+Contribución probable
+
+Demostrar cuantitativamente el valor de la memoria temporal para construir un soft sensor de un sistema con respuesta dinámica lenta.
+
+Eso es conceptualmente muy cercano a system identification sin forzar una interpretación.
+
+Riesgos a investigar primero
+Autocorrelation extrema.
+Downsampling adecuado.
+Drift durante las 12 horas.
+Effective sample size.
+Adecuada longitud de la lag window.
+Proposal B — PMSM Electric Motor Temperature
+Título provisional
+
+Dynamic Thermal Modeling of a Permanent-Magnet Synchronous Motor Using Machine Learning
+
+Pregunta central
+
+How much does thermal-history information improve future rotor-temperature prediction, and how well do models generalize to unseen operating profiles?
+
+X
+
+Electrical/mechanical inputs:
+
+𝑢
+𝑑
+,
+𝑢
+𝑞
+,
+𝑖
+𝑑
+,
+𝑖
+𝑞
+,
+speed
+,
+torque
+,
+coolant
+,
+ambient
+u
+d
+	​
+
+,u
+q
+	​
+
+,i
+d
+	​
+
+,i
+q
+	​
+
+,speed,torque,coolant,ambient
+
+más temporal history.
+
+y
+𝑇
+𝑃
+𝑀
+(
+𝑡
++
+ℎ
+)
+T
+PM
+	​
+
+(t+h)
+ML problem
+
+Regression.
+
+Experimento principal
+
+Static vs dynamic prediction under profile-aware validation.
+
+Eso permite estudiar simultáneamente:
+
+temporal dependence,
+nonlinear modeling,
+leakage,
+generalization.
+Por qué satisface los criterios de Houle
+
+Tiene 1.33M muestras, target claramente definido, variables ingenieriles interpretables, relaciones no lineales, múltiples operating sessions y compatibilidad prácticamente perfecta con los algoritmos del curso. 
+Bouz1
++1
+
+Problema: está bastante explorado
+
+Sí.
+
+Tiene ~96 Kaggle notebooks. 
+Kaggle
+
+Pero eso también permite cumplir muy bien la parte de evaluar críticamente recursos online.
+
+La propuesta no sería “predict motor temperature”.
+
+Sería:
+
+Evaluate whether common random/static validation approaches overestimate PMSM thermal-model performance, and determine the benefit of explicit temporal history for prediction across unseen operating profiles.
+
+Eso ya es una contribución.
+
+Contribución probable
+Quantify random-split optimism.
+Quantify benefit of temporal memory.
+Determine useful prediction horizon.
+Analyze generalization across torque/speed regimes.
+Riesgos
+Target persistence puede ser extremadamente fuerte.
+Other temperature signals may act as near-proxies for pm.
+profile_id leakage.
+Need a meaningful persistence baseline.
+6. Cuál de los dos escogería primero
+
+Si hoy hubiera que enviar un solo dataset, yo escogería:
+
+#1 Gas Sensor Array under Dynamic Gas Mixtures
+
+Porque combina algo raro:
+
+real physical system + multivariable + nonlinear + huge time series + supervised regression + clear target + moderate Kaggle activity + strong originality headroom.
+
+Además, la historia del proyecto es elegantemente simple:
+
+multivariate sensor history
+→
+gas concentration
+multivariate sensor history→gas concentration
+
+y la hipótesis principal es fácil de explicar:
+
+Dynamic features should outperform static features because sensor response has memory.
+Dynamic features should outperform static features because sensor response has memory.
+	​
+
+
+Eso conecta directamente tus intereses en system identification y dynamic modeling con métodos que realmente pertenecen a DS675.
+
+#2 Electric Motor Temperature
+
+Lo pondría como la alternativa más segura y profesional.
+
+Su problema no es calidad del dataset —es excelente— sino popularidad. Aun así, una validación por profile_id + lags + future horizon puede convertirlo en un proyecto considerablemente más riguroso que gran parte del trabajo tabular existente.
+
+7. La decisión que presentaría al profesor
+
+Yo llevaría estas dos opciones a Milestone 1:
+
+Option 1: Dynamic soft-sensor modeling for gas concentration using the Gas Sensor Array under Dynamic Gas Mixtures dataset. The project will compare static and history-based feature representations for predicting gas concentration from 16 chemical sensors under temporally varying operating conditions.
+
+Option 2: Dynamic thermal modeling of a PMSM using the Electric Motor Temperature dataset. The project will predict current and future permanent-magnet temperature from electrical, mechanical and cooling measurements, comparing static and lagged representations and using profile-aware validation to prevent temporal/session leakage.
+
+Entre las dos, Option 1 tiene más originalidad; Option 2 tiene más portfolio/engineering value.
+
+Una tercera opción que sí llevaría preparada por si Houle rechaza alguna sería Hydraulic System Condition Monitoring, no C-MAPSS ni Pump Sensor.
+
+También evitaría presentar TEP como primera elección, aunque encaja espectacularmente con tus intereses: su enorme historial como benchmark hace más difícil justificar novedad. El propio trabajo reciente sobre TEP sigue describiéndolo como un benchmark extensamente investigado. 
+DNB
++1
+
+Si quieres, el siguiente paso útil es convertir Gas Sensor + Electric Motor en un borrador completo de Mini-Project Milestone 1, incluyendo problem statement, dataset justification, proposed X/y, train/validation/test methodology, candidate algorithms, metrics, baseline, risks y contribution. 
+````
+
+## Turn 2
+
+- ID: bbb21c52-9562-475b-8adf-39d591d33fab
+- startedAt: 1788752537.601413 (2026-09-07T03:42:17.601413+00:00)
+- completedAt: 1788752609.577627 (2026-09-07T03:43:29.577627+00:00)
+
+<a id="message-bbb21c52-9562-475b-8adf-39d591d33fab"></a>
+### user — bbb21c52-9562-475b-8adf-39d591d33fab
+
+````text
+parecidos a SWat o Hydraulic, me llaman la atencion. haz una nueva preseleccion en estos temas teniendo en vista la orientacion SCADA, control, modelado, etc...
+````
+
+<a id="message-ce5b743b-63ac-460b-84c5-8347ae1c0840"></a>
+### assistant — ce5b743b-63ac-460b-84c5-8347ae1c0840
+
+**Archive notice: source explicitly flags this message or content part as truncated.**
+
+````text
+Sí. Con la orientación que acabas de precisar —**SCADA, PLC/DCS, sensores + actuadores, lazos de control, dinámica de proceso, fault detection y modelado**— cambiaría bastante la preselección anterior.
+
+Ahora privilegiaría datasets donde se pueda pensar explícitamente en:
+
+\[
+\boxed{
+[u(t-k:t),\,y(t-k:t),\,d(t-k:t)]
+\longrightarrow
+y(t+h)\ \text{o estado/falla}
+}
+\]
+
+donde \(u\) son acciones de control/actuadores, \(y\) variables medidas del proceso y \(d\) perturbaciones/condiciones operativas.
+
+## Nueva preselección
+
+| Rank | Dataset | Sistema | SCADA / control | Dinámica | Target natural | Mi valoración |
+|---:|---|---|---|---|---|---|
+| **1** | **WADI** | Distribución de agua | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | nivel/presión futura o anomalía | **Excelente** |
+| **2** | **HAI** | Boiler + turbine + water treatment + HIL | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | variable física futura / ataque | **Excelente** |
+| **3** | **PRONTO** | Multiphase oil/water/air flow facility | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | fault / pressure / flow | **Excelente** |
+| **4** | **DAMADICS** | Válvula/actuador industrial en planta azucarera | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | actuator fault / valve response | **Muy fuerte** |
+| **5** | **SKAB** | Water loop + pump + valves | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | anomaly / pressure / flow | **Muy buena** |
+| **6** | **BATADAL** | Water distribution SCADA | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | tank level / attack | **Muy buena** |
+| **7** | **3W Petrobras** | Offshore oil wells | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | undesirable event / early warning | **Muy buena** |
+| **8** | **Cranfield Multiphase Flow** | Three-phase flow process | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | fault / process output | **Buena–muy buena** |
+| **9** | **Tennessee Eastman** | Planta química completa | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | process output / fault | Excelente técnicamente, menor originalidad |
+
+Pero los **primeros cinco** son los que investigaría más a fondo para tu proyecto.
+
+---
+
+# 1. WADI — probablemente el sucesor natural de SWaT
+
+[WADI en Kaggle](https://www.kaggle.com/datasets/giovannimonco/wadi-data?utm_source=chatgpt.com)
+
+Si SWaT te llamó la atención, **WADI debería estar muy arriba en tu lista**.
+
+WADI fue desarrollado por el mismo ecosistema de iTrust y representa una red de distribución de agua a escala física. Tiene **16 días de operación continua: 14 normales y 2 con ataques**, y registra **123 sensores y actuadores**. El sistema está organizado en subprocesses con PLC, bombas, válvulas, tanques, presión, caudal y otras variables. La versión disponible en Kaggle tiene alrededor de 1.2 millones de registros y 261 columnas en los archivos publicados. :chatgpt-content-reference{index="1"}
+
+Conceptualmente se parece mucho más a un sistema SCADA real:
+
+\[
+\text{PLC}
+\rightarrow
+\text{Pump/Valve}
+\rightarrow
+\text{Physical Process}
+\rightarrow
+\text{Flow/Pressure/Level}
+\rightarrow
+\text{PLC}
+\]
+
+Eso es exactamente lo que queremos.
+
+### Formulación que me interesa
+
+En lugar de hacer simplemente:
+
+\[
+X_t\rightarrow Attack_t
+\]
+
+haría primero **modelado del proceso físico**:
+
+\[
+\boxed{
+X_{t-60:t}\rightarrow L_{tank}(t+30)
+}
+\]
+
+o
+
+\[
+X_{t-60:t}\rightarrow P(t+30)
+\]
+
+donde \(X\) contiene:
+
+- valve states,
+- pump states,
+- flows,
+- pressures,
+- tank levels,
+- históricos de esas variables.
+
+Después puedes usar el **residual de predicción**
+
+\[
+e(t)=y(t)-\hat y(t)
+\]
+
+como indicador de comportamiento anormal.
+
+Ahí ya estás acercándote conceptualmente a **model-based fault detection**, pero usando ML.
+
+### Proyecto particularmente interesante
+
+**Static vs Dynamic Machine Learning for SCADA Process Modeling**
+
+Comparar:
+
+\[
+X_t\rightarrow y_{t+30}
+\]
+
+contra
+
+\[
+[X_t,X_{t-1},...,X_{t-k}]
+\rightarrow y_{t+30}
+\]
+
+con:
+
+- Linear/Ridge
+- KNN
+- Random Forest
+- Gradient Boosting
+
+Esto está extremadamente bien alineado con DS675.
+
+### Riesgo
+
+La mayoría de la literatura WADI está orientada a **cyberattack/anomaly detection**. Si simplemente reproduces esa clasificación, entrarías en un área bastante transitada. :chatgpt-content-reference{index="2"}
+
+La oportunidad está en **tratarlo como proceso dinámico controlado**, no como dataset de cybersecurity.
+
+### Mi nota
+
+**9.5/10 para tus intereses.**
+
+---
+
+# 2. HAI — posiblemente el más interesante desde SCADA/DCS/control
+
+[HAI Security Dataset en Kaggle](https://www.kaggle.com/datasets/icsdataset/hai-security-dataset?utm_source=chatgpt.com)
+
+Este apareció mucho más fuerte después de aplicar tu nuevo criterio.
+
+HAI significa **HIL-based Augmented Industrial Control System**. El testbed combina cuatro procesos:
+
+- boiler,
+- turbine,
+- water treatment,
+- Hardware-in-the-Loop power simulation.
+
+Pero lo verdaderamente interesante es el hardware/control detrás.
+
+El boiler usa **Emerson Ovation DCS**, el turbine process usa **GE Mark VIe DCS**, el water-treatment process un **Siemens S7-300 PLC**, y el HIL está interconectado mediante Siemens S7-1500/ET200 y OPC. Además, los procesos fueron conectados para generar variables físicamente acopladas. :chatgpt-content-reference{index="4"}
+
+Esto es mucho más cercano a un ambiente industrial SCADA/DCS que prácticamente cualquier dataset clásico de Kaggle.
+
+## ¿Por qué me gusta?
+
+Porque no tenemos sólo:
+
+\[
+Sensor\rightarrow Label
+\]
+
+Tenemos algo parecido a:
+
+\[
+\text{controllers}
++
+\text{actuators}
++
+\text{physical states}
++
+\text{feedback loops}.
+\]
+
+Y las series son continuas en el tiempo. Las versiones recientes contienen decenas de tags SCADA y cientos de horas de operación normal y anómala. :chatgpt-content-reference{index="5"}
+
+## Formulación A — system modeling
+
+Seleccionar uno de los subsistemas, por ejemplo water treatment:
+
+\[
+\boxed{
+[u(t-k:t),y(t-k:t)]
+\rightarrow
+y(t+h)
+}
+\]
+
+Ejemplo conceptual:
+
+\[
+\text{pump/valve commands + historical level/flow}
+\rightarrow
+\text{future water level}
+\]
+
+Esto sería casi un **black-box system identification problem**.
+
+## Formulación B — predictive fault detection
+
+Otra posibilidad:
+
+\[
+X_{t-k:t}\rightarrow
+P(\text{abnormal condition in next }h)
+\]
+
+que es más interesante que simplemente identificar un ataque que ya está ocurriendo.
+
+## Formulación C — residual-based diagnosis
+
+Entrenas el modelo sólo sobre comportamiento normal:
+
+\[
+\hat y(t+1)=f(X_{t-k:t})
+\]
+
+y calculas:
+
+\[
+r(t)=y(t)-\hat y(t).
+\]
+
+Después:
+
+\[
+r(t)\rightarrow\text{normal/fault}
+\]
+
+Esto tiene una conexión preciosa con **Fault Detection and Isolation (FDI)**.
+
+## Actividad Kaggle
+
+Curiosamente está bastante bien situado para tu criterio: Kaggle muestra alrededor de **8 notebooks y ninguna discusión**, mientras el dataset tiene documentación formal, competiciones HAICon y resultados publicados fuera de Kaggle. :chatgpt-content-reference{index="6"}
+
+Es decir:
+
+**documentación científica fuerte + Kaggle no saturado.**
+
+### Riesgo
+
+Es complejo.
+
+Tendríamos que escoger **un subsystem**, no modelar todo HAI.
+
+### Mi nota
+
+**9.5/10.**
+
+Para portfolio orientado a control/automation/industrial ML incluso me gusta más que WADI.
+
+---
+
+# 3. PRONTO Heterogeneous Benchmark
+
+[PRONTO en Kaggle](https://www.kaggle.com/datasets/afrniomelo/pronto-benchmark?utm_source=chatgpt.com)
+
+Este es uno de los descubrimientos más interesantes de esta nueva búsqueda.
+
+PRONTO proviene de una **industrial-scale multiphase flow facility** y fue diseñado explícitamente para:
+
+- process monitoring,
+- condition monitoring,
+- fault detection,
+- fault diagnosis,
+- heterogeneous sensor fusion.
+
+Contiene process measurements, alarm records, high-frequency pressure measurements, ultrasonic flow measurements y logs de operación, con múltiples operating conditions y fallas inducidas. :chatgpt-content-reference{index="8"}
+
+Es decir, está mucho más cerca de:
+
+**process systems engineering + industrial control**
+
+que de un dataset típico de ML.
+
+## Sistema
+
+Una instalación de flujo multifásico donde coexisten:
+
+- gas/air,
+- water,
+- oil,
+- separator,
+- pipelines,
+- pressure,
+- flow,
+- diferentes operating conditions.
+
+Eso genera relaciones altamente no lineales.
+
+## Problema DS675 que propondría
+
+No usaría todos los datos multimodales.
+
+Tomaría **las señales de proceso SCADA de baja frecuencia** y plantearía:
+
+\[
+X_{t-k:t}\rightarrow y_{t+h}
+\]
+
+para alguna variable clave de pressure/flow.
+
+Luego:
+
+\[
+\text{prediction residuals}\rightarrow\text{fault state}.
+\]
+
+Alternativamente:
+
+\[
+X_{t-k:t}\rightarrow\text{fault class}.
+\]
+
+## Algo especialmente interesante
+
+Comparar:
+
+### Modelo estático
+
+\[
+y_t=f(X_t)
+\]
+
+### Dynamic ML
+
+\[
+y_t=f(X_t,X_{t-1},...,X_{t-k})
+\]
+
+### Fault detection
+
+\[
+r_t=y_t-\hat y_t
+\]
+
+Es casi la unión perfecta entre:
+
+**ML + system identification + process monitoring.**
+
+## Kaggle
+
+El dataset tiene aproximadamente **450 downloads**, unos **6,000 views**, pero sólo **1 notebook y 1 discussion** registrados en la página que encontré. :chatgpt-content-reference{index="9"}
+
+Aquí sí hay enorme **originality headroom**.
+
+## Problema
+
+Es grande: Kaggle reporta unos **4.37 GB y 407 archivos**. :chatgpt-content-reference{index="10"}
+
+Eso puede ser una bendición o una maldición.
+
+Habría que reducir deliberadamente el problema.
+
+### Mi nota
+
+**9.3/10 científicamente.**
+
+**8.5/10 para facilidad de ejecución.**
+
+---
+
+# 4. DAMADICS — el más “Control Engineering” de todos
+
+[DAMADICS en Kaggle](https://www.kaggle.com/datasets/afrniomelo/damadics-actuator-benchmark-lublin-sugar-factory?utm_source=chatgpt.com)
+
+Este me parece especialmente interesante para ti.
+
+DAMADICS significa básicamente un benchmark para **actuator diagnosis in industrial control systems**.
+
+El sistema es un **electro-pneumatic control valve actuator** utilizado en una fábrica de azúcar real en Lublin, Polonia.
+
+El benchmark fue construido específicamente alrededor de:
+
+- closed-loop operation,
+- nonlinear static/dynamic behavior,
+- control valves,
+- servomotor,
+- actuator position,
+- control signals,
+- pressure,
+- flow,
+- temperature,
+- faults.
+
+Se definieron **19 tipos de fallas**, incluyendo valve clogging, sedimentation, erosion, increased friction, external/internal leakage y fallas del servomotor/positioner. :chatgpt-content-reference{index="12"}
+
+Aquí no estamos buscando una interpretación de control.
+
+**El dataset nació de control engineering.**
+
+## Representación
+
+Podrías conceptualizar:
+
+\[
+CV(t)\rightarrow
+\text{actuator}\rightarrow
+\text{valve position}\rightarrow
+\text{process flow}.
+\]
+
+Con sensores adicionales:
+
+\[
+\{CV,P,T,F,Z,\ldots\}
+\]
+
+donde aparecen variables de controller output, pressures, flow y valve/rod position. :chatgpt-content-reference{index="13"}
+
+## Proyecto A
+
+### Data-driven actuator model
+
+\[
+\boxed{
+[u(t-k:t),y(t-k:t)]
+\rightarrow
+Z(t+1)
+}
+\]
+
+con \(Z\) como valve position.
+
+Entonces comparar:
+
+- Linear Regression
+- KNN
+- Random Forest
+- Gradient Boosting.
+
+## Proyecto B
+
+Más interesante:
+
+### Fault detection using model residuals
+
+Construir un modelo del actuator normal:
+
+\[
+\hat y(t)=f(u(t-k:t),y(t-k:t-1))
+\]
+
+Residual:
+
+\[
+r(t)=y(t)-\hat y(t)
+\]
+
+y posteriormente:
+
+\[
+r(t)\rightarrow \text{fault class}.
+\]
+
+Eso es **machine-learning-based FDI**.
+
+## Originalidad
+
+Kaggle muestra actualmente **0 notebooks y 0 discussions**. :chatgpt-content-reference{index="14"}
+
+Eso me genera dos reacciones.
+
+Por un lado:
+
+**enorme originalidad en Kaggle.**
+
+Pero también:
+
+hay menos recursos para comparar con Houle's “existing Kaggle work”.
+
+Por eso no lo pongo #1.
+
+## Otra consideración
+
+Es antiguo —la investigación DAMADICS proviene de principios de los 2000— aunque conceptualmente sigue siendo extremadamente relevante para actuator fault diagnosis. :chatgpt-content-reference{index="15"}
+
+### Mi nota
+
+**9.2/10 por afinidad con control.**
+
+Probablemente es el que más disfrutarías conceptualmente.
+
+---
+
+# 5. SKAB — como un “Hydraulic mini-SWaT”
+
+[SKAB en Kaggle](https://www.kaggle.com/datasets/yuriykatser/skoltech-anomaly-benchmark-skab?utm_source=chatgpt.com)
+
+SKAB me parece una opción que no deberíamos ignorar.
+
+Es un testbed físico con:
+
+- water tank,
+- motor-driven water pump,
+- dos solenoid valves,
+- pressure sensor,
+- flow sensor,
+- motor current,
+- motor voltage,
+- pump vibration,
+- motor temperature,
+- fluid temperature.
+
+Se introducen fallas físicas como cierre de válvula, aumento de temperatura y rotor imbalance. La adquisición usa OPC UA. :chatgpt-content-reference{index="17"}
+
+¿Te suena familiar?
+
+Es prácticamente una intersección de:
+
+**Hydraulic System + SWaT + predictive maintenance.**
+
+## Variables
+
+Entre las variables publicadas están:
+
+\[
+\begin{aligned}
+&Current\\
+&Voltage\\
+&Pressure\\
+&RateRMS\\
+&Temperature\\
+&Thermocouple\\
+&Accelerometer1RMS\\
+&Accelerometer2RMS
+\end{aligned}
+\]
+
+además de:
+
+- `anomaly`,
+- `changepoint`. :chatgpt-content-reference{index="18"}
+
+
+## Proyecto
+
+Un enfoque directo sería:
+
+\[
+X_{t-k:t}\rightarrow anomaly_{t+h}.
+\]
+
+Pero me parece más interesante:
+
+\[
+[\text{voltage,current,valve context,history}]
+\rightarrow
+[\text{pressure, flow}]
+\]
+
+y utilizar las desviaciones del comportamiento esperado para fault detection.
+
+## Ventaja enorme
+
+Es mucho más manejable que HAI/WADI.
+
+Hay sólo alrededor de **35 experiments** en la versión 0.9. :chatgpt-content-reference{index="19"}
+
+## Desventaja
+
+Precisamente ése es también su problema.
+
+Las observaciones temporales pueden ser muchas, pero sólo tenemos unas decenas de **experimentos independientes**.
+
+Por tanto, no debemos decir:
+
+> “tengo cientos de miles de independent observations”.
+
+No sería cierto.
+
+El split correcto debería ser:
+
+\[
+\boxed{\text{train experiments}\neq\text{test experiments}}
+\]
+
+no random rows.
+
+### Mi nota
+
+**8.9/10.**
+
+Para un mini-project manejable, puede terminar siendo mejor que algunos datasets enormes.
+
+---
+
+# 6. BATADAL — SCADA clásico en distribución de agua
+
+[BATADAL en Kaggle](https://www.kaggle.com/datasets/minhbtnguyen/batadal-a-dataset-for-cyber-attack-detection?utm_source=chatgpt.com)
+
+Este está muy cerca de SWaT conceptualmente.
+
+El sistema C-Town contiene:
+
+- **7 tanks**
+- **11 pumps**
+- actuated valve
+- tank levels
+- pump states
+- pump flows
+- pressures.
+
+Hay **43 variables más la etiqueta de ataque**. :chatgpt-content-reference{index="21"}
+
+La estructura es muy clara:
+
+\[
+\text{Pump/Valve states}
+\rightarrow
+\text{flows}
+\rightarrow
+\text{pressures}
+\rightarrow
+\text{tank levels}.
+\]
+
+Eso es excelente desde control.
+
+## Problema dinámico
+
+Ejemplo:
+
+\[
+[
+L_{T1}(t-k:t),F_{PU1}(t-k:t),
+S_{PU1}(t-k:t),P(t-k:t)
+]
+\rightarrow
+L_{T1}(t+h)
+\]
+
+con:
+
+\[
+h=1,2,3,\ldots \text{ horas}.
+\]
+
+Después analizar qué pasa durante ataques.
+
+Esto podría convertirse en:
+
+> **Data-driven dynamic state prediction for a SCADA-controlled water distribution network**
+
+Muy buen título.
+
+## Principal problema
+
+BATADAL es **simulado**, aunque utiliza un water-distribution network físicamente consistente y SCADA variables. La primera serie normal equivale aproximadamente a un año y está muestreada cada hora. :chatgpt-content-reference{index="22"}
+
+Por eso lo pondría debajo de WADI/HAI/PRONTO.
+
+---
+
+# 7. Petrobras 3W
+
+[3W Dataset en Kaggle](https://www.kaggle.com/datasets/afrniomelo/3w-dataset?utm_source=chatgpt.com)
+
+Este es menos SCADA/control puro y más **industrial process monitoring**, pero es muy serio.
+
+Es un conjunto de multivariate time series de offshore oil wells con eventos reales raros validados por expertos. Incluye eventos como:
+
+- severe slugging,
+- flow instability,
+- abrupt increase of BSW,
+- productivity loss,
+- restrictions,
+- safety-valve events. :chatgpt-content-reference{index="24"}
+
+
+La versión de Kaggle tiene **1,984 series CSV** en la versión allí publicada, y existe además una versión 2.0.0 descrita en 2026 con nuevas instancias y variables. :chatgpt-content-reference{index="25"}
+
+## Proyecto ideal
+
+No:
+
+\[
+X_t\rightarrow Fault_t
+\]
+
+sino:
+
+\[
+\boxed{
+X_{t-k:t}\rightarrow
+P(\text{undesirable event in next }h)
+}
+\]
+
+Eso transforma fault detection en **early fault prediction**.
+
+Para portfolio industrial es fantástico.
+
+Pero desde tu interés actual lo considero más:
+
+**process monitoring**
+
+que:
+
+**control-system modeling**.
+
+---
+
+# 8. Cranfield Multiphase Flow Facility
+
+[Cranfield Multiphase Flow en Kaggle](https://www.kaggle.com/datasets/afrniomelo/cranfield?utm_source=chatgpt.com)
+
+Este benchmark proviene de una instalación física de three-phase flow.
+
+Estudios recientes describen alrededor de **24 sensors** midiendo temperatura, presión y caudales de aire, agua y aceite, con operación normal y seis fault types. :chatgpt-content-reference{index="27"}
+
+Es un excelente sistema no lineal porque el flujo multifásico presenta:
+
+- different regimes,
+- nonlinear pressure drop,
+- interactions gas/liquid,
+- operating-mode transitions.
+
+Para:
+
+\[
+X_{t-k:t}\rightarrow P_{separator}(t+h)
+\]
+
+o fault classification sería muy bueno.
+
+Sin embargo, **PRONTO utiliza una instalación multiphase industrial-scale y ofrece una versión muchísimo más rica y heterogénea del problema**, por lo que inicialmente investigaría PRONTO antes que Cranfield. :chatgpt-content-reference{index="28"}
+
+---
+
+# Cómo quedan SWaT y Hydraulic ahora
+
+Con esta nueva orientación, usaría tus dos favoritos como puntos de referencia:
+
+| Dataset | Lo interesante |
+|---|---|
+| **SWaT** | SCADA + PLC + pumps/valves + real physical process |
+| **Hydraulic** | Component condition + pressure/flow/temp + controlled experiment |
+| **WADI** | **SWaT más grande y orientado a distribución** |
+| **HAI** | **SWaT + DCS + turbine + boiler + HIL** |
+| **PRONTO** | **process plant + faults + heterogeneous industrial measurements** |
+| **DAMADICS** | **pure actuator/control/FDI benchmark** |
+| **SKAB** | **Hydraulic + valves + pump + OPC-UA + faults** |
+
+Esa última tabla resume bastante bien dónde está el sweet spot.
+
+# Mi shortlist real ahora
+
+Después de esta segunda búsqueda, yo **dejaría Gas Sensor y PMSM en segundo plano** y concentraría la investigación en cuatro candidatos.
+
+### 🥇 HAI — si quieres máxima orientación SCADA/control
+
+Lo veo como:
+
+\[
+\boxed{
+\text{Industrial control system}
++
+\text{DCS/PLC}
++
+\text{physical dynamics}
++
+\text{ML}
+}
+\]
+
+La idea que más me interesa sería escoger **un solo subsystem**, probablemente water treatment o boiler, y hacer:
+
+> **Data-driven dynamic process modeling and fault detection in an industrial control system using time-aware machine learning.**
+
+---
+
+### 🥈 WADI — si quieres algo cercano a SWaT y relativamente fácil de defender
+
+Aquí tenemos una narrativa muy limpia:
+
+\[
+\boxed{
+\text{Pump/valve history}
++
+\text{process history}
+\rightarrow
+\text{future pressure/level}
+}
+\]
+
+y posteriormente:
+
+\[
+prediction\ residual
+\rightarrow anomaly.
+\]
+
+Muy defendible.
+
+---
+
+### 🥉 DAMADICS — si quieres que el proyecto huela a Control Engineering
+
+Éste es el candidato con la conexión más directa a:
+
+- actuator modeling,
+- valve dynamics,
+- closed-loop systems,
+- nonlinear systems,
+- fault detection/isolation.
+
+Una pregunta de investigación especialmente fuerte sería:
+
+\[
+\boxed{
+\text{Can ML models learn the normal nonlinear input-output dynamics of an industrial actuator sufficiently well for residual-based fault detection?}
+}
+\]
+
+Eso me parece excelente.
+
+---
+
+### 🏅 PRONTO — si quieres el proyecto técnicamente más ambicioso
+
+Aquí podrías hacer algo muy parecido a **data-driven system identification de un proceso industrial**.
+
+Tiene probablemente el mayor potencial técnico de todos, pero debemos verificar cuánto trabajo de preprocessing implica antes de comprometernos.
+
+---
+
+## Mi ranking sólo por afinidad con lo que acabas de describir
+
+\[
+\boxed{
+HAI
+\approx
+WADI
+>
+DAMADICS
+\approx
+PRONTO
+>
+SWaT
+>
+SKAB
+>
+Hydraulic
+>
+BATADAL
+>
+3W
+>
+TEP
+}
+\]
+
+No significa que HAI sea automáticamente el mejor proyecto para DS675. Significa que **HAI, WADI, DAMADICS y PRONTO son ahora los datasets que más vale la pena auditar profundamente**.
+
+El siguiente paso que haría sería distinto al análisis anterior: tomaría **HAI, WADI, DAMADICS, PRONTO y SKAB** y, para cada uno, reconstruiría el **diagrama físico entrada–estado–salida**, identificaría los tags que pueden considerarse **manipulated variables \(u\)**, **process outputs \(y\)**, disturbances/condit
+````
+
+**Additional direct browser capture of this same message.** Rendered text, not verified original Markdown. UI labels may occur; full unedited DOM/HTML is retained separately.
+
+````text
+ChatGPT said:
+
+Sí. Con la orientación que acabas de precisar —SCADA, PLC/DCS, sensores + actuadores, lazos de control, dinámica de proceso, fault detection y modelado— cambiaría bastante la preselección anterior.
+
+Ahora privilegiaría datasets donde se pueda pensar explícitamente en:
+
+[
+𝑢
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+,
+ 
+𝑦
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+,
+ 
+𝑑
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+]
+⟶
+𝑦
+(
+𝑡
++
+ℎ
+)
+ o estado/falla
+[u(t−k:t),y(t−k:t),d(t−k:t)]⟶y(t+h) o estado/falla
+	​
+
+
+donde 
+𝑢
+u son acciones de control/actuadores, 
+𝑦
+y variables medidas del proceso y 
+𝑑
+d perturbaciones/condiciones operativas.
+
+Nueva preselección
+Rank	Dataset	Sistema	SCADA / control	Dinámica	Target natural	Mi valoración
+1	WADI	Distribución de agua	⭐⭐⭐⭐⭐	⭐⭐⭐⭐⭐	nivel/presión futura o anomalía	Excelente
+2	HAI	Boiler + turbine + water treatment + HIL	⭐⭐⭐⭐⭐	⭐⭐⭐⭐⭐	variable física futura / ataque	Excelente
+3	PRONTO	Multiphase oil/water/air flow facility	⭐⭐⭐⭐	⭐⭐⭐⭐⭐	fault / pressure / flow	Excelente
+4	DAMADICS	Válvula/actuador industrial en planta azucarera	⭐⭐⭐⭐⭐	⭐⭐⭐⭐⭐	actuator fault / valve response	Muy fuerte
+5	SKAB	Water loop + pump + valves	⭐⭐⭐⭐	⭐⭐⭐⭐	anomaly / pressure / flow	Muy buena
+6	BATADAL	Water distribution SCADA	⭐⭐⭐⭐⭐	⭐⭐⭐⭐	tank level / attack	Muy buena
+7	3W Petrobras	Offshore oil wells	⭐⭐⭐	⭐⭐⭐⭐⭐	undesirable event / early warning	Muy buena
+8	Cranfield Multiphase Flow	Three-phase flow process	⭐⭐⭐	⭐⭐⭐⭐⭐	fault / process output	Buena–muy buena
+9	Tennessee Eastman	Planta química completa	⭐⭐⭐⭐	⭐⭐⭐⭐⭐	process output / fault	Excelente técnicamente, menor originalidad
+
+Pero los primeros cinco son los que investigaría más a fondo para tu proyecto.
+
+1. WADI — probablemente el sucesor natural de SWaT
+
+WADI en Kaggle
+
+Si SWaT te llamó la atención, WADI debería estar muy arriba en tu lista.
+
+WADI fue desarrollado por el mismo ecosistema de iTrust y representa una red de distribución de agua a escala física. Tiene 16 días de operación continua: 14 normales y 2 con ataques, y registra 123 sensores y actuadores. El sistema está organizado en subprocesses con PLC, bombas, válvulas, tanques, presión, caudal y otras variables. La versión disponible en Kaggle tiene alrededor de 1.2 millones de registros y 261 columnas en los archivos publicados. 
+SUTD
++2
+
+Conceptualmente se parece mucho más a un sistema SCADA real:
+
+PLC
+→
+Pump/Valve
+→
+Physical Process
+→
+Flow/Pressure/Level
+→
+PLC
+PLC→Pump/Valve→Physical Process→Flow/Pressure/Level→PLC
+
+Eso es exactamente lo que queremos.
+
+Formulación que me interesa
+
+En lugar de hacer simplemente:
+
+𝑋
+𝑡
+→
+𝐴
+𝑡
+𝑡
+𝑎
+𝑐
+𝑘
+𝑡
+X
+t
+	​
+
+→Attack
+t
+	​
+
+
+haría primero modelado del proceso físico:
+
+𝑋
+𝑡
+−
+60
+:
+𝑡
+→
+𝐿
+𝑡
+𝑎
+𝑛
+𝑘
+(
+𝑡
++
+30
+)
+X
+t−60:t
+	​
+
+→L
+tank
+	​
+
+(t+30)
+	​
+
+
+o
+
+𝑋
+𝑡
+−
+60
+:
+𝑡
+→
+𝑃
+(
+𝑡
++
+30
+)
+X
+t−60:t
+	​
+
+→P(t+30)
+
+donde 
+𝑋
+X contiene:
+
+valve states,
+pump states,
+flows,
+pressures,
+tank levels,
+históricos de esas variables.
+
+Después puedes usar el residual de predicción
+
+𝑒
+(
+𝑡
+)
+=
+𝑦
+(
+𝑡
+)
+−
+𝑦
+^
+(
+𝑡
+)
+e(t)=y(t)−
+y
+^
+	​
+
+(t)
+
+como indicador de comportamiento anormal.
+
+Ahí ya estás acercándote conceptualmente a model-based fault detection, pero usando ML.
+
+Proyecto particularmente interesante
+
+Static vs Dynamic Machine Learning for SCADA Process Modeling
+
+Comparar:
+
+𝑋
+𝑡
+→
+𝑦
+𝑡
++
+30
+X
+t
+	​
+
+→y
+t+30
+	​
+
+
+contra
+
+[
+𝑋
+𝑡
+,
+𝑋
+𝑡
+−
+1
+,
+.
+.
+.
+,
+𝑋
+𝑡
+−
+𝑘
+]
+→
+𝑦
+𝑡
++
+30
+[X
+t
+	​
+
+,X
+t−1
+	​
+
+,...,X
+t−k
+	​
+
+]→y
+t+30
+	​
+
+
+con:
+
+Linear/Ridge
+KNN
+Random Forest
+Gradient Boosting
+
+Esto está extremadamente bien alineado con DS675.
+
+Riesgo
+
+La mayoría de la literatura WADI está orientada a cyberattack/anomaly detection. Si simplemente reproduces esa clasificación, entrarías en un área bastante transitada. 
+MDPI
++1
+
+La oportunidad está en tratarlo como proceso dinámico controlado, no como dataset de cybersecurity.
+
+Mi nota
+
+9.5/10 para tus intereses.
+
+2. HAI — posiblemente el más interesante desde SCADA/DCS/control
+
+HAI Security Dataset en Kaggle
+
+Este apareció mucho más fuerte después de aplicar tu nuevo criterio.
+
+HAI significa HIL-based Augmented Industrial Control System. El testbed combina cuatro procesos:
+
+boiler,
+turbine,
+water treatment,
+Hardware-in-the-Loop power simulation.
+
+Pero lo verdaderamente interesante es el hardware/control detrás.
+
+El boiler usa Emerson Ovation DCS, el turbine process usa GE Mark VIe DCS, el water-treatment process un Siemens S7-300 PLC, y el HIL está interconectado mediante Siemens S7-1500/ET200 y OPC. Además, los procesos fueron conectados para generar variables físicamente acopladas. 
+Kaggle
++1
+
+Esto es mucho más cercano a un ambiente industrial SCADA/DCS que prácticamente cualquier dataset clásico de Kaggle.
+
+¿Por qué me gusta?
+
+Porque no tenemos sólo:
+
+𝑆
+𝑒
+𝑛
+𝑠
+𝑜
+𝑟
+→
+𝐿
+𝑎
+𝑏
+𝑒
+𝑙
+Sensor→Label
+
+Tenemos algo parecido a:
+
+controllers
++
+actuators
++
+physical states
++
+feedback loops
+.
+controllers+actuators+physical states+feedback loops.
+
+Y las series son continuas en el tiempo. Las versiones recientes contienen decenas de tags SCADA y cientos de horas de operación normal y anómala. 
+Kaggle
+
+Formulación A — system modeling
+
+Seleccionar uno de los subsistemas, por ejemplo water treatment:
+
+[
+𝑢
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+,
+𝑦
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+]
+→
+𝑦
+(
+𝑡
++
+ℎ
+)
+[u(t−k:t),y(t−k:t)]→y(t+h)
+	​
+
+
+Ejemplo conceptual:
+
+pump/valve commands + historical level/flow
+→
+future water level
+pump/valve commands + historical level/flow→future water level
+
+Esto sería casi un black-box system identification problem.
+
+Formulación B — predictive fault detection
+
+Otra posibilidad:
+
+𝑋
+𝑡
+−
+𝑘
+:
+𝑡
+→
+𝑃
+(
+abnormal condition in next 
+ℎ
+)
+X
+t−k:t
+	​
+
+→P(abnormal condition in next h)
+
+que es más interesante que simplemente identificar un ataque que ya está ocurriendo.
+
+Formulación C — residual-based diagnosis
+
+Entrenas el modelo sólo sobre comportamiento normal:
+
+𝑦
+^
+(
+𝑡
++
+1
+)
+=
+𝑓
+(
+𝑋
+𝑡
+−
+𝑘
+:
+𝑡
+)
+y
+^
+	​
+
+(t+1)=f(X
+t−k:t
+	​
+
+)
+
+y calculas:
+
+𝑟
+(
+𝑡
+)
+=
+𝑦
+(
+𝑡
+)
+−
+𝑦
+^
+(
+𝑡
+)
+.
+r(t)=y(t)−
+y
+^
+	​
+
+(t).
+
+Después:
+
+𝑟
+(
+𝑡
+)
+→
+normal/fault
+r(t)→normal/fault
+
+Esto tiene una conexión preciosa con Fault Detection and Isolation (FDI).
+
+Actividad Kaggle
+
+Curiosamente está bastante bien situado para tu criterio: Kaggle muestra alrededor de 8 notebooks y ninguna discusión, mientras el dataset tiene documentación formal, competiciones HAICon y resultados publicados fuera de Kaggle. 
+Kaggle
++1
+
+Es decir:
+
+documentación científica fuerte + Kaggle no saturado.
+
+Riesgo
+
+Es complejo.
+
+Tendríamos que escoger un subsystem, no modelar todo HAI.
+
+Mi nota
+
+9.5/10.
+
+Para portfolio orientado a control/automation/industrial ML incluso me gusta más que WADI.
+
+3. PRONTO Heterogeneous Benchmark
+
+PRONTO en Kaggle
+
+Este es uno de los descubrimientos más interesantes de esta nueva búsqueda.
+
+PRONTO proviene de una industrial-scale multiphase flow facility y fue diseñado explícitamente para:
+
+process monitoring,
+condition monitoring,
+fault detection,
+fault diagnosis,
+heterogeneous sensor fusion.
+
+Contiene process measurements, alarm records, high-frequency pressure measurements, ultrasonic flow measurements y logs de operación, con múltiples operating conditions y fallas inducidas. 
+Kaggle
++1
+
+Es decir, está mucho más cerca de:
+
+process systems engineering + industrial control
+
+que de un dataset típico de ML.
+
+Sistema
+
+Una instalación de flujo multifásico donde coexisten:
+
+gas/air,
+water,
+oil,
+separator,
+pipelines,
+pressure,
+flow,
+diferentes operating conditions.
+
+Eso genera relaciones altamente no lineales.
+
+Problema DS675 que propondría
+
+No usaría todos los datos multimodales.
+
+Tomaría las señales de proceso SCADA de baja frecuencia y plantearía:
+
+𝑋
+𝑡
+−
+𝑘
+:
+𝑡
+→
+𝑦
+𝑡
++
+ℎ
+X
+t−k:t
+	​
+
+→y
+t+h
+	​
+
+
+para alguna variable clave de pressure/flow.
+
+Luego:
+
+prediction residuals
+→
+fault state
+.
+prediction residuals→fault state.
+
+Alternativamente:
+
+𝑋
+𝑡
+−
+𝑘
+:
+𝑡
+→
+fault class
+.
+X
+t−k:t
+	​
+
+→fault class.
+Algo especialmente interesante
+
+Comparar:
+
+Modelo estático
+𝑦
+𝑡
+=
+𝑓
+(
+𝑋
+𝑡
+)
+y
+t
+	​
+
+=f(X
+t
+	​
+
+)
+Dynamic ML
+𝑦
+𝑡
+=
+𝑓
+(
+𝑋
+𝑡
+,
+𝑋
+𝑡
+−
+1
+,
+.
+.
+.
+,
+𝑋
+𝑡
+−
+𝑘
+)
+y
+t
+	​
+
+=f(X
+t
+	​
+
+,X
+t−1
+	​
+
+,...,X
+t−k
+	​
+
+)
+Fault detection
+𝑟
+𝑡
+=
+𝑦
+𝑡
+−
+𝑦
+^
+𝑡
+r
+t
+	​
+
+=y
+t
+	​
+
+−
+y
+^
+	​
+
+t
+	​
+
+
+Es casi la unión perfecta entre:
+
+ML + system identification + process monitoring.
+
+Kaggle
+
+El dataset tiene aproximadamente 450 downloads, unos 6,000 views, pero sólo 1 notebook y 1 discussion registrados en la página que encontré. 
+Kaggle
+
+Aquí sí hay enorme originality headroom.
+
+Problema
+
+Es grande: Kaggle reporta unos 4.37 GB y 407 archivos. 
+Kaggle
+
+Eso puede ser una bendición o una maldición.
+
+Habría que reducir deliberadamente el problema.
+
+Mi nota
+
+9.3/10 científicamente.
+
+8.5/10 para facilidad de ejecución.
+
+4. DAMADICS — el más “Control Engineering” de todos
+
+DAMADICS en Kaggle
+
+Este me parece especialmente interesante para ti.
+
+DAMADICS significa básicamente un benchmark para actuator diagnosis in industrial control systems.
+
+El sistema es un electro-pneumatic control valve actuator utilizado en una fábrica de azúcar real en Lublin, Polonia.
+
+El benchmark fue construido específicamente alrededor de:
+
+closed-loop operation,
+nonlinear static/dynamic behavior,
+control valves,
+servomotor,
+actuator position,
+control signals,
+pressure,
+flow,
+temperature,
+faults.
+
+Se definieron 19 tipos de fallas, incluyendo valve clogging, sedimentation, erosion, increased friction, external/internal leakage y fallas del servomotor/positioner. 
+ScienceDirect
++1
+
+Aquí no estamos buscando una interpretación de control.
+
+El dataset nació de control engineering.
+
+Representación
+
+Podrías conceptualizar:
+
+𝐶
+𝑉
+(
+𝑡
+)
+→
+actuator
+→
+valve position
+→
+process flow
+.
+CV(t)→actuator→valve position→process flow.
+
+Con sensores adicionales:
+
+{
+𝐶
+𝑉
+,
+𝑃
+,
+𝑇
+,
+𝐹
+,
+𝑍
+,
+…
+}
+{CV,P,T,F,Z,…}
+
+donde aparecen variables de controller output, pressures, flow y valve/rod position. 
+PubMed Central (PMC)
+
+Proyecto A
+Data-driven actuator model
+[
+𝑢
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+,
+𝑦
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+]
+→
+𝑍
+(
+𝑡
++
+1
+)
+[u(t−k:t),y(t−k:t)]→Z(t+1)
+	​
+
+
+con 
+𝑍
+Z como valve position.
+
+Entonces comparar:
+
+Linear Regression
+KNN
+Random Forest
+Gradient Boosting.
+Proyecto B
+
+Más interesante:
+
+Fault detection using model residuals
+
+Construir un modelo del actuator normal:
+
+𝑦
+^
+(
+𝑡
+)
+=
+𝑓
+(
+𝑢
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+,
+𝑦
+(
+𝑡
+−
+𝑘
+:
+𝑡
+−
+1
+)
+)
+y
+^
+	​
+
+(t)=f(u(t−k:t),y(t−k:t−1))
+
+Residual:
+
+𝑟
+(
+𝑡
+)
+=
+𝑦
+(
+𝑡
+)
+−
+𝑦
+^
+(
+𝑡
+)
+r(t)=y(t)−
+y
+^
+	​
+
+(t)
+
+y posteriormente:
+
+𝑟
+(
+𝑡
+)
+→
+fault class
+.
+r(t)→fault class.
+
+Eso es machine-learning-based FDI.
+
+Originalidad
+
+Kaggle muestra actualmente 0 notebooks y 0 discussions. 
+Kaggle
++1
+
+Eso me genera dos reacciones.
+
+Por un lado:
+
+enorme originalidad en Kaggle.
+
+Pero también:
+
+hay menos recursos para comparar con Houle's “existing Kaggle work”.
+
+Por eso no lo pongo #1.
+
+Otra consideración
+
+Es antiguo —la investigación DAMADICS proviene de principios de los 2000— aunque conceptualmente sigue siendo extremadamente relevante para actuator fault diagnosis. 
+ScienceDirect
+
+Mi nota
+
+9.2/10 por afinidad con control.
+
+Probablemente es el que más disfrutarías conceptualmente.
+
+5. SKAB — como un “Hydraulic mini-SWaT”
+
+SKAB en Kaggle
+
+SKAB me parece una opción que no deberíamos ignorar.
+
+Es un testbed físico con:
+
+water tank,
+motor-driven water pump,
+dos solenoid valves,
+pressure sensor,
+flow sensor,
+motor current,
+motor voltage,
+pump vibration,
+motor temperature,
+fluid temperature.
+
+Se introducen fallas físicas como cierre de válvula, aumento de temperatura y rotor imbalance. La adquisición usa OPC UA. 
+PubMed Central (PMC)
++1
+
+¿Te suena familiar?
+
+Es prácticamente una intersección de:
+
+Hydraulic System + SWaT + predictive maintenance.
+
+Variables
+
+Entre las variables publicadas están:
+
+	
+𝐶
+𝑢
+𝑟
+𝑟
+𝑒
+𝑛
+𝑡
+
+
+	
+𝑉
+𝑜
+𝑙
+𝑡
+𝑎
+𝑔
+𝑒
+
+
+	
+𝑃
+𝑟
+𝑒
+𝑠
+𝑠
+𝑢
+𝑟
+𝑒
+
+
+	
+𝑅
+𝑎
+𝑡
+𝑒
+𝑅
+𝑀
+𝑆
+
+
+	
+𝑇
+𝑒
+𝑚
+𝑝
+𝑒
+𝑟
+𝑎
+𝑡
+𝑢
+𝑟
+𝑒
+
+
+	
+𝑇
+ℎ
+𝑒
+𝑟
+𝑚
+𝑜
+𝑐
+𝑜
+𝑢
+𝑝
+𝑙
+𝑒
+
+
+	
+𝐴
+𝑐
+𝑐
+𝑒
+𝑙
+𝑒
+𝑟
+𝑜
+𝑚
+𝑒
+𝑡
+𝑒
+𝑟
+1
+𝑅
+𝑀
+𝑆
+
+
+	
+𝐴
+𝑐
+𝑐
+𝑒
+𝑙
+𝑒
+𝑟
+𝑜
+𝑚
+𝑒
+𝑡
+𝑒
+𝑟
+2
+𝑅
+𝑀
+𝑆
+	​
+
+Current
+Voltage
+Pressure
+RateRMS
+Temperature
+Thermocouple
+Accelerometer1RMS
+Accelerometer2RMS
+	​
+
+
+además de:
+
+anomaly,
+changepoint. 
+GitHub
++1
+Proyecto
+
+Un enfoque directo sería:
+
+𝑋
+𝑡
+−
+𝑘
+:
+𝑡
+→
+𝑎
+𝑛
+𝑜
+𝑚
+𝑎
+𝑙
+𝑦
+𝑡
++
+ℎ
+.
+X
+t−k:t
+	​
+
+→anomaly
+t+h
+	​
+
+.
+
+Pero me parece más interesante:
+
+[
+voltage,current,valve context,history
+]
+→
+[
+pressure, flow
+]
+[voltage,current,valve context,history]→[pressure, flow]
+
+y utilizar las desviaciones del comportamiento esperado para fault detection.
+
+Ventaja enorme
+
+Es mucho más manejable que HAI/WADI.
+
+Hay sólo alrededor de 35 experiments en la versión 0.9. 
+GitHub
+
+Desventaja
+
+Precisamente ése es también su problema.
+
+Las observaciones temporales pueden ser muchas, pero sólo tenemos unas decenas de experimentos independientes.
+
+Por tanto, no debemos decir:
+
+“tengo cientos de miles de independent observations”.
+
+No sería cierto.
+
+El split correcto debería ser:
+
+train experiments
+≠
+test experiments
+train experiments
+
+=test experiments
+	​
+
+
+no random rows.
+
+Mi nota
+
+8.9/10.
+
+Para un mini-project manejable, puede terminar siendo mejor que algunos datasets enormes.
+
+6. BATADAL — SCADA clásico en distribución de agua
+
+BATADAL en Kaggle
+
+Este está muy cerca de SWaT conceptualmente.
+
+El sistema C-Town contiene:
+
+7 tanks
+11 pumps
+actuated valve
+tank levels
+pump states
+pump flows
+pressures.
+
+Hay 43 variables más la etiqueta de ataque. 
+Kaggle
++1
+
+La estructura es muy clara:
+
+Pump/Valve states
+→
+flows
+→
+pressures
+→
+tank levels
+.
+Pump/Valve states→flows→pressures→tank levels.
+
+Eso es excelente desde control.
+
+Problema dinámico
+
+Ejemplo:
+
+[
+𝐿
+𝑇
+1
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+,
+𝐹
+𝑃
+𝑈
+1
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+,
+𝑆
+𝑃
+𝑈
+1
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+,
+𝑃
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+]
+→
+𝐿
+𝑇
+1
+(
+𝑡
++
+ℎ
+)
+[L
+T1
+	​
+
+(t−k:t),F
+PU1
+	​
+
+(t−k:t),S
+PU1
+	​
+
+(t−k:t),P(t−k:t)]→L
+T1
+	​
+
+(t+h)
+
+con:
+
+ℎ
+=
+1
+,
+2
+,
+3
+,
+…
+ horas
+.
+h=1,2,3,… horas.
+
+Después analizar qué pasa durante ataques.
+
+Esto podría convertirse en:
+
+Data-driven dynamic state prediction for a SCADA-controlled water distribution network
+
+Muy buen título.
+
+Principal problema
+
+BATADAL es simulado, aunque utiliza un water-distribution network físicamente consistente y SCADA variables. La primera serie normal equivale aproximadamente a un año y está muestreada cada hora. 
+Batadal
++1
+
+Por eso lo pondría debajo de WADI/HAI/PRONTO.
+
+7. Petrobras 3W
+
+3W Dataset en Kaggle
+
+Este es menos SCADA/control puro y más industrial process monitoring, pero es muy serio.
+
+Es un conjunto de multivariate time series de offshore oil wells con eventos reales raros validados por expertos. Incluye eventos como:
+
+severe slugging,
+flow instability,
+abrupt increase of BSW,
+productivity loss,
+restrictions,
+safety-valve events. 
+Kaggle
++1
+
+La versión de Kaggle tiene 1,984 series CSV en la versión allí publicada, y existe además una versión 2.0.0 descrita en 2026 con nuevas instancias y variables. 
+Kaggle
++1
+
+Proyecto ideal
+
+No:
+
+𝑋
+𝑡
+→
+𝐹
+𝑎
+𝑢
+𝑙
+𝑡
+𝑡
+X
+t
+	​
+
+→Fault
+t
+	​
+
+
+sino:
+
+𝑋
+𝑡
+−
+𝑘
+:
+𝑡
+→
+𝑃
+(
+undesirable event in next 
+ℎ
+)
+X
+t−k:t
+	​
+
+→P(undesirable event in next h)
+	​
+
+
+Eso transforma fault detection en early fault prediction.
+
+Para portfolio industrial es fantástico.
+
+Pero desde tu interés actual lo considero más:
+
+process monitoring
+
+que:
+
+control-system modeling.
+
+8. Cranfield Multiphase Flow Facility
+
+Cranfield Multiphase Flow en Kaggle
+
+Este benchmark proviene de una instalación física de three-phase flow.
+
+Estudios recientes describen alrededor de 24 sensors midiendo temperatura, presión y caudales de aire, agua y aceite, con operación normal y seis fault types. 
+ScienceDirect
+
+Es un excelente sistema no lineal porque el flujo multifásico presenta:
+
+different regimes,
+nonlinear pressure drop,
+interactions gas/liquid,
+operating-mode transitions.
+
+Para:
+
+𝑋
+𝑡
+−
+𝑘
+:
+𝑡
+→
+𝑃
+𝑠
+𝑒
+𝑝
+𝑎
+𝑟
+𝑎
+𝑡
+𝑜
+𝑟
+(
+𝑡
++
+ℎ
+)
+X
+t−k:t
+	​
+
+→P
+separator
+	​
+
+(t+h)
+
+o fault classification sería muy bueno.
+
+Sin embargo, PRONTO utiliza una instalación multiphase industrial-scale y ofrece una versión muchísimo más rica y heterogénea del problema, por lo que inicialmente investigaría PRONTO antes que Cranfield. 
+Kaggle
++1
+
+Cómo quedan SWaT y Hydraulic ahora
+
+Con esta nueva orientación, usaría tus dos favoritos como puntos de referencia:
+
+Dataset	Lo interesante
+SWaT	SCADA + PLC + pumps/valves + real physical process
+Hydraulic	Component condition + pressure/flow/temp + controlled experiment
+WADI	SWaT más grande y orientado a distribución
+HAI	SWaT + DCS + turbine + boiler + HIL
+PRONTO	process plant + faults + heterogeneous industrial measurements
+DAMADICS	pure actuator/control/FDI benchmark
+SKAB	Hydraulic + valves + pump + OPC-UA + faults
+
+Esa última tabla resume bastante bien dónde está el sweet spot.
+
+Mi shortlist real ahora
+
+Después de esta segunda búsqueda, yo dejaría Gas Sensor y PMSM en segundo plano y concentraría la investigación en cuatro candidatos.
+
+🥇 HAI — si quieres máxima orientación SCADA/control
+
+Lo veo como:
+
+Industrial control system
++
+DCS/PLC
++
+physical dynamics
++
+ML
+Industrial control system+DCS/PLC+physical dynamics+ML
+	​
+
+
+La idea que más me interesa sería escoger un solo subsystem, probablemente water treatment o boiler, y hacer:
+
+Data-driven dynamic process modeling and fault detection in an industrial control system using time-aware machine learning.
+
+🥈 WADI — si quieres algo cercano a SWaT y relativamente fácil de defender
+
+Aquí tenemos una narrativa muy limpia:
+
+Pump/valve history
++
+process history
+→
+future pressure/level
+Pump/valve history+process history→future pressure/level
+	​
+
+
+y posteriormente:
+
+𝑝
+𝑟
+𝑒
+𝑑
+𝑖
+𝑐
+𝑡
+𝑖
+𝑜
+𝑛
+ 
+𝑟
+𝑒
+𝑠
+𝑖
+𝑑
+𝑢
+𝑎
+𝑙
+→
+𝑎
+𝑛
+𝑜
+𝑚
+𝑎
+𝑙
+𝑦
+.
+prediction residual→anomaly.
+
+Muy defendible.
+
+🥉 DAMADICS — si quieres que el proyecto huela a Control Engineering
+
+Éste es el candidato con la conexión más directa a:
+
+actuator modeling,
+valve dynamics,
+closed-loop systems,
+nonlinear systems,
+fault detection/isolation.
+
+Una pregunta de investigación especialmente fuerte sería:
+
+Can ML models learn the normal nonlinear input-output dynamics of an industrial actuator sufficiently well for residual-based fault detection?
+Can ML models learn the normal nonlinear input-output dynamics of an industrial actuator sufficiently well for residual-based fault detection?
+	​
+
+
+Eso me parece excelente.
+
+🏅 PRONTO — si quieres el proyecto técnicamente más ambicioso
+
+Aquí podrías hacer algo muy parecido a data-driven system identification de un proceso industrial.
+
+Tiene probablemente el mayor potencial técnico de todos, pero debemos verificar cuánto trabajo de preprocessing implica antes de comprometernos.
+
+Mi ranking sólo por afinidad con lo que acabas de describir
+𝐻
+𝐴
+𝐼
+≈
+𝑊
+𝐴
+𝐷
+𝐼
+>
+𝐷
+𝐴
+𝑀
+𝐴
+𝐷
+𝐼
+𝐶
+𝑆
+≈
+𝑃
+𝑅
+𝑂
+𝑁
+𝑇
+𝑂
+>
+𝑆
+𝑊
+𝑎
+𝑇
+>
+𝑆
+𝐾
+𝐴
+𝐵
+>
+𝐻
+𝑦
+𝑑
+𝑟
+𝑎
+𝑢
+𝑙
+𝑖
+𝑐
+>
+𝐵
+𝐴
+𝑇
+𝐴
+𝐷
+𝐴
+𝐿
+>
+3
+𝑊
+>
+𝑇
+𝐸
+𝑃
+HAI≈WADI>DAMADICS≈PRONTO>SWaT>SKAB>Hydraulic>BATADAL>3W>TEP
+	​
+
+
+No significa que HAI sea automáticamente el mejor proyecto para DS675. Significa que HAI, WADI, DAMADICS y PRONTO son ahora los datasets que más vale la pena auditar profundamente.
+
+El siguiente paso que haría sería distinto al análisis anterior: tomaría HAI, WADI, DAMADICS, PRONTO y SKAB y, para cada uno, reconstruiría el diagrama físico entrada–estado–salida, identificaría los tags que pueden considerarse manipulated variables 
+𝑢
+u, process outputs 
+𝑦
+y, disturbances/conditions 
+𝑑
+d, posibles targets, sample time y lags físicamente razonables. Con eso podemos decidir cuál realmente permite hacer system identification con ML y cuál sólo parece interesante porque tiene etiquetas de anomalía.
+````
+
+## Turn 3
+
+- ID: bbb217a4-770d-4bec-b240-f599876168ae
+- startedAt: 1788753106.04494 (2026-09-07T03:51:46.044940+00:00)
+- completedAt: 1788753220.051405 (2026-09-07T03:53:40.051405+00:00)
+
+<a id="message-bbb217a4-770d-4bec-b240-f599876168ae"></a>
+### user — bbb217a4-770d-4bec-b240-f599876168ae
+
+````text
+Quiero que analicemos a profundidad estos candidatos para el miniproject.:
+
+SWaT
+BATADAL
+SKAB
+WADI
+
+Luego de analizarlos a la luz de las recomendaciones del curso. rankealos y muestra pros y contras
+````
+
+<a id="message-e2943f67-0cac-427b-9188-80520db395e0"></a>
+### assistant — e2943f67-0cac-427b-9188-80520db395e0
+
+**Archive notice: source explicitly flags this message or content part as truncated.**
+
+````text
+Sí. Después de revisar los cuatro con más detalle, **cambiaría el criterio de selección** respecto a la búsqueda general anterior. Para este mini-project no premiaría al dataset que tenga más filas ni al que permita obtener el F1 más alto; premiaría al que permita construir una historia metodológica coherente con **Machine Learning + dinámica de procesos + SCADA/control**, usando correctamente validación, feature engineering y varios modelos del curso.
+
+Del syllabus de DS675 hay cuatro ideas particularmente relevantes: el mini-project es un **proyecto de implementación en ML**, los outcomes asociados incluyen **evaluar recursos online, reconocer problemas apropiados para ML y aplicar algoritmos en situaciones nuevas**, el curso cubre desde KNN/linear regression hasta árboles, ensembles, dimensionality reduction y RNN, y el syllabus incluso menciona que una contribución novedosa significativa puede distinguir un proyecto excepcional. Por eso voy a penalizar cualquier formulación que termine siendo simplemente “corrí un LSTM sobre un benchmark de anomaly detection”.
+
+## Resultado general
+
+Mi ranking para **este mini-project específico** sería:
+
+\[
+\boxed{
+\textbf{1. SWaT}
+>
+\textbf{2. BATADAL}
+>
+\textbf{3. WADI}
+>
+\textbf{4. SKAB}
+}
+\]
+
+Pero hay un matiz importante:
+
+- **SWaT** = mejor balance general.
+- **BATADAL** = probablemente el más limpio para hacer *dynamic modeling / system identification con ML* dentro del alcance del curso.
+- **WADI** = potencial técnico incluso mayor que SWaT, pero bastante más riesgo y trabajo.
+- **SKAB** = muy atractivo físicamente, pero más fuerte como benchmark de anomaly/fault detection que como problema de control/modelado entrada–salida.
+
+---
+
+# 1. Matriz comparativa
+
+He usado criterios que considero especialmente relevantes para DS675.
+
+| Criterio | Peso | SWaT | BATADAL | WADI | SKAB |
+|---|---:|---:|---:|---:|---:|
+| Claridad del problema supervisado | 15% | **5** | **5** | **5** | 4 |
+| Relevancia SCADA/control/dinámica | 15% | **5** | 4 | **5** | 3.5 |
+| Compatibilidad con modelos DS675 | 15% | **5** | **5** | **5** | 5 |
+| Validación temporal manejable | 10% | 4 | **5** | 3.5 | 3 |
+| Cantidad efectiva de datos | 10% | **5** | 4 | **5** | 2.5 |
+| Interpretabilidad física | 10% | **5** | **5** | 4 | **5** |
+| Originalidad disponible | 10% | 4 | 4.5 | **5** | 4 |
+| Alcance manejable en un semestre | 10% | 4 | **5** | 3 | **5** |
+| Trabajo Kaggle existente útil | 5% | 4 | 3 | 3 | **4** |
+| **Resultado aproximado** | | **93/100** | **91/100** | **89/100** | **81/100** |
+
+La diferencia entre los tres primeros es suficientemente pequeña como para que **la formulación del problema** importe más que dos puntos de score.
+
+---
+
+# 🥇 1. SWaT
+
+## Qué es realmente
+
+SWaT —Secure Water Treatment— es un testbed físico que replica una planta de tratamiento de agua en **seis etapas**, incluyendo raw-water storage, chemical dosing, ultrafiltration, dechlorination, reverse osmosis y backwash. Cada sección incluye sensores, actuadores y PLCs, de modo que realmente existe una estructura de feedback entre medidas físicas y acciones de control. :chatgpt-content-reference{index="0"}
+
+El dataset clásico contiene **11 días continuos**: siete de operación normal y cuatro con ataques, con valores de **51 sensores y actuadores**. La referencia oficial de iTrust informa 41 ataques en esos cuatro días. :chatgpt-content-reference{index="1"}
+
+Una caracterización publicada reporta aproximadamente **946,722 observaciones a 1 Hz**, con 25 variables de sensores y 26 estados de actuadores. :chatgpt-content-reference{index="2"}
+
+Esto es importante porque tenemos algo que se parece genuinamente a:
+
+\[
+u(t)
+\rightarrow
+\text{proceso físico}
+\rightarrow
+y(t)
+\rightarrow
+PLC
+\rightarrow
+u(t+1)
+\]
+
+No tenemos que inventar la interpretación de control.
+
+---
+
+## Lo que NO haría
+
+La formulación más obvia sería:
+
+\[
+X_t\rightarrow
+\text{Normal/Attack}
+\]
+
+con Random Forest, XGBoost o LSTM.
+
+Funciona.
+
+Pero para tus intereses me parece una **oportunidad desperdiciada**.
+
+SWaT ya está enormemente estudiado como benchmark de anomaly/intrusion detection. Existe mucha literatura con autoencoders, LSTM, GRU, CNN, ConvLSTM y variantes profundas. :chatgpt-content-reference{index="3"}
+
+El mirror de Kaggle que revisé tiene actualmente **10 notebooks, 1 discusión y más de 2,200 descargas**, así que Kaggle no está completamente saturado, pero académicamente SWaT sí es un benchmark muy conocido. :chatgpt-content-reference{index="4"}
+
+---
+
+# La formulación que recomiendo
+
+## Dynamic process prediction
+
+Tomaría **una sección física concreta**, no las 51 variables completas inicialmente.
+
+Por ejemplo, un tanque:
+
+\[
+\boxed{
+[u(t-k:t),y(t-k:t)]
+\rightarrow
+L(t+h)
+}
+\]
+
+donde:
+
+- \(u\) = estados de pumps/valves,
+- \(y\) = level, flow, pressure, etc.,
+- \(L(t+h)\) = nivel futuro del tanque.
+
+Por ejemplo conceptualmente:
+
+\[
+\{
+MV101,\,
+P101,\,
+P102,\,
+FIT101,\,
+LIT101(t-k:t)
+\}
+\rightarrow
+LIT101(t+30s)
+\]
+
+Esto ya parece **black-box dynamic system modeling**.
+
+---
+
+# El experimento central que haría
+
+Compararía tres representaciones.
+
+### Modelo 1 — Static
+
+\[
+X_t\rightarrow y_{t+h}
+\]
+
+### Modelo 2 — Dynamic
+
+\[
+[X_t,X_{t-1},...,X_{t-k}]
+\rightarrow y_{t+h}
+\]
+
+### Modelo 3 — Dynamic + engineered features
+
+Agregar:
+
+- rolling mean,
+- rolling std,
+- rate of change,
+- valve/pump transition indicators,
+- accumulated pump-on time.
+
+Y comparar:
+
+- Linear/Ridge Regression
+- KNN Regressor
+- Decision Tree
+- Random Forest
+- Gradient Boosting
+- opcional RNN al final.
+
+Eso conecta de manera casi perfecta con el curriculum.
+
+---
+
+# Lo realmente interesante
+
+Después de modelar operación normal:
+
+\[
+\hat y(t+h)=f(X_{t-k:t})
+\]
+
+podrías calcular:
+
+\[
+r(t)=
+y(t)-\hat y(t)
+\]
+
+y estudiar si durante ataques:
+
+\[
+|r(t)|\uparrow
+\]
+
+Es decir:
+
+### ML dynamic model → residual → anomaly indicator
+
+Eso conecta tu background de control con ML sin convertir el proyecto en control clásico.
+
+---
+
+## Validación correcta
+
+Aquí hay un peligro enorme.
+
+**Random train/test split sería metodológicamente incorrecto.**
+
+A 1 Hz:
+
+\[
+x_t
+\quad\text{y}\quad
+x_{t+1}
+\]
+
+son casi la misma condición física.
+
+Si uno termina en train y el otro en test, el desempeño parece artificialmente excelente.
+
+Yo usaría:
+
+\[
+\text{Train}
+\rightarrow
+\text{Validation}
+\rightarrow
+\text{Test}
+\]
+
+como bloques cronológicos.
+
+Además añadiría un **gap** igual o mayor que la largest lag window.
+
+---
+
+## Otro baseline imprescindible
+
+Para level/temperature/pressure:
+
+\[
+\boxed{
+\hat y(t+h)=y(t)
+}
+\]
+
+Persistence model.
+
+Porque si el tanque cambia lentamente, un Random Forest con \(R^2=0.999\) puede parecer impresionante cuando simplemente decir:
+
+> “dentro de 10 segundos será casi igual que ahora”
+
+obtiene \(R^2=0.998\).
+
+Este baseline sería una de las cosas que haría tu trabajo mucho más riguroso.
+
+---
+
+## Pros de SWaT
+
+- Testbed **físico**, no simplemente simulación.
+- PLC + actuadores + sensores.
+- Variables con significado físico.
+- Múltiples stages.
+- 1 Hz.
+- Casi un millón de muestras.
+- Targets claros de regression.
+- Target alternativo para classification.
+- Excelente para lag features.
+- Excelente para nonlinear models.
+- Permite Linear → KNN → RF → Boosting → RNN.
+- Permite estudiar operación normal y abnormal.
+- Excelente portfolio industrial.
+- Existe trabajo previo suficiente para hacer revisión crítica. :chatgpt-content-reference{index="5"}
+
+## Contras
+
+- Academic benchmark bastante explotado.
+- Alta autocorrelación.
+- Random split produce leakage.
+- Attack classification puede convertirse en un proyecto genérico de cybersecurity.
+- 51 variables pueden distraer del objetivo.
+- Algunos ataques manipulan directamente sensores/actuadores; hay que decidir si queremos **detect**, **predict** o **model the process**.
+- Million-row dataset no significa million independent observations.
+- Requiere entender la topología del proceso antes de elegir features.
+
+### Evaluación
+
+\[
+\boxed{\textbf{93/100}}
+\]
+
+**Mi #1.**
+
+---
+
+# 🥈 2. BATADAL
+
+BATADAL se vuelve muchísimo más interesante cuando lo miramos desde **system modeling** y no únicamente desde cybersecurity.
+
+---
+
+## Sistema físico representado
+
+BATADAL modela la red de agua **C-Town**.
+
+Incluye:
+
+- 1 reservoir,
+- **7 tanks**,
+- **11 pumps**,
+- valves,
+- cientos de pipes/junctions,
+- PLCs,
+- SCADA central.
+
+La red completa incluye 388 junctions y 429 pipes. :chatgpt-content-reference{index="6"}
+
+Los datos SCADA publicados contienen **43 variables** relacionadas con:
+
+- tank levels,
+- pump states,
+- pump flows,
+- valve state/flow,
+- pressures. :chatgpt-content-reference{index="7"}
+
+
+Esto genera relaciones físicamente muy claras:
+
+\[
+\text{Pump status}
+\rightarrow
+\text{Flow}
+\rightarrow
+\text{Tank level}
+\rightarrow
+\text{Pressure}
+\]
+
+---
+
+# Dataset structure
+
+Aquí BATADAL tiene algo que me gusta muchísimo.
+
+Hay tres datasets temporales claramente separados:
+
+### Training 1
+
+Aproximadamente **un año completo** de normal operation.
+
+\[
+8761 \text{ hourly observations}
+\]
+
+### Training 2
+
+Aproximadamente seis meses:
+
+\[
+4177 \text{ observations}
+\]
+
+con ataques.
+
+### Test
+
+Aproximadamente tres meses:
+
+\[
+2089 \text{ observations}
+\]
+
+también con ataques.
+
+Los datos SCADA están muestreados **cada hora**. :chatgpt-content-reference{index="8"}
+
+---
+
+# Aquí está su gran ventaja
+
+Para DS675, BATADAL es probablemente **el dataset conceptualmente más limpio de los cuatro**.
+
+Podemos plantear, por ejemplo:
+
+\[
+\boxed{
+X_{t-24:t}
+\rightarrow
+L_{T1}(t+1)
+}
+\]
+
+donde:
+
+\[
+X=
+\{
+\text{pump statuses},
+\text{pump flows},
+\text{pressures},
+\text{tank levels}
+\}
+\]
+
+y:
+
+\[
+y=L_{T1}
+\]
+
+una hora en el futuro.
+
+---
+
+# Dinámica particularmente interesante
+
+Como hay ciclos de consumo diarios, podemos probar lags:
+
+\[
+1,\;2,\;3,\;6,\;12,\;24\;\text{hours}
+\]
+
+Incluso:
+
+\[
+y(t-24)
+\]
+
+puede ser muy informativo.
+
+Eso produce una oportunidad preciosa para estudiar:
+
+### Short-term memory
+
+\[
+t-1:t
+\]
+
+vs.
+
+### Daily operational memory
+
+\[
+t-24:t
+\]
+
+---
+
+# Un proyecto muy elegante
+
+## Phase 1 — Model normal hydraulic behavior
+
+Train Dataset 1:
+
+\[
+f(X_{t-k:t})
+\rightarrow
+y_{t+1}
+\]
+
+## Phase 2 — Test prediction
+
+normal unseen data.
+
+## Phase 3 — Attack robustness
+
+Aplicar el modelo sobre Training Dataset 2.
+
+Calcular:
+
+\[
+r(t)=y(t)-\hat y(t)
+\]
+
+y comprobar si los ataques producen residual distributions diferentes.
+
+Eso tiene muchísimo más sentido ingenieril que hacer:
+
+\[
+X_t\rightarrow ATTACK
+\]
+
+directamente.
+
+---
+
+# ¿Por qué no es #1?
+
+Por dos razones.
+
+## 1. Es una simulación
+
+BATADAL utiliza **EPANET** para simular el comportamiento hidráulico de C-Town y los ataques. :chatgpt-content-reference{index="9"}
+
+Eso no lo convierte en un mal dataset.
+
+EPANET proporciona una dinámica hidráulica físicamente coherente.
+
+Pero SWaT/WADI provienen de testbeds físicos reales.
+
+---
+
+## 2. Resolución temporal de una hora
+
+Ésta es la desventaja más importante.
+
+\[
+\Delta t=1h
+\]
+
+Por tanto, estamos modelando:
+
+- operating cycles,
+- demand,
+- storage dynamics,
+
+más que los **transitorios rápidos de un loop de control**.
+
+No vas a observar detalladamente:
+
+> pump turns on → pressure transient → controller response.
+
+En cambio SWaT sí ofrece 1 Hz.
+
+---
+
+# Pero para un mini-project eso puede ser positivo
+
+8761 filas son pocas comparadas con SWaT.
+
+Pero no son pocas para:
+
+- Linear Regression,
+- Ridge,
+- KNN,
+- Decision Trees,
+- Random Forest,
+- Gradient Boosting.
+
+Y entrenar modelos será extremadamente fácil.
+
+Puedes hacer 50 experimentos sin necesitar GPU.
+
+---
+
+# Leakage
+
+Aquí el problema es mucho más manejable.
+
+No random split.
+
+Simplemente:
+
+\[
+\begin{aligned}
+Train &: months\,1-8\\
+Validation &: months\,9-10\\
+Test &: months\,11-12
+\end{aligned}
+\]
+
+Por ejemplo.
+
+Los splits temporales son muy naturales.
+
+---
+
+# Existing work
+
+BATADAL fue originalmente una **competition de attack detection**, e incluso el ganador utilizó conocimiento hidráulico del sistema combinado con anomaly detection. :chatgpt-content-reference{index="10"}
+
+Esto es interesante porque podemos hacer algo diferente:
+
+> No intentar ganar nuevamente BATADAL.
+
+Sino estudiar:
+
+\[
+\boxed{
+\text{Can conventional ML learn the normal dynamic input-output behavior of C-Town?}
+}
+\]
+
+En Kaggle, el mirror que encontré tiene sólo **4 notebooks y 1 discussion**, considerablemente menos actividad que muchos benchmarks clásicos. :chatgpt-content-reference{index="11"}
+
+---
+
+## Pros BATADAL
+
+- SCADA puro.
+- Tank/pump/pressure/flow interpretation excelente.
+- Features documentadas.
+- Target muy claro.
+- La topología está disponible.
+- Separación temporal excelente.
+- Computacionalmente trivial.
+- Ideal para Linear/KNN/Tree/RF/Boosting.
+- Lags de 24 h tienen interpretación física.
+- Muy poco trabajo Kaggle relativo.
+- Muy fácil presentar el proyecto.
+- Muy fácil hacer gráficos e interpretar resultados.
+- Originalidad razonable si abandonamos attack classification.
+- Train normal + attack dataset permite residual-based analysis.
+
+## Contras
+
+- Simulado.
+- Sampling de 1 hora.
+- Sólo ~15k observaciones totales.
+- No representa bien transitorios rápidos de control.
+- Apenas siete attack events en algunos subsets: muchos attack-labeled rows no equivalen a muchos ataques independientes. :chatgpt-content-reference{index="12"}
+- Si el proyecto se convierte en supervised attack classification, el tamaño efectivo de la clase minoritaria es pequeño.
+- Al usar 24 lags × muchas variables, dimensionality puede crecer muy rápido.
+
+### Evaluación
+
+\[
+\boxed{\textbf{91/100}}
+\]
+
+Y hay algo importante:
+
+> **Para un mini-project que quieres terminar impecablemente, BATADAL puede ser incluso más seguro que SWaT.**
+
+---
+
+# 🥉 3. WADI
+
+## Qué representa
+
+WADI es la pareja natural de SWaT.
+
+Mientras SWaT trata **water treatment**, WADI representa **water distribution**.
+
+Tiene tres stages:
+
+### P1 — Primary
+
+Dos raw-water tanks de aproximadamente 2500 L.
+
+### P2 — Distribution
+
+Dos elevated reservoirs que alimentan **seis consumer tanks**.
+
+### P3 — Return
+
+Unused water regresa y puede recircularse hacia P1. :chatgpt-content-reference{index="13"}
+
+Esto es tremendamente interesante desde control porque aparecen:
+
+- storage,
+- consumer demand,
+- pumps,
+- reservoirs,
+- return flow,
+- pressure,
+- level,
+- valves.
+
+---
+
+# Dataset
+
+La referencia oficial registra:
+
+- **16 días continuos**
+- 14 normales
+- 2 con ataques
+- **123 sensores y actuadores**
+- 15 ataques. :chatgpt-content-reference{index="14"}
+
+
+Fuentes posteriores describen 69 sensores + 54 actuadores y muestreo de **1 segundo**. :chatgpt-content-reference{index="15"}
+
+Estamos nuevamente alrededor de un millón de observaciones.
+
+---
+
+# Por qué técnicamente podría ser el #1
+
+WADI posiblemente tiene la dinámica más interesante de los cuatro.
+
+En una red de distribución:
+
+\[
+\text{Demand}
++
+\text{Pump operation}
++
+\text{Storage}
+\rightarrow
+\text{Levels/flows/pressures}
+\]
+
+y estas relaciones cambian dependiendo del operating regime.
+
+Podríamos hacer algo como:
+
+\[
+\boxed{
+[
+Pumps_{t-k:t},
+Flows_{t-k:t},
+Levels_{t-k:t},
+Pressures_{t-k:t}
+]
+\rightarrow
+Level_{ER1}(t+h)
+}
+\]
+
+o:
+
+\[
+\rightarrow P_{consumer}(t+h)
+\]
+
+Eso es prácticamente:
+
+### SCADA data-driven dynamic modeling.
+
+---
+
+# Incluso más interesante
+
+Comparar diferentes horizons:
+
+\[
+h=
+10s,\;30s,\;60s,\;5min
+\]
+
+y observar:
+
+\[
+RMSE(h)
+\]
+
+A medida que aumenta \(h\), debería hacerse más difícil.
+
+Eso es una pregunta científica clara.
+
+---
+
+# Entonces, ¿por qué sólo #3?
+
+Por **riesgo de ejecución**.
+
+---
+
+## Problema 1 — Dimensionalidad
+
+123 signals.
+
+No quieres terminar con:
+
+\[
+123\times60
+=
+7380
+\]
+
+features porque creaste 60 lags.
+
+Eso sería un proyecto de preprocessing.
+
+Tendríamos que elegir un **subsystem físico**.
+
+---
+
+## Problema 2 — Dataset cleaning
+
+La propia página oficial de iTrust advierte que ciertas secciones del plant run fueron inestables y que posteriormente tuvieron que eliminar lecturas afectadas y publicar archivos corregidos. También hubo correcciones a los labels de ataques. :chatgpt-content-reference{index="16"}
+
+No es necesariamente malo.
+
+Pero es algo que tendremos que documentar.
+
+---
+
+## Problema 3 — Gaps
+
+Trabajos recientes que usan WADI señalan incluso un largo gap en la secuencia temporal de la versión A2. :chatgpt-content-reference{index="17"}
+
+Un lag generator ingenuo puede crear:
+
+\[
+x_{t-1}
+\]
+
+a través de un gap temporal que en realidad dura días.
+
+Eso sería incorrecto.
+
+Hay que segmentar las series antes.
+
+---
+
+## Problema 4 — menos soporte Kaggle
+
+El mirror actual que encontré tiene:
+
+- **4 notebooks**
+- **0 discussions**
+- aproximadamente 947 downloads. :chatgpt-content-reference{index="18"}
+
+
+Es excelente para originalidad.
+
+Pero menos conveniente para el outcome del curso de **evaluar críticamente recursos existentes**.
+
+---
+
+# Gran oportunidad original
+
+Precisamente porque casi todo el trabajo WADI existente está orientado a attack/anomaly detection —con GNN, autoencoders, LSTM-VAE, etc.— hay bastante espacio para:
+
+\[
+\boxed{
+\text{system prediction instead of anomaly classification}
+}
+\]
+
+WADI continúa siendo un benchmark activo de anomaly detection. :chatgpt-content-reference{index="19"}
+
+---
+
+## Pros WADI
+
+- Testbed físico.
+- SCADA/PLC.
+- Pumps + valves + storage + consumers.
+- 123 variables.
+- 1 Hz.
+- Muchísimos datos.
+- Dinámica multivariable.
+- Nonlinearity.
+- Operating regimes.
+- Demand effects.
+- Excelente para state/output prediction.
+- Excelente para residual-based fault/attack detection.
+- Poca actividad Kaggle → mucha originalidad.
+- Excelente portfolio.
+- Quizás el sistema más parecido a SCADA municipal real de los cuatro.
+
+## Contras
+
+- Dataset grande.
+- 123 variables pueden complicar muchísimo feature engineering.
+- Correcciones oficiales del dataset.
+- Gaps y unstable sections.
+- 1.2M filas muy autocorrelacionadas.
+- Sólo 14 días normales.
+- 15 attack events es poco a nivel de eventos.
+- Si no restringimos el scope, se convierte fácilmente en un proyecto demasiado grande.
+- Mapping de los tags y subsystems requiere más trabajo que SWaT o BATADAL.
+
+### Evaluación
+
+\[
+\boxed{\textbf{89/100}}
+\]
+
+Técnicamente es extraordinario.
+
+Pero para un mini-project:
+
+> **WADI tiene más ceiling que BATADAL, pero también mucho más riesgo.**
+
+---
+
+# 4. SKAB
+
+SKAB es distinto a los otros tres.
+
+---
+
+# Sistema físico
+
+SKAB utiliza un testbed físico de circulación de agua con:
+
+- water tank,
+- electric motor-driven pump,
+- two solenoid valves,
+- pressure,
+- flow,
+- vibration,
+- temperature,
+- electrical measurements. :chatgpt-content-reference{index="20"}
+
+
+Los CSV contienen:
+
+- Accelerometer1RMS
+- Accelerometer2RMS
+- Current
+- Pressure
+- Temperature
+- Thermocouple
+- Voltage
+- RateRMS
+- anomaly
+- changepoint. :chatgpt-content-reference{index="21"}
+
+
+Tiene fallas experimentales muy atractivas:
+
+- partial valve closure,
+- fluid leakage/addition,
+- shaft imbalance,
+- water increase,
+- cavitation,
+- two-phase flow,
+- elevated fluid temperature. :chatgpt-content-reference{index="22"}
+
+
+Desde ingeniería, esto está excelente.
+
+---
+
+# El problema
+
+La estructura publicada es principalmente:
+
+\[
+\text{measured signals}
+\rightarrow
+\text{anomaly}
+\]
+
+No tenemos en cada CSV el mismo nivel de información explícita de:
+
+\[
+u(t)=
+\text{controller command / valve command}
+\]
+
+que tenemos en SWaT/WADI/BATADAL.
+
+Por eso es mucho más natural usar SKAB para:
+
+### Condition monitoring / fault detection
+
+que para:
+
+### system identification from manipulated inputs.
+
+---
+
+# Tamaño efectivo
+
+SKAB v0.9 contiene aproximadamente **35 archivos experimentales**, y cada archivo representa un experimento con una anomalía. :chatgpt-content-reference{index="23"}
+
+Esto es crucial.
+
+Podemos tener miles de timestamped rows.
+
+Pero no debemos fingir que son miles de fallas independientes.
+
+En realidad aproximadamente:
+
+\[
+N_{\text{events}}\sim35
+\]
+
+Eso limita bastante supervised fault prediction.
+
+---
+
+# Una formulación posible
+
+Podríamos hacer:
+
+\[
+X_{t-k:t}
+\rightarrow
+anomaly_{t+h}
+\]
+
+Pero aparece un problema.
+
+Supongamos que dividimos
+````
+
+**Additional direct browser capture of this same message.** Rendered text, not verified original Markdown. UI labels may occur; full unedited DOM/HTML is retained separately.
+
+````text
+ChatGPT said:
+
+Sí. Después de revisar los cuatro con más detalle, cambiaría el criterio de selección respecto a la búsqueda general anterior. Para este mini-project no premiaría al dataset que tenga más filas ni al que permita obtener el F1 más alto; premiaría al que permita construir una historia metodológica coherente con Machine Learning + dinámica de procesos + SCADA/control, usando correctamente validación, feature engineering y varios modelos del curso.
+
+Del syllabus de DS675 hay cuatro ideas particularmente relevantes: el mini-project es un proyecto de implementación en ML, los outcomes asociados incluyen evaluar recursos online, reconocer problemas apropiados para ML y aplicar algoritmos en situaciones nuevas, el curso cubre desde KNN/linear regression hasta árboles, ensembles, dimensionality reduction y RNN, y el syllabus incluso menciona que una contribución novedosa significativa puede distinguir un proyecto excepcional. Por eso voy a penalizar cualquier formulación que termine siendo simplemente “corrí un LSTM sobre un benchmark de anomaly detection”.
+
+Resultado general
+
+Mi ranking para este mini-project específico sería:
+
+1.
+ 
+SWaT
+>
+2.
+ 
+BATADAL
+>
+3.
+ 
+WADI
+>
+4.
+ 
+SKAB
+1. SWaT>2. BATADAL>3. WADI>4. SKAB
+	​
+
+
+Pero hay un matiz importante:
+
+SWaT = mejor balance general.
+BATADAL = probablemente el más limpio para hacer dynamic modeling / system identification con ML dentro del alcance del curso.
+WADI = potencial técnico incluso mayor que SWaT, pero bastante más riesgo y trabajo.
+SKAB = muy atractivo físicamente, pero más fuerte como benchmark de anomaly/fault detection que como problema de control/modelado entrada–salida.
+1. Matriz comparativa
+
+He usado criterios que considero especialmente relevantes para DS675.
+
+Criterio	Peso	SWaT	BATADAL	WADI	SKAB
+Claridad del problema supervisado	15%	5	5	5	4
+Relevancia SCADA/control/dinámica	15%	5	4	5	3.5
+Compatibilidad con modelos DS675	15%	5	5	5	5
+Validación temporal manejable	10%	4	5	3.5	3
+Cantidad efectiva de datos	10%	5	4	5	2.5
+Interpretabilidad física	10%	5	5	4	5
+Originalidad disponible	10%	4	4.5	5	4
+Alcance manejable en un semestre	10%	4	5	3	5
+Trabajo Kaggle existente útil	5%	4	3	3	4
+Resultado aproximado		93/100	91/100	89/100	81/100
+
+La diferencia entre los tres primeros es suficientemente pequeña como para que la formulación del problema importe más que dos puntos de score.
+
+🥇 1. SWaT
+Qué es realmente
+
+SWaT —Secure Water Treatment— es un testbed físico que replica una planta de tratamiento de agua en seis etapas, incluyendo raw-water storage, chemical dosing, ultrafiltration, dechlorination, reverse osmosis y backwash. Cada sección incluye sensores, actuadores y PLCs, de modo que realmente existe una estructura de feedback entre medidas físicas y acciones de control. 
+Springer
++1
+
+El dataset clásico contiene 11 días continuos: siete de operación normal y cuatro con ataques, con valores de 51 sensores y actuadores. La referencia oficial de iTrust informa 41 ataques en esos cuatro días. 
+SUTD
+
+Una caracterización publicada reporta aproximadamente 946,722 observaciones a 1 Hz, con 25 variables de sensores y 26 estados de actuadores. 
+PubMed Central (PMC)
+
+Esto es importante porque tenemos algo que se parece genuinamente a:
+
+𝑢
+(
+𝑡
+)
+→
+proceso f
+ı
+ˊ
+sico
+→
+𝑦
+(
+𝑡
+)
+→
+𝑃
+𝐿
+𝐶
+→
+𝑢
+(
+𝑡
++
+1
+)
+u(t)→proceso f
+ı
+ˊ
+sico→y(t)→PLC→u(t+1)
+
+No tenemos que inventar la interpretación de control.
+
+Lo que NO haría
+
+La formulación más obvia sería:
+
+𝑋
+𝑡
+→
+Normal/Attack
+X
+t
+	​
+
+→Normal/Attack
+
+con Random Forest, XGBoost o LSTM.
+
+Funciona.
+
+Pero para tus intereses me parece una oportunidad desperdiciada.
+
+SWaT ya está enormemente estudiado como benchmark de anomaly/intrusion detection. Existe mucha literatura con autoencoders, LSTM, GRU, CNN, ConvLSTM y variantes profundas. 
+PubMed Central (PMC)
+
+El mirror de Kaggle que revisé tiene actualmente 10 notebooks, 1 discusión y más de 2,200 descargas, así que Kaggle no está completamente saturado, pero académicamente SWaT sí es un benchmark muy conocido. 
+Kaggle
+
+La formulación que recomiendo
+Dynamic process prediction
+
+Tomaría una sección física concreta, no las 51 variables completas inicialmente.
+
+Por ejemplo, un tanque:
+
+[
+𝑢
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+,
+𝑦
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+]
+→
+𝐿
+(
+𝑡
++
+ℎ
+)
+[u(t−k:t),y(t−k:t)]→L(t+h)
+	​
+
+
+donde:
+
+𝑢
+u = estados de pumps/valves,
+𝑦
+y = level, flow, pressure, etc.,
+𝐿
+(
+𝑡
++
+ℎ
+)
+L(t+h) = nivel futuro del tanque.
+
+Por ejemplo conceptualmente:
+
+{
+𝑀
+𝑉
+101
+,
+ 
+𝑃
+101
+,
+ 
+𝑃
+102
+,
+ 
+𝐹
+𝐼
+𝑇
+101
+,
+ 
+𝐿
+𝐼
+𝑇
+101
+(
+𝑡
+−
+𝑘
+:
+𝑡
+)
+}
+→
+𝐿
+𝐼
+𝑇
+101
+(
+𝑡
++
+30
+𝑠
+)
+{MV101,P101,P102,FIT101,LIT101(t−k:t)}→LIT101(t+30s)
+
+Esto ya parece black-box dynamic system modeling.
+
+El experimento central que haría
+
+Compararía tres representaciones.
+
+Modelo 1 — Static
+𝑋
+𝑡
+→
+𝑦
+𝑡
++
+ℎ
+X
+t
+	​
+
+→y
+t+h
+	​
+
+Modelo 2 — Dynamic
+[
+𝑋
+𝑡
+,
+𝑋
+𝑡
+−
+1
+,
+.
+.
+.
+,
+𝑋
+𝑡
+−
+𝑘
+]
+→
+𝑦
+𝑡
++
+ℎ
+[X
+t
+	​
+
+,X
+t−1
+	​
+
+,...,X
+t−k
+	​
+
+]→y
+t+h
+	​
+
+Modelo 3 — Dynamic + engineered features
+
+Agregar:
+
+rolling mean,
+rolling std,
+rate of change,
+valve/pump transition indicators,
+accumulated pump-on time.
+
+Y comparar:
+
+Linear/Ridge Regression
+KNN Regressor
+Decision Tree
+Random Forest
+Gradient Boosting
+opcional RNN al final.
+
+Eso conecta de manera casi perfecta con el curriculum.
+
+Lo realmente interesante
+
+Después de modelar operación normal:
+
+𝑦
+^
+(
+𝑡
++
+ℎ
+)
+=
+𝑓
+(
+𝑋
+𝑡
+−
+𝑘
+:
+𝑡
+)
+y
+^
+	​
+
+(t+h)=f(X
+t−k:t
+	​
+
+)
+
+podrías calcular:
+
+𝑟
+(
+𝑡
+)
+=
+𝑦
+(
+𝑡
+)
+−
+𝑦
+^
+(
+𝑡
+)
+r(t)=y(t)−
+y
+^
+	​
+
+(t)
+
+y estudiar si durante ataques:
+
+∣
+𝑟
+(
+𝑡
+)
+∣
+↑
+∣r(t)∣↑
+
+Es decir:
+
+ML dynamic model → residual → anomaly indicator
+
+Eso conecta tu background de control con ML sin convertir el proyecto en control clásico.
+
+Validación correcta
+
+Aquí hay un peligro enorme.
+
+Random train/test split sería metodológicamente incorrecto.
+
+A 1 Hz:
+
+𝑥
+𝑡
+y
+𝑥
+𝑡
++
+1
+x
+t
+	​
+
+yx
+t+1
+	​
+
+
+son casi la misma condición física.
+
+Si uno termina en train y el otro en test, el desempeño parece artificialmente excelente.
+
+Yo usaría:
+
+Train
+→
+Validation
+→
+Test
+Train→Validation→Test
+
+como bloques cronológicos.
+
+Además añadiría un gap igual o mayor que la largest lag window.
+
+Otro baseline imprescindible
+
+Para level/temperature/pressure:
+
+𝑦
+^
+(
+𝑡
++
+ℎ
+)
+=
+𝑦
+(
+𝑡
+)
+y
+^
+	​
+
+(t+h)=y(t)
+	​
+
+
+Persistence model.
+
+Porque si el tanque cambia lentamente, un Random Forest con 
+𝑅
+2
+=
+0.999
+R
+2
+=0.999 puede parecer impresionante cuando simplemente decir:
+
+“dentro de 10 segundos será casi igual que ahora”
+
+obtiene 
+𝑅
+2
+=
+0.998
+R
+2
+=0.998.
+
+Este baseline sería una de las cosas que haría tu trabajo mucho más riguroso.
+
+Pros de SWaT
+Testbed físico, no simplemente simulación.
+PLC + actuadores + sensores.
+Variables con significado físico.
+Múltiples stages.
+1 Hz.
+Casi un millón de muestras.
+Targets claros de regression.
+Target alternativo para classification.
+Excelente para lag features.
+Excelente para nonlinear models.
+Permite Linear → KNN → RF → Boosting → RNN.
+Permite estudiar operación normal y abnormal.
+Excelente portfolio industrial.
+Existe trabajo previo suficiente para hacer revisión crítica. 
+SUTD
++1
+Contras
+Academic benchmark bastante explotado.
+Alta autocorrelación.
+Random split produce leakage.
+Attack classification puede convertirse en un proyecto genérico de cybersecurity.
+51 variables pueden distraer del objetivo.
+Algunos ataques manipulan directamente sensores/actuadores; hay que decidir si queremos detect, predict o model the process.
+Million-row dataset no significa million independent observations.
+Requiere entender la topología del proceso antes de elegir features.
+Evaluación
+93/100
+93/100
+	​
+
+
+Mi #1.
+
+🥈 2. BATADAL
+
+BATADAL se vuelve muchísimo más interesante cuando lo miramos desde system modeling y no únicamente desde cybersecurity.
+
+Sistema físico representado
+
+BATADAL modela la red de agua C-Town.
+
+Incluye:
+
+1 reservoir,
+7 tanks,
+11 pumps,
+valves,
+cientos de pipes/junctions,
+PLCs,
+SCADA central.
+
+La red completa incluye 388 junctions y 429 pipes. 
+ASCE Library
+
+Los datos SCADA publicados contienen 43 variables relacionadas con:
+
+tank levels,
+pump states,
+pump flows,
+valve state/flow,
+pressures. 
+Kaggle
+
+Esto genera relaciones físicamente muy claras:
+
+Pump status
+→
+Flow
+→
+Tank level
+→
+Pressure
+Pump status→Flow→Tank level→Pressure
+Dataset structure
+
+Aquí BATADAL tiene algo que me gusta muchísimo.
+
+Hay tres datasets temporales claramente separados:
+
+Training 1
+
+Aproximadamente un año completo de normal operation.
+
+8761
+ hourly observations
+8761 hourly observations
+Training 2
+
+Aproximadamente seis meses:
+
+4177
+ observations
+4177 observations
+
+con ataques.
+
+Test
+
+Aproximadamente tres meses:
+
+2089
+ observations
+2089 observations
+
+también con ataques.
+
+Los datos SCADA están muestreados cada hora. 
+Batadal
++1
+
+Aquí está su gran ventaja
+
+Para DS675, BATADAL es probablemente el dataset conceptualmente más limpio de los cuatro.
+
+Podemos plantear, por ejemplo:
+
+𝑋
+𝑡
+−
+24
+:
+𝑡
+→
+𝐿
+𝑇
+1
+(
+𝑡
++
+1
+)
+X
+t−24:t
+	​
+
+→L
+T1
+	​
+
+(t+1)
+	​
+
+
+donde:
+
+𝑋
+=
+{
+pump statuses
+,
+pump flows
+,
+pressures
+,
+tank levels
+}
+X={pump statuses,pump flows,pressures,tank levels}
+
+y:
+
+𝑦
+=
+𝐿
+𝑇
+1
+y=L
+T1
+	​
+
+
+una hora en el futuro.
+
+Dinámica particularmente interesante
+
+Como hay ciclos de consumo diarios, podemos probar lags:
+
+1
+,
+  
+2
+,
+  
+3
+,
+  
+6
+,
+  
+12
+,
+  
+24
+  
+hours
+1,2,3,6,12,24hours
+
+Incluso:
+
+𝑦
+(
+𝑡
+−
+24
+)
+y(t−24)
+
+puede ser muy informativo.
+
+Eso produce una oportunidad preciosa para estudiar:
+
+Short-term memory
+𝑡
+−
+1
+:
+𝑡
+t−1:t
+
+vs.
+
+Daily operational memory
+𝑡
+−
+24
+:
+𝑡
+t−24:t
+Un proyecto muy elegante
+Phase 1 — Model normal hydraulic behavior
+
+Train Dataset 1:
+
+𝑓
+(
+𝑋
+𝑡
+−
+𝑘
+:
+𝑡
+)
+→
+𝑦
+𝑡
++
+1
+f(X
+t−k:t
+	​
+
+)→y
+t+1
+	​
+
+Phase 2 — Test prediction
+
+normal unseen data.
+
+Phase 3 — Attack robustness
+
+Aplicar el modelo sobre Training Dataset 2.
+
+Calcular:
+
+𝑟
+(
+𝑡
+)
+=
+𝑦
+(
+𝑡
+)
+−
+𝑦
+^
+(
+𝑡
+)
+r(t)=y(t)−
+y
+^
+	​
+
+(t)
+
+y comprobar si los ataques producen residual distributions diferentes.
+
+Eso tiene muchísimo más sentido ingenieril que hacer:
+
+𝑋
+𝑡
+→
+𝐴
+𝑇
+𝑇
+𝐴
+𝐶
+𝐾
+X
+t
+	​
+
+→ATTACK
+
+directamente.
+
+¿Por qué no es #1?
+
+Por dos razones.
+
+1. Es una simulación
+
+BATADAL utiliza EPANET para simular el comportamiento hidráulico de C-Town y los ataques. 
+Preprints
+
+Eso no lo convierte en un mal dataset.
+
+EPANET proporciona una dinámica hidráulica físicamente coherente.
+
+Pero SWaT/WADI provienen de testbeds físicos reales.
+
+2. Resolución temporal de una hora
+
+Ésta es la desventaja más importante.
+
+Δ
+𝑡
+=
+1
+ℎ
+Δt=1h
+
+Por tanto, estamos modelando:
+
+operating cycles,
+demand,
+storage dynamics,
+
+más que los transitorios rápidos de un loop de control.
+
+No vas a observar detalladamente:
+
+pump turns on → pressure transient → controller response.
+
+En cambio SWaT sí ofrece 1 Hz.
+
+Pero para un mini-project eso puede ser positivo
+
+8761 filas son pocas comparadas con SWaT.
+
+Pero no son pocas para:
+
+Linear Regression,
+Ridge,
+KNN,
+Decision Trees,
+Random Forest,
+Gradient Boosting.
+
+Y entrenar modelos será extremadamente fácil.
+
+Puedes hacer 50 experimentos sin necesitar GPU.
+
+Leakage
+
+Aquí el problema es mucho más manejable.
+
+No random split.
+
+Simplemente:
+
+𝑇
+𝑟
+𝑎
+𝑖
+𝑛
+	
+:
+𝑚
+𝑜
+𝑛
+𝑡
+ℎ
+𝑠
+ 
+1
+−
+8
+
+
+𝑉
+𝑎
+𝑙
+𝑖
+𝑑
+𝑎
+𝑡
+𝑖
+𝑜
+𝑛
+	
+:
+𝑚
+𝑜
+𝑛
+𝑡
+ℎ
+𝑠
+ 
+9
+−
+10
+
+
+𝑇
+𝑒
+𝑠
+𝑡
+	
+:
+𝑚
+𝑜
+𝑛
+𝑡
+ℎ
+𝑠
+ 
+11
+−
+12
+Train
+Validation
+Test
+	​
+
+:months1−8
+:months9−10
+:months11−12
+	​
+
+
+Por ejemplo.
+
+Los splits temporales son muy naturales.
+
+Existing work
+
+BATADAL fue originalmente una competition de attack detection, e incluso el ganador utilizó conocimiento hidráulico del sistema combinado con anomaly detection. 
+ScienceDirect
+
+Esto es interesante porque podemos hacer algo diferente:
+
+No intentar ganar nuevamente BATADAL.
+
+Sino estudiar:
+
+Can conventional ML learn the normal dynamic input-output behavior of C-Town?
+Can conventional ML learn the normal dynamic input-output behavior of C-Town?
+	​
+
+
+En Kaggle, el mirror que encontré tiene sólo 4 notebooks y 1 discussion, considerablemente menos actividad que muchos benchmarks clásicos. 
+Kaggle
+
+Pros BATADAL
+SCADA puro.
+Tank/pump/pressure/flow interpretation excelente.
+Features documentadas.
+Target muy claro.
+La topología está disponible.
+Separación temporal excelente.
+Computacionalmente trivial.
+Ideal para Linear/KNN/Tree/RF/Boosting.
+Lags de 24 h tienen interpretación física.
+Muy poco trabajo Kaggle relativo.
+Muy fácil presentar el proyecto.
+Muy fácil hacer gráficos e interpretar resultados.
+Originalidad razonable si abandonamos attack classification.
+Train normal + attack dataset permite residual-based analysis.
+Contras
+Simulado.
+Sampling de 1 hora.
+Sólo ~15k observaciones totales.
+No representa bien transitorios rápidos de control.
+Apenas siete attack events en algunos subsets: muchos attack-labeled rows no equivalen a muchos ataques independientes. 
+Preprints
+Si el proyecto se convierte en supervised attack classification, el tamaño efectivo de la clase minoritaria es pequeño.
+Al usar 24 lags × muchas variables, dimensionality puede crecer muy rápido.
+Evaluación
+91/100
+91/100
+	​
+
+
+Y hay algo importante:
+
+Para un mini-project que quieres terminar impecablemente, BATADAL puede ser incluso más seguro que SWaT.
+
+🥉 3. WADI
+Qué representa
+
+WADI es la pareja natural de SWaT.
+
+Mientras SWaT trata water treatment, WADI representa water distribution.
+
+Tiene tres stages:
+
+P1 — Primary
+
+Dos raw-water tanks de aproximadamente 2500 L.
+
+P2 — Distribution
+
+Dos elevated reservoirs que alimentan seis consumer tanks.
+
+P3 — Return
+
+Unused water regresa y puede recircularse hacia P1. 
+Springer
++1
+
+Esto es tremendamente interesante desde control porque aparecen:
+
+storage,
+consumer demand,
+pumps,
+reservoirs,
+return flow,
+pressure,
+level,
+valves.
+Dataset
+
+La referencia oficial registra:
+
+16 días continuos
+14 normales
+2 con ataques
+123 sensores y actuadores
+15 ataques. 
+SUTD
+
+Fuentes posteriores describen 69 sensores + 54 actuadores y muestreo de 1 segundo. 
+ScienceDirect
++1
+
+Estamos nuevamente alrededor de un millón de observaciones.
+
+Por qué técnicamente podría ser el #1
+
+WADI posiblemente tiene la dinámica más interesante de los cuatro.
+
+En una red de distribución:
+
+Demand
++
+Pump operation
++
+Storage
+→
+Levels/flows/pressures
+Demand+Pump operation+Storage→Levels/flows/pressures
+
+y estas relaciones cambian dependiendo del operating regime.
+
+Podríamos hacer algo como:
+
+[
+𝑃
+𝑢
+𝑚
+𝑝
+𝑠
+𝑡
+−
+𝑘
+:
+𝑡
+,
+𝐹
+𝑙
+𝑜
+𝑤
+𝑠
+𝑡
+−
+𝑘
+:
+𝑡
+,
+𝐿
+𝑒
+𝑣
+𝑒
+𝑙
+𝑠
+𝑡
+−
+𝑘
+:
+𝑡
+,
+𝑃
+𝑟
+𝑒
+𝑠
+𝑠
+𝑢
+𝑟
+𝑒
+𝑠
+𝑡
+−
+𝑘
+:
+𝑡
+]
+→
+𝐿
+𝑒
+𝑣
+𝑒
+𝑙
+𝐸
+𝑅
+1
+(
+𝑡
++
+ℎ
+)
+[Pumps
+t−k:t
+	​
+
+,Flows
+t−k:t
+	​
+
+,Levels
+t−k:t
+	​
+
+,Pressures
+t−k:t
+	​
+
+]→Level
+ER1
+	​
+
+(t+h)
+	​
+
+
+o:
+
+→
+𝑃
+𝑐
+𝑜
+𝑛
+𝑠
+𝑢
+𝑚
+𝑒
+𝑟
+(
+𝑡
++
+ℎ
+)
+→P
+consumer
+	​
+
+(t+h)
+
+Eso es prácticamente:
+
+SCADA data-driven dynamic modeling.
+Incluso más interesante
+
+Comparar diferentes horizons:
+
+ℎ
+=
+10
+𝑠
+,
+  
+30
+𝑠
+,
+  
+60
+𝑠
+,
+  
+5
+𝑚
+𝑖
+𝑛
+h=10s,30s,60s,5min
+
+y observar:
+
+𝑅
+𝑀
+𝑆
+𝐸
+(
+ℎ
+)
+RMSE(h)
+
+A medida que aumenta 
+ℎ
+h, debería hacerse más difícil.
+
+Eso es una pregunta científica clara.
+
+Entonces, ¿por qué sólo #3?
+
+Por riesgo de ejecución.
+
+Problema 1 — Dimensionalidad
+
+123 signals.
+
+No quieres terminar con:
+
+123
+×
+60
+=
+7380
+123×60=7380
+
+features porque creaste 60 lags.
+
+Eso sería un proyecto de preprocessing.
+
+Tendríamos que elegir un subsystem físico.
+
+Problema 2 — Dataset cleaning
+
+La propia página oficial de iTrust advierte que ciertas secciones del plant run fueron inestables y que posteriormente tuvieron que eliminar lecturas afectadas y publicar archivos corregidos. También hubo correcciones a los labels de ataques. 
+SUTD
+
+No es necesariamente malo.
+
+Pero es algo que tendremos que documentar.
+
+Problema 3 — Gaps
+
+Trabajos recientes que usan WADI señalan incluso un largo gap en la secuencia temporal de la versión A2. 
+ResearchGate
+
+Un lag generator ingenuo puede crear:
+
+𝑥
+𝑡
+−
+1
+x
+t−1
+	​
+
+
+a través de un gap temporal que en realidad dura días.
+
+Eso sería incorrecto.
+
+Hay que segmentar las series antes.
+
+Problema 4 — menos soporte Kaggle
+
+El mirror actual que encontré tiene:
+
+4 notebooks
+0 discussions
+aproximadamente 947 downloads. 
+Kaggle
+
+Es excelente para originalidad.
+
+Pero menos conveniente para el outcome del curso de evaluar críticamente recursos existentes.
+
+Gran oportunidad original
+
+Precisamente porque casi todo el trabajo WADI existente está orientado a attack/anomaly detection —con GNN, autoencoders, LSTM-VAE, etc.— hay bastante espacio para:
+
+system prediction instead of anomaly classification
+system prediction instead of anomaly classification
+	​
+
+
+WADI continúa siendo un benchmark activo de anomaly detection. 
+Sota2
++1
+
+Pros WADI
+Testbed físico.
+SCADA/PLC.
+Pumps + valves + storage + consumers.
+123 variables.
+1 Hz.
+Muchísimos datos.
+Dinámica multivariable.
+Nonlinearity.
+Operating regimes.
+Demand effects.
+Excelente para state/output prediction.
+Excelente para residual-based fault/attack detection.
+Poca actividad Kaggle → mucha originalidad.
+Excelente portfolio.
+Quizás el sistema más parecido a SCADA municipal real de los cuatro.
+Contras
+Dataset grande.
+123 variables pueden complicar muchísimo feature engineering.
+Correcciones oficiales del dataset.
+Gaps y unstable sections.
+1.2M filas muy autocorrelacionadas.
+Sólo 14 días normales.
+15 attack events es poco a nivel de eventos.
+Si no restringimos el scope, se convierte fácilmente en un proyecto demasiado grande.
+Mapping de los tags y subsystems requiere más trabajo que SWaT o BATADAL.
+Evaluación
+89/100
+89/100
+	​
+
+
+Técnicamente es extraordinario.
+
+Pero para un mini-project:
+
+WADI tiene más ceiling que BATADAL, pero también mucho más riesgo.
+
+4. SKAB
+
+SKAB es distinto a los otros tres.
+
+Sistema físico
+
+SKAB utiliza un testbed físico de circulación de agua con:
+
+water tank,
+electric motor-driven pump,
+two solenoid valves,
+pressure,
+flow,
+vibration,
+temperature,
+electrical measurements. 
+PubMed Central (PMC)
+
+Los CSV contienen:
+
+Accelerometer1RMS
+Accelerometer2RMS
+Current
+Pressure
+Temperature
+Thermocouple
+Voltage
+RateRMS
+anomaly
+changepoint. 
+Kaggle
+
+Tiene fallas experimentales muy atractivas:
+
+partial valve closure,
+fluid leakage/addition,
+shaft imbalance,
+water increase,
+cavitation,
+two-phase flow,
+elevated fluid temperature. 
+GitHub
+
+Desde ingeniería, esto está excelente.
+
+El problema
+
+La estructura publicada es principalmente:
+
+measured signals
+→
+anomaly
+measured signals→anomaly
+
+No tenemos en cada CSV el mismo nivel de información explícita de:
+
+𝑢
+(
+𝑡
+)
+=
+controller command / valve command
+u(t)=controller command / valve command
+
+que tenemos en SWaT/WADI/BATADAL.
+
+Por eso es mucho más natural usar SKAB para:
+
+Condition monitoring / fault detection
+
+que para:
+
+system identification from manipulated inputs.
+Tamaño efectivo
+
+SKAB v0.9 contiene aproximadamente 35 archivos experimentales, y cada archivo representa un experimento con una anomalía. 
+GitHub
++1
+
+Esto es crucial.
+
+Podemos tener miles de timestamped rows.
+
+Pero no debemos fingir que son miles de fallas independientes.
+
+En realidad aproximadamente:
+
+𝑁
+events
+∼
+35
+N
+events
+	​
+
+∼35
+
+Eso limita bastante supervised fault prediction.
+
+Una formulación posible
+
+Podríamos hacer:
+
+𝑋
+𝑡
+−
+𝑘
+:
+𝑡
+→
+𝑎
+𝑛
+𝑜
+𝑚
+𝑎
+𝑙
+𝑦
+𝑡
++
+ℎ
+X
+t−k:t
+	​
+
+→anomaly
+t+h
+	​
+
+
+Pero aparece un problema.
+
+Supongamos que dividimos aleatoriamente filas de un mismo experimento.
+
+Entonces:
+
+parte del mismo valve-closing experiment está en train,
+otra parte está en test.
+
+Eso mide interpolación dentro del experimento.
+
+No generalización a una falla nueva.
+
+Split correcto
+
+Deberíamos hacer:
+
+train experiments
+≠
+test experiments
+train experiments
+
+=test experiments
+	​
+
+
+No:
+
+random rows
+random rows
+
+Esto probablemente bajaría muchísimo los scores respecto a algunos análisis ingenuos.
+
+Una alternativa que sí me interesa
+
+En vez de anomaly:
+
+[
+𝐶
+𝑢
+𝑟
+𝑟
+𝑒
+𝑛
+𝑡
+,
+𝑉
+𝑜
+𝑙
+𝑡
+𝑎
+𝑔
+𝑒
+,
+𝑉
+𝑖
+𝑏
+𝑟
+𝑎
+𝑡
+𝑖
+𝑜
+𝑛
+,
+𝑇
+𝑒
+𝑚
+𝑝
+𝑒
+𝑟
+𝑎
+𝑡
+𝑢
+𝑟
+𝑒
+,
+𝑃
+𝑟
+𝑒
+𝑠
+𝑠
+𝑢
+𝑟
+𝑒
+]
+𝑡
+−
+𝑘
+:
+𝑡
+→
+𝑅
+𝑎
+𝑡
+𝑒
+𝑅
+𝑀
+𝑆
+𝑡
++
+ℎ
+[Current,Voltage,Vibration,Temperature,Pressure]
+t−k:t
+	​
+
+→RateRMS
+t+h
+	​
+
+
+o:
+
+→
+𝑃
+𝑟
+𝑒
+𝑠
+𝑠
+𝑢
+𝑟
+𝑒
+𝑡
++
+ℎ
+→Pressure
+t+h
+	​
+
+
+Podemos estudiar el comportamiento del pump loop.
+
+Pero sigue faltando un verdadero manipulated input.
+
+Por eso la interpretación system identification es más débil.
+
+Existing work
+
+SKAB está más desarrollado como benchmark formal que WADI/BATADAL en Kaggle.
+
+Actualmente aparecen alrededor de:
+
+15 Kaggle notebooks
+2 discussions 
+Kaggle
+
+Y los autores ofrecen baseline results con:
+
+PCA / Hotelling 
+𝑇
+2
+T
+2
+Isolation Forest
+autoencoders
+LSTM
+LSTM-AE
+convolutional AE
+MSCRED
+MSET. 
+GitHub
+
+Esto es bueno para crítica de literatura.
+
+Pero también significa que:
+
+“compare Isolation Forest vs Autoencoder vs LSTM”
+
+sería prácticamente reproducir el benchmark.
+
+Pros SKAB
+Testbed físico.
+Faults físicos auténticamente interesantes.
+Pump + hydraulic loop.
+Pressure, flow, vibration, electrical variables.
+Muy interpretable.
+Small/manageable.
+Excelentes labels.
+changepoint además de anomaly.
+Múltiples tipos de failure.
+Ideal para feature engineering.
+Ideal para PCA.
+Ideal para classification.
+Existe leaderboard y notebooks para comparar.
+Buen ejemplo de predictive maintenance.
+Contras
+Sólo ~35 experiments.
+Pocos eventos independientes.
+Mucha menos riqueza SCADA.
+No hay manipulated/control input explícito comparable con SWaT.
+Más condition monitoring que process control.
+Ya tiene benchmarks anomaly detection muy establecidos.
+Supervised early-warning prediction es difícil con tan pocos eventos.
+Random row splits serían particularmente engañosos.
+Menor profundidad para multivariable process modeling.
+Evaluación
+81/100
+81/100
+	​
+
+
+No es un mal proyecto.
+
+Simplemente no es el mejor de estos cuatro para la dirección que quieres tomar.
+
+Comparación SCADA directa
+Aspecto	SWaT	BATADAL	WADI	SKAB
+Proceso físico real	✅	❌ simulated	✅	✅
+PLC/SCADA explícito	✅	✅	✅	Parcial
+Manipulated variables	✅✅	✅✅	✅✅	⚠️
+Sensor variables	✅✅	✅✅	✅✅	✅
+Hydraulic dynamics	✅✅	✅✅	✅✅	✅
+Fast dynamics	✅ 1 Hz	❌ 1 h	✅ 1 Hz	✅
+Long operating horizon	11 days	~1 year+	16 days	experiments
+Fault/attack labels	✅	✅	✅	✅✅
+Dynamic regression	Excelente	Excelente	Excelente	Buena
+System identification feel	Muy alto	Muy alto	Muy alto	Medio
+Dataset complexity	Medium	Low	High	Low
+Project risk	Medium	Low	High	Low
+Originality room	Good	Very good	Excellent	Good
+Algo importante: clasificación vs modelado
+
+Mi recomendación cambia mucho dependiendo de qué quieres que sea el corazón del proyecto.
+
+Si hacemos:
+𝑋
+𝑡
+→
+𝐴
+𝑡
+𝑡
+𝑎
+𝑐
+𝑘
+X
+t
+	​
+
+→Attack
+
+mi ranking sería aproximadamente:
+
+𝑆
+𝑊
+𝑎
+𝑇
+>
+𝑆
+𝐾
+𝐴
+𝐵
+>
+𝑊
+𝐴
+𝐷
+𝐼
+>
+𝐵
+𝐴
+𝑇
+𝐴
+𝐷
+𝐴
+𝐿
+SWaT>SKAB>WADI>BATADAL
+
+Pero no escogería esta dirección para ti.
+
+Si hacemos:
+[
+𝑢
+𝑡
+−
+𝑘
+:
+𝑡
+,
+𝑦
+𝑡
+−
+𝑘
+:
+𝑡
+]
+→
+𝑦
+𝑡
++
+ℎ
+[u
+t−k:t
+	​
+
+,y
+t−k:t
+	​
+
+]→y
+t+h
+	​
+
+
+entonces:
+
+𝑆
+𝑊
+𝑎
+𝑇
+≈
+𝐵
+𝐴
+𝑇
+𝐴
+𝐷
+𝐴
+𝐿
+>
+𝑊
+𝐴
+𝐷
+𝐼
+≫
+𝑆
+𝐾
+𝐴
+𝐵
+SWaT≈BATADAL>WADI≫SKAB
+	​
+
+
+Y ésa es la dirección que considero más interesante.
+
+Mi propuesta para cada uno
+Dataset	Pregunta de proyecto que realmente usaría
+SWaT	¿Cuánto mejora la predicción de niveles/flows futuros al incorporar la historia temporal de sensores y actuadores?
+BATADAL	¿Pueden modelos ML aprender la dinámica hidráulica normal de una red SCADA y usar errores de predicción para revelar anomalías?
+WADI	¿Qué tan bien generalizan modelos estáticos vs dinámicos para predecir estados de reservoirs bajo diferentes demandas operativas?
+SKAB	¿Puede la historia multivariada de sensores anticipar cambios de condición/fallas de una bomba hidráulica?
+
+Fíjate en algo: las primeras tres tienen una formulación natural de entrada–salida.
+
+SKAB tiene una formulación natural de condition → failure.
+
+Ahí está la diferencia.
+
+Mi decisión entre SWaT y BATADAL
+
+Ésta es probablemente la decisión importante.
+
+Escogería SWaT si queremos:
+testbed físico,
+PLC real,
+fast dynamics,
+mayor riqueza,
+mayor valor portfolio,
+posible evolución a RNN,
+normal + abnormal dynamics.
+
+El proyecto sería:
+
+Machine-Learning-Based Dynamic Modeling of a SCADA-Controlled Water Treatment Process
+
+con un subsystem concreto.
+
+Escogería BATADAL si queremos:
+proyecto extremadamente limpio,
+dataset pequeño pero suficiente,
+variables muy claras,
+computational experiments rápidos,
+splits temporales claros,
+lag engineering fácilmente interpretable,
+menor probabilidad de perdernos en preprocessing.
+
+El proyecto sería:
+
+Data-Driven Dynamic Modeling of a SCADA Water Distribution Network Using Machine Learning
+
+Y tiene una ventaja pedagógica enorme: con BATADAL podemos dedicar el esfuerzo a Machine Learning, que es justamente la materia del curso.
+
+Mi recomendación final
+
+Mantendría dos candidatos vivos:
+
+SWaT
+SWaT
+	​
+
+
+como primera propuesta y
+
+BATADAL
+BATADAL
+	​
+
+
+como segunda.
+
+No descartaría WADI, pero lo trataría como una alternativa más ambiciosa:
+
+𝑆
+𝑊
+𝑎
+𝑇
+=
+𝑚
+𝑒
+𝑗
+𝑜
+𝑟
+𝑏
+𝑎
+𝑙
+𝑎
+𝑛
+𝑐
+𝑒
+SWaT=mejorbalance
+	​
+
+𝐵
+𝐴
+𝑇
+𝐴
+𝐷
+𝐴
+𝐿
+=
+𝑚
+𝑒
+𝑗
+𝑜
+𝑟
+𝑟
+𝑒
+𝑙
+𝑎
+𝑐
+𝑖
+𝑜
+ˊ
+𝑛
+𝑟
+𝑖
+𝑔
+𝑜
+𝑟
+/
+𝑒
+𝑠
+𝑓
+𝑢
+𝑒
+𝑟
+𝑧
+𝑜
+BATADAL=mejorrelaci
+o
+ˊ
+nrigor/esfuerzo
+	​
+
+𝑊
+𝐴
+𝐷
+𝐼
+=
+𝑚
+𝑎
+𝑦
+𝑜
+𝑟
+𝑝
+𝑜
+𝑡
+𝑒
+𝑛
+𝑐
+𝑖
+𝑎
+𝑙
+𝑝
+𝑒
+𝑟
+𝑜
+𝑚
+𝑎
+𝑦
+𝑜
+𝑟
+𝑟
+𝑖
+𝑒
+𝑠
+𝑔
+𝑜
+WADI=mayorpotencialperomayorriesgo
+	​
+
+𝑆
+𝐾
+𝐴
+𝐵
+=
+𝑚
+𝑒
+𝑗
+𝑜
+𝑟
+𝑝
+𝑎
+𝑟
+𝑎
+𝑓
+𝑎
+𝑢
+𝑙
+𝑡
+𝑑
+𝑒
+𝑡
+𝑒
+𝑐
+𝑡
+𝑖
+𝑜
+𝑛
+𝑞
+𝑢
+𝑒
+𝑝
+𝑎
+𝑟
+𝑎
+𝑠
+𝑦
+𝑠
+𝑡
+𝑒
+𝑚
+𝑚
+𝑜
+𝑑
+𝑒
+𝑙
+𝑖
+𝑛
+𝑔
+SKAB=mejorparafaultdetectionqueparasystemmodeling
+	​
+
+
+Para Milestone 1, actualmente me inclino ligeramente por SWaT, pero si al inspeccionar los datos encontramos que podemos aislar en BATADAL un subsistema tank–pump con una relación entrada–salida particularmente limpia, BATADAL podría terminar siendo mi recomendación #1. La diferencia es suficientemente pequeña como para que convenga decidir mirando los datos reales, no sólo la descripción.
+
+El paso que más valor tendría ahora es hacer precisamente eso: abrir SWaT y BATADAL, reconstruir sus variables como 
+𝑢
+u, 
+𝑦
+y, states/disturbances, escoger 2–3 targets concretos y diseñar los experimentos de lags/horizon/splits. Ahí podremos saber cuál produce el proyecto de DS675 más sólido antes de comprometernos con uno.
+````
+
+## Attachment metadata as returned
+
+````json
+[]
+````
+
+## Browser capture
+
+source_records/browser/6a9e2e37-35d0-83ea-9c08-b0d6b9ab2ec8.browser.json
+All captured units are retained in the transcript JSON. Full conversation HTML/text remains in the browser source.

@@ -1,0 +1,11 @@
+report_locator,claim,primary_source,implementation_or_document,output,status
+1.1,"Source, dimensions, units and complete tables",Official Zenodo release and benchmark paper,src/data.py; src/analysis.py,results/table_checks.json,Executed descriptive check
+1.2; Figure 1,"Task, sector, paths, feature filter and schematic",Official nominal model and sensor configuration,src/analysis.py; src/figures.py,results/topology_audit.json; results/figures/figure1_supply_boundary.png,Executed model parsing; interpretive schematic
+1.3; Figure 2,"273 days, range and daily profiles",Jan-Sep 2018 official SCADA,src/analysis.py; src/figures.py,results/eda_statistics.json; results/figures/figure2_daily_profiles.png,Executed descriptive EDA
+1.3; Figure 3,"78621 pairs, persistence errors and correlations",Jan-Sep 2018 official SCADA,src/analysis.py; src/figures.py,results/correlations.csv; results/figures/figure3_correlations.png,Executed descriptive EDA; no final model score
+2; Figure 4,"35 groups, five categories and six selections",47 historical source records and group assignments,src/screening.py; src/figures.py,results/screening_summary.json; results/figures/figure4_historical_screening.png,Executed count audit; scholarly categories retained
+2; six-study table,"Original author tasks, models, preparation and scores",Original articles and pinned author code,literature/detailed_review/; evidence/literature_checks.json,Six separate reviews,Literature reported; author models not reproduced
+3.1,"C1, C2, C3 and bounded contribution",Submitted Milestone 2 Section 3,docs/anticipated_contributions.md,No fitted-model output,Proposed
+3.2,Current plus 55-minute history; four models,Submitted Milestone 2 Section 3.2,docs/anticipated_contributions.md,No fitted-model output,Proposed
+3.3,"Chronology, common rows, MAE/RMSE and full/reduced boosting",Submitted Milestone 2 Section 3.3,docs/anticipated_contributions.md,No fitted-model output,Proposed
+Feedback,Ahmed comparison and provenance clarification,Documented professor feedback and Ahmed 2025,docs/professor_feedback.md; literature/ahmed_feedback.md,Separate supplement outside historical counts,Source-based clarification

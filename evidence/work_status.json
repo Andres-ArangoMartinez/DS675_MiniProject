@@ -1,0 +1,24 @@
+{
+  "report_status": "Original submitted PDFs preserved unchanged; supporting clarification is in docs/student_contributions.md.",
+  "completed_here": [
+    "Official-input checksum and annual table checks",
+    "Jan–Sep 2018 descriptive persistence and correlations",
+    "Nominal sector/path checks and an interpretive supply schematic",
+    "Four descriptive/supporting figures",
+    "Historical inventory recount and source summaries"
+  ],
+  "AI_assistance_scope": [
+    "Methodological proposals",
+    "Source discovery and technical synthesis",
+    "Generated code and recorded execution",
+    "Writing and organization"
+  ],
+  "literature_results": "Published author results; model training and scores not reproduced.",
+  "proposed_only": [
+    "C1: lagged forecast-data preparation as a learning experiment",
+    "C2: Gradient Boosting versus persistence, Ridge and Random Forest",
+    "C3: full-feature versus n1-history Gradient Boosting with the same calendar inputs"
+  ],
+  "2019_use_in_this_pipeline": "Table-structure checks only; no 2019 forecast score.",
+  "disclosure_boundary": "Available recovered readable conversations are public under evidence/ai_interactions with documented redactions. Unredacted originals, raw sessions/databases and binary attachments remain private. ChatGPT recovery is partial; this repository does not certify a complete historical transcript submission or academic acceptance."
+}

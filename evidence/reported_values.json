@@ -1,0 +1,37 @@
+{
+  "rows": 78624,
+  "forecast_pairs": 78621,
+  "days": 273,
+  "n1_range_m": [
+    25.67,
+    29.36
+  ],
+  "persistence_MAE_m": 0.05177624298851451,
+  "persistence_RMSE_m": 0.06849175638676988,
+  "correlation_with_future_n1": {
+    "n1": 0.9923104288422752,
+    "T1": 0.9230382756150443,
+    "PUMP_1": -0.036721113537145696,
+    "AMR_n1": -0.1573783306135834
+  },
+  "T1_pipe_distances_m": {
+    "n1": 891.0,
+    "n4": 574.0,
+    "n31": 308.0
+  },
+  "network_counts": {
+    "junctions": 782,
+    "reservoirs": 2,
+    "tanks": 1,
+    "pipes": 905,
+    "pumps": 1,
+    "valves": 3
+  },
+  "source": "Values reported in the submitted Milestone 2 PDF, retained as numerical comparison targets; not fitted-model results.",
+  "T1_pipe_distances_unrounded_m": {
+    "n1": 891.3208,
+    "n4": 573.7565,
+    "n31": 307.7926
+  },
+  "distance_rounding": "The report prints nearest-metre values. Full pipe-length sums are retained and verified separately."
+}

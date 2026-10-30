@@ -1,0 +1,20 @@
+{
+  "record_id": 29921204,
+  "title": "Windowed Multivariate LSTM Autoencoder for Leak Detection in Water Distribution Networks",
+  "doi": "10.15131/shef.data.29921204.v1",
+  "url": "https://orda.shef.ac.uk/articles/conference_contribution/Windowed_Multivariate_LSTM_Autoencoder_for_Leak_Detection_in_Water_Distribution_Networks/29921204",
+  "authors": [
+    "Samer Ahmed",
+    "Dilek Düştegör",
+    "Alexander Lazovik",
+    "Heinrich Wörtche"
+  ],
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "filename": "A83.pdf",
+  "md5": "bf6a13adba2dae25a4d8b156f1581f6e",
+  "download_url": "https://ndownloader.figshare.com/files/57216614"
+}

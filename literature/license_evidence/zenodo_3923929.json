@@ -1,0 +1,26 @@
+{
+  "record_id": "3923929",
+  "url": "https://zenodo.org/records/3923929",
+  "title": "A Real Time Method to Detect the Burst Location of Urban Water Supply Network",
+  "creators": [
+    "Zhang,Weiping",
+    "Liu,Jingqing",
+    "Han,Lifei",
+    "Li,Yalin",
+    "Li,Xiujuang",
+    "Shi,Zhiman",
+    "Yu,Junfeng",
+    "Wang,Jiangxia"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3923929",
+  "files": [
+    {
+      "name": "zhiyun0601.pdf",
+      "md5": "865db315d4b37ccb6ee620d7cfbdca4f",
+      "url": "https://zenodo.org/api/records/3923929/files/zhiyun0601.pdf/content"
+    }
+  ]
+}

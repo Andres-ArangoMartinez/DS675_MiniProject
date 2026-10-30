@@ -1,0 +1,36 @@
+group,title,category,selected,category_definition,source_evidence_ids
+lila,LILA / Leakbusters,leak,True,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-5; pdf-6; repo-52; repo-55
+under-pressure,Under Pressure · dual model,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-7; pdf-8
+ciacua,CIACUA,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-9
+dhi-sg,DHI Singapore,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-10
+wu-bsy,Wu_BSY,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-11
+tsinghua,Tsinghua · conference VAR / journal EILF,leak,True,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-12; pdf-asce-2022
+dandw,DandW,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-13
+chebnet,Garðarsson · ChebNet,leak,True,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-14; repo-51
+liquor,Liquor-HGNN,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-15; repo-54
+gsi-dl,GSI + dictionary learning,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-16; pdf-17
+gan,GAN + SSIM,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-18
+gatres,GATRes,state,True,The primary task is estimating current network states rather than future pressure.,pdf-20; repo-50
+mobile,Iterative mobile sensor,sensors,False,The primary task is selecting or repositioning sensors.,pdf-22
+dual-ukf,D-UKF-AW-GSI,state,False,The primary task is estimating current network states rather than future pressure.,pdf-23
+topological,Topological signal processing,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-24
+li-chen,Li–Chen · interpretable ensemble,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-25
+aignn,Zhang–Fink · AIGNN,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-28; html-aignn-2026
+autoencoders,AE / VAE / LSTM-AE,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-31
+sam,SAM-kNN,anomaly,True,The primary task is detecting operational anomalies or sensor faults.,pdf-32; repo-48
+unife,UNIFE,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-35
+artesia,Artesia · ExtraTrees,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-36
+cubalytics,Cubalytics,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-37
+tongji,Tongji,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-38
+dhi-china,DHI China,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-39
+infrasense,InfraSense,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-40
+ku,KU hydrosystem,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-41
+iri,IRI,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-42
+zhiyun,Zhiyun,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-43
+cheng,Cheng00,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-44
+fluing,FluIng,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,pdf-45
+sicams,SICAMS / SIAM,anomaly,False,The primary task is detecting operational anomalies or sensor faults.,pdf-46; repo-siam
+agn,AGN · future nodal-head forecasting,forecast,True,The primary task is predicting pressure or head at future timestamps.,editorial-agn
+gastl,GASTL · spatial transfer,state,False,The primary task is estimating current network states rather than future pressure.,editorial-gastl
+pressure-patent,CN119129798A · pressure Transformer,forecast,False,The primary task is predicting pressure or head at future timestamps.,pdf-patent
+aquasentinel,AquaSentinel · Ridge and diagnosis,leak,False,The primary task is detecting and/or locating leaks; pressure prediction may be an intermediate step.,repo-aquasentinel

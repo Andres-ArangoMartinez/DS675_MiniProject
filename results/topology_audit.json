@@ -1,0 +1,197 @@
+{
+  "model": "L-TOWN.inp (nominal)",
+  "algorithm": "Dijkstra shortest total pipe length from T1",
+  "scope": "Initially open undirected pipes; pumps and PRVs excluded from sector connections.",
+  "network_counts": {
+    "junctions": 782,
+    "reservoirs": 2,
+    "tanks": 1,
+    "pipes": 905,
+    "pumps": 1,
+    "valves": 3
+  },
+  "sectors": {
+    "A": {
+      "junctions": 657,
+      "pressure_sensors": [
+        "n54",
+        "n105",
+        "n114",
+        "n163",
+        "n188",
+        "n229",
+        "n288",
+        "n296",
+        "n332",
+        "n342",
+        "n410",
+        "n415",
+        "n429",
+        "n458",
+        "n469",
+        "n495",
+        "n506",
+        "n516",
+        "n519",
+        "n549",
+        "n613",
+        "n636",
+        "n644",
+        "n679",
+        "n722",
+        "n726",
+        "n740",
+        "n752",
+        "n769"
+      ],
+      "pressure_sensor_count": 29,
+      "AMR_count": 0
+    },
+    "B": {
+      "junctions": 31,
+      "pressure_sensors": [
+        "n215"
+      ],
+      "pressure_sensor_count": 1,
+      "AMR_count": 0
+    },
+    "C": {
+      "junctions": 92,
+      "pressure_sensors": [
+        "n1",
+        "n4",
+        "n31"
+      ],
+      "pressure_sensor_count": 3,
+      "AMR_count": 82
+    }
+  },
+  "upstream_boundary_junctions": [
+    "n303",
+    "n336"
+  ],
+  "closed_pipes_excluded": [],
+  "T1_to_measured_pressure_nodes": {
+    "n1": {
+      "distance_m": 891.3208,
+      "pipe_path": [
+        "p239",
+        "p240",
+        "p319",
+        "p320",
+        "p248",
+        "p18",
+        "p16",
+        "p15",
+        "p247",
+        "p246",
+        "p11",
+        "p258",
+        "p257",
+        "p256",
+        "p255",
+        "p254",
+        "p253"
+      ]
+    },
+    "n4": {
+      "distance_m": 573.7565,
+      "pipe_path": [
+        "p239",
+        "p240",
+        "p319",
+        "p320",
+        "p248",
+        "p18",
+        "p16",
+        "p14",
+        "p268",
+        "p267",
+        "p7",
+        "p12"
+      ]
+    },
+    "n31": {
+      "distance_m": 307.79260000000005,
+      "pipe_path": [
+        "p239",
+        "p240",
+        "p319",
+        "p320",
+        "p313",
+        "p312",
+        "p21",
+        "p13"
+      ]
+    }
+  },
+  "PRVs": [
+    {
+      "id": "PRV-1",
+      "from": "n303",
+      "to": "n300",
+      "type": "PRV",
+      "nominal_setting_m": 40.0
+    },
+    {
+      "id": "PRV-2",
+      "from": "n336",
+      "to": "n111",
+      "type": "PRV",
+      "nominal_setting_m": 50.0
+    },
+    {
+      "id": "PRV-3",
+      "from": "n229",
+      "to": "n226",
+      "type": "PRV",
+      "nominal_setting_m": 35.0
+    }
+  ],
+  "supply_schematic_evidence": {
+    "reservoirs": [
+      "R1",
+      "R2"
+    ],
+    "pumps": [
+      {
+        "id": "PUMP_1",
+        "from": "n54",
+        "to": "T1"
+      }
+    ],
+    "boundary_pipes": [
+      {
+        "id": "p227",
+        "from": "R1",
+        "to": "n303"
+      },
+      {
+        "id": "p235",
+        "from": "R2",
+        "to": "n336"
+      },
+      {
+        "id": "p239",
+        "from": "T1",
+        "to": "n343"
+      }
+    ],
+    "note": "Connectivity verified in nominal model; figure layout and supply arrows are interpretive, not solved hydraulic flows."
+  },
+  "nominal_controls": [
+    "LINK PUMP_1 CLOSED IF NODE T1 ABOVE 3.9000",
+    "LINK PUMP_1 OPEN IF NODE T1 BELOW 2.4000"
+  ],
+  "feature_filter_counts": {
+    "all_channels": 119,
+    "Area_C_and_pump_candidates": 87,
+    "selected_signals": 6
+  },
+  "limitations": [
+    "Pipe-path length is not hydraulic sensitivity, pressure propagation delay or travel time.",
+    "Nominal setpoints do not establish observed time-varying valve states.",
+    "A tank supply boundary does not prove statistical independence from upstream conditions.",
+    "PUMP_1 is tank inflow; AMR_n1 is nodal consumption, not sector inflow."
+  ]
+}

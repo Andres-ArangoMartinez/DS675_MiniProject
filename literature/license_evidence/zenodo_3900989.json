@@ -1,0 +1,22 @@
+{
+  "record_id": "3900989",
+  "url": "https://zenodo.org/records/3900989",
+  "title": "A Pragmatic Approach for Leakage Detection Based on the Analysis of Observed Data and Hydraulic Simulations",
+  "creators": [
+    "MARZOLA, Irene",
+    "MAZZONI, Filippo",
+    "ALVISI, Stefano",
+    "FRANCHINI, Marco"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3900989",
+  "files": [
+    {
+      "name": "UNIFE.pdf",
+      "md5": "3cc61d5741a9cf64638dfebb2897b17f",
+      "url": "https://zenodo.org/api/records/3900989/files/UNIFE.pdf/content"
+    }
+  ]
+}

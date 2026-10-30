@@ -1,0 +1,23 @@
+{
+  "record_id": "3923907",
+  "url": "https://zenodo.org/records/3923907",
+  "title": "A Dual Model for Leak Detection and Localization",
+  "creators": [
+    "STEFFELBAUER, David B.",
+    "DEUERLEIN, Jochen",
+    "GILBERT, Denis",
+    "PILLER, Olivier",
+    "ABRAHAM, Edo"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3923907",
+  "files": [
+    {
+      "name": "Under_Pressure.pdf",
+      "md5": "f8120d8351de699add8c5b20d6978040",
+      "url": "https://zenodo.org/api/records/3923907/files/Under_Pressure.pdf/content"
+    }
+  ]
+}

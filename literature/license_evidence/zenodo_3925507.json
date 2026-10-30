@@ -1,0 +1,22 @@
+{
+  "record_id": "3925507",
+  "url": "https://zenodo.org/records/3925507",
+  "title": "The combined usage of the hydraulic model calibration residual and an improved vectorial angle method for solving the BattLeDIM problem",
+  "creators": [
+    "HUANG, Lefeng",
+    "DU, Kun",
+    "GUAN, Miaoting",
+    "WANG, Qi"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3925507",
+  "files": [
+    {
+      "name": "DandW.pdf",
+      "md5": "2051bb270e4ee19dc2e0c3448830b2e9",
+      "url": "https://zenodo.org/api/records/3925507/files/DandW.pdf/content"
+    }
+  ]
+}

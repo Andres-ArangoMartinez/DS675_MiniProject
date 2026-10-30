@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "source_views": 16,
+  "public_parts": 148,
+  "documented_redactions": 231,
+  "redactions_by_category": {
+    "access-token": 82,
+    "image-payload": 98,
+    "restricted-course-link": 31,
+    "credential": 5,
+    "credential-fragment": 15
+  },
+  "contribution_links": 31,
+  "public_hashes_and_locators_match": true,
+  "repository_construction_activities": 5,
+  "guide_local_links_checked": 174,
+  "guide_transcript_anchors_checked": 110,
+  "provided_request_attachment_hash_matches": true,
+  "original_views_compared_without_modification": 16,
+  "privacy_scan_limit": "Pattern checks cover the specified credential and inline-image formats; source coverage and privacy treatment are documented.",
+  "historical_completeness_certified": false,
+  "checked_utc": "2026-10-30T11:44:55.878197+00:00",
+  "guide_sha256": "df18f644eebb96320eda7d40b9452f2dca0c5bd1b0138a10870c304f64a705b9",
+  "validator_sha256": "3d1c892e54394ddd32993490e58ea665d377008f18b718898e013b84af1c8965"
+}

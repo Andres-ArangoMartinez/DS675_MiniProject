@@ -1,0 +1,90 @@
+{
+  "record": "https://zenodo.org/records/4017659",
+  "doi": "10.5281/zenodo.4017659",
+  "title": "Dataset of BattLeDIM: Battle of the Leakage Detection and Isolation Methods",
+  "creators": [
+    "Stelios G. Vrachimis",
+    "Demetrios G. Eliades",
+    "Riccardo Taormina",
+    "Avi Ostfeld",
+    "Zoran Kapelan",
+    "Shuming Liu",
+    "Marios S. Kyriakou",
+    "Pavlos Pavlou",
+    "Mengning Qiu",
+    "Marios Polycarpou"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "checked_utc_date": "2026-10-28",
+  "selection": "Eight annual SCADA tables plus nominal INP, sensor configuration and README. No leakage labels or generator model are predictor inputs.",
+  "files": [
+    {
+      "filename": "2018_SCADA_Pressures.csv",
+      "download_url": "https://zenodo.org/api/records/4017659/files/2018_SCADA_Pressures.csv/content",
+      "md5": "d389d8541350c19ff0bfc6b80f246d35",
+      "bytes": 22593812
+    },
+    {
+      "filename": "2018_SCADA_Flows.csv",
+      "download_url": "https://zenodo.org/api/records/4017659/files/2018_SCADA_Flows.csv/content",
+      "md5": "d0602c06946b46287e956f007e4264ee",
+      "bytes": 4023420
+    },
+    {
+      "filename": "2018_SCADA_Levels.csv",
+      "download_url": "https://zenodo.org/api/records/4017659/files/2018_SCADA_Levels.csv/content",
+      "md5": "92a512d6749ddf66fd6d99f2bdde6cc4",
+      "bytes": 2721000
+    },
+    {
+      "filename": "2018_SCADA_Demands.csv",
+      "download_url": "https://zenodo.org/api/records/4017659/files/2018_SCADA_Demands.csv/content",
+      "md5": "8803afcb1da2428de169237be3d911fb",
+      "bytes": 56499753
+    },
+    {
+      "filename": "2019_SCADA_Pressures.csv",
+      "download_url": "https://zenodo.org/api/records/4017659/files/2019_SCADA_Pressures.csv/content",
+      "md5": "5ea1e46d3f2f0a89a3f98d6fd39a851d",
+      "bytes": 22606417
+    },
+    {
+      "filename": "2019_SCADA_Flows.csv",
+      "download_url": "https://zenodo.org/api/records/4017659/files/2019_SCADA_Flows.csv/content",
+      "md5": "28fc99fdcbf80fcd26079e7fe602d6dc",
+      "bytes": 4130511
+    },
+    {
+      "filename": "2019_SCADA_Levels.csv",
+      "download_url": "https://zenodo.org/api/records/4017659/files/2019_SCADA_Levels.csv/content",
+      "md5": "e5a8050bd38729e4b7648b9d52abd5b1",
+      "bytes": 2720780
+    },
+    {
+      "filename": "2019_SCADA_Demands.csv",
+      "download_url": "https://zenodo.org/api/records/4017659/files/2019_SCADA_Demands.csv/content",
+      "md5": "b3e111de397a1b06d33b8a9f13bc997d",
+      "bytes": 56499940
+    },
+    {
+      "filename": "L-TOWN.inp",
+      "download_url": "https://zenodo.org/api/records/4017659/files/L-TOWN.inp/content",
+      "md5": "bfbb16b8b463e0576200ba6ad360f68e",
+      "bytes": 412200
+    },
+    {
+      "filename": "dataset_configuration.yaml",
+      "download_url": "https://zenodo.org/api/records/4017659/files/dataset_configuration.yaml/content",
+      "md5": "48486401f5b4d0447023f5ce5d242c52",
+      "bytes": 3926
+    },
+    {
+      "filename": "README.txt",
+      "download_url": "https://zenodo.org/api/records/4017659/files/README.txt/content",
+      "md5": "7ad5cdc2eebfe78197a3412e80d07ddc",
+      "bytes": 5303
+    }
+  ]
+}

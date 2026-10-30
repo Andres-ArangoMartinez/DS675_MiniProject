@@ -1,0 +1,370 @@
+[
+  {
+    "document": "D02_2020 BATTLEDIM Introduction",
+    "source_url": "https://doi.org/10.5281/zenodo.4139603",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "3adc59962a756f3f6d2f93ff3c8820c2accc1bbe81a82d19caa7781bccbf7d2b",
+    "license_evidence": "license_evidence/zenodo_4139603.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "D02_2020 BATTLEDIM Results",
+    "source_url": "https://doi.org/10.5281/zenodo.4139603",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "c052e2605de6ee4a685dc4bb29b87d62fa67c09edfeff1ca28abf73ec2355588",
+    "license_evidence": "license_evidence/zenodo_4139603.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "P00_BattLeDIM_Problem_Description_and_Rules-v1.3.1",
+    "source_url": "https://doi.org/10.5281/zenodo.3902046",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "dde7d8192942e5824cafac1955c7727d099c7fb1f151c8ad29e9d3f24f8c0dc8",
+    "license_evidence": "license_evidence/zenodo_3902046.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "P01_BattLeDIM_2022",
+    "source_url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001601",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "cc510ea3a73697268727fdbe473a5350fc7e0443560ea01c23c317476e23debc",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  },
+  {
+    "document": "P02a_Leakbusters",
+    "source_url": "https://doi.org/10.5281/zenodo.3924632",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "926e0bbda29313fa044a545e7d8f1169eb3b82d5b8175cbf2b047ee7f6e60597",
+    "license_evidence": "license_evidence/zenodo_3924632.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "P02_LILA_2022",
+    "source_url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001535",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "37cee9f581196dad808b3950d579c77bd345443f618079e63c69367138c55a53",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  },
+  {
+    "document": "P03a_Under_Pressure",
+    "source_url": "https://doi.org/10.5281/zenodo.3923907",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "4d82b93bd647dca4f24e4089c015d3a25de2a18fc0031c14bb9720407c9a2034",
+    "license_evidence": "license_evidence/zenodo_3923907.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "P03_Pressure_leak_duality_2022",
+    "source_url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001515",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "48c83e11a6ef915316bfd059016bbbe8309c5e1d371e86291cfdde3aff3a9224",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  },
+  {
+    "document": "P04a_CIACUA",
+    "source_url": "https://doi.org/10.5281/zenodo.3923227",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "ff97bc094fea6bd3ca697c8b71206d6ce3faea239e35b31114cde34544582b7d",
+    "license_evidence": "license_evidence/zenodo_3923227.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "P06a_DHI(SG) BattleDIM extended abstract 22Jun2020",
+    "source_url": "https://doi.org/10.5281/zenodo.3902945",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "41ee263f174888ff922689ecdf303a4e30719fea6177ba53fa7b34e7ae35c8fc",
+    "license_evidence": "license_evidence/zenodo_3902945.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "P07a_Wu_BSY",
+    "source_url": "https://doi.org/10.5281/zenodo.3908525",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "0bf255ceb1df47a8b3049d6f95f942ee732aab64cc69a56618ccfeaa903c0228",
+    "license_evidence": "license_evidence/zenodo_3908525.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "P08a_Tsinghua-Team",
+    "source_url": "https://doi.org/10.5281/zenodo.3924109",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "57f5b301ea9fd27083d0f8aa9b72b3c6dbd15ba33c466bd6215a7860e59f2080",
+    "license_evidence": "license_evidence/zenodo_3924109.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "P09a_DandW",
+    "source_url": "https://doi.org/10.5281/zenodo.3925507",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "aa12c6e6f3088aaa692ecda6f1399c8837df956653b0767c1b32443be5a179e1",
+    "license_evidence": "license_evidence/zenodo_3925507.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "P10_Graph_based_learning_2022",
+    "source_url": "https://doi.org/10.1016/j.ifacol.2022.07.203",
+    "license": "CC-BY-NC-ND-4.0",
+    "status": "included_unmodified",
+    "sha256": "0d464978d2a0bf53c2b0c8aa74a0b66fa8ba4d7da727899673bd78043a0c5e48",
+    "license_evidence": "Unmodified PDF page 1: open access article under the CC BY-NC-ND license. Peer review under responsibility of International Federation of Automatic Control. 10.1016/j.ifacol.2022.07.203 Copyright © 2022 The Authors."
+  },
+  {
+    "document": "P11_Liquor_HGNN_2023",
+    "source_url": "https://ceur-ws.org/Vol-3630/LWDA2023-paper40.pdf",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "9fc88f8b529faa183cee8765524fb994728f0f0e775411f07e43bd068e71ef7d",
+    "license_evidence": "Unmodified PDF page 1: authors. Use permitted under Creative Commons License Attribution 4.0 International (CC BY 4.0). CEUR Workshop Proceedings http://ceur-ws.org ISSN 1613-0073 CEUR Workshop Proceedings (CEUR-WS.org) CEUR"
+  },
+  {
+    "document": "P12b_Dictionary_GSI_2022_conference",
+    "source_url": "https://doi.org/10.1109/CCTA49430.2022.9966160",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "36c0be26fbeb2e578f22ca7a8b4255ef735a8ddd4047c7fa9a214f10d5157a82",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  },
+  {
+    "document": "P12_Dictionary_GSI_2021_preprint",
+    "source_url": "https://doi.org/10.48550/arXiv.2110.06372",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "2886c2a8fc8b07f77423040b1e54ede30a7b20704b180557811adf8651f6c99e",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  },
+  {
+    "document": "P13_GAN_SSIM_2023_Figshare_copy",
+    "source_url": "https://doi.org/10.1016/j.watres.2023.120012",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "c66e884d684d985e7eda7a52c852005ef231204d8c3130856f89f023ea42c91b",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  },
+  {
+    "document": "P14_Well_2024",
+    "source_url": "https://doi.org/10.3390/w16030412",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "f0d83ba3cfbb0eee18b167f1e63a8200c82208a71777e7acefa5038b46bb99e5",
+    "license_evidence": "Unmodified PDF page 1: e terms and conditions of the Creative Commons Attribution (CC BY) license (https:// creativecommons.org/licenses/by/ 4.0/). water Article Wasserstein-Enabled Leaks Localization in Water Distribution Networks"
+  },
+  {
+    "document": "P15_GATRes_2024",
+    "source_url": "https://doi.org/10.1029/2023WR036741",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "9797c3078ff852b11cc91ca7e4ffb1452cf013b3556f6d939c94b759ceedf3db",
+    "license_evidence": "Unmodified PDF page 1: rticle under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is"
+  },
+  {
+    "document": "P16_Multipurpose_WDN_2024",
+    "source_url": "https://doi.org/10.3390/engproc2024069050",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "cdcba58a3f05a0737ae0ecf311e7dbfa48daf30f8c58e121d6a1bc8ec248d181",
+    "license_evidence": "Unmodified PDF page 2: e terms and conditions of the Creative Commons Attribution (CC BY) license (https:// creativecommons.org/licenses/by/ 4.0/). Proceeding Paper Large-Scale Multipurpose Benchmark Datasets for Assessing Data-Driven"
+  },
+  {
+    "document": "P17_Iterative_sensor_2024",
+    "source_url": "https://doi.org/10.48550/arXiv.2406.19900",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "1c6e576a7b20d1880c5f4bde187b765d96be9f210743c825081a53b916431a2e",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  },
+  {
+    "document": "P18_Dual_UKF_2024",
+    "source_url": "https://doi.org/10.48550/arXiv.2412.11687",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "6e14f91af8e1b4f28bbf65e4d4930d109ffd2f669299d2c92af798388aff3828",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  },
+  {
+    "document": "P19_Leak_detection_topology_2025",
+    "source_url": "https://www.eurasip.org/Proceedings/Eusipco/Eusipco2025/pdfs/0002407.pdf",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "c2f166533fd916198439963ac8c8fdd086c1e660769fde0c6559df48a5d6a13d",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  },
+  {
+    "document": "P20_Interpretable_ensemble_2026",
+    "source_url": "https://doi.org/10.3390/w18172220",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "5348e9126d3f4abb47d6027b1fa2facc20ecac67a906da1d0eef80096171b0e6",
+    "license_evidence": "Unmodified PDF page 1: e terms and conditions of the Creative Commons Attribution (CC BY) license. Article An Interpretable Ensemble Learning Framework for Leakage Localization in Urban Water"
+  },
+  {
+    "document": "P21b_Review_Perspective_2023_published",
+    "source_url": "https://doi.org/10.1016/j.arcontrol.2023.03.012",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "a55219bb1952b368e4569f506e35a3a5d939b44db43bdebc78793e626af97331",
+    "license_evidence": "Unmodified PDF page 1: open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/). Contents lists available at ScienceDirect Annual Reviews in Control journal homepage: www.elsevier.com/locate/arcontrol Full"
+  },
+  {
+    "document": "P21_Review_Perspective_2023",
+    "source_url": "https://doi.org/10.1016/j.arcontrol.2023.03.012",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "bc6b209a0cb67a64942d269da2f67a3c694bf3140ae689769f6acc35b1102b35",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  },
+  {
+    "document": "P22_AIGNN_2024_preprint",
+    "source_url": "https://doi.org/10.48550/arXiv.2408.02797",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "7a47d876f046a875b3434fd70c920f1170ceb163db50faf31160e83efc71d003",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  },
+  {
+    "document": "P23_Hybrid_attention_2020_preprint_OTHER_DATASET",
+    "source_url": "https://doi.org/10.48550/arXiv.2004.05828",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "b6c295c3ec825dfb6eb1ee57930910f5ffd226096554cad6ebcfa037b3a080eb",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  },
+  {
+    "document": "P24_Centrality_pressure_2025",
+    "source_url": "https://networking.ifip.org/2025/images/Net25_papers/1571131460.pdf",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "95f3be99b0525d60636e6f6752da188c692730a05fae845db111e1a083db5769",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  },
+  {
+    "document": "P25_Encoder_decoder_2024",
+    "source_url": "https://doi.org/10.2166/ws.2024.174",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "d30d2bf3fbe3c44c4a45b4df11fcb384f5cd7ab2eb2cf57c0bf17353bf7e93c0",
+    "license_evidence": "Unmodified PDF page 1: ibuted under the terms of the Creative Commons Attribution Licence (CC BY 4.0), which permits copying, adaptation and redistribution, provided the original work is"
+  },
+  {
+    "document": "P26_SAM_kNN_2022",
+    "source_url": "https://doi.org/10.1007/978-3-031-15934-3_62",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "13800474b42d7d9e58944ad93daa940a67a870de7d8c8d228f1274cf965f212b",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  },
+  {
+    "document": "P27_Benchmark_protocol_review_2026",
+    "source_url": "https://doi.org/10.3390/w18182267",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "2c8df96e7df8ed1a377ef4328a02b42886e98c15dc9a834707a5a62fcf139aae",
+    "license_evidence": "Unmodified PDF page 1: e terms and conditions of the Creative Commons Attribution (CC BY) license. Systematic Review Standardization and Benchmarking of Datasets and Evaluation Protocols for Machine"
+  },
+  {
+    "document": "P28_GNN_WDN_review_2025",
+    "source_url": "https://doi.org/10.1016/j.jii.2025.100880",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "d62f272d0810b8bb34c89a1d9b3ff0926cae2dbd39703e6b69cd4113462fd239",
+    "license_evidence": "Unmodified PDF page 1: open access article under the CC BY license ( http://creativecommons.org/licenses/by/4.0/ )."
+  },
+  {
+    "document": "Z3900989_UNIFE",
+    "source_url": "https://doi.org/10.5281/zenodo.3900989",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "cadc35c07dbfefd2b431e148a177e0a1ec4e2e4e66938e4e5ad9a76647b964a4",
+    "license_evidence": "license_evidence/zenodo_3900989.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "Z3906668_artesiaTeam",
+    "source_url": "https://doi.org/10.5281/zenodo.3906668",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "378eea8a7a74e8d173466757f7e890cc46eff826e5ccf1dedeac6f323be8f66c",
+    "license_evidence": "license_evidence/zenodo_3906668.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "Z3906850_Cubalytics GmbH",
+    "source_url": "https://doi.org/10.5281/zenodo.3906850",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "cfc7df95d56e57338f9b8f20ee0ad54e1f2972b8c18d42857e1288ae100d7076",
+    "license_evidence": "license_evidence/zenodo_3906850.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "Z3911045_Tongji-Team",
+    "source_url": "https://doi.org/10.5281/zenodo.3911045",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "2433dcd395d59d5fb811bec476e3684b5786c1fc7ebeb40cb1e56a09fdab1e18",
+    "license_evidence": "license_evidence/zenodo_3911045.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "Z3911523_Leakage Detection and Isolation in Water Distribution Network Based on Data Mining and Genetic Optimized Hydraulic Simulation_DHI China_LIU_ZHANG_ZHANG",
+    "source_url": "https://doi.org/10.5281/zenodo.3911523",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "cc484eb389d5edd1726b9161ecaaa6c4b1391ab7e0e0c39a0ed8ee7d6c2500d6",
+    "license_evidence": "license_evidence/zenodo_3911523.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "Z3921800_InfraSenseLabs",
+    "source_url": "https://doi.org/10.5281/zenodo.3921800",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "673f43894951910085adc02dd349548816a7de3da7146e67ee7423ad578d310c",
+    "license_evidence": "license_evidence/zenodo_3921800.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "Z3922019_KU-hydrosystem ver2",
+    "source_url": "https://doi.org/10.5281/zenodo.3922019",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "03580bc1a2092d245b00983eb47c2c804f9b8c7134ad1fbfa8d640ace2bba039",
+    "license_evidence": "license_evidence/zenodo_3922019.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "Z3923501_IRI",
+    "source_url": "https://doi.org/10.5281/zenodo.3923501",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "f91cd198e73829a0a074db252c0ce9a659e06838a4cabc8f805e623356642c02",
+    "license_evidence": "license_evidence/zenodo_3923501.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "Z3923929_zhiyun0601",
+    "source_url": "https://doi.org/10.5281/zenodo.3923929",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "de9bb72cbbeaacccfce4fd3644b4f226aa77945c3721a45e0cefa861474bd4e9",
+    "license_evidence": "license_evidence/zenodo_3923929.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "Z3964167_Cheng00",
+    "source_url": "https://doi.org/10.5281/zenodo.3964167",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "e67d51d5b48264d14169354140ff8f4557012d047dd1a722956d42ea08692423",
+    "license_evidence": "license_evidence/zenodo_3964167.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "Z4011894_FluIng",
+    "source_url": "https://doi.org/10.5281/zenodo.4011894",
+    "license": "CC-BY-4.0",
+    "status": "included_unmodified",
+    "sha256": "a8391ca7868e4a078c3f48474ec5e5590f6a0bbfa5ec8aaab4b4dc37a1663785",
+    "license_evidence": "license_evidence/zenodo_4011894.json; source-file MD5 matches official record"
+  },
+  {
+    "document": "Wang_2022_ASCE",
+    "source_url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001558",
+    "license": "not_established",
+    "status": "link_only",
+    "sha256": "a7753d0be2f38a4028b4e049020a89fafaa3f5f4d364e417b57f38ac5f7966d7",
+    "license_evidence": "No explicit redistribution permission established; public/institutional access alone is insufficient."
+  }
+]

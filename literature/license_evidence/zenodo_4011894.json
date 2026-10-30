@@ -1,0 +1,19 @@
+{
+  "record_id": "4011894",
+  "url": "https://zenodo.org/records/4011894",
+  "title": "Fluing abstract",
+  "creators": [
+    "Brentan"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.4011894",
+  "files": [
+    {
+      "name": "FluIng.pdf",
+      "md5": "af4ee3b284e33c54ae94961c56643da8",
+      "url": "https://zenodo.org/api/records/4011894/files/FluIng.pdf/content"
+    }
+  ]
+}

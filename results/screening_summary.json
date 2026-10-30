@@ -1,0 +1,91 @@
+{
+  "source_records": 47,
+  "groups": 35,
+  "selected_groups": 6,
+  "categories": [
+    {
+      "category": "leak",
+      "label": "Leak detection / localization",
+      "groups": 27,
+      "percent": 77.14285714285714,
+      "selected": 3,
+      "group_ids": [
+        "lila",
+        "under-pressure",
+        "ciacua",
+        "dhi-sg",
+        "wu-bsy",
+        "tsinghua",
+        "dandw",
+        "chebnet",
+        "liquor",
+        "gsi-dl",
+        "gan",
+        "topological",
+        "li-chen",
+        "aignn",
+        "autoencoders",
+        "unife",
+        "artesia",
+        "cubalytics",
+        "tongji",
+        "dhi-china",
+        "infrasense",
+        "ku",
+        "iri",
+        "zhiyun",
+        "cheng",
+        "fluing",
+        "aquasentinel"
+      ]
+    },
+    {
+      "category": "state",
+      "label": "Current-state estimation",
+      "groups": 3,
+      "percent": 8.571428571428571,
+      "selected": 1,
+      "group_ids": [
+        "gatres",
+        "dual-ukf",
+        "gastl"
+      ]
+    },
+    {
+      "category": "forecast",
+      "label": "Pressure/head forecasting",
+      "groups": 2,
+      "percent": 5.714285714285714,
+      "selected": 1,
+      "group_ids": [
+        "agn",
+        "pressure-patent"
+      ]
+    },
+    {
+      "category": "anomaly",
+      "label": "Anomalies / sensor faults",
+      "groups": 2,
+      "percent": 5.714285714285714,
+      "selected": 1,
+      "group_ids": [
+        "sam",
+        "sicams"
+      ]
+    },
+    {
+      "category": "sensors",
+      "label": "Sensor placement",
+      "groups": 1,
+      "percent": 2.857142857142857,
+      "selected": 0,
+      "group_ids": [
+        "mobile"
+      ]
+    }
+  ],
+  "status": "Reproduction of the documented inventory from the focused Milestone 2 review.",
+  "attribution": "Student-directed scope/filtering and critical review; AI-assisted discovery, categorization, code/source inspection, synthesis and counting.",
+  "Ahmed_2025_in_historical_inventory": false,
+  "limitation": "Code verifies grouping and count consistency; source notes describe review coverage and scholarly classifications."
+}

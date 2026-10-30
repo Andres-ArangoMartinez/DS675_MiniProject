@@ -1,0 +1,20 @@
+{
+  "record_id": "3908525",
+  "url": "https://zenodo.org/records/3908525",
+  "title": "DECOMPOSITION-BASED DATA ANALYSIS WITH HYDRAULIC MODEL CALIBRATION FOR LEAKAGE DETECTION AND ISOLATION",
+  "creators": [
+    "Wu, Zheng Yi",
+    "He, Yekun"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3908525",
+  "files": [
+    {
+      "name": "Wu_BSY.pdf",
+      "md5": "f7210e37b66aaa2e4ddc407bba69425e",
+      "url": "https://zenodo.org/api/records/3908525/files/Wu_BSY.pdf/content"
+    }
+  ]
+}

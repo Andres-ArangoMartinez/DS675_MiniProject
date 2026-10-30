@@ -1,0 +1,62 @@
+{
+  "checked_utc": "2026-10-29T13:01:11.850639+00:00",
+  "source": "https://zenodo.org/api/records/4017659",
+  "checks": [
+    {
+      "filename": "2018_SCADA_Pressures.csv",
+      "matches_official_md5": true,
+      "matches_official_size": true
+    },
+    {
+      "filename": "2018_SCADA_Flows.csv",
+      "matches_official_md5": true,
+      "matches_official_size": true
+    },
+    {
+      "filename": "2018_SCADA_Levels.csv",
+      "matches_official_md5": true,
+      "matches_official_size": true
+    },
+    {
+      "filename": "2018_SCADA_Demands.csv",
+      "matches_official_md5": true,
+      "matches_official_size": true
+    },
+    {
+      "filename": "2019_SCADA_Pressures.csv",
+      "matches_official_md5": true,
+      "matches_official_size": true
+    },
+    {
+      "filename": "2019_SCADA_Flows.csv",
+      "matches_official_md5": true,
+      "matches_official_size": true
+    },
+    {
+      "filename": "2019_SCADA_Levels.csv",
+      "matches_official_md5": true,
+      "matches_official_size": true
+    },
+    {
+      "filename": "2019_SCADA_Demands.csv",
+      "matches_official_md5": true,
+      "matches_official_size": true
+    },
+    {
+      "filename": "L-TOWN.inp",
+      "matches_official_md5": true,
+      "matches_official_size": true
+    },
+    {
+      "filename": "dataset_configuration.yaml",
+      "matches_official_md5": true,
+      "matches_official_size": true
+    },
+    {
+      "filename": "README.txt",
+      "matches_official_md5": true,
+      "matches_official_size": true
+    }
+  ],
+  "README_content_endpoint_matches_md5": true
+}

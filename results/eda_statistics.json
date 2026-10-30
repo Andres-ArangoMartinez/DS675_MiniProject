@@ -1,0 +1,33 @@
+{
+  "period_start": "2018-01-01",
+  "period_end": "2018-09-30",
+  "days": 273,
+  "rows": 78624,
+  "forecast_pairs": 78621,
+  "lead_minutes": 15,
+  "n1_range_m": [
+    25.67,
+    29.36
+  ],
+  "persistence_MAE_m": 0.05177624298851451,
+  "persistence_RMSE_m": 0.06849175638676988,
+  "correlation_with_future_n1": {
+    "n1": 0.9923104288422745,
+    "n4": 0.9751781370318049,
+    "n31": 0.9709194921762693,
+    "T1": 0.9230382756150715,
+    "PUMP_1": -0.036721113537103056,
+    "AMR_n1": -0.15737833061358575
+  },
+  "signals": [
+    "n1",
+    "n4",
+    "n31",
+    "T1",
+    "PUMP_1",
+    "AMR_n1"
+  ],
+  "target": "n1_plus15",
+  "interpretation": "Descriptive Jan-Sep 2018 results; not a final 2019 test score.",
+  "learned_models_fitted": false
+}

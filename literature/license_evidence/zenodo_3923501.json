@@ -1,0 +1,24 @@
+{
+  "record_id": "3923501",
+  "url": "https://zenodo.org/records/3923501",
+  "title": "Leak Localization In Water Distribution Networks Using Data-Driven And Model-Based Approaches",
+  "creators": [
+    "ROMERO, Luis",
+    "BLESA, Joaquim",
+    "ALVES, Débora",
+    "CEMBRANO, Gabriela",
+    "PUIG, Vicenç",
+    "DUVIELLA, Eric"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3923501",
+  "files": [
+    {
+      "name": "IRI.pdf",
+      "md5": "805965431f54c4f22ae0e6043c9b6440",
+      "url": "https://zenodo.org/api/records/3923501/files/IRI.pdf/content"
+    }
+  ]
+}

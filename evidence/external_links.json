@@ -1,0 +1,393 @@
+{
+  "checked_utc": "2026-10-29T12:48:27.247404+00:00",
+  "checks": [
+    {
+      "url": "https://ceur-ws.org/Vol-3630/LWDA2023-paper40.pdf",
+      "status": 200,
+      "resolved_url": "https://ceur-ws.org/Vol-3630/LWDA2023-paper40.pdf",
+      "accessible": true,
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://doi.org/10.1007/978-3-031-15934-3_62",
+      "status": 200,
+      "resolved_url": "https://link.springer.com/10.1007/978-3-031-15934-3_62",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.arcontrol.2023.03.012",
+      "accessible": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.1016/j.eswa.2026.131450",
+      "accessible": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.1016/j.ifacol.2022.07.203",
+      "accessible": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jii.2025.100880",
+      "accessible": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.1016/j.ress.2025.111494",
+      "accessible": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.1016/j.rineng.2025.106911",
+      "accessible": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.1016/j.watres.2023.120012",
+      "accessible": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.1016/j.watres.2025.124475",
+      "accessible": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.1029/2023WR036741",
+      "accessible": false,
+      "error": "HTTP Error 403: Forbidden",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001515",
+      "accessible": false,
+      "error": "HTTP Error 403: Forbidden",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001535",
+      "accessible": false,
+      "error": "HTTP Error 403: Forbidden",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001558",
+      "accessible": false,
+      "error": "HTTP Error 403: Forbidden",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001601",
+      "accessible": false,
+      "error": "HTTP Error 403: Forbidden",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.1109/CCTA49430.2022.9966160",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/9966160/",
+      "accessible": true,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://doi.org/10.15131/shef.data.29921204.v1",
+      "status": 202,
+      "resolved_url": "https://orda.shef.ac.uk/articles/conference_contribution/Windowed_Multivariate_LSTM_Autoencoder_for_Leak_Detection_in_Water_Distribution_Networks/29921204/1",
+      "accessible": true,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://doi.org/10.2166/ws.2024.174",
+      "accessible": false,
+      "error": "HTTP Error 403: Forbidden",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.3390/engproc2024069050",
+      "accessible": false,
+      "error": "HTTP Error 403: Forbidden",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.3390/w16030412",
+      "accessible": false,
+      "error": "HTTP Error 403: Forbidden",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.3390/w18172220",
+      "accessible": false,
+      "error": "HTTP Error 403: Forbidden",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.3390/w18182267",
+      "accessible": false,
+      "error": "HTTP Error 403: Forbidden",
+      "interpretation": "Automated access failed; this does not establish that the source does not exist."
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.2004.05828",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2004.05828",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.2110.06372",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2110.06372",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.2406.19900",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2406.19900",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.2408.02797",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2408.02797",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.2412.11687",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2412.11687",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3900989",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3900989",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3902046",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3902046",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3902945",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3902945",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3906668",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3906668",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3906850",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3906850",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3908525",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3908525",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3911045",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3911045",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3911523",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3911523",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3921800",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3921800",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3922019",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3922019",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3923227",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3923227",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3923501",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3923501",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3923907",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3923907",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3923929",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3923929",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3924109",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3924109",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3924632",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3924632",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3925507",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3925507",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3964167",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/3964167",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.4011894",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/4011894",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.4139603",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/records/4139603",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://github.com/DiTEC-project/gnn-pressure-estimation/tree/bb287ed2ae091b29fa19f2417406756b57a45a1f",
+      "status": 200,
+      "resolved_url": "https://github.com/DiTEC-project/gnn-pressure-estimation/tree/bb287ed2ae091b29fa19f2417406756b57a45a1f",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://github.com/GardarGardarsson/GSP_for_Leak_Detection/tree/864a99041af6331375946a8fad3a71c633108eb8",
+      "status": 200,
+      "resolved_url": "https://github.com/GardarGardarsson/GSP_for_Leak_Detection/tree/864a99041af6331375946a8fad3a71c633108eb8",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://github.com/MilanShao/Liquor-HGNN/tree/64ff247902e702d89400eac74f06aac45d2ea292",
+      "status": 200,
+      "resolved_url": "https://github.com/MilanShao/Liquor-HGNN/tree/64ff247902e702d89400eac74f06aac45d2ea292",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://github.com/SWN-group-at-TU-Berlin/LILA/tree/b488a60db1974b6f5b7887ce1cf5d31dff3dad68",
+      "status": 200,
+      "resolved_url": "https://github.com/SWN-group-at-TU-Berlin/LILA/tree/b488a60db1974b6f5b7887ce1cf5d31dff3dad68",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://github.com/andreArtelt/SAM-kNN-Regressor_OnlineLearning_WDNs/tree/9116ec99bf9f053e35401fe3e388062e8b979c54",
+      "status": 200,
+      "resolved_url": "https://github.com/andreArtelt/SAM-kNN-Regressor_OnlineLearning_WDNs/tree/9116ec99bf9f053e35401fe3e388062e8b979c54",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://github.com/dorofeev2025/SIAM/tree/7e8970700212229ea6e715274790e6dc9536c03d",
+      "status": 200,
+      "resolved_url": "https://github.com/dorofeev2025/SIAM/tree/7e8970700212229ea6e715274790e6dc9536c03d",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://github.com/jorgeps86/LeakLocalization/tree/1c9493847bf37d609ae89310443bc61ee42206f8",
+      "status": 200,
+      "resolved_url": "https://github.com/jorgeps86/LeakLocalization/tree/1c9493847bf37d609ae89310443bc61ee42206f8",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://github.com/karytalks1/aquasentinel/tree/b9212d8071aa99ba798136ee675ee83fee3a1cf3",
+      "status": 200,
+      "resolved_url": "https://github.com/karytalks1/aquasentinel/tree/b9212d8071aa99ba798136ee675ee83fee3a1cf3",
+      "accessible": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://networking.ifip.org/2025/images/Net25_papers/1571131460.pdf",
+      "status": 200,
+      "resolved_url": "https://networking.ifip.org/2025/images/Net25_papers/1571131460.pdf",
+      "accessible": true,
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://patents.google.com/patent/CN119129798A/zh",
+      "status": 200,
+      "resolved_url": "https://patents.google.com/patent/CN119129798A/zh",
+      "accessible": true,
+      "content_type": "text/html"
+    },
+    {
+      "url": "https://www.eurasip.org/Proceedings/Eusipco/Eusipco2025/pdfs/0002407.pdf",
+      "status": 200,
+      "resolved_url": "https://www.eurasip.org/Proceedings/Eusipco/Eusipco2025/pdfs/0002407.pdf",
+      "accessible": true,
+      "content_type": "application/pdf"
+    }
+  ]
+}

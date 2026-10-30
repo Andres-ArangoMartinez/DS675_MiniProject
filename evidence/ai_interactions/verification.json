@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "source_views": 16,
+  "codex_session_snapshots": 3,
+  "codex_supplement_notices": 1,
+  "chatgpt_conversations": 11,
+  "parts": 148,
+  "contribution_links": 31,
+  "redactions": 231,
+  "redactions_by_category": {
+    "access-token": 82,
+    "image-payload": 98,
+    "restricted-course-link": 31,
+    "credential": 5,
+    "credential-fragment": 15
+  },
+  "all_private_source_hashes_unchanged": true,
+  "all_unchanged_text_intervals_match": true,
+  "all_public_parts_rejoin_exactly": true,
+  "complete_historical_transcripts_claimed": false,
+  "codex_continuation_snapshots": 1,
+  "previous_collection": {
+    "status": "PASS",
+    "source_views": 15,
+    "codex_session_snapshots": 3,
+    "codex_supplement_notices": 1,
+    "chatgpt_conversations": 11,
+    "parts": 140,
+    "contribution_links": 31,
+    "redactions": 200,
+    "redactions_by_category": {
+      "access-token": 82,
+      "image-payload": 85,
+      "restricted-course-link": 23,
+      "credential": 5,
+      "credential-fragment": 5
+    },
+    "all_private_source_hashes_unchanged": true,
+    "all_unchanged_text_intervals_match": true,
+    "all_public_parts_rejoin_exactly": true,
+    "complete_historical_transcripts_claimed": false
+  },
+  "continuation_previous_prefix_verified": true,
+  "original_T01_T15_parts_unchanged": true,
+  "captured_through_utc": "2026-10-29T18:38:33.583Z",
+  "repository_construction_activities": 5
+}

@@ -1,0 +1,421 @@
+T12,ChatGPT,6ac80fb7-1dd8-83e9-a613-b73391e48697,shared,2026-10-08T21:49:59.166448+00:00,2026-10-08T22:04:07.694108+00:00,Expectativas Milestone 2,chatgpt/6ac80fb7-1dd8-83e9-a613-b73391e48697/README.md,1,0
+T13,ChatGPT,6ad553bb-6f3c-83ea-bfbd-bee4b7f728ad,milestone_2,2026-10-19T00:10:59.529000+00:00,2026-10-19T01:35:12.514000+00:00,Confirmar dataset BattLeDIM,chatgpt/6ad553bb-6f3c-83ea-bfbd-bee4b7f728ad/README.md,1,0
+T14,ChatGPT,6ae0894a-6f50-83e9-a7ca-d4d3c8c50402,milestone_2,2026-10-27T11:22:11.181000+00:00,2026-10-28T14:25:53.089000+00:00,Analiza feedback milestone 2,chatgpt/6ae0894a-6f50-83e9-a7ca-d4d3c8c50402/README.md,1,0
+T15,ChatGPT,6ae334d1-a604-83e9-a039-dd29a3c1856b,milestone_2,2026-10-29T12:10:40.224000+00:00,2026-10-29T14:50:56.021000+00:00,Analiza coherencia y participación,chatgpt/6ae334d1-a604-83e9-a039-dd29a3c1856b/README.md,1,0
+# Completed exploratory analysis
+
+This page supports [Milestone 2, Sections 1.1–1.3 and Figures 1–4](../reports/Milestone2.pdf). The [contribution statement](student_contributions.md) identifies student direction, AI methodological assistance, generated code and recorded execution. All values below are descriptive reproductions; no learned model has been fitted.
+
+## Source and calculations
+
+The pipeline verifies the eleven files in the [official-source manifest](../data/source_manifest.json): eight annual SCADA tables, the nominal model, sensor configuration and README. It checks full 2018 and 2019 table structure, but computes pressure forecasts/errors and correlations only for **January–September 2018**. Table checks do not establish that 2019 was never previously inspected.
+
+[Data loading and calculations](../src/analysis.py) use the six selected signals, without interpolation, filtering or scaling. The period is cropped before `n1.shift(-3)` creates the future label. The last three origins cannot obtain labels inside September and are dropped. This produces 78,621 pairs from 78,624 timestamps. These pairs use current inputs for descriptive correlations and persistence; they are **not** the later lagged training matrix, which will also require 55 minutes of history.
+
+For error `e = n1(u + 15) − n1(u)`, MAE is the mean of `abs(e)` and RMSE is the square root of the mean of `e²`. Pearson correlations use the same aligned pairs. The future target is never an input predictor.
+
+| Quantity | Reproduced value |
+|---|---:|
+| Days / timestamps | 273 / 78,624 |
+| Valid +15-minute pairs | 78,621 |
+| n1 minimum / maximum | 25.67 / 29.36 m |
+| Persistence MAE | 0.05177624298851451 m |
+| Persistence RMSE | 0.06849175638676988 m |
+| Current n1 / future n1 correlation | 0.9923104288422752 |
+| T1 / future n1 correlation | 0.9230382756150443 |
+| PUMP_1 / future n1 correlation | −0.036721113537145696 |
+| AMR_n1 / future n1 correlation | −0.1573783306135834 |
+
+[Statistics](../results/eda_statistics.json) · [complete correlation table](../results/correlations.csv) · [numerical verification](../results/verification.json)
+
+## Four figures
+
+**Figure 1 · Functional supply boundary.** The [nominal model check](../src/analysis.py) identifies boundaries, pump endpoints and pressure sensors; [plotting code](../src/figures.py) lays out the interpretive diagram. Arrows summarize the intended supply route, not solved flows or signal delays.
+
+![Functional hydraulic supply boundary](../results/figures/figure1_supply_boundary.png)
+
+**Figure 2 · Daily profiles.** Thin lines show each of the 273 days; the red line is the mean at each clock time. The left tank/pump panels span the same total height as the three right pressure panels. The nominal controls open PUMP_1 below 2.4 m and close it above 3.9 m. The plot shows daily variation; it does not prove a causal lead from the pump to future n1.
+
+![Daily tank, pump and pressure profiles](../results/figures/figure2_daily_profiles.png)
+
+**Figure 3 · Correlations.** The gold boundary separates the future label from six current signals. Persistence's small descriptive error and high n1 autocorrelation make it a strong reference. A signal with high correlation may add little beyond n1, and a low contemporaneous correlation does not rule out useful lagged information.
+
+![Six-signal and future-label correlation matrix](../results/figures/figure3_correlations.png)
+
+**Figure 4 · Literature groups.** Counts are recomputed by joining source IDs and group assignments. Gold bars identify selected groups within each category. They are subsets, not extra studies. The five main objectives are not the number of individual papers. A diagnostic method can contain a future-pressure step while remaining in the leak category.
+
+![Historical literature category counts](../results/figures/figure4_historical_screening.png)
+
+The [screening notes](../literature/screening_notes.md) distinguish brief screening from the six detailed readings. Counting code validates consistency, not search completeness or all scholarly classifications. The [execution manifest](../results/run_manifest.json) records inputs, code, environment and outputs. [Submitted image bytes](../evidence/submitted_figures/) are retained separately: regenerated figures support the same content with portable fonts; pixel identity is not claimed.
+````
+
+### Recorded completion metadata
+
+```json
+{
+  "id": "exec-2c78855e-430a-4aa1-80b6-c5e2fa49b3f5",
+  "cwd": "file:///D:/GitHub",
+  "status": "completed",
+  "exit_code": 0,
+  "duration": {
+    "secs": 0,
+    "nanos": 594449800
+  },
+  "process_id": "88299",
+  "source": "unified_exec_startup"
+}
+```
+
+<a id="source-line-12582"></a>
+
+## 2026-10-29T18:36:46.560Z · source line 12582 · Tool output
+
+Source: `original_sessions/rollout-2026-10-11T10-33-18-01a12b61-e72c-7da1-bb50-45bff9d85d03.jsonl#L12582`  
+Event ID: `ctco_01a188f3-4460-75e3-a95f-74feb699072d`  
+Turn ID: `01a188f2-4246-7921-9c3b-2dc47f257b85`  
+Call ID: `call_73a840dc33d9477a9476e85c59cbf3d5`
+
+### Recorded tool output
+
+````text
+[
+  {
+    "type": "input_text",
+    "text": "Script completed\nWall time 0.8 seconds\nOutput:\n"
+  },
+  {
+    "type": "input_text",
+    "text": "{\"chunk_id\":\"361a0f\",\"wall_time_seconds\":0.5947986,\"exit_code\":0,\"original_token_count\":9661,\"output\":\"Warning: truncated output (original token count: 9661)\\nTotal output lines: 400\\n\\n27:def dump(path, obj):\\n32:def sha(path, limit=None):\\n43:def write_csv(path, rows, fields):\\n48:def text_parts(value):\\n59:def source_lines(path):\\n67:def git_run(repo,args):\\n73:def git_inventory():\\n91:def snapshot_source(path):\\n92: before=path.stat();dest=OUT/'original_sessions'/path.name\\n108:def classify_student(text):\\n124:def fence(handle,text,lang='text'):\\n134:def structured(value, locator):\\n146:def export_transcript(sid, snap, git_commits):\\n147: folder,scope=SESSIONS[sid];original=OUT/snap['archive_path'];dest=OUT/folder/(sid+'.md')\\n299:def export_database_subset(summaries):\\n306:   item_path=OUT/'database_exports'/(sid+'.thread_items.jsonl')\\n307:   turn_path=OUT/'database_exports'/(sid+'.thread_turns.jsonl')\\n322:    dest=OUT/'shared'/('database_supplement_'+sid+'.md')\\n333: dump(OUT/'metadata/database_exports.json',exports)\\n334: dump(OUT/'metadata/database_coverage.json',coverage)\\n338:def main():\\n339: if (OUT/'integrity_manifest.json').exists():raise FileExistsError('A completed archive already exists. Do not overwrite it; select a new private destination for another recovery.')\\n340: for name in ['original_sessions','milestone_1','milestone_2','shared','metadata','database_exports']:(OUT/name).mkdir(exist_ok=True)\\n341: start=NOW();metadata=json.loads((OUT/'discovery_metadata.json').read_text(encoding='utf-8'))\\n344: dump(OUT/'metadata/source_file_stats_before.json',source_baseline)\\n345: repos=git_inventory();dump(OUT/'metadata/git_repositories_before.json',repos)\\n347: journal=OUT/'metadata/source_snapshots.json'\\n355:   snap=snapshot_by_id[sid];assert sha(OUT/snap['archive_path'])==snap['sha256']\\n365: dump(OUT/'metadata/selected_thread_metadata.json',rows)\\n371: dump(OUT/'metadata/selected_title_index_entries.json',source_index)\\n375:  snap['archive_hash_matches']=sha(OUT/snap['archive_path'])==snap['sha256']\\n382: dump(OUT/'metadata/source_file_stats_after.json',after_stats)\\n384: git_after=git_inventory();dump(OUT/'metadata/git_repositories_after.json',git_after)\\n402: write_csv(OUT/'session_index.csv',index,list(index[0]))\\n403: write_csv(OUT/'metadata/event_index.csv',all_index,['session_id','source_line','source_uncompressed_byte_offset','timestamp','record_type','item_type','event_id','turn_id','role','call_id','transcript','canonical_line','text_sha256','rendering'])\\n404: write_csv(OUT/'privacy_findings.csv',all_privacy,['session_id','source_line','timestamp','pattern','source_locator','action'])\\n405: write_csv(OUT/'contribution_evidence.csv',all_contrib,['actor','category','milestone','instruction_or_recorded_action','interpretation_limit','project_specific_terms_present','session_id','event_id','timestamp','source_line','source_locator','transcript_locator','recorded_execution_status'])\\n406: write_csv(OUT/'git_session_mapping.csv',all_git,['session_id','event_id','source_line','timestamp','source_locator','repository_path','commit','authored_at','committed_at','commit_subject','changed_files','relationship','record_role'])\\n407: dump(OUT/'metadata/message_text_validation.json',{'method':'SHA-256 of exact UTF-8 message bytes re-read at recorded transcript byte offsets; duplicate representations point to the same canonical text','checks':all_text_checks,'all_passed':True})\\n409: dump(OUT/'metadata/session_analysis.json',summaries)\\n410: validated_cache=json.loads((OUT/'user_cache_matches.json').read_text(encoding='utf-8'))\\n414:  'records_inspected_in_discovery':sum(s['records_examined'] for s in json.loads((OUT/'discovery_scan.json').read_text(encoding='utf-8'))['sessions']),\\n424: dump(OUT/'metadata/recovery_validation.json',counts)\\n429: dump(OUT/'integrity_manifest.json',{'created_utc':NOW(),'scope':'Private local recovery; no project writes, no uploads, no network calls','original_snapshots':snapshots,'files':entries,'manifest_self_hash':'Excluded to avoid self-reference','complete_global_history_claimed':False})\\n433:def write_report(counts,summaries,snapshots,coverage,changed,repos):\\n434: metadata=json.loads((OUT/'discovery_metadata.json').read_text(encoding='utf-8'))\\n441: dump(OUT/'metadata/local_index_comparison.json',{'retained_rollout_ids':len(local_ids),'title_index_ids':len(title_ids),'local_ids_absent_from_title_index':hidden_ids,'title_ids_without_retained_rollout':sorted(title_ids-local_ids)})\\n490: (OUT/'recovery_report.md').write_text('\\\\n'.join(lines),encoding='utf-8',newline='\\\\n')\\n501: (OUT/'README.md').write_text(readme,encoding='utf-8',newline='\\\\n')\\n504:if __name__=='__main__':\\n   return {'non_text_source_locator':locator,'metadata':safe,'encoded_payload_preserved_in_original':True}\\r\\n  return {k:structured(v,locator) for k,v in value.items()}\\r\\n return value\\r\\n\\r\\n\\r\\ndef export_transcript(sid, snap, git_commits):\\r\\n folder,scope=SESSIONS[sid];original=OUT/snap['archive_path'];dest=OUT/folder/(sid+'.md')\\r\\n indexes=[];privacy=[];contributions=[];gitlinks=[];text_checks=[]\\r\\n counts=Counter();types=Counter();call_ids=Counter();output_ids=Counter();completed_ids=set()\\r\\n seen_messages={};current_turn='';last_ts=None;regressions=[];malformed=[];first_ts=None;end_ts=None;compactions=0;truncated=[]\\r\\n with dest.open('w',encoding='utf-8',newline='\\\\n') as md:\\r\\n  md.write('# Recorded Codex interactions\\\\n\\\\n')\\r\\n  md.write(f'Session: `{sid}`\\\\n\\\\nSource copy: `../{snap[\\\"archive_path\\\"]}`\\\\n\\\\nScope: {scope}\\\\n\\\\n')\\r\\n  md.write('This private export preserves available visible message text and recorded tool events. Source order and original timestamps are retained. Identical adjacent message representations are linked rather than printed twice. Non-text content is referenced to the original record. System/developer and reasoning payloads are not rendered; original copies remain unmodified. No historical execution or understanding is inferred.\\\\n\\\\n---\\\\n\\\\n')\\r\\n  for number,offset,raw in source_lines(original):\\r\\n   locator=f'{snap[\\\"archive_path\\\"]}#L{number}'\\r\\n   try:j=json.loads(raw)\\r\\n   except Exception as e:\\r\\n    malformed.append({'line':number,'uncompressed_byte_offset':offset,'error':type(e).__name__,'raw_sha256':hashlib.sha256(raw).hexdigest()})\\r\\n    md.write(f'<a id=\\\"source-line-{number}\\\"></a>\\\\n\\\\n')\\r\\n    md.write(f'## Source line {number} · malformed or partial JSON\\\\n\\\\nOriginal bytes: `{locator}`.\\\\n\\\\n')\\r\\n    continue\\r\\n   kind=j.get('type','');v=j.get('payload',{});v=v if isinstance(v,dict) else {'value':v};sub=v.get('type','')\\r\\n   ts=j.get('timestamp','');types[kind+'/'+str(sub)]+=1\\r\\n   if ts:\\r\\n    first_ts=first_ts or ts;end_ts=ts\\r\\n    try:\\r\\n     dt=datetime.fromisoformat(ts.replace('Z','+00:00'))\\r\\n     if last_ts and dt<last_ts:regressions.append({'line':number,'timestamp':ts})\\r\\n     last_ts=dt\\r\\n    except ValueError:pass\\r\\n   if kind in ['turn_context'] or (kind=='event_msg' and sub=='task_started'):\\r\\n    current_turn=v.get('turn_id') or current_turn\\r\\n   if v.get('turn_id'):current_turn=v['turn_id']\\r\\n   if kind=='event_msg' and isinstance(v.get('item'),dict) and v['item'].get('id'):completed_ids.add(v['item']['id'])\\r\\n   row={'session_id':sid,'source_line':number,'source_uncompressed_byte_offset':offset,'timestamp':ts,'record_type':kind,'item_type':sub,'event_id':v.get('id',''),'turn_id':current_turn,'role':'','transcript':dest.relative_to(OUT).as_posix(),'canonical_line':'','text_sha256':'','rendering':'metadata_index_only'}\\r\\n   blocks=[];message=None;representation='';call_id=v.get('call_id','');evidence_status=''\\r\\n   label=kind+'/'+str(sub)\\r\\n   if kind=='response_item' and sub=='message' and v.get('role') in ['user','assistant']:\\r\\n    if v.get('channel')=='analysis':\\r\\n     row['rendering']='non_visible_reasoning_not_rendered';indexes.append(row);continue\\r\\n    role=v['role'];parts=text_parts(v.get('content',[]));message=''.join(parts);representation='response_item'\\r\\n    row['role']=role;label=role.capitalize()+' message'\\r\\n    if role=='user' and message.lstrip().startswith(('# AGENTS.md instructions','<environment_context>','<INSTRUCTIONS>','<permissions instructions>')):\\r\\n     row['rendering']='injected_context_preserved_in_original';indexes.append(row);continue\\r\\n    blocks=[('Message',message,'text')]\\r\\n    nontext=[c for c in v.get('content',[]) if isinstance(c,dict) and not text_parts(c)]\\r\\n    if nontext:blocks.append(('Non-text content references',json.dumps(structured(nontext,locator),ensure_ascii=False,indent=2),'json'))\\r\\n   elif kind=='event_msg' and sub=='item_completed':\\r\\n    item=v.get('item',{});it=item.get('type','');row['event_id']=item.get('id','');row['item_type']=it\\r\\n    if item.get('id'):completed_ids.add(item['id'])\\r\\n    if it in ['UserMessage','AgentMessage']:\\r\\n     role='user' if it=='UserMessage' else 'assistant';message=''.join(text_parts(item.get('content',[])));representation='item_completed'\\r\\n     row['role']=role;label=role.capitalize()+' message · '+it\\r\\n     blocks=[('Message',message,'text')]\\r\\n     nontext=[c for c in item.get('content',[]) if isinstance(c,dict) and not text_parts(c)] if isinstance(item.get('content'),list) else []\\r\\n     if nontext:blocks.append(('Non-text content references',json.dumps(structured(nontext,locator),ensure_ascii=False,indent=2),'json'))\\r\\n    elif it=='CommandExecution':\\r\\n     row['role']='tool';label='Recorded command completion'\\r\\n     for key in ['command','stdout','stderr','aggregated_output','formatted_output']:\\r\\n      if key in item and item[key] is not None:\\r\\n       value=item[key] if isinstance(item[key],str) else json.dumps(item[key],ensure_ascii=False,indent=2)\\r\\n       if key in ['aggregated_output','formatted_output'] and any(value==b[1] for b in blocks):continue\\r\\n       blocks.append((key,value,'text'))\\r\\n     detail={k:item.get(k) for k in ['id','cwd','status','exit_code','duration','process_id','source'] if k in item}\\r\\n     blocks.append(('Recorded completion metadata',json.dumps(detail,ensure_ascii=False,indent=2),'json'))\\r\\n     evidence_status=json.dumps({'status':item.get('status'),'exit_code':item.get('exit_code')})\\r\\n    elif it in ['McpToolCall','FileChange','WebSearch','Extension','ImageView']:\\r\\n     row['role']='tool';label='Recorded tool event · '+it\\r\\n     blocks=[('Recorded structured data',json.dumps(structured(item,locator),ensure_ascii=False,indent=2),'json')]\\r\\n     evidence_status=str(item.get('status','Recorded event; see exact source'))\\r\\n    elif it=='ContextCompaction':\\r\\n     compactions+=1;label='Recorded context-compaction metadata';blocks=[('Recorded metadata',json.dumps({'type':it,'id':item.get('id')},ensure_ascii=False),'json')]\\r\\n    else:\\r\\n     row['rendering']='non_interaction_or_reasoning_metadata';indexes.append(row);continue\\r\\n   elif kind=='response_item' and sub in ['function_call','custom_tool_call']:\\r\\n    row['role']='tool_call';label='Tool call · '+str(v.get('name',''));call_ids[call_id]+=1\\r\\n    value=v.get('arguments',v.get('input',''));value=value if isinstance(value,str) else json.dumps(value,ensure_ascii=False,indent=2)\\r\\n    blocks=[('Recorded tool input',value,'text')];row['call_id']=call_id;evidence_status='Recorded request; execution result is not inferred'\\r\\n   elif kind=='response_item' and sub in ['function_call_output','custom_tool_call_output']:\\r\\n    row['role']='tool_output';label='Tool output';output_ids[call_id]+=1\\r\\n    value=v.get('output','');value=value if isinstance(value,str) else json.dumps(structured(value,locator),ensure_ascii=False,indent=2)\\r\\n    blocks=[('Recorded tool output',value,'text')];row['call_id']=call_id\\r\\n   elif kind=='event_msg' and sub in ['user_message','agent_message']:\\r\\n    role='user' if sub=='user_message' else 'assistant';row['role']=role;message=v.get('message','');representation='legacy_event_msg'\\r\\n    blocks=[('Message',message,'text')];label=role.capitalize()+' message'\\r\\n   elif kind=='event_msg' and sub in ['error','warning','task_aborted','task_complete','task_started','turn_aborted']:\\r\\n    blocks=[('Recorded event',json.dumps(structured(v,locator),ensure_ascii=False,indent=2),'json')]\\r\\n   elif kind=='compacted':\\r\\n    compactions+=1;blocks=[('Recorded metadata',json.dumps({'record_type':kind,'available_keys':list(v)},ensure_ascii=False),'json')];label='Recorded compaction metadata'\\r\\n   else:indexes.append(row);continue\\r\\n   # Detect sensitive patterns without ever printing their values to terminal output.\\r\\n   for key,pattern in SENSITIVE.items():\\r\\n    if pattern.search(raw.decode('utf-8',errors='replace')):privacy.append({'session_id':sid,'source_line':number,'timestamp':ts,'pattern':key,'source_locator':locator,'action':'Original and derivative kept private and unredacted'})\\r\\n   if any(re.search(r'Warning: truncated output|tokens truncated|\\\\[Output truncated\\\\]|\\\\[truncated\\\\]',b[1],re.I) for b in blocks):truncated.append(number)\\r\\n   if message is not None:\\r\\n    digest=hashlib.sha256(message.encode('utf-8')).hexdigest();row['text_sha256']=digest\\r\\n    key=(row['role'],current_turn,digest);old=seen_messages.get(key)\\r\\n    if old and number-old['last_line']<=12 and representation not in old['representations']:\\r\\n     old['representations'].add(representation);old['last_line']=number\\r\\n     row['canonical_line']=old['line'];row['rendering']='duplicate_message_representation_reference'\\r\\n     md.write(f'<a id=\\\"source-line-{number}\\\"></a>\\\\n\\\\n')\\r\\n     md.write(f'## {ts} · source line {number} · message representation reference\\\\n\\\\n')\\r\\n     md.write(f'`{locator}` records the identical {row[\\\"role\\\"]} text printed at source line {old[\\\"line\\\"]}; it is not a second message.\\\\n\\\\n')\\r\\n     text_checks.append({'session_id':sid,'source_line':number,'sha256':digest,'canonical_source_line':old['line'],'transcript_text_byte_offset':old['text_offset'],'text_bytes':len(message.encode('utf-8'))})\\r\\n     indexes.append(row);counts['dup…2861 tokens truncated…',after_stats)\\r\\n changed=[name for name in source_baseline if source_baseline[name]!=after_stats[name]]\\r\\n git_after=git_inventory();dump(OUT/'metadata/git_repositories_after.json',git_after)\\r\\n for before,after in zip(repos,git_after):\\r\\n  assert before['head']==after['head'] and before['refs']==after['refs'] and before['tracked_worktree_status']==after['tracked_worktree_status'],before['path']\\r\\n index=[]\\r\\n for summary in summaries:\\r\\n  sid=summary['session_id'];s=next(x for x in snapshots if x['session_id']==sid);m=files[sid]['meta']\\r\\n  limitation=[]\\r\\n# Public AI interaction evidence\\r\\n\\r\\nThis appendix supplies **available recovered conversations**, not only an AI-use summary. It is a separately authorized public derivative of privately preserved ChatGPT and Codex readable views. It retains available student instructions, AI proposals, corrections, errors, code and recorded tool outcomes in source order, with the specific redactions in the register. Original languages are preserved; translating or rewriting the dialogue would alter the evidence. New explanatory material is in English.\\r\\n\\r\\n## Start here\\r\\n\\r\\n- [Contribution-to-message links](contribution_links.md): 31 locators supporting the ten activities in the [contribution summary](../contribution_summary.csv).\\r\\n- [Conversation index](conversation_index.csv): eleven ChatGPT conversations, three Codex session snapshots and one database-supplement notice. Each conversation has a README linking its numbered text parts.\\r\\n- [Record index](record_index.csv): available message/event anchors with links to the public parts.\\r\\n- [Redaction register](redactions.csv): one row for every removed span, with source character offsets, source text line, reason, replacement marker and public locator. Secret values and hashes of individual secrets are not published.\\r\\n- [Integrity manifest](manifest.json): source-view fingerprints, public fingerprints and ordered part lists.\\r\\n- [Source comparison](verification.json): recorded local comparison with all fifteen private source views.\\r\\n- [Publication procedure and limits](publication_procedure.md).\\r\\n\\r\\nThe numbered `.txt` parts keep large tool logs readable on GitHub. Numbers indicate sequence, not editorial versions. Concatenating the parts **without adding separators** reconstructs each public derivative exactly. Historical links, version names and references to private files are retained as spoken; they are not current project references or downloadable public attachments. The archived source header's word “private” describes that original, not this public derivative.\\r\\n\\r\\n## What was hidden\\r\\n\\r\\nThe register records **200 occurrences**: 5 password values, 5 literal password fragments in earlier checks, 82 access-token/signature/temporary access-key values, 23 restricted course-recording/meeting URLs and 85 inline image payloads. Occurrences include repeated representations and quoted tool output; they are not counts of unique credentials or independent conversations. Image bytes can contain unreviewed screenshots, including login screens; their surrounding tool text remains. This appendix does not publish binary attachments, browser HTML envelopes, raw databases or raw session files.\\r\\n\\r\\nNo academic passage was removed because it showed substantial AI involvement, a correction, disagreement or an unsuccessful operation. Student identity, engineering reasoning, feedback, ordinary local paths, code and ordinary source links remain. Every difference between the selected readable source views and the concatenated public text is represented by a register entry. The untouched originals remain private.\\r\\n\\r\\n## Completeness boundary\\r\\n\\r\\n**ChatGPT is partial:** eleven retrieved conversations contain 82 message items. Fifteen reference-only assistant items still lack readable bodies; five explicitly truncated retrieval items have separately labeled browser supplements. Rendered browser text is not certified original Markdown. No official complete account export was supplied. Missing replies are not reconstructed.\\r\\n\\r\\n**Codex is a local snapshot:** two historical research sessions and one recovery/support session were preserved, with source timestamps and separate user/runtime-context/representation labels. The private audit recorded 231 tool-output truncation notices, including repeated representations; this is not a count of unique missing operations. The shared recovery session is not a third independent research session. The database supplement is a notice containing a reasoning-record identifier, not hidden reasoning text or an additional dialogue. System/developer instructions and internal reasoning were not rendered by the recovery process.\\r\\n\\r\\nThe archived range ends on October 29, 2026, before this public packaging was completed. Later interactions and this AI-assisted publication/validation step are not silently merged into earlier conversations. Hashes establish integrity of the available copies, not server authenticity, complete historical coverage or independent student execution. Providing this appendix improves disclosure, but **does not certify fulfillment of the course's entire-conversation requirement or instructor acceptance**.\\r\\n\\r\\n## Validate\\r\\n\\r\\nFrom the repository root, with Python 3.12 or newer:\\r\\n\\r\\n```bash\\r\\npython scripts/validate_ai_interactions.py\\r\\n```\\r\\n\\r\\nAn authorized holder of the untouched recovered archives can additionally run the same script with `--originals /private/path/to/archives`. It verifies original fingerprints and reconstructs every public text by replacing exactly the registered source spans. It reads the private originals locally and does not upload them or print removed values. No institutional login is needed for the public appendix.\\r\\nsource_id,platform,conversation_id,classification,recorded_start,recorded_end,scope,readme,parts,redactions\\r\\nT01,Codex,01a09b7b-7c75-7b73-83eb-a2b90b16a3a5,milestone_1,2026-09-13T15:55:57.205Z,2026-10-23T18:06:51.159Z,Milestone 1 preparation within a mixed course-study session.,codex/01a09b7b-7c75-7b73-83eb-a2b90b16a3a5/README.md,40,35\\r\\nT02,Codex,01a12b61-e72c-7da1-bb50-45bff9d85d03,milestone_2,2026-10-11T14:33:20.031Z,2026-10-29T15:31:23.052Z,\\\"Milestone 2 research, report, feedback and reproducibility work; includes subsequent recovery activity.\\\",codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/README.md,78,132\\r\\nT03,Codex,01a1882b-64d3-7ef3-831b-004ce84e6c39,shared,2026-10-29T14:58:30.599Z,2026-10-29T15:19:30.849Z,Current recovery/support context referencing both milestones; not an additional historical research session.,codex/01a1882b-64d3-7ef3-831b-004ce84e6c39/README.md,10,29\\r\\nT04,Codex,database-supplement,shared,,,Available database-supplement notice; not another research session.,codex/database-supplement/README.md,1,0\\r\\nT05,ChatGPT,6a92eec0-f09c-83e9-a9ed-29d95f24d41b,milestone_1,2026-08-29T15:15:29.251558+00:00,2026-09-07T03:21:11.406522+00:00,Video Week 1 + Clase interactiva + prompt miniproject,chatgpt/6a92eec0-f09c-83e9-a9ed-29d95f24d41b/README.md,1,4\\r\\nT06,ChatGPT,6a9e201b-aa78-83ea-8e32-c4b5c38047fb,milestone_1,2026-09-07T02:23:47.378231+00:00,2026-09-07T02:23:47.378231+00:00,Proyecto Kaggle Para Control Engineer,chatgpt/6a9e201b-aa78-83ea-8e32-c4b5c38047fb/README.md,1,0\\r\\nT07,ChatGPT,6a9e2a4f-b7a4-83ea-ad78-10d82579fd5b,milestone_1,2026-09-07T03:08:15.453843+00:00,2026-09-07T03:10:13.120488+00:00,Detalles del proyecto Kaggle,chatgpt/6a9e2a4f-b7a4-83ea-ad78-10d82579fd5b/README.md,1,0\\r\\nT08,ChatGPT,6a9e2e37-35d0-83ea-9c08-b0d6b9ab2ec8,milestone_1,2026-09-07T03:23:37.420719+00:00,2026-09-07T03:51:46.044940+00:00,Seleccionar Dataset Kaggle,chatgpt/6a9e2e37-35d0-83ea-9c08-b0d6b9ab2ec8/README.md,1,0\\r\\nT09,ChatGPT,6aac63db-6148-83ea-a1d0-229cd3614df3,milestone_1,2026-09-20T05:21:00.888000+00:00,2026-09-20T15:56:16.751000+00:00,Buscar dataset en Kaggle,chatgpt/6aac63db-6148-83ea-a1d0-229cd3614df3/README.md,1,0\\r\\nT10,ChatGPT,6aaf4d8e-4490-83ea-92b3-31951721fef2,milestone_1,2026-09-20T03:06:15.520000+00:00,2026-09-20T03:06:15.520000+00:00,Formato del reporte,chatgpt/6aaf4d8e-4490-83ea-92b3-31951721fef2/README.md,1,0\\r\\nT11,ChatGPT,6ab004f1-8c38-83ea-bd39-3f52a1939e76,shared,2026-09-20T17:21:51.449000+00:00,2026-09-26T02:53:17.452101+00:00,Crear versión oV4 Final,chatgpt/6ab004f1-8c38-83ea-bd39-3f52a1939e76/README.md,1,0\\r\\nT12,ChatGPT,6ac80fb7-1dd8-83e9-a613-b73391e48697,shared,2026-10-08T21:49:59.166448+00:00,2026-10-08T22:04:07.694108+00:00,Expectativas Milestone 2,chatgpt/6ac80fb7-1dd8-83e9-a613-b73391e48697/README.md,1,0\\r\\nT13,ChatGPT,6ad553bb-6f3c-83ea-bfbd-bee4b7f728ad,milestone_2,2026-10-19T00:10:59.529000+00:00,2026-10-19T01:35:12.514000+00:00,Confirmar dataset BattLeDIM,chatgpt/6ad553bb-6f3c-83ea-bfbd-bee4b7f728ad/README.md,1,0\\r\\nT14,ChatGPT,6ae0894a-6f50-83e9-a7ca-d4d3c8c50402,milestone_2,2026-10-27T11:22:11.181000+00:00,2026-10-28T14:25:53.089000+00:00,Analiza feedback milestone 2,chatgpt/6ae0894a-6f50-83e9-a7ca-d4d3c8c50402/README.md,1,0\\r\\nT15,ChatGPT,6ae334d1-a604-83e9-a039-dd29a3c1856b,milestone_2,2026-10-29T12:10:40.224000+00:00,2026-10-29T14:50:56.021000+00:00,Analiza coherencia y participación,chatgpt/6ae334d1-a604-83e9-a039-dd29a3c1856b/README.md,1,0\\r\\n# Completed exploratory analysis\\r\\n\\r\\nThis page supports [Milestone 2, Sections 1.1–1.3 and Figures 1–4](../reports/Milestone2.pdf). The [contribution statement](student_contributions.md) identifies student direction, AI methodological assistance, generated code and recorded execution. All values below are descriptive reproductions; no learned model has been fitted.\\r\\n\\r\\n## Source and calculations\\r\\n\\r\\nThe pipeline verifies the eleven files in the [official-source manifest](../data/source_manifest.json): eight annual SCADA tables, the nominal model, sensor configuration and README. It checks full 2018 and 2019 table structure, but computes pressure forecasts/errors and correlations only for **January–September 2018**. Table checks do not establish that 2019 was never previously inspected.\\r\\n\\r\\n[Data loading and calculations](../src/analysis.py) use the six selected signals, without interpolation, filtering or scaling. The period is cropped before `n1.shift(-3)` creates the future label. The last three origins cannot obtain labels inside September and are dropped. This produces 78,621 pairs from 78,624 timestamps. These pairs use current inputs for descriptive correlations and persistence; they are **not** the later lagged training matrix, which will also require 55 minutes of history.\\r\\n\\r\\nFor error `e = n1(u + 15) − n1(u)`, MAE is the mean of `abs(e)` and RMSE is the square root of the mean of `e²`. Pearson correlations use the same aligned pairs. The future target is never an input predictor.\\r\\n\\r\\n| Quantity | Reproduced value |\\r\\n|---|---:|\\r\\n| Days / timestamps | 273 / 78,624 |\\r\\n| Valid +15-minute pairs | 78,621 |\\r\\n| n1 minimum / maximum | 25.67 / 29.36 m |\\r\\n| Persistence MAE | 0.05177624298851451 m |\\r\\n| Persistence RMSE | 0.06849175638676988 m |\\r\\n| Current n1 / future n1 correlation | 0.9923104288422752 |\\r\\n| T1 / future n1 correlation | 0.9230382756150443 |\\r\\n| PUMP_1 / future n1 correlation | −0.036721113537145696 |\\r\\n| AMR_n1 / future n1 correlation | −0.1573783306135834 |\\r\\n\\r\\n[Statistics](../results/eda_statistics.json) · [complete correlation table](../results/correlations.csv) · [numerical verification](../results/verification.json)\\r\\n\\r\\n## Four figures\\r\\n\\r\\n**Figure 1 · Functional supply boundary.** The [nominal model check](../src/analysis.py) identifies boundaries, pump endpoints and pressure sensors; [plotting code](../src/figures.py) lays out the interpretive diagram. Arrows summarize the intended supply route, not solved flows or signal delays.\\r\\n\\r\\n![Functional hydraulic supply boundary](../results/figures/figure1_supply_boundary.png)\\r\\n\\r\\n**Figure 2 · Daily profiles.** Thin lines show each of the 273 days; the red line is the mean at each clock time. The left tank/pump panels span the same total height as the three right pressure panels. The nominal controls open PUMP_1 below 2.4 m and close it above 3.9 m. The plot shows daily variation; it does not prove a causal lead from the pump to future n1.\\r\\n\\r\\n![Daily tank, pump and pressure profiles](../results/figures/figure2_daily_profiles.png)\\r\\n\\r\\n**Figure 3 · Correlations.** The gold boundary separates the future label from six current signals. Persistence's small descriptive error and high n1 autocorrelation make it a strong reference. A signal with high correlation may add little beyond n1, and a low contemporaneous correlation does not rule out useful lagged information.\\r\\n\\r\\n![Six-signal and future-label correlation matrix](../results/figures/figure3_correlations.png)\\r\\n\\r\\n**Figure 4 · Literature groups.** Counts are recomputed by joining source IDs and group assignments. Gold bars identify selected groups within each category. They are subsets, not extra studies. The five main objectives are not the number of individual papers. A diagnostic method can contain a future-pressure step while remaining in the leak category.\\r\\n\\r\\n![Historical literature category counts](../results/figures/figure4_historical_screening.png)\\r\\n\\r\\nThe [screening notes](../literature/screening_notes.md) distinguish brief screening from the six detailed readings. Counting code validates consistency, not search completeness or all scholarly classifications. The [execution manifest](../results/run_manifest.json) records inputs, code, environment and outputs. [Submitted image bytes](../evidence/submitted_figures/) are retained separately: regenerated figures support the same content with portable fonts; pixel identity is not claimed.\\r\\n\"}"
+  }
+]
+````
+
+<a id="source-line-12586"></a>
+
+## 2026-10-29T18:37:14.297Z · source line 12586 · Tool call · exec
+
+Source: `original_sessions/rollout-2026-10-11T10-33-18-01a12b61-e72c-7da1-bb50-45bff9d85d03.jsonl#L12586`  
+Event ID: `ctc_02d303a6a82c3a1a016ae39257556081a2bff9f3c631ffaf86`  
+Turn ID: `01a188f2-4246-7921-9c3b-2dc47f257b85`  
+Call ID: `call_16459272860f40c4879295a9ed8599ad`
+
+### Recorded tool input
+
+```text
+text(await tools.exec_command({cmd:"Get-Content -Encoding UTF8 'D:\\GitHub\\ML NJIT\\MiniProject\\AI Assitance\\DS675_AI_Transcripts_Codex\\recover_sessions.py' | Select-Object -Skip 245 -First 54; Get-Content -Encoding UTF8 'D:\\GitHub\\ML NJIT\\MiniProject\\DS675_MiniProject\\literature\\README.md'; Get-Content -Encoding UTF8 'D:\\GitHub\\ML NJIT\\MiniProject\\DS675_MiniProject\\evidence\\report_claims.csv'; Get-Content -Encoding UTF8 'D:\\GitHub\\ML NJIT\\MiniProject\\DS675_MiniProject\\evidence\\work_status.json'; Get-Content -Encoding UTF8 'D:\\GitHub\\ML NJIT\\MiniProject\\AI Assitance\\DS675_AI_Transcripts_Codex\\metadata\\source_snapshots.json' -TotalCount 65","max_output_tokens":3500}));
+```
+
+<a id="source-line-12588"></a>
+
+## 2026-10-29T18:37:16.287Z · source line 12588 · Recorded command completion
+
+Source: `original_sessions/rollout-2026-10-11T10-33-18-01a12b61-e72c-7da1-bb50-45bff9d85d03.jsonl#L12588`  
+Event ID: `exec-aa26a49c-f607-43bc-9118-c73e6fb85b42`  
+Turn ID: `01a188f2-4246-7921-9c3b-2dc47f257b85`
+
+### command
+
+```text
+[
+  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "-Command",
+  "Get-Content -Encoding UTF8 'D:\\GitHub\\ML NJIT\\MiniProject\\AI Assitance\\DS675_AI_Transcripts_Codex\\recover_sessions.py' | Select-Object -Skip 245 -First 54; Get-Content -Encoding UTF8 'D:\\GitHub\\ML NJIT\\MiniProject\\DS675_MiniProject\\literature\\README.md'; Get-Content -Encoding UTF8 'D:\\GitHub\\ML NJIT\\MiniProject\\DS675_MiniProject\\evidence\\report_claims.csv'; Get-Content -Encoding UTF8 'D:\\GitHub\\ML NJIT\\MiniProject\\DS675_MiniProject\\evidence\\work_status.json'; Get-Content -Encoding UTF8 'D:\\GitHub\\ML NJIT\\MiniProject\\AI Assitance\\DS675_AI_Transcripts_Codex\\metadata\\source_snapshots.json' -TotalCount 65"
+]
+```
+
+### aggregated_output
+
+```text
+     indexes.append(row);counts['duplicate_message_representations']+=1;continue
+   md.write(f'<a id="source-line-{number}"></a>\n\n')
+   md.write(f'## {ts} · source line {number} · {label}\n\n')
+   md.write(f'Source: `{locator}`  \nEvent ID: `{row["event_id"] or "not recorded"}`  \nTurn ID: `{current_turn or "not recorded"}`')
+   if call_id:md.write(f'  \nCall ID: `{call_id}`')
+   md.write('\n\n');row['rendering']='rendered_interaction'
+   for name,value,lang in blocks:
+    md.write('### '+name+'\n\n');text_offset,text_length=fence(md,value,lang)
+    if name=='Message' and message is not None:
+     seen_messages[key]={'line':number,'last_line':number,'representations':{representation},'text_offset':text_offset}
+     text_checks.append({'session_id':sid,'source_line':number,'sha256':row['text_sha256'],'canonical_source_line':number,'transcript_text_byte_offset':text_offset,'text_bytes':len(message.encode('utf-8'))})
+   counts[row['role'] or 'other_interaction']+=1
+   content_for_map=message if message is not None else '\n'.join(b[1] for b in blocks)
+   if row['role']=='user' and sid in PRIMARY:
+    category,status=classify_student(content_for_map)
+    contributions.append({'actor':'Student','category':category,'milestone':folder,'instruction_or_recorded_action':content_for_map,
+     'interpretation_limit':status,'project_specific_terms_present':bool(PROJECT.search(content_for_map)),
+     'session_id':sid,'event_id':row['event_id'],'timestamp':ts,'source_line':number,'source_locator':locator,'transcript_locator':dest.relative_to(OUT).as_posix()+f'#source-line-{number}','recorded_execution_status':'Not inferred from a student message'})
+   elif row['role'] in ['tool','tool_call'] and sid in PRIMARY and PROJECT.search(content_for_map):
+    recovery=bool(re.search(r'DS675_AI_Transcripts_Codex|discover_sessions|recover_sessions',content_for_map,re.I))
+    contributions.append({'actor':'Codex','category':'Recorded recovery operation' if recovery else 'Codex tool execution or implementation record',
+     'milestone':folder,'instruction_or_recorded_action':(blocks[0][1] if blocks else '')[:2000],
+     'interpretation_limit':'AI-generated or executed operation; not evidence of manual student coding. Full operation and outcome remain in source.',
+     'project_specific_terms_present':True,'session_id':sid,'event_id':row['event_id'],'timestamp':ts,'source_line':number,
+     'source_locator':locator,'transcript_locator':dest.relative_to(OUT).as_posix()+f'#source-line-{number}',
+     'recorded_execution_status':evidence_status or 'Recorded event only'})
+   for token in set(re.findall(r'(?<![0-9a-fA-F])[0-9a-fA-F]{7,40}(?![0-9a-fA-F])',content_for_map)):
+    matches=[x for x in git_commits if x['commit'].startswith(token.lower())]
+    if len({x['commit'] for x in matches})!=1:continue
+    for commit in matches:
+     gitlinks.append({'session_id':sid,'event_id':row['event_id'],'source_line':number,'timestamp':ts,'source_locator':locator,
+      'repository_path':commit['repository_path'],'commit':commit['commit'],'authored_at':commit['authored_at'],
+      'committed_at':commit['committed_at'],'commit_subject':commit['subject'],'changed_files':'; '.join(commit['files']),
+      'relationship':'Explicit hash reference in a recorded message/tool event; not proof of who manually wrote the code',
+      'record_role':row['role']})
+   indexes.append(row)
+  md.write('\n')
+ # Re-read exact byte ranges: available message text must survive conversion unchanged.
+ with dest.open('rb') as f:
+  for check in text_checks:
+   f.seek(check['transcript_text_byte_offset']);value=f.read(check['text_bytes'])
+   assert hashlib.sha256(value).hexdigest()==check['sha256'],(sid,check['source_line'])
+ counts['message_text_checks']=len(text_checks)
+ summary={'session_id':sid,'milestone':folder,'scope':scope,'original_source_path':snap['source_path'],'archive_path':snap['archive_path'],
+  'transcript':dest.relative_to(OUT).as_posix(),'first_timestamp':first_ts,'last_timestamp':end_ts,'records':sum(types.values()),
+  'counts':dict(counts),'record_types':dict(types),'timestamp_regressions':regressions,'malformed_records':malformed,
+  'context_compaction_records':compactions,'recorded_output_truncation_lines':truncated,
+  'unpaired_tool_call_ids':[k for k in call_ids if k not in output_ids],
+  'unpaired_tool_output_ids':[k for k in output_ids if k not in call_ids],
+  'recorded_ui_item_ids':sorted(completed_ids),'message_text_checks_passed':True}
+ return summary,indexes,privacy,contributions,gitlinks,text_checks
+
+
+def export_database_subset(summaries):
+# Literature collection
+
+The historical collection supporting [Milestone 2, Section 2](../reports/Milestone2.pdf#page=3) contains **47 source records assigned to 35 groups of related works** on L-Town or explicit modifications. Different papers, journal/conference versions and related code may share a group because they describe the same method. The denominator is groups, not independent PDFs or seven task categories.
+
+The student directed the relevance criteria and critical review; AI assisted discovery, source/code inspection and technical synthesis. This focused search started from the dataset, benchmark and competition reports, following citations and author repositories. Search topics included BattLeDIM/L-Town pressure prediction, forecasting, reconstruction, leak diagnosis and available implementations. This is a non-exhaustive collection; a complete historical query/result log was not retained. The repository reproduces the documented inventory and grouping, not the original web search or a systematic review.
+
+[All 47 sources](source_records.csv) · [35 group assignments](groups.csv) · [notes for every group](screening_notes.md) · [paper/download index](papers/README.md) · [full recovered metadata](bibliography.json)
+
+| Primary objective | Groups | Share of 35 | Detailed selections |
+|---|---:|---:|---|
+| Leak detection / localization | 27 | 77.1% | ChebNet, LILA, EILF |
+| Current-pressure estimation | 3 | 8.6% | GATRes |
+| Future pressure / head forecasting | 2 | 5.7% | AGN |
+| Anomaly / sensor-fault detection | 2 | 5.7% | SAM-kNN |
+| Sensor placement | 1 | 2.9% | None |
+
+The category describes the main purpose. ChebNet and SAM-kNN have future-pressure components despite diagnostic primary tasks. Brief screening also identifies next-record pressure prediction in AIGNN; the six selected groups are a focused comparison, **not all temporal methods in the collection**. AGN and the patent form the primary-forecast category; the patent's physical horizon is not established by the screened evidence. [Counting code](../src/screening.py) validates membership and totals, not the correctness of every scholarly classification.
+
+## Six detailed studies
+
+| Study | Why selected / relation to the proposal |
+|---|---|
+| [ChebNet](detailed_review/chebnet.md) | Next-step pressure learning inside leak diagnosis; shows a temporal graph approach. |
+| [SAM-kNN](detailed_review/sam_knn.md) | Adaptive online virtual-sensor regression with a next-record pressure target. |
+| [AGN](detailed_review/agn.md) | Multistep future heads on modified L-Town; differs in data and output scope. |
+| [LILA](detailed_review/lila.md) | Same-time healthy-pressure reference, useful for distinguishing estimation from forecasting. |
+| [GATRes](detailed_review/gatres.md) | Graph reconstruction of current hidden pressures, not future labels. |
+| [Wang et al. EILF](detailed_review/eilf.md) | Existing pump/tank-balance reasoning relevant to the selected sector. |
+
+The reviews separate data/preparation, model, inspected code, reported score and relevance to n1(+15). Author training was not reproduced. The submitted table is preserved in the original PDF; source discrepancies are stated rather than silently reconciled. Paper and code hashes/locators are recorded in [source checks](../evidence/literature_checks.json).
+
+## Feedback-related supplement and archived material
+
+[Ahmed et al. (2025)](ahmed_feedback.md) was specifically requested by the professor. It is discussed separately and is **not** added to the 47 records, 35 groups or six detailed studies. Its five Area C signals overlap with this proposal; its reconstruction-based leak detection differs from the proposed regression target.
+
+The [48-entry paper catalog](papers_catalog.csv) includes permitted PDFs, official links and additional supporting/background items retained from the collection. It is not the 47-record counted inventory. Reviews, external networks and tools retained in the archive do not enter the 35-group denominator. Historical group labels have been translated into English; source IDs, mappings, locators, hashes, commits and actual publication titles are preserved. Original third-party document edition identifiers may appear in bibliographic metadata; they are not project revision labels.
+
+Public PDFs remain unmodified and are included only with license evidence. Restricted journal papers are linked, even when an earlier openly licensed conference report is available. Automated publisher access blocks are documented in [link checks](../evidence/external_links.json); they are not represented as verified full-text access. See [redistribution terms](../NOTICE.md).
+report_locator,claim,primary_source,implementation_or_document,output,status
+1.1,"Source, dimensions, units and complete tables",Official Zenodo release and benchmark paper,src/data.py; src/analysis.py,results/table_checks.json,Executed descriptive check
+1.2; Figure 1,"Task, sector, paths, feature filter and schematic",Official nominal model and sensor configuration,src/analysis.py; src/figures.py,results/topology_audit.json; results/figures/figure1_supply_boundary.png,Executed model parsing; interpretive schematic
+1.3; Figure 2,"273 days, range and daily profiles",Jan-Sep 2018 official SCADA,src/analysis.py; src/figures.py,results/eda_statistics.json; results/figures/figure2_daily_profiles.png,Executed descriptive EDA
+1.3; Figure 3,"78621 pairs, persistence errors and correlations",Jan-Sep 2018 official SCADA,src/analysis.py; src/figures.py,results/correlations.csv; results/figures/figure3_correlations.png,Executed descriptive EDA; no final model score
+2; Figure 4,"35 groups, five categories and six selections",47 historical source records and group assignments,src/screening.py; src/figures.py,results/screening_summary.json; results/figures/figure4_historical_screening.png,Executed count audit; scholarly categories retained
+2; six-study table,"Original author tasks, models, preparation and scores",Original articles and pinned author code,literature/detailed_review/; evidence/literature_checks.json,Six separate reviews,Literature reported; author models not reproduced
+3.1,"C1, C2, C3 and bounded contribution",Submitted Milestone 2 Section 3,docs/anticipated_contributions.md,No fitted-model output,Proposed
+3.2,Current plus 55-minute history; four models,Submitted Milestone 2 Section 3.2,docs/anticipated_contributions.md,No fitted-model output,Proposed
+3.3,"Chronology, common rows, MAE/RMSE and full/reduced boosting",Submitted Milestone 2 Section 3.3,docs/anticipated_contributions.md,No fitted-model output,Proposed
+Feedback,Ahmed comparison and provenance clarification,Documented professor feedback and Ahmed 2025,docs/professor_feedback.md; literature/ahmed_feedback.md,Separate supplement outside historical counts,Source-based clarification
+{
+  "report_status": "Original submitted PDFs preserved unchanged; supporting clarification is in docs/student_contributions.md.",
+  "completed_here": [
+    "Official-input checksum and annual table checks",
+    "Jan–Sep 2018 descriptive persistence and correlations",
+    "Nominal sector/path checks and an interpretive supply schematic",
+    "Four descriptive/supporting figures",
+    "Historical inventory recount and source summaries"
+  ],
+  "AI_assistance_scope": [
+    "Methodological proposals",
+    "Source discovery and technical synthesis",
+    "Generated code and recorded execution",
+    "Writing and organization"
+  ],
+  "literature_results": "Published author results; model training and scores not reproduced.",
+  "proposed_only": [
+    "C1: lagged forecast-data preparation as a learning experiment",
+    "C2: Gradient Boosting versus persistence, Ridge and Random Forest",
+    "C3: full-feature versus n1-history Gradient Boosting with the same calendar inputs"
+  ],
+  "2019_use_in_this_pipeline": "Table-structure checks only; no 2019 forecast score.",
+  "disclosure_boundary": "Available recovered readable conversations are public under evidence/ai_interactions with documented redactions. Unredacted originals, raw sessions/databases and binary attachments remain private. ChatGPT recovery is partial; this repository does not certify a complete historical transcript submission or academic acceptance."
+}
+[
+  {
+    "source_path": "C:\\Users\\Andres\\.codex\\sessions\\2026\\09\\13\\rollout-2026-09-13T11-55-56-01a09b7b-7c75-7b73-83eb-a2b90b16a3a5.jsonl",
+    "archive_path": "original_sessions/rollout-2026-09-13T11-55-56-01a09b7b-7c75-7b73-83eb-a2b90b16a3a5.jsonl",
+    "snapshot_utc": "2026-10-29T15:31:16.808427+00:00",
+    "snapshot_bytes": 170288901,
+    "sha256": "63cec885986e89ce6e5eefd03f5c9e1659871a3548e6f44d28e8ac5ff451a40d",
+    "source_size_at_copy_end": 170288901,
+    "source_mtime_ns_at_copy_start": 1792778811159030100,
+    "source_mtime_ns_at_copy_end": 1792778811159030100,
+    "source_prefix_verified": true,
+    "source_was_growing_during_copy": false,
+    "session_id": "01a09b7b-7c75-7b73-83eb-a2b90b16a3a5",
+    "source_size_at_final_check": 170288901,
+    "source_mtime_ns_at_final_check": 1792778811159030100,
+    "archive_hash_matches": true,
+    "original_prefix_hash_still_matches": true,
+    "source_grew_after_snapshot": false,
+    "full_file_unchanged_during_snapshot_window": true
+  },
+  {
+    "source_path": "C:\\Users\\Andres\\.codex\\sessions\\2026\\10\\11\\rollout-2026-10-11T10-33-18-01a12b61-e72c-7da1-bb50-45bff9d85d03.jsonl",
+    "archive_path": "original_sessions/rollout-2026-10-11T10-33-18-01a12b61-e72c-7da1-bb50-45bff9d85d03.jsonl",
+    "snapshot_utc": "2026-10-29T15:31:40.474829+00:00",
+    "snapshot_bytes": 160917507,
+    "sha256": "3a81c61642de18964206d75f9125619b80700ea4cdb7ec06e782c6118efb15d4",
+    "source_size_at_copy_end": 160917507,
+    "source_mtime_ns_at_copy_start": 1793287883051463400,
+    "source_mtime_ns_at_copy_end": 1793287883051463400,
+    "source_prefix_verified": true,
+    "source_was_growing_during_copy": false,
+    "session_id": "01a12b61-e72c-7da1-bb50-45bff9d85d03",
+    "source_size_at_final_check": 160935835,
+    "source_mtime_ns_at_final_check": 1793287928825325900,
+    "archive_hash_matches": true,
+    "original_prefix_hash_still_matches": true,
+    "source_grew_after_snapshot": true,
+    "full_file_unchanged_during_snapshot_window": false
+  },
+  {
+    "source_path": "C:\\Users\\Andres\\.codex\\sessions\\2026\\10\\29\\rollout-2026-10-29T10-58-27-01a1882b-64d3-7ef3-831b-004ce84e6c39.jsonl",
+    "archive_path": "original_sessions/rollout-2026-10-29T10-58-27-01a1882b-64d3-7ef3-831b-004ce84e6c39.jsonl",
+    "snapshot_utc": "2026-10-29T15:32:05.921848+00:00",
+    "snapshot_bytes": 4323054,
+    "sha256": "a604fd21c5c8f5e1218414711f29585bb0c64517fd098e85224756cb450f8b79",
+    "source_size_at_copy_end": 4323054,
+    "source_mtime_ns_at_copy_start": 1793285910599302900,
+    "source_mtime_ns_at_copy_end": 1793285910599302900,
+    "source_prefix_verified": true,
+    "source_was_growing_during_copy": false,
+    "session_id": "01a1882b-64d3-7ef3-831b-004ce84e6c39",
+    "source_size_at_final_check": 4323054,
+    "source_mtime_ns_at_final_check": 1793285910599302900,
+    "archive_hash_matches": true,
+    "original_prefix_hash_still_matches": true,
+    "source_grew_after_snapshot": false,
+    "full_file_unchanged_during_snapshot_window": true
+  }
+]
+```
+
+### Recorded completion metadata
+
+```json
+{
+  "id": "exec-aa26a49c-f607-43bc-9118-c73e6fb85b42",
+  "cwd": "file:///D:/GitHub",
+  "status": "completed",
+  "exit_code": 0,
+  "duration": {
+    "secs": 1,
+    "nanos": 763269300
+  },
+  "process_id": "28290",
+  "source": "unified_exec_startup"
+}
+```
+
+<a id="source-line-12589"></a>
+
+## 2026-10-29T18:37:16.330Z · source line 12589 · Tool output
+
+Source: `original_sessions/rollout-2026-10-11T10-33-18-01a12b61-e72c-7da1-bb50-45bff9d85d03.jsonl#L12589`  
+Event ID: `ctco_01a188f3-b8aa-7891-8899-042c27cd35be`  
+Turn ID: `01a188f2-4246-7921-9c3b-2dc47f257b85`  
+Call ID: `call_16459272860f40c4879295a9ed8599ad`
+
+### Recorded tool output
+
+```text
+[
+  {
+    "type": "input_text",
+    "text": "Script completed\nWall time 2.0 seconds\nOutput:\n"
+  },
+  {
+    "type": "input_text",
+    "text": "{\"chunk_id\":\"da6de3\",\"wall_time_seconds\":1.7646387,\"exit_code\":0,\"original_token_count\":4025,\"output\":\"Warning: truncated output (original token count: 4025)\\nTotal output lines: 186\\n\\n     indexes.append(row);counts['duplicate_message_representations']+=1;continue\\r\\n   md.write(f'<a id=\\\"source-line-{number}\\\"></a>\\\\n\\\\n')\\r\\n   md.write(f'## {ts} · source line {number} · {label}\\\\n\\\\n')\\r\\n   md.write(f'Source: `{locator}`  \\\\nEvent ID: `{row[\\\"event_id\\\"] or \\\"not recorded\\\"}`  \\\\nTurn ID: `{current_turn or \\\"not recorded\\\"}`')\\r\\n   if call_id:md.write(f'  \\\\nCall ID: `{call_id}`')\\r\\n   md.write('\\\\n\\\\n');row['rendering']='rendered_interaction'\\r\\n   for name,value,lang in blocks:\\r\\n    md.write('### '+name+'\\\\n\\\\n');text_offset,text_length=fence(md,value,lang)\\r\\n    if name=='Message' and message is not None:\\r\\n     seen_messages[key]={'line':number,'last_line':number,'representations':{representation},'text_offset':text_offset}\\r\\n     text_checks.append({'session_id':sid,'source_line':number,'sha256':row['text_sha256'],'canonical_source_line':number,'transcript_text_byte_offset':text_offset,'text_bytes':len(message.encode('utf-8'))})\\r\\n   counts[row['role'] or 'other_interaction']+=1\\r\\n   content_for_map=message if message is not None else '\\\\n'.join(b[1] for b in blocks)\\r\\n   if row['role']=='user' and sid in PRIMARY:\\r\\n    category,status=classify_student(content_for_map)\\r\\n    contributions.append({'actor':'Student','category':category,'milestone':folder,'instruction_or_recorded_action':content_for_map,\\r\\n     'interpretation_limit':status,'project_specific_terms_present':bool(PROJECT.search(content_for_map)),\\r\\n     'session_id':sid,'event_id':row['event_id'],'timestamp':ts,'source_line':number,'source_locator':locator,'transcript_locator':dest.relative_to(OUT).as_posix()+f'#source-line-{number}','recorded_execution_status':'Not inferred from a student message'})\\r\\n   elif row['role'] in ['tool','tool_call'] and sid in PRIMARY and PROJECT.search(content_for_map):\\r\\n    recovery=bool(re.search(r'DS675_AI_Transcripts_Codex|discover_sessions|recover_sessions',content_for_map,re.I))\\r\\n    contributions.append({'actor':'Codex','category':'Recorded recovery operation' if recovery else 'Codex tool execution or implementation record',\\r\\n     'milestone':folder,'instruction_or_recorded_action':(blocks[0][1] if blocks else '')[:2000],\\r\\n     'interpretation_limit':'AI-generated or executed operation; not evidence of manual student coding. Full operation and outcome remain in source.',\\r\\n     'project_specific_terms_present':True,'session_id':sid,'event_id':row['event_id'],'timestamp':ts,'source_line':number,\\r\\n     'source_locator':locator,'transcript_locator':dest.relative_to(OUT).as_posix()+f'#source-line-{number}',\\r\\n     'recorded_execution_status':evidence_status or 'Recorded event only'})\\r\\n   for token in set(re.findall(r'(?<![0-9a-fA-F])[0-9a-fA-F]{7,40}(?![0-9a-fA-F])',content_for_map)):\\r\\n    matches=[x for x in git_commits if x['commit'].startswith(token.lower())]\\r\\n    if len({x['commit'] for x in matches})!=1:continue\\r\\n    for commit in matches:\\r\\n     gitlinks.append({'session_id':sid,'event_id':row['event_id'],'source_line':number,'timestamp':ts,'source_locator':locator,\\r\\n      'repository_path':commit['repository_path'],'commit':commit['commit'],'authored_at':commit['authored_at'],\\r\\n      'committed_at':commit['committed_at'],'commit_subject':commit['subject'],'changed_files':'; '.join(commit['files']),\\r\\n      'relationship':'Explicit hash reference in a recorded message/tool event; not proof of who manually wrote the code',\\r\\n      'record_role':row['role']})\\r\\n   indexes.append(row)\\r\\n  md.write('\\\\n')\\r\\n # Re-read exact byte ranges: available message text must survive conversion unchanged.\\r\\n with dest.open('rb') as f:\\r\\n  for check in text_checks:\\r\\n   f.seek(check['transcript_text_byte_offset']);value=f.read(check['text_bytes'])\\r\\n   assert hashlib.sha256(value).hexdigest()==check['sha256'],(sid,check['source_line'])\\r\\n counts['message_text_checks']=len(text_checks)\\r\\n summary={'session_id':sid,'milestone':folder,'scope':scope,'original_source_path':snap['source_path'],'archive_path':snap['archive_path'],\\r\\n  'transcript':dest.relative_to(OUT).as_posix(),'first_timestamp':first_ts,'last_timestamp':end_ts,'records':sum(types.values()),\\r\\n  'counts':dict(counts),'record_types':dict(types),'timestamp_regressions':regressions,'malformed_records':malformed,\\r\\n  'context_compaction_records':compactions,'recorded_output_truncation_lines':truncated,\\r\\n  'unpaired_tool_call_ids':[k for k in call_ids if k not in output_ids],\\r\\n  'unpaired_tool_output_ids':[k for k in output_ids if k not in call_ids],\\r\\n  'recorded_ui_item_ids':sorted(completed_ids),'message_text_checks_passed':True}\\r\\n return summary,indexes,privacy,contributions,gitlinks,text_checks\\r\\n\\r\\n\\r\\ndef export_database_subset(summaries):\\r\\n# Literature collection\\r\\n\\r\\nThe historical collection supporting [Milestone 2, Section 2](../reports/Milestone2.pdf#page=3) contains **47 source records assigned to 35 groups of related works** on L-Town or explicit modifications. Different papers, journal/conference versions and related code may share a group because they describe the same method. The denominator is groups, not independent PDFs or seven task categories.\\r\\n\\r\\nThe student directed the relevance criteria and critical review; AI assisted discovery, source/code inspection and technical synthesis. This focused search started from the dataset, benchmark and competition reports, following citations and author repositories. Search topics included BattLeDIM/L-Town pressure prediction, forecasting, reconstruction, leak diagnosis and available implementations. This is a non-exhaustive collection; a complete historical query/result log was not retained. The repository reproduces the documented inventory and grouping, not the original web search or a systematic review.\\r\\n\\r\\n[All 47 sources](source_records.csv) · [35 group assignments](groups.csv) · [notes for every group](screening_notes.md) · [paper/download index](papers/README.md) · [full recovered metadata](bibliography.json)\\r\\n\\r\\n| Primary objective | Groups | Share of 35 | Detailed selections |\\r\\n|---|---:|---:|---|\\r\\n| Leak detection / localization | 27 | 77.1% | ChebNet, LILA, EILF |\\r\\n| Current-pressure estimation | 3 | 8.6% | GATRes |\\r\\n| Future pressure / head forecasting | 2 | 5.7% | AGN |\\r\\n| Anomaly / sensor-fault detection | 2 | 5.7% | SAM-kNN |\\r\\n| Sensor placement | 1 | 2.9% | None |\\r\\n\\r\\nThe category describes the main purpose. ChebNet and SAM-kNN have future-pressure components despite diagnostic primary tasks. Brief screening also identifies next-record pressure prediction in AIGNN; the six selected groups are a focused comparison, **not all temporal methods in the collection**. AGN and the patent form the primary-forecast category; the patent's physical horizon is not established by the screened evidence. [Counting code](../src/screening.py) validates membership and totals, not the correctness of every scholarly classification.\\r\\n\\r\\n## Six detailed studies\\r\\n\\r\\n| Study | Why selected / relation to the proposal |\\r\\n|---|---|\\r\\n| [ChebNet](detailed_review/chebnet.md) | Next-step pressure learning inside leak d…525 tokens truncated…n when an earlier openly licensed conference report is available. Automated publisher access blocks are documented in [link checks](../evidence/external_links.json); they are not represented as verified full-text access. See [redistribution terms](../NOTICE.md).\\r\\nreport_locator,claim,primary_source,implementation_or_document,output,status\\r\\n1.1,\\\"Source, dimensions, units and complete tables\\\",Official Zenodo release and benchmark paper,src/data.py; src/analysis.py,results/table_checks.json,Executed descriptive check\\r\\n1.2; Figure 1,\\\"Task, sector, paths, feature filter and schematic\\\",Official nominal model and sensor configuration,src/analysis.py; src/figures.py,results/topology_audit.json; results/figures/figure1_supply_boundary.png,Executed model parsing; interpretive schematic\\r\\n1.3; Figure 2,\\\"273 days, range and daily profiles\\\",Jan-Sep 2018 official SCADA,src/analysis.py; src/figures.py,results/eda_statistics.json; results/figures/figure2_daily_profiles.png,Executed descriptive EDA\\r\\n1.3; Figure 3,\\\"78621 pairs, persistence errors and correlations\\\",Jan-Sep 2018 official SCADA,src/analysis.py; src/figures.py,results/correlations.csv; results/figures/figure3_correlations.png,Executed descriptive EDA; no final model score\\r\\n2; Figure 4,\\\"35 groups, five categories and six selections\\\",47 historical source records and group assignments,src/screening.py; src/figures.py,results/screening_summary.json; results/figures/figure4_historical_screening.png,Executed count audit; scholarly categories retained\\r\\n2; six-study table,\\\"Original author tasks, models, preparation and scores\\\",Original articles and pinned author code,literature/detailed_review/; evidence/literature_checks.json,Six separate reviews,Literature reported; author models not reproduced\\r\\n3.1,\\\"C1, C2, C3 and bounded contribution\\\",Submitted Milestone 2 Section 3,docs/anticipated_contributions.md,No fitted-model output,Proposed\\r\\n3.2,Current plus 55-minute history; four models,Submitted Milestone 2 Section 3.2,docs/anticipated_contributions.md,No fitted-model output,Proposed\\r\\n3.3,\\\"Chronology, common rows, MAE/RMSE and full/reduced boosting\\\",Submitted Milestone 2 Section 3.3,docs/anticipated_contributions.md,No fitted-model output,Proposed\\r\\nFeedback,Ahmed comparison and provenance clarification,Documented professor feedback and Ahmed 2025,docs/professor_feedback.md; literature/ahmed_feedback.md,Separate supplement outside historical counts,Source-based clarification\\r\\n{\\r\\n  \\\"report_status\\\": \\\"Original submitted PDFs preserved unchanged; supporting clarification is in docs/student_contributions.md.\\\",\\r\\n  \\\"completed_here\\\": [\\r\\n    \\\"Official-input checksum and annual table checks\\\",\\r\\n    \\\"Jan–Sep 2018 descriptive persistence and correlations\\\",\\r\\n    \\\"Nominal sector/path checks and an interpretive supply schematic\\\",\\r\\n    \\\"Four descriptive/supporting figures\\\",\\r\\n    \\\"Historical inventory recount and source summaries\\\"\\r\\n  ],\\r\\n  \\\"AI_assistance_scope\\\": [\\r\\n    \\\"Methodological proposals\\\",\\r\\n    \\\"Source discovery and technical synthesis\\\",\\r\\n    \\\"Generated code and recorded execution\\\",\\r\\n    \\\"Writing and organization\\\"\\r\\n  ],\\r\\n  \\\"literature_results\\\": \\\"Published author results; model training and scores not reproduced.\\\",\\r\\n  \\\"proposed_only\\\": [\\r\\n    \\\"C1: lagged forecast-data preparation as a learning experiment\\\",\\r\\n    \\\"C2: Gradient Boosting versus persistence, Ridge and Random Forest\\\",\\r\\n    \\\"C3: full-feature versus n1-history Gradient Boosting with the same calendar inputs\\\"\\r\\n  ],\\r\\n  \\\"2019_use_in_this_pipeline\\\": \\\"Table-structure checks only; no 2019 forecast score.\\\",\\r\\n  \\\"disclosure_boundary\\\": \\\"Available recovered readable conversations are public under evidence/ai_interactions with documented redactions. Unredacted originals, raw sessions/databases and binary attachments remain private. ChatGPT recovery is partial; this repository does not certify a complete historical transcript submission or academic acceptance.\\\"\\r\\n}\\r\\n[\\r\\n  {\\r\\n    \\\"source_path\\\": \\\"C:\\\\\\\\Users\\\\\\\\Andres\\\\\\\\.codex\\\\\\\\sessions\\\\\\\\2026\\\\\\\\09\\\\\\\\13\\\\\\\\rollout-2026-09-13T11-55-56-01a09b7b-7c75-7b73-83eb-a2b90b16a3a5.jsonl\\\",\\r\\n    \\\"archive_path\\\": \\\"original_sessions/rollout-2026-09-13T11-55-56-01a09b7b-7c75-7b73-83eb-a2b90b16a3a5.jsonl\\\",\\r\\n    \\\"snapshot_utc\\\": \\\"2026-10-29T15:31:16.808427+00:00\\\",\\r\\n    \\\"snapshot_bytes\\\": 170288901,\\r\\n    \\\"sha256\\\": \\\"63cec885986e89ce6e5eefd03f5c9e1659871a3548e6f44d28e8ac5ff451a40d\\\",\\r\\n    \\\"source_size_at_copy_end\\\": 170288901,\\r\\n    \\\"source_mtime_ns_at_copy_start\\\": 1792778811159030100,\\r\\n    \\\"source_mtime_ns_at_copy_end\\\": 1792778811159030100,\\r\\n    \\\"source_prefix_verified\\\": true,\\r\\n    \\\"source_was_growing_during_copy\\\": false,\\r\\n    \\\"session_id\\\": \\\"01a09b7b-7c75-7b73-83eb-a2b90b16a3a5\\\",\\r\\n    \\\"source_size_at_final_check\\\": 170288901,\\r\\n    \\\"source_mtime_ns_at_final_check\\\": 1792778811159030100,\\r\\n    \\\"archive_hash_matches\\\": true,\\r\\n    \\\"original_prefix_hash_still_matches\\\": true,\\r\\n    \\\"source_grew_after_snapshot\\\": false,\\r\\n    \\\"full_file_unchanged_during_snapshot_window\\\": true\\r\\n  },\\r\\n  {\\r\\n    \\\"source_path\\\": \\\"C:\\\\\\\\Users\\\\\\\\Andres\\\\\\\\.codex\\\\\\\\sessions\\\\\\\\2026\\\\\\\\10\\\\\\\\11\\\\\\\\rollout-2026-10-11T10-33-18-01a12b61-e72c-7da1-bb50-45bff9d85d03.jsonl\\\",\\r\\n    \\\"archive_path\\\": \\\"original_sessions/rollout-2026-10-11T10-33-18-01a12b61-e72c-7da1-bb50-45bff9d85d03.jsonl\\\",\\r\\n    \\\"snapshot_utc\\\": \\\"2026-10-29T15:31:40.474829+00:00\\\",\\r\\n    \\\"snapshot_bytes\\\": 160917507,\\r\\n    \\\"sha256\\\": \\\"3a81c61642de18964206d75f9125619b80700ea4cdb7ec06e782c6118efb15d4\\\",\\r\\n    \\\"source_size_at_copy_end\\\": 160917507,\\r\\n    \\\"source_mtime_ns_at_copy_start\\\": 1793287883051463400,\\r\\n    \\\"source_mtime_ns_at_copy_end\\\": 1793287883051463400,\\r\\n    \\\"source_prefix_verified\\\": true,\\r\\n    \\\"source_was_growing_during_copy\\\": false,\\r\\n    \\\"session_id\\\": \\\"01a12b61-e72c-7da1-bb50-45bff9d85d03\\\",\\r\\n    \\\"source_size_at_final_check\\\": 160935835,\\r\\n    \\\"source_mtime_ns_at_final_check\\\": 1793287928825325900,\\r\\n    \\\"archive_hash_matches\\\": true,\\r\\n    \\\"original_prefix_hash_still_matches\\\": true,\\r\\n    \\\"source_grew_after_snapshot\\\": true,\\r\\n    \\\"full_file_unchanged_during_snapshot_window\\\": false\\r\\n  },\\r\\n  {\\r\\n    \\\"source_path\\\": \\\"C:\\\\\\\\Users\\\\\\\\Andres\\\\\\\\.codex\\\\\\\\sessions\\\\\\\\2026\\\\\\\\10\\\\\\\\29\\\\\\\\rollout-2026-10-29T10-58-27-01a1882b-64d3-7ef3-831b-004ce84e6c39.jsonl\\\",\\r\\n    \\\"archive_path\\\": \\\"original_sessions/rollout-2026-10-29T10-58-27-01a1882b-64d3-7ef3-831b-004ce84e6c39.jsonl\\\",\\r\\n    \\\"snapshot_utc\\\": \\\"2026-10-29T15:32:05.921848+00:00\\\",\\r\\n    \\\"snapshot_bytes\\\": 4323054,\\r\\n    \\\"sha256\\\": \\\"a604fd21c5c8f5e1218414711f29585bb0c64517fd098e85224756cb450f8b79\\\",\\r\\n    \\\"source_size_at_copy_end\\\": 4323054,\\r\\n    \\\"source_mtime_ns_at_copy_start\\\": 1793285910599302900,\\r\\n    \\\"source_mtime_ns_at_copy_end\\\": 1793285910599302900,\\r\\n    \\\"source_prefix_verified\\\": true,\\r\\n    \\\"source_was_growing_during_copy\\\": false,\\r\\n    \\\"session_id\\\": \\\"01a1882b-64d3-7ef3-831b-004ce84e6c39\\\",\\r\\n    \\\"source_size_at_final_check\\\": 4323054,\\r\\n    \\\"source_mtime_ns_at_final_check\\\": 1793285910599302900,\\r\\n    \\\"archive_hash_matches\\\": true,\\r\\n    \\\"original_prefix_hash_still_matches\\\": true,\\r\\n    \\\"source_grew_after_snapshot\\\": false,\\r\\n    \\\"full_file_unchanged_during_snapshot_window\\\": true\\r\\n  }\\r\\n]\\r\\n\"}"
+  }
+]
+```
+
+<a id="source-line-12597"></a>
+
+## 2026-10-29T18:38:15.082Z · source line 12597 · Assistant message · AgentMessage
+
+Source: `original_sessions/rollout-2026-10-11T10-33-18-01a12b61-e72c-7da1-bb50-45bff9d85d03.jsonl#L12597`  
+Event ID: `msg_02d303a6a82c3a1a016ae39294e9f081a28f1743c49a055947`  
+Turn ID: `01a188f2-4246-7921-9c3b-2dc47f257b85`
+
+### Message
+
+```text
+El prompt pide ampliar la explicación de A01–A10, y tu mensaje añade la documentación de cómo construimos el repositorio. Haré ambas cosas: conservaré las transcripciones ya publicadas y añadiré una continuación separada para los intercambios posteriores sobre el feedback, la atribución, la validación y la publicación.
+
+```
+
+<a id="source-line-12598"></a>
+
+## 2026-10-29T18:38:15.132Z · source line 12598 · message representation reference
+
+`original_sessions/rollout-2026-10-11T10-33-18-01a12b61-e72c-7da1-bb50-45bff9d85d03.jsonl#L12598` records the identical assistant text printed at source line 12597; it is not a second message.
+
+<a id="source-line-12599"></a>
+
+## 2026-10-29T18:38:33.436Z · source line 12599 · Tool call · exec
+
+Source: `original_sessions/rollout-2026-10-11T10-33-18-01a12b61-e72c-7da1-bb50-45bff9d85d03.jsonl#L12599`  
+Event ID: `ctc_02d303a6a82c3a1a016ae392966a4881a28916b1aa7a6c0f99`  
+Turn ID: `01a188f2-4246-7921-9c3b-2dc47f257b85`  
+Call ID: `call_3d05678163ec41e9bcb7a177d68a1138`
+
+### Recorded tool input
+
+```text
+text(await tools.apply_patch("*** Begin Patch\n*** Add File: D:/GitHub/ML NJIT/MiniProject/AI Assitance/Attribution_Analysis/publication_preparation/capture_repository_continuation.py\n+\"\"\"Read-only bounded capture of the active Codex session after the preserved prefix.\"\"\"\n+from pathlib import Path\n+from datetime import datetime, timezone\n+import hashlib\n+import importlib.util\n+import json\n+import re\n+\n+BASE=Path(__file__).resolve().parents[2]\n+OLD=BASE/'DS675_AI_Transcripts_Codex'\n+OUT=BASE/'DS675_AI_Transcripts_Repository'\n+SID='01a12b61-e72c-7da1-bb50-45bff9d85d03'\n+\n+def sha(path,limit=None):\n+    h=hashlib.sha256()\n+    with path.open('rb') as f:\n+        while limit is None or limit>0:\n+            b=f.read(1048576 if limit is None else min(limit,1048576))\n+            if not b:break\n+            h.update(b)\n+            if limit is not None:limit-=len(b)\n+    return h.hexdigest()\n+\n+def main():\n+    assert not OUT.exists(), 'Never replace an existing capture.'\n+    old=next(x for x in json.loads((OLD/'metadata/source_snapshots.json').read_text()) if x['session_id']==SID)\n+    live=Path(old['source_path']); prefix=old['snapshot_bytes']\n+    assert sha(live,prefix)==old['sha256']==sha(OLD/old['archive_path'])\n+    old_records=sum(1 for _ in (OLD/old['archive_path']).open('rb'))\n+    assert old_records==11413\n+    (OUT/'original_sessions').mkdir(parents=True)\n+    (OUT/'repository_construction').mkdir()\n+    size=live.stat().st_size\n+    snapshot=OUT/old['archive_path']\n+    with live.open('rb') as src,snapshot.open('wb') as dest:\n+        remaining=size\n+        while remaining:\n+            block=src.read(min(1048576,remaining)); assert block\n+            dest.write(block);remaining-=len(block)\n+    # Active records may still append: keep only complete available JSONL records.\n+    with snapshot.open('rb+') as f:\n+        f.seek(max(0,size-1048576)); ending=f.read(); keep=ending.rfind(b'\\n')\n+        assert keep>=0\n+        final=size-len(ending)+keep+1; f.truncate(final)\n+    assert sha(snapshot,prefix)==old['sha256']\n+    assert sha(snapshot)==sha(live,final)\n+    source_hash=sha(snapshot)\n+    spec=importlib.util.spec_from_file_location('private_recovery',OLD/'recover_sessions.py')\n+    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)\n+    module.OUT=OUT\n+    module.SESSIONS[SID]=('repository_construction','Continuation after T02: feedback repository construction, attribution, public transcript preparation and subsequent student requests.')\n+    def tail_lines(path):\n+        with path.open('rb') as f:\n+            f.seek(prefix); offset=prefix\n+            for number,raw in enumerate(f,old_records+1):\n+                yield number,offset,raw\n+                offset+=len(raw)\n+    module.source_lines=tail_lines\n+    snap={'archive_path':old['archive_path'],'source_path':str(live)}\n+    summary,index,privacy,contributions,gitlinks,checks=module.export_transcript(SID,snap,[])\n+    assert not summary['malformed_records']\n+    transcript=OUT/summary['transcript']\n+    text=transcript.read_text(encoding='utf-8')\n+    # Identify app-provided user-role context without changing message bodies.\n+    runtime=[]\n+    with snapshot.open('rb') as f:\n+        f.seek(prefix)\n+        for n,raw in enumerate(f,old_records+1):\n+            j=json.loads(raw);p=j.get('payload',{})\n+            if not isinstance(p,dict):continue\n+            if j.get('type')=='response_item' and p.get('type')=='message' and p.get('role')=='user':\n+                s=''.join(module.text_parts(p.get('content',[])))\n+                if s.lstrip().startswith(('# AGENTS.md instructions','<environment_context>','<INSTRUCTIONS>','<permissions instructions>')):runtime.append(n)\n+    for n in runtime:\n+        # Skipped runtime records remain in raw snapshot, not invented student messages.\n+        for r in index:\n+            if r['source_line']==n:r['role']='runtime_context'\n+    module.write_csv(OUT/'event_index.csv',index,['session_id','source_line','source_uncompressed_byte_offset','timestamp','record_type','item_type','event_id','turn_id','role','call_id','transcript','canonical_line','text_sha256','rendering'])\n+    module.dump(OUT/'conversion_checks.json',{'summary':summary,'message_checks':checks,'runtime_context_source_records':runtime})\n+    module.write_csv(OUT/'privacy_findings.csv',privacy,['session_id','source_line','timestamp','pattern','source_locator','action'])\n+    record={'captured_utc':datetime.now(timezone.utc).isoformat(),'session_id':SID,'continuation_of':'T02',\n+            'previous_raw_prefix_bytes':prefix,'previous_raw_prefix_records':old_records,\n+            'previous_raw_prefix_sha256':old['sha256'],'raw_snapshot_bytes':final,'raw_snapshot_sha256':source_hash,\n+            'raw_first_record':old_records+1,'raw_last_record':old_records+summary['records'],\n+            'recorded_start':summary['first_timestamp'],'recorded_end':summary['last_timestamp'],\n+            'first_record_follows_preserved_prefix':True,'source_prefix_matches_previous_snapshot':True,\n+            'raw_snapshot_matches_live_prefix':True,'readable_source_relative':summary['transcript'],\n+            'readable_sha256':sha(transcript),'visible_message_checks':len(checks),\n+            'visible_message_checks_passed':True,'historical_completeness_certified':False}\n+    module.dump(OUT/'capture_manifest.private.json',record)\n+    assert sha(snapshot)==source_hash and sha(OLD/old['archive_path'])==old['sha256']\n+    print(json.dumps(record,indent=2))\n+\n+if __name__=='__main__':main()\n*** End Patch"));
+text(await tools.exec_command({cmd:"python 'D:\\GitHub\\ML NJIT\\MiniProject\\AI Assitance\\Attribution_Analysis\\publication_preparation\\capture_repository_continuation.py'","max_output_tokens":1700,"yield_time_ms":1000}));
+```
+
+<a id="source-line-12601"></a>
+
+## 2026-10-29T18:38:33.583Z · source line 12601 · Recorded tool event · FileChange
+
+Source: `original_sessions/rollout-2026-10-11T10-33-18-01a12b61-e72c-7da1-bb50-45bff9d85d03.jsonl#L12601`  
+Event ID: `exec-9fbead86-813b-4398-ae8f-44458e977c29`  
+Turn ID: `01a188f2-4246-7921-9c3b-2dc47f257b85`
+
+### Recorded structured data
+
+```json
+{
+  "type": "FileChange",
+  "id": "exec-9fbead86-813b-4398-ae8f-44458e977c29",
+  "changes": {
+    "D:\\GitHub\\ML NJIT\\MiniProject\\AI Assitance\\Attribution_Analysis\\publication_preparation\\capture_repository_continuation.py": {
+      "type": "add",
+      "content": "\"\"\"Read-only bounded capture of the active Codex session after the preserved prefix.\"\"\"\nfrom pathlib import Path\nfrom datetime import datetime, timezone\nimport hashlib\nimport importlib.util\nimport json\nimport re\n\nBASE=Path(__file__).resolve().parents[2]\nOLD=BASE/'DS675_AI_Transcripts_Codex'\nOUT=BASE/'DS675_AI_Transcripts_Repository'\nSID='01a12b61-e72c-7da1-bb50-45bff9d85d03'\n\ndef sha(path,limit=None):\n    h=hashlib.sha256()\n    with path.open('rb') as f:\n        while limit is None or limit>0:\n            b=f.read(1048576 if limit is None else min(limit,1048576))\n            if not b:break\n            h.update(b)\n            if limit is not None:limit-=len(b)\n    return h.hexdigest()\n\ndef main():\n    assert not OUT.exists(), 'Never replace an existing capture.'\n    old=next(x for x in json.loads((OLD/'metadata/source_snapshots.json').read_text()) if x['session_id']==SID)\n    live=Path(old['source_path']); prefix=old['snapshot_bytes']\n    assert sha(live,prefix)==old['sha256']==sha(OLD/old['archive_path'])\n    old_records=sum(1 for _ in (OLD/old['archive_path']).open('rb'))\n    assert old_records==11413\n    (OUT/'original_sessions').mkdir(parents=True)\n    (OUT/'repository_construction').mkdir()\n    size=live.stat().st_size\n    snapshot=OUT/old['archive_path']\n    with live.open('rb') as src,snapshot.open('wb') as dest:\n        remaining=size\n        while remaining:\n            block=src.read(min(1048576,remaining)); assert block\n            dest.write(block);remaining-=len(block)\n    # Active records may still append: keep only complete available JSONL records.\n    with snapshot.open('rb+') as f:\n        f.seek(max(0,size-1048576)); ending=f.read(); keep=ending.rfind(b'\\n')\n        assert keep>=0\n        final=size-len(ending)+keep+1; f.truncate(final)\n    assert sha(snapshot,prefix)==old['sha256']\n    assert sha(snapshot)==sha(live,final)\n    source_hash=sha(snapshot)\n    spec=importlib.util.spec_from_file_location('private_recovery',OLD/'recover_sessions.py')\n    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)\n    module.OUT=OUT\n    module.SESSIONS[SID]=('repository_construction','Continuation after T02: feedback repository construction, attribution, public transcript preparation and subsequent student requests.')\n    def tail_lines(path):\n        with path.open('rb') as f:\n            f.seek(prefix); offset=prefix\n            for number,raw in enumerate(f,old_records+1):\n                yield number,offset,raw\n                offset+=len(raw)\n    module.source_lines=tail_lines\n    snap={'archive_path':old['archive_path'],'source_path':str(live)}\n    summary,index,privacy,contributions,gitlinks,checks=module.export_transcript(SID,snap,[])\n    assert not summary['malformed_records']\n    transcript=OUT/summary['transcript']\n    text=transcript.read_text(encoding='utf-8')\n    # Identify app-provided user-role context without changing message bodies.\n    runtime=[]\n    with snapshot.open('rb') as f:\n        f.seek(prefix)\n        for n,raw in enumerate(f,old_records+1):\n            j=json.loads(raw);p=j.get('payload',{})\n            if not isinstance(p,dict):continue\n            if j.get('type')=='response_item' and p.get('type')=='message' and p.get('role')=='user':\n                s=''.join(module.text_parts(p.get('content',[])))\n                if s.lstrip().startswith(('# AGENTS.md instructions','<environment_context>','<INSTRUCTIONS>','<permissions instructions>')):runtime.append(n)\n    for n in runtime:\n        # Skipped runtime records remain in raw snapshot, not invented student messages.\n        for r in index:\n            if r['source_line']==n:r['role']='runtime_context'\n    module.write_csv(OUT/'event_index.csv',index,['session_id','source_line','source_uncompressed_byte_offset','timestamp','record_type','item_type','event_id','turn_id','role','call_id','transcript','canonical_line','text_sha256','rendering'])\n    module.dump(OUT/'conversion_checks.json',{'summary':summary,'message_checks':checks,'runtime_context_source_records':runtime})\n    module.write_csv(OUT/'privacy_findings.csv',privacy,['session_id','source_line','timestamp','pattern','source_locator','action'])\n    record={'captured_utc':datetime.now(timezone.utc).isoformat(),'session_id':SID,'continuation_of':'T02',\n            'previous_raw_prefix_bytes':prefix,'previous_raw_prefix_records':old_records,\n            'previous_raw_prefix_sha256':old['sha256'],'raw_snapshot_bytes':final,'raw_snapshot_sha256':source_hash,\n            'raw_first_record':old_records+1,'raw_last_record':old_records+summary['records'],\n            'recorded_start':summary['first_timestamp'],'recorded_end':summary['last_timestamp'],\n            'first_record_follows_preserved_prefix':True,'source_prefix_matches_previous_snapshot':True,\n            'raw_snapshot_matches_live_prefix':True,'readable_source_relative':summary['transcript'],\n            'readable_sha256':sha(transcript),'visible_message_checks':len(checks),\n            'visible_message_checks_passed':True,'historical_completeness_certified':False}\n    module.dump(OUT/'capture_manifest.private.json',record)\n    assert sha(snapshot)==source_hash and sha(OLD/old['archive_path'])==old['sha256']\n    print(json.dumps(record,indent=2))\n\nif __name__=='__main__':main()\n"
+    }
+  },
+  "status": "completed",
+  "stdout": "Success. Updated the following files:\nA D:/GitHub/ML NJIT/MiniProject/AI Assitance/Attribution_Analysis/publication_preparation/capture_repository_continuation.py\n",
+  "stderr": ""
+}
+```
+
+

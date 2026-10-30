@@ -1,0 +1,23 @@
+{
+  "record_id": "3924109",
+  "url": "https://zenodo.org/records/3924109",
+  "title": "A multistage approach to detect and isolate multiple leakages in district metering areas in water distribution systems",
+  "creators": [
+    "Xiaoting Wang",
+    "Junyu Li",
+    "Xipeng Yu",
+    "Ziqing Ma",
+    "Yujun Huang"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3924109",
+  "files": [
+    {
+      "name": "Tsinghua-Team.pdf",
+      "md5": "a27b73084a223b3f3f110ae8ae30f840",
+      "url": "https://zenodo.org/api/records/3924109/files/Tsinghua-Team.pdf/content"
+    }
+  ]
+}

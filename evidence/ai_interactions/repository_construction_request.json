@@ -1,0 +1,435 @@
+
+{
+  "role": "Senior academic research auditor, evidence-based technical writer, and GitHub repository documentation specialist",
+  "task": "Rewrite and expand evidence/ai_interactions/README.md into a detailed, evidence-backed account of the student's contributions and AI assistance during DS675 Mini-Project Milestones 1 and 2.",
+  "repository": {
+    "name": "DS675_MiniProject",
+    "target_file": "evidence/ai_interactions/README.md",
+    "primary_branch": "main",
+    "modification_scope": "Update the target README. Do not rewrite historical transcripts, change source records, remove evidence, or modify the original submitted milestone reports.",
+    "purpose": "Make the README useful to Professor Houle as a navigable, academically rigorous explanation of what the recovered conversations actually demonstrate."
+  },
+  "design_reference": {
+    "description": "Follow the presentation style of the student's provided screenshots and the previous A01-A10 evidence report.",
+    "example_A03": {
+      "heading": "A03. Selection of the six local signals",
+      "sections": [
+        "What the records show",
+        "Student contribution",
+        "AI assistance",
+        "Selected signals and technical rationale",
+        "Direct source evidence",
+        "What is established and what remains a hypothesis"
+      ],
+      "presentation": "Explain how the student questioned the need for all 82 AMR measurements and directed the analysis toward hydraulically relevant local signals. Include a compact table of the six selected signals, but only after verifying the complete selection against the submitted report and recorded conversations."
+    },
+    "example_A04": {
+      "heading": "A04. EDA, calculations, and visualizations",
+      "presentation": "Use a short introductory paragraph followed by clear bullet points showing the student's recorded instructions: overlapping daily curves and mean profiles, pressure plots for n1/n4/n31, T1 level, PUMP_1 flow, correlation matrix, and panel layout. Then explain the recorded AI-assisted code generation and computational execution. Provide separate direct links for student requests and technical executions."
+    },
+    "styling_rules": [
+      "Use clear Markdown headings, short paragraphs, compact tables, and meaningful bullets.",
+      "Make each activity readable independently.",
+      "Use consistent formatting across A01-A10.",
+      "Use descriptive Markdown hyperlinks close to the claims they substantiate.",
+      "Avoid decorative badges, unsupported confidence scores, authorship percentages, and promotional language.",
+      "Do not turn the README into a transcript dump; summarize the evidence and link directly to the original passages.",
+      "Preserve the technical and academic meaning of the original Spanish-language exchanges."
+    ]
+  },
+  "mandatory_evidence_sources": [
+    "evidence/ai_interactions/conversation_index.csv",
+    "evidence/ai_interactions/contribution_links.md",
+    "evidence/ai_interactions/record_index.csv",
+    "evidence/ai_interactions/chatgpt/",
+    "evidence/ai_interactions/codex/",
+    "evidence/ai_interactions/redactions.csv",
+    "evidence/ai_interactions/manifest.json",
+    "evidence/ai_interactions/verification.json",
+    "evidence/ai_interactions/publication_procedure.md",
+    "evidence/contribution_summary.csv",
+    "docs/student_contributions.md",
+    "docs/professor_feedback.md",
+    "docs/exploratory_analysis.md",
+    "docs/anticipated_contributions.md",
+    "docs/reproducibility.md",
+    "literature/",
+    "evidence/report_claims.csv",
+    "evidence/work_status.json",
+    "reports/Milestone1.pdf",
+    "reports/Milestone2.pdf"
+  ],
+  "fundamental_evidence_policy": {
+    "principle": "Every statement about student participation, AI assistance, methodological decisions, computations, literature review, or Milestone 2 outcomes must be grounded in identifiable conversations, documents, code, or recorded execution evidence.",
+    "requirements": [
+      "Read the underlying conversation passages, not only the contribution summary.",
+      "Distinguish recorded student instructions from AI suggestions, AI-generated code, tool execution, and retrospective student explanations.",
+      "Identify when an AI recommendation preceded the student's adoption of that recommendation.",
+      "Distinguish pre-submission records from later feedback-response or evidence-reconstruction activities.",
+      "Do not present a retrospective explanation as independent proof that an action occurred before submission.",
+      "Differentiate a student's reported activity outside the chat from an independently observable tool action.",
+      "Do not invent missing dialogue, attachments, authorship, dates, executions, or research outcomes.",
+      "If an assertion cannot be adequately verified, narrow its wording, label its evidence type, or omit it.",
+      "Do not use unsupported statements merely to make either the student's or the AI's contribution appear greater or smaller.",
+      "Do not claim that the presence of a transcript proves the student's independent programming, execution, reading, or comprehension.",
+      "Do not mistake duplicated message representations or runtime context for independent student instructions."
+    ],
+    "evidence_types": {
+      "direct_student_instruction": "A recorded student request, decision, technical explanation, or correction.",
+      "AI_recommendation": "A visible model-generated proposal, interpretation, methodological suggestion, or drafted explanation.",
+      "recorded_execution": "A tool invocation, code change, command completion, generated artifact, or numerical output visible in the logs.",
+      "retrospective_student_statement": "A student's later account of work carried out earlier or outside the recorded conversation.",
+      "reproduced_evidence": "A later verified reconstruction of a result; this does not establish independent pre-submission execution.",
+      "unverified": "Information not adequately supported by the available archive."
+    }
+  },
+  "milestone_2_scope": {
+    "academic_context": "Milestone 2 is a review of existing predictive learning work and the formulation of an anticipated contribution. It is not the final model implementation or experimental-results milestone.",
+    "must_preserve": [
+      "The student reviewed existing work related to BattLeDIM/L-Town to identify a meaningful and feasible predictive-learning research opportunity.",
+      "The proposed task is forecasting n1 pressure 15 minutes ahead.",
+      "The feature selection is motivated by hydraulic relationships and the available SCADA measurements in Area C.",
+      "The proposed methodology must remain consistent with the methods and knowledge covered through approximately Week 7.",
+      "The modeling comparisons and feature-utility experiments are planned work, not completed predictive experiments.",
+      "Do not frame the absence of final model-training results or measured improvement as a failure of Milestone 2.",
+      "Do not claim predictive improvement, algorithmic novelty, or worldwide research priority without evidence.",
+      "Explain the research gap with appropriately limited language: the proposed experiment was not identified in the reviewed literature, which was not exhaustive.",
+      "Preserve the distinction between what was presented in the original Milestone 2 submission and what was clarified or reproduced after the professor's feedback."
+    ]
+  },
+  "required_readme_structure": [
+    {
+      "section": "1. Purpose and evidence standard",
+      "instructions": "Explain why this appendix exists, which questions from the professor's feedback it addresses, and how the evidence is interpreted. Distinguish student direction from AI assistance."
+    },
+    {
+      "section": "2. Evidence collection and navigation",
+      "instructions": "Summarize the ChatGPT and Codex records, conversation index, contribution crosswalk, redaction register, and integrity manifest. Verify all numerical counts using the current repository."
+    },
+    {
+      "section": "3. Detailed contribution evidence, A01-A10",
+      "instructions": "Create the ten numbered subsections defined below. Each must contain narrative analysis and source-level links."
+    },
+    {
+      "section": "4. Milestone 2 academic scope and research gap",
+      "instructions": "Explain that the literature review informed an anticipated, feasible predictive-learning contribution. Separate completed descriptive analysis from future model experiments."
+    },
+    {
+      "section": "5. AI assistance and attribution",
+      "instructions": "Summarize the division of responsibilities using only independently identifiable records or clearly labeled retrospective statements."
+    },
+    {
+      "section": "6. Completeness, redactions, and recovery limitations",
+      "instructions": "Preserve all substantive disclosures currently present in the README, including missing ChatGPT reply bodies, Codex snapshot boundaries, redaction categories, and the limits of the recovery."
+    },
+    {
+      "section": "7. Verification and reproducibility",
+      "instructions": "Preserve the public validation command, the private-original comparison procedure, and the correct interpretation of hashes and validation results."
+    }
+  ],
+  "standard_activity_template": {
+    "heading": "A##. Descriptive activity title",
+    "required_subsections": [
+      {
+        "name": "What the records show",
+        "content": "Describe the actual sequence of recorded instructions, AI responses, decisions, corrections, and relevant executions."
+      },
+      {
+        "name": "Student contribution",
+        "content": "Specify what the student personally proposed, requested, explained, chose, questioned, or corrected, with source links."
+      },
+      {
+        "name": "AI assistance",
+        "content": "Specify what ChatGPT or Codex recommended, researched, calculated, implemented, drafted, or executed, with source links."
+      },
+      {
+        "name": "Technical or academic significance",
+        "content": "Explain why the activity matters to the submitted Milestone 2 report and its anticipated contribution."
+      },
+      {
+        "name": "Direct source evidence",
+        "content": "Provide direct links to the relevant transcript messages or recorded tool events, not merely a link to the transcript index."
+      },
+      {
+        "name": "Evidence boundary",
+        "content": "State any material limitation, including later self-reporting, incomplete recovery, unexecuted experiments, or unsupported interpretations."
+      }
+    ],
+    "link_requirements": [
+      "Link directly to the numbered transcript part and relevant line anchor.",
+      "Prefer at least one contemporary student message per activity where available.",
+      "Link relevant AI responses separately when they materially contributed to the activity.",
+      "For computational claims, cite recorded command or tool completion and the reproducible artifact where applicable.",
+      "Use descriptive link text such as 'Student request to select Area C sensors' or 'Recorded execution of pressure analysis'.",
+      "Verify every destination against the actual repository.",
+      "Never invent a line number, message identifier, source ID, or URL.",
+      "If a historical record is incomplete, say so."
+    ]
+  },
+  "activities": [
+    {
+      "id": "A01",
+      "title": "Research direction and BattLeDIM/L-Town dataset selection",
+      "focus": [
+        "The student's documented interest in dynamic modeling, engineering control, SCADA, and predictive machine learning.",
+        "Exploration and comparison of candidate datasets with AI assistance.",
+        "The student's explicit decision to focus on BattLeDIM/L-Town.",
+        "Why these decisions align with the course's predictive-learning requirements."
+      ],
+      "expected_sources": [
+        "T05",
+        "T06",
+        "T08",
+        "T11",
+        "T12",
+        "T02"
+      ]
+    },
+    {
+      "id": "A02",
+      "title": "Area C selection and n1(+15-minute) forecasting target",
+      "focus": [
+        "The student's proposal to consider n1, n4, and n31 in the same hydraulic sector.",
+        "The proposed use of tank T1 and PUMP_1 measurements.",
+        "The student's technical comparison of hydraulically regulated sectors and the tank-fed sector.",
+        "Codex's recorded comparison of candidate pressure sensors and recommendation of n1.",
+        "The student's subsequent decision to adopt n1 as the +15-minute prediction target.",
+        "The connection with the student's previously published engineering work, where supported."
+      ],
+      "important_attribution": "Present sensor selection as an iterative process. Do not claim that every detail of the final target originated independently with the student.",
+      "expected_sources": [
+        "T02",
+        "T14"
+      ]
+    },
+    {
+      "id": "A03",
+      "title": "Selection of the six local signals",
+      "focus": [
+        "The student's objection to using all 82 AMR channels without a task-specific justification.",
+        "The engineering rationale for choosing hydraulically relevant local measurements.",
+        "Verification of the final six signals: n1, n4, n31, T1, PUMP_1, and AMR_n1.",
+        "A concise table giving each signal and its proposed predictive role.",
+        "The distinction between physical plausibility and experimentally demonstrated predictive usefulness.",
+        "The hydraulic clarification that PUMP_1 measures tank inflow, not the unmeasured tank outlet flow."
+      ],
+      "required_visual_structure": "Follow the attached A03 screenshot: heading, evidence summary, student contribution, link to the technical reasoning, and a compact six-signal table.",
+      "expected_sources": [
+        "T02",
+        "T14"
+      ]
+    },
+    {
+      "id": "A04",
+      "title": "EDA, calculations, and visualizations",
+      "focus": [
+        "The student's request for overlapping daily pressure curves and mean profiles.",
+        "The student's request to show n1, n4, and n31.",
+        "The requested T1 level and PUMP_1 flow plots.",
+        "The request for a correlation matrix.",
+        "The student's proposed rearrangement of plot panels for readability.",
+        "The recorded code generation, data processing, and executions performed with Codex.",
+        "The provenance of the original reported descriptive results and subsequent reproducibility checks."
+      ],
+      "required_visual_structure": "Follow the attached A04 screenshot: concise narrative, bullet list of the specific student-directed visualization requirements, direct links to instructions, and an explanation of the AI-assisted execution.",
+      "important_attribution": "State that the student directed and reviewed the analyses while AI assisted in code creation and execution. Do not state that the student personally programmed all EDA.",
+      "expected_sources": [
+        "T02",
+        "T14",
+        "docs/exploratory_analysis.md"
+      ]
+    },
+    {
+      "id": "A05",
+      "title": "Literature search, classification, and 35 related-work groups",
+      "focus": [
+        "The student's instructions to classify studies by the main objective for which BattLeDIM/L-Town was used.",
+        "The separate identification of studies containing future-pressure prediction, including intermediate predictive tasks.",
+        "The student's corrections concerning irrelevant literature, counting units, and category interpretation.",
+        "How source records were grouped into methodological groups.",
+        "The AI-assisted discovery and inspection of the literature.",
+        "The distinction between an exploratory, non-exhaustive inventory and a systematic literature review."
+      ],
+      "required_table": "Include category counts only after checking the current literature inventory and screening summaries.",
+      "expected_sources": [
+        "T02",
+        "T14",
+        "literature/"
+      ]
+    },
+    {
+      "id": "A06",
+      "title": "Focused examination of the six selected studies",
+      "focus": [
+        "Document the stated three-stage literature workflow: AI-assisted discovery, preliminary relevance screening, and focused review.",
+        "Identify the six works appearing in the submitted Milestone 2 table.",
+        "Explain the two analytical axes: 'Data preparation and how the method works' and 'Reported results and what they show'.",
+        "Link to the student's recorded explanation of personal review.",
+        "Link to available article-specific corrections and programmatic source inspections.",
+        "Distinguish reading and interpretation from executing or reproducing the original authors' models."
+      ],
+      "important_attribution": "A recorded student statement about personally reviewing the six papers is evidence of that statement. Describe any independent verification separately, and only when a specific supporting record exists. Do not silently convert self-reporting into externally verified activity.",
+      "expected_sources": [
+        "T13",
+        "T14",
+        "T02",
+        "literature/"
+      ]
+    },
+    {
+      "id": "A07",
+      "title": "Proposed forecasting models and evaluation",
+      "focus": [
+        "The student's instruction to retain n1(+15 minutes).",
+        "The student's request for a different method consistent with the material covered through Week 7.",
+        "Codex's recommendation of Gradient Boosting.",
+        "The documented proposal to compare against persistence, Ridge, and Random Forest.",
+        "The proposed chronological training, validation, and test framework.",
+        "The planned feature comparison and leakage-prevention requirements."
+      ],
+      "important_attribution": "Identify the origin of each methodological proposal from the chronological records. All future experiments must be labeled as proposed, not executed.",
+      "expected_sources": [
+        "T02",
+        "docs/anticipated_contributions.md"
+      ]
+    },
+    {
+      "id": "A08",
+      "title": "Research gap and anticipated original contribution",
+      "focus": [
+        "How the literature review motivated the proposed pressure-forecasting question.",
+        "The student's engineering-control motivation.",
+        "The difference between current-state reconstruction, leak detection, and future-pressure forecasting.",
+        "The limited research-gap claim supported by the inspected literature.",
+        "The feasibility of the proposed contribution at the Milestone 2 stage.",
+        "The fact that no predictive improvement was required to be demonstrated in this milestone."
+      ],
+      "important_attribution": "Do not describe Gradient Boosting as a new algorithm or claim the exact experiment has never been conducted worldwide. The contribution is a proposed controlled predictive-learning investigation.",
+      "expected_sources": [
+        "T02",
+        "T14",
+        "reports/Milestone2.pdf"
+      ]
+    },
+    {
+      "id": "A09",
+      "title": "Writing, technical corrections, and structured prompts",
+      "focus": [
+        "The student's substantive wording and correction requests.",
+        "English translation and technical drafting assistance.",
+        "The use of structured prompts to direct Codex research and document preparation.",
+        "Corrections involving reported literature methods and attribution.",
+        "The distinction between supplying technical content and accepting AI-written text."
+      ],
+      "expected_sources": [
+        "T09",
+        "T11",
+        "T12",
+        "T13",
+        "T02"
+      ]
+    },
+    {
+      "id": "A10",
+      "title": "Scope control, feedback response, and AI interaction recovery",
+      "focus": [
+        "The student's instructions to keep the repository consistent with the originally submitted Milestone 2.",
+        "The rejection of unexplained additional experiments and unnecessary revision references.",
+        "The request to document the complete available literature inventory and highlight the six focused studies.",
+        "The student's request to inspect academic-integrity risks.",
+        "The recorded request for two separate AI-conversation recovery prompts, one for ChatGPT and one for Codex.",
+        "The subsequent recovery and preservation of available records."
+      ],
+      "important_attribution": "Acknowledge that recovering available conversations does not independently certify complete historical coverage. Do not confuse later repository preparation with the original Milestone 2 research.",
+      "expected_sources": [
+        "T15",
+        "T02",
+        "T03",
+        "evidence/ai_interactions/publication_procedure.md"
+      ]
+    }
+  ],
+  "special_academic_integrity_rules": [
+    "Do not remove or minimize material AI involvement.",
+    "Do not assign authorship to the student merely because the student approved an AI proposal.",
+    "Do not describe student-directed AI code generation as independently student-written code.",
+    "Do not infer that retrospective source verification occurred before the original submission.",
+    "Do not misrepresent the student's personal literature-review statement as an independently witnessed reading session.",
+    "Do not claim the course's entire-conversation requirement has been conclusively satisfied unless the records genuinely support that conclusion.",
+    "Do not manufacture evidence to strengthen responses to the professor.",
+    "Do not present proposed forecasting experiments as completed results.",
+    "Do not change the text of submitted PDFs or recovered conversations to make them match a later explanation.",
+    "Avoid unsupported statements concerning academic-integrity violations or the professor's acceptance of the evidence."
+  ],
+  "linking_and_navigation": {
+    "preferred_format": "Relative GitHub Markdown links to the exact numbered transcript part and verified line anchor.",
+    "examples": [
+      "[Student proposal of the Area C sensor cohort](codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-021.txt#L3003)",
+      "[Codex comparison and n1 recommendation](codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-021.txt#L3333)",
+      "[Student decision to use n1(+15 minutes)](codex/01a12b61-e72c-7da1-bb50-45bff9d85d03/part-021.txt#L3590)"
+    ],
+    "verification_instruction": "These examples are navigation starting points. Open and verify each cited passage and anchor before including it in the final README.",
+    "requirements": [
+      "Use evidence/ai_interactions/contribution_links.md as a starting crosswalk, not as a substitute for reading the messages.",
+      "Prefer multiple precise references over one broad reference to a long session.",
+      "Include direct links for both student and AI contributions when both are relevant.",
+      "Use links to code, output, and reproducibility documentation for numerical claims.",
+      "Check all relative paths from the final README directory.",
+      "Ensure that readers can trace every major claim without manually searching thousands of transcript lines."
+    ]
+  },
+  "preservation_requirements": [
+    "Retain all existing information needed to understand the source collection and its limitations.",
+    "Preserve the conversation index, record index, redaction register, integrity manifest, and verification links.",
+    "Preserve the distinction between public redacted derivatives and untouched private originals.",
+    "Preserve the fact that ChatGPT recovery is partial and Codex coverage consists of bounded snapshots.",
+    "Preserve the validation command and its original technical meaning.",
+    "Do not expose credentials, protected URLs, inline image payloads, or private archives.",
+    "Do not alter original conversation content or recorded timestamps.",
+    "Do not delete existing metadata to make the revised README shorter.",
+    "Do not silently reinterpret historical AI-assisted operations as independent student actions."
+  ],
+  "implementation_steps": [
+    "Read the current README and all required evidence indexes.",
+    "Build an internal claim-to-source matrix for A01-A10.",
+    "Inspect the transcript passages linked by the contribution crosswalk.",
+    "Inspect additional surrounding passages where necessary to establish chronology and correct attribution.",
+    "Check relevant source files and execution records for computational claims.",
+    "Identify unsupported, ambiguous, retrospective, or future-looking claims.",
+    "Write the expanded README with consistent A01-A10 subsections.",
+    "Include tables and specific examples where they materially improve clarity.",
+    "Preserve the original technical disclosure and validation information.",
+    "Verify every Markdown link and transcript anchor.",
+    "Run the existing public evidence validator if supported by the environment.",
+    "Review the completed README from the perspective of an academic evaluator concerned with provenance, authorship, reproducibility, and appropriate Milestone 2 scope."
+  ],
+  "acceptance_criteria": [
+    "All ten activities A01-A10 are fully documented.",
+    "Every activity explains what the conversations show, the student's contribution, and AI assistance.",
+    "Every activity includes direct, verified links to relevant source passages.",
+    "The README reflects the presentation style of the supplied A03 and A04 screenshots.",
+    "Student and AI contributions are attributed accurately rather than competitively.",
+    "The proposed Milestone 2 experiments are clearly distinguished from completed descriptive analysis.",
+    "The six-study literature-review account preserves the distinction between student statements and observable source inspections.",
+    "The repository's transcript recovery limitations remain explicit.",
+    "The original submitted reports and recovered conversation records remain unchanged.",
+    "The README provides a coherent, readable response to the professor's provenance and attribution concerns without exaggeration."
+  ],
+  "final_response": {
+    "format": "Concise implementation summary",
+    "include": [
+      "The exact file changed.",
+      "The A01-A10 sections added or expanded.",
+      "A summary of how student and AI contributions were attributed.",
+      "The link-verification and validation results actually obtained.",
+      "Any unresolved provenance or recovery limitations.",
+      "Any claims intentionally narrowed or omitted due to insufficient evidence."
+    ],
+    "prohibitions": [
+      "Do not claim successful validation unless it was executed successfully.",
+      "Do not claim complete historical recovery.",
+      "Do not claim instructor approval.",
+      "Do not report predictive model improvements that were not obtained."
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+# Local cache supplement
+
+Session `01a12b61-e72c-7da1-bb50-45bff9d85d03`. Source: `../database_exports/01a12b61-e72c-7da1-bb50-45bff9d85d03.thread_items.jsonl`. These projection records have IDs not present in the archived rollout UI-record set. This does not by itself prove a lost interaction: projection IDs and an active snapshot boundary can differ. Records are not merged into the rollout chronology.
+
+## Export line 3329 · reasoning · rs_02d303a6a82c3a1a016ae366e479d881a286bcec3c82ad3d63
+
+```json
+{"type": "reasoning", "id": "rs_02d303a6a82c3a1a016ae366e479d881a286bcec3c82ad3d63", "source_export_line": 3329}
+```
+

@@ -1,0 +1,374 @@
+{
+  "checked_utc": "2026-10-28T14:39:18.644022+00:00",
+  "attribution": "Student-directed relevance criteria and critical review; AI-assisted retrieval, paper/code inspection and technical synthesis. The student later reported closer reading of selected papers. Published model performance was not reproduced.",
+  "papers": [
+    {
+      "group": "chebnet",
+      "document": "P10_Graph_based_learning_2022",
+      "url": "https://doi.org/10.1016/j.ifacol.2022.07.203",
+      "sha256": "0d464978d2a0bf53c2b0c8aa74a0b66fa8ba4d7da727899673bd78043a0c5e48",
+      "historical_catalog_hash_matches": true,
+      "pages_inspected": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "page_convention": "PDF pages, one-based",
+      "public_pdf": "papers/P10_Graph_based_learning_2022.pdf",
+      "inspection": "Primary local PDF text; tables additionally rendered for SAM, LILA and GATRes. No models reproduced."
+    },
+    {
+      "group": "sam",
+      "document": "P26_SAM_kNN_2022",
+      "url": "https://doi.org/10.1007/978-3-031-15934-3_62",
+      "sha256": "13800474b42d7d9e58944ad93daa940a67a870de7d8c8d228f1274cf965f212b",
+      "historical_catalog_hash_matches": true,
+      "pages_inspected": [
+        8,
+        9,
+        10
+      ],
+      "page_convention": "PDF pages, one-based",
+      "public_pdf": null,
+      "inspection": "Primary local PDF text; tables additionally rendered for SAM, LILA and GATRes. No models reproduced."
+    },
+    {
+      "group": "lila",
+      "document": "P02_LILA_2022",
+      "url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001535",
+      "sha256": "37cee9f581196dad808b3950d579c77bd345443f618079e63c69367138c55a53",
+      "historical_catalog_hash_matches": true,
+      "pages_inspected": [
+        3,
+        4,
+        7
+      ],
+      "page_convention": "PDF pages, one-based",
+      "public_pdf": null,
+      "inspection": "Primary local PDF text; tables additionally rendered for SAM, LILA and GATRes. No models reproduced."
+    },
+    {
+      "group": "gatres",
+      "document": "P15_GATRes_2024",
+      "url": "https://doi.org/10.1029/2023WR036741",
+      "sha256": "9797c3078ff852b11cc91ca7e4ffb1452cf013b3556f6d939c94b759ceedf3db",
+      "historical_catalog_hash_matches": true,
+      "pages_inspected": [
+        19,
+        20,
+        21
+      ],
+      "page_convention": "PDF pages, one-based",
+      "public_pdf": "papers/P15_GATRes_2024.pdf",
+      "inspection": "Primary local PDF text; tables additionally rendered for SAM, LILA and GATRes. No models reproduced."
+    },
+    {
+      "group": "tsinghua",
+      "document": "Wang_2022_ASCE",
+      "url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001558",
+      "sha256": "a7753d0be2f38a4028b4e049020a89fafaa3f5f4d364e417b57f38ac5f7966d7",
+      "historical_catalog_hash_matches": true,
+      "pages_inspected": [
+        2,
+        3,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "page_convention": "PDF pages, one-based",
+      "public_pdf": null,
+      "inspection": "Primary local PDF text; tables additionally rendered for SAM, LILA and GATRes. No models reproduced."
+    },
+    {
+      "group": "agn",
+      "document": "AGN_Zou_2025",
+      "url": "https://www.sciencedirect.com/science/article/pii/S259012302502969X",
+      "doi": "10.1016/j.rineng.2025.106911",
+      "sections_inspected": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "4.1.2 / Table 1"
+      ],
+      "inspection": "Primary publisher text returned by web search indexing, checked 2026-10-28. Direct retrieval returned HTTP 403; no complete local PDF/HTML archive. Omitted formulas/figures are not newly verified here.",
+      "public_pdf": null
+    }
+  ],
+  "code_sources": [
+    {
+      "id": "chebnet",
+      "url": "https://raw.githubusercontent.com/GardarGardarsson/GSP_for_Leak_Detection/864a99041af6331375946a8fad3a71c633108eb8/04%20Leakage%20Detection/utils/data_loader.py",
+      "repository": "GardarGardarsson/GSP_for_Leak_Detection",
+      "commit": "864a99041af6331375946a8fad3a71c633108eb8",
+      "path": "04 Leakage Detection/utils/data_loader.py",
+      "bytes": 18081,
+      "sha256": "bb7645948b6196ddc0cfc425ebb34e2cdd1083173cc3a67b46536943e94f11ef",
+      "status": "downloaded_for_text_inspection_only",
+      "cached_passages_match_fresh_pinned_source_ignoring_line_endings": true
+    },
+    {
+      "id": "sam",
+      "url": "https://raw.githubusercontent.com/andreArtelt/SAM-kNN-Regressor_OnlineLearning_WDNs/9116ec99bf9f053e35401fe3e388062e8b979c54/Implementation/LeakDbScenarioPreprocessing.py",
+      "repository": "andreArtelt/SAM-kNN-Regressor_OnlineLearning_WDNs",
+      "commit": "9116ec99bf9f053e35401fe3e388062e8b979c54",
+      "path": "Implementation/LeakDbScenarioPreprocessing.py",
+      "bytes": 1036,
+      "sha256": "524540aa3b195fa251fff1080c2ebb0b086aa8dc53c342c74e1fde460d58f2ac",
+      "status": "downloaded_for_text_inspection_only",
+      "cached_passages_match_fresh_pinned_source_ignoring_line_endings": true
+    },
+    {
+      "id": "sam_experiments",
+      "url": "https://raw.githubusercontent.com/andreArtelt/SAM-kNN-Regressor_OnlineLearning_WDNs/9116ec99bf9f053e35401fe3e388062e8b979c54/Implementation/experiments.py",
+      "repository": "andreArtelt/SAM-kNN-Regressor_OnlineLearning_WDNs",
+      "commit": "9116ec99bf9f053e35401fe3e388062e8b979c54",
+      "path": "Implementation/experiments.py",
+      "bytes": 7581,
+      "sha256": "bf4d3733e38caa9f0a2069de751e4fb222bc15e2f6d5b4b9dc0594f42f55fd05",
+      "status": "downloaded_for_text_inspection_only",
+      "cached_passages_match_fresh_pinned_source_ignoring_line_endings": true
+    },
+    {
+      "id": "lila",
+      "url": "https://raw.githubusercontent.com/SWN-group-at-TU-Berlin/LILA/b488a60db1974b6f5b7887ce1cf5d31dff3dad68/_utils/BattLeDIM_utils.py",
+      "repository": "SWN-group-at-TU-Berlin/LILA",
+      "commit": "b488a60db1974b6f5b7887ce1cf5d31dff3dad68",
+      "path": "_utils/BattLeDIM_utils.py",
+      "bytes": 17967,
+      "sha256": "e4dfb90d42aa78a5d551308a90d5dd27646fb97ec72e5ec33f4b73621b4477ca",
+      "status": "downloaded_for_text_inspection_only",
+      "cached_passages_match_fresh_pinned_source_ignoring_line_endings": true
+    },
+    {
+      "id": "gatres",
+      "url": "https://raw.githubusercontent.com/DiTEC-project/gnn-pressure-estimation/bb287ed2ae091b29fa19f2417406756b57a45a1f/gnn_pressure_estimation/train.py",
+      "repository": "DiTEC-project/gnn-pressure-estimation",
+      "commit": "bb287ed2ae091b29fa19f2417406756b57a45a1f",
+      "path": "gnn_pressure_estimation/train.py",
+      "bytes": 26541,
+      "sha256": "874549bb5cfd60343f836c86ff22786c9316fb8631fac0062adf3f94f499711e",
+      "status": "downloaded_for_text_inspection_only",
+      "cached_passages_match_fresh_pinned_source_ignoring_line_endings": true
+    },
+    {
+      "id": "sam_detector",
+      "url": "https://raw.githubusercontent.com/andreArtelt/SAM-kNN-Regressor_OnlineLearning_WDNs/9116ec99bf9f053e35401fe3e388062e8b979c54/Implementation/FaultDetection.py",
+      "repository": "andreArtelt/SAM-kNN-Regressor_OnlineLearning_WDNs",
+      "commit": "9116ec99bf9f053e35401fe3e388062e8b979c54",
+      "path": "Implementation/FaultDetection.py",
+      "bytes": 3185,
+      "sha256": "af7a987e139a8405f064086f7a2773f1a370b4e4fff3f23789a69c7e10dbb5f6",
+      "status": "downloaded_for_text_inspection_only",
+      "cached_passages_match_fresh_pinned_source_ignoring_line_endings": true
+    },
+    {
+      "id": "gatres_data",
+      "url": "https://raw.githubusercontent.com/DiTEC-project/gnn-pressure-estimation/bb287ed2ae091b29fa19f2417406756b57a45a1f/gnn_pressure_estimation/utils/DataLoader.py",
+      "repository": "DiTEC-project/gnn-pressure-estimation",
+      "commit": "bb287ed2ae091b29fa19f2417406756b57a45a1f",
+      "path": "gnn_pressure_estimation/utils/DataLoader.py",
+      "bytes": 22456,
+      "sha256": "523837513cb42c7f8e557d0dfc5790e2170e55591f5e80399cbdec577d710919",
+      "status": "downloaded_for_text_inspection_only",
+      "cached_passages_match_fresh_pinned_source_ignoring_line_endings": true
+    },
+    {
+      "id": "chebnet_predict",
+      "url": "https://raw.githubusercontent.com/GardarGardarsson/GSP_for_Leak_Detection/864a99041af6331375946a8fad3a71c633108eb8/04%20Leakage%20Detection/predict.py",
+      "repository": "GardarGardarsson/GSP_for_Leak_Detection",
+      "commit": "864a99041af6331375946a8fad3a71c633108eb8",
+      "path": "04 Leakage Detection/predict.py",
+      "bytes": 7845,
+      "sha256": "ba141da8cc1faecc86f5804880f494cb848d63dfc1ba036cb815e2fcda549af3",
+      "status": "downloaded_for_text_inspection_only",
+      "cached_passages_match_fresh_pinned_source_ignoring_line_endings": true
+    },
+    {
+      "id": "gatres_auxil",
+      "url": "https://raw.githubusercontent.com/DiTEC-project/gnn-pressure-estimation/bb287ed2ae091b29fa19f2417406756b57a45a1f/gnn_pressure_estimation/utils/auxil.py",
+      "repository": "DiTEC-project/gnn-pressure-estimation",
+      "commit": "bb287ed2ae091b29fa19f2417406756b57a45a1f",
+      "path": "gnn_pressure_estimation/utils/auxil.py",
+      "bytes": 11395,
+      "sha256": "494a6cc43407ff5a876fa7f106376037e341fc8484e3138fb6ef1e2acb6a5d20",
+      "status": "downloaded_for_text_inspection_only",
+      "cached_passages_match_fresh_pinned_source_ignoring_line_endings": true
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim_01",
+      "group": "chebnet",
+      "statement": "Next-step pressure predictor plus current reconstructor; three-step history at five-minute sampling.",
+      "locator": "Paper pp. 4-5; data_loader.py L266-L293",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_02",
+      "group": "chebnet",
+      "statement": "Four Chebyshev-convolution layers; nominal simulated training; seven-day residual processing.",
+      "locator": "Paper pp. 4-5",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_03",
+      "group": "chebnet",
+      "statement": "19 true positives, 138 false positives, 4 false negatives; TPR 82.61%; EUR 326521. These are leak-diagnosis results.",
+      "locator": "Paper pp. 5-6 / Table 1",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_04",
+      "group": "chebnet",
+      "statement": "dataCleaner scales its input dataframe before predict.py makes an 80/20 split. This is a source-code observation, not a rerun.",
+      "locator": "data_loader.py L205-L236; predict.py L120-L131",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_05",
+      "group": "sam",
+      "statement": "Ten generated three-month Area A scenarios; 29 pressure sensors, five-minute sampling.",
+      "locator": "Paper PDF pp. 8-9 / Sec. 5.1",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_06",
+      "group": "sam",
+      "statement": "Paper describes four-sample averaging; code with window length four averages three inputs and labels the fourth; target sensor excluded from its own inputs.",
+      "locator": "Paper PDF p. 9; preprocessing L19-L27; experiments L17; FaultDetection.py L40-L46",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_07",
+      "group": "sam",
+      "statement": "Leak cases: all five events detected; false alarms 48,20,3,20,17 vs kNN 17057,19216,11146,19082,18751.",
+      "locator": "Paper PDF p. 10 / Table 1",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_08",
+      "group": "sam",
+      "statement": "STM/LTM/combined-memory predictions selected using tracked error, then updated online.",
+      "locator": "Paper PDF p. 8 / Algorithm 1",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_09",
+      "group": "agn",
+      "statement": "Generated modified L-Town; 104 demand patterns; five-minute samples; chronological 70/20/10 split.",
+      "locator": "Sec. 3.1",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_10",
+      "group": "agn",
+      "statement": "Output lengths 12/24/48/96 imply terminal leads 60/120/240/480 minutes; input and output lengths equal.",
+      "locator": "Sec. 3.2; Table 1; arithmetic from five-minute sampling",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_11",
+      "group": "agn",
+      "statement": "12-step regional MAE: high 0.859 m, medium 0.327 m, low 32.7 m. Aggregated regional/window errors, not n1(+15).",
+      "locator": "Sec. 3.3; Table 1",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_12",
+      "group": "lila",
+      "statement": "Current pressure reference from peer pressure and squared flow; manually selected calibration; CUSUM and hydraulic localization.",
+      "locator": "Paper pp. 3-4 / Eqs. 12-13 / LI-3",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_13",
+      "group": "lila",
+      "statement": "Pinned regression routine passes the PUMP_1 column directly, without explicit squaring there, with same-time pressure inputs/targets.",
+      "locator": "BattLeDIM_utils.py L219-L226, L266-L293",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_14",
+      "group": "lila",
+      "statement": "Table 1: TP17, FP2, FN0, recall1.000, precision0.895, F1 0.944, EUR307852; 19 new 2019 leaks.",
+      "locator": "Paper p. 7 / Table 1; two locations outside 300 m counted as FP",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_15",
+      "group": "gatres",
+      "statement": "10000 L-Town generated snapshots; 60/20/20 split; demand-pattern evaluation.",
+      "locator": "Paper pp. 19-20 / Sec. 6.4",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_16",
+      "group": "gatres",
+      "statement": "Current reconstruction: same-snapshot x/y before zero masking; graph attention with residual connections.",
+      "locator": "Paper; auxil.py L84-L98; train.py L172-L178",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_17",
+      "group": "gatres",
+      "statement": "Table 10 L-Town MAE GATRes 0.9501 +/- 0.0086 m vs mGCN 1.5928 +/- 0.0050 m; mean and SD over ten runs.",
+      "locator": "Paper p. 20 / Table 10; text one week, caption 24 hours",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_19",
+      "group": "tsinghua",
+      "statement": "EILF means estimation, identification and localization framework in Wang 2022, not the separate 2026 ensemble paper.",
+      "locator": "Paper p. 2",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_20",
+      "group": "tsinghua",
+      "statement": "STL estimates pressure trend, not a specified fixed-horizon future pressure; 2018 development / 2019 test.",
+      "locator": "Paper p. 3 / Eq. 3 and p. 6",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_21",
+      "group": "tsinghua",
+      "statement": "Area C pump/tank balance and AMR demand reference; 30-minute intervals address level-data inaccuracy.",
+      "locator": "Paper p. 7",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    },
+    {
+      "id": "claim_22",
+      "group": "tsinghua",
+      "statement": "TPR47.83%, FP5, EUR167981; code available on author request.",
+      "locator": "Paper p. 11 / Conclusions and Data Availability",
+      "status": "source_checked_literature_or_code_observation_not_reproduced_performance"
+    }
+  ],
+  "historical_selected_group_ids": [
+    "chebnet",
+    "sam",
+    "agn",
+    "lila",
+    "gatres",
+    "tsinghua"
+  ],
+  "counts": {
+    "historical_records": 47,
+    "historical_groups": 35,
+    "historical_selected_groups": 6,
+    "local_primary_PDFs_checked": 5,
+    "indexed_primary_articles_checked": 1,
+    "pinned_code_files_text_inspected": 9
+  },
+  "remaining_limits": [
+    "No complete historical search log or equal-depth review of all 35 groups.",
+    "No author training, alarm or pressure score reproduced.",
+    "AGN executable repository not verified in this audit; indexed text omits some formulas/figures.",
+    "SAM paper/code window discrepancy and GATRes text/caption duration discrepancy retained."
+  ],
+  "Ahmed": "Post-feedback supplement only; not added to historical six or 35 groups.",
+  "scope": "Source inspection evidence; published model training was not reproduced. Inspection date is retained, not invented for this rebuild."
+}

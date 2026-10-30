@@ -1,0 +1,28 @@
+{
+  "record_id": "3902046",
+  "url": "https://zenodo.org/records/3902046",
+  "title": "BattLeDIM 2020 Problem Announcement and Description",
+  "creators": [
+    "Vrachimis",
+    "Eliades",
+    "Taormina",
+    "Ostfeld",
+    "Kapelan",
+    "Liu",
+    "Kyriakou",
+    "Pavlou",
+    "Qiu",
+    "Polycarpou"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3902046",
+  "files": [
+    {
+      "name": "BattLeDIM_Problem_Description_and_Rules-v1.3.1.pdf",
+      "md5": "87850f0bcb1333ae83fe5ed591be7bea",
+      "url": "https://zenodo.org/api/records/3902046/files/BattLeDIM_Problem_Description_and_Rules-v1.3.1.pdf/content"
+    }
+  ]
+}

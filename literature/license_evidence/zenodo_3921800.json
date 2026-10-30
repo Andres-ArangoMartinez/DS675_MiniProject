@@ -1,0 +1,22 @@
+{
+  "record_id": "3921800",
+  "url": "https://zenodo.org/records/3921800",
+  "title": "Detecting and Localizing Leakage Hotspots in Water Distribution Networks via Regularization of an Inverse Problem: An Application to the Battle of Leakage Detection and Isolation Methods 2020 Competition",
+  "creators": [
+    "Blocher, Caroline",
+    "Pecci, Filippo",
+    "Jara Arriagada, Carlos",
+    "Stoianov, Ivan"
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "doi": "10.5281/zenodo.3921800",
+  "files": [
+    {
+      "name": "InfraSenseLabs.pdf",
+      "md5": "c478002bc024e5e3125a8f92812c76fa",
+      "url": "https://zenodo.org/api/records/3921800/files/InfraSenseLabs.pdf/content"
+    }
+  ]
+}

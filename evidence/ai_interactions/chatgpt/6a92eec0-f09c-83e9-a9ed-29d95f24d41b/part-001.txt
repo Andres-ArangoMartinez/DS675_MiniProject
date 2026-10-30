@@ -1,0 +1,3126 @@
+# Video Week 1 + Clase interactiva + prompt miniproject
+
+**PARTIAL RECOVERY — not an official account export.**
+
+- Conversation ID: 6a92eec0-f09c-83e9-a9ed-29d95f24d41b
+- Classification: milestone_1
+- Source: source_records/6a92eec0-f09c-83e9-a9ed-29d95f24d41b.read_thread.page01.json
+- Conversation createdAt: 1788014467.703349
+- Conversation updatedAt: 1789337606.259106
+- Individual message creation timestamps and complete historical/branch coverage are unverified.
+- Headings/notices are archival annotations. Fenced bodies are inserted programmatically without translation or cleanup.
+- Literal source attachment markers and content references are not recovered attachment or reply contents.
+
+## Turn 1
+
+- ID: bbb2177e-1f25-40a8-a18c-9fbe9cfe0c7d
+- startedAt: 1788016529.251558 (2026-08-29T15:15:29.251558+00:00)
+- completedAt: 1788016530.027596 (2026-08-29T15:15:30.027596+00:00)
+
+<a id="message-bbb2177e-1f25-40a8-a18c-9fbe9cfe0c7d"></a>
+### user — bbb2177e-1f25-40a8-a18c-9fbe9cfe0c7d
+
+````text
+un prompt corto para notebook LM
+````
+
+<a id="message-6c1aadc2-a12e-4eb4-bc7f-5da1fd63f939"></a>
+### assistant — 6c1aadc2-a12e-4eb4-bc7f-5da1fd63f939
+
+````text
+:::writing{variant="standard" id="42817"}
+Create a professional, clear, and highly pedagogical educational video for **DS675 Machine Learning – Class 1** using the provided course sources.
+
+Cover, in logical progression:
+
+- What machine learning means
+- Memorization vs. generalization
+- Training data vs. unseen/test data
+- Examples, features, labels, and predictions
+- Feature vectors and geometric representation of data
+- Euclidean distance and similarity
+- Nearest Neighbor
+- K-Nearest Neighbors and majority voting
+- The role of **K**
+- Overfitting vs. underfitting
+- Hyperparameters
+- Feature scaling
+- Why irrelevant features can hurt KNN
+
+Teach with **intuition first, then simple examples, then mathematics**. Use visual analogies, 2D scatter plots, animated nearest-neighbor examples, and short worked calculations.
+
+Frequently ask the viewer to predict what will happen before revealing the answer.
+
+Keep explanations simple but technically accurate. Define every important term in plain English and explicitly connect each new concept to the previous one.
+
+End with a complete KNN example that walks through:
+**features → distances → nearest neighbors → voting → prediction**, followed by a concise recap of the main ideas.
+
+Style: **professional graduate-level university lecture, visually engaging, calm, clear, modern, and beginner-friendly.**
+:::
+````
+
+## Turn 2
+
+- ID: bbb2145e-e4ec-4d22-a270-bd02a282d987
+- startedAt: 1788667560.251273 (2026-09-06T04:06:00.251273+00:00)
+- completedAt: 1788667565.008021 (2026-09-06T04:06:05.008021+00:00)
+
+<a id="message-bbb2145e-e4ec-4d22-a270-bd02a282d987"></a>
+### user — bbb2145e-e4ec-4d22-a270-bd02a282d987
+
+**Archive notice: source explicitly flags this message or content part as truncated.**
+
+````text
+este es el transcript de la primera clase, haz un resumen de puntos clave: [Skip to Main Content]([REDACTED:T05-R0001:restricted-course-link]
+[Accessibility Overview](https://njit-edu.zoom.us/en/accessibility)
+[Zoom Logo](https://njit-edu.zoom.us/)
+# DS675 Weekly Class Meeting B
+Sep 3, 2026 17:53
+00:00:07/01:08:40
+Speed
+**
+**
+## Audio Transcript
+**
+- 
+Michael E. Houle
+Michael E. Houle
+00:00:07
+So, while we wait for everybody to arrive… Let me share my screen.
+
+- 
+Great.
+
+- 
+Okay, so, first, so let me introduce myself. My name is Michael Houle. I'll be the lecturer.
+
+- 
+Before we, get into any course material.
+
+- 
+This first week's class meeting will be mainly about an overview of the course.
+
+- 
+Talk a little bit about the syllabus and, how the course is organized.
+
+- 
+And what you can expect from the course, and how to prepare for it.
+
+- 
+But usually the class meetings will… will,
+
+- 
+work in a somewhat different way. They will be…
+
+- 
+Questions about the current week's modules, or perhaps the previous week's modules.
+
+- 
+And they will be driven by questions from the audience. So that means that the length of these class meetings
+
+- 
+Be longer or shorter, depending on the questions.
+
+- 
+That, that you might have. When questions are exhausted, that's the end of the meeting.
+
+- 
+First week is different because of the…
+
+- 
+I'll be giving an overview, but aside from that, this is what it is. So, these are not actually… this is a class meeting, but it's not actually the class lectures for the course. The class lectures are the actual videos in the various modules. There are 20 modules in the course.
+
+- 
+Each of them has a Colab interactive notebook.
+
+- 
+Which…
+
+- 
+It has the text that's associated with that particular module, and they are also linked to videos, which can be thought of as the lectures that are associated with it.
+
+- 
+So, the style for the class meetings will be more of a tutorial.
+
+- 
+Where you bring the questions, and we go through them according to your interest.
+
+- 
+And so, okay, so a bit about myself first, then.
+
+- 
+I, started at NGIT about, in 2023.
+
+- 
+Before that, I had spent a decade in Australia and two decades plus in Japan. Primarily in Australia, I had a teaching and research position.
+
+- 
+In Japan, it was primarily research.
+
+- 
+So, during the pandemic, my family and I, we made the decision it was time to…
+
+- 
+We're nearing retirement.
+
+- 
+Time to go back to Canada.
+
+- 
+And I did that, and then… Because places like NJIT We're putting on online programs.
+
+- 
+a colleague at NGIT convinced me.
+
+- 
+Christopher Bailey
+Christopher Bailey
+00:03:23
+2…
+
+- 
+Michael E. Houle
+Michael E. Houle
+00:03:24
+Get back into teaching, and get back into… Research supervision.
+
+- 
+from… home here in Vancouver. So the idea is
+
+- 
+you know, I get to sit at home.
+
+- 
+in my upstairs office, and do all my teaching and everything from here. So, there's a 3-hour time difference between Vancouver and the East Coast.
+
+- 
+Because of, change in the time policy in this Canadian province, British Columbia.
+
+- 
+So, they've decided to stay on summertime, daylight savings time, for the full year.
+
+- 
+So this means that in November, the time difference will suddenly switch to 2 hours. So my schedule will change, you will not see a change in the schedule as a result of this.
+
+- 
+But typically, you'll find that my availability, if you want to get hold of me, will be in your afternoons and evenings.
+
+- 
+And, I think this might be particularly relevant to people who are coming for the evening meeting, because
+
+- 
+In past, semesters, people coming to the B meetings tend to be people who were working full-time during the day, and were studying as well, and so the evening access is something
+
+- 
+That I do because of mutual convenience, both for you and for me being here on the West Coast.
+
+- 
+Okay. So, now, about the course itself?
+
+- 
+and… What it covers?
+
+- 
+Okay, so,
+
+- 
+I hope that most or all, if not all of you, have had a chance to look at the syllabus, and to read through the general,
+
+- 
+rules or regulations? Is there any questions that you have before I…
+
+- 
+go in and take you through the highlights, or the most important points that… that might be of general concern. Any particular questions at this stage?
+
+- 
+Okay.
+
+- 
+So now this, this class meeting is, organized as a form of extra office hours.
+
+- 
+So that means they are optional in every sense. They're optional for you, and for me, they are essentially an initiative that I've taken so as to sort of, like, provide more structure to the feedback.
+
+- 
+This is an online course, and people can handle it,
+
+- 
+you know, on their own, at their own pace. There's no particular classes that are driving the learning of the material or working through it. But still, there's a need… I've seen that there is a need for feedback. There's a need for me to,
+
+- 
+field questions, and maybe give reminders, or discuss strategies for projects that will be coming up. It's an important part of the course.
+
+- 
+Or for various quizzes and exams. And so,
+
+- 
+Even though this meeting is optional, it's highly advisory.
+
+- 
+Highly advise that you either attend the meetings live.
+
+- 
+Or, if you can't make the meetings live every time, the videos will be recorded, and they will be posted, made available to you within Canvas from the modules page.
+
+- 
+So this gives people a chance to… you should at least
+
+- 
+Be looking at the topics that are declared in the links for these meetings.
+
+- 
+So I will give a description of what was discussed.
+
+- 
+In the links, so that you know whether or not you should chase down some information and see what was discussed.
+
+- 
+Alright, so any questions about the meetings themselves and how they work?
+
+- 
+So there'll be, a one week in October, the middle week, 12th to 18th, or thereabouts. I will be at a conference in Europe.
+
+- 
+And, we won't be able to follow the schedule for the,
+
+- 
+class meeting A or B that week because of the time difference, and the fact that I'm participating at a conference at other… at other hours.
+
+- 
+So, that… the meetings will be canceled that week, and as well, on the week of the Thanksgiving recess, the class meeting will be canceled that week, because…
+
+- 
+It falls on the Thursday, and the Thursday is meant to be a holiday.
+
+- 
+But, in both those weeks, I'll still set aside, possibly reduced office hours for October, when I'm in Europe.
+
+- 
+And during the Thanksgiving week, I'll actually increase
+
+- 
+The, office hours, because it will be, around the time when projects start coming due, and in my experience, groups have a lot of questions.
+
+- 
+About some of the outcomes that they may be facing around that time.
+
+- 
+Okay.
+
+- 
+So then… So, I am hearing… somebody is in the waiting room.
+
+- 
+Hold on just a second.
+
+- 
+So are they in?
+
+- 
+Hello, are you connecting by phone?
+
+- 
+The person who just entered the room?
+
+- 
+Yeah, so… so if you want immediate access to the waiting room, you need to log in via your email. So, I'll let you in.
+
+- 
+But just to let you know, I don't always notice people who are arriving in the waiting room, so it's probably better to authenticate yourself.
+
+- 
+And there's one more person as well who's joining.
+
+- 
+Hello, so, to the two people who have just joined.
+
+- 
+please, authenticate for the class meetings with your NGIT
+
+- 
+email your UCID code so that you can be automatically let into the meetings. So, with that, you can come and go as you please without,
+
+- 
+without, waiting in the waiting room. And I have a tendency not to notice,
+
+- 
+Things like that all the time, or consistently. So please, please be sure to do this.
+
+- 
+Okay, so we… here we are. We're going through the… some, important points from the syllabus.
+
+- 
+At this stage of the course,
+
+- 
+What I would like to draw your attention to as a matter of,
+
+- 
+particular importance are the assumed knowledge for the course. So, machine learning is inherently mathematical in terms of how we can describe how a method works.
+
+- 
+All the understanding that we have.
+
+- 
+with respect to machine learning algorithms. Typically, what we have is a notion of data as represented as a point in a very high dimensional space.
+
+- 
+So, points in space and their relationships, are covered by linear algebra.
+
+- 
+Lines, planes, and hyperplanes are sought by models as a way of simplifying or expressing a solution.
+
+- 
+And the, the change, or the iteration, or convergence, or processing,
+
+- 
+Or optimization that these methods may take typically involve changing or refining a particular solution or description of a module, which can be thought of as, like, nudging of a point in space.
+
+- 
+Iteratively, towards a sweet spot where that particular location in the state space
+
+- 
+gives you a model that actually performs well. And the mathematics of change for models like this is expressed using calculus.
+
+- 
+So we cannot actually describe or discuss
+
+- 
+How these methods may work without
+
+- 
+Each of the concepts that are listed in these tables.
+
+- 
+So, what I've done is I've gone through the course.
+
+- 
+Carefully, looking at all the uses of calculus, linear algebra, algebra, and probability of statistics, and listed them here in this table.
+
+- 
+This means that in order to be comfortable in this course, you should be familiar with
+
+- 
+Each of these things here, and if there's elements which are not necessarily
+
+- 
+that are not on this table, that means that we will not have a great dependence on their understanding for this particular course.
+
+- 
+Now, the calculus involved is undergraduate level, first year.
+
+- 
+Maybe it mostly differentiable.
+
+- 
+differential calculus, and some integral calculus. Linear algebra is at the level of a, let's say, a second-year course in vectors and matrices, and probability and statistics is also the… at the level of
+
+- 
+of a first course in probability and statistics that you might see in your second year undergraduate, with a few extras. So, some things on the table here are…
+
+- 
+Shown as, As, let me see…
+
+- 
+Asterisies. Those things are more involved.
+
+- 
+also quite important to some of the later material that comes in the course, and when we get to these topics, they will be covered thoroughly in the modules in which they appear and are used for the first time. So, if you are then,
+
+- 
+In the situation where, as many of the people are in this course, If you have been…
+
+- 
+If your undergraduate, days were,
+
+- 
+Long time ago, and some of you've gotten…
+
+- 
+maybe some rusty in these areas. You don't really need to… worry
+
+- 
+at what level of familiarity you have, if you have seen or worked with this stuff in the past. Usually, what I've found is that students in this situation
+
+- 
+tend to do well in the course. It comes back with a minimum, minimum of review.
+
+- 
+On the other hand, Some people come into the course, and they may have missed
+
+- 
+Most of the material, if not all, in one of these three categories.
+
+- 
+And my experience… Seeing how people like that do in the course.
+
+- 
+If you're missing…
+
+- 
+calculus completely, or linear algebra completely, or probability and stats completely. If you're missing one of these things, then with
+
+- 
+a quick review in the, you know, using online tutorial resources. Many people catch up and do well in the course, provided that they get started on their reviews right away. And by right away, I mean…
+
+- 
+Urgently in week one.
+
+- 
+If you are missing two categories of this, two of calculus, linear algebra, and or probability and statistics, it puts you at a serious disadvantage, because there you'll be…
+
+- 
+You'll find that without these concepts at hand, too much of the machine learning material is being missed week by week, and it starts to greatly affect your progress in the course.
+
+- 
+So, for that reason, one of the exercises that you will find in the modules pages in Canvas
+
+- 
+is a… Tell-me-about-yourself sort of survey.
+
+- 
+It's a graded survey, you get one participation point for doing it.
+
+- 
+But it's particularly important that you complete this survey
+
+- 
+early, so that I can give individualized feedback and recommendations as to how to prioritize your review in these areas, if needed.
+
+- 
+So they are assumed knowledge. We cannot get by without it. We cannot discuss methods without it. We cannot explain concepts or reason about the underlying concepts behind the methods without all of this stuff, and everything on these lists will be used at some point.
+
+- 
+But that doesn't mean that if you've got some gaps that you can't catch up, most of the students end up doing quite well, provided that they are proactive in filling the gaps.
+
+- 
+Okay.
+
+- 
+So, any questions about this?
+
+- 
+Manisha Dwivedi
+Manisha Dwivedi
+00:16:34
+hi, hi, I'm Manisha. Just have one question. So, I have close to 15 years of experience in Java, but I'm not that good in Python programming.
+
+- 
+Program required for the, middle and final exam as well.
+
+- 
+Michael E. Houle
+Michael E. Houle
+00:16:49
+Yes. So Python, the exams, no.
+
+- 
+So, Python is, how shall we say? It is…
+
+- 
+required that you do your projects and the assignments in Python.
+
+- 
+Okay, it's required that you do this. However.
+
+- 
+Hardly anybody struggles with the Python beyond the first couple of weeks.
+
+- 
+Even people who have never programmed in Python before, because almost everybody coming into the course has done some programming in some language.
+
+- 
+And once you've learned something like Java or even C++ programming, it… it… once you've covered something, even… even something like R, any type of…
+
+- 
+of…
+
+- 
+programming skills, there's a certain amount of transferability. Now, Python has its quirks, that's for sure, and can be difficult, especially with respect to the way, for example, how indexing is done in arrays, lists, tables, and the like.
+
+- 
+So, it's not that… you don't need to review. It's just that Python is much easier to catch up
+
+- 
+on as we go along. And there are more straightforward supports for the Python than we can possibly give for the calculus, linear algebra, probability, and stats. So these… everything in this table here, you know, it's covered… this is the equivalent of maybe 4 or 5 undergraduate courses.
+
+- 
+Depending on how it's packaged. But the Python is something that we can
+
+- 
+do pretty well at. Let me show you some examples as to why and how that's true.
+
+- 
+Let me stop the sharing of this and show… Instead… Where is it?
+
+- 
+Just give me a second, please.
+
+- 
+Oops.
+
+- 
+So, they have a bunch of window opens.
+
+- 
+I prepared it, but now it's buried, and I'm not sure where it is.
+
+- 
+This could be it.
+
+- 
+Yes.
+
+- 
+Excellent.
+
+- 
+Excellent. Okay, so then… That is… Here, usually I don't… In most…
+
+- 
+of the weeks of the course, I don't need to shift.
+
+- 
+From one screen to another, but in this overview week, Typically, I do.
+
+- 
+Okay, so can everybody see this screen here? This is Assignment 1.
+
+- 
+Manisha Dwivedi
+Manisha Dwivedi
+00:19:37
+Yes.
+
+- 
+Michael E. Houle
+Michael E. Houle
+00:19:37
+So…
+
+- 
+If you've gone through the syllabus, you may have noticed that there are 6 hands-on programming assignments. They're all in Python.
+
+- 
+But the weighting of these assignments is not uniform. The first one is worth 2.5% of the final mark, but assignments 2 through 6 are each worth 4.5%.
+
+- 
+So, what is the strategy behind that? So, the assignment one is just a Python introduction and review.
+
+- 
+So this means that for people who have never seen Python before, whose Python is rusty, or who just…
+
+- 
+Wants to get some sort of refresher.
+
+- 
+the idea is to take you through some of the… the idiosyncrasies of Python, the things that… that make Python a little bit different. So… so the… the…
+
+- 
+the…
+
+- 
+These assignments are presented in Colab interactive notebooks, which allow text and executable code to be interleaved in a single document. So, although I don't want to run it here for,
+
+- 
+For fear of making changes to the document itself.
+
+- 
+If you hover over certain parts of it, you can actually execute individual cells one by one, or from the menu here, such as Run All, you can actually execute
+
+- 
+entire documents all at once. And all of this is running in the cloud. It's not particularly fast, but it is very convenient. And so we are using this as an interchange for both
+
+- 
+you know, the modules and the text for the course is written in these things, so we can interleave code, explanations, figures, and the whole like. And so what you would do is you would save your copy, either work on it.
+
+- 
+You know, in the cloud?
+
+- 
+Online, or you could work on it using some other desktop development environment.
+
+- 
+And… develop your solutions, and then you upload it in Canvas, and they are graded and returned that way.
+
+- 
+So, in… in this sense here, this…
+
+- 
+Support allows you to experiment and play and test out all the code that you see.
+
+- 
+And that… for this reason, with these supports, together with the fact that there's AI
+
+- 
+cells built in. So, for example.
+
+- 
+You can code, add code to a new cell, or you can generate
+
+- 
+code using the built-in AI, or you could use an external AI and work things out, and paste them in.
+
+- 
+So, that's why… one reason why people tend to ramp up very quickly.
+
+- 
+And so, the first assignment that actually uses machine learning methods and techniques in them is Assignment 2. So, let me undo what I did here, so…
+
+- 
+So, I haven't changed.
+
+- 
+the document. So in Assignment 2,
+
+- 
+What we see here is… is actual…
+
+- 
+scikit-learn libraries being used, and typically the, the assignments give you a certain amount of code to work with, and then you modify or add
+
+- 
+To it in order to get certain effects.
+
+- 
+And so, again, you download your copy, and you add your answers in this, and then it's given to the grader in this form, and the grader will actually even use parts of the cells to actually tabulate the marks and grading.
+
+- 
+But when you use… you're allowed to use AIs in your solutions, but you are responsible for documenting your AI use. So,
+
+- 
+Assignment 1, it's not so much of an issue, because it's just about a Python review, and Python is not the main focus of the course. It is the language within which we learn about machine learning methods.
+
+- 
+Right? And it's the language that we use in order to do our projects, but it's not that this is a course that teaches Python. It's not the case. It's a course that assumes that you can do your things.
+
+- 
+it… So, when it comes then to, to…
+
+- 
+using generated code by an LLM, such as ChatGPT or Klot, or whatever it is that you might want to use.
+
+- 
+We need…
+
+- 
+to see that you're not just closing your eyes and getting the AI to process the whole assignment. We need to see that your brain is engaged in the process.
+
+- 
+And how do we do that? Well, by you giving us a transcript of how you've used AI, if you've used it.
+
+- 
+So, for example, here, you can then, for each of the questions, there are spaces where you can post links.
+
+- 
+to… Transcripts.
+
+- 
+of your interactions with the AI that you did for that particular question.
+
+- 
+And you… so you can… so the examples that I show are actually screenshots, so you can get an idea. You can even paste screenshots if you can get them loaded into your document, and they don't become too big. But we recommend that you actually work with links to transcripts and make sure that the links are available.
+
+- 
+If you use the built-in Ai tools… oops, sorry.
+
+- 
+Sorry again.
+
+- 
+Where is it?
+
+- 
+If you use the built-in AI tools that, that come w
+````
+
+**Additional direct browser capture of this same message.** Rendered text, not verified original Markdown. UI labels may occur; full unedited DOM/HTML is retained separately.
+
+````text
+este es el transcript de la primera clase, haz un resumen de puntos clave: [Skip to Main Content]([REDACTED:T05-R0002:restricted-course-link]
+[Accessibility Overview](https://njit-edu.zoom.us/en/accessibility)
+[Zoom Logo](https://njit-edu.zoom.us/)
+# DS675 Weekly Class Meeting B
+Sep 3, 2026 17:53
+00:00:07/01:08:40
+Speed
+**
+**
+## Audio Transcript
+**
+- 
+Michael E. Houle
+Michael E. Houle
+00:00:07
+So, while we wait for everybody to arrive… Let me share my screen.
+
+- 
+Great.
+
+- 
+Okay, so, first, so let me introduce myself. My name is Michael Houle. I'll be the lecturer.
+
+- 
+Before we, get into any course material.
+
+- 
+This first week's class meeting will be mainly about an overview of the course.
+
+- 
+Talk a little bit about the syllabus and, how the course is organized.
+
+- 
+And what you can expect from the course, and how to prepare for it.
+
+- 
+But usually the class meetings will… will,
+
+- 
+work in a somewhat different way. They will be…
+
+- 
+Questions about the current week's modules, or perhaps the previous week's modules.
+
+- 
+And they will be driven by questions from the audience. So that means that the length of these class meetings
+
+- 
+Be longer or shorter, depending on the questions.
+
+- 
+That, that you might have. When questions are exhausted, that's the end of the meeting.
+
+- 
+First week is different because of the…
+
+- 
+I'll be giving an overview, but aside from that, this is what it is. So, these are not actually… this is a class meeting, but it's not actually the class lectures for the course. The class lectures are the actual videos in the various modules. There are 20 modules in the course.
+
+- 
+Each of them has a Colab interactive notebook.
+
+- 
+Which…
+
+- 
+It has the text that's associated with that particular module, and they are also linked to videos, which can be thought of as the lectures that are associated with it.
+
+- 
+So, the style for the class meetings will be more of a tutorial.
+
+- 
+Where you bring the questions, and we go through them according to your interest.
+
+- 
+And so, okay, so a bit about myself first, then.
+
+- 
+I, started at NGIT about, in 2023.
+
+- 
+Before that, I had spent a decade in Australia and two decades plus in Japan. Primarily in Australia, I had a teaching and research position.
+
+- 
+In Japan, it was primarily research.
+
+- 
+So, during the pandemic, my family and I, we made the decision it was time to…
+
+- 
+We're nearing retirement.
+
+- 
+Time to go back to Canada.
+
+- 
+And I did that, and then… Because places like NJIT We're putting on online programs.
+
+- 
+a colleague at NGIT convinced me.
+
+- 
+Christopher Bailey
+Christopher Bailey
+00:03:23
+2…
+
+- 
+Michael E. Houle
+Michael E. Houle
+00:03:24
+Get back into teaching, and get back into… Research supervision.
+
+- 
+from… home here in Vancouver. So the idea is
+
+- 
+you know, I get to sit at home.
+
+- 
+in my upstairs office, and do all my teaching and everything from here. So, there's a 3-hour time difference between Vancouver and the East Coast.
+
+- 
+Because of, change in the time policy in this Canadian province, British Columbia.
+
+- 
+So, they've decided to stay on summertime, daylight savings time, for the full year.
+
+- 
+So this means that in November, the time difference will suddenly switch to 2 hours. So my schedule will change, you will not see a change in the schedule as a result of this.
+
+- 
+But typically, you'll find that my availability, if you want to get hold of me, will be in your afternoons and evenings.
+
+- 
+And, I think this might be particularly relevant to people who are coming for the evening meeting, because
+
+- 
+In past, semesters, people coming to the B meetings tend to be people who were working full-time during the day, and were studying as well, and so the evening access is something
+
+- 
+That I do because of mutual convenience, both for you and for me being here on the West Coast.
+
+- 
+Okay. So, now, about the course itself?
+
+- 
+and… What it covers?
+
+- 
+Okay, so,
+
+- 
+I hope that most or all, if not all of you, have had a chance to look at the syllabus, and to read through the general,
+
+- 
+rules or regulations? Is there any questions that you have before I…
+
+- 
+go in and take you through the highlights, or the most important points that… that might be of general concern. Any particular questions at this stage?
+
+- 
+Okay.
+
+- 
+So now this, this class meeting is, organized as a form of extra office hours.
+
+- 
+So that means they are optional in every sense. They're optional for you, and for me, they are essentially an initiative that I've taken so as to sort of, like, provide more structure to the feedback.
+
+- 
+This is an online course, and people can handle it,
+
+- 
+you know, on their own, at their own pace. There's no particular classes that are driving the learning of the material or working through it. But still, there's a need… I've seen that there is a need for feedback. There's a need for me to,
+
+- 
+field questions, and maybe give reminders, or discuss strategies for projects that will be coming up. It's an important part of the course.
+
+- 
+Or for various quizzes and exams. And so,
+
+- 
+Even though this meeting is optional, it's highly advisory.
+
+- 
+Highly advise that you either attend the meetings live.
+
+- 
+Or, if you can't make the meetings live every time, the videos will be recorded, and they will be posted, made available to you within Canvas from the modules page.
+
+- 
+So this gives people a chance to… you should at least
+
+- 
+Be looking at the topics that are declared in the links for these meetings.
+
+- 
+So I will give a description of what was discussed.
+
+- 
+In the links, so that you know whether or not you should chase down some information and see what was discussed.
+
+- 
+Alright, so any questions about the meetings themselves and how they work?
+
+- 
+So there'll be, a one week in October, the middle week, 12th to 18th, or thereabouts. I will be at a conference in Europe.
+
+- 
+And, we won't be able to follow the schedule for the,
+
+- 
+class meeting A or B that week because of the time difference, and the fact that I'm participating at a conference at other… at other hours.
+
+- 
+So, that… the meetings will be canceled that week, and as well, on the week of the Thanksgiving recess, the class meeting will be canceled that week, because…
+
+- 
+It falls on the Thursday, and the Thursday is meant to be a holiday.
+
+- 
+But, in both those weeks, I'll still set aside, possibly reduced office hours for October, when I'm in Europe.
+
+- 
+And during the Thanksgiving week, I'll actually increase
+
+- 
+The, office hours, because it will be, around the time when projects start coming due, and in my experience, groups have a lot of questions.
+
+- 
+About some of the outcomes that they may be facing around that time.
+
+- 
+Okay.
+
+- 
+So then… So, I am hearing… somebody is in the waiting room.
+
+- 
+Hold on just a second.
+
+- 
+So are they in?
+
+- 
+Hello, are you connecting by phone?
+
+- 
+The person who just entered the room?
+
+- 
+Yeah, so… so if you want immediate access to the waiting room, you need to log in via your email. So, I'll let you in.
+
+- 
+But just to let you know, I don't always notice people who are arriving in the waiting room, so it's probably better to authenticate yourself.
+
+- 
+And there's one more person as well who's joining.
+
+- 
+Hello, so, to the two people who have just joined.
+
+- 
+please, authenticate for the class meetings with your NGIT
+
+- 
+email your UCID code so that you can be automatically let into the meetings. So, with that, you can come and go as you please without,
+
+- 
+without, waiting in the waiting room. And I have a tendency not to notice,
+
+- 
+Things like that all the time, or consistently. So please, please be sure to do this.
+
+- 
+Okay, so we… here we are. We're going through the… some, important points from the syllabus.
+
+- 
+At this stage of the course,
+
+- 
+What I would like to draw your attention to as a matter of,
+
+- 
+particular importance are the assumed knowledge for the course. So, machine learning is inherently mathematical in terms of how we can describe how a method works.
+
+- 
+All the understanding that we have.
+
+- 
+with respect to machine learning algorithms. Typically, what we have is a notion of data as represented as a point in a very high dimensional space.
+
+- 
+So, points in space and their relationships, are covered by linear algebra.
+
+- 
+Lines, planes, and hyperplanes are sought by models as a way of simplifying or expressing a solution.
+
+- 
+And the, the change, or the iteration, or convergence, or processing,
+
+- 
+Or optimization that these methods may take typically involve changing or refining a particular solution or description of a module, which can be thought of as, like, nudging of a point in space.
+
+- 
+Iteratively, towards a sweet spot where that particular location in the state space
+
+- 
+gives you a model that actually performs well. And the mathematics of change for models like this is expressed using calculus.
+
+- 
+So we cannot actually describe or discuss
+
+- 
+How these methods may work without
+
+- 
+Each of the concepts that are listed in these tables.
+
+- 
+So, what I've done is I've gone through the course.
+
+- 
+Carefully, looking at all the uses of calculus, linear algebra, algebra, and probability of statistics, and listed them here in this table.
+
+- 
+This means that in order to be comfortable in this course, you should be familiar with
+
+- 
+Each of these things here, and if there's elements which are not necessarily
+
+- 
+that are not on this table, that means that we will not have a great dependence on their understanding for this particular course.
+
+- 
+Now, the calculus involved is undergraduate level, first year.
+
+- 
+Maybe it mostly differentiable.
+
+- 
+differential calculus, and some integral calculus. Linear algebra is at the level of a, let's say, a second-year course in vectors and matrices, and probability and statistics is 
+…
+Show more
+````
+
+<a id="message-5a572128-89a8-473d-b681-a1c3ec13c88b"></a>
+### assistant — 5a572128-89a8-473d-b681-a1c3ec13c88b
+
+````text
+Sí. Esta primera reunión fue principalmente una **orientación del curso**, no una clase técnica completa de Machine Learning. Los puntos clave son:
+
+- **Formato del curso:** hay **20 módulos**. Cada módulo tiene un notebook interactivo en Colab con texto, código y videos. Los videos son las “lectures” reales; las reuniones semanales funcionan más como **tutorial/office hours**, guiadas por preguntas de los estudiantes. Son opcionales, pero el profesor recomienda asistir o ver las grabaciones.
+
+- **Base matemática requerida:** el curso depende fuertemente de **cálculo, álgebra lineal, probabilidad y estadística**. El profesor enfatiza que ML se entiende geométricamente: datos como puntos en espacios de alta dimensión, modelos como líneas/planos/hiperplanos, y optimización como movimiento iterativo hacia mejores soluciones. Si falta una de esas áreas, recomienda repaso inmediato; si faltan dos, el riesgo de quedarse atrás aumenta mucho.
+
+- **Python es necesario, pero no es el foco del curso:** se usa para assignments y proyectos, pero **no se evalúa directamente en los quizzes/exams conceptuales**. Quien ya sabe programar en Java, C++, R u otro lenguaje debería poder adaptarse. La expectativa es que la familiaridad con Python crezca progresivamente durante las primeras semanas.
+
+- **Assignment 1 = introducción/revisión de Python:** vale menos que los demás porque su propósito es ayudarte a familiarizarte con el lenguaje. Los assignments 2–6 ya trabajan con ML y `scikit-learn`.
+
+- **Colab es la plataforma principal:** los notebooks permiten combinar explicación, código y resultados. El profesor espera que experimentes con las celdas, ejecutes código, hagas cambios y observes qué ocurre.
+
+- **Uso de IA permitido, pero debe documentarse:** puedes usar ChatGPT, Claude u otras herramientas para ayudarte, especialmente con código, pero debes mostrar cómo las usaste. El profesor quiere evidencia de que hubo razonamiento propio y no simplemente generación automática de una solución completa.
+
+- **Dos pilares del curso:**  
+  1. **Conceptual / teórico:** entender cómo funcionan los métodos, cuándo son apropiados, ventajas, limitaciones y consecuencias de modificar un método.  
+  2. **Práctico:** tomar un dataset real, explorarlo, construir modelos, ajustarlos, evaluarlos y razonar sobre resultados realistas.
+
+- **Cómo se evalúan esos dos pilares:** el lado conceptual se refleja especialmente en los **professional quizzes** y revisiones teóricas. El lado práctico culmina en el **mini-project**. Obtener una A normalmente requiere ser fuerte en ambos.
+
+- **Mini-project:** comienza de forma individual y luego pasa a trabajo en grupo. Primero eliges datasets y propones una tarea supervisada; luego investigas qué se ha hecho con esos datos, especialmente en Kaggle. Más adelante se forman grupos de **2 o 3 personas** para desarrollar modelos y producir el trabajo final.
+
+- **Selección de dataset:** el profesor recomienda datasets con un **nivel medio de actividad en Kaggle**. Si son demasiado populares, será difícil hacer algo original; si nadie los usa, puede haber problemas con los datos. El dataset debe permitir una tarea predictiva supervisada clara, con suficientes ejemplos para crear buenos conjuntos de entrenamiento y prueba.
+
+- **Criterio crítico sobre Kaggle:** no asumir que algo es correcto solo porque alguien lo hizo en Kaggle. Parte del proyecto es desarrollar juicio profesional para distinguir buenas y malas prácticas.
+
+- **Participación semanal:** cada estudiante debe buscar recursos externos relacionados con el tema de la semana, compartir uno o dos con una breve explicación de relevancia y comentar la publicación de otro estudiante. El énfasis es participación y exploración, no producir un ensayo extenso.
+
+- **Quizzes y exams:** las revisiones semanales sirven como preparación para los professional quizzes. El examen conceptual **no está centrado en escribir Python**; se centra en conceptos, algoritmos, razonamiento y juicio.
+
+- **Late policy:** el profesor no penaliza automáticamente entregas unos minutos u horas tarde, pero tampoco promete extensiones individuales. Una tarea permanece abierta hasta que él decide cerrar submissions para poder publicar soluciones, entregar al grader o avanzar con el curso. Después del deadline, entregar tarde es bajo tu propio riesgo.
+
+- **Si ocurre un problema que afecta a toda la clase**, por ejemplo un link roto o código deprecado, puede haber una extensión general. Las accommodations individuales se gestionan por la vía oficial correspondiente.
+
+- **Sobre Module 2 y KNN:** el código de `scikit-learn` que aparece en el módulo sirve como ejemplo de implementación y preparación para assignments/proyectos. El profesor aclaró que **ese código específico no será preguntado en los quizzes/exams**. Lo importante para la evaluación conceptual es entender el texto, conceptos y métodos.
+
+- **Estrategia recomendada para aprender Python:** no intentar dominarlo todo de inmediato. Ejecutar los notebooks, modificar ejemplos, usar Assignment 1 para practicar y dejar que los assignments posteriores estructuren el aprendizaje.
+
+- **Acción inmediata más importante:** completar cuanto antes el **survey de conocimientos previos**, para que el profesor pueda recomendar qué áreas matemáticas conviene repasar durante la primera semana.
+
+La idea central de esta primera reunión fue: **el curso busca desarrollar tanto comprensión conceptual como capacidad práctica**. Python es una herramienta; lo verdaderamente importante es entender los métodos, saber cuándo usarlos, reconocer sus limitaciones y ser capaz de aplicarlos correctamente a problemas reales.
+````
+
+## Turn 3
+
+- ID: bbb21ed2-bcb2-4d3c-ae66-57419887ec5c
+- startedAt: 1788668004.347972 (2026-09-06T04:13:24.347972+00:00)
+- completedAt: 1788668008.182514 (2026-09-06T04:13:28.182514+00:00)
+
+<a id="message-bbb21ed2-bcb2-4d3c-ae66-57419887ec5c"></a>
+### user — bbb21ed2-bcb2-4d3c-ae66-57419887ec5c
+
+**Archive notice: source explicitly flags this message or content part as truncated.**
+
+````text
+este es otro transcript de la primera sesionpero con otro grupo hay informacion deiferente?: [Skip to Main Content]([REDACTED:T05-R0003:restricted-course-link]
+[Accessibility Overview](https://njit-edu.zoom.us/en/accessibility)
+[Zoom Logo](https://njit-edu.zoom.us/)
+# DS675 Weekly Class Meeting A
+Sep 3, 2026 12:58
+00:00:13/01:21:05
+Speed
+**
+**
+**
+## Audio Transcript
+**
+- 
+Michael E. Houle
+Michael E. Houle
+00:00:06
+I have been… Checking Zoom settings, I don't know if,
+
+- 
+if you have noticed, but Zoom had a major update on its interfaces, in recent weeks, which
+
+- 
+means that everything is different, so I don't trust anything about what's going on. I had to verify whether, in fact, this is being recorded properly.
+
+- 
+I had set up the meeting so that people with
+
+- 
+without NJIT accreditation, or email, or authentication, would go to the waiting room, and every single person went into the waiting room. So then I've been disabling this.
+
+- 
+Some people can't get on, and so… sorry for the delay in the start, but there may be some glitches like this for the first week. Usually, it always takes some time before things run smoothly.
+
+- 
+Okay, so… what, what today's class meeting is about,
+
+- 
+Let me explain what they are going to be like in general. The class meetings are not lectures. Some people think that it's a class, that if they miss class, they miss something.
+
+- 
+Really what it is, you can think of it as a tutorial.
+
+- 
+in the context of office hours. So what I've done is, every lecturer is supposed to make themselves available for office hours. I've packaged some of them in a structured, organized form to make a tutorial, because, frankly, with an online course where everything is delivered by modules.
+
+- 
+The risk is that we just don't have a chance for interactivity that can help resolve problems. So this is what these class meetings are. They're optional.
+
+- 
+You can choose to attend or not.
+
+- 
+But, let me tell you the importance and why I say that you should attend. When we get to things like the midterm quiz, or the final, or projects, there… people tend to have questions that go beyond
+
+- 
+Any attempt to prepare or lay out the information in writing.
+
+- 
+And so.
+
+- 
+this gives you your chance to ask this in a way where, you know, if 20 or 50 of you have a similar question, one person asking the question here can help the entire class. And so.
+
+- 
+So, what I would suggest, that if you cannot make the meetings regularly, that you at least look at the videos. So, the recordings will be, for each class meeting, will be posted.
+
+- 
+And, they'll go up, and each one is somehow different. Even the A meeting will be different from the B meeting, because
+
+- 
+After today's,
+
+- 
+meetings, after this week's meetings, they will all be essentially driven by student questions and interests. If students have no questions or interest in a certain topic, it doesn't get covered in the class meetings.
+
+- 
+If people have a concern, typically it's a concern that's shared by many, it gets asked, then it gets addressed, and that's how it works.
+
+- 
+The meetings could be very long, very short, all depends on you.
+
+- 
+Okay, so now, since none of us have gone through, you know, much of the material yet, I take the first week's meeting in order to just give a tour of what the course is going to be about, how it's structured, how things will work, and then if there are time afterwards, I'll ask… take questions on the material.
+
+- 
+But typically, questions on the material are either with the current week's, material, or the past week, or even two weeks before, and we tend to move like a sliding window through the course like this.
+
+- 
+If you have questions that go beyond that window, like far…
+
+- 
+Into the past, or if you want to have questions about what's coming up in future materials, if you've been reading ahead or whatever, if you have… or something of an individual nature that deals with how you're doing in the course, or for things that are personal just to you.
+
+- 
+Make a regular office hours meeting appointment to talk about that on a one-to-one basis.
+
+- 
+Okay, so then let me share my screen, and this will be another test of…
+
+- 
+How the setup is working now.
+
+- 
+Directly, yeah, okay.
+
+- 
+So then… Everything truly is different.
+
+- 
+Yeah, play cable, yep.
+
+- 
+finishing low… Excellent.
+
+- 
+there was one semester where I had such a glitch that I would have to
+
+- 
+attempt to connect my iPad, then after the attempt fails, then I would plug and unplug, and then it would work, and I had to attempt first. So, every… every semester is different. This one, I'm happy to say I get it the first try. Excellent.
+
+- 
+Okay, so… Then, first a bit about me.
+
+- 
+I started here at, at, NJIT 2023.
+
+- 
+After having spent a long time in different countries, like, I spent 9 years in Australia, 20 years in Japan, I had,
+
+- 
+I was a research… visiting research scientist at IBM between those two for about two and a half years, and
+
+- 
+My position in Japan was at the equivalent of a full professor.
+
+- 
+Then, during the pandemic, I decided, enough, and moved back home, which is in Vancouver.
+
+- 
+And entered a period of semi-retirement, and then I was coaxed by
+
+- 
+research colleagues who were based at NGIT to come out and
+
+- 
+And teach remotely, because during the pandemic.
+
+- 
+Ngit mounted, the program that you all, or most of you at least, are registered in now, which is,
+
+- 
+a master's course which has online teaching, and I was recruited for that teaching. So I get to teach from home in Vancouver, and I'm on campus occasionally, you know, maybe one or two times per semester.
+
+- 
+Basically, most of the time for that would be for, like, things like research, co-supervision, and things like that.
+
+- 
+Okay, so I'm maybe sort of like you, most of you in an unusual position. I… my position is inherently online, and for many of you, you're in a situation where you might be working as well as studying, in which case you have a need for online courses.
+
+- 
+Okay so…
+
+- 
+Basically, my perspective with respect to machine learning is not as somebody who is, like, a practitioner, per se, somebody who has been working in industry in machine learning. I got into machine learning from the research end.
+
+- 
+So, my background is, original background is actually in algorithmics, data structures, visualization, etc.
+
+- 
+complexity analysis, and I tended to be working with people who more and more were attracted into the field of machine learning, and they got in from databases, data mining, or whatever. So there seems to be a big vortex that's sucking in research.
+
+- 
+in towards machine learning. And because I was working with them, and because the underlying mathematical analysis that I do is amenable to machine learning.
+
+- 
+I got swept into this vortex as well, so now I'm doing… I have an eye towards machine learning.
+
+- 
+analysis in the research that I do, and I find that teaching this course is fun because it helps to
+
+- 
+Connect me to.
+
+- 
+you know, the practical side of the field. I believe that even as a theoretician.
+
+- 
+Theory and practice should inform.
+
+- 
+each other.
+
+- 
+Okay, so I enjoy teaching this course a lot simply because it allows me to maintain that breadth.
+
+- 
+So, I would imagine for most of you, many of you, most of you.
+
+- 
+You are also coming into machine learning from one direction or another.
+
+- 
+And this course, amongst all the master's level or the graduate level offerings at NJIT, is… has the most diverse, backgrounds.
+
+- 
+of any students coming in. We have students that have come up through the front door, per se, so to speak, either through a data science or a computer science degree. We have people who have maybe completed a degree program in a STEM area, like engineering or the like.
+
+- 
+We have PhD students who are sitting in the room today.
+
+- 
+We have… we have people whose backgrounds are from non-traditional areas.
+
+- 
+What NJIT's policy is, is to allow people with graduate degrees to enter this program.
+
+- 
+And this course sort of is like a funnel. It's catching people from all these different backgrounds, and the goal is to bring them to a common perspective and a common set of abilities by the end of the course.
+
+- 
+So this means your experience is going to be very individual, meaning what is going to be easy or challenging for you is going to be different person by person.
+
+- 
+And the first few weeks, you could end up basically
+
+- 
+Having a relaxing, coasting time, or you could be in a scramble to keep up, depending on
+
+- 
+what's in your background. So, for that reason.
+
+- 
+I have put into the,
+
+- 
+into Canvas a survey of your background.
+
+- 
+So I have itemized lists of all the courses that are covered at the graduate level. You can tick which ones I've covered, you can tell me what your background is in these, in these various programs.
+
+- 
+With respect… with respect to these topics.
+
+- 
+But if I can take you into the syllabus now, into the middle, I hope that you have all had a chance to look at this.
+
+- 
+But I will, would like to draw your attention to some of the topics that are in here.
+
+- 
+So, sometimes… so, basically, machine learning
+
+- 
+The methods you can think of as algorithms or heuristics. We need to be able to describe these methods.
+
+- 
+We need to be able to talk about why these methods work the way they do, and we cannot get down to what a particular machine learning
+
+- 
+technique does.
+
+- 
+In a way that Gives you a useful…
+
+- 
+useful understanding of it. We can't do that without describing what we do in mathematical notation.
+
+- 
+So, the methods inherently use calculus, inherently are based on linear algebra, and their probability and statistics are also inherent in the understanding of why a particular method is the way it is, or what it does.
+
+- 
+So…
+
+- 
+although it's… the… the treatment of it, like, the assessment does not necessarily rest very heavily on these things. The ability to absorb and understand the material and reason about it
+
+- 
+And then be assessed on that.
+
+- 
+Does depend on this.
+
+- 
+So, this is… generates the greatest anxiety, I would say, in the first few weeks, is calculus, linear algebra, and probability and statistics, and it comes hard and fast as we get into the course.
+
+- 
+So, that's why I would ask everybody to, you know, for your peace of mind and mine.
+
+- 
+to fill this questionnaire out as soon as possible. And over this weekend, I'm going to start giving individualized feedback to people, saying, okay, your situation seems great, enjoy the course, or
+
+- 
+Go to these resources and do a quick review so as to catch up.
+
+- 
+And what I found is, just… just for sort of patterns.
+
+- 
+People who may have seen these things, but have forgotten most of it. People who have been… did their degrees
+
+- 
+10 years ago or more, who are coming back.
+
+- 
+seen it and forgotten. These people do well.
+
+- 
+Okay? Because it comes back. You know, with a refresher, you're able to catch up.
+
+- 
+So I have not too much concern for, about…
+
+- 
+about these people, because they're able to come back. But if you have never taken a course in one of these categories at all.
+
+- 
+You are… You are at a disadvantage.
+
+- 
+And now I've seen people determinedly fill such gaps and do well in the course.
+
+- 
+But they have had to work extremely hard to do it, but it is possible.
+
+- 
+If you have seen… if you haven't seen anything in two of these categories, I recommend that you…
+
+- 
+Consider doing this in a… in the next semester instead?
+
+- 
+And then spending the semester filling in the gaps, and that is very possible. People have succeeded quite well with that.
+
+- 
+If you have not seen any of these things before, first of all, that's very rare. I've seen none of these three. Then I would say you need to spend an extensive amount of time catching up before we can do this. Each one of these things is one or two undergraduate courses equivalent.
+
+- 
+And it is not realistic for somebody to carry the weight of
+
+- 
+You know, having not seen 5 undergraduate courses worth of math.
+
+- 
+And expecting to stay, stay, keep pace with, with this course.
+
+- 
+Okay, and so the cons… the… think of it as a language issue, right? You need to be able to speak the language of these things in order to discuss the machine learning.
+
+- 
+But if you are rusty, or if you have gaps here and there, that's fine. People can cope with that, and I would like to be able to give individual feedback to you, so if you can just do the,
+
+- 
+the survey, then I can help.
+
+- 
+Okay. So, are there any questions about this?
+
+- 
+Both the background for the course? Any general…
+
+- 
+Like I said, we can handle this, individually? Yes, go ahead. Somebody…
+
+- 
+I saw somebody raise their hand, yeah.
+
+- 
+Abraham Eapen
+Abraham Eapen
+00:15:31
+Yeah,
+
+- 
+Michael E. Houle
+Michael E. Houle
+00:15:32
+If you have a question, by the way, I don't always see hand raises and things like that. Just unmute yourself and ask at any time. These are informal, they're not really lectures, and you… it's…
+
+- 
+question-driven, so if you have a question, raise, you know, raise your hand. It's nice, but if you… if I don't see it, just interrupt.
+
+- 
+Okay, Abraham, go ahead.
+
+- 
+Abraham Eapen
+Abraham Eapen
+00:15:55
+Understood, thanks. Yeah, so the survey you're referring to, is that the graded survey, tell me more about yourself, or…
+
+- 
+Yeah, which…
+
+- 
+Michael E. Houle
+Michael E. Houle
+00:16:02
+And it's great, it's the… tell me more about yourself, graded survey, and it's graded because I really want you to give me the feedback, so I put a little token grade on it, so that people will think, okay, they're getting something for it.
+
+- 
+Abraham Eapen
+Abraham Eapen
+00:16:15
+Got it.
+
+- 
+Michael E. Houle
+Michael E. Houle
+00:16:16
+No, that's the one.
+
+- 
+Thank you. Okay.
+
+- 
+There is another one up there, which is the, the, academic engagement exercise. That looks like another survey, and it just asks you to put in a few sentences.
+
+- 
+That one is a wholly different thing, and it's also very important, because the admin placed that thing in the module, not me.
+
+- 
+Okay, the other things, you know, I curate. I don't… that gets…
+
+- 
+planted in there by them. I can't change anything about it.
+
+- 
+And if you…
+
+- 
+You go in, and it says, just write a few sentences about yourself, one or two sentences, and that's it.
+
+- 
+What they do is… They may or may not look at what you write, to be honest.
+
+- 
+But what they will do is they will count, will put a tick beside your name if you record it, and they use that for reporting as to who attended the course. If you don't do this.
+
+- 
+By the deadline, they may conclude that you are not in the course.
+
+- 
+And that may affect all sorts of full-time status, or whatever it is about you. So, do this, like, right after the class, or even while you're listening to the class meeting today. Go in, write a few sentences, please get that done. Please don't forget to do that, because you don't want to find yourself,
+
+- 
+In a situation where the admin has concluded that you've never joined the course.
+
+- 
+Okay, so those are the two surveys that are at the beginning. One is, you can think of as for me.
+
+- 
+for this issue. The other one is with respect to the admin to see exactly who is here.
+
+- 
+Alright, any questions?
+
+- 
+So, I have not talked about Python.
+
+- 
+And I've expressed big concerns here now about the math. Why am I not concerned about Python?
+
+- 
+Well, the reason why I'm not concerned about Python, because Python, even if you have not seen Python at all before, my experience is that people always manage to catch up.
+
+- 
+with Python, assuming that they have no other
+
+- 
+issues or time constraints. Usually… so, what assignment 1 is, and the reason why Assignment 1 has,
+
+- 
+has a much smaller weighting, like, if you see… See, the programming assignment one.
+
+- 
+Okay, there are… 25% of your grade is in programming assignments here in the left-hand column.
+
+- 
+And, we're in week 1 now, and week 2, at the end of week two, the first assignment is due, and it's worth only 2.5%.
+
+- 
+Whereas the other ones are worth 4.5. And that is because it is entirely on Python.
+
+- 
+So, we don't teach Python, we assume that you know it.
+
+- 
+But the reality is, not everybody has had the same experience in Python, so what we do is we put the first assignment as a
+
+- 
+tutorial slash catch-up in Python.
+
+- 
+And you'll find that if you have worked with other programming languages, you'll find that eventually, as you start learning them, we…
+
+- 
+We figure that, basically at the graduate level.
+
+- 
+Regardless of what your experience is, if you've done some programming, you'll catch on pretty quickly.
+
+- 
+But Python has some idiosyncrasies, especially when it comes to array indexing and subscripting.
+
+- 
+These things are pretty weird, and so this is, basically an opportunity for people to figure out how that works, how to handle, complex forms of,
+
+- 
+Of indexing using, table, you know, arrays, matrices, and so on. Lists.
+
+- 
+And the like. And so, it's just, also, it pushes back the first machine learning programming assignment deadline to week 4. So, basically, you've got 4 weeks or so to come to term with Python's enough to be able to do
+
+- 
+the coding. But even then, there is still more support available to people… for people who are new to Python, in the sense that,
+
+- 
+If you take a look at the assignments.
+
+- 
+You'll see that they are in a, Let me see…
+
+- 
+Maybe I'll pull one up for you.
+
+- 
+How about that?
+
+- 
+So, how many people here have…
+
+- 
+Not had a chance yet to see what the,
+
+- 
+What the… what the modules and the assignments look like.
+
+- 
+Assume everybody's taken at least a look.
+
+- 
+Maybe I'll put one up.
+
+- 
+Hold on.
+
+- 
+Better make sure I pick the right one.
+
+- 
+So this is… this is unfortunately a little slow.
+
+- 
+Canvas, right?
+
+- 
+Okay.
+
+- 
+And I stopped sharing this.
+
+- 
+Switch to the other screen…
+
+- 
+That one looks like… There.
+
+- 
+Hmm… Okay, can everybody see this?
+
+- 
+See what I have here? This is Assignment 1.
+
+- 
+Okay, all the assignments and the modules themselves are in the form of Colab interactive notebooks. So, what this does is it runs in the cloud.
+
+- 
+Basically, it's under the Google umbrella, right? And so, these are composed of cells, where we can have text, or we can have code, and we can have them interlead. So this is going to be a mechanism by which we deliver the course, and by which you
+
+- 
+supply anything to do with code, the assignments, or even parts of your project, which we'll get to later. So you can both read this as a document.
+
+- 
+And you can execute the cells as code.
+
+- 
+I don't want to click on these things because it alters the state with auto-saving. It could end up accidentally changing the assignment. So I don't really want to show you how we actually run this.
+
+- 
+In case I make an error.
+
+- 
+But basically the code is here, so you can write and change the code, update the code, and so when you take an assignment document, or if you take any of these sort of resources, some code examples with respect to some of the machine learning methods that we see in the course, you can alter and play and test and run right from the document itself.
+
+- 
+Typically, you make your own copies of these things, you put them up somewhere, you can run them natively in Colab, sorry, like, in the cloud, or you can download it and run it within your own environment on your laptop, if you like. It's up to you.
+
+- 
+So, in this situation here, the assignments are of that
+````
+
+**Additional direct browser capture of this same message.** Rendered text, not verified original Markdown. UI labels may occur; full unedited DOM/HTML is retained separately.
+
+````text
+este es otro transcript de la primera sesionpero con otro grupo hay informacion deiferente?: [Skip to Main Content]([REDACTED:T05-R0004:restricted-course-link]
+[Accessibility Overview](https://njit-edu.zoom.us/en/accessibility)
+[Zoom Logo](https://njit-edu.zoom.us/)
+# DS675 Weekly Class Meeting A
+Sep 3, 2026 12:58
+00:00:13/01:21:05
+Speed
+**
+**
+**
+## Audio Transcript
+**
+- 
+Michael E. Houle
+Michael E. Houle
+00:00:06
+I have been… Checking Zoom settings, I don't know if,
+
+- 
+if you have noticed, but Zoom had a major update on its interfaces, in recent weeks, which
+
+- 
+means that everything is different, so I don't trust anything about what's going on. I had to verify whether, in fact, this is being recorded properly.
+
+- 
+I had set up the meeting so that people with
+
+- 
+without NJIT accreditation, or email, or authentication, would go to the waiting room, and every single person went into the waiting room. So then I've been disabling this.
+
+- 
+Some people can't get on, and so… sorry for the delay in the start, but there may be some glitches like this for the first week. Usually, it always takes some time before things run smoothly.
+
+- 
+Okay, so… what, what today's class meeting is about,
+
+- 
+Let me explain what they are going to be like in general. The class meetings are not lectures. Some people think that it's a class, that if they miss class, they miss something.
+
+- 
+Really what it is, you can think of it as a tutorial.
+
+- 
+in the context of office hours. So what I've done is, every lecturer is supposed to make themselves available for office hours. I've packaged some of them in a structured, organized form to make a tutorial, because, frankly, with an online course where everything is delivered by modules.
+
+- 
+The risk is that we just don't have a chance for interactivity that can help resolve problems. So this is what these class meetings are. They're optional.
+
+- 
+You can choose to attend or not.
+
+- 
+But, let me tell you the importance and why I say that you should attend. When we get to things like the midterm quiz, or the final, or projects, there… people tend to have questions that go beyond
+
+- 
+Any attempt to prepare or lay out the information in writing.
+
+- 
+And so.
+
+- 
+this gives you your chance to ask this in a way where, you know, if 20 or 50 of you have a similar question, one person asking the question here can help the entire class. And so.
+
+- 
+So, what I would suggest, that if you cannot make the meetings regularly, that you at least look at the videos. So, the recordings will be, for each class meeting, will be posted.
+
+- 
+And, they'll go up, and each one is somehow different. Even the A meeting will be different from the B meeting, because
+
+- 
+After today's,
+
+- 
+meetings, after this week's meetings, they will all be essentially driven by student questions and interests. If students have no questions or interest in a certain topic, it doesn't get covered in the class meetings.
+
+- 
+If people have a concern, typically it's a concern that's shared by many, it gets asked, then it gets addressed, and that's how it works.
+
+- 
+The meetings could be very long, very short, all depends on you.
+
+- 
+Okay, so now, since none of us have gone through, you know, much of the material yet, I take the first week's meeting in order to just give a tour of what the course is going to be about, how it's structured, how things will work, and then if there are time afterwards, I'll ask… take questions on the material.
+
+- 
+But typically, questions on the material are either with the current week's, material, or the past week, or even two weeks before, and we tend to move like a sliding window through the course like this.
+
+- 
+If you have questions that go beyond that window, like far…
+
+- 
+Into the past, or if you want to have questions about what's coming up in future materials, if you've been reading ahead or whatever, if you have… or something of an individual nature that deals with how you're doing in the course, or for things that are personal just to you.
+
+- 
+Make a regular office hours meeting appointment to talk about that on a one-to-one basis.
+
+- 
+Okay, so then let me share my screen, and this will be another test of…
+
+- 
+How the setup is working now.
+
+- 
+Directly, yeah, okay.
+
+- 
+So then… Everything truly is different.
+
+- 
+Yeah, play cable, yep.
+
+- 
+finishing low… Excellent.
+
+- 
+there was one semester where I had such a glitch that I would have to
+
+- 
+attempt to connect my iPad, then after the attempt fails, then I would plug and unplug, and then it would work, and I had to attempt first. So, every… every semester is different. This one, I'm happy to say I get it the first try. Excellent.
+
+- 
+Okay, so… Then, first a bit about me.
+
+- 
+I started here at, at, NJIT 2023.
+
+- 
+After having spent a long time in different countries, like, I spent 9 years in Australia, 20 years in Japan, I had,
+
+- 
+I was a research… visiting research scientist at IBM between those two for about two and a half years, and
+
+- 
+My position in Japan was at the equivalent of a full professor.
+
+- 
+Then, during the pandemic, I decided, enough, and moved back home, which is in Vancouver.
+
+- 
+And entered a period of semi-retirement, and then I was coaxed by
+
+- 
+research colleagues who were based at NGIT to come out and
+
+- 
+And teach remotely, because during the pandemic.
+
+- 
+Ngit mounted, the program that you all, or most of you at least, are registered in now, which is,
+
+- 
+a master's course which has online teaching, and I was recruited for that teaching. So I get to teach from home in Vancouver, and I'm on campus occasionally, you know, maybe one or two times per semester.
+
+- 
+Basically, most of the time for that would be for, like, things like research, co-supervision, and things like that.
+
+- 
+Okay, so I'm maybe sort of like you, most of you in an unusual position. I… my position is inherently online, and for many of you, you're in a situation where you might be working as well as studying, in which case you have a need for online courses.
+
+- 
+Okay so…
+
+- 
+Basically, my perspective with respect to machine learning is not as somebody who is, like, a practitioner, per se, somebody who has been working in industry in machine learning. I got into machine learning from the research end.
+
+- 
+So, my background is, original background is actually in algorithmics, data structures, visualization, etc.
+
+- 
+complexity analysis, and I tended to be working with people who more and more were attracted into the field of machine learning, and they got in from databases, data mining, or whatever. So there seems to be a big vortex that's sucking in research.
+
+- 
+in towards machine learning. And because I was working with them, and because the underlying mathematical analysis that I do is amenable to machine learning.
+
+- 
+I got swept into this vortex as well, so now I'm doing… I have an eye towards machine learning.
+
+- 
+analysis in the research that I do, and I find that teaching this course is fun because it helps to
+
+- 
+Connect me to.
+
+- 
+you know, the practical side of the field. I believe that even as a theoretician.
+
+- 
+Theory and practice should inform.
+
+- 
+each other.
+
+- 
+Okay, so I enjoy teaching this course a lot simply because it allows me to maintain that breadth.
+
+- 
+So, I would imagine for most of you, many of you, most of you.
+
+- 
+You are also coming into machine learning from one direction or another.
+
+- 
+And this course, amongst all the master's level or the graduate level offerings at NJIT, is… has the most diverse, backgrounds.
+
+- 
+of any students coming in. We have students that have come up through the front door, per se, so to speak, either through a data science or a computer science degree. We have people who have maybe completed a degree program in a STEM area, like engineering or the like.
+
+- 
+We have PhD students who are sitting in the room today.
+
+- 
+We have… we have people whose backgrounds are from non-traditional areas.
+
+- 
+What NJIT's policy is, is to allow people with graduate degrees to enter this program.
+
+- 
+And this course sort of is like a funnel. It's catching people from all these different backgrounds, and the goal is to bring them to a common perspective and a common set of abilities by the end of the course.
+
+- 
+So this means your experience is going to be very individual, meaning what is going to be easy or challenging for you is going to be different person by person.
+
+- 
+And the first few weeks, you could end up basically
+
+- 
+Having a relaxing, coasting time, or you could be in a scramble to keep up, depending on
+
+- 
+what's in your background. So, for that reason.
+
+- 
+I have put into the,
+
+- 
+into Canvas a survey of your background.
+
+- 
+So I have itemized lists of all the courses that are covered at the graduate level. You can tick which ones I've covered, you can tell me what your background is in these, in these various programs.
+
+- 
+With respect… with respect to these topics.
+
+- 
+But if I can take you into the syllabus now, into the middle, I hope that you have all had a chance to look at this.
+
+- 
+But I will, would like to draw your attention to some of the topics that are in here.
+
+- 
+So, sometimes… so, basically, machine learning
+
+- 
+The methods you can think of as algorithms or heuristics. We need to be able to describe these methods.
+
+- 
+We need to be able to talk about why these methods work the way they do, and we cannot get down to what a particular machine learning
+
+- 
+technique does.
+
+- 
+In a way that Gives you a useful…
+
+- 
+useful understanding of it. We can't do that without describing what we do in mathematical notation.
+
+- 
+So, the methods inherently use calculus, inherently are based on linear algebra, and their probability and statistics are also inherent in the understanding of why a particular method is the way it is, or what it
+…
+Show more
+````
+
+<a id="message-83fd3db7-63e4-40fe-9564-3a6108bdee9a"></a>
+### assistant — 83fd3db7-63e4-40fe-9564-3a6108bdee9a
+
+````text
+Sí. **La estructura general y los mensajes centrales son prácticamente los mismos**, pero el grupo A sí contiene varios detalles adicionales o más explícitos que no aparecieron, o aparecieron con menos profundidad, en el grupo B.
+
+Las diferencias más útiles son estas:
+
+- **Academic Engagement Exercise:** en el grupo A el profesor distingue claramente dos encuestas iniciales. Una es el survey “Tell me more about yourself”, que usa para evaluar tu background y darte recomendaciones personalizadas. La otra es un **Academic Engagement Exercise administrativo**, que debes completar porque NJIT lo usa para verificar que realmente estás participando en el curso. Advierte que no completarlo puede afectar el registro de participación o estatus administrativo.
+
+- **Qué hacer si te faltan bases matemáticas:** en el grupo A es más específico. Si nunca has tomado **una** de las tres áreas principales —calculus, linear algebra, probability/statistics— estás en desventaja pero puedes compensarlo trabajando fuerte. Si te faltan **dos áreas completas**, llega a recomendar considerar tomar el curso en otro semestre y usar el actual para cubrir esas bases. Si solo estás “rusty”, no lo considera un problema serio.
+
+- **Cómo usar la tabla de prerequisites:** explica que la tabla del syllabus no es una lista genérica; fue construida revisando **exactamente qué matemática se usa en el curso**. Su recomendación es estudiar “backwards from the table”: revisar solo los temas listados y la notación correspondiente.
+
+- **Temas matemáticos con asterisco:** en el grupo A aclara que algunos temas marcados con asterisco sí se enseñarán/revisarán cuando aparezcan. Menciona explícitamente cosas como **eigenvalues, eigenvectors, basis vectors, eigendecomposition, Bayes’ theorem y maximum likelihood**. Por tanto, no necesitas dominarlos todos antes de empezar.
+
+- **Generative AI como herramienta de estudio:** además de permitirla en assignments, recomienda usar ChatGPT/Claude para crear **tutoriales personalizados de cálculo, álgebra lineal o probabilidad**, incluso copiando directamente los temas de la tabla del syllabus y pidiendo una explicación adaptada a tu background.
+
+- **Declarar que NO usaste AI:** en el grupo A aparece una aclaración importante: si no declaras uso de AI, se asume que **no la utilizaste**. Si después el trabajo parece generado por AI o muy similar al de otros estudiantes, eso puede generar sospechas. El profesor incluso plantea la declaración del uso de AI como una forma de protegerte frente a sospechas de colaboración inapropiada.
+
+- **Por qué AI puede hacer que dos respuestas se parezcan:** desarrolla más el riesgo de que herramientas generativas produzcan estilo, estructura y wording similares entre estudiantes. Por eso insiste en conservar transcripts individuales.
+
+- **Python Assignment 1:** el grupo A deja todavía más claro que Assignment 1 es casi un **tutorial con crédito**. No está realmente enfocado en evaluar ML y por eso no le preocupa tanto el uso de AI allí.
+
+- **Textbooks:** esto prácticamente no apareció en el otro grupo. El profesor dice explícitamente que los libros son **opcionales** y que el curso es autocontenido en los módulos. Destaca especialmente:
+  - un libro práctico tipo *Hands-On Machine Learning* como referencia útil para ver un flujo profesional completo de análisis;
+  - *The Elements of Statistical Learning* para quien quiera profundizar mucho en teoría, pruebas y matemática, pero advierte que va bastante más allá del curso.
+
+- **Theory vs. application:** el grupo A explica con más claridad que él viene de una perspectiva de investigación/algoritmos, no principalmente de práctica industrial. Dice que una de sus metas es encontrar el punto medio entre “cómo usar correctamente una herramienta” y “tener que demostrar toda su teoría matemática”.
+
+- **Support Vector Machines:** adelanta que alrededor de la semana 6 aparecerá SVM y que suele generar muchas preguntas. Comenta que ahí probablemente haga un “deeper dive” opcional para explicar mejor por qué funciona sin exigir toda la teoría formal.
+
+- **Time series / finance:** a raíz de una pregunta, aclara que las conexiones con **time series** aparecen literalmente en los últimos módulos del curso y que pueden relacionarse con problemas como mercados financieros, pero el curso no enseña finanzas como dominio. El curso enseña las herramientas, no la aplicación específica a finanzas.
+
+- **Deep Learning course:** menciona que un curso posterior de deep learning desarrolla más algunas de estas herramientas, aunque tampoco desde una perspectiva específicamente financiera.
+
+- **Desglose de grading más detallado:** en el grupo A menciona explícitamente:
+  - 10% participation
+  - 10% weekly theory reviews/quizzes
+  - 25% programming assignments
+  - 25% mini-project
+  - 30% professional quizzes en total
+
+- **Professional quizzes:** explica con más detalle que son evaluaciones **proctored online**, realizadas en una ventana específica. Menciona aproximadamente **90 minutos para el mid-semester** y **2 horas para el end-of-semester**.
+
+- **Notas durante professional quizzes:** el grupo A añade que puedes preparar **tus propias notas**, pero tienes que declararlas/subirlas y mostrarlas siguiendo el procedimiento del software de proctoring.
+
+- **No seguir el final-exam schedule tradicional:** aclara que debes **ignorar el tentative exam schedule** que pueda generar NJIT para esta materia. El curso maneja el professional quiz de fin de semestre mediante Canvas y su propia ventana.
+
+- **Discussion forum de Week 1:** aparece una aclaración operativa concreta: el primer post se recomienda para **Wednesday**, pero esa fecha es flexible; el deadline real de completar participación semanal es **Sunday**. La razón de Wednesday es dar tiempo a que otros estudiantes puedan responder.
+
+- **Dónde hacer preguntas:** el grupo A define mejor los canales:
+  - preguntas generales de contenido → class meeting;
+  - preguntas sobre coding assignments → TA;
+  - preguntas individuales/personalizadas o sobre temas muy futuros → professor/office hours;
+  - forums → principalmente peer-to-peer.
+
+- **Quién califica qué:** también se aclara:
+  - TA → coding assignments;
+  - professor → projects, professional quizzes y participation forums.
+
+- **Project Milestone 1:** el grupo A dice explícitamente que empiezas seleccionando **dos candidate datasets**, no uno, y que debes compararlos siguiendo el rubric.
+
+- **Project Milestone 2:** eliges uno de esos dos datasets después del feedback y estudias qué ha hecho la comunidad de Kaggle con él: modelos, performance, fortalezas, debilidades, etc.
+
+- **Dataset demasiado pequeño:** da un ejemplo muy concreto: un dataset con alrededor de **100 records** normalmente no sería suficiente para hacer adecuadamente training y testing.
+
+- **Project final presentation:** el grupo A añade algo que el B no desarrolló: al final del proyecto se entrega un **video de aproximadamente 10 minutos**, y algunos serán mostrados durante las class meetings de las últimas semanas.
+
+- **Proyecto relacionado con tu trabajo:** confirma explícitamente que puedes orientar el mini-project hacia un dominio relacionado con tu empleo, siempre que cumpla los requisitos del curso.
+
+- **Importancia de los pequeños puntos:** insiste más fuertemente en que, para sacar A, no basta con hacerlo bien en project + professional quizzes. No conviene regalar puntos en participation y theory reviews. Su recomendación es **steady performance throughout the semester**, no intentar recuperar todo al final.
+
+### Lo más importante que añade el grupo A
+
+Si tuviera que condensar las novedades realmente útiles en unas pocas ideas, serían:
+
+1. **Completa dos cosas distintas al inicio:** el background survey y el Academic Engagement Exercise.
+2. **Usa la tabla matemática del syllabus como checklist exacto de estudio.**
+3. **Los temas matemáticos marcados con asterisco serán reforzados dentro del curso.**
+4. **Declara siempre el uso de AI cuando corresponda; si no declaras, estás implícitamente diciendo que no la usaste.**
+5. **Puedes llevar notas preparadas a los professional quizzes bajo las reglas de proctoring.**
+6. **Week 1 discussion: Wednesday es recomendado; Sunday es el deadline práctico semanal.**
+7. **El proyecto empieza con 2 datasets candidatos, luego eliges 1.**
+8. **El proyecto final incluye también una presentación en video de ~10 minutos.**
+9. **TA = coding assignments; professor = projects, exams y participation.**
+10. **Para una A, la consistencia semanal importa bastante; no descuides los puntos “pequeños”.**
+
+En contenido técnico de Machine Learning, **ninguno de los dos grupos añadió mucha teoría nueva de KNN durante esta primera reunión**. Ambas sesiones fueron fundamentalmente de orientación. El contenido técnico real sigue estando en los módulos y videos, y las reuniones semanales posteriores serán más importantes para detectar qué conceptos enfatiza el profesor para quizzes y exams.
+````
+
+## Turn 4
+
+- ID: bbb21e4c-0e39-4771-9e71-d09ca5b995e3
+- startedAt: 1788750688.998617 (2026-09-07T03:11:28.998617+00:00)
+- completedAt: 1788750694.881823 (2026-09-07T03:11:34.881823+00:00)
+
+<a id="message-bbb21e4c-0e39-4771-9e71-d09ca5b995e3"></a>
+### user — bbb21e4c-0e39-4771-9e71-d09ca5b995e3
+
+````text
+explicame en detalle que hay que hacer en el miniproject, y que papel juega kaggle
+````
+
+<a id="message-48d9c640-a8a7-417a-9300-66b51927b351"></a>
+### assistant — 48d9c640-a8a7-417a-9300-66b51927b351
+
+````text
+Sí. Con base **solo en lo que explicó el profesor en ambos transcripts**, el mini-project es un proyecto progresivo de **Machine Learning supervisado y predictivo** que empieza de manera individual y termina en grupo.
+
+La idea general es esta:
+
+> **Dataset real → entender el problema → investigar qué se ha hecho → formar equipo → construir y evaluar modelos → presentar resultados.**
+
+Kaggle juega un papel central, pero **no como lugar para copiar soluciones**. Se usa como fuente de datasets, como repositorio de trabajos previos y como referencia para desarrollar criterio profesional.
+
+## Qué tienes que hacer en el mini-project
+
+El proyecto está dividido en **4 milestones**.
+
+### Milestone 1 — Explorar y proponer datasets
+Trabajo **individual**.
+
+Tienes que ir a **Kaggle** y escoger **dos datasets candidatos** que podrían servir para un proyecto de Machine Learning supervisado.
+
+Para cada dataset debes entender y describir cosas como:
+
+- qué datos contiene,
+- aproximadamente cuántos ejemplos tiene,
+- qué variables/features tiene,
+- cuál podría ser la variable que quieres predecir,
+- qué tipo de problema predictivo podrías plantear,
+- si parece adecuado para entrenar y evaluar modelos.
+
+El profesor insiste en algo importante: **no todo dataset de Kaggle sirve**.
+
+Por ejemplo, un dataset puede servir para hacer visualizaciones o EDA, pero no necesariamente para predictive ML.
+
+Para que sea apropiado debería existir algo parecido a:
+
+\[
+X \rightarrow y
+\]
+
+donde:
+
+- \(X\) = variables predictoras,
+- \(y\) = target/label que quieres predecir.
+
+Ejemplo sencillo:
+
+| Age | Income | Debt | Default |
+|---|---:|---:|---|
+| 32 | 80000 | 10000 | No |
+| 46 | 55000 | 35000 | Yes |
+
+Podrías plantear:
+
+\[
+Age,\ Income,\ Debt \rightarrow Default
+\]
+
+Entonces `Default` sería el target y las otras columnas serían predictors.
+
+El profesor también advierte que el dataset debe tener **suficientes observaciones**. Dio como ejemplo que algo con alrededor de **100 registros podría ser demasiado pequeño** para hacer training/test de manera convincente.
+
+Al final de este milestone recibes feedback del profesor sobre la calidad y viabilidad de tus opciones.
+
+---
+
+# Milestone 2 — Investigar qué se ha hecho con el dataset
+
+También es **individual**.
+
+Después del feedback del Milestone 1, eliges **uno de los dos datasets**.
+
+Ahora Kaggle cambia de función.
+
+Ya no estás buscando simplemente el dataset.
+
+Estás investigando:
+
+> **¿Qué han hecho otras personas con este mismo dataset?**
+
+Buscas notebooks, analyses y modelos publicados en Kaggle.
+
+Por ejemplo:
+
+- qué algoritmos usaron,
+- qué preprocessing hicieron,
+- qué variables utilizaron,
+- qué performance obtuvieron,
+- qué métricas utilizaron,
+- qué approaches parecen funcionar,
+- qué approaches parecen débiles o incorrectos.
+
+Aquí el profesor quiere que desarrolles **juicio crítico**.
+
+No debes pensar:
+
+> “Está en Kaggle, por lo tanto está bien.”
+
+De hecho, dijo explícitamente que en Kaggle vas a encontrar trabajos:
+
+- excelentes,
+- mediocres,
+- y algunos directamente malos.
+
+El objetivo es que seas capaz de decir algo como:
+
+> “This approach achieved high accuracy, but the evaluation may be unreliable because the preprocessing appears to use information from the full dataset before the train-test split.”
+
+Ese tipo de razonamiento es precisamente el tipo de juicio profesional que quiere que desarrolles.
+
+---
+
+# El problema de escoger un dataset demasiado popular
+
+Aquí el profesor dio una recomendación muy útil.
+
+No recomienda elegir necesariamente el dataset con más notebooks o discusiones.
+
+Idealmente busca uno con **actividad intermedia**.
+
+¿Por qué?
+
+Porque si eliges algo extremadamente popular, posiblemente ya hayan probado:
+
+- logistic regression,
+- random forests,
+- SVM,
+- neural networks,
+- gradient boosting,
+- extensive feature engineering,
+- hyperparameter tuning,
+- ensembles,
+- etc.
+
+Entonces puede ser difícil hacer una contribución propia.
+
+El proyecto tiene un componente relacionado con:
+
+> **contribution and originality**
+
+No basta con decir:
+
+> “Encontré este notebook de Kaggle, corrí lo mismo y obtuve resultados similares.”
+
+Eso tendría poca originalidad.
+
+Pero tampoco quieres necesariamente el extremo contrario:
+
+> dataset con prácticamente cero análisis.
+
+Puede ser señal de problemas como:
+
+- dataset demasiado pequeño,
+- datos incompletos,
+- target poco claro,
+- mala calidad,
+- dataset diseñado para EDA pero no para prediction,
+- poca información útil para construir un modelo.
+
+Por eso la zona ideal sería algo así:
+
+```text
+Muy popular                    Intermedio                    Sin actividad
+───────────────|────────────────────────────────|──────────────────
+Difícil ser     ← IDEAL                       Puede haber
+original                                      problemas
+```
+
+---
+
+# Milestone 3 — Formar el grupo
+
+Este milestone es bastante simple administrativamente.
+
+Tienes que formar un grupo de:
+
+> **2 o 3 estudiantes**
+
+No:
+
+- 1,
+- 4,
+- 5.
+
+Exactamente 2 o 3.
+
+Aquí ocurre algo interesante.
+
+Cada estudiante llega con su propio trabajo del Milestone 2.
+
+Es decir, cada uno tiene:
+
+- un dataset,
+- una idea de proyecto,
+- una investigación preliminar de Kaggle.
+
+Después todos publican sus propuestas.
+
+El profesor lo describió como una especie de **marketplace**.
+
+Puedes actuar como:
+
+### “Seller”
+
+Intentas convencer a otras personas:
+
+> “Mi dataset es interesante; únanse conmigo y hagamos este proyecto.”
+
+O como:
+
+### “Buyer”
+
+Ves el dataset de otro estudiante y piensas:
+
+> “Esto está mucho mejor que lo mío. Prefiero trabajar en ese proyecto.”
+
+El profesor dijo que **más de la mitad de los estudiantes normalmente abandona su propio dataset** para trabajar en el de otra persona.
+
+Eso es totalmente normal.
+
+El Milestone 3 esencialmente consiste en declarar correctamente:
+
+- miembros del grupo,
+- dataset elegido,
+- proyecto que realizarán.
+
+El profesor mencionó que este milestone vale esencialmente **1 punto**, y es básicamente una verificación de que el grupo quedó correctamente formado.
+
+---
+
+# Milestone 4 — El proyecto real de Machine Learning
+
+Aquí empieza la parte más importante.
+
+Ahora trabajas en equipo durante aproximadamente **un mes**.
+
+Tomas el dataset seleccionado y desarrollas un proyecto real de predictive ML.
+
+Conceptualmente, el flujo que describió el profesor es aproximadamente:
+
+\[
+Dataset
+\rightarrow
+Exploration
+\rightarrow
+Preprocessing
+\rightarrow
+Modeling
+\rightarrow
+Training
+\rightarrow
+Testing
+\rightarrow
+Evaluation
+\rightarrow
+Conclusions
+\]
+
+Es decir, algo similar a un pequeño proyecto profesional.
+
+Probablemente tendrás que trabajar con cosas como:
+
+### 1. Exploración del dataset
+
+Entender:
+
+- features,
+- target,
+- distributions,
+- missing values,
+- posibles problemas de calidad.
+
+---
+
+### 2. Preparación de datos
+
+Dependiendo del dataset:
+
+- encoding,
+- normalization,
+- scaling,
+- missing values,
+- transformations,
+- feature selection,
+- etc.
+
+El profesor no enumeró exactamente qué técnicas serán obligatorias, así que esto dependerá del dataset y de las instrucciones/rubric del milestone.
+
+---
+
+### 3. Dividir training y test
+
+Por ejemplo:
+
+\[
+Dataset = Train + Test
+\]
+
+El modelo aprende usando:
+
+\[
+(X_{train}, y_{train})
+\]
+
+y después produces:
+
+\[
+\hat{y}_{test}
+\]
+
+para comparar con:
+
+\[
+y_{test}
+\]
+
+---
+
+### 4. Probar diferentes modelos
+
+Aquí deberías aplicar técnicas aprendidas durante DS675.
+
+Por ejemplo, dependiendo del problema y de lo que hayan visto para ese momento:
+
+- KNN,
+- Linear/Logistic Regression,
+- Decision Trees,
+- SVM,
+- Ensemble methods,
+- posiblemente modelos más avanzados.
+
+El profesor incluso comentó que algunos grupos terminan agregando **Deep Learning** hacia el final si tiene sentido para el problema, aunque no parece ser un requisito.
+
+---
+
+### 5. Comparar modelos
+
+No es suficiente correr un modelo.
+
+La lógica debería ser algo como:
+
+```text
+Model A
+vs.
+Model B
+vs.
+Model C
+```
+
+y analizar:
+
+> ¿Cuál funciona mejor y por qué?
+
+Por ejemplo:
+
+| Model | Accuracy | F1 |
+|---|---:|---:|
+| Logistic Regression | 0.84 | 0.80 |
+| KNN | 0.81 | 0.77 |
+| Random Forest | 0.89 | 0.86 |
+
+Pero la intención del curso va más allá de:
+
+> “Random Forest ganó.”
+
+Deberías poder razonar:
+
+> “Random Forest performed better, possibly because the relationships between the predictors and the target are nonlinear.”
+
+Es decir:
+
+\[
+resultado + razonamiento
+\]
+
+---
+
+# No se trata solo de conseguir la mejor accuracy
+
+Este punto conecta directamente con toda la filosofía del curso.
+
+El profesor quiere que entiendas:
+
+- qué método usaste,
+- por qué lo usaste,
+- qué limitaciones tiene,
+- qué assumptions tiene,
+- qué problemas encontraste,
+- qué decisiones tomaste,
+- si la evaluación fue apropiada.
+
+No simplemente:
+
+```python
+model.fit(X_train, y_train)
+model.score(X_test, y_test)
+```
+
+La calidad del proyecto está más cerca de:
+
+> **¿Tomaste decisiones razonables y puedes defenderlas?**
+
+---
+
+# Debes hacer algo diferente de Kaggle
+
+Este probablemente sea uno de los puntos más importantes para tu estrategia.
+
+Supongamos que encuentras un notebook de Kaggle que hace:
+
+```text
+Dataset
+ ↓
+StandardScaler
+ ↓
+Logistic Regression
+ ↓
+Accuracy = 87%
+```
+
+Tu proyecto no debería ser:
+
+```text
+Dataset
+ ↓
+StandardScaler
+ ↓
+Logistic Regression
+ ↓
+Accuracy = 87%
+```
+
+Eso sería básicamente reproducir trabajo existente.
+
+En cambio podrías investigar:
+
+```text
+Existing Kaggle work
+        ↓
+What has already been tried?
+        ↓
+What is missing?
+        ↓
+Our contribution
+```
+
+Por ejemplo:
+
+- comparar modelos que no se compararon adecuadamente,
+- mejorar preprocessing,
+- estudiar feature selection,
+- analizar class imbalance,
+- probar otro evaluation strategy,
+- estudiar hyperparameters,
+- comparar diferentes feature representations,
+- investigar por qué un modelo falla,
+- evaluar una técnica más reciente.
+
+No significa que tengas que inventar un algoritmo nuevo.
+
+La “originalidad” puede ser una **investigación razonable que no sea simplemente copiar lo que ya está publicado**.
+
+---
+
+# Entrega final
+
+En el grupo A el profesor explicó que hacia el final entregarían:
+
+- un **report**,
+- y un **video de aproximadamente 10 minutos**.
+
+En ese video el grupo presenta/demuestra lo que hizo.
+
+Algunos de esos videos pueden ser mostrados durante las reuniones finales de la clase.
+
+El proyecto puede llegar a tener suficiente calidad para usarlo como:
+
+> **portfolio project**
+
+especialmente si el dataset, la metodología, la evaluación y las conclusiones están bien desarrolladas.
+
+---
+
+# Entonces, ¿qué papel cumple exactamente Kaggle?
+
+Kaggle cumple **tres funciones diferentes**.
+
+### 1. Dataset repository
+
+Primero lo usas para:
+
+> encontrar los datos.
+
+```text
+Kaggle
+  ↓
+Dataset
+  ↓
+ML problem
+```
+
+---
+
+### 2. Literature review práctico
+
+Después lo utilizas para:
+
+> ver qué han hecho otros.
+
+Es casi como una mini “literature review”, pero de práctica de ML.
+
+```text
+Dataset
+   ↓
+Kaggle notebooks
+   ↓
+Existing approaches
+   ↓
+Strengths / weaknesses
+```
+
+Esto te ayuda a descubrir:
+
+- baselines,
+- errores comunes,
+- preprocessing,
+- modelos,
+- métricas,
+- resultados previos.
+
+---
+
+### 3. Benchmark para tu propia contribución
+
+Finalmente Kaggle te permite preguntarte:
+
+> **¿Qué puedo hacer yo que aporte algo distinto?**
+
+```text
+Existing Kaggle work
+          ↓
+       GAP
+          ↓
+Our project
+          ↓
+Comparison
+          ↓
+Conclusions
+```
+
+Esa probablemente sea la función más importante de Kaggle dentro del mini-project.
+
+---
+
+# Un ejemplo completo
+
+Imagina que encuentras en Kaggle un dataset de **credit card default**.
+
+Tiene:
+
+```text
+Age
+Income
+CreditLimit
+Debt
+PaymentHistory
+Default
+```
+
+Tu tarea podría ser:
+
+\[
+Age, Income, CreditLimit, Debt, PaymentHistory
+\rightarrow
+Default
+\]
+
+### Milestone 1
+
+Propones este dataset y otro.
+
+Explicas:
+
+> Predict whether a customer will default on a credit account.
+
+El profesor te dice que el dataset parece apropiado.
+
+### Milestone 2
+
+Investigas Kaggle.
+
+Encuentras:
+
+```text
+Notebook A → Logistic Regression
+Notebook B → Random Forest
+Notebook C → XGBoost
+Notebook D → Neural Network
+```
+
+Notas que muchos reportan accuracy, pero quizás pocos consideran adecuadamente el imbalance.
+
+Entonces detectas un posible problema:
+
+```text
+90% non-default
+10% default
+```
+
+Un modelo podría obtener:
+
+\[
+Accuracy = 90\%
+\]
+
+simplemente prediciendo:
+
+> “No default”
+
+para todo.
+
+Entonces tu contribución podría ser:
+
+> **Investigate how class imbalance affects model evaluation and compare models using precision, recall, F1 and ROC-AUC rather than accuracy alone.**
+
+Eso ya convierte tu proyecto en algo más interesante.
+
+### Milestone 3
+
+Publicas esa propuesta.
+
+Dos compañeros se unen.
+
+### Milestone 4
+
+El equipo realiza:
+
+```text
+EDA
+ ↓
+Data cleaning
+ ↓
+Train/Test split
+ ↓
+Scaling
+ ↓
+Logistic Regression
+ ↓
+KNN
+ ↓
+Random Forest
+ ↓
+Hyperparameter experiments
+ ↓
+Accuracy / Precision / Recall / F1
+ ↓
+Analysis
+ ↓
+Conclusions
+```
+
+Y finalmente explican:
+
+> qué funcionó,
+
+> qué no funcionó,
+
+> por qué,
+
+> y qué aprendieron.
+
+Eso es mucho más cercano a lo que el profesor parece buscar.
+
+---
+
+## Cómo deberías pensar el mini-project desde ahora
+
+No pienses:
+
+> **“Tengo que buscar un dataset en Kaggle.”**
+
+Piensa:
+
+> **“Tengo que encontrar un problema predictivo suficientemente interesante, con buenos datos y suficiente trabajo previo para aprender de él, pero con suficiente espacio para que mi grupo haga algo propio.”**
+
+Ese cambio de perspectiva es importante.
+
+Una forma útil de evaluar candidatos sería:
+
+\[
+\boxed{
+Good\ Project =
+Good\ Dataset
++
+Clear\ Target
++
+Enough\ Data
++
+Existing\ Baselines
++
+Room\ for\ Improvement
+}
+\]
+
+Y, por lo que explicó Houle, ese es precisamente el juicio que quieren que empieces a desarrollar desde los **Milestones 1 y 2**.
+````
+
+## Turn 5
+
+- ID: bbb21813-d6ce-4846-865f-83126413f9e4
+- startedAt: 1788751271.406522 (2026-09-07T03:21:11.406522+00:00)
+- completedAt: 1788751278.45262 (2026-09-07T03:21:18.452620+00:00)
+
+<a id="message-bbb21813-d6ce-4846-865f-83126413f9e4"></a>
+### user — bbb21813-d6ce-4846-865f-83126413f9e4
+
+````text
+crea un prompt en ingles y formato json, para hacer la busqueda en kaggle considerando las observaciones/recomentadiones de Houle. la idea es poder abodar un tema relacionado con control dinamico de sistemas o modelado dinamico, puede ser multivariable o no lineal. piensa, tomate tu tiempo y crea el prompt
+````
+
+<a id="message-6127cbf0-1bb9-4b81-a2a0-53af00149319"></a>
+### assistant — 6127cbf0-1bb9-4b81-a2a0-53af00149319
+
+````text
+Sí. Lo estructuré para que la búsqueda no se limite a “datasets de control”, sino que encuentre problemas de **system identification, dynamic prediction, nonlinear/multivariable modeling, industrial processes y predictive control–adjacent tasks** que realmente encajen con lo que Houle espera del mini-project: supervised prediction, suficiente data, trabajo previo en Kaggle, pero espacio para una contribución propia.
+
+```json
+{
+  "role": "You are an expert research assistant helping select a Kaggle dataset for a graduate-level Machine Learning mini-project in DS675.",
+
+  "objective": "Search Kaggle for strong candidate datasets related to dynamic systems, system identification, dynamic modeling, industrial process modeling, or control-related prediction. The final project must be a supervised predictive machine learning problem, not merely exploratory data analysis or classical control-system design.",
+
+  "research_interests": [
+    "Dynamic systems",
+    "System identification",
+    "Data-driven dynamic modeling",
+    "Multivariable systems",
+    "Nonlinear systems",
+    "Industrial process dynamics",
+    "Process monitoring and prediction",
+    "Predictive maintenance with temporal behavior",
+    "State or output prediction from measured inputs",
+    "Sensor-based system modeling",
+    "Time-dependent regression",
+    "Multivariate time series prediction",
+    "Control-oriented machine learning",
+    "Soft sensors and virtual sensing",
+    "Fault detection or fault prediction in dynamic systems",
+    "Energy systems",
+    "Thermal systems",
+    "Mechanical systems",
+    "Electrical systems",
+    "Chemical or manufacturing processes",
+    "Robotics or autonomous-system telemetry"
+  ],
+
+  "preferred_problem_structure": {
+    "type": "Supervised predictive machine learning",
+    "ideal_mapping": "current and/or past system measurements, control inputs, operating conditions, and disturbances -> future output, state, performance variable, fault condition, or other meaningful target",
+    "examples": [
+      "Predict a future process output from past inputs and outputs",
+      "Predict system state variables from sensor measurements",
+      "Predict temperature, pressure, flow, power, vibration, position, or efficiency",
+      "Predict a nonlinear process response",
+      "Predict equipment condition or failure from temporal sensor data",
+      "Predict a target variable in a multivariable industrial process"
+    ]
+  },
+
+  "dataset_selection_requirements": {
+    "must_have": [
+      "A clearly identifiable prediction target or label",
+      "Predictor variables that could realistically contain information about that target",
+      "Enough observations to create meaningful training, validation, and test sets",
+      "A problem compatible with supervised machine learning",
+      "Data quality sufficient for a semester project",
+      "Enough documentation to understand the variables",
+      "Potential to compare multiple machine learning models"
+    ],
+
+    "strongly_preferred": [
+      "Temporal ordering or timestamps",
+      "Multiple measured variables",
+      "Control inputs or manipulated variables",
+      "Sensor measurements",
+      "Operating conditions",
+      "System outputs or state variables",
+      "Nonlinear relationships",
+      "Dynamic dependence on previous observations",
+      "At least several thousand observations when possible"
+    ],
+
+    "avoid": [
+      "Datasets with only around 100 observations unless there is a compelling reason",
+      "Datasets intended only for visualization or exploratory analysis",
+      "Datasets with no meaningful supervised prediction target",
+      "Datasets where the target cannot reasonably be predicted from the available features",
+      "Extremely small datasets",
+      "Poorly documented datasets",
+      "Datasets dominated by unusable missing data",
+      "Synthetic toy datasets unless they provide unusually strong project opportunities"
+    ]
+  },
+
+  "houle_selection_strategy": {
+    "kaggle_activity": "Prefer datasets with a medium level of Kaggle activity.",
+    "reasoning": [
+      "Avoid extremely popular datasets where nearly every obvious model and analysis has already been explored, because originality becomes difficult.",
+      "Avoid datasets with almost no analysis unless there is clear evidence that the dataset is high quality and suitable for supervised prediction.",
+      "Prefer datasets where several meaningful Kaggle notebooks or discussions already exist, but substantial room remains for new analysis."
+    ],
+    "critical_review": "Do not assume that Kaggle notebooks are technically correct. Evaluate existing work critically and identify questionable preprocessing, data leakage, invalid train-test splitting, inappropriate metrics, poor treatment of temporal dependence, weak baselines, or other methodological problems.",
+    "originality_requirement": "The eventual project should extend, improve, challenge, or systematically compare existing Kaggle work rather than simply reproduce it."
+  },
+
+  "dynamic_system_specific_checks": [
+    "Determine whether observations have a meaningful temporal sequence.",
+    "Determine whether random train-test splitting would cause temporal leakage.",
+    "Identify whether lagged variables could be constructed.",
+    "Identify candidate system inputs, outputs, disturbances, and state-related variables.",
+    "Determine whether the target represents an instantaneous variable or a future prediction.",
+    "Assess whether nonlinear relationships are plausible.",
+    "Assess whether multivariable interactions are important.",
+    "Determine whether the dataset could support one-step-ahead or multi-step-ahead prediction.",
+    "Identify whether the problem resembles system identification, soft sensing, forecasting, fault prediction, or state estimation.",
+    "Assess whether conventional ML methods can provide meaningful baselines before considering deep learning."
+  ],
+
+  "modeling_opportunities_to_look_for": [
+    "Linear Regression as a baseline",
+    "Regularized regression",
+    "K-Nearest Neighbors regression or classification",
+    "Decision Trees",
+    "Random Forests",
+    "Gradient Boosting",
+    "Support Vector Machines",
+    "Feature engineering using lagged variables",
+    "Polynomial or nonlinear feature transformations",
+    "Feature selection",
+    "Dimensionality reduction",
+    "Hyperparameter tuning",
+    "Comparison between static and dynamic feature representations",
+    "Comparison between linear and nonlinear models",
+    "Optional neural-network or sequence-model extension if justified"
+  ],
+
+  "originality_opportunities": [
+    "Create lagged input-output features that previous Kaggle analyses did not consider",
+    "Compare static prediction against dynamic prediction using historical information",
+    "Investigate the influence of different prediction horizons",
+    "Compare linear versus nonlinear models",
+    "Analyze multivariable interactions",
+    "Improve preprocessing or feature engineering",
+    "Correct questionable train-test methodology used in existing Kaggle notebooks",
+    "Use time-aware validation instead of random splitting",
+    "Investigate model robustness across different operating regimes",
+    "Study whether feature scaling materially changes distance-based models",
+    "Perform systematic hyperparameter analysis",
+    "Investigate feature importance or sensitivity",
+    "Develop a soft-sensor model for a difficult-to-measure variable",
+    "Compare models across normal and abnormal operating conditions",
+    "Investigate fault or anomaly prediction as a supervised task"
+  ],
+
+  "search_queries": [
+    "dynamic system dataset",
+    "system identification",
+    "industrial process sensor data",
+    "process control dataset",
+    "nonlinear system identification",
+    "multivariable process",
+    "industrial time series",
+    "process monitoring",
+    "process fault detection",
+    "chemical process sensor",
+    "manufacturing sensor data",
+    "predictive maintenance time series",
+    "power system measurements",
+    "energy system time series",
+    "HVAC sensor data",
+    "thermal system",
+    "motor sensor data",
+    "robot sensor data",
+    "control system telemetry",
+    "multivariate sensor time series",
+    "soft sensor",
+    "industrial IoT"
+  ],
+
+  "evaluation_task": {
+    "instruction": "Find and compare at least 10 promising Kaggle datasets, then rank the best 5 for this DS675 mini-project.",
+
+    "score_each_candidate_from_1_to_5": {
+      "supervised_prediction_fit": "How clearly the dataset supports a supervised predictive task.",
+      "dynamic_system_relevance": "How strongly the dataset represents a dynamic physical or engineered system.",
+      "dataset_size": "Whether there is enough data for credible training and testing.",
+      "multivariable_richness": "Availability of multiple meaningful predictors.",
+      "nonlinear_modeling_potential": "Potential for meaningful nonlinear relationships.",
+      "temporal_modeling_potential": "Availability of time structure, lagged relationships, or prediction horizons.",
+      "documentation_quality": "Clarity of variable definitions and dataset context.",
+      "kaggle_prior_work": "Existence of useful prior analyses to review.",
+      "originality_headroom": "Amount of meaningful work still available beyond existing notebooks.",
+      "course_model_compatibility": "Ability to apply several methods taught in a general machine learning course.",
+      "portfolio_value": "Potential to become a technically interesting professional portfolio project."
+    }
+  },
+
+  "required_output": {
+    "candidate_table": [
+      "Rank",
+      "Kaggle dataset name",
+      "Kaggle link",
+      "Physical or engineering system",
+      "Number of observations",
+      "Number of useful variables",
+      "Temporal data: yes/no",
+      "Candidate predictors",
+      "Candidate target",
+      "Regression or classification",
+      "Possible dynamic formulation",
+      "Existing Kaggle activity level",
+      "Major strengths",
+      "Major risks",
+      "Potential originality",
+      "Overall score"
+    ],
+
+    "for_top_5": [
+      "Explain the physical meaning of the data.",
+      "Define a precise supervised machine learning problem.",
+      "Identify X variables and the proposed y target.",
+      "Explain whether past values should be included as lagged features.",
+      "Propose a reasonable prediction horizon if applicable.",
+      "Identify at least three machine learning models that could be compared.",
+      "Describe an appropriate train-validation-test strategy.",
+      "Explain how temporal data leakage should be avoided.",
+      "Summarize what Kaggle users have already tried.",
+      "Identify weaknesses or methodological problems in existing Kaggle work.",
+      "Propose at least three original extensions suitable for the mini-project.",
+      "Assess whether the project is achievable within one graduate semester."
+    ],
+
+    "final_recommendation": {
+      "instruction": "Select the best 2 datasets to propose for Mini-Project Milestone 1.",
+      "for_each_dataset_explain": [
+        "Why it satisfies Professor Houle's dataset-selection criteria",
+        "Why it is neither over-explored nor inadequately studied",
+        "Why it provides enough data for training and testing",
+        "Why it supports a clear supervised prediction task",
+        "Why it is relevant to dynamic-system modeling",
+        "What the likely final project contribution could be",
+        "What technical risks should be investigated before committing to it"
+      ]
+    }
+  },
+
+  "important_methodological_constraint": "Do not force a control-engineering interpretation onto a dataset that does not genuinely support it. A strong predictive dynamic-modeling project is preferable to a weak dataset chosen only because its title contains words such as control, system, or process.",
+
+  "priority": "Favor datasets where the project can study how system behavior evolves with time and how measured inputs and previous states influence future outputs. Multivariable and nonlinear systems are especially desirable, but dataset quality, supervised prediction suitability, methodological rigor, and originality are more important than complexity.",
+
+  "final_goal": "Identify two Kaggle datasets that can lead to a rigorous, original, and professionally defensible DS675 mini-project centered on machine-learning-based modeling of dynamic systems."
+}
+```
+
+La parte más importante del prompt es que **no exige que el dataset diga explícitamente “control system”**. Eso ampliaría mucho la calidad de candidatos. Por ejemplo, un dataset de una planta industrial con `inputs + disturbances + sensor outputs + timestamps` puede ser mucho más valioso para **dynamic modeling/system identification** que un dataset etiquetado como “control” pero pequeño o artificial.
+
+Para tu interés específico, yo priorizaría una estructura conceptual de proyecto como:
+
+\[
+\boxed{
+[u(t),\,y(t),\,u(t-1),\,y(t-1),\ldots]
+\rightarrow
+y(t+1)
+}
+\]
+
+o incluso:
+
+\[
+\boxed{
+[\mathbf{u}(t-k:t),\,\mathbf{y}(t-k:t)]
+\rightarrow
+\mathbf{y}(t+h)
+}
+\]
+
+Eso permitiría transformar un dataset industrial multivariable en un problema de **supervised dynamic system identification** y después comparar, por ejemplo, un modelo lineal contra KNN, árboles, Random Forest, boosting o modelos no lineales. Ese enfoque puede darle al mini-project una identidad bastante más interesante que una clasificación genérica de Kaggle.
+````
+
+## Attachment metadata as returned
+
+````json
+[]
+````
+
+## Browser capture
+
+source_records/browser/6a92eec0-f09c-83e9-a9ed-29d95f24d41b.browser.json
+All captured units are retained in the transcript JSON. Full conversation HTML/text remains in the browser source.
