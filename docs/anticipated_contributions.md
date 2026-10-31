@@ -25,3 +25,30 @@ Train on January–September 2018, select settings using October–December 2018
 Compare identical targets and eligible rows using **MAE** and **RMSE** in meters: average absolute error and a measure giving larger errors greater weight. A boosting advantage requires lower MAE than all three comparators. C3 holds model family, calendar variables and rows fixed to test the auxiliary set jointly; individual-signal attribution requires a separate comparison. Auxiliary-signal value requires lower MAE than the reduced model and persistence; report RMSE tradeoffs and cases with no gain.
 
 Planned outputs are an annotated preparation/model notebook, a comparison table and forecast/error plots. Either an auxiliary-signal gain or comparable performance from a simpler predictor would answer part of the proposed question.
+
+## Additional Engineering Hypothesis Identified After Milestone 2 Feedback
+
+The small persistence error reported in the descriptive analysis raises an operational question: the persistence method depends on the availability and accuracy of the n1 pressure measurement. Its good performance under valid telemetry conditions does not guarantee its reliability when the sensor becomes unavailable, biased, or frozen at a fixed value.
+
+This motivates a possible extension of the proposed forecasting study: to evaluate whether the five auxiliary Area C signals can maintain useful n1 pressure forecasts when the target sensor is unreliable. This extension would examine two complementary indicators:
+
+- Temporal residual: the difference between the current n1 pressure measurement and its value recorded 15 minutes earlier.
+- Cross-sensor consistency residual: the difference between the current n1 pressure measurement and an independent estimate of the current pressure based on n4, n31, T1, PUMP_1, and AMR_n1.
+
+The joint patterns of these two residuals could provide a basis for formulating hypotheses about hydraulic changes and measurement inconsistencies, as summarized in the following table:
+
+| Temporal Residual | Consistency Residual | Hypothesis to Test|
+|---|---|---|
+| Low | Low | Measurements are consistent with both references. |
+| High | Low | Temporal variation also explained by the auxiliary signals; possible real hydraulic change. |
+| Low | High | Inconsistency with auxiliary signals; possible frozen, biased, or faulty sensor. |
+| High | High | Ambiguous event requiring additional information. |
+| n1 unavailable | Not calculable | Loss of telemetry; evaluate forecasting using the five remaining signals. |
+
+A controlled experimental extension would allow a separately trained forecasting model that uses only the auxiliary signals to be compared against relevant reference methods during simulated n1 sensor outages and faults. The original, uncorrupted measurements would be retained for evaluation. Available leakage-event records could support retrospective analysis of hydraulic events, but they would not be used to establish sensor-fault labels or provided to the predictor as future information.
+
+Forecast accuracy would be evaluated using MAE (Mean Absolute Error) and RMSE (Root Mean Squared Error) over matched chronological periods. Any fault-detection component would require separately defined detection thresholds, false-alarm rates, detection rates, and detection delays.
+
+Existing research on virtual pressure sensors, pressure estimation at unmeasured locations, and residual-based anomaly detection—including SAM-kNN, GATRes, and LILA—provides relevant precedents. Therefore, the potential contribution consists of conducting a controlled assessment of the relationship between forecast accuracy, dependence on the target sensor, and the reliability of auxiliary measurements for the selected Area C forecasting task.
+
+Status and Scope: This hypothesis emerged after reviewing the Milestone 2 feedback. It was not part of the originally submitted experiments, and no sensor-fault model, residual-based classifier, or auxiliary-only forecasting model has yet been implemented or evaluated. Components C1–C3 remain the defined Milestone 2 proposal.
